@@ -1,0 +1,37 @@
+{
+  "source": "deterministic E1 parsed LaTeX trees only; no first-round semantic labels",
+  "n_parseable_reviews": 26,
+  "n_reviews_with_persisted_root_node": 26,
+  "split_counts": {
+    "train": 23,
+    "heldout": 3
+  },
+  "node_counts": {
+    "train": 23,
+    "heldout": 3
+  },
+  "depth_counts": {
+    "0": 26
+  },
+  "length_bucket_node_counts": {
+    "medium": 9,
+    "short": 9,
+    "long": 8
+  },
+  "length_bucket_section_boundaries": {
+    "short_le": 11,
+    "medium_le": 17,
+    "long_gt": 17
+  },
+  "citation_child_coverage_by_depth": {
+    "0": {
+      "n": 26,
+      "mean": 1.0,
+      "median": 1.0
+    }
+  },
+  "excluded_parse_failures": {
+    "tei_missing": 3,
+    "too_few_sections": 1
+  }
+}

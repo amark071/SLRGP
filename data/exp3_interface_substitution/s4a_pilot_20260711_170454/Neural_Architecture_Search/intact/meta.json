@@ -1,0 +1,99 @@
+{
+  "topic": "Neural Architecture Search",
+  "arm": "intact",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 17:05:23",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "neural architecture search",
+    "automated machine learning",
+    "AutoML",
+    "hyperparameter optimization",
+    "network architecture optimization",
+    "differentiable architecture search",
+    "evolutionary neural architecture search",
+    "one-shot architecture search",
+    "weight sharing NAS",
+    "meta-learning for neural networks",
+    "network topology optimization",
+    "efficient neural network design"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "methodology",
+  "groups": [
+    {
+      "name": "Evolutionary and Population-Based NAS",
+      "n": 4
+    },
+    {
+      "name": "Differentiable and Gradient-Based NAS",
+      "n": 5
+    },
+    {
+      "name": "Constructive and Greedy Search Methods",
+      "n": 2
+    },
+    {
+      "name": "Search Space and Generator Optimization",
+      "n": 2
+    },
+    {
+      "name": "Surveys and Overviews of NAS",
+      "n": 2
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_1808.07233",
+    "arxiv_1909.00122",
+    "arxiv_2003.12857",
+    "arxiv_2007.16112",
+    "arxiv_2108.04392",
+    "arxiv_2204.09320",
+    "arxiv_2211.10250",
+    "arxiv_2304.05405",
+    "arxiv_2403.05123"
+  ],
+  "n_refs": 9,
+  "word_count": 814,
+  "written_citation_ids": [
+    "arxiv_2211.10250",
+    "arxiv_2403.05123",
+    "arxiv_2003.12857",
+    "arxiv_2204.09320",
+    "arxiv_2304.05405",
+    "arxiv_1808.07233",
+    "arxiv_2007.16112",
+    "arxiv_2108.04392",
+    "arxiv_1909.00122"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_1808.07233",
+    "arxiv_1909.00122",
+    "arxiv_2003.12857",
+    "arxiv_2007.16112",
+    "arxiv_2108.04392",
+    "arxiv_2204.09320",
+    "arxiv_2211.10250",
+    "arxiv_2304.05405",
+    "arxiv_2403.05123"
+  ],
+  "elapsed_sec": 77.7,
+  "llm_usage_delta": {
+    "n_calls": 10,
+    "prompt_tokens": 7029,
+    "completion_tokens": 2089
+  },
+  "llm_usage_so_far": {
+    "n_calls": 10,
+    "prompt_tokens": 7029,
+    "completion_tokens": 2089
+  }
+}

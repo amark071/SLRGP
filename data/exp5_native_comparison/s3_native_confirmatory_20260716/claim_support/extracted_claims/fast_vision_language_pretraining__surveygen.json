@@ -1,0 +1,131 @@
+{
+  "topic_id": "fast_vision_language_pretraining",
+  "system": "surveygen",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Unimodal systems trained exclusively on images or text fail to model the rich correspondences between visual and linguistic content essential for tasks such as visual question answering, image captioning, and cross-modal retrieval ref [29].",
+      "citation_markers": [
+        "ref [29]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "VLP models like BEiT-3 ref [2] and FLAVA ref [10] demonstrate that unified multimodal pretraining achieves state-of-the-art performance across diverse benchmarks simultaneously.",
+      "citation_markers": [
+        "ref [2]",
+        "ref [10]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Early VLP models, including Unicoder-VL ref [9], bridged these domains by feeding visual and linguistic inputs into shared transformers. Subsequent works such as CLIP introduced contrastive dual-stream pretraining, while BEiT-3 ref [2] exemplified the convergence toward unified multimodal foundation models supporting vision, language, and cross-modal tasks within a single backbone.",
+      "citation_markers": [
+        "ref [9]",
+        "ref [2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Vision-language pretraining supports a diverse spectrum of downstream tasks, which can be systematically categorized into several groups. Understanding tasks include visual question answering (VQA) ref [2], visual reasoning ref [28], and visual entailment ref [24]. Retrieval tasks encompass image-text and cross-modal retrieval ref [51].",
+      "citation_markers": [
+        "ref [2]",
+        "ref [28]",
+        "ref [24]",
+        "ref [51]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Vision Transformers (ViT) have emerged as the dominant backbone, underpinning models such as BEiT-3 ref [2], CLIP-based architectures ref [6], and RegionCLIP ref [13], offering scalable patch-level representations that facilitate both global alignment and dense prediction tasks.",
+      "citation_markers": [
+        "ref [2]",
+        "ref [6]",
+        "ref [13]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "BEiT-3 ref [2] further advanced single-stream modeling through Multiway Transformers, enabling modality-specific encoding alongside deep fusion, achieving state-of-the-art performance across diverse vision-language benchmarks.",
+      "citation_markers": [
+        "ref [2]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "CLIP established this paradigm, enabling efficient inference through independent modality encoding. ALIGN and COOKIE extended contrastive pretraining to larger noisy datasets. COTS enhances two-stream models with token-level and task-level interactions via momentum contrastive learning, achieving inference efficiency orders of magnitude faster than single-stream alternatives ref [20].",
+      "citation_markers": [
+        "ref [20]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "LEMON ref [27] provides the first systematic study of VLP scaling for image captioning, varying transformer parameters from 13M to 675M and pretraining data up to 200M image-text pairs (ALT200M), demonstrating log-linear improvements with scale.",
+      "citation_markers": [
+        "ref [27]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "PyramidCLIP ref [6] addresses semantic mismatch in web-crawled data via hierarchical peer-level and cross-level alignment with softened negative loss. HiCLIP ref [14] introduces hierarchy-aware attention for progressive semantic alignment.",
+      "citation_markers": [
+        "ref [6]",
+        "ref [14]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Chinese CLIP ref [12] represents a prominent effort in this direction, constructing a large-scale Chinese image-text dataset by retrieving pairs from publicly available sources and proposing a two-stage pretraining strategy—first training with a frozen image encoder, then jointly optimizing all parameters—to achieve state-of-the-art performance on Chinese benchmarks including MUGE, Flickr30K-CN, and COCO-CN.",
+      "citation_markers": [
+        "ref [12]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "RegionCLIP extends CLIP by aligning image regions with textual concepts, achieving significant gains in open-vocabulary object detection on COCO and LVIS ref [13]. SCLIP introduces a Correlative Self-Attention mechanism enabling training-free zero-shot semantic segmentation ref [49], while SILC augments contrastive pretraining with local-to-global self-distillation to improve dense prediction ref [30].",
+      "citation_markers": [
+        "ref [13]",
+        "ref [49]",
+        "ref [30]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Research has demonstrated that contrastive vision-language models pretrained on web-scraped data exhibit sexual objectification bias, reflecting harmful societal stereotypes encoded in large-scale corpora ref [1]. Studies on gender bias quantify amplification during both pretraining and fine-tuning across multiple VLP model families, revealing that continued pretraining on gender-neutral data reduces group disparities and promotes fairness on VQAv2 and retrieval tasks without substantially compromising performance ref [43].",
+      "citation_markers": [
+        "ref [1]",
+        "ref [43]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9795,
+    "completion_tokens": 1137,
+    "total_tokens": 10932
+  }
+}

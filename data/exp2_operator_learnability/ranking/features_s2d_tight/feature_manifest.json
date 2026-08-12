@@ -1,0 +1,37 @@
+{
+  "main_features": [
+    "bm25_score",
+    "bm25_rank_recip",
+    "dense_score",
+    "dense_rank_recip",
+    "rrf_score",
+    "candidate_year",
+    "year_diff",
+    "year_missing",
+    "tier_ord",
+    "same_discipline",
+    "abstract_len_words",
+    "title_len_words",
+    "is_self_citation",
+    "self_citation_reliable",
+    "n_authors"
+  ],
+  "aux_features": [
+    "cited_by_count_log",
+    "cited_by_count_openalex_log",
+    "max_author_hindex",
+    "mean_author_hindex",
+    "author_hindex_missing"
+  ],
+  "dropped": [
+    "retrieved_by_L",
+    "handcrafted_score"
+  ],
+  "interface_depth": 300,
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "split_salt": "s2b_v1"
+}

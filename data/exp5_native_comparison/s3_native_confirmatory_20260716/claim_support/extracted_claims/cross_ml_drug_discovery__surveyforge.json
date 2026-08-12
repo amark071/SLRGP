@@ -1,0 +1,124 @@
+{
+  "topic_id": "cross_ml_drug_discovery",
+  "system": "surveyforge",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "These systemic inefficiencies have catalyzed the adoption of computational approaches, evolving from early quantitative structure-activity relationship models and rule-based cheminformatics toward sophisticated data-driven machine learning frameworks [1; 2].",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The emergence of deep learning, graph neural networks, and large-scale pretrained architectures has fundamentally transformed this landscape, enabling unprecedented predictive accuracy across molecular property prediction, virtual screening, and generative molecular design [3; 4; 5].",
+      "citation_markers": [
+        "[3; 4; 5]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The availability of high-quality curated datasets and standardized evaluation frameworks constitutes a foundational prerequisite for reproducible machine learning research in drug discovery.",
+      "citation_markers": [
+        "[3; 19]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Community benchmarks such as [3] have consolidated diverse molecular property prediction tasks—spanning quantum mechanics, physicochemical properties, biophysics, and clinical endpoints—providing unified evaluation protocols against which competing representations and architectures can be fairly compared [19].",
+      "citation_markers": [
+        "[3]",
+        "[19]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Massively multitask neural architectures demonstrated early that synthesizing information across nearly 40 million measurements spanning over 200 biological targets yields predictive accuracies significantly exceeding single-task approaches, establishing shared representation learning as a cornerstone paradigm [4].",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Standardized benchmarking through platforms such as MoleculeNet and the Therapeutics Data Commons has enabled systematic comparative evaluation, revealing that learnable representations broadly outperform fixed fingerprints yet still struggle under data scarcity and severe class imbalance [3; 6].",
+      "citation_markers": [
+        "[3; 6]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Surrogate models trained to emulate classical docking algorithms—including graph neural networks operating on molecular graphs and chemical language models processing SMILES representations [19; 37]—enable rapid pre-filtering at a fraction of the computational cost of physics-based docking, with the critical trade-off between recall fidelity and throughput governed by model expressiveness and training set diversity.",
+      "citation_markers": [
+        "[19; 37]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Conformal prediction frameworks extend these capabilities by providing distribution-free, finite-sample coverage guarantees without parametric assumptions, making them particularly attractive for deployment across diverse chemical spaces. Critically, UQ utility depends not merely on uncertainty magnitude but on calibration quality—the degree to which predicted confidence intervals reflect true empirical coverage—a property that degrades severely under scaffold-based distribution shifts [3].",
+      "citation_markers": [
+        "[3]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The foundational insight that molecular strings exhibit sequential dependencies analogous to natural language syntax has motivated a progression from early recurrent architectures toward increasingly expressive transformer-based chemical language models.",
+      "citation_markers": [
+        "[9; 49]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "The introduction of variational autoencoders enabled continuous latent space representations of SMILES strings, facilitating gradient-based optimization and property-conditioned sampling [52; 53].",
+      "citation_markers": [
+        "[52; 53]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Graph-based generative models treat molecules as attributed graphs, enabling direct enforcement of chemical valence constraints and capturing topological richness inaccessible to linear string representations [56; 57].",
+      "citation_markers": [
+        "[56; 57]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "This survey has traced the remarkable transformation of drug discovery through machine learning, from classical fingerprint-based QSAR models to equivariant geometric deep learning, generative architectures, and autonomous closed-loop platforms [2; 3].",
+      "citation_markers": [
+        "[2; 3]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17372,
+    "completion_tokens": 916,
+    "total_tokens": 18288,
+    "prompt_tokens_details": {
+      "cached_tokens": 17152
+    }
+  }
+}

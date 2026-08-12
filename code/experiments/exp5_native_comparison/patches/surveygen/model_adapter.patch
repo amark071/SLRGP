@@ -1,0 +1,171 @@
+diff --git a/Code/outline_generation.py b/Code/outline_generation.py
+index 79160a9..2be6544 100644
+--- a/Code/outline_generation.py
++++ b/Code/outline_generation.py
+@@ -3,16 +3,18 @@
+ import pandas as pd
+ from openai import OpenAI
+ import json
++import os
+ import re
+ 
+-TOPIC_CSV = "./examlpe/topic.csv"
+-RANKED_FILE = "paper_after_reranking.csv"
+-OUTPUT_JSON = "survey_outline.json"
++TOPIC_CSV = os.environ.get("S3_TOPIC_CSV", "./example/topic.csv")
++RANKED_FILE = os.environ.get("S3_RANKED_CSV", "paper_after_reranking.csv")
++OUTPUT_JSON = os.environ.get("S3_OUTLINE_JSON", "survey_outline.json")
++LLM_MODEL = os.environ.get("S3_MODEL", "gpt-4o")
+ 
+ # OpenAI API
+ client = OpenAI(
+-    base_url="your api address",
+-    api_key="your api key"
++    base_url=os.environ.get("S3_API_BASE_URL"),
++    api_key=os.environ.get("S3_API_KEY", "relay-managed")
+ )
+ 
+ # ========== 1. get topic ==========
+@@ -75,10 +77,19 @@ Now, based on the given topic {topic}, please generate the outline by following
+ 
+ # ========== 4. Call LLM ==========
+ response = client.chat.completions.create(
+-    model="gpt-4o",
++    model=LLM_MODEL,
+     messages=[{"role": "user", "content": prompt}],
+     temperature=0
+ )
++usage_log = os.environ.get("S3_USAGE_LOG")
++if usage_log and response.usage:
++    with open(usage_log, "a", encoding="utf-8") as handle:
++        handle.write(json.dumps({
++            "model": LLM_MODEL,
++            "system": os.environ.get("S3_SYSTEM_ID", "surveygen"),
++            "topic_id": os.environ.get("S3_TOPIC_ID"),
++            "usage": response.usage.model_dump(),
++        }, ensure_ascii=False) + "\n")
+ 
+ outline_json = response.choices[0].message.content.strip()
+ 
+diff --git a/Code/survey_generation.py b/Code/survey_generation.py
+index 928694d..ac3d82c 100644
+--- a/Code/survey_generation.py
++++ b/Code/survey_generation.py
+@@ -3,23 +3,24 @@
+ import re
+ import json
+ import time
++import os
+ import pandas as pd
+ from pathlib import Path
+ from openai import OpenAI
+ from typing import Dict, Any, List
+ 
+-TOPIC_CSV       = "./example/topic.csv"
+-RANKED_FILE     = "paper_after_reranking.csv"
+-OUTLINE_JSON    = "survey_outline.json"
+-OUTPUT_DIR      = Path("sections")
+-OUTPUT_BUNDLE   = "survey_content.json"
++TOPIC_CSV       = os.environ.get("S3_TOPIC_CSV", "./example/topic.csv")
++RANKED_FILE     = os.environ.get("S3_RANKED_CSV", "paper_after_reranking.csv")
++OUTLINE_JSON    = os.environ.get("S3_OUTLINE_JSON", "survey_outline.json")
++OUTPUT_DIR      = Path(os.environ.get("S3_SECTIONS_DIR", "sections"))
++OUTPUT_BUNDLE   = os.environ.get("S3_CONTENT_JSON", "survey_content.json")
+ 
+ client = OpenAI(
+-    base_url="your api address",
+-    api_key="your api key"
++    base_url=os.environ.get("S3_API_BASE_URL"),
++    api_key=os.environ.get("S3_API_KEY", "relay-managed")
+ )
+ 
+-LLM_MODEL = "gpt-4o"
++LLM_MODEL = os.environ.get("S3_MODEL", "gpt-4o")
+ TEMPERATURE = 0
+ MAX_RETRIES_JSON = 8
+ 
+@@ -70,7 +71,13 @@ def build_numbered_references(selected_df: pd.DataFrame, max_refs: int = None) -
+ def format_references_for_prompt(refs: List[Dict[str, str]]) -> str:
+     return "\n".join([f"- ref [{r['refNo']}]: Title: {r['title']}\n  Abstract: {r['abstract']}" for r in refs])
+ 
+-def build_subsection_prompt(topic: str, outline_text: str, subsection_title: str, refs_prompt: str) -> str:
++def build_subsection_prompt(
++    topic: str,
++    outline_text: str,
++    subsection_title: str,
++    refs_prompt: str,
++    target_words: int,
++) -> str:
+     return f"""
+ You are an academic expert in the field of "{topic}" with deep expertise in survey writing. Your task is to write a subsection of a survey, based on the following information:  
+ 
+@@ -85,7 +92,7 @@ The following highly relevant papers, including their titles and abstracts, are
+ 
+ Instructions for generating subsection content:
+     1. Carefully analyze the provided references and identify those highly relevant to the subsection topic as the basis for your generation.
+-    2. Ensure the content directly addresses the specific topic of the subsection, and the generated content should be a minimum of 300 words.
++    2. Ensure the content directly addresses the specific topic of the subsection. Write approximately {target_words} words and do not exceed {target_words + 25} words.
+     3. Ensure that all claims are fully supported by relevant academic literature. Cite each reference using in-text citations in the format ref [1], ref [2], etc. If a source is cited multiple times, use only the reference number assigned to its first occurrence. 
+     4. Maintain alignment with the parent section and overall survey topic, ensuring thematic and conceptual consistency.
+     5. Use a formal academic tone, with logically structured arguments and scholarly language.
+@@ -103,23 +110,35 @@ Instructions for generating subsection content:
+ Now, please generate the content for the given subsection: {subsection_title}. Please ensure the output is formatted according to the requirements mentioned above. Do not include any explanation, commentary, or preamble in your response.
+ """.strip()
+ 
+-def call_llm_for_json(prompt: str):
++def call_llm_for_json(prompt: str, target_words: int):
+     last_err = None
+     for attempt in range(1, MAX_RETRIES_JSON + 1):
+         resp = client.chat.completions.create(
+             model=LLM_MODEL,
+             messages=[{"role": "user", "content": prompt}],
+-            temperature=TEMPERATURE
++            temperature=TEMPERATURE,
++            max_tokens=max(800, int(target_words * 4))
+         )
+         text = resp.choices[0].message.content.strip()
+         usage = resp.usage.model_dump() if resp.usage else {}
++        usage_log = os.environ.get("S3_USAGE_LOG")
++        if usage_log and usage:
++            with open(usage_log, "a", encoding="utf-8") as handle:
++                handle.write(json.dumps({
++                    "model": LLM_MODEL,
++                    "system": os.environ.get("S3_SYSTEM_ID", "surveygen"),
++                    "topic_id": os.environ.get("S3_TOPIC_ID"),
++                    "usage": usage,
++                }, ensure_ascii=False) + "\n")
+         try:
+             obj = ensure_valid_json(text)
+             return obj, usage
+         except Exception as e:
+             last_err = e
+             print(f"⚠️ Attempt {attempt}/{MAX_RETRIES_JSON}: JSON parsing failed -> {e}")
+-    print(f"⚠️ Attempt {attempt}/{MAX_RETRIES_JSON}: JSON parsing failed -> {e}")
++    raise RuntimeError(
++        f"Unable to parse subsection JSON after {MAX_RETRIES_JSON} attempts"
++    ) from last_err
+ 
+ 
+ def main():
+@@ -143,6 +162,8 @@ def main():
+         subs = list((sec.get("subsections") or {}).keys())
+         for sub_idx, sub_t in enumerate(subs, start=1):
+             all_subs.append((big_idx, total_big, sec.get("section_title",""), sub_idx, len(subs), sub_t))
++    target_total_words = int(os.environ.get("S3_TARGET_WORDS", "4000"))
++    target_subsection_words = max(65, target_total_words // max(1, len(all_subs)))
+ 
+     OUTPUT_DIR.mkdir(exist_ok=True)
+     bundle=[]
+@@ -153,8 +174,10 @@ def main():
+             f"\n===== Generating Section {big_idx}/{total_big}: \"{big_title}\" - Subsection {sub_idx}/{total_subs}: \"{sub_t}\" =====")
+         print(f"📖 Overall progress: {global_idx}/{len(all_subs)} subsections")
+ 
+-        prompt = build_subsection_prompt(topic, outline_text, sub_t, refs_prompt)
+-        obj, usage = call_llm_for_json(prompt)
++        prompt = build_subsection_prompt(
++            topic, outline_text, sub_t, refs_prompt, target_subsection_words
++        )
++        obj, usage = call_llm_for_json(prompt, target_subsection_words)
+ 
+         safe_name=re.sub(r"[^a-zA-Z0-9\-_.]+","_",sub_t)[:120]
+         out_path=OUTPUT_DIR/f"{big_idx:02d}_{sub_idx:02d}_{safe_name}.json"

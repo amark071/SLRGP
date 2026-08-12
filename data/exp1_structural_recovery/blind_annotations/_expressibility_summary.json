@@ -1,0 +1,161 @@
+{
+  "config": {
+    "conf_threshold": 0.6,
+    "lenient_ratio": 0.8
+  },
+  "phase_a_parsing": {
+    "n_attempted": 2862,
+    "n_parsed_ok": 2223,
+    "parse_ok_rate": 0.7767,
+    "fail_reasons": {
+      "source_is_pdf_only": 506,
+      "too_few_citations": 46,
+      "too_few_sections": 34,
+      "not_gzip_or_tar": 12,
+      "no_documentclass": 41
+    },
+    "per_discipline": {
+      "astrophysics": {
+        "total": 299,
+        "ok": 292
+      },
+      "computer_science": {
+        "total": 299,
+        "ok": 263
+      },
+      "condensed_matter": {
+        "total": 300,
+        "ok": 177
+      },
+      "economics": {
+        "total": 131,
+        "ok": 70
+      },
+      "eess": {
+        "total": 300,
+        "ok": 237
+      },
+      "hep_theory": {
+        "total": 245,
+        "ok": 204
+      },
+      "mathematics": {
+        "total": 300,
+        "ok": 274
+      },
+      "quantitative_biology": {
+        "total": 300,
+        "ok": 135
+      },
+      "quantitative_finance": {
+        "total": 89,
+        "ok": 67
+      },
+      "quantum_physics": {
+        "total": 300,
+        "ok": 258
+      },
+      "statistics": {
+        "total": 299,
+        "ok": 246
+      }
+    }
+  },
+  "phase_b_node_level": {
+    "n_internal_nodes": 12091,
+    "n_expressible_nodes": 12090,
+    "node_expressibility_rate": 0.9999,
+    "transition_type_distribution": {
+      "new_conceptualization": 15776,
+      "local_reorganization": 9782,
+      "continuation": 5969,
+      "renewed_evidence_search": 473,
+      "unclassified": 37
+    }
+  },
+  "phase_b_review_level": {
+    "n_reviews_annotated": 2223,
+    "n_zero_internal_node_reviews": 185,
+    "strict_expressibility_rate": 0.9163,
+    "lenient_expressibility_rate": 0.9168,
+    "per_discipline": {
+      "astrophysics": {
+        "n_reviews": 292,
+        "n_strict": 277,
+        "n_lenient": 277,
+        "strict_rate": 0.9486,
+        "lenient_rate": 0.9486
+      },
+      "computer_science": {
+        "n_reviews": 263,
+        "n_strict": 255,
+        "n_lenient": 256,
+        "strict_rate": 0.9696,
+        "lenient_rate": 0.9734
+      },
+      "condensed_matter": {
+        "n_reviews": 177,
+        "n_strict": 154,
+        "n_lenient": 154,
+        "strict_rate": 0.8701,
+        "lenient_rate": 0.8701
+      },
+      "economics": {
+        "n_reviews": 70,
+        "n_strict": 66,
+        "n_lenient": 66,
+        "strict_rate": 0.9429,
+        "lenient_rate": 0.9429
+      },
+      "eess": {
+        "n_reviews": 237,
+        "n_strict": 230,
+        "n_lenient": 230,
+        "strict_rate": 0.9705,
+        "lenient_rate": 0.9705
+      },
+      "hep_theory": {
+        "n_reviews": 204,
+        "n_strict": 170,
+        "n_lenient": 170,
+        "strict_rate": 0.8333,
+        "lenient_rate": 0.8333
+      },
+      "mathematics": {
+        "n_reviews": 274,
+        "n_strict": 225,
+        "n_lenient": 225,
+        "strict_rate": 0.8212,
+        "lenient_rate": 0.8212
+      },
+      "quantitative_biology": {
+        "n_reviews": 135,
+        "n_strict": 127,
+        "n_lenient": 127,
+        "strict_rate": 0.9407,
+        "lenient_rate": 0.9407
+      },
+      "quantitative_finance": {
+        "n_reviews": 67,
+        "n_strict": 65,
+        "n_lenient": 65,
+        "strict_rate": 0.9701,
+        "lenient_rate": 0.9701
+      },
+      "quantum_physics": {
+        "n_reviews": 258,
+        "n_strict": 230,
+        "n_lenient": 230,
+        "strict_rate": 0.8915,
+        "lenient_rate": 0.8915
+      },
+      "statistics": {
+        "n_reviews": 246,
+        "n_strict": 238,
+        "n_lenient": 238,
+        "strict_rate": 0.9675,
+        "lenient_rate": 0.9675
+      }
+    }
+  }
+}

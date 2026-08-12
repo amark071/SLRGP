@@ -1,0 +1,3506 @@
+{
+  "n_calls": 144,
+  "comparisons": {
+    "autosurvey": {
+      "overall_preference": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.9375,
+          "mean_margin_from_tie": 0.4375,
+          "paired_bootstrap_95ci_margin": [
+            0.35416666666666663,
+            0.5
+          ],
+          "exact_signflip_p_two_sided": 0.0078125,
+          "topic_win_tie_loss": [
+            8,
+            0,
+            0
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 1.0,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 0.6666666666666666,
+            "fast_vision_language_pretraining": 0.8333333333333334,
+            "mature_deep_reinforcement_learning": 1.0,
+            "mature_neural_machine_translation": 1.0,
+            "method_continual_learning": 1.0,
+            "method_self_supervised_learning": 1.0
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9375,
+            "mean_margin_from_tie": 0.4375,
+            "paired_bootstrap_95ci_margin": [
+              0.3125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.1875,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.03125,
+            "topic_win_tie_loss": [
+              6,
+              2,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9583333333333334,
+            "mean_margin_from_tie": 0.4583333333333333,
+            "paired_bootstrap_95ci_margin": [
+              0.375,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.6666666666666666,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9166666666666666,
+            "mean_margin_from_tie": 0.41666666666666663,
+            "paired_bootstrap_95ci_margin": [
+              0.29166666666666663,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.6666666666666666,
+              "fast_vision_language_pretraining": 0.6666666666666666,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9375,
+            "mean_margin_from_tie": 0.4375,
+            "paired_bootstrap_95ci_margin": [
+              0.34375,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.96875,
+            "mean_margin_from_tie": 0.46875,
+            "paired_bootstrap_95ci_margin": [
+              0.40625,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.90625,
+            "mean_margin_from_tie": 0.40625,
+            "paired_bootstrap_95ci_margin": [
+              0.28125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        }
+      },
+      "organizational_quality": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.8645833333333334,
+          "mean_margin_from_tie": 0.3645833333333333,
+          "paired_bootstrap_95ci_margin": [
+            0.17708333333333331,
+            0.4895833333333333
+          ],
+          "exact_signflip_p_two_sided": 0.0234375,
+          "topic_win_tie_loss": [
+            7,
+            0,
+            1
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 0.9166666666666666,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 0.25,
+            "fast_vision_language_pretraining": 0.75,
+            "mature_deep_reinforcement_learning": 1.0,
+            "mature_neural_machine_translation": 1.0,
+            "method_continual_learning": 1.0,
+            "method_self_supervised_learning": 1.0
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0703125,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.8125,
+            "mean_margin_from_tie": 0.3125,
+            "paired_bootstrap_95ci_margin": [
+              0.125,
+              0.46875
+            ],
+            "exact_signflip_p_two_sided": 0.046875,
+            "topic_win_tie_loss": [
+              6,
+              1,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.25,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.90625,
+            "mean_margin_from_tie": 0.40625,
+            "paired_bootstrap_95ci_margin": [
+              0.28125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9166666666666666,
+            "mean_margin_from_tie": 0.4166666666666667,
+            "paired_bootstrap_95ci_margin": [
+              0.25,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.3333333333333333,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.8125,
+            "mean_margin_from_tie": 0.3125,
+            "paired_bootstrap_95ci_margin": [
+              0.08333333333333333,
+              0.4791666666666667
+            ],
+            "exact_signflip_p_two_sided": 0.046875,
+            "topic_win_tie_loss": [
+              6,
+              1,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.8333333333333334,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.16666666666666666,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.859375,
+            "mean_margin_from_tie": 0.359375,
+            "paired_bootstrap_95ci_margin": [
+              0.1875,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0234375,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.875,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.375,
+              "fast_vision_language_pretraining": 0.625,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.890625,
+            "mean_margin_from_tie": 0.390625,
+            "paired_bootstrap_95ci_margin": [
+              0.203125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.25,
+              "fast_vision_language_pretraining": 0.875,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.84375,
+            "mean_margin_from_tie": 0.34375,
+            "paired_bootstrap_95ci_margin": [
+              0.125,
+              0.484375
+            ],
+            "exact_signflip_p_two_sided": 0.03125,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.875,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.125,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        }
+      },
+      "critical_synthesis": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.9375,
+          "mean_margin_from_tie": 0.4375,
+          "paired_bootstrap_95ci_margin": [
+            0.35416666666666663,
+            0.5
+          ],
+          "exact_signflip_p_two_sided": 0.0078125,
+          "topic_win_tie_loss": [
+            8,
+            0,
+            0
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 1.0,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 0.6666666666666666,
+            "fast_vision_language_pretraining": 0.8333333333333334,
+            "mature_deep_reinforcement_learning": 1.0,
+            "mature_neural_machine_translation": 1.0,
+            "method_continual_learning": 1.0,
+            "method_self_supervised_learning": 1.0
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9375,
+            "mean_margin_from_tie": 0.4375,
+            "paired_bootstrap_95ci_margin": [
+              0.3125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.1875,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.03125,
+            "topic_win_tie_loss": [
+              6,
+              2,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9583333333333334,
+            "mean_margin_from_tie": 0.4583333333333333,
+            "paired_bootstrap_95ci_margin": [
+              0.375,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.6666666666666666,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9166666666666666,
+            "mean_margin_from_tie": 0.41666666666666663,
+            "paired_bootstrap_95ci_margin": [
+              0.29166666666666663,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.6666666666666666,
+              "fast_vision_language_pretraining": 0.6666666666666666,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9375,
+            "mean_margin_from_tie": 0.4375,
+            "paired_bootstrap_95ci_margin": [
+              0.34375,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.96875,
+            "mean_margin_from_tie": 0.46875,
+            "paired_bootstrap_95ci_margin": [
+              0.40625,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.90625,
+            "mean_margin_from_tie": 0.40625,
+            "paired_bootstrap_95ci_margin": [
+              0.28125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        }
+      },
+      "global_coherence": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.8541666666666666,
+          "mean_margin_from_tie": 0.3541666666666667,
+          "paired_bootstrap_95ci_margin": [
+            0.20833333333333334,
+            0.5
+          ],
+          "exact_signflip_p_two_sided": 0.0078125,
+          "topic_win_tie_loss": [
+            8,
+            0,
+            0
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 0.5833333333333334,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 0.6666666666666666,
+            "fast_vision_language_pretraining": 0.5833333333333334,
+            "mature_deep_reinforcement_learning": 1.0,
+            "mature_neural_machine_translation": 1.0,
+            "method_continual_learning": 1.0,
+            "method_self_supervised_learning": 1.0
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9375,
+            "mean_margin_from_tie": 0.4375,
+            "paired_bootstrap_95ci_margin": [
+              0.3125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.84375,
+            "mean_margin_from_tie": 0.34375,
+            "paired_bootstrap_95ci_margin": [
+              0.1875,
+              0.46875
+            ],
+            "exact_signflip_p_two_sided": 0.03125,
+            "topic_win_tie_loss": [
+              6,
+              2,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.78125,
+            "mean_margin_from_tie": 0.28125,
+            "paired_bootstrap_95ci_margin": [
+              0.0,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.125,
+            "topic_win_tie_loss": [
+              6,
+              0,
+              2
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.25,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.8958333333333334,
+            "mean_margin_from_tie": 0.3958333333333333,
+            "paired_bootstrap_95ci_margin": [
+              0.29166666666666663,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.6666666666666666,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.6666666666666666,
+              "fast_vision_language_pretraining": 0.8333333333333334,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.8125,
+            "mean_margin_from_tie": 0.3125,
+            "paired_bootstrap_95ci_margin": [
+              0.12499999999999999,
+              0.4583333333333333
+            ],
+            "exact_signflip_p_two_sided": 0.046875,
+            "topic_win_tie_loss": [
+              6,
+              1,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.6666666666666666,
+              "fast_vision_language_pretraining": 0.3333333333333333,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.8125,
+            "mean_margin_from_tie": 0.3125,
+            "paired_bootstrap_95ci_margin": [
+              0.109375,
+              0.46875
+            ],
+            "exact_signflip_p_two_sided": 0.0390625,
+            "topic_win_tie_loss": [
+              6,
+              0,
+              2
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.375,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 0.375,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.859375,
+            "mean_margin_from_tie": 0.359375,
+            "paired_bootstrap_95ci_margin": [
+              0.21875,
+              0.46875
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 0.625,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.890625,
+            "mean_margin_from_tie": 0.390625,
+            "paired_bootstrap_95ci_margin": [
+              0.265625,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.875,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        }
+      },
+      "citation_plausibility": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.9270833333333334,
+          "mean_margin_from_tie": 0.4270833333333333,
+          "paired_bootstrap_95ci_margin": [
+            0.38541666666666663,
+            0.46875
+          ],
+          "exact_signflip_p_two_sided": 0.0078125,
+          "topic_win_tie_loss": [
+            8,
+            0,
+            0
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 0.9166666666666666,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 0.8333333333333334,
+            "fast_vision_language_pretraining": 0.8333333333333334,
+            "mature_deep_reinforcement_learning": 1.0,
+            "mature_neural_machine_translation": 0.9166666666666666,
+            "method_continual_learning": 1.0,
+            "method_self_supervised_learning": 0.9166666666666666
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.78125,
+            "mean_margin_from_tie": 0.28125,
+            "paired_bootstrap_95ci_margin": [
+              0.15625,
+              0.40625
+            ],
+            "exact_signflip_p_two_sided": 0.03125,
+            "topic_win_tie_loss": [
+              6,
+              2,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.75,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 0.75
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.8541666666666666,
+            "mean_margin_from_tie": 0.3541666666666667,
+            "paired_bootstrap_95ci_margin": [
+              0.2708333333333333,
+              0.4375
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.8333333333333334,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.6666666666666666,
+              "fast_vision_language_pretraining": 0.6666666666666666,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.8333333333333334,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 0.8333333333333334
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.890625,
+            "mean_margin_from_tie": 0.390625,
+            "paired_bootstrap_95ci_margin": [
+              0.328125,
+              0.453125
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.875,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.875,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 0.875
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.890625,
+            "mean_margin_from_tie": 0.390625,
+            "paired_bootstrap_95ci_margin": [
+              0.328125,
+              0.453125
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.875,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.875,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 0.875
+            }
+          }
+        }
+      }
+    },
+    "surveyforge": {
+      "overall_preference": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 1.0,
+          "mean_margin_from_tie": 0.5,
+          "paired_bootstrap_95ci_margin": [
+            0.5,
+            0.5
+          ],
+          "exact_signflip_p_two_sided": 0.0078125,
+          "topic_win_tie_loss": [
+            8,
+            0,
+            0
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 1.0,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 1.0,
+            "fast_vision_language_pretraining": 1.0,
+            "mature_deep_reinforcement_learning": 1.0,
+            "mature_neural_machine_translation": 1.0,
+            "method_continual_learning": 1.0,
+            "method_self_supervised_learning": 1.0
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        }
+      },
+      "organizational_quality": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.9375,
+          "mean_margin_from_tie": 0.4375,
+          "paired_bootstrap_95ci_margin": [
+            0.3854166666666667,
+            0.4791666666666667
+          ],
+          "exact_signflip_p_two_sided": 0.0078125,
+          "topic_win_tie_loss": [
+            8,
+            0,
+            0
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 0.9166666666666666,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 0.8333333333333334,
+            "fast_vision_language_pretraining": 0.8333333333333334,
+            "mature_deep_reinforcement_learning": 0.9166666666666666,
+            "mature_neural_machine_translation": 1.0,
+            "method_continual_learning": 1.0,
+            "method_self_supervised_learning": 1.0
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9375,
+            "mean_margin_from_tie": 0.4375,
+            "paired_bootstrap_95ci_margin": [
+              0.3125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.25,
+              0.46953124999998863
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9583333333333334,
+            "mean_margin_from_tie": 0.4583333333333333,
+            "paired_bootstrap_95ci_margin": [
+              0.375,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.6666666666666666,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9166666666666666,
+            "mean_margin_from_tie": 0.4166666666666667,
+            "paired_bootstrap_95ci_margin": [
+              0.3333333333333333,
+              0.4791666666666667
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.8333333333333334,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.6666666666666666,
+              "mature_deep_reinforcement_learning": 0.8333333333333334,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9375,
+            "mean_margin_from_tie": 0.4375,
+            "paired_bootstrap_95ci_margin": [
+              0.375,
+              0.484375
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.875,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 0.875,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.96875,
+            "mean_margin_from_tie": 0.46875,
+            "paired_bootstrap_95ci_margin": [
+              0.40625,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.90625,
+            "mean_margin_from_tie": 0.40625,
+            "paired_bootstrap_95ci_margin": [
+              0.328125,
+              0.46875
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.875,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 0.875,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        }
+      },
+      "critical_synthesis": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.875,
+          "mean_margin_from_tie": 0.375,
+          "paired_bootstrap_95ci_margin": [
+            0.29166666666666663,
+            0.4583333333333333
+          ],
+          "exact_signflip_p_two_sided": 0.0078125,
+          "topic_win_tie_loss": [
+            8,
+            0,
+            0
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 0.6666666666666666,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 0.8333333333333334,
+            "fast_vision_language_pretraining": 0.8333333333333334,
+            "mature_deep_reinforcement_learning": 0.75,
+            "mature_neural_machine_translation": 1.0,
+            "method_continual_learning": 0.9166666666666666,
+            "method_self_supervised_learning": 1.0
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.8125,
+            "mean_margin_from_tie": 0.3125,
+            "paired_bootstrap_95ci_margin": [
+              0.125,
+              0.4375
+            ],
+            "exact_signflip_p_two_sided": 0.0625,
+            "topic_win_tie_loss": [
+              5,
+              3,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.5,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 0.5,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.28125,
+              0.46875
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.75,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9375,
+            "mean_margin_from_tie": 0.4375,
+            "paired_bootstrap_95ci_margin": [
+              0.34375,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9166666666666666,
+            "mean_margin_from_tie": 0.41666666666666663,
+            "paired_bootstrap_95ci_margin": [
+              0.29166666666666663,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.6666666666666666,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 0.6666666666666666,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.8333333333333334,
+            "mean_margin_from_tie": 0.3333333333333333,
+            "paired_bootstrap_95ci_margin": [
+              0.22916666666666663,
+              0.4375
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.6666666666666666,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.6666666666666666,
+              "fast_vision_language_pretraining": 0.6666666666666666,
+              "mature_deep_reinforcement_learning": 0.8333333333333334,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.8333333333333334,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.90625,
+            "mean_margin_from_tie": 0.40625,
+            "paired_bootstrap_95ci_margin": [
+              0.328125,
+              0.46875
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 0.875,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.875,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.28125,
+              0.46875
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.625,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 0.875,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.84375,
+            "mean_margin_from_tie": 0.34375,
+            "paired_bootstrap_95ci_margin": [
+              0.234375,
+              0.4375
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.625,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.75,
+              "fast_vision_language_pretraining": 0.875,
+              "mature_deep_reinforcement_learning": 0.625,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.875,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        }
+      },
+      "global_coherence": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 1.0,
+          "mean_margin_from_tie": 0.5,
+          "paired_bootstrap_95ci_margin": [
+            0.5,
+            0.5
+          ],
+          "exact_signflip_p_two_sided": 0.0078125,
+          "topic_win_tie_loss": [
+            8,
+            0,
+            0
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 1.0,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 1.0,
+            "fast_vision_language_pretraining": 1.0,
+            "mature_deep_reinforcement_learning": 1.0,
+            "mature_neural_machine_translation": 1.0,
+            "method_continual_learning": 1.0,
+            "method_self_supervised_learning": 1.0
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        }
+      },
+      "citation_plausibility": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.9375,
+          "mean_margin_from_tie": 0.4375,
+          "paired_bootstrap_95ci_margin": [
+            0.3854166666666667,
+            0.4791666666666667
+          ],
+          "exact_signflip_p_two_sided": 0.0078125,
+          "topic_win_tie_loss": [
+            8,
+            0,
+            0
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 0.8333333333333334,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 1.0,
+            "fast_vision_language_pretraining": 0.8333333333333334,
+            "mature_deep_reinforcement_learning": 0.9166666666666666,
+            "mature_neural_machine_translation": 1.0,
+            "method_continual_learning": 0.9166666666666666,
+            "method_self_supervised_learning": 1.0
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.25,
+              0.46875
+            ],
+            "exact_signflip_p_two_sided": 0.015625,
+            "topic_win_tie_loss": [
+              7,
+              1,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.75,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9375,
+            "mean_margin_from_tie": 0.4375,
+            "paired_bootstrap_95ci_margin": [
+              0.34375,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 1.0,
+            "mean_margin_from_tie": 0.5,
+            "paired_bootstrap_95ci_margin": [
+              0.5,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.2708333333333333,
+              0.45833333333333337
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.6666666666666666,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.6666666666666666,
+              "mature_deep_reinforcement_learning": 0.8333333333333334,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.8333333333333334,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.90625,
+            "mean_margin_from_tie": 0.40625,
+            "paired_bootstrap_95ci_margin": [
+              0.328125,
+              0.46875
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 0.875,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.875,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.96875,
+            "mean_margin_from_tie": 0.46875,
+            "paired_bootstrap_95ci_margin": [
+              0.421875,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.875,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 0.875,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.9375,
+            "mean_margin_from_tie": 0.4375,
+            "paired_bootstrap_95ci_margin": [
+              0.375,
+              0.484375
+            ],
+            "exact_signflip_p_two_sided": 0.0078125,
+            "topic_win_tie_loss": [
+              8,
+              0,
+              0
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.875,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 1.0,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.875,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        }
+      }
+    },
+    "surveygen": {
+      "overall_preference": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.5729166666666666,
+          "mean_margin_from_tie": 0.07291666666666666,
+          "paired_bootstrap_95ci_margin": [
+            -0.16666666666666669,
+            0.2916666666666667
+          ],
+          "exact_signflip_p_two_sided": 0.6328125,
+          "topic_win_tie_loss": [
+            5,
+            0,
+            3
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 0.8333333333333334,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 0.0,
+            "fast_vision_language_pretraining": 0.3333333333333333,
+            "mature_deep_reinforcement_learning": 0.8333333333333334,
+            "mature_neural_machine_translation": 0.75,
+            "method_continual_learning": 0.16666666666666666,
+            "method_self_supervised_learning": 0.6666666666666666
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.65625,
+            "mean_margin_from_tie": 0.15625,
+            "paired_bootstrap_95ci_margin": [
+              -0.15625,
+              0.40625
+            ],
+            "exact_signflip_p_two_sided": 0.453125,
+            "topic_win_tie_loss": [
+              5,
+              1,
+              2
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.75,
+              "method_continual_learning": 0.5,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.4375,
+            "mean_margin_from_tie": -0.0625,
+            "paired_bootstrap_95ci_margin": [
+              -0.3125,
+              0.1875
+            ],
+            "exact_signflip_p_two_sided": 1.0,
+            "topic_win_tie_loss": [
+              2,
+              3,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 0.5,
+              "mature_neural_machine_translation": 0.5,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 0.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.625,
+            "mean_margin_from_tie": 0.125,
+            "paired_bootstrap_95ci_margin": [
+              -0.1875,
+              0.375
+            ],
+            "exact_signflip_p_two_sided": 0.6875,
+            "topic_win_tie_loss": [
+              4,
+              2,
+              2
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.7083333333333334,
+            "mean_margin_from_tie": 0.20833333333333331,
+            "paired_bootstrap_95ci_margin": [
+              -0.041666666666666685,
+              0.4166666666666667
+            ],
+            "exact_signflip_p_two_sided": 0.21875,
+            "topic_win_tie_loss": [
+              6,
+              0,
+              2
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.6666666666666666,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.3333333333333333,
+              "method_self_supervised_learning": 0.6666666666666666
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.4375,
+            "mean_margin_from_tie": -0.06250000000000001,
+            "paired_bootstrap_95ci_margin": [
+              -0.3125,
+              0.1875
+            ],
+            "exact_signflip_p_two_sided": 0.71875,
+            "topic_win_tie_loss": [
+              4,
+              1,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.6666666666666666,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.0,
+              "mature_deep_reinforcement_learning": 0.6666666666666666,
+              "mature_neural_machine_translation": 0.5,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 0.6666666666666666
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.53125,
+            "mean_margin_from_tie": 0.03125,
+            "paired_bootstrap_95ci_margin": [
+              -0.21875,
+              0.25
+            ],
+            "exact_signflip_p_two_sided": 1.0,
+            "topic_win_tie_loss": [
+              4,
+              2,
+              2
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 0.75,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 0.5
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.640625,
+            "mean_margin_from_tie": 0.140625,
+            "paired_bootstrap_95ci_margin": [
+              -0.140625,
+              0.390625
+            ],
+            "exact_signflip_p_two_sided": 0.4140625,
+            "topic_win_tie_loss": [
+              5,
+              0,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.25,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.875,
+              "method_continual_learning": 0.25,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.546875,
+            "mean_margin_from_tie": 0.046875,
+            "paired_bootstrap_95ci_margin": [
+              -0.1875,
+              0.28125
+            ],
+            "exact_signflip_p_two_sided": 0.8125,
+            "topic_win_tie_loss": [
+              4,
+              1,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.25,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 0.625,
+              "method_continual_learning": 0.25,
+              "method_self_supervised_learning": 0.5
+            }
+          }
+        }
+      },
+      "organizational_quality": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.5104166666666666,
+          "mean_margin_from_tie": 0.010416666666666664,
+          "paired_bootstrap_95ci_margin": [
+            -0.21901041666666646,
+            0.22916666666666666
+          ],
+          "exact_signflip_p_two_sided": 1.0,
+          "topic_win_tie_loss": [
+            5,
+            0,
+            3
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 0.6666666666666666,
+            "cross_ml_drug_discovery": 0.9166666666666666,
+            "fast_text_to_image_diffusion": 0.0,
+            "fast_vision_language_pretraining": 0.25,
+            "mature_deep_reinforcement_learning": 0.8333333333333334,
+            "mature_neural_machine_translation": 0.75,
+            "method_continual_learning": 0.08333333333333333,
+            "method_self_supervised_learning": 0.5833333333333334
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.53125,
+            "mean_margin_from_tie": 0.03125,
+            "paired_bootstrap_95ci_margin": [
+              -0.28125,
+              0.34375
+            ],
+            "exact_signflip_p_two_sided": 1.0,
+            "topic_win_tie_loss": [
+              4,
+              1,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.5,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.4375,
+            "mean_margin_from_tie": -0.0625,
+            "paired_bootstrap_95ci_margin": [
+              -0.3125,
+              0.1875
+            ],
+            "exact_signflip_p_two_sided": 0.8125,
+            "topic_win_tie_loss": [
+              3,
+              1,
+              4
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.25,
+              "mature_deep_reinforcement_learning": 0.5,
+              "mature_neural_machine_translation": 0.75,
+              "method_continual_learning": 0.25,
+              "method_self_supervised_learning": 0.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.5625,
+            "mean_margin_from_tie": 0.0625,
+            "paired_bootstrap_95ci_margin": [
+              -0.1875,
+              0.3125
+            ],
+            "exact_signflip_p_two_sided": 0.8125,
+            "topic_win_tie_loss": [
+              4,
+              2,
+              2
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 0.75,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 0.75
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.6458333333333334,
+            "mean_margin_from_tie": 0.14583333333333331,
+            "paired_bootstrap_95ci_margin": [
+              -0.125,
+              0.375
+            ],
+            "exact_signflip_p_two_sided": 0.375,
+            "topic_win_tie_loss": [
+              5,
+              1,
+              2
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.8333333333333334,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.16666666666666666,
+              "method_self_supervised_learning": 0.6666666666666666
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.375,
+            "mean_margin_from_tie": -0.125,
+            "paired_bootstrap_95ci_margin": [
+              -0.3333333333333333,
+              0.08333333333333334
+            ],
+            "exact_signflip_p_two_sided": 0.4375,
+            "topic_win_tie_loss": [
+              2,
+              3,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 0.8333333333333334,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.0,
+              "mature_deep_reinforcement_learning": 0.6666666666666666,
+              "mature_neural_machine_translation": 0.5,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 0.5
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.5,
+            "mean_margin_from_tie": 0.0,
+            "paired_bootstrap_95ci_margin": [
+              -0.21875,
+              0.21875
+            ],
+            "exact_signflip_p_two_sided": 1.0,
+            "topic_win_tie_loss": [
+              4,
+              0,
+              4
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.625,
+              "cross_ml_drug_discovery": 0.875,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.375,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 0.875,
+              "method_continual_learning": 0.125,
+              "method_self_supervised_learning": 0.375
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.546875,
+            "mean_margin_from_tie": 0.046875,
+            "paired_bootstrap_95ci_margin": [
+              -0.21875,
+              0.296875
+            ],
+            "exact_signflip_p_two_sided": 0.828125,
+            "topic_win_tie_loss": [
+              5,
+              0,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.625,
+              "cross_ml_drug_discovery": 0.875,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.25,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.75,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 0.875
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.484375,
+            "mean_margin_from_tie": -0.015625,
+            "paired_bootstrap_95ci_margin": [
+              -0.25,
+              0.21875
+            ],
+            "exact_signflip_p_two_sided": 1.0,
+            "topic_win_tie_loss": [
+              4,
+              1,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.125,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 0.625,
+              "method_continual_learning": 0.125,
+              "method_self_supervised_learning": 0.5
+            }
+          }
+        }
+      },
+      "critical_synthesis": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.78125,
+          "mean_margin_from_tie": 0.28125,
+          "paired_bootstrap_95ci_margin": [
+            0.04166666666666667,
+            0.4375
+          ],
+          "exact_signflip_p_two_sided": 0.0703125,
+          "topic_win_tie_loss": [
+            7,
+            0,
+            1
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 1.0,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 0.0,
+            "fast_vision_language_pretraining": 0.8333333333333334,
+            "mature_deep_reinforcement_learning": 0.9166666666666666,
+            "mature_neural_machine_translation": 0.9166666666666666,
+            "method_continual_learning": 0.8333333333333334,
+            "method_self_supervised_learning": 0.75
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0703125,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.59375,
+            "mean_margin_from_tie": 0.09375,
+            "paired_bootstrap_95ci_margin": [
+              -0.125,
+              0.3125
+            ],
+            "exact_signflip_p_two_sided": 0.625,
+            "topic_win_tie_loss": [
+              4,
+              2,
+              2
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 0.75,
+              "method_continual_learning": 0.5,
+              "method_self_supervised_learning": 0.25
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0703125,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.8333333333333334,
+            "mean_margin_from_tie": 0.33333333333333337,
+            "paired_bootstrap_95ci_margin": [
+              0.08333333333333334,
+              0.4791666666666667
+            ],
+            "exact_signflip_p_two_sided": 0.0703125,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.8333333333333334,
+              "method_self_supervised_learning": 0.8333333333333334
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.7291666666666666,
+            "mean_margin_from_tie": 0.22916666666666669,
+            "paired_bootstrap_95ci_margin": [
+              0.0,
+              0.39583333333333337
+            ],
+            "exact_signflip_p_two_sided": 0.125,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.6666666666666666,
+              "mature_deep_reinforcement_learning": 0.8333333333333334,
+              "mature_neural_machine_translation": 0.8333333333333334,
+              "method_continual_learning": 0.8333333333333334,
+              "method_self_supervised_learning": 0.6666666666666666
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.734375,
+            "mean_margin_from_tie": 0.234375,
+            "paired_bootstrap_95ci_margin": [
+              0.0,
+              0.40625
+            ],
+            "exact_signflip_p_two_sided": 0.109375,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 0.875,
+              "mature_neural_machine_translation": 0.875,
+              "method_continual_learning": 0.75,
+              "method_self_supervised_learning": 0.625
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.875,
+            "mean_margin_from_tie": 0.375,
+            "paired_bootstrap_95ci_margin": [
+              0.125,
+              0.5
+            ],
+            "exact_signflip_p_two_sided": 0.0703125,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 1.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 1.0,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.734375,
+            "mean_margin_from_tie": 0.234375,
+            "paired_bootstrap_95ci_margin": [
+              0.0,
+              0.40625
+            ],
+            "exact_signflip_p_two_sided": 0.109375,
+            "topic_win_tie_loss": [
+              7,
+              0,
+              1
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.75,
+              "mature_deep_reinforcement_learning": 0.875,
+              "mature_neural_machine_translation": 0.875,
+              "method_continual_learning": 0.75,
+              "method_self_supervised_learning": 0.625
+            }
+          }
+        }
+      },
+      "global_coherence": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.5416666666666666,
+          "mean_margin_from_tie": 0.04166666666666667,
+          "paired_bootstrap_95ci_margin": [
+            -0.19791666666666666,
+            0.2604166666666667
+          ],
+          "exact_signflip_p_two_sided": 0.8125,
+          "topic_win_tie_loss": [
+            5,
+            0,
+            3
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 0.5833333333333334,
+            "cross_ml_drug_discovery": 1.0,
+            "fast_text_to_image_diffusion": 0.0,
+            "fast_vision_language_pretraining": 0.16666666666666666,
+            "mature_deep_reinforcement_learning": 0.8333333333333334,
+            "mature_neural_machine_translation": 0.75,
+            "method_continual_learning": 0.25,
+            "method_self_supervised_learning": 0.75
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.65625,
+            "mean_margin_from_tie": 0.15625,
+            "paired_bootstrap_95ci_margin": [
+              -0.1875,
+              0.40625
+            ],
+            "exact_signflip_p_two_sided": 0.453125,
+            "topic_win_tie_loss": [
+              5,
+              0,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.25,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.46875,
+            "mean_margin_from_tie": -0.03125,
+            "paired_bootstrap_95ci_margin": [
+              -0.21875,
+              0.15625
+            ],
+            "exact_signflip_p_two_sided": 1.0,
+            "topic_win_tie_loss": [
+              2,
+              3,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.25,
+              "mature_deep_reinforcement_learning": 0.5,
+              "mature_neural_machine_translation": 0.5,
+              "method_continual_learning": 0.5,
+              "method_self_supervised_learning": 0.25
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.5,
+            "mean_margin_from_tie": 0.0,
+            "paired_bootstrap_95ci_margin": [
+              -0.3125,
+              0.3125
+            ],
+            "exact_signflip_p_two_sided": 1.0,
+            "topic_win_tie_loss": [
+              4,
+              0,
+              4
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.25,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.75,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 1.0
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.6458333333333334,
+            "mean_margin_from_tie": 0.14583333333333331,
+            "paired_bootstrap_95ci_margin": [
+              -0.125,
+              0.375
+            ],
+            "exact_signflip_p_two_sided": 0.375,
+            "topic_win_tie_loss": [
+              5,
+              0,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.6666666666666666,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.3333333333333333,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 1.0,
+              "method_continual_learning": 0.3333333333333333,
+              "method_self_supervised_learning": 0.8333333333333334
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.4375,
+            "mean_margin_from_tie": -0.06250000000000001,
+            "paired_bootstrap_95ci_margin": [
+              -0.2916666666666667,
+              0.16666666666666666
+            ],
+            "exact_signflip_p_two_sided": 0.71875,
+            "topic_win_tie_loss": [
+              3,
+              2,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.0,
+              "mature_deep_reinforcement_learning": 0.6666666666666666,
+              "mature_neural_machine_translation": 0.5,
+              "method_continual_learning": 0.16666666666666666,
+              "method_self_supervised_learning": 0.6666666666666666
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.484375,
+            "mean_margin_from_tie": -0.015625,
+            "paired_bootstrap_95ci_margin": [
+              -0.21875,
+              0.18789062499999432
+            ],
+            "exact_signflip_p_two_sided": 1.0,
+            "topic_win_tie_loss": [
+              4,
+              0,
+              4
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.375,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.25,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 0.625,
+              "method_continual_learning": 0.25,
+              "method_self_supervised_learning": 0.625
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.578125,
+            "mean_margin_from_tie": 0.078125,
+            "paired_bootstrap_95ci_margin": [
+              -0.203125,
+              0.359375
+            ],
+            "exact_signflip_p_two_sided": 0.65625,
+            "topic_win_tie_loss": [
+              4,
+              1,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.125,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.875,
+              "method_continual_learning": 0.125,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.5625,
+            "mean_margin_from_tie": 0.0625,
+            "paired_bootstrap_95ci_margin": [
+              -0.171875,
+              0.28125
+            ],
+            "exact_signflip_p_two_sided": 0.7109375,
+            "topic_win_tie_loss": [
+              5,
+              0,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.875,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.125,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 0.75,
+              "method_continual_learning": 0.375,
+              "method_self_supervised_learning": 0.625
+            }
+          }
+        }
+      },
+      "citation_plausibility": {
+        "pooled": {
+          "n_topics": 8,
+          "mean_preference_rate": 0.5104166666666666,
+          "mean_margin_from_tie": 0.010416666666666657,
+          "paired_bootstrap_95ci_margin": [
+            -0.17708333333333337,
+            0.19791666666666669
+          ],
+          "exact_signflip_p_two_sided": 1.0,
+          "topic_win_tie_loss": [
+            4,
+            1,
+            3
+          ],
+          "topic_scores": {
+            "cross_medical_image_analysis": 0.6666666666666666,
+            "cross_ml_drug_discovery": 0.9166666666666666,
+            "fast_text_to_image_diffusion": 0.16666666666666666,
+            "fast_vision_language_pretraining": 0.25,
+            "mature_deep_reinforcement_learning": 0.8333333333333334,
+            "mature_neural_machine_translation": 0.5833333333333334,
+            "method_continual_learning": 0.16666666666666666,
+            "method_self_supervised_learning": 0.5
+          }
+        },
+        "by_judge": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.59375,
+            "mean_margin_from_tie": 0.09375,
+            "paired_bootstrap_95ci_margin": [
+              -0.21875,
+              0.375
+            ],
+            "exact_signflip_p_two_sided": 0.6875,
+            "topic_win_tie_loss": [
+              4,
+              1,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 1.0,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.0,
+              "fast_vision_language_pretraining": 0.0,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.5,
+              "method_continual_learning": 0.25,
+              "method_self_supervised_learning": 1.0
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.375,
+            "mean_margin_from_tie": -0.125,
+            "paired_bootstrap_95ci_margin": [
+              -0.28125,
+              0.03125
+            ],
+            "exact_signflip_p_two_sided": 0.3125,
+            "topic_win_tie_loss": [
+              1,
+              3,
+              4
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 0.75,
+              "fast_text_to_image_diffusion": 0.25,
+              "fast_vision_language_pretraining": 0.25,
+              "mature_deep_reinforcement_learning": 0.5,
+              "mature_neural_machine_translation": 0.5,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 0.25
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.5625,
+            "mean_margin_from_tie": 0.0625,
+            "paired_bootstrap_95ci_margin": [
+              -0.125,
+              0.28125
+            ],
+            "exact_signflip_p_two_sided": 0.78125,
+            "topic_win_tie_loss": [
+              3,
+              2,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.25,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.75,
+              "method_continual_learning": 0.25,
+              "method_self_supervised_learning": 0.25
+            }
+          }
+        },
+        "by_repeat": {
+          "1": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.6458333333333334,
+            "mean_margin_from_tie": 0.14583333333333334,
+            "paired_bootstrap_95ci_margin": [
+              -0.041666666666666685,
+              0.3125
+            ],
+            "exact_signflip_p_two_sided": 0.265625,
+            "topic_win_tie_loss": [
+              5,
+              1,
+              2
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.8333333333333334,
+              "cross_ml_drug_discovery": 0.8333333333333334,
+              "fast_text_to_image_diffusion": 0.16666666666666666,
+              "fast_vision_language_pretraining": 0.5,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.8333333333333334,
+              "method_continual_learning": 0.3333333333333333,
+              "method_self_supervised_learning": 0.6666666666666666
+            }
+          },
+          "2": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.375,
+            "mean_margin_from_tie": -0.125,
+            "paired_bootstrap_95ci_margin": [
+              -0.33333333333333337,
+              0.10416666666666666
+            ],
+            "exact_signflip_p_two_sided": 0.421875,
+            "topic_win_tie_loss": [
+              2,
+              1,
+              5
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.16666666666666666,
+              "fast_vision_language_pretraining": 0.0,
+              "mature_deep_reinforcement_learning": 0.6666666666666666,
+              "mature_neural_machine_translation": 0.3333333333333333,
+              "method_continual_learning": 0.0,
+              "method_self_supervised_learning": 0.3333333333333333
+            }
+          }
+        },
+        "leave_one_judge_out": {
+          "gpt55": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.46875,
+            "mean_margin_from_tie": -0.03125,
+            "paired_bootstrap_95ci_margin": [
+              -0.1875,
+              0.140625
+            ],
+            "exact_signflip_p_two_sided": 0.875,
+            "topic_win_tie_loss": [
+              3,
+              1,
+              4
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.5,
+              "cross_ml_drug_discovery": 0.875,
+              "fast_text_to_image_diffusion": 0.25,
+              "fast_vision_language_pretraining": 0.375,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 0.625,
+              "method_continual_learning": 0.125,
+              "method_self_supervised_learning": 0.25
+            }
+          },
+          "gemini31pro": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.578125,
+            "mean_margin_from_tie": 0.078125,
+            "paired_bootstrap_95ci_margin": [
+              -0.140625,
+              0.296875
+            ],
+            "exact_signflip_p_two_sided": 0.609375,
+            "topic_win_tie_loss": [
+              5,
+              0,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 1.0,
+              "fast_text_to_image_diffusion": 0.125,
+              "fast_vision_language_pretraining": 0.25,
+              "mature_deep_reinforcement_learning": 1.0,
+              "mature_neural_machine_translation": 0.625,
+              "method_continual_learning": 0.25,
+              "method_self_supervised_learning": 0.625
+            }
+          },
+          "sonnet5": {
+            "n_topics": 8,
+            "mean_preference_rate": 0.484375,
+            "mean_margin_from_tie": -0.015625,
+            "paired_bootstrap_95ci_margin": [
+              -0.21875,
+              0.1875
+            ],
+            "exact_signflip_p_two_sided": 1.0,
+            "topic_win_tie_loss": [
+              4,
+              1,
+              3
+            ],
+            "topic_scores": {
+              "cross_medical_image_analysis": 0.75,
+              "cross_ml_drug_discovery": 0.875,
+              "fast_text_to_image_diffusion": 0.125,
+              "fast_vision_language_pretraining": 0.125,
+              "mature_deep_reinforcement_learning": 0.75,
+              "mature_neural_machine_translation": 0.5,
+              "method_continual_learning": 0.125,
+              "method_self_supervised_learning": 0.625
+            }
+          }
+        }
+      }
+    }
+  }
+}

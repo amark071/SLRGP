@@ -1,0 +1,1003 @@
+{
+  "root": "results/s4/s4a_matched_main8_20260713_1548",
+  "n_scores": 120,
+  "n_valid_scores": 120,
+  "dimensions": [
+    "organizational_quality",
+    "critical_synthesis",
+    "global_coherence",
+    "citation_plausibility"
+  ],
+  "contrasts": [
+    {
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "overall",
+      "n": 8,
+      "mean_a": 4.270833333333333,
+      "mean_b": 3.8541666666666665,
+      "mean_diff": 0.4166666666666668,
+      "ci95": [
+        0.15625000000000017,
+        0.7291666666666665
+      ],
+      "p_signflip": 0.015625,
+      "sign_biserial": 0.75,
+      "wins": 7,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.9166666666666665,
+          "b": 4.0,
+          "diff": -0.08333333333333348
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.333333333333334,
+          "b": 3.9166666666666665,
+          "diff": 0.4166666666666674
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.333333333333333,
+          "b": 3.0833333333333335,
+          "diff": 1.2499999999999996
+        },
+        {
+          "topic": "Retrieval-Augmented Generation for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.0,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Neural Architecture Search",
+          "a": 4.333333333333333,
+          "b": 4.166666666666666,
+          "diff": 0.16666666666666696
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.333333333333333,
+          "b": 4.166666666666666,
+          "diff": 0.16666666666666696
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.333333333333333,
+          "b": 4.166666666666666,
+          "diff": 0.16666666666666696
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.25,
+          "b": 3.333333333333333,
+          "diff": 0.916666666666667
+        }
+      ],
+      "q_bh_by_endpoint": 0.046875
+    },
+    {
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "organizational_quality",
+      "n": 8,
+      "mean_a": 4.375,
+      "mean_b": 3.4583333333333335,
+      "mean_diff": 0.9166666666666664,
+      "ci95": [
+        0.583333333333333,
+        1.2499999999999998
+      ],
+      "p_signflip": 0.0078125,
+      "sign_biserial": 1.0,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 3.3333333333333335,
+          "diff": 0.9999999999999996
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.666666666666667,
+          "b": 3.3333333333333335,
+          "diff": 1.3333333333333335
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.333333333333333,
+          "b": 3.0,
+          "diff": 1.333333333333333
+        },
+        {
+          "topic": "Retrieval-Augmented Generation for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 3.3333333333333335,
+          "diff": 0.9999999999999996
+        },
+        {
+          "topic": "Neural Architecture Search",
+          "a": 4.333333333333333,
+          "b": 4.0,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.333333333333333,
+          "b": 4.0,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.333333333333333,
+          "b": 4.0,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 2.6666666666666665,
+          "diff": 1.6666666666666665
+        }
+      ],
+      "q_bh_by_endpoint": 0.0234375
+    },
+    {
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "critical_synthesis",
+      "n": 8,
+      "mean_a": 3.9166666666666665,
+      "mean_b": 3.958333333333333,
+      "mean_diff": -0.041666666666666574,
+      "ci95": [
+        -0.2916666666666666,
+        0.20833333333333343
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -0.2,
+      "wins": 2,
+      "ties": 3,
+      "losses": 3,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.3333333333333335,
+          "b": 4.0,
+          "diff": -0.6666666666666665
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.0,
+          "b": 4.333333333333333,
+          "diff": -0.33333333333333304
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 3.3333333333333335,
+          "diff": 0.6666666666666665
+        },
+        {
+          "topic": "Retrieval-Augmented Generation for Large Language Models",
+          "a": 4.0,
+          "b": 4.333333333333333,
+          "diff": -0.33333333333333304
+        },
+        {
+          "topic": "Neural Architecture Search",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.0,
+          "b": 3.6666666666666665,
+          "diff": 0.3333333333333335
+        }
+      ],
+      "q_bh_by_endpoint": 1.0
+    },
+    {
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "global_coherence",
+      "n": 8,
+      "mean_a": 4.583333333333334,
+      "mean_b": 3.875,
+      "mean_diff": 0.7083333333333336,
+      "ci95": [
+        0.3333333333333336,
+        1.25
+      ],
+      "p_signflip": 0.015625,
+      "sign_biserial": 1.0,
+      "wins": 7,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.666666666666667,
+          "b": 4.0,
+          "diff": 0.666666666666667
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.666666666666667,
+          "b": 2.3333333333333335,
+          "diff": 2.3333333333333335
+        },
+        {
+          "topic": "Retrieval-Augmented Generation for Large Language Models",
+          "a": 4.666666666666667,
+          "b": 4.0,
+          "diff": 0.666666666666667
+        },
+        {
+          "topic": "Neural Architecture Search",
+          "a": 4.666666666666667,
+          "b": 4.333333333333333,
+          "diff": 0.3333333333333339
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.666666666666667,
+          "b": 4.333333333333333,
+          "diff": 0.3333333333333339
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.666666666666667,
+          "b": 4.333333333333333,
+          "diff": 0.3333333333333339
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 3.3333333333333335,
+          "diff": 0.9999999999999996
+        }
+      ],
+      "q_bh_by_endpoint": 0.046875
+    },
+    {
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "citation_plausibility",
+      "n": 8,
+      "mean_a": 4.208333333333333,
+      "mean_b": 4.125,
+      "mean_diff": 0.08333333333333331,
+      "ci95": [
+        -0.16666666666666663,
+        0.33333333333333326
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.3333333333333333,
+      "wins": 2,
+      "ties": 5,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.6666666666666665,
+          "b": 4.333333333333333,
+          "diff": -0.6666666666666665
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.333333333333333,
+          "b": 3.6666666666666665,
+          "diff": 0.6666666666666665
+        },
+        {
+          "topic": "Retrieval-Augmented Generation for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        },
+        {
+          "topic": "Neural Architecture Search",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 3.6666666666666665,
+          "diff": 0.6666666666666665
+        }
+      ],
+      "q_bh_by_endpoint": 1.0
+    },
+    {
+      "contrast": "Recursion vs flat",
+      "arm_a": "intact",
+      "arm_b": "flat_no_reentry",
+      "endpoint": "overall",
+      "n": 8,
+      "mean_a": 4.270833333333333,
+      "mean_b": 4.291666666666667,
+      "mean_diff": -0.020833333333333537,
+      "ci95": [
+        -0.1354166666666669,
+        0.08333333333333315
+      ],
+      "p_signflip": 0.875,
+      "sign_biserial": 0.14285714285714285,
+      "wins": 4,
+      "ties": 1,
+      "losses": 3,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.9166666666666665,
+          "b": 4.25,
+          "diff": -0.3333333333333335
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.333333333333334,
+          "b": 4.166666666666666,
+          "diff": 0.16666666666666785
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.25,
+          "diff": 0.08333333333333304
+        },
+        {
+          "topic": "Retrieval-Augmented Generation for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.333333333333334,
+          "diff": -8.881784197001252e-16
+        },
+        {
+          "topic": "Neural Architecture Search",
+          "a": 4.333333333333333,
+          "b": 4.25,
+          "diff": 0.08333333333333304
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.333333333333333,
+          "b": 4.25,
+          "diff": 0.08333333333333304
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.333333333333333,
+          "b": 4.416666666666667,
+          "diff": -0.08333333333333393
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.25,
+          "b": 4.416666666666667,
+          "diff": -0.16666666666666696
+        }
+      ],
+      "q_bh_by_endpoint": 0.875
+    },
+    {
+      "contrast": "Recursion vs flat",
+      "arm_a": "intact",
+      "arm_b": "flat_no_reentry",
+      "endpoint": "organizational_quality",
+      "n": 8,
+      "mean_a": 4.375,
+      "mean_b": 4.5,
+      "mean_diff": -0.12500000000000022,
+      "ci95": [
+        -0.25000000000000044,
+        0.04166666666666674
+      ],
+      "p_signflip": 0.375,
+      "sign_biserial": -0.6,
+      "wins": 1,
+      "ties": 3,
+      "losses": 4,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.666666666666667,
+          "diff": -0.3333333333333339
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.666666666666667,
+          "b": 4.333333333333333,
+          "diff": 0.3333333333333339
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        },
+        {
+          "topic": "Retrieval-Augmented Generation for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.666666666666667,
+          "diff": -0.3333333333333339
+        },
+        {
+          "topic": "Neural Architecture Search",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.333333333333333,
+          "b": 4.666666666666667,
+          "diff": -0.3333333333333339
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.666666666666667,
+          "diff": -0.3333333333333339
+        }
+      ],
+      "q_bh_by_endpoint": 0.375
+    },
+    {
+      "contrast": "Recursion vs flat",
+      "arm_a": "intact",
+      "arm_b": "flat_no_reentry",
+      "endpoint": "critical_synthesis",
+      "n": 8,
+      "mean_a": 3.9166666666666665,
+      "mean_b": 3.9583333333333335,
+      "mean_diff": -0.04166666666666663,
+      "ci95": [
+        -0.24999999999999994,
+        0.12500000000000006
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 1,
+      "ties": 6,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.3333333333333335,
+          "b": 4.0,
+          "diff": -0.6666666666666665
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.0,
+          "b": 3.6666666666666665,
+          "diff": 0.3333333333333335
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Retrieval-Augmented Generation for Large Language Models",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Neural Architecture Search",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        }
+      ],
+      "q_bh_by_endpoint": 1.0
+    },
+    {
+      "contrast": "Recursion vs flat",
+      "arm_a": "intact",
+      "arm_b": "flat_no_reentry",
+      "endpoint": "global_coherence",
+      "n": 8,
+      "mean_a": 4.583333333333334,
+      "mean_b": 4.625,
+      "mean_diff": -0.04166666666666674,
+      "ci95": [
+        -0.16666666666666696,
+        0.08333333333333348
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -0.3333333333333333,
+      "wins": 1,
+      "ties": 5,
+      "losses": 2,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.666666666666667,
+          "diff": -0.3333333333333339
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.666666666666667,
+          "b": 4.333333333333333,
+          "diff": 0.3333333333333339
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.666666666666667,
+          "b": 4.666666666666667,
+          "diff": 0.0
+        },
+        {
+          "topic": "Retrieval-Augmented Generation for Large Language Models",
+          "a": 4.666666666666667,
+          "b": 4.666666666666667,
+          "diff": 0.0
+        },
+        {
+          "topic": "Neural Architecture Search",
+          "a": 4.666666666666667,
+          "b": 4.666666666666667,
+          "diff": 0.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.666666666666667,
+          "b": 4.666666666666667,
+          "diff": 0.0
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.666666666666667,
+          "b": 4.666666666666667,
+          "diff": 0.0
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.666666666666667,
+          "diff": -0.3333333333333339
+        }
+      ],
+      "q_bh_by_endpoint": 1.0
+    },
+    {
+      "contrast": "Recursion vs flat",
+      "arm_a": "intact",
+      "arm_b": "flat_no_reentry",
+      "endpoint": "citation_plausibility",
+      "n": 8,
+      "mean_a": 4.208333333333333,
+      "mean_b": 4.083333333333333,
+      "mean_diff": 0.12499999999999989,
+      "ci95": [
+        -0.04166666666666663,
+        0.2916666666666664
+      ],
+      "p_signflip": 0.375,
+      "sign_biserial": 0.6,
+      "wins": 4,
+      "ties": 3,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.6666666666666665,
+          "b": 3.6666666666666665,
+          "diff": 0.0
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.0,
+          "b": 4.333333333333333,
+          "diff": -0.33333333333333304
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.0,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Retrieval-Augmented Generation for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.0,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Neural Architecture Search",
+          "a": 4.333333333333333,
+          "b": 4.0,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.333333333333333,
+          "b": 4.0,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        }
+      ],
+      "q_bh_by_endpoint": 1.0
+    },
+    {
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "overall",
+      "n": 6,
+      "mean_a": 4.152777777777778,
+      "mean_b": 3.7777777777777772,
+      "mean_diff": 0.3750000000000002,
+      "ci95": [
+        0.19444444444444464,
+        0.5694444444444446
+      ],
+      "p_signflip": 0.03125,
+      "sign_biserial": 1.0,
+      "wins": 6,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.6666666666666665,
+          "b": 3.583333333333333,
+          "diff": 0.08333333333333348
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.25,
+          "b": 3.5,
+          "diff": 0.75
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.9166666666666665,
+          "b": 3.6666666666666665,
+          "diff": 0.25
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.416666666666667,
+          "b": 3.833333333333333,
+          "diff": 0.5833333333333339
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.416666666666667,
+          "b": 4.25,
+          "diff": 0.16666666666666696
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.25,
+          "b": 3.833333333333333,
+          "diff": 0.41666666666666696
+        }
+      ],
+      "q_bh_by_endpoint": 0.046875
+    },
+    {
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "organizational_quality",
+      "n": 6,
+      "mean_a": 4.333333333333333,
+      "mean_b": 3.222222222222222,
+      "mean_diff": 1.1111111111111112,
+      "ci95": [
+        0.8888888888888892,
+        1.2777777777777777
+      ],
+      "p_signflip": 0.03125,
+      "sign_biserial": 1.0,
+      "wins": 6,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 3.0,
+          "diff": 1.333333333333333
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.333333333333333,
+          "b": 3.0,
+          "diff": 1.333333333333333
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 3.0,
+          "diff": 1.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.666666666666667,
+          "b": 3.6666666666666665,
+          "diff": 1.0000000000000004
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.666666666666667,
+          "b": 4.0,
+          "diff": 0.666666666666667
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.0,
+          "b": 2.6666666666666665,
+          "diff": 1.3333333333333335
+        }
+      ],
+      "q_bh_by_endpoint": 0.046875
+    },
+    {
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "critical_synthesis",
+      "n": 6,
+      "mean_a": 3.888888888888889,
+      "mean_b": 3.888888888888889,
+      "mean_diff": 7.401486830834377e-17,
+      "ci95": [
+        -0.22222222222222202,
+        0.22222222222222218
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 2,
+      "ties": 2,
+      "losses": 2,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.6666666666666665,
+          "b": 3.6666666666666665,
+          "diff": 0.0
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.0,
+          "b": 3.6666666666666665,
+          "diff": 0.3333333333333335
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.6666666666666665,
+          "b": 3.3333333333333335,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.0,
+          "b": 4.333333333333333,
+          "diff": -0.33333333333333304
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.0,
+          "b": 4.333333333333333,
+          "diff": -0.33333333333333304
+        }
+      ],
+      "q_bh_by_endpoint": 1.0
+    },
+    {
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "global_coherence",
+      "n": 6,
+      "mean_a": 4.5,
+      "mean_b": 3.9444444444444446,
+      "mean_diff": 0.5555555555555557,
+      "ci95": [
+        0.22222222222222263,
+        0.8888888888888893
+      ],
+      "p_signflip": 0.0625,
+      "sign_biserial": 1.0,
+      "wins": 5,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.0,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.666666666666667,
+          "b": 3.3333333333333335,
+          "diff": 1.3333333333333335
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.666666666666667,
+          "b": 4.0,
+          "diff": 0.666666666666667
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.666666666666667,
+          "b": 4.333333333333333,
+          "diff": 0.3333333333333339
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.666666666666667,
+          "b": 4.0,
+          "diff": 0.666666666666667
+        }
+      ],
+      "q_bh_by_endpoint": 0.09375
+    },
+    {
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "citation_plausibility",
+      "n": 6,
+      "mean_a": 3.888888888888889,
+      "mean_b": 4.055555555555555,
+      "mean_diff": -0.1666666666666666,
+      "ci95": [
+        -0.6666666666666665,
+        0.27777777777777773
+      ],
+      "p_signflip": 0.75,
+      "sign_biserial": -0.3333333333333333,
+      "wins": 1,
+      "ties": 3,
+      "losses": 2,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 2.3333333333333335,
+          "b": 3.6666666666666665,
+          "diff": -1.333333333333333
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 4.333333333333333,
+          "diff": -0.33333333333333304
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.333333333333333,
+          "b": 3.6666666666666665,
+          "diff": 0.6666666666666665
+        },
+        {
+          "topic": "Causal Representation Learning",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        },
+        {
+          "topic": "Efficient Inference for Large Language Models",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        }
+      ],
+      "q_bh_by_endpoint": 1.0
+    }
+  ]
+}

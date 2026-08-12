@@ -1,0 +1,66 @@
+# SLRGP direct runtime and confirmatory-experiment dependencies.
+# Environment inspected on 2026-08-10:
+#   Ubuntu 22.04, Python 3.12.3, NVIDIA RTX 5090
+#   NVIDIA driver 595.71.05, PyTorch 2.11.0, CUDA 13.0
+#
+# This is an intentionally curated direct-dependency list, not the complete
+# 335-package `pip freeze` of the compute instance. Jupyter, system utilities,
+# unrelated services and transitive-only packages have been omitted.
+
+# Numerical computing and statistical analysis
+numpy==2.3.2
+scipy==1.18.0
+pandas==3.0.3
+scikit-learn==1.9.0
+joblib==1.5.3
+lightgbm==4.6.0
+
+# Corpus, retrieval and bibliography processing
+bibtexparser==1.4.4
+bm25s==0.3.9
+duckdb==1.5.4
+faiss-cpu==1.14.3
+requests==2.34.2
+
+# Embedding and generation models
+torch==2.11.0
+transformers==4.47.1
+sentence-transformers==5.6.0
+accelerate==1.14.0
+bitsandbytes==0.49.2
+
+# Model/API clients and token accounting used by experiment wrappers
+anthropic==0.116.0
+openai==2.44.0
+tiktoken==0.13.0
+tqdm==4.68.4
+
+# Local OpenAI-compatible inference service used by the Qwen robustness run
+fastapi==0.136.3
+pydantic==2.13.4
+uvicorn==0.50.0
+
+# Figure generation
+matplotlib==3.10.5
+
+# Important environment boundaries
+# --------------------------------
+# 1. `experiments/exp2_operator_learnability/ranking/s2d_specter2.py` imports
+#    `adapters`. The inspected server has adapters==1.3.0, which declares
+#    transformers~=4.57.6 and is incompatible with the transformers==4.47.1
+#    environment recorded above. Run that one-off SPECTER2 analysis in a
+#    separate environment.
+#
+# 2. `experiments/exp3_interface_substitution/run_s4b_qwen_chain.sh` can launch
+#    vLLM. The inspected server has vllm==0.24.0, which requires
+#    transformers>=5.5.3 and therefore must also be installed in a separate
+#    environment. The Transformers plus bitsandbytes fallback server is covered
+#    by the dependencies above.
+#    On the inspected host, importing bitsandbytes also reported a missing
+#    `libnvJitLink.so.13`; configure the CUDA 13 runtime/library path before
+#    relying on 4-bit GPU inference.
+#
+# 3. Third-party baseline systems (AutoSurvey, SurveyForge, SurveyGen, ARISE)
+#    are not shipped; rebuild their checkouts, assets and per-system
+#    environments per code/data_rebuild/README.md, and keep each baseline's
+#    own upstream dependency set rather than mixing it into this one.

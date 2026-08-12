@@ -1,0 +1,957 @@
+{
+  "root": "results/s5/s5a_smoke_20260713_2009",
+  "audit": {
+    "n_rows": 3,
+    "n_ok": 3,
+    "n_primary_eligible": 3,
+    "issues": []
+  },
+  "blind_scores": {
+    "n_scores": 9,
+    "n_valid_scores": 9
+  },
+  "contrasts": [
+    {
+      "eligibility": "primary",
+      "tier": "short",
+      "contrast": "recursive vs flat",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "flat_single_pass",
+      "endpoint": "overall",
+      "n": 1,
+      "mean_a": 4.0,
+      "mean_b": 4.166666666666666,
+      "mean_diff": -0.16666666666666607,
+      "ci95": [
+        -0.16666666666666607,
+        -0.16666666666666607
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -1.0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 4.166666666666666,
+          "diff": -0.16666666666666607
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "tier": "short",
+      "contrast": "recursive vs flat",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "flat_single_pass",
+      "endpoint": "organizational_quality",
+      "n": 1,
+      "mean_a": 4.333333333333333,
+      "mean_b": 4.333333333333333,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "tier": "short",
+      "contrast": "recursive vs flat",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "flat_single_pass",
+      "endpoint": "critical_synthesis",
+      "n": 1,
+      "mean_a": 4.0,
+      "mean_b": 4.333333333333333,
+      "mean_diff": -0.33333333333333304,
+      "ci95": [
+        -0.33333333333333304,
+        -0.33333333333333304
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -1.0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 4.333333333333333,
+          "diff": -0.33333333333333304
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "tier": "short",
+      "contrast": "recursive vs flat",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "flat_single_pass",
+      "endpoint": "global_coherence",
+      "n": 1,
+      "mean_a": 4.333333333333333,
+      "mean_b": 4.333333333333333,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "tier": "short",
+      "contrast": "recursive vs flat",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "flat_single_pass",
+      "endpoint": "citation_plausibility",
+      "n": 1,
+      "mean_a": 3.3333333333333335,
+      "mean_b": 3.6666666666666665,
+      "mean_diff": -0.33333333333333304,
+      "ci95": [
+        -0.33333333333333304,
+        -0.33333333333333304
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -1.0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.3333333333333335,
+          "b": 3.6666666666666665,
+          "diff": -0.33333333333333304
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "tier": "short",
+      "contrast": "recursive vs fixed outline",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "fixed_outline_no_reentry",
+      "endpoint": "overall",
+      "n": 1,
+      "mean_a": 4.0,
+      "mean_b": 4.083333333333333,
+      "mean_diff": -0.08333333333333304,
+      "ci95": [
+        -0.08333333333333304,
+        -0.08333333333333304
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -1.0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 4.083333333333333,
+          "diff": -0.08333333333333304
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "tier": "short",
+      "contrast": "recursive vs fixed outline",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "fixed_outline_no_reentry",
+      "endpoint": "organizational_quality",
+      "n": 1,
+      "mean_a": 4.333333333333333,
+      "mean_b": 4.333333333333333,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "tier": "short",
+      "contrast": "recursive vs fixed outline",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "fixed_outline_no_reentry",
+      "endpoint": "critical_synthesis",
+      "n": 1,
+      "mean_a": 4.0,
+      "mean_b": 4.0,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "tier": "short",
+      "contrast": "recursive vs fixed outline",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "fixed_outline_no_reentry",
+      "endpoint": "global_coherence",
+      "n": 1,
+      "mean_a": 4.333333333333333,
+      "mean_b": 4.333333333333333,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "tier": "short",
+      "contrast": "recursive vs fixed outline",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "fixed_outline_no_reentry",
+      "endpoint": "citation_plausibility",
+      "n": 1,
+      "mean_a": 3.3333333333333335,
+      "mean_b": 3.6666666666666665,
+      "mean_diff": -0.33333333333333304,
+      "ci95": [
+        -0.33333333333333304,
+        -0.33333333333333304
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -1.0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.3333333333333335,
+          "b": 3.6666666666666665,
+          "diff": -0.33333333333333304
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "tier": "short",
+      "contrast": "recursive vs flat",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "flat_single_pass",
+      "endpoint": "overall",
+      "n": 1,
+      "mean_a": 4.0,
+      "mean_b": 4.166666666666666,
+      "mean_diff": -0.16666666666666607,
+      "ci95": [
+        -0.16666666666666607,
+        -0.16666666666666607
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -1.0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 4.166666666666666,
+          "diff": -0.16666666666666607
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "tier": "short",
+      "contrast": "recursive vs flat",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "flat_single_pass",
+      "endpoint": "organizational_quality",
+      "n": 1,
+      "mean_a": 4.333333333333333,
+      "mean_b": 4.333333333333333,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "tier": "short",
+      "contrast": "recursive vs flat",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "flat_single_pass",
+      "endpoint": "critical_synthesis",
+      "n": 1,
+      "mean_a": 4.0,
+      "mean_b": 4.333333333333333,
+      "mean_diff": -0.33333333333333304,
+      "ci95": [
+        -0.33333333333333304,
+        -0.33333333333333304
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -1.0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 4.333333333333333,
+          "diff": -0.33333333333333304
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "tier": "short",
+      "contrast": "recursive vs flat",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "flat_single_pass",
+      "endpoint": "global_coherence",
+      "n": 1,
+      "mean_a": 4.333333333333333,
+      "mean_b": 4.333333333333333,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "tier": "short",
+      "contrast": "recursive vs flat",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "flat_single_pass",
+      "endpoint": "citation_plausibility",
+      "n": 1,
+      "mean_a": 3.3333333333333335,
+      "mean_b": 3.6666666666666665,
+      "mean_diff": -0.33333333333333304,
+      "ci95": [
+        -0.33333333333333304,
+        -0.33333333333333304
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -1.0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.3333333333333335,
+          "b": 3.6666666666666665,
+          "diff": -0.33333333333333304
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "tier": "short",
+      "contrast": "recursive vs fixed outline",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "fixed_outline_no_reentry",
+      "endpoint": "overall",
+      "n": 1,
+      "mean_a": 4.0,
+      "mean_b": 4.083333333333333,
+      "mean_diff": -0.08333333333333304,
+      "ci95": [
+        -0.08333333333333304,
+        -0.08333333333333304
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -1.0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 4.083333333333333,
+          "diff": -0.08333333333333304
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "tier": "short",
+      "contrast": "recursive vs fixed outline",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "fixed_outline_no_reentry",
+      "endpoint": "organizational_quality",
+      "n": 1,
+      "mean_a": 4.333333333333333,
+      "mean_b": 4.333333333333333,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "tier": "short",
+      "contrast": "recursive vs fixed outline",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "fixed_outline_no_reentry",
+      "endpoint": "critical_synthesis",
+      "n": 1,
+      "mean_a": 4.0,
+      "mean_b": 4.0,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 4.0,
+          "diff": 0.0
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "tier": "short",
+      "contrast": "recursive vs fixed outline",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "fixed_outline_no_reentry",
+      "endpoint": "global_coherence",
+      "n": 1,
+      "mean_a": 4.333333333333333,
+      "mean_b": 4.333333333333333,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": 0.0,
+      "wins": 0,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.333333333333333,
+          "b": 4.333333333333333,
+          "diff": 0.0
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "tier": "short",
+      "contrast": "recursive vs fixed outline",
+      "arm_a": "recursive_slrgp",
+      "arm_b": "fixed_outline_no_reentry",
+      "endpoint": "citation_plausibility",
+      "n": 1,
+      "mean_a": 3.3333333333333335,
+      "mean_b": 3.6666666666666665,
+      "mean_diff": -0.33333333333333304,
+      "ci95": [
+        -0.33333333333333304,
+        -0.33333333333333304
+      ],
+      "p_signflip": 1.0,
+      "sign_biserial": -1.0,
+      "wins": 0,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.3333333333333335,
+          "b": 3.6666666666666665,
+          "diff": -0.33333333333333304
+        }
+      ]
+    }
+  ],
+  "degradation": [
+    {
+      "eligibility": "primary",
+      "arm": "recursive_slrgp",
+      "endpoint": "overall",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "recursive_slrgp",
+      "endpoint": "organizational_quality",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "recursive_slrgp",
+      "endpoint": "critical_synthesis",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "recursive_slrgp",
+      "endpoint": "global_coherence",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "recursive_slrgp",
+      "endpoint": "citation_plausibility",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "fixed_outline_no_reentry",
+      "endpoint": "overall",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "fixed_outline_no_reentry",
+      "endpoint": "organizational_quality",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "fixed_outline_no_reentry",
+      "endpoint": "critical_synthesis",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "fixed_outline_no_reentry",
+      "endpoint": "global_coherence",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "fixed_outline_no_reentry",
+      "endpoint": "citation_plausibility",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "flat_single_pass",
+      "endpoint": "overall",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "flat_single_pass",
+      "endpoint": "organizational_quality",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "flat_single_pass",
+      "endpoint": "critical_synthesis",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "flat_single_pass",
+      "endpoint": "global_coherence",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "primary",
+      "arm": "flat_single_pass",
+      "endpoint": "citation_plausibility",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "recursive_slrgp",
+      "endpoint": "overall",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "recursive_slrgp",
+      "endpoint": "organizational_quality",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "recursive_slrgp",
+      "endpoint": "critical_synthesis",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "recursive_slrgp",
+      "endpoint": "global_coherence",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "recursive_slrgp",
+      "endpoint": "citation_plausibility",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "fixed_outline_no_reentry",
+      "endpoint": "overall",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "fixed_outline_no_reentry",
+      "endpoint": "organizational_quality",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "fixed_outline_no_reentry",
+      "endpoint": "critical_synthesis",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "fixed_outline_no_reentry",
+      "endpoint": "global_coherence",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "fixed_outline_no_reentry",
+      "endpoint": "citation_plausibility",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "flat_single_pass",
+      "endpoint": "overall",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "flat_single_pass",
+      "endpoint": "organizational_quality",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "flat_single_pass",
+      "endpoint": "critical_synthesis",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "flat_single_pass",
+      "endpoint": "global_coherence",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    },
+    {
+      "eligibility": "all_ok",
+      "arm": "flat_single_pass",
+      "endpoint": "citation_plausibility",
+      "n": 0,
+      "mean_long_minus_short": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "topics": []
+    }
+  ]
+}

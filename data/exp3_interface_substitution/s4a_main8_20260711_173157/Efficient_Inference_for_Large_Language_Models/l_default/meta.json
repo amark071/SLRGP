@@ -1,0 +1,96 @@
+{
+  "topic": "Efficient Inference for Large Language Models",
+  "arm": "l_default",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 22:18:55",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "LLM inference optimization",
+    "transformer model acceleration",
+    "model compression techniques",
+    "knowledge distillation neural networks",
+    "quantization deep learning",
+    "speculative decoding",
+    "key-value cache optimization",
+    "pruning large language models",
+    "tensor parallelism inference",
+    "neural network sparsity",
+    "efficient transformer architectures",
+    "batching strategies language model serving"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "theme",
+  "groups": [
+    {
+      "name": "Surveys and Overviews of Efficient LLM Inference",
+      "n": 4
+    },
+    {
+      "name": "KV Cache Optimization and Management",
+      "n": 4
+    },
+    {
+      "name": "Model Compression: Pruning, Quantization, and Distillation",
+      "n": 4
+    },
+    {
+      "name": "Hardware-Aware and Accelerator-Based Inference Optimization",
+      "n": 2
+    },
+    {
+      "name": "Speculative Decoding and Decoding Acceleration",
+      "n": 1
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_2402.09748",
+    "arxiv_2404.14294",
+    "arxiv_2404.15949",
+    "arxiv_2405.10637",
+    "arxiv_2405.11704",
+    "arxiv_2406.19707",
+    "arxiv_2408.03130",
+    "arxiv_2508.06297"
+  ],
+  "n_refs": 8,
+  "word_count": 781,
+  "written_citation_ids": [
+    "arxiv_2402.09748",
+    "arxiv_2404.14294",
+    "arxiv_2408.03130",
+    "arxiv_2405.11704",
+    "arxiv_2406.19707",
+    "arxiv_2508.06297",
+    "arxiv_2404.15949",
+    "arxiv_2405.10637"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2402.09748",
+    "arxiv_2404.14294",
+    "arxiv_2404.15949",
+    "arxiv_2405.10637",
+    "arxiv_2405.11704",
+    "arxiv_2406.19707",
+    "arxiv_2408.03130",
+    "arxiv_2508.06297"
+  ],
+  "elapsed_sec": 75.9,
+  "llm_usage_delta": {
+    "n_calls": 10,
+    "prompt_tokens": 7049,
+    "completion_tokens": 1973
+  },
+  "llm_usage_so_far": {
+    "n_calls": 288,
+    "prompt_tokens": 245748,
+    "completion_tokens": 68840
+  }
+}

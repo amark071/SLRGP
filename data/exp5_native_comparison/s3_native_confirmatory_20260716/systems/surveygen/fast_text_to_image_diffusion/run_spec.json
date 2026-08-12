@@ -1,0 +1,25 @@
+{
+  "run_id": "s3_native_confirmatory_20260716",
+  "system_id": "surveygen",
+  "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+  "model_policy": "common_backbone:anthropic/claude-sonnet-4.6",
+  "topic": {
+    "topic_id": "fast_text_to_image_diffusion",
+    "title": "Text-to-Image Diffusion Models",
+    "scope": "Diffusion-based text-to-image generation through the end of 2023, including latent diffusion, text conditioning, guidance, controllability, personalization, efficient sampling, evaluation, dataset and safety issues, and comparison with earlier generative paradigms. Non-visual diffusion applications are secondary.",
+    "target_audience": "computer-vision and generative-model researchers",
+    "language": "English",
+    "publication_cutoff": "2023-12-31",
+    "target_words": 4000,
+    "min_words": 3200,
+    "max_words": 4800,
+    "target_references_min": 40,
+    "target_references_max": 60,
+    "seed": 4101,
+    "analysis_role": "confirmatory_primary"
+  },
+  "budget_usd": 16.0,
+  "timeout_seconds": 14400,
+  "protocol_hash": "296c390580ef0a11f0452948b3ba35431f710230487bfc3305ed61bc24164967",
+  "run_spec_hash": "a883bebac1e1a6dbf4c0e484d62ca69890a691344f9cff6702a6e48936c1a3bb"
+}

@@ -1,0 +1,21 @@
+{
+  "system": "surveygen",
+  "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+  "patches": [
+    {
+      "file": "retrieval_cutoff.patch",
+      "purpose": "Parameterize released retrieval files and enforce the registered publication date in Semantic Scholar and OpenAlex results.",
+      "semantic_effect": "fairness_constraint_and_path_adapter"
+    },
+    {
+      "file": "model_adapter.patch",
+      "purpose": "Route released LLM calls through the common OpenAI-compatible backbone, use the official local BGE model, log token usage, and map the registered document budget onto the released per-subsection generation control.",
+      "semantic_effect": "model_endpoint_compatibility_instrumentation_and_registered_length_control"
+    }
+  ],
+  "execution_adapter": "surveygen_native_driver.py",
+  "publication_cutoff": {
+    "date": "2023-12-31",
+    "enforcement": "Semantic Scholar publicationDate filter plus OpenAlex publication_date filter"
+  }
+}

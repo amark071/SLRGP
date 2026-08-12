@@ -1,0 +1,96 @@
+{
+  "topic": "Neural Architecture Search",
+  "arm": "intact",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 21:55:27",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "neural architecture search",
+    "automated machine learning",
+    "AutoML",
+    "hyperparameter optimization",
+    "network architecture optimization",
+    "differentiable architecture search",
+    "evolutionary neural architecture search",
+    "reinforcement learning architecture search",
+    "one-shot architecture search",
+    "weight sharing neural networks",
+    "efficient neural architecture search",
+    "meta-learning network design"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "methodology",
+  "groups": [
+    {
+      "name": "Survey and Overview of NAS",
+      "n": 4
+    },
+    {
+      "name": "Differentiable and Continuous Search Methods",
+      "n": 4
+    },
+    {
+      "name": "Reinforcement Learning-based NAS",
+      "n": 3
+    },
+    {
+      "name": "Hyperparameter and Joint Optimization",
+      "n": 3
+    },
+    {
+      "name": "Meta-Learning and Cross-Task NAS",
+      "n": 1
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_1808.07233",
+    "arxiv_1905.01392",
+    "arxiv_2103.02126",
+    "arxiv_2108.08474",
+    "arxiv_2109.12425",
+    "arxiv_2304.05405",
+    "arxiv_2307.09099",
+    "arxiv_2409.18163"
+  ],
+  "n_refs": 8,
+  "word_count": 783,
+  "written_citation_ids": [
+    "arxiv_1905.01392",
+    "arxiv_2108.08474",
+    "arxiv_2409.18163",
+    "arxiv_2307.09099",
+    "arxiv_1808.07233",
+    "arxiv_2304.05405",
+    "arxiv_2103.02126",
+    "arxiv_2109.12425"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_1808.07233",
+    "arxiv_1905.01392",
+    "arxiv_2103.02126",
+    "arxiv_2108.08474",
+    "arxiv_2109.12425",
+    "arxiv_2304.05405",
+    "arxiv_2307.09099",
+    "arxiv_2409.18163"
+  ],
+  "elapsed_sec": 69.5,
+  "llm_usage_delta": {
+    "n_calls": 10,
+    "prompt_tokens": 6576,
+    "completion_tokens": 2003
+  },
+  "llm_usage_so_far": {
+    "n_calls": 117,
+    "prompt_tokens": 101688,
+    "completion_tokens": 28502
+  }
+}

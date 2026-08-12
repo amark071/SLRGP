@@ -1,0 +1,405 @@
+{
+  "topic_id": "cross_medical_image_analysis",
+  "system": "slrgp",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The most widely cited of these overviews, Litjens et al. [arxiv_1702.05747], provides a comprehensive examination of deep learning concepts pertinent to medical imaging, reviewing over 300 contributions and covering tasks ranging from image classification and object detection to segmentation across multiple organ systems and imaging modalities.",
+      "citation_markers": [
+        "[arxiv_1702.05747]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1702.05747",
+          "doc_id": "arxiv_1702.05747",
+          "title": "A Survey on Deep Learning in Medical Image Analysis",
+          "year": 2019,
+          "venue": "cs.CV",
+          "abstract": "Deep learning algorithms, in particular convolutional networks, have rapidly become a methodology of choice for analyzing medical images. This paper reviews the major deep learning concepts pertinent to medical image analysis and summarizes over 300 contributions to the field, most of which appeared in the last year. We survey the use of deep learning for image classification, object detection, segmentation, registration, and other tasks and provide concise overviews of studies per application area. Open challenges and directions for future research are discussed.",
+          "resolved_arxiv": {
+            "arxiv_id": "1702.05747",
+            "title": "A Survey on Deep Learning in Medical Image Analysis",
+            "abstract": "Deep learning algorithms, in particular convolutional networks, have rapidly become a methodology of choice for analyzing medical images. This paper reviews the major deep learning concepts pertinent to medical image analysis and summarizes over 300 contributions to the field, most of which appeared in the last year. We survey the use of deep learning for image classification, object detection, segmentation, registration, and other tasks and provide concise overviews of studies per application area. Open challenges and directions for future research are discussed.",
+            "published": "2017-02-19T13:02:28Z",
+            "source_url": "https://arxiv.org/abs/1702.05747"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "This concern with practical limitations is echoed in Ul Haq [arxiv_2202.08546], which traces the field's momentum to the 2012 ImageNet competition and surveys how convolutional neural networks (CNNs) have since been adapted to diverse medical imaging problems.",
+      "citation_markers": [
+        "[arxiv_2202.08546]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2202.08546",
+          "doc_id": "arxiv_2202.08546",
+          "title": "An overview of deep learning in medical imaging",
+          "year": 2022,
+          "venue": "eess.IV",
+          "abstract": "Machine learning (ML) has seen enormous consideration during the most recent decade. This success started in 2012 when an ML model accomplished a remarkable triumph in the ImageNet Classification, the world's most famous competition for computer vision. This model was a kind of convolutional neural system (CNN) called deep learning (DL). Since then, researchers have started to participate efficiently in DL's fastest developing area of research. These days, DL systems are cutting-edge ML systems spanning a broad range of disciplines, from human language processing to video analysis, and commonly used in the scholarly world and enterprise sector. Recent advances can bring tremendous improvement to the medical field. Improved and innovative methods for data processing, image analysis and can significantly improve the diagnostic technologies and medicinal services gradually. A quick review of current developments with relevant problems in the field of DL used for medical imaging has been provided. The primary purposes of the review are four: (i) provide a brief prolog to DL by discussing different DL models, (ii) review of the DL usage for medical image analysis (classification, detection, segmentation, and registration), (iii) review seven main application fields of DL in medical imaging, (iv) give an initial stage to those keen on adding to the research area about DL in clinical imaging by providing links of some useful informative assets, such as freely available DL codes, public datasets Table 7, and medical imaging competition sources Table 8 and end our survey by outlining distinct continuous difficulties, lessons learned and future of DL in the field of medical science.",
+          "resolved_arxiv": {
+            "arxiv_id": "2202.08546",
+            "title": "An overview of deep learning in medical imaging",
+            "abstract": "Machine learning (ML) has seen enormous consideration during the most recent decade. This success started in 2012 when an ML model accomplished a remarkable triumph in the ImageNet Classification, the world's most famous competition for computer vision. This model was a kind of convolutional neural system (CNN) called deep learning (DL). Since then, researchers have started to participate efficiently in DL's fastest developing area of research. These days, DL systems are cutting-edge ML systems spanning a broad range of disciplines, from human language processing to video analysis, and commonly used in the scholarly world and enterprise sector. Recent advances can bring tremendous improvement to the medical field. Improved and innovative methods for data processing, image analysis and can significantly improve the diagnostic technologies and medicinal services gradually. A quick review of current developments with relevant problems in the field of DL used for medical imaging has been provided. The primary purposes of the review are four: (i) provide a brief prolog to DL by discussing different DL models, (ii) review of the DL usage for medical image analysis (classification, detection, segmentation, and registration), (iii) review seven main application fields of DL in medical imaging, (iv) give an initial stage to those keen on adding to the research area about DL in clinical imaging by providing links of some useful informative assets, such as freely available DL codes, public datasets Table 7, and medical imaging competition sources Table 8 and end our survey by outlining distinct continuous difficulties, lessons learned and future of DL in the field of medical science.",
+            "published": "2022-02-17T09:44:57Z",
+            "source_url": "https://arxiv.org/abs/2202.08546"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The meta-survey by Egger et al. [arxiv_2011.08184] situates deep learning within the broader landscape of artificial intelligence across scientific disciplines, drawing on the analogy between artificial neural networks and biological brain structure to aid conceptual understanding—a framing particularly useful for newcomers.",
+      "citation_markers": [
+        "[arxiv_2011.08184]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2011.08184",
+          "doc_id": "arxiv_2011.08184",
+          "title": "Deep Learning -- A first Meta-Survey of selected Reviews across\n  Scientific Disciplines, their Commonalities, Challenges and Research Impact",
+          "year": 2021,
+          "venue": "cs.DL",
+          "abstract": "Deep learning belongs to the field of artificial intelligence, where machines perform tasks that typically require some kind of human intelligence. Similar to the basic structure of a brain, a deep learning algorithm consists of an artificial neural network, which resembles the biological brain structure. Mimicking the learning process of humans with their senses, deep learning networks are fed with (sensory) data, like texts, images, videos or sounds. These networks outperform the state-of-the-art methods in different tasks and, because of this, the whole field saw an exponential growth during the last years. This growth resulted in way over 10,000 publications per year in the last years. For example, the search engine PubMed alone, which covers only a sub-set of all publications in the medical field, provides already over 11,000 results in Q3 2020 for the search term 'deep learning', and around 90% of these results are from the last three years. Consequently, a complete overview over the field of deep learning is already impossible to obtain and, in the near future, it will potentially become difficult to obtain an overview over a subfield. However, there are several review articles about deep learning, which are focused on specific scientific fields or applications, for example deep learning advances in computer vision or in specific tasks like object detection. With these surveys as a foundation, the aim of this contribution is to provide a first high-level, categorized meta-survey of selected reviews on deep learning across different scientific disciplines. The categories (computer vision, language processing, medical informatics and additional works) have been chosen according to the underlying data sources (image, language, medical, mixed). In addition, we review the common architectures, methods, pros, cons, evaluations, challenges and future directions for every sub-category.",
+          "resolved_arxiv": {
+            "arxiv_id": "2011.08184",
+            "title": "Deep Learning -- A first Meta-Survey of selected Reviews across Scientific Disciplines, their Commonalities, Challenges and Research Impact",
+            "abstract": "Deep learning belongs to the field of artificial intelligence, where machines perform tasks that typically require some kind of human intelligence. Similar to the basic structure of a brain, a deep learning algorithm consists of an artificial neural network, which resembles the biological brain structure. Mimicking the learning process of humans with their senses, deep learning networks are fed with (sensory) data, like texts, images, videos or sounds. These networks outperform the state-of-the-art methods in different tasks and, because of this, the whole field saw an exponential growth during the last years. This growth resulted in way over 10,000 publications per year in the last years. For example, the search engine PubMed alone, which covers only a sub-set of all publications in the medical field, provides already over 11,000 results in Q3 2020 for the search term 'deep learning', and around 90% of these results are from the last three years. Consequently, a complete overview over the field of deep learning is already impossible to obtain and, in the near future, it will potentially become difficult to obtain an overview over a subfield. However, there are several review articles about deep learning, which are focused on specific scientific fields or applications, for example deep learning advances in computer vision or in specific tasks like object detection. With these surveys as a foundation, the aim of this contribution is to provide a first high-level, categorized meta-survey of selected reviews on deep learning across different scientific disciplines. The categories (computer vision, language processing, medical informatics and additional works) have been chosen according to the underlying data sources (image, language, medical, mixed). In addition, we review the common architectures, methods, pros, cons, evaluations, challenges and future directions for every sub-category.",
+            "published": "2020-11-16T13:14:18Z",
+            "source_url": "https://arxiv.org/abs/2011.08184"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "The question of training strategy is addressed directly by Tajbakhsh et al. [arxiv_1706.00712], who empirically compare full training against fine-tuning of pre-trained CNNs across four medical imaging applications, finding that fine-tuning generally outperforms training from scratch when labeled medical data are limited.",
+      "citation_markers": [
+        "[arxiv_1706.00712]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1706.00712",
+          "doc_id": "arxiv_1706.00712",
+          "title": "Convolutional Neural Networks for Medical Image Analysis: Full Training\n  or Fine Tuning?",
+          "year": 2017,
+          "venue": "cs.CV",
+          "abstract": "Training a deep convolutional neural network (CNN) from scratch is difficult because it requires a large amount of labeled training data and a great deal of expertise to ensure proper convergence. A promising alternative is to fine-tune a CNN that has been pre-trained using, for instance, a large set of labeled natural images. However, the substantial differences between natural and medical images may advise against such knowledge transfer. In this paper, we seek to answer the following central question in the context of medical image analysis: \\emph{Can the use of pre-trained deep CNNs with sufficient fine-tuning eliminate the need for training a deep CNN from scratch?} To address this question, we considered 4 distinct medical imaging applications in 3 specialties (radiology, cardiology, and gastroenterology) involving classification, detection, and segmentation from 3 different imaging modalities, and investigated how the performance of deep CNNs trained from scratch compared with the pre-trained CNNs fine-tuned in a layer-wise manner. Our experiments consistently demonstrated that (1) the use of a pre-trained CNN with adequate fine-tuning outperformed or, in the worst case, performed as well as a CNN trained from scratch; (2) fine-tuned CNNs were more robust to the size of training sets than CNNs trained from scratch; (3) neither shallow tuning nor deep tuning was the optimal choice for a particular application; and (4) our layer-wise fine-tuning scheme could offer a practical way to reach the best performance for the application at hand based on the amount of available data.",
+          "resolved_arxiv": {
+            "arxiv_id": "1706.00712",
+            "title": "Convolutional Neural Networks for Medical Image Analysis: Full Training or Fine Tuning?",
+            "abstract": "Training a deep convolutional neural network (CNN) from scratch is difficult because it requires a large amount of labeled training data and a great deal of expertise to ensure proper convergence. A promising alternative is to fine-tune a CNN that has been pre-trained using, for instance, a large set of labeled natural images. However, the substantial differences between natural and medical images may advise against such knowledge transfer. In this paper, we seek to answer the following central question in the context of medical image analysis: \\emph{Can the use of pre-trained deep CNNs with sufficient fine-tuning eliminate the need for training a deep CNN from scratch?} To address this question, we considered 4 distinct medical imaging applications in 3 specialties (radiology, cardiology, and gastroenterology) involving classification, detection, and segmentation from 3 different imaging modalities, and investigated how the performance of deep CNNs trained from scratch compared with the pre-trained CNNs fine-tuned in a layer-wise manner. Our experiments consistently demonstrated that (1) the use of a pre-trained CNN with adequate fine-tuning outperformed or, in the worst case, performed as well as a CNN trained from scratch; (2) fine-tuned CNNs were more robust to the size of training sets than CNNs trained from scratch; (3) neither shallow tuning nor deep tuning was the optimal choice for a particular application; and (4) our layer-wise fine-tuning scheme could offer a practical way to reach the best performance for the application at hand based on the amount of available data.",
+            "published": "2017-06-02T15:04:43Z",
+            "source_url": "https://arxiv.org/abs/1706.00712"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "In low-resource settings such as gastrointestinal landmark classification, systematic evaluation of CNN representations confirmed that the choice of pre-trained backbone and the extent of fine-tuning critically determine downstream performance [arxiv_1903.11176].",
+      "citation_markers": [
+        "[arxiv_1903.11176]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1903.11176",
+          "doc_id": "arxiv_1903.11176",
+          "title": "On evaluating CNN representations for low resource medical image\n  classification",
+          "year": 2019,
+          "venue": "eess.IV",
+          "abstract": "Convolutional Neural Networks (CNNs) have revolutionized performances in several machine learning tasks such as image classification, object tracking, and keyword spotting. However, given that they contain a large number of parameters, their direct applicability into low resource tasks is not straightforward. In this work, we experiment with an application of CNN models to gastrointestinal landmark classification with only a few thousands of training samples through transfer learning. As in a standard transfer learning approach, we train CNNs on a large external corpus, followed by representation extraction for the medical images. Finally, a classifier is trained on these CNN representations. However, given that several variants of CNNs exist, the choice of CNN is not obvious. To address this, we develop a novel metric that can be used to predict test performances, given CNN representations on the training set. Not only we demonstrate the superiority of the CNN based transfer learning approach against an assembly of knowledge driven features, but the proposed metric also carries an 87% correlation with the test set performances as obtained using various CNN representations.",
+          "resolved_arxiv": {
+            "arxiv_id": "1903.11176",
+            "title": "On evaluating CNN representations for low resource medical image classification",
+            "abstract": "Convolutional Neural Networks (CNNs) have revolutionized performances in several machine learning tasks such as image classification, object tracking, and keyword spotting. However, given that they contain a large number of parameters, their direct applicability into low resource tasks is not straightforward. In this work, we experiment with an application of CNN models to gastrointestinal landmark classification with only a few thousands of training samples through transfer learning. As in a standard transfer learning approach, we train CNNs on a large external corpus, followed by representation extraction for the medical images. Finally, a classifier is trained on these CNN representations. However, given that several variants of CNNs exist, the choice of CNN is not obvious. To address this, we develop a novel metric that can be used to predict test performances, given CNN representations on the training set. Not only we demonstrate the superiority of the CNN based transfer learning approach against an assembly of knowledge driven features, but the proposed metric also carries an 87% correlation with the test set performances as obtained using various CNN representations.",
+            "published": "2019-03-26T22:05:58Z",
+            "source_url": "https://arxiv.org/abs/1903.11176"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "A self-supervised framework built around Swin Transformers demonstrated that tailored proxy tasks enable effective learning of both global and local 3D representations transferable to segmentation and detection tasks [arxiv_2111.14791]. For 2D segmentation, self-supervised pretraining has similarly been shown to reduce dependence on manually annotated data [arxiv_2209.00314].",
+      "citation_markers": [
+        "[arxiv_2111.14791]",
+        "[arxiv_2209.00314]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2111.14791",
+          "doc_id": "arxiv_2111.14791",
+          "title": "Self-Supervised Pre-Training of Swin Transformers for 3D Medical Image\n  Analysis",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "Vision Transformers (ViT)s have shown great performance in self-supervised learning of global and local representations that can be transferred to downstream applications. Inspired by these results, we introduce a novel self-supervised learning framework with tailored proxy tasks for medical image analysis. Specifically, we propose: (i) a new 3D transformer-based model, dubbed Swin UNEt TRansformers (Swin UNETR), with a hierarchical encoder for self-supervised pre-training; (ii) tailored proxy tasks for learning the underlying pattern of human anatomy. We demonstrate successful pre-training of the proposed model on 5,050 publicly available computed tomography (CT) images from various body organs. The effectiveness of our approach is validated by fine-tuning the pre-trained models on the Beyond the Cranial Vault (BTCV) Segmentation Challenge with 13 abdominal organs and segmentation tasks from the Medical Segmentation Decathlon (MSD) dataset. Our model is currently the state-of-the-art (i.e. ranked 1st) on the public test leaderboards of both MSD and BTCV datasets. Code: https://monai.io/research/swin-unetr",
+          "resolved_arxiv": {
+            "arxiv_id": "2111.14791",
+            "title": "Self-Supervised Pre-Training of Swin Transformers for 3D Medical Image Analysis",
+            "abstract": "Vision Transformers (ViT)s have shown great performance in self-supervised learning of global and local representations that can be transferred to downstream applications. Inspired by these results, we introduce a novel self-supervised learning framework with tailored proxy tasks for medical image analysis. Specifically, we propose: (i) a new 3D transformer-based model, dubbed Swin UNEt TRansformers (Swin UNETR), with a hierarchical encoder for self-supervised pre-training; (ii) tailored proxy tasks for learning the underlying pattern of human anatomy. We demonstrate successful pre-training of the proposed model on 5,050 publicly available computed tomography (CT) images from various body organs. The effectiveness of our approach is validated by fine-tuning the pre-trained models on the Beyond the Cranial Vault (BTCV) Segmentation Challenge with 13 abdominal organs and segmentation tasks from the Medical Segmentation Decathlon (MSD) dataset. Our model is currently the state-of-the-art (i.e. ranked 1st) on the public test leaderboards of both MSD and BTCV datasets. Code: https://monai.io/research/swin-unetr",
+            "published": "2021-11-29T18:45:20Z",
+            "source_url": "https://arxiv.org/abs/2111.14791"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2209.00314",
+          "doc_id": "arxiv_2209.00314",
+          "title": "Self-Supervised Pretraining for 2D Medical Image Segmentation",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "Supervised machine learning provides state-of-the-art solutions to a wide range of computer vision problems. However, the need for copious labelled training data limits the capabilities of these algorithms in scenarios where such input is scarce or expensive. Self-supervised learning offers a way to lower the need for manually annotated data by pretraining models for a specific domain on unlabelled data. In this approach, labelled data are solely required to fine-tune models for downstream tasks. Medical image segmentation is a field where labelling data requires expert knowledge and collecting large labelled datasets is challenging; therefore, self-supervised learning algorithms promise substantial improvements in this field. Despite this, self-supervised learning algorithms are used rarely to pretrain medical image segmentation networks. In this paper, we elaborate and analyse the effectiveness of supervised and self-supervised pretraining approaches on downstream medical image segmentation, focusing on convergence and data efficiency. We find that self-supervised pretraining on natural images and target-domain-specific images leads to the fastest and most stable downstream convergence. In our experiments on the ACDC cardiac segmentation dataset, this pretraining approach achieves 4-5 times faster fine-tuning convergence compared to an ImageNet pretrained model. We also show that this approach requires less than five epochs of pretraining on domain-specific data to achieve such improvement in the downstream convergence time. Finally, we find that, in low-data scenarios, supervised ImageNet pretraining achieves the best accuracy, requiring less than 100 annotated samples to realise close to minimal error.",
+          "resolved_arxiv": {
+            "arxiv_id": "2209.00314",
+            "title": "Self-Supervised Pretraining for 2D Medical Image Segmentation",
+            "abstract": "Supervised machine learning provides state-of-the-art solutions to a wide range of computer vision problems. However, the need for copious labelled training data limits the capabilities of these algorithms in scenarios where such input is scarce or expensive. Self-supervised learning offers a way to lower the need for manually annotated data by pretraining models for a specific domain on unlabelled data. In this approach, labelled data are solely required to fine-tune models for downstream tasks. Medical image segmentation is a field where labelling data requires expert knowledge and collecting large labelled datasets is challenging; therefore, self-supervised learning algorithms promise substantial improvements in this field. Despite this, self-supervised learning algorithms are used rarely to pretrain medical image segmentation networks. In this paper, we elaborate and analyse the effectiveness of supervised and self-supervised pretraining approaches on downstream medical image segmentation, focusing on convergence and data efficiency. We find that self-supervised pretraining on natural images and target-domain-specific images leads to the fastest and most stable downstream convergence. In our experiments on the ACDC cardiac segmentation dataset, this pretraining approach achieves 4-5 times faster fine-tuning convergence compared to an ImageNet pretrained model. We also show that this approach requires less than five epochs of pretraining on domain-specific data to achieve such improvement in the downstream convergence time. Finally, we find that, in low-data scenarios, supervised ImageNet pretraining achieves the best accuracy, requiring less than 100 annotated samples to realise close to minimal error.",
+            "published": "2022-09-01T09:25:22Z",
+            "source_url": "https://arxiv.org/abs/2209.00314"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "The so-called 2.5D or pseudo-3D approach provides a stack of adjacent slices as input to a 2D network, enabling the model to incorporate local volumetric context without the full overhead of 3D convolutions [arxiv_1912.09287].",
+      "citation_markers": [
+        "[arxiv_1912.09287]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1912.09287",
+          "doc_id": "arxiv_1912.09287",
+          "title": "Evaluation of Multi-Slice Inputs to Convolutional Neural Networks for\n  Medical Image Segmentation",
+          "year": 2020,
+          "venue": "eess.IV",
+          "abstract": "When using Convolutional Neural Networks (CNNs) for segmentation of organs and lesions in medical images, the conventional approach is to work with inputs and outputs either as single slice (2D) or whole volumes (3D). One common alternative, in this study denoted as pseudo-3D, is to use a stack of adjacent slices as input and produce a prediction for at least the central slice. This approach gives the network the possibility to capture 3D spatial information, with only a minor additional computational cost. In this study, we systematically evaluate the segmentation performance and computational costs of this pseudo-3D approach as a function of the number of input slices, and compare the results to conventional end-to-end 2D and 3D CNNs. The standard pseudo-3D method regards the neighboring slices as multiple input image channels. We additionally evaluate a simple approach where the input stack is a volumetric input that is repeatably convolved in 3D to obtain a 2D feature map. This 2D map is in turn fed into a standard 2D network. We conducted experiments using two different CNN backbone architectures and on five diverse data sets covering different anatomical regions, imaging modalities, and segmentation tasks. We found that while both pseudo-3D methods can process a large number of slices at once and still be computationally much more efficient than fully 3D CNNs, a significant improvement over a regular 2D CNN was only observed for one of the five data sets. An analysis of the structural properties of the segmentation masks revealed no relations to the segmentation performance with respect to the number of input slices. The conclusion is therefore that in the general case, multi-slice inputs appear to not significantly improve segmentation results over using 2D or 3D CNNs.",
+          "resolved_arxiv": {
+            "arxiv_id": "1912.09287",
+            "title": "Evaluation of Multi-Slice Inputs to Convolutional Neural Networks for Medical Image Segmentation",
+            "abstract": "When using Convolutional Neural Networks (CNNs) for segmentation of organs and lesions in medical images, the conventional approach is to work with inputs and outputs either as single slice (2D) or whole volumes (3D). One common alternative, in this study denoted as pseudo-3D, is to use a stack of adjacent slices as input and produce a prediction for at least the central slice. This approach gives the network the possibility to capture 3D spatial information, with only a minor additional computational cost. In this study, we systematically evaluate the segmentation performance and computational costs of this pseudo-3D approach as a function of the number of input slices, and compare the results to conventional end-to-end 2D and 3D CNNs. The standard pseudo-3D method regards the neighboring slices as multiple input image channels. We additionally evaluate a simple approach where the input stack is a volumetric input that is repeatably convolved in 3D to obtain a 2D feature map. This 2D map is in turn fed into a standard 2D network. We conducted experiments using two different CNN backbone architectures and on five diverse data sets covering different anatomical regions, imaging modalities, and segmentation tasks. We found that while both pseudo-3D methods can process a large number of slices at once and still be computationally much more efficient than fully 3D CNNs, a significant improvement over a regular 2D CNN was only observed for one of the five data sets. An analysis of the structural properties of the segmentation masks revealed no relations to the segmentation performance with respect to the number of input slices. The conclusion is therefore that in the general case, multi-slice inputs appear to not significantly improve segmentation results over using 2D or 3D CNNs.",
+            "published": "2019-12-19T15:26:16Z",
+            "source_url": "https://arxiv.org/abs/1912.09287"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Zhang et al. [arxiv_2010.06163] conducted an empirical study of 2.5D solutions, demonstrating that carefully designed hybrid architectures can achieve computation-efficient volumetric segmentation competitive with full 3D models.",
+      "citation_markers": [
+        "[arxiv_2010.06163]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2010.06163",
+          "doc_id": "arxiv_2010.06163",
+          "title": "Bridging 2D and 3D Segmentation Networks for Computation Efficient\n  Volumetric Medical Image Segmentation: An Empirical Study of 2.5D Solutions",
+          "year": 2022,
+          "venue": "eess.IV",
+          "abstract": "Recently, deep convolutional neural networks have achieved great success for medical image segmentation. However, unlike segmentation of natural images, most medical images such as MRI and CT are volumetric data. In order to make full use of volumetric information, 3D CNNs are widely used. However, 3D CNNs suffer from higher inference time and computation cost, which hinders their further clinical applications. Additionally, with the increased number of parameters, the risk of overfitting is higher, especially for medical images where data and annotations are expensive to acquire. To issue this problem, many 2.5D segmentation methods have been proposed to make use of volumetric spatial information with less computation cost. Despite these works lead to improvements on a variety of segmentation tasks, to the best of our knowledge, there has not previously been a large-scale empirical comparison of these methods. In this paper, we aim to present a review of the latest developments of 2.5D methods for volumetric medical image segmentation. Additionally, to compare the performance and effectiveness of these methods, we provide an empirical study of these methods on three representative segmentation tasks involving different modalities and targets. Our experimental results highlight that 3D CNNs may not always be the best choice. Despite all these 2.5D methods can bring performance gains to 2D baseline, not all the methods hold the benefits on different datasets. We hope the results and conclusions of our study will prove useful for the community on exploring and developing efficient volumetric medical image segmentation methods.",
+          "resolved_arxiv": {
+            "arxiv_id": "2010.06163",
+            "title": "Bridging 2D and 3D Segmentation Networks for Computation Efficient Volumetric Medical Image Segmentation: An Empirical Study of 2.5D Solutions",
+            "abstract": "Recently, deep convolutional neural networks have achieved great success for medical image segmentation. However, unlike segmentation of natural images, most medical images such as MRI and CT are volumetric data. In order to make full use of volumetric information, 3D CNNs are widely used. However, 3D CNNs suffer from higher inference time and computation cost, which hinders their further clinical applications. Additionally, with the increased number of parameters, the risk of overfitting is higher, especially for medical images where data and annotations are expensive to acquire. To issue this problem, many 2.5D segmentation methods have been proposed to make use of volumetric spatial information with less computation cost. Despite these works lead to improvements on a variety of segmentation tasks, to the best of our knowledge, there has not previously been a large-scale empirical comparison of these methods. In this paper, we aim to present a review of the latest developments of 2.5D methods for volumetric medical image segmentation. Additionally, to compare the performance and effectiveness of these methods, we provide an empirical study of these methods on three representative segmentation tasks involving different modalities and targets. Our experimental results highlight that 3D CNNs may not always be the best choice. Despite all these 2.5D methods can bring performance gains to 2D baseline, not all the methods hold the benefits on different datasets. We hope the results and conclusions of our study will prove useful for the community on exploring and developing efficient volumetric medical image segmentation methods.",
+            "published": "2020-10-13T04:12:28Z",
+            "source_url": "https://arxiv.org/abs/2010.06163"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "OpenMedIA extended this ecosystem by providing an open-source toolbox supporting a rich set of deep learning methods—including 2D and 3D classification, segmentation, localisation, and detection—across heterogeneous AI computing platforms, incorporating both PyTorch and MindSpore backends to accommodate diverse hardware environments [arxiv_2208.05616].",
+      "citation_markers": [
+        "[arxiv_2208.05616]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2208.05616",
+          "doc_id": "arxiv_2208.05616",
+          "title": "OpenMedIA: Open-Source Medical Image Analysis Toolbox and Benchmark\n  under Heterogeneous AI Computing Platforms",
+          "year": 2022,
+          "venue": "eess.IV",
+          "abstract": "In this paper, we present OpenMedIA, an open-source toolbox library containing a rich set of deep learning methods for medical image analysis under heterogeneous Artificial Intelligence (AI) computing platforms. Various medical image analysis methods, including 2D/3D medical image classification, segmentation, localisation, and detection, have been included in the toolbox with PyTorch and/or MindSpore implementations under heterogeneous NVIDIA and Huawei Ascend computing systems. To our best knowledge, OpenMedIA is the first open-source algorithm library providing compared PyTorch and MindSpore implementations and results on several benchmark datasets. The source codes and models are available at https://git.openi.org.cn/OpenMedIA.",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.05616",
+            "title": "OpenMedIA: Open-Source Medical Image Analysis Toolbox and Benchmark under Heterogeneous AI Computing Platforms",
+            "abstract": "In this paper, we present OpenMedIA, an open-source toolbox library containing a rich set of deep learning methods for medical image analysis under heterogeneous Artificial Intelligence (AI) computing platforms. Various medical image analysis methods, including 2D/3D medical image classification, segmentation, localisation, and detection, have been included in the toolbox with PyTorch and/or MindSpore implementations under heterogeneous NVIDIA and Huawei Ascend computing systems. To our best knowledge, OpenMedIA is the first open-source algorithm library providing compared PyTorch and MindSpore implementations and results on several benchmark datasets. The source codes and models are available at https://git.openi.org.cn/OpenMedIA.",
+            "published": "2022-08-11T02:51:14Z",
+            "source_url": "https://arxiv.org/abs/2208.05616"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Li et al. [arxiv_2106.12864] conducted a systematic collection of medical image datasets specifically to address the gap between the volume of data required by deep learning algorithms and what is practically available in clinical settings, while Chen et al. [arxiv_2105.13381] similarly concluded that further improvement of deep learning models is majorly constrained by the absence of large labelled corpora.",
+      "citation_markers": [
+        "[arxiv_2106.12864]",
+        "[arxiv_2105.13381]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2106.12864",
+          "doc_id": "arxiv_2106.12864",
+          "title": "A Systematic Collection of Medical Image Datasets for Deep Learning",
+          "year": 2021,
+          "venue": "eess.IV",
+          "abstract": "The astounding success made by artificial intelligence (AI) in healthcare and other fields proves that AI can achieve human-like performance. However, success always comes with challenges. Deep learning algorithms are data-dependent and require large datasets for training. The lack of data in the medical imaging field creates a bottleneck for the application of deep learning to medical image analysis. Medical image acquisition, annotation, and analysis are costly, and their usage is constrained by ethical restrictions. They also require many resources, such as human expertise and funding. That makes it difficult for non-medical researchers to have access to useful and large medical data. Thus, as comprehensive as possible, this paper provides a collection of medical image datasets with their associated challenges for deep learning research. We have collected information of around three hundred datasets and challenges mainly reported between 2013 and 2020 and categorized them into four categories: head & neck, chest & abdomen, pathology & blood, and ``others''. Our paper has three purposes: 1) to provide a most up to date and complete list that can be used as a universal reference to easily find the datasets for clinical image analysis, 2) to guide researchers on the methodology to test and evaluate their methods' performance and robustness on relevant datasets, 3) to provide a ``route'' to relevant algorithms for the relevant medical topics, and challenge leaderboards.",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.12864",
+            "title": "A Systematic Collection of Medical Image Datasets for Deep Learning",
+            "abstract": "The astounding success made by artificial intelligence (AI) in healthcare and other fields proves that AI can achieve human-like performance. However, success always comes with challenges. Deep learning algorithms are data-dependent and require large datasets for training. The lack of data in the medical imaging field creates a bottleneck for the application of deep learning to medical image analysis. Medical image acquisition, annotation, and analysis are costly, and their usage is constrained by ethical restrictions. They also require many resources, such as human expertise and funding. That makes it difficult for non-medical researchers to have access to useful and large medical data. Thus, as comprehensive as possible, this paper provides a collection of medical image datasets with their associated challenges for deep learning research. We have collected information of around three hundred datasets and challenges mainly reported between 2013 and 2020 and categorized them into four categories: head & neck, chest & abdomen, pathology & blood, and ``others''. Our paper has three purposes: 1) to provide a most up to date and complete list that can be used as a universal reference to easily find the datasets for clinical image analysis, 2) to guide researchers on the methodology to test and evaluate their methods' performance and robustness on relevant datasets, 3) to provide a ``route'' to relevant algorithms for the relevant medical topics, and challenge leaderboards.",
+            "published": "2021-06-24T10:00:30Z",
+            "source_url": "https://arxiv.org/abs/2106.12864"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2105.13381",
+          "doc_id": "arxiv_2105.13381",
+          "title": "Recent advances and clinical applications of deep learning in medical\n  image analysis",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "Deep learning has received extensive research interest in developing new medical image processing algorithms, and deep learning based models have been remarkably successful in a variety of medical imaging tasks to support disease detection and diagnosis. Despite the success, the further improvement of deep learning models in medical image analysis is majorly bottlenecked by the lack of large-sized and well-annotated datasets. In the past five years, many studies have focused on addressing this challenge. In this paper, we reviewed and summarized these recent studies to provide a comprehensive overview of applying deep learning methods in various medical image analysis tasks. Especially, we emphasize the latest progress and contributions of state-of-the-art unsupervised and semi-supervised deep learning in medical image analysis, which are summarized based on different application scenarios, including classification, segmentation, detection, and image registration. We also discuss the major technical challenges and suggest the possible solutions in future research efforts.",
+          "resolved_arxiv": {
+            "arxiv_id": "2105.13381",
+            "title": "Recent advances and clinical applications of deep learning in medical image analysis",
+            "abstract": "Deep learning has received extensive research interest in developing new medical image processing algorithms, and deep learning based models have been remarkably successful in a variety of medical imaging tasks to support disease detection and diagnosis. Despite the success, the further improvement of deep learning models in medical image analysis is majorly bottlenecked by the lack of large-sized and well-annotated datasets. In the past five years, many studies have focused on addressing this challenge. In this paper, we reviewed and summarized these recent studies to provide a comprehensive overview of applying deep learning methods in various medical image analysis tasks. Especially, we emphasize the latest progress and contributions of state-of-the-art unsupervised and semi-supervised deep learning in medical image analysis, which are summarized based on different application scenarios, including classification, segmentation, detection, and image registration. We also discuss the major technical challenges and suggest the possible solutions in future research efforts.",
+            "published": "2021-05-27T18:05:12Z",
+            "source_url": "https://arxiv.org/abs/2105.13381"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "TernaryNet replaces standard convolutions with sparse and binary operations to enable GPU-free inference [arxiv_1801.09449], and a general lightweight system has been proposed that avoids task-specific tuning while maintaining competitive accuracy across diverse segmentation benchmarks [arxiv_1911.01764].",
+      "citation_markers": [
+        "[arxiv_1801.09449]",
+        "[arxiv_1911.01764]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1801.09449",
+          "doc_id": "arxiv_1801.09449",
+          "title": "TernaryNet: Faster Deep Model Inference without GPUs for Medical 3D\n  Segmentation using Sparse and Binary Convolutions",
+          "year": 2018,
+          "venue": "cs.CV",
+          "abstract": "Deep convolutional neural networks (DCNN) are currently ubiquitous in medical imaging. While their versatility and high quality results for common image analysis tasks including segmentation, localisation and prediction is astonishing, the large representational power comes at the cost of highly demanding computational effort. This limits their practical applications for image guided interventions and diagnostic (point-of-care) support using mobile devices without graphics processing units (GPU). We propose a new scheme that approximates both trainable weights and neural activations in deep networks by ternary values and tackles the open question of backpropagation when dealing with non-differentiable functions. Our solution enables the removal of the expensive floating-point matrix multiplications throughout any convolutional neural network and replaces them by energy and time preserving binary operators and population counts. Our approach, which is demonstrated using a fully-convolutional network (FCN) for CT pancreas segmentation leads to more than 10-fold reduced memory requirements and we provide a concept for sub-second inference without GPUs. Our ternary approximation obtains high accuracies (without any post-processing) with a Dice overlap of 71.0% that are statistically equivalent to using networks with high-precision weights and activations. We further demonstrate the significant improvements reached in comparison to binary quantisation and without our proposed ternary hyperbolic tangent continuation. We present a key enabling technique for highly efficient DCNN inference without GPUs that will help to bring the advances of deep learning to practical clinical applications. It has also great promise for improving accuracies in large-scale medical data retrieval.",
+          "resolved_arxiv": {
+            "arxiv_id": "1801.09449",
+            "title": "TernaryNet: Faster Deep Model Inference without GPUs for Medical 3D Segmentation using Sparse and Binary Convolutions",
+            "abstract": "Deep convolutional neural networks (DCNN) are currently ubiquitous in medical imaging. While their versatility and high quality results for common image analysis tasks including segmentation, localisation and prediction is astonishing, the large representational power comes at the cost of highly demanding computational effort. This limits their practical applications for image guided interventions and diagnostic (point-of-care) support using mobile devices without graphics processing units (GPU). We propose a new scheme that approximates both trainable weights and neural activations in deep networks by ternary values and tackles the open question of backpropagation when dealing with non-differentiable functions. Our solution enables the removal of the expensive floating-point matrix multiplications throughout any convolutional neural network and replaces them by energy and time preserving binary operators and population counts. Our approach, which is demonstrated using a fully-convolutional network (FCN) for CT pancreas segmentation leads to more than 10-fold reduced memory requirements and we provide a concept for sub-second inference without GPUs. Our ternary approximation obtains high accuracies (without any post-processing) with a Dice overlap of 71.0% that are statistically equivalent to using networks with high-precision weights and activations. We further demonstrate the significant improvements reached in comparison to binary quantisation and without our proposed ternary hyperbolic tangent continuation. We present a key enabling technique for highly efficient DCNN inference without GPUs that will help to bring the advances of deep learning to practical clinical applications. It has also great promise for improving accuracies in large-scale medical data retrieval.",
+            "published": "2018-01-29T11:13:43Z",
+            "source_url": "https://arxiv.org/abs/1801.09449"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_1911.01764",
+          "doc_id": "arxiv_1911.01764",
+          "title": "One Network to Segment Them All: A General, Lightweight System for\n  Accurate 3D Medical Image Segmentation",
+          "year": 2019,
+          "venue": "cs.LG",
+          "abstract": "Many recent medical segmentation systems rely on powerful deep learning models to solve highly specific tasks. To maximize performance, it is standard practice to evaluate numerous pipelines with varying model topologies, optimization parameters, pre- & postprocessing steps, and even model cascades. It is often not clear how the resulting pipeline transfers to different tasks. We propose a simple and thoroughly evaluated deep learning framework for segmentation of arbitrary medical image volumes. The system requires no task-specific information, no human interaction and is based on a fixed model topology and a fixed hyperparameter set, eliminating the process of model selection and its inherent tendency to cause method-level over-fitting. The system is available in open source and does not require deep learning expertise to use. Without task-specific modifications, the system performed better than or similar to highly specialized deep learning methods across 3 separate segmentation tasks. In addition, it ranked 5-th and 6-th in the first and second round of the 2018 Medical Segmentation Decathlon comprising another 10 tasks. The system relies on multi-planar data augmentation which facilitates the application of a single 2D architecture based on the familiar U-Net. Multi-planar training combines the parameter efficiency of a 2D fully convolutional neural network with a systematic train- and test-time augmentation scheme, which allows the 2D model to learn a representation of the 3D image volume that fosters generalization.",
+          "resolved_arxiv": {
+            "arxiv_id": "1911.01764",
+            "title": "One Network to Segment Them All: A General, Lightweight System for Accurate 3D Medical Image Segmentation",
+            "abstract": "Many recent medical segmentation systems rely on powerful deep learning models to solve highly specific tasks. To maximize performance, it is standard practice to evaluate numerous pipelines with varying model topologies, optimization parameters, pre- & postprocessing steps, and even model cascades. It is often not clear how the resulting pipeline transfers to different tasks. We propose a simple and thoroughly evaluated deep learning framework for segmentation of arbitrary medical image volumes. The system requires no task-specific information, no human interaction and is based on a fixed model topology and a fixed hyperparameter set, eliminating the process of model selection and its inherent tendency to cause method-level over-fitting. The system is available in open source and does not require deep learning expertise to use. Without task-specific modifications, the system performed better than or similar to highly specialized deep learning methods across 3 separate segmentation tasks. In addition, it ranked 5-th and 6-th in the first and second round of the 2018 Medical Segmentation Decathlon comprising another 10 tasks. The system relies on multi-planar data augmentation which facilitates the application of a single 2D architecture based on the familiar U-Net. Multi-planar training combines the parameter efficiency of a 2D fully convolutional neural network with a systematic train- and test-time augmentation scheme, which allows the 2D model to learn a representation of the 3D image volume that fosters generalization.",
+            "published": "2019-11-05T13:37:53Z",
+            "source_url": "https://arxiv.org/abs/1911.01764"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "OpenMedIA extended this ecosystem by providing an open-source toolbox supporting a rich set of deep learning methods—including 2D and 3D classification, segmentation, localisation, and detection—across heterogeneous AI computing platforms, incorporating both PyTorch and MindSpore backends to accommodate diverse hardware environments [arxiv_2208.05616]. This heterogeneous computing support represents a meaningful advance over earlier frameworks, which were predominantly tied to single hardware ecosystems.",
+      "citation_markers": [
+        "[arxiv_2208.05616]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2208.05616",
+          "doc_id": "arxiv_2208.05616",
+          "title": "OpenMedIA: Open-Source Medical Image Analysis Toolbox and Benchmark\n  under Heterogeneous AI Computing Platforms",
+          "year": 2022,
+          "venue": "eess.IV",
+          "abstract": "In this paper, we present OpenMedIA, an open-source toolbox library containing a rich set of deep learning methods for medical image analysis under heterogeneous Artificial Intelligence (AI) computing platforms. Various medical image analysis methods, including 2D/3D medical image classification, segmentation, localisation, and detection, have been included in the toolbox with PyTorch and/or MindSpore implementations under heterogeneous NVIDIA and Huawei Ascend computing systems. To our best knowledge, OpenMedIA is the first open-source algorithm library providing compared PyTorch and MindSpore implementations and results on several benchmark datasets. The source codes and models are available at https://git.openi.org.cn/OpenMedIA.",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.05616",
+            "title": "OpenMedIA: Open-Source Medical Image Analysis Toolbox and Benchmark under Heterogeneous AI Computing Platforms",
+            "abstract": "In this paper, we present OpenMedIA, an open-source toolbox library containing a rich set of deep learning methods for medical image analysis under heterogeneous Artificial Intelligence (AI) computing platforms. Various medical image analysis methods, including 2D/3D medical image classification, segmentation, localisation, and detection, have been included in the toolbox with PyTorch and/or MindSpore implementations under heterogeneous NVIDIA and Huawei Ascend computing systems. To our best knowledge, OpenMedIA is the first open-source algorithm library providing compared PyTorch and MindSpore implementations and results on several benchmark datasets. The source codes and models are available at https://git.openi.org.cn/OpenMedIA.",
+            "published": "2022-08-11T02:51:14Z",
+            "source_url": "https://arxiv.org/abs/2208.05616"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "topic": "Federated Learning",
+  "arm": "o_rank_slab_matched",
+  "ok": true,
+  "model_g": "qwen3-32b",
+  "bundle_hash": "f836575ec087b2547e60a6cf445349351b472258d84851696fdca4c48e3cb681",
+  "started_at": "2026-07-13 18:05:26",
+  "target_total_words": 1000,
+  "groups": [
+    {
+      "name": "Rank slab 1: positions 1-4",
+      "n": 4
+    },
+    {
+      "name": "Rank slab 2: positions 5-8",
+      "n": 4
+    }
+  ],
+  "group_size_vector": [
+    4,
+    4
+  ],
+  "refs": [
+    "arxiv_2003.13761",
+    "arxiv_2012.07183",
+    "arxiv_2104.14362",
+    "arxiv_2106.06843",
+    "arxiv_2201.07730",
+    "arxiv_2210.00325",
+    "arxiv_2306.02570",
+    "arxiv_2402.10145"
+  ],
+  "n_refs": 8,
+  "word_count": 896,
+  "written_citation_ids": [
+    "arxiv_2104.14362",
+    "arxiv_2012.07183",
+    "arxiv_2003.13761",
+    "arxiv_2106.06843",
+    "arxiv_2210.00325",
+    "arxiv_2402.10145",
+    "arxiv_2201.07730",
+    "arxiv_2306.02570"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2003.13761",
+    "arxiv_2012.07183",
+    "arxiv_2104.14362",
+    "arxiv_2106.06843",
+    "arxiv_2201.07730",
+    "arxiv_2210.00325",
+    "arxiv_2306.02570",
+    "arxiv_2402.10145"
+  ],
+  "primary_length_eligible": true,
+  "elapsed_sec": 162.3,
+  "llm_usage_delta": {
+    "n_calls": 8,
+    "prompt_tokens": 4771,
+    "completion_tokens": 1921
+  }
+}

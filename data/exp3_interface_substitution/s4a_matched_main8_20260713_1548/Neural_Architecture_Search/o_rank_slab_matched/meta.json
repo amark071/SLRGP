@@ -1,0 +1,62 @@
+{
+  "topic": "Neural Architecture Search",
+  "arm": "o_rank_slab_matched",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "bundle_hash": "f0c53242b8870d0b3cb4e8cebde1ad02ca73e770b65edb86191cedc00466f51f",
+  "started_at": "2026-07-13 16:13:31",
+  "target_total_words": 1000,
+  "groups": [
+    {
+      "name": "Rank slab 1: positions 1-4",
+      "n": 4
+    },
+    {
+      "name": "Rank slab 2: positions 5-8",
+      "n": 4
+    }
+  ],
+  "group_size_vector": [
+    4,
+    4
+  ],
+  "refs": [
+    "arxiv_1807.06906",
+    "arxiv_1808.07233",
+    "arxiv_1905.01392",
+    "arxiv_2108.08474",
+    "arxiv_2109.12425",
+    "arxiv_2110.05842",
+    "arxiv_2409.18163",
+    "arxiv_2410.01431"
+  ],
+  "n_refs": 8,
+  "word_count": 933,
+  "written_citation_ids": [
+    "arxiv_1905.01392",
+    "arxiv_2108.08474",
+    "arxiv_1808.07233",
+    "arxiv_2109.12425",
+    "arxiv_1807.06906",
+    "arxiv_2409.18163",
+    "arxiv_2410.01431",
+    "arxiv_2110.05842"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_1807.06906",
+    "arxiv_1808.07233",
+    "arxiv_1905.01392",
+    "arxiv_2108.08474",
+    "arxiv_2109.12425",
+    "arxiv_2110.05842",
+    "arxiv_2409.18163",
+    "arxiv_2410.01431"
+  ],
+  "primary_length_eligible": true,
+  "elapsed_sec": 51.4,
+  "llm_usage_delta": {
+    "n_calls": 8,
+    "prompt_tokens": 5076,
+    "completion_tokens": 1882
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "title": "Multimodal Large Language Models",
+  "depth": 0,
+  "doc_ids": [
+    "arxiv_2203.17247",
+    "arxiv_2409.07463",
+    "arxiv_2402.12451",
+    "ss_478371",
+    "arxiv_2408.06610",
+    "arxiv_2309.10020",
+    "arxiv_2209.06794",
+    "arxiv_2306.09265",
+    "ss_478472",
+    "arxiv_2410.05608",
+    "arxiv_2411.17558",
+    "arxiv_2403.08773",
+    "arxiv_2308.12714",
+    "arxiv_2210.09263",
+    "arxiv_2109.10246",
+    "arxiv_2310.03211",
+    "arxiv_2308.13437",
+    "arxiv_2406.06730",
+    "arxiv_2412.02104",
+    "arxiv_2304.08485",
+    "arxiv_2402.08360",
+    "arxiv_2403.13164",
+    "arxiv_2410.16236",
+    "arxiv_2412.03220",
+    "arxiv_2307.04087",
+    "arxiv_2406.15768",
+    "arxiv_2302.00389",
+    "arxiv_2304.08345",
+    "arxiv_2408.12902",
+    "arxiv_2408.08632",
+    "arxiv_2306.07198",
+    "arxiv_2306.14895"
+  ],
+  "facet": "topic",
+  "relation": "foundational-to-applied",
+  "children": [
+    {
+      "title": "Foundations: Multimodal Pretraining, Architectures, and Representation Learning",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2210.09263",
+        "arxiv_2109.10246",
+        "arxiv_2306.07198",
+        "arxiv_2302.00389",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2304.08345",
+        "ss_478472",
+        "arxiv_2412.03220",
+        "arxiv_2410.05608"
+      ],
+      "facet": "method",
+      "relation": "chronological",
+      "children": [
+        {
+          "title": "Representation Learning: Grounding, Alignment, and Cross-Modal Semantics",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2109.10246",
+            "arxiv_2302.00389"
+          ],
+          "facet": "theory",
+          "relation": "simple-to-complex",
+          "children": [],
+          "rationale": "These papers focus on the theoretical and empirical question of what multimodal pretraining actually learns—whether it grounds language, how cross-modal representations are structured, and the evolution of multimodal representation techniques."
+        },
+        {
+          "title": "Pretraining Architectures and Objectives: Vision-Language and Omni-Modal Models",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2210.09263",
+            "arxiv_2306.07198",
+            "arxiv_2304.08345",
+            "ss_478472"
+          ],
+          "facet": "method",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers survey or introduce specific pretraining architectures, objectives, and datasets—from dual-encoder and encoder-decoder VLP models to tri-modal (vision-audio-language) systems—covering the design space of how multimodal pretraining is operationalized."
+        },
+        {
+          "title": "Scaling to General-Purpose Multimodal Foundation Models and LLM Architectures",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2209.06794",
+            "arxiv_2309.10020",
+            "arxiv_2412.03220",
+            "arxiv_2410.05608"
+          ],
+          "facet": "object-of-study",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers address the transition from task-specific pretrained models to large-scale, general-purpose multimodal systems—including jointly-scaled vision-language models (PaLI), surveys of the full multimodal foundation model landscape, LLM architectural trends, and instruction-tuned multimodal LLMs."
+        }
+      ],
+      "rationale": "These papers establish the core pretraining paradigms, model architectures (ViT, encoder-decoder, joint vision-language models), and representation learning methods that underpin all downstream MLLMs."
+    },
+    {
+      "title": "Instruction Tuning, Efficient Adaptation, and Model Development",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2304.08485",
+        "arxiv_2307.04087",
+        "arxiv_2308.12714",
+        "arxiv_2308.13437",
+        "arxiv_2403.08773",
+        "arxiv_2408.06610",
+        "arxiv_2408.08632",
+        "arxiv_2408.12902",
+        "arxiv_2410.16236",
+        "arxiv_2406.06730",
+        "arxiv_2406.15768",
+        "arxiv_2409.07463",
+        "arxiv_2402.08360",
+        "arxiv_2306.14895",
+        "arxiv_2402.12451"
+      ],
+      "facet": "method",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Instruction-Tuning Data Construction and Core Visual LLM Architectures",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2304.08485",
+            "arxiv_2307.04087",
+            "arxiv_2308.12714",
+            "arxiv_2308.13437",
+            "arxiv_2306.14895",
+            "arxiv_2408.12902"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [
+            {
+              "title": "Instruction-Tuning Data Construction: Generation, Scaling, and Quality",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2304.08485",
+                "arxiv_2307.04087",
+                "arxiv_2308.12714"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers all address the problem of how to create, scale, and improve the quality of multimodal instruction-tuning data, from the original LLaVA GPT-4-based generation approach to SVIT's large-scale expansion and VIGC's iterative generation-and-correction paradigm."
+            },
+            {
+              "title": "Core Visual LLM Architectures: Cross-Modal Alignment and Structural Design",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2306.14895",
+                "arxiv_2308.13437",
+                "arxiv_2408.12902"
+              ],
+              "facet": "method",
+              "relation": "general-to-specific",
+              "children": [],
+              "rationale": "These papers focus on architectural choices for multimodal LLMs—from tutorial-level overviews of building multimodal GPT-4-like models, to region-level encoder integration for fine-grained alignment (PVIT), to frozen-LLM inner-adaptor designs that preserve NLP capabilities (IAA)."
+            }
+          ],
+          "rationale": "These papers establish the foundational paradigm of visual instruction tuning—generating instruction-following data and training end-to-end multimodal models—including LLaVA, SVIT, VIGC, PVIT, and the CVPR tutorial overview."
+        },
+        {
+          "title": "Efficient Adaptation, Lightweight Architectures, and Knowledge Distillation",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2408.06610",
+            "arxiv_2408.08632",
+            "arxiv_2410.16236",
+            "arxiv_2403.08773"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [],
+          "rationale": "These papers address the challenge of reducing computational cost and preserving language capabilities through parameter-efficient adapters, frozen LLM strategies, and knowledge distillation from large to small MLLMs."
+        },
+        {
+          "title": "Domain-Specific and Task-Specific Instruction Tuning Applications",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2406.06730",
+            "arxiv_2409.07463",
+            "arxiv_2402.08360",
+            "arxiv_2406.15768"
+          ],
+          "facet": "application",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers apply instruction tuning to specialized domains and tasks—text-rich image reading, semiconductor microscopy, domain-specific visual multitasks, and mutual reinforcement of perception and comprehension."
+        },
+        {
+          "title": "Surveys, Benchmarks, and Broad Overviews of MLLMs",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2402.12451"
+          ],
+          "facet": "other",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers provide comprehensive surveys of MLLM architectures and training strategies, and systematic benchmark reviews for evaluating multimodal capabilities across diverse tasks."
+        }
+      ],
+      "rationale": "These papers focus on building capable MLLMs through visual instruction tuning, data generation, parameter-efficient adapters, knowledge distillation, and domain-specific fine-tuning strategies."
+    },
+    {
+      "title": "Evaluation, Benchmarking, Interpretability, and In-Context Learning",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2306.09265",
+        "ss_478371",
+        "arxiv_2310.03211",
+        "arxiv_2411.17558",
+        "arxiv_2403.13164",
+        "arxiv_2412.02104",
+        "arxiv_2203.17247"
+      ],
+      "facet": "dataset-task",
+      "relation": "general-to-specific",
+      "children": [
+        {
+          "title": "Evaluation and Benchmarking of Multimodal Large Language Models",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2306.09265",
+            "ss_478371",
+            "arxiv_2310.03211",
+            "arxiv_2411.17558"
+          ],
+          "facet": "dataset-task",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers all construct or analyze benchmarks and evaluation frameworks to measure MLLM performance across multimodal tasks such as VQA, captioning, and reasoning."
+        },
+        {
+          "title": "Interpretability and In-Context Learning in Multimodal Large Language Models",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2403.13164",
+            "arxiv_2412.02104",
+            "arxiv_2203.17247"
+          ],
+          "facet": "method",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers focus on understanding the internal mechanisms of MLLMs (attention visualization, explainability) and probing the emergent in-context learning capabilities of vision-language models."
+        }
+      ],
+      "rationale": "These papers assess MLLM capabilities through comprehensive benchmarks, VQA-focused evaluations, multimodal in-context learning probes, and interpretability/explainability tools that reveal what models have learned."
+    }
+  ],
+  "rationale": "The corpus naturally partitions into papers about foundational architectures and pretraining methods, papers about instruction tuning and efficient adaptation, and papers about evaluation/benchmarking and interpretability—moving from building blocks to deployment and assessment."
+}

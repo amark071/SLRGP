@@ -1,0 +1,80 @@
+diff --git a/src/model.py b/src/model.py
+index 14f1803..d75d47e 100644
+--- a/src/model.py
++++ b/src/model.py
+@@ -93,15 +93,40 @@ class APIModel:
+             base_url=api_url
+         )
+         self.model = model
+-        self.cache_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'cache')
++        self.cache_dir = os.environ.get(
++            "S3_MODEL_CACHE_DIR",
++            os.path.join(os.path.dirname(os.path.dirname(__file__)), 'cache'),
++        )
+         self.cache_file = os.path.join(self.cache_dir, f'{model}_cache.jsonl')
+         self._cache_map = self._init_cache()
+         # 创建信号量控制API并发
+-        self.api_semaphore = threading.Semaphore(max_concurrent_api_calls)
++        concurrency = int(os.environ.get("S3_API_MAX_THREADS", str(max_concurrent_api_calls)))
++        self.api_semaphore = threading.Semaphore(concurrency)
+         self.token_counter = tokenCounter()
+ 
+         self.bad_case_cache_file = os.path.join(self.cache_dir, f'{model}_bad_case_cache.jsonl')
+ 
++    def _record_usage(self, input_tokens, output_tokens):
++        usage_log = os.environ.get("S3_USAGE_LOG")
++        if not usage_log:
++            return
++        event = {
++            "model": self.model,
++            "system": os.environ.get("S3_SYSTEM_ID", "itersurvey"),
++            "topic_id": os.environ.get("S3_TOPIC_ID"),
++            "usage": {
++                "prompt_tokens": int(input_tokens or 0),
++                "completion_tokens": int(output_tokens or 0),
++                "total_tokens": int(input_tokens or 0) + int(output_tokens or 0),
++            },
++        }
++        with open(usage_log, "a", encoding="utf-8") as handle:
++            fcntl.flock(handle, fcntl.LOCK_EX)
++            try:
++                handle.write(json.dumps(event, ensure_ascii=False) + "\n")
++            finally:
++                fcntl.flock(handle, fcntl.LOCK_UN)
++
+ 
+     def _init_cache(self):
+         """初始化缓存目录和文件"""
+@@ -235,6 +260,7 @@ class APIModel:
+                 input_tokens, output_tokens = self._get_token_usage(response)
+ 
+                 self.token_counter.accumulate_usage(input_tokens, output_tokens, self.model)
++                self._record_usage(input_tokens, output_tokens)
+                 # 保存到缓存
+                 self._save_to_cache(cache_key, result_str)
+                 return result
+@@ -393,6 +419,7 @@ class APIModel:
+                         input_tokens, output_tokens = self._get_token_usage(response)
+ 
+                     self.token_counter.accumulate_usage(input_tokens, output_tokens, self.model)
++                    self._record_usage(input_tokens, output_tokens)
+                     # 保存到缓存
+                     self._save_to_cache(cache_key, result_str)
+                     return result
+@@ -466,6 +493,7 @@ class APIModel:
+                         input_tokens, output_tokens = self._get_token_usage(response)
+ 
+                     self.token_counter.accumulate_usage(input_tokens, output_tokens, self.model)
++                    self._record_usage(input_tokens, output_tokens)
+                     # 保存到缓存
+                     self._save_to_cache(cache_key, result_str)
+                     return result
+@@ -502,7 +530,7 @@ class APIModel:
+         return response
+ 
+     def batch_chat(self, input_batch, temperature=0, json_temp=None):
+-        max_threads=15 # limit max concurrent threads using model API
++        max_threads=int(os.environ.get("S3_API_MAX_THREADS", "3"))
+         res_l = ['No response'] * len(input_batch)
+         thread_l = []
+         for i, input in zip(range(len(input_batch)), input_batch):

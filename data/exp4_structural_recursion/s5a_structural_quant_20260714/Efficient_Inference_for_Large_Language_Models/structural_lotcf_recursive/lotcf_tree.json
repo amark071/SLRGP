@@ -1,0 +1,305 @@
+{
+  "title": "Efficient Inference for Large Language Models",
+  "depth": 0,
+  "doc_ids": [
+    "arxiv_2409.17372",
+    "arxiv_2402.09748",
+    "arxiv_2211.07715",
+    "arxiv_2508.06297",
+    "arxiv_2401.02038",
+    "arxiv_2501.16372",
+    "arxiv_2404.15949",
+    "arxiv_2002.11794",
+    "arxiv_2405.11704",
+    "arxiv_2404.14294",
+    "arxiv_2503.15921",
+    "arxiv_2408.03130",
+    "arxiv_2408.08554",
+    "arxiv_2305.14152",
+    "arxiv_2407.09111",
+    "arxiv_2406.19707",
+    "arxiv_2405.10637",
+    "arxiv_2311.00502",
+    "arxiv_2403.17312",
+    "arxiv_2601.09865",
+    "arxiv_2403.00858",
+    "arxiv_2503.18869",
+    "arxiv_2411.15785",
+    "arxiv_2412.19442",
+    "arxiv_2402.04902",
+    "arxiv_2404.05741",
+    "arxiv_2210.03858",
+    "arxiv_2512.01953",
+    "arxiv_2503.08415",
+    "arxiv_2405.03917",
+    "arxiv_2404.11502",
+    "arxiv_2403.05527"
+  ],
+  "facet": "method",
+  "relation": "foundational-to-applied",
+  "children": [
+    {
+      "title": "Surveys and Overviews of Efficient LLM Inference",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2402.09748",
+        "arxiv_2401.02038",
+        "arxiv_2404.14294",
+        "arxiv_2408.03130",
+        "arxiv_2407.09111",
+        "arxiv_2404.11502"
+      ],
+      "facet": "topic",
+      "relation": "general-to-specific",
+      "children": [
+        {
+          "title": "Broad Surveys: LLM Efficiency from Training through Inference",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2402.09748",
+            "arxiv_2401.02038",
+            "arxiv_2408.03130"
+          ],
+          "facet": "topic",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers take a wide-angle view, covering the full lifecycle of LLM efficiency including training paradigms, compression methods (quantization, pruning, distillation, compact architectures), and deployment, situating inference optimization within a larger landscape."
+        },
+        {
+          "title": "Inference-Focused Surveys and Evaluation Frameworks",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2404.14294",
+            "arxiv_2407.09111",
+            "arxiv_2404.11502"
+          ],
+          "facet": "topic",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers concentrate specifically on inference-time efficiency—cataloguing inference optimization techniques, hardware accelerator considerations, and coarse-to-fine empirical benchmarking of inference libraries—providing a more targeted treatment of the inference problem."
+        }
+      ],
+      "rationale": "These papers provide broad taxonomies and comprehensive reviews of the efficient inference landscape, serving as the conceptual foundation for the more specific methodological clusters."
+    },
+    {
+      "title": "Model Compression: Quantization, Pruning, Distillation, and Architecture Search",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2211.07715",
+        "arxiv_2002.11794",
+        "arxiv_2405.11704",
+        "arxiv_2501.16372",
+        "arxiv_2305.14152",
+        "arxiv_2408.08554",
+        "arxiv_2311.00502",
+        "arxiv_2210.03858",
+        "arxiv_2402.04902",
+        "arxiv_2601.09865",
+        "arxiv_2404.05741",
+        "arxiv_2503.18869"
+      ],
+      "facet": "method",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Quantization Methods for LLM Compression and Inference",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2408.08554",
+            "arxiv_2311.00502",
+            "arxiv_2210.03858",
+            "arxiv_2305.14152",
+            "arxiv_2402.04902"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [
+            {
+              "title": "Post-Training Quantization for LLM Inference Acceleration",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2408.08554",
+                "arxiv_2311.00502"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers focus on PTQ techniques applied after training to reduce memory and accelerate inference, including arbitrary-bit quantization and CPU-optimized INT4 deployment."
+            },
+            {
+              "title": "Quantization-Aware Parameter-Efficient Fine-Tuning (QA-PEFT) for LLMs",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2210.03858",
+                "arxiv_2305.14152",
+                "arxiv_2402.04902"
+              ],
+              "facet": "method",
+              "relation": "chronological",
+              "children": [],
+              "rationale": "These papers address the intersection of quantization and parameter-efficient fine-tuning, proposing methods that jointly optimize for compressed inference and low-cost adaptation of large pre-trained models."
+            }
+          ],
+          "rationale": "These papers focus specifically on quantization techniques (PTQ, QAT, sub-4-bit, arbitrary-bit, CPU-optimized INT4) as the primary mechanism for reducing memory and accelerating inference."
+        },
+        {
+          "title": "Pruning, Distillation, and Architecture Search for LLM Efficiency",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2409.17372",
+            "arxiv_2211.07715",
+            "arxiv_2501.16372",
+            "arxiv_2404.05741",
+            "arxiv_2002.11794"
+          ],
+          "facet": "method",
+          "relation": "foundational-to-applied",
+          "children": [
+            {
+              "title": "Pruning and Distillation for LLM Compression",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2211.07715",
+                "arxiv_2404.05741",
+                "arxiv_2002.11794"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers focus on compressing existing LLM weights and structures through pruning (including hardware-aware and layer-skipping approaches) and knowledge distillation pipelines, treating architecture as fixed while optimizing parameters or removing redundancy."
+            },
+            {
+              "title": "Neural Architecture Search and Architecture-Aware Optimization for LLMs",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2409.17372",
+                "arxiv_2501.16372"
+              ],
+              "facet": "method",
+              "relation": "foundational-to-applied",
+              "children": [],
+              "rationale": "These papers focus on discovering or optimizing the architecture itself—through NAS, low-rank adapter integration with super-networks, and training-time architecture search—going beyond weight-level compression to find efficient structural configurations for LLMs."
+            }
+          ],
+          "rationale": "These papers address structural compression via weight pruning, knowledge distillation, neural architecture search, and layer-skipping strategies, exploring how model topology and knowledge transfer reduce redundancy."
+        },
+        {
+          "title": "Integrated and Systems-Level Compression Frameworks for LLM Deployment",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2601.09865",
+            "arxiv_2503.18869",
+            "arxiv_2405.11704"
+          ],
+          "facet": "application",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers combine multiple compression techniques (quantization + LoRA + distillation, hardware-aware memory controllers, mixed-precision training) into unified deployment pipelines targeting real-world resource-constrained environments."
+        }
+      ],
+      "rationale": "These papers address reducing model size and computational cost through weight-level and architecture-level compression techniques applied before or during deployment."
+    },
+    {
+      "title": "KV Cache Optimization for Memory-Efficient Inference",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2508.06297",
+        "arxiv_2404.15949",
+        "arxiv_2406.19707",
+        "arxiv_2405.10637",
+        "arxiv_2403.17312",
+        "arxiv_2411.15785",
+        "arxiv_2412.19442",
+        "arxiv_2403.05527",
+        "arxiv_2405.03917",
+        "arxiv_2512.01953"
+      ],
+      "facet": "method",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Token Selection and Attention Sparsity for KV Cache Eviction",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2404.15949",
+            "arxiv_2406.19707",
+            "arxiv_2403.17312"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [],
+          "rationale": "These papers share the core idea of identifying and retaining only the most important tokens or attention patterns, discarding the rest to reduce cache size at runtime."
+        },
+        {
+          "title": "Quantization and Low-Bit Compression of KV Cache Entries",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2403.05527",
+            "arxiv_2405.03917"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [],
+          "rationale": "These papers focus on reducing the numerical precision of stored key-value tensors through quantization schemes, including coupled/joint-channel quantization and hybrid error-correction strategies."
+        },
+        {
+          "title": "Architectural Redesign, Layer-Level Sharing, and Systems-Level Joint Optimization",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2405.10637",
+            "arxiv_2411.15785",
+            "arxiv_2512.01953",
+            "arxiv_2412.19442",
+            "arxiv_2508.06297"
+          ],
+          "facet": "method",
+          "relation": "foundational-to-applied",
+          "children": [
+            {
+              "title": "Architectural and Layer-Level Redesign for KV Cache Reduction",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2405.10637",
+                "arxiv_2411.15785"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers propose structural changes to the transformer architecture itself—condensing or bounding KV cache across layers—to fundamentally reduce memory footprint during inference."
+            },
+            {
+              "title": "Systems-Level Joint Optimization and Comprehensive Surveys of KV Cache Strategies",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2512.01953",
+                "arxiv_2412.19442",
+                "arxiv_2508.06297"
+              ],
+              "facet": "method",
+              "relation": "general-to-specific",
+              "children": [],
+              "rationale": "These papers take a holistic, systems-level or survey perspective, examining how multiple KV cache optimization techniques (quantization, compression, chunked prefill, token selection) interact and can be jointly optimized for real-world deployment."
+            }
+          ],
+          "rationale": "These papers go beyond per-token or per-bit compression to restructure how the KV cache is allocated across layers or jointly optimize multiple compression axes (quantization, chunking, model weight compression) at the system level, including survey and review works that synthesize the full landscape."
+        }
+      ],
+      "rationale": "These papers specifically target the key-value cache bottleneck in transformer inference, proposing compression, eviction, quantization, and architectural redesigns of the KV cache."
+    },
+    {
+      "title": "Inference Serving, Speculative Decoding, and Hardware-Software Co-optimization",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2503.15921",
+        "arxiv_2403.00858",
+        "arxiv_2503.08415"
+      ],
+      "facet": "method",
+      "relation": "simple-to-complex",
+      "children": [],
+      "rationale": "These papers focus on accelerating the inference serving pipeline at runtime through speculative decoding strategies, hardware-aware scheduling, and system-level simulation rather than static model compression."
+    }
+  ],
+  "rationale": "The papers naturally partition into four methodological families for efficient LLM inference: (1) surveys/overviews that frame the problem space, (2) model compression techniques (quantization, pruning, distillation, architecture search), (3) KV cache optimization, and (4) inference-time serving and decoding acceleration."
+}

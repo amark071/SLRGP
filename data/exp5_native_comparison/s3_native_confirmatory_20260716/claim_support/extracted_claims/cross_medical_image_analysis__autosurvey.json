@@ -1,0 +1,121 @@
+{
+  "topic_id": "cross_medical_image_analysis",
+  "system": "autosurvey",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The landscape shifted dramatically following the landmark success of convolutional neural networks (CNNs) in the 2012 ImageNet Large Scale Visual Recognition Challenge, where AlexNet demonstrated the power of deep architectures trained on large-scale labeled data [1; 2",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The impact on medical imaging was swift and far-reaching. Deep learning methods rapidly achieved state-of-the-art performance across a broad range of tasks, including classification of diabetic retinopathy, detection of pulmonary nodules in CT, segmentation of brain tumors in MRI, and analysis of histopathological slides [4",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "More recently, self-supervised and contrastive pretraining approaches have demonstrated that powerful representations can be learned from large collections of unlabeled medical images, substantially reducing dependence on expert annotations [7; 8",
+      "citation_markers": [
+        "[7; 8]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Cross-validation strategies—particularly five-fold or leave-one-out cross-validation—are used on smaller datasets to ensure stable performance estimates. For large-scale challenges like MSD and BraTS, held-out test sets are evaluated through online submission portals to prevent overfitting to the test data",
+      "citation_markers": [
+        ""
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Deep learning models applied to X-ray images must therefore contend with low contrast, subtle lesion appearance, and high inter-reader variability. The availability of large public chest X-ray datasets has made this modality a popular benchmark for classification and detection algorithms, though class imbalance and label noise from automated report mining introduce additional methodological challenges",
+      "citation_markers": [
+        ""
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "This annotation bottleneck is pervasive across virtually all imaging modalities. In histopathology, for instance, pixel-level annotation of tissue sections requires substantial pathologist effort [6]. Similarly, volumetric segmentation of anatomical structures in CT or MRI scans demands that clinicians contour three-dimensional regions slice by slice, multiplying the time cost compared to two-dimensional annotation tasks [4",
+      "citation_markers": [
+        "[6]",
+        "[4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "A distinctive feature of the original U-Net design was its ability to operate on relatively small annotated datasets through the use of extensive data augmentation—a critical advantage given the annotation scarcity that characterizes medical imaging [4]. Elastic deformations, in particular, were found to be highly effective for training on biomedical images where realistic deformations are common",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "The application of deep learning registration extends across numerous clinical domains. In neuroimaging, atlas-based registration enables population-level brain morphometry and structural comparison across subjects, supporting studies of neurodegenerative diseases such as Alzheimer's disease",
+      "citation_markers": [
+        ""
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "A representative example is multimodal medical image fusion, which seeks to combine complementary information from different imaging sources to produce richer representations for downstream tasks [104]. This work demonstrates how integrating Laplacian-Gaussian spatial decompositions with channel attention mechanisms enables the preservation of diagnostically critical edge details and tissue contrast that might otherwise be lost during conventional down-sampling operations",
+      "citation_markers": [
+        "[104]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "By pretraining on massive and diverse medical imaging corpora, such models can develop rich hierarchical representations that generalize effectively to rare conditions with minimal fine-tuning. Multimodal foundation models that jointly encode imaging and clinical text may be particularly powerful, enabling zero-shot or few-shot diagnosis by aligning visual features with clinical descriptions of rare diseases [118",
+      "citation_markers": [
+        "[118]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "A core regulatory requirement across jurisdictions is the demonstration of clinical validity and analytical validity. Analytical validity concerns the technical accuracy of the model—its ability to correctly identify the intended biomarker or feature—while clinical validity demands evidence that the model's output correlates with meaningful clinical outcomes",
+      "citation_markers": [
+        ""
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The consequences of training on long-tailed distributions are well-documented: models tend to be biased toward majority classes, resulting in poor sensitivity for rare but clinically critical conditions. This is particularly problematic in oncology, where uncommon tumor subtypes or rare histopathological variants may be missed entirely by a classifier optimized for aggregate performance metrics",
+      "citation_markers": [
+        ""
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 52985,
+    "completion_tokens": 1069,
+    "total_tokens": 54054
+  }
+}

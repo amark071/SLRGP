@@ -1,0 +1,37 @@
+[2026-07-16T02:38:00Z] command=<package-root>/work/s3_native/envs/surveyforge/bin/python main.py --topic Adversarial Robustness of Deep Neural Networks --saving_path <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveyforge/mature_adversarial_robustness/raw --model s3-common-backbone --section_num 6 --subsection_len 70 --outline_reference_num 300 --rag_num 60 --rag_max_out 45 --db_path <package-root>/work/s3_native/assets/surveyforge/database/database --survey_outline_path <package-root>/work/s3_native/assets/surveyforge/outlines --embedding_model <package-root>/work/s3_native/assets/surveyforge/models/gte-large-en-v1.5 --api_url http://127.0.0.1:18080/v1/chat/completions --api_key <REDACTED>
+Namespace(gpu='0', saving_path='<package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveyforge/mature_adversarial_robustness/raw', debug=False, model='s3-common-backbone', ckpt='', topic='Adversarial Robustness of Deep Neural Networks', section_num=6, subsection_len=70, outline_reference_num=300, rag_num=60, rag_max_out=45, api_url='http://127.0.0.1:18080/v1/chat/completions', api_key='relay-managed', db_path='<package-root>/work/s3_native/assets/surveyforge/database/database', survey_outline_path='<package-root>/work/s3_native/assets/surveyforge/outlines', embedding_model='<package-root>/work/s3_native/assets/surveyforge/models/gte-large-en-v1.5')
+########### Loading database and RAG Index... ###########
+RAG initialized with vectorstore: FAISS based on faiss_paper_title_abs_embeddings_FROM_2012_0101_TO_240926.bin.
+RAG initialized with vectorstore: FAISS based on faiss_paper_title_embeddings_FROM_2012_0101_TO_240926.bin.
+########### Writing outline... ###########
+402 Client Error: Payment Required for url: http://127.0.0.1:18080/v1/chat/completions
+402 Client Error: Payment Required for url: http://127.0.0.1:18080/v1/chat/completions
+402 Client Error: Payment Required for url: http://127.0.0.1:18080/v1/chat/completions
+402 Client Error: Payment Required for url: http://127.0.0.1:18080/v1/chat/completions
+402 Client Error: Payment Required for url: http://127.0.0.1:18080/v1/chat/completions
+402 Client Error: Payment Required for url: http://127.0.0.1:18080/v1/chat/completions
+Traceback (most recent call last):
+  File "<package-root>/work/s3_native/baselines/surveyforge/code/src/model.py", line 70, in __req
+    response.raise_for_status()
+  File "<python-env>/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 402 Client Error: Payment Required for url: http://127.0.0.1:18080/v1/chat/completions
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<package-root>/work/s3_native/baselines/surveyforge/code/main.py", line 201, in <module>
+    main(args)
+  File "<package-root>/work/s3_native/baselines/surveyforge/code/main.py", line 182, in main
+    write_outline(args, args.topic, args.model, args.ckpt, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+  File "<package-root>/work/s3_native/baselines/surveyforge/code/main.py", line 34, in write_outline
+    print(outline_writer.api_model.chat('hello'))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<package-root>/work/s3_native/baselines/surveyforge/code/src/model.py", line 107, in chat
+    response = self.__req(text, temperature=temperature, max_try=5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<package-root>/work/s3_native/baselines/surveyforge/code/src/model.py", line 88, in __req
+    print(e)
+          ^
+UnboundLocalError: cannot access local variable 'e' where it is not associated with a value
+[2026-07-16T02:39:23Z] returncode=1 elapsed_seconds=82.580 timed_out=False

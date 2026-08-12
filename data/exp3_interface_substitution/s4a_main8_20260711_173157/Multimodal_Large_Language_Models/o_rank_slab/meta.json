@@ -1,0 +1,97 @@
+{
+  "topic": "Multimodal Large Language Models",
+  "arm": "o_rank_slab",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 21:46:12",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "multimodal large language models",
+    "vision-language models",
+    "large multimodal models",
+    "multimodal foundation models",
+    "visual question answering",
+    "image-text alignment",
+    "cross-modal learning",
+    "multimodal pretraining",
+    "vision-language pretraining",
+    "multimodal transformers",
+    "grounded language understanding",
+    "multimodal instruction tuning"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "rank_slab_order",
+  "groups": [
+    {
+      "name": "Rank slab 1: positions 1-8",
+      "n": 8
+    },
+    {
+      "name": "Rank slab 2: positions 9-15",
+      "n": 7
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_2203.17247",
+    "arxiv_2306.09265",
+    "arxiv_2309.10020",
+    "arxiv_2310.03211",
+    "arxiv_2402.12451",
+    "arxiv_2406.06730",
+    "arxiv_2408.06610",
+    "arxiv_2409.07463",
+    "arxiv_2410.05608",
+    "arxiv_2412.02104",
+    "ss_478371"
+  ],
+  "n_refs": 11,
+  "word_count": 835,
+  "written_citation_ids": [
+    "arxiv_2402.12451",
+    "arxiv_2309.10020",
+    "arxiv_2410.05608",
+    "ss_478371",
+    "arxiv_2406.06730",
+    "arxiv_2408.06610",
+    "arxiv_2203.17247",
+    "arxiv_2409.07463",
+    "arxiv_2306.09265",
+    "arxiv_2310.03211",
+    "arxiv_2412.02104"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2109.10246",
+    "arxiv_2203.17247",
+    "arxiv_2210.09263",
+    "arxiv_2306.09265",
+    "arxiv_2309.10020",
+    "arxiv_2310.03211",
+    "arxiv_2402.12451",
+    "arxiv_2406.06730",
+    "arxiv_2408.06610",
+    "arxiv_2409.07463",
+    "arxiv_2410.05608",
+    "arxiv_2411.17558",
+    "arxiv_2412.02104",
+    "ss_478371",
+    "ss_478472"
+  ],
+  "elapsed_sec": 38.5,
+  "llm_usage_delta": {
+    "n_calls": 3,
+    "prompt_tokens": 2877,
+    "completion_tokens": 1395
+  },
+  "llm_usage_so_far": {
+    "n_calls": 53,
+    "prompt_tokens": 42649,
+    "completion_tokens": 13280
+  }
+}

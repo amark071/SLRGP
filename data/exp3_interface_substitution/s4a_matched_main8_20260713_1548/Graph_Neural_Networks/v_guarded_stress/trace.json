@@ -1,0 +1,58 @@
+{
+  "arm": "v_guarded_stress",
+  "bundle_hash": "8c73271208b268cdf6cffaf7730013545978449007fe61d73709f9479fd46099",
+  "descend_events": [],
+  "solve_events": [],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "Graph Neural Networks — Graph Pooling Methods",
+      "candidate_ids": [
+        "arxiv_2004.03519",
+        "ss_477785",
+        "arxiv_2007.10467",
+        "arxiv_1903.02541"
+      ],
+      "written_citation_ids": [
+        "arxiv_2007.10467",
+        "arxiv_2004.03519",
+        "ss_477785",
+        "arxiv_1903.02541"
+      ],
+      "word_count": 454
+    },
+    {
+      "node_path": "root/1",
+      "seed": "Graph Neural Networks — Graph Convolutional Network Architectures",
+      "candidate_ids": [
+        "arxiv_2002.05287",
+        "arxiv_1906.02174",
+        "arxiv_1605.05273",
+        "arxiv_2102.02026"
+      ],
+      "written_citation_ids": [
+        "arxiv_1605.05273",
+        "arxiv_2002.05287",
+        "arxiv_1906.02174",
+        "arxiv_2102.02026"
+      ],
+      "word_count": 472
+    }
+  ],
+  "validation_events": [
+    {
+      "stage": "injected_stress",
+      "kappa": {
+        "min_total": true,
+        "min_groups": false,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "stage": "guarded_repair",
+      "action": "restore_frozen_semantic_groups"
+    }
+  ]
+}

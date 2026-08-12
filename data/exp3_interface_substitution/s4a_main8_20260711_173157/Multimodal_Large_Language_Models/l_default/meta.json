@@ -1,0 +1,102 @@
+{
+  "topic": "Multimodal Large Language Models",
+  "arm": "l_default",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 21:43:30",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "multimodal large language models",
+    "vision-language models",
+    "large multimodal models",
+    "multimodal foundation models",
+    "visual question answering",
+    "image-text alignment",
+    "cross-modal learning",
+    "multimodal pretraining",
+    "vision-language pretraining",
+    "multimodal transformers",
+    "grounded language understanding",
+    "multimodal instruction tuning"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "theme",
+  "groups": [
+    {
+      "name": "Surveys and Overviews of Multimodal Large Language Models",
+      "n": 5
+    },
+    {
+      "name": "Multimodal Pretraining Architectures and Representation Learning",
+      "n": 5
+    },
+    {
+      "name": "Multilingual and Cross-Lingual Multimodal Learning",
+      "n": 2
+    },
+    {
+      "name": "Knowledge Grounding and Reasoning in Multimodal Models",
+      "n": 2
+    },
+    {
+      "name": "Domain-Specific Applications of Multimodal Models",
+      "n": 1
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_2302.00389",
+    "arxiv_2302.10035",
+    "arxiv_2304.08345",
+    "arxiv_2306.07198",
+    "arxiv_2309.10020",
+    "arxiv_2402.12451",
+    "arxiv_2405.16640",
+    "arxiv_2410.05608",
+    "arxiv_2412.17759",
+    "ss_478472"
+  ],
+  "n_refs": 10,
+  "word_count": 840,
+  "written_citation_ids": [
+    "arxiv_2402.12451",
+    "arxiv_2410.05608",
+    "arxiv_2309.10020",
+    "arxiv_2412.17759",
+    "arxiv_2405.16640",
+    "arxiv_2306.07198",
+    "arxiv_2302.00389",
+    "arxiv_2302.10035",
+    "arxiv_2304.08345",
+    "ss_478472"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2302.00389",
+    "arxiv_2302.10035",
+    "arxiv_2304.08345",
+    "arxiv_2306.07198",
+    "arxiv_2309.10020",
+    "arxiv_2402.12451",
+    "arxiv_2405.16640",
+    "arxiv_2410.05608",
+    "arxiv_2412.17759",
+    "ss_478472"
+  ],
+  "elapsed_sec": 87.2,
+  "llm_usage_delta": {
+    "n_calls": 10,
+    "prompt_tokens": 8326,
+    "completion_tokens": 2164
+  },
+  "llm_usage_so_far": {
+    "n_calls": 40,
+    "prompt_tokens": 32196,
+    "completion_tokens": 9926
+  }
+}

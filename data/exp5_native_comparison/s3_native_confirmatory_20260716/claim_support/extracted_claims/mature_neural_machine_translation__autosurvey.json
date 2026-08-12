@@ -1,0 +1,124 @@
+{
+  "topic_id": "mature_neural_machine_translation",
+  "system": "autosurvey",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Rule-based machine translation (RBMT) emerged as the dominant paradigm throughout the 1960s, 1970s, and well into the 1980s.",
+      "citation_markers": [
+        "[2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The construction and maintenance of comprehensive linguistic resources—grammars, lexicons, morphological analyzers, and transfer rules—required enormous investment of expert human effort and was not easily scalable to new language pairs or domains [5].",
+      "citation_markers": [
+        "[5]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "These models, ranging from IBM Model 1 through Model 5, introduced the notion of word-level alignment between source and target sentences and provided a principled statistical framework for estimating translation probabilities from parallel corpora.",
+      "citation_markers": [
+        "[9]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "The Moses toolkit became the standard open-source implementation for building such systems [10; 11], enabling widespread adoption across language pairs and domains.",
+      "citation_markers": [
+        "[10; 11]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Researchers proposed features based on neural networks to model non-local translation phenomena, and multitask learning approaches were developed to jointly estimate neural network parameters for multiple translation tasks, yielding substantial improvements in translation quality [12].",
+      "citation_markers": [
+        "[12]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Comparative evaluations consistently showed that SMT systems tended to produce translations with reasonable adequacy, preserving the meaning of source content [17; 18].",
+      "citation_markers": [
+        "[17; 18]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "The global and local variants of attention-based NMT demonstrated substantial improvements in translation quality, particularly for long sentences [37].",
+      "citation_markers": [
+        "[37]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Attention-based NMT systems began to outperform strong phrase-based and syntax-based statistical machine translation systems on standard benchmarks.",
+      "citation_markers": [
+        "[37]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "On the WMT 2014 English-to-German translation benchmark, the original Transformer achieved 28.4 BLEU, surpassing all previously reported results including ensemble systems, while requiring significantly less training time [49].",
+      "citation_markers": [
+        "[49]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "By initializing both the encoder and decoder of a sequence-to-sequence Transformer with pre-trained BERT, GPT-2, or RoBERTa checkpoints, researchers achieved new state-of-the-art results on machine translation benchmarks, confirming that the representations learned during large-scale unsupervised pre-training transferred meaningfully to translation [57].",
+      "citation_markers": [
+        "[57]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "The evaluation of NMT in specialized domains such as legal, medical, and technical translation remains insufficiently addressed. Standard automatic metrics like BLEU measure surface-level n-gram overlap and fail to capture the semantic precision required in domain-specific contexts [26].",
+      "citation_markers": [
+        "[26]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The vast majority of the world's approximately 6,500 languages receive little to no attention from the NLP community [74]. Even with advances in multilingual NMT, transfer learning, and back-translation, performance on truly low-resource languages remains far below acceptable levels for practical deployment [80; 79].",
+      "citation_markers": [
+        "[74]",
+        "[80; 79]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 64302,
+    "completion_tokens": 843,
+    "total_tokens": 65145,
+    "prompt_tokens_details": {
+      "cached_tokens": 63744
+    }
+  }
+}

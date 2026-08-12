@@ -1,0 +1,74 @@
+[
+  {
+    "doc_id": "arxiv_2410.20598",
+    "title": "R^3AG: First Workshop on Refined and Reliable Retrieval Augmented\n  Generation",
+    "year": 2024,
+    "venue": "cs.IR",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "Retrieval-augmented generation (RAG) has gained wide attention as the key component to improve generative models with external knowledge augmentation from information retrieval. It has shown great prominence in enhancing the functionality and performance of large language model (LLM)-based applications. However, with the comprehensive application of RAG, more and more problems and limitations have been identified, thus urgently requiring further fundamental exploration to improve current RAG frameworks. This workshop aims to explore in depth how to conduct refined and reliable RAG for downstream AI tasks.   To this end, we propose to organize the first R3AG workshop at SIGIR-AP 2024 to call for participants to re-examine and formulate the basic principles and practical implementation of refined and reliable RAG. The workshop serves as a platform for both academia and industry researchers to conduct discussions, share insights, and foster research to build the next generation of RAG systems. Participants will engage in discussions and presentations focusing on fundamental challenges, cutting-edge research, and potential pathways to improve RAG. At the end of the workshop, we aim to "
+  },
+  {
+    "doc_id": "arxiv_2407.13193",
+    "title": "Retrieval-Augmented Generation for Natural Language Processing: A Survey",
+    "year": 2026,
+    "venue": "cs.CL",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "Large language models (LLMs) have achieved strong empirical performance in various fields, benefiting from their huge amount of parameters that store knowledge. However, LLMs still suffer from several key issues, such as hallucination problems, knowledge update issues, and lacking domain-specific expertise. The appearance of retrieval-augmented generation (RAG), which leverages an external knowledge base to augment LLMs, mitigates these limitations. This paper presents a systematic review of RAG techniques for natural language processing (NLP), with a focus on retrievers and retrieval fusions. We introduce a novel taxonomy of retrieval fusions, such as query-based, logits-based, latent, and parametric fusion, and provide structured comparisons across accessibility, efficiency, and use cases. The paper further examines RAG applications across diverse NLP tasks, discusses evaluation methodologies and benchmark limitations, and analyzes training paradigms with and without knowledge base updates. Finally, we explore industrial deployment considerations and identify emerging challenges and future directions, including security, efficiency, and graph-based retrieval."
+  },
+  {
+    "doc_id": "arxiv_2309.01431",
+    "title": "Benchmarking Large Language Models in Retrieval-Augmented Generation",
+    "year": 2023,
+    "venue": "cs.CL",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "Retrieval-Augmented Generation (RAG) is a promising approach for mitigating the hallucination of large language models (LLMs). However, existing research lacks rigorous evaluation of the impact of retrieval-augmented generation on different large language models, which make it challenging to identify the potential bottlenecks in the capabilities of RAG for different LLMs. In this paper, we systematically investigate the impact of Retrieval-Augmented Generation on large language models. We analyze the performance of different large language models in 4 fundamental abilities required for RAG, including noise robustness, negative rejection, information integration, and counterfactual robustness. To this end, we establish Retrieval-Augmented Generation Benchmark (RGB), a new corpus for RAG evaluation in both English and Chinese. RGB divides the instances within the benchmark into 4 separate testbeds based on the aforementioned fundamental abilities required to resolve the case. Then we evaluate 6 representative LLMs on RGB to diagnose the challenges of current LLMs when applying RAG. Evaluation reveals that while LLMs exhibit a certain degree of noise robustness, they still struggle si"
+  },
+  {
+    "doc_id": "arxiv_2405.06211",
+    "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language\n  Models",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": 0.0,
+    "abstract": "As one of the most advanced techniques in AI, Retrieval-Augmented Generation (RAG) can offer reliable and up-to-date external knowledge, providing huge convenience for numerous tasks. Particularly in the era of AI-Generated Content (AIGC), the powerful capacity of retrieval in providing additional knowledge enables RAG to assist existing generative AI in producing high-quality outputs. Recently, Large Language Models (LLMs) have demonstrated revolutionary abilities in language understanding and generation, while still facing inherent limitations, such as hallucinations and out-of-date internal knowledge. Given the powerful abilities of RAG in providing the latest and helpful auxiliary information, Retrieval-Augmented Large Language Models (RA-LLMs) have emerged to harness external and authoritative knowledge bases, rather than solely relying on the model's internal knowledge, to augment the generation quality of LLMs. In this survey, we comprehensively review existing research studies in RA-LLMs, covering three primary technical perspectives: architectures, training strategies, and applications. As the preliminary knowledge, we briefly introduce the foundations and recent advances "
+  },
+  {
+    "doc_id": "arxiv_2405.13008",
+    "title": "Control Token with Dense Passage Retrieval",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": 0.0,
+    "abstract": "This study addresses the hallucination problem in large language models (LLMs). We adopted Retrieval-Augmented Generation(RAG) (Lewis et al., 2020), a technique that involves embedding relevant information in the prompt to obtain accurate answers. However, RAG also faced inherent issues in retrieving correct information. To address this, we employed the Dense Passage Retrieval(DPR) (Karpukhin et al., 2020) model for fetching domain-specific documents related to user queries. Despite this, the DPR model still lacked accuracy in document retrieval. We enhanced the DPR model by incorporating control tokens, achieving significantly superior performance over the standard DPR model, with a 13% improvement in Top-1 accuracy and a 4% improvement in Top-20 accuracy."
+  },
+  {
+    "doc_id": "arxiv_2406.13249",
+    "title": "R^2AG: Incorporating Retrieval Information into Retrieval Augmented\n  Generation",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "T2",
+    "score": 0.0,
+    "abstract": "Retrieval augmented generation (RAG) has been applied in many scenarios to augment large language models (LLMs) with external documents provided by retrievers. However, a semantic gap exists between LLMs and retrievers due to differences in their training objectives and architectures. This misalignment forces LLMs to passively accept the documents provided by the retrievers, leading to incomprehension in the generation process, where the LLMs are burdened with the task of distinguishing these documents using their inherent knowledge. This paper proposes R$^2$AG, a novel enhanced RAG framework to fill this gap by incorporating Retrieval information into Retrieval Augmented Generation. Specifically, R$^2$AG utilizes the nuanced features from the retrievers and employs a R$^2$-Former to capture retrieval information. Then, a retrieval-aware prompting strategy is designed to integrate retrieval information into LLMs' generation. Notably, R$^2$AG suits low-source scenarios where LLMs and retrievers are frozen. Extensive experiments across five datasets validate the effectiveness, robustness, and efficiency of R$^2$AG. Our analysis reveals that retrieval information serves as an anchor t"
+  },
+  {
+    "doc_id": "arxiv_2502.20245",
+    "title": "From Retrieval to Generation: Comparing Different Approaches",
+    "year": 2025,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": 0.0,
+    "abstract": "Knowledge-intensive tasks, particularly open-domain question answering (ODQA), document reranking, and retrieval-augmented language modeling, require a balance between retrieval accuracy and generative flexibility. Traditional retrieval models such as BM25 and Dense Passage Retrieval (DPR), efficiently retrieve from large corpora but often lack semantic depth. Generative models like GPT-4-o provide richer contextual understanding but face challenges in maintaining factual consistency. In this work, we conduct a systematic evaluation of retrieval-based, generation-based, and hybrid models, with a primary focus on their performance in ODQA and related retrieval-augmented tasks. Our results show that dense retrievers, particularly DPR, achieve strong performance in ODQA with a top-1 accuracy of 50.17\\% on NQ, while hybrid models improve nDCG@10 scores on BEIR from 43.42 (BM25) to 52.59, demonstrating their strength in document reranking. Additionally, we analyze language modeling tasks using WikiText-103, showing that retrieval-based approaches like BM25 achieve lower perplexity compared to generative and hybrid methods, highlighting their utility in retrieval-augmented generation. By"
+  },
+  {
+    "doc_id": "arxiv_2404.10981",
+    "title": "A Survey on Retrieval-Augmented Text Generation for Large Language Models",
+    "year": 2026,
+    "venue": "cs.IR",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "Retrieval-Augmented Generation (RAG) merges retrieval methods with deep learning advancements to address the static limitations of large language models (LLMs) by enabling the dynamic integration of up-to-date external information. This methodology, focusing primarily on the text domain, provides a cost-effective solution to the generation of plausible but possibly incorrect responses by LLMs, thereby enhancing the accuracy and reliability of their outputs through the use of real-world data. As RAG grows in complexity and incorporates multiple concepts that can influence its performance, this paper organizes the RAG paradigm into four categories: pre-retrieval, retrieval, post-retrieval, and generation, offering a detailed perspective from the retrieval viewpoint. It outlines RAG's evolution and discusses the field's progression through the analysis of significant studies. Additionally, the paper introduces evaluation methods for RAG, addressing the challenges faced and proposing future research directions. By offering an organized framework and categorization, the study aims to consolidate existing research on RAG, clarify its technological underpinnings, and highlight its potenti"
+  }
+]

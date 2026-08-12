@@ -1,0 +1,125 @@
+{
+  "topic_id": "mature_deep_reinforcement_learning",
+  "system": "surveyforge",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Deep reinforcement learning (DRL) has emerged as a transformative paradigm within artificial intelligence, synthesizing the sequential decision-making formalism of reinforcement learning with the representational power of deep neural networks [1; 2].",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Value-based deep reinforcement learning originated with the Deep Q-Network [1], which demonstrated that convolutional neural networks trained end-to-end from raw pixels could achieve human-level control across diverse Atari 2600 tasks.",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The Rainbow integration [3] subsequently demonstrated that six independently developed extensions — Double DQN, Dueling networks, Prioritized Experience Replay, multi-step returns, distributional value estimation, and Noisy Networks — yield synergistic gains exceeding any individual component, establishing a consolidated state-of-the-art on the Atari benchmark.",
+      "citation_markers": [
+        "[3]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Proximal Policy Optimization subsequently approximates this constraint through a clipping mechanism [2], dramatically reducing computational overhead while empirically preserving stability, though recent analyses reveal that clipping fails to strictly enforce policy proximity, motivating Truly PPO and rollback formulations.",
+      "citation_markers": [
+        "[2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "TD3 directly confronts this through clipped double Q-learning and delayed policy updates [23], while WD3 unifies overestimation and underestimation into a weighted critic framework [11].",
+      "citation_markers": [
+        "[23]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Distributional approaches offer a complementary remedy: by modeling the full return distribution rather than scalar expectations, DSAC adaptively adjusts Q-value update stepsizes, provably mitigating overestimation [25].",
+      "citation_markers": [
+        "[25]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "A critical synthesis across these paradigms reveals that no single exploration strategy dominates universally: count-based and prediction-error methods excel in procedurally structured environments but scale poorly to continuous state spaces; parameter-space noise methods improve sample efficiency on moderately sparse tasks but may underexplore in deeply deceptive reward landscapes; hierarchical and curriculum approaches offer the greatest advantage in tasks requiring compositional skill acquisition but introduce additional optimization complexity.",
+      "citation_markers": [
+        "[5; 32]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Sample efficiency remains a central bottleneck in deep reinforcement learning, as agents typically require millions of environment interactions to acquire competent behavior. Off-policy learning with experience replay [15] enables systematic data reuse by decoupling data collection from policy optimization, while model-based acceleration [22; 43] generates synthetic transitions to supplement real experience.",
+      "citation_markers": [
+        "[15]",
+        "[22; 43]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Partial observability represents one of the most fundamental challenges in deploying reinforcement learning agents in realistic environments, where the Markov assumption is routinely violated and agents must infer latent state from incomplete, noisy observations.",
+      "citation_markers": [
+        "[51]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Memory-based extensions of established algorithms, such as LSTM-TD3, demonstrate that introducing recurrent memory into off-policy continuous control substantially improves performance under missing and noisy observations [52].",
+      "citation_markers": [
+        "[52]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Generalization in deep reinforcement learning represents a fundamental yet underappreciated challenge: agents trained in fixed environments routinely overfit to specific visual appearances, reward structures, and transition dynamics, yielding policies that fail catastrophically under even minor distributional shifts [28; 30].",
+      "citation_markers": [
+        "[28; 30]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The convergence of deep reinforcement learning with foundation models [91], causal reasoning, and human preference alignment [92] represents the most transformative frontier, promising agents that are simultaneously capable, interpretable, and aligned with human values.",
+      "citation_markers": [
+        "[91]",
+        "[92]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17028,
+    "completion_tokens": 948,
+    "total_tokens": 17976,
+    "prompt_tokens_details": {
+      "cached_tokens": 16640
+    }
+  }
+}

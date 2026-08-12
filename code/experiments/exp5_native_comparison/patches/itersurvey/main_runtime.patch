@@ -1,0 +1,51 @@
+diff --git a/main.py b/main.py
+index 970b21e..849ae96 100644
+--- a/main.py
++++ b/main.py
+@@ -34,7 +34,9 @@ def write_outline(config, database):
+     outline_writer = DynamicOutlineWriter(model=config.model, api_key=config.api_key, api_url = config.api_url, database=database, use_abs = config.use_abs, max_len = 100000, debug=config.debug)
+     print("Ping: ", outline_writer.api_model.chat('hello', check_cache=False))
+     topic_w_description = {'topic': config.topic, 'description': config.description}
+-    outline = outline_writer.generate_outline(topic_w_description, max_sections=10, initial_papers_num=20, retrieve_papers_num=20, min_papers=800, max_papers=1200, outline_related_paper_num=0, outline_batch_size=60, max_query_num=3, update_threshold=0.5)
++    max_papers = config.outline_reference_num
++    min_papers = min(800, max(20, int(max_papers * 0.8)))
++    outline = outline_writer.generate_outline(topic_w_description, max_sections=config.section_num, initial_papers_num=20, retrieve_papers_num=20, min_papers=min_papers, max_papers=max_papers, outline_related_paper_num=0, outline_batch_size=60, max_query_num=3, update_threshold=0.5)
+     price = outline_writer.get_token_usage()
+     print(f"Write the outline cost: {price}")
+     PriceTracker().record('Outline Writing', price)
+@@ -44,7 +46,7 @@ def write_outline(config, database):
+ 
+ def write_subsection(config, outline, db, saving_path=None):
+ 
+-    subsection_writer = subsectionWriter(model=config.model, api_key=config.api_key, api_url = config.api_url, database=db, max_len = 100000, input_graph = config.input_graph, vision_model=config.vision_model, vision_api_key=config.vision_api_key, vision_api_url=config.vision_api_url)
++    subsection_writer = subsectionWriter(model=config.model, api_key=config.api_key, api_url = config.api_url, database=db, max_len = 100000, use_abs=config.use_abs, input_graph = config.input_graph, vision_model=config.vision_model, vision_api_key=config.vision_api_key, vision_api_url=config.vision_api_url)
+     topic_w_description = {'topic': config.topic, 'description': config.description}
+     subsection_writer.paper_ids_to_cards = outline.paper_ids_to_cards
+     raw_survey = subsection_writer.write(topic_w_description, outline, subsection_len = config.subsection_len, rag_num = config.rag_num, saving_path=saving_path)
+@@ -74,7 +76,7 @@ def review_sections(config, survey, db):
+     review_tasks = [(idx, section) for idx, section in enumerate(survey.sections)]
+ 
+     section_review_content_list = [[] for _ in range(len(review_tasks))]
+-    with ThreadPoolExecutor(max_workers=64) as executor:
++    with ThreadPoolExecutor(max_workers=int(os.environ.get("S3_SECTION_THREADS", "2"))) as executor:
+         futures = {executor.submit(process_single_review, task): task for task in review_tasks}
+ 
+         for future in tqdm(as_completed(futures), total=len(review_tasks), desc="Reviewing sections"):
+@@ -108,7 +110,7 @@ def refine_sections(config, section_review_content_list, survey, db):
+ 
+     section_refined_content_list = [[] for _ in range(len(refine_tasks))]
+ 
+-    with ThreadPoolExecutor(max_workers=64) as executor:
++    with ThreadPoolExecutor(max_workers=int(os.environ.get("S3_SECTION_THREADS", "2"))) as executor:
+         futures = {executor.submit(process_single_refine, task): task for task in refine_tasks}
+ 
+         for future in tqdm(as_completed(futures), total=len(refine_tasks), desc="Refining sections"):
+@@ -136,7 +138,7 @@ def refine_citation_sections(config, survey, db):
+ 
+     section_refined_content_list = [[] for _ in range(len(refine_tasks))]
+ 
+-    with ThreadPoolExecutor(max_workers=64) as executor:
++    with ThreadPoolExecutor(max_workers=int(os.environ.get("S3_SECTION_THREADS", "2"))) as executor:
+         futures = {executor.submit(process_single_refine, task): task for task in refine_tasks}
+ 
+         for future in tqdm(as_completed(futures), total=len(refine_tasks), desc="Refining sections"):

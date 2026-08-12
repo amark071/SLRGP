@@ -1,0 +1,278 @@
+{
+  "arm": "o_rank_slab_matched",
+  "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+  "descend_events": [
+    {
+      "node_path": "root/0",
+      "parent_seed": "3D Gaussian Splatting",
+      "group_name": "Rank slab 1: positions 1-4",
+      "child_seed": "3D Gaussian Splatting — Rank slab 1: positions 1-4",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ]
+    },
+    {
+      "node_path": "root/1",
+      "parent_seed": "3D Gaussian Splatting",
+      "group_name": "Rank slab 2: positions 5-8",
+      "child_seed": "3D Gaussian Splatting — Rank slab 2: positions 5-8",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ]
+    }
+  ],
+  "solve_events": [
+    {
+      "node_path": "root/0",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "3D Gaussian Splatting — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ],
+      "filtered_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ],
+      "ranked_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ],
+      "group_names": [
+        "3D Gaussian Splatting for Real-Time Rendering",
+        "Comparative and Alternative Approaches to 3DGS",
+        "Challenges and Limitations in 3DGS"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "3D Gaussian Splatting — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ],
+      "filtered_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ],
+      "ranked_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ],
+      "group_names": [
+        "3D Gaussian Splatting in Novel View Synthesis",
+        "Optimization and Efficiency in 3DGS",
+        "Challenges and Limitations of Radiance Field Methods"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "3D Gaussian Splatting — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ],
+      "filtered_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ],
+      "ranked_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ],
+      "group_names": [
+        "3D Gaussian Splatting for Real-Time Rendering and Performance",
+        "Optimization and Efficiency in 3DGS and Alternatives",
+        "Challenges and Limitations of Radiance Field Methods"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "3D Gaussian Splatting — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ],
+      "filtered_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ],
+      "ranked_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ],
+      "group_names": [
+        "Improving Accuracy and Robustness in 3DGS",
+        "Efficient Surface Reconstruction with 3DGS"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "3D Gaussian Splatting — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ],
+      "filtered_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ],
+      "ranked_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ],
+      "group_names": [
+        "Improving Accuracy and Robustness in 3DGS",
+        "Efficiency and Optimization in 3DGS",
+        "Motion and Deblurring in 3DGS"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "3D Gaussian Splatting — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ],
+      "filtered_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ],
+      "ranked_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ],
+      "group_names": [
+        "Improving Accuracy and Robustness in 3DGS",
+        "Efficient and Scalable Surface Reconstruction"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    }
+  ],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "3D Gaussian Splatting — Rank slab 1: positions 1-4",
+      "candidate_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2308.04079",
+        "arxiv_2401.00834"
+      ],
+      "written_citation_ids": [],
+      "word_count": 407
+    },
+    {
+      "node_path": "root/1",
+      "seed": "3D Gaussian Splatting — Rank slab 2: positions 5-8",
+      "candidate_ids": [
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2411.03637"
+      ],
+      "written_citation_ids": [],
+      "word_count": 413
+    }
+  ],
+  "validation_events": []
+}

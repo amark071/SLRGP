@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0",
+  "audited_at": "2026-07-15T12:28:21Z",
+  "repo_root": "<package-root>/s3_native/baselines",
+  "systems": [
+    {
+      "system_id": "autosurvey",
+      "repo": "<package-root>/s3_native/baselines/autosurvey",
+      "present": true,
+      "commit": "5e8f389f3d51b29bad16dc6ae75db3e8a45a3b65",
+      "branch": "main",
+      "remotes": [
+        "origin\thttps://github.com/AutoSurveys/AutoSurvey.git (fetch)",
+        "origin\thttps://github.com/AutoSurveys/AutoSurvey.git (push)"
+      ],
+      "dirty": false,
+      "status_lines": [],
+      "entrypoints": [
+        "main.py"
+      ],
+      "dependency_manifests": [
+        "requirements.txt"
+      ],
+      "license_files": [],
+      "readmes": [
+        "README.md"
+      ],
+      "manifest_sha256": {
+        "README.md": "97c7a337cf1742fd784c05bfb7891ecd8e69a0dc08839819be5fc1ebca64ac12",
+        "requirements.txt": "454665a4703b15ea90d7e5a9f1a5d8adfc7197130e9e812f6a879757d8b50260"
+      },
+      "eligible_for_source_freeze": true,
+      "issues": [
+        "no_license_file"
+      ]
+    },
+    {
+      "system_id": "surveyforge",
+      "repo": "<package-root>/s3_native/baselines/surveyforge",
+      "present": true,
+      "commit": "9114a0b7895a0f7eb614938d9bc0c956cf25245b",
+      "branch": "main",
+      "remotes": [
+        "origin\thttps://github.com/InternScience/SurveyForge.git (fetch)",
+        "origin\thttps://github.com/InternScience/SurveyForge.git (push)"
+      ],
+      "dirty": false,
+      "status_lines": [],
+      "entrypoints": [
+        "code/main.py"
+      ],
+      "dependency_manifests": [],
+      "license_files": [],
+      "readmes": [
+        "README.md"
+      ],
+      "manifest_sha256": {
+        "README.md": "8c56d73da11d70dbd768401495659eda601dc9e0d15610d9c7e4acb0dfaede3f"
+      },
+      "eligible_for_source_freeze": false,
+      "issues": [
+        "no_dependency_manifest",
+        "no_license_file"
+      ]
+    },
+    {
+      "system_id": "itersurvey",
+      "repo": "<package-root>/s3_native/baselines/itersurvey",
+      "present": true,
+      "commit": "9b49b73cedd41ea1ab9a2dbf92931c5ab84a7799",
+      "branch": "main",
+      "remotes": [
+        "origin\thttps://github.com/HancCui/IterSurvey_Autosurveyv2.git (fetch)",
+        "origin\thttps://github.com/HancCui/IterSurvey_Autosurveyv2.git (push)"
+      ],
+      "dirty": false,
+      "status_lines": [],
+      "entrypoints": [
+        "arxiv_crawler/run.py",
+        "main.py"
+      ],
+      "dependency_manifests": [
+        "requirements.txt"
+      ],
+      "license_files": [],
+      "readmes": [
+        "README.md"
+      ],
+      "manifest_sha256": {
+        "README.md": "8d24752073bfa7a66febca53ac95650afcaa403cc7c0e9661b5b8667eb0179c9",
+        "requirements.txt": "7ccb6a4001516a7f7455beefc583e2bae773f0671cb503ab0d0cc70ec32805ef"
+      },
+      "eligible_for_source_freeze": true,
+      "issues": [
+        "no_license_file"
+      ]
+    },
+    {
+      "system_id": "surveygen",
+      "repo": "<package-root>/s3_native/baselines/surveygen",
+      "present": true,
+      "commit": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "branch": "main",
+      "remotes": [
+        "origin\thttps://github.com/tongbao96/SurveyGen.git (fetch)",
+        "origin\thttps://github.com/tongbao96/SurveyGen.git (push)"
+      ],
+      "dirty": false,
+      "status_lines": [],
+      "entrypoints": [
+        "Code/outline_generation.py",
+        "Code/paper_retrieval.py",
+        "Code/survey_generation.py"
+      ],
+      "dependency_manifests": [],
+      "license_files": [
+        "LICENSE"
+      ],
+      "readmes": [
+        "Code/example/readme.txt",
+        "README.md"
+      ],
+      "manifest_sha256": {
+        "Code/example/readme.txt": "914f4f4d788e718d421cde8ff55032f4bc4773e0d9a4e9fd30a9306db5face24",
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "README.md": "64cafd125afba6df103cbfb9dd10402f5c607025ec1ea3d8e7206703b2b0b27e"
+      },
+      "eligible_for_source_freeze": false,
+      "issues": [
+        "no_dependency_manifest"
+      ]
+    },
+    {
+      "system_id": "surveyg",
+      "repo": "<package-root>/s3_native/baselines/surveyg",
+      "present": true,
+      "commit": "089a05ba0fd870cc4c2285e762e1db3bd489884c",
+      "branch": "main",
+      "remotes": [
+        "origin\thttps://github.com/akBear23/SurveyG.git (fetch)",
+        "origin\thttps://github.com/akBear23/SurveyG.git (push)"
+      ],
+      "dirty": false,
+      "status_lines": [],
+      "entrypoints": [
+        "run.sh"
+      ],
+      "dependency_manifests": [
+        "requirements.txt"
+      ],
+      "license_files": [],
+      "readmes": [
+        "README.md",
+        "src/models/LLM/README.md",
+        "src/modules/latex_handler/README.md",
+        "src/modules/preprocessor/README.md"
+      ],
+      "manifest_sha256": {
+        "README.md": "59a3e735c732f6f0c203f34687af01b9a2aea0e9f1487c38e4d9b23fe09ca75c",
+        "requirements.txt": "f2f65480e5f29321abd0ddbfa3f337bd4f2f44880b6169573a67a031927ec5ed",
+        "src/models/LLM/README.md": "a5eaf3771ed85e4562aa84f795c568a2944a9033703f1bee25f50a00d7fc6b30",
+        "src/modules/latex_handler/README.md": "58046f82e203c5f2147054e54e41faf6eb517643aac74843961a7bb2dea2d565",
+        "src/modules/preprocessor/README.md": "4f538f55e369e607850f1466e9b68133f67b8f46f514e23c3d7b6289acdb5a57"
+      },
+      "eligible_for_source_freeze": true,
+      "issues": [
+        "no_license_file"
+      ]
+    },
+    {
+      "system_id": "arise",
+      "repo": "<package-root>/s3_native/baselines/arise",
+      "present": true,
+      "commit": "5db26bbd64bb9e865dd64b17c75dc2cb26e0e150",
+      "branch": "main",
+      "remotes": [
+        "origin\thttps://github.com/ziwang11112/ARISE.git (fetch)",
+        "origin\thttps://github.com/ziwang11112/ARISE.git (push)"
+      ],
+      "dirty": false,
+      "status_lines": [],
+      "entrypoints": [],
+      "dependency_manifests": [
+        "ARISE_Source_Code/requirements.txt"
+      ],
+      "license_files": [],
+      "readmes": [
+        "README.md"
+      ],
+      "manifest_sha256": {
+        "ARISE_Source_Code/requirements.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "README.md": "f373e30f79cd60566f9761fb2cdd7ff02812c55b10b8dcd3f93fcc6800d383cd"
+      },
+      "eligible_for_source_freeze": false,
+      "issues": [
+        "no_known_entrypoint",
+        "no_license_file"
+      ]
+    },
+    {
+      "system_id": "lira",
+      "repo": "<package-root>/s3_native/baselines/lira",
+      "present": true,
+      "commit": "2bc77a6e7b30586343119bd104cc07ebaec380a1",
+      "branch": "main",
+      "remotes": [
+        "origin\thttps://github.com/lira-workflow/auto-review-writing.git (fetch)",
+        "origin\thttps://github.com/lira-workflow/auto-review-writing.git (push)"
+      ],
+      "dirty": false,
+      "status_lines": [],
+      "entrypoints": [
+        "main.py"
+      ],
+      "dependency_manifests": [
+        "environment.yaml",
+        "requirements.txt"
+      ],
+      "license_files": [
+        "LICENSE"
+      ],
+      "readmes": [
+        "README.md",
+        "autosurvey/README.md",
+        "baseline_and_mass/README.md"
+      ],
+      "manifest_sha256": {
+        "LICENSE": "d2b329a0489309c744fa9eb5b8d48631cc2c55a6f6852c67bef0fc1fb8647fdc",
+        "README.md": "3623d05f0e008e58e50575e2f56fc45e2a11817af8bce7d6f1d3694caaf757e8",
+        "autosurvey/README.md": "d0bdae98665a658e4376fb9c28620df868a246d19598188e56b5126b3a434a93",
+        "baseline_and_mass/README.md": "a232d4cd05892105f82c3fa5f6b615c1411578344762d58df3cd16aeba294875",
+        "environment.yaml": "daa9b0ac142b6bad25a27870c4a8de7385d8515aa1f9b33e063369f5a5d77867",
+        "requirements.txt": "b82fde3871458edbaadd313f75b60ca980ed81eee862e273760278f10d919a80"
+      },
+      "eligible_for_source_freeze": true,
+      "issues": []
+    },
+    {
+      "system_id": "autosurvey2",
+      "repo": "<package-root>/s3_native/baselines/autosurvey2",
+      "present": true,
+      "commit": "998291e5d08822a9cda0b509ec3076c3706c9e70",
+      "branch": "main",
+      "remotes": [
+        "origin\thttps://github.com/annihi1ation/auto_research.git (fetch)",
+        "origin\thttps://github.com/annihi1ation/auto_research.git (push)"
+      ],
+      "dirty": false,
+      "status_lines": [],
+      "entrypoints": [
+        "sync_paper/run.py",
+        "write_paper/json2bibtex/main.py",
+        "write_paper/src/main.py"
+      ],
+      "dependency_manifests": [
+        "sync_paper/pyproject.toml",
+        "sync_paper/requirements.txt",
+        "write_paper/pyproject.toml",
+        "write_paper/requirements.txt",
+        "write_paper/setup.py"
+      ],
+      "license_files": [],
+      "readmes": [
+        "README.md",
+        "sync_paper/README.md",
+        "write_paper/README.md",
+        "write_paper/benchmarks/README.md",
+        "write_paper/cite_reverse-main/README.md"
+      ],
+      "manifest_sha256": {
+        "README.md": "37e68087d81a1127f3fed30ed558ed15ccb856c4365dd37ca7a95d0aa0d4e579",
+        "sync_paper/README.md": "866f54bcffbdb0c62ff791d184283784bd5d3fa5f2de46147f8020a39ca9c069",
+        "sync_paper/pyproject.toml": "65363dda5112860e916cf1379fde64ae60005b204d1d7dc840853dc16ecc8f57",
+        "sync_paper/requirements.txt": "05b04a8df19d362146c1dcb461945160610e1925f52975ec8712d0fc40990a52",
+        "write_paper/README.md": "0139e0be4c4dcbbe96ba7e23fdfd50c03e1a8ce207663ef1164dcdc30d8aeffc",
+        "write_paper/benchmarks/README.md": "d51110b41ee209e563517926ae819d8a95ad34ca569880e77642705b11355e13",
+        "write_paper/cite_reverse-main/README.md": "6635160695b7bcb3c86bba4893f62bef53e2889e94f4de599212d546ec0a91ed",
+        "write_paper/pyproject.toml": "05656458d52c3980787d04b933407e0c69820aaecda832f435c33060f8e95fb0",
+        "write_paper/requirements.txt": "b79ee44fd1749662bbba0fecfcadcaccc100cb874b813ce6a1e001ef80439811",
+        "write_paper/setup.py": "fbe994d4bed5456e21e01d3dab69b3c7a3da4351f1e282f4a0b445dd60ddec1e"
+      },
+      "eligible_for_source_freeze": true,
+      "issues": [
+        "no_license_file"
+      ]
+    }
+  ],
+  "n_present": 8,
+  "n_source_freeze_ready": 5
+}

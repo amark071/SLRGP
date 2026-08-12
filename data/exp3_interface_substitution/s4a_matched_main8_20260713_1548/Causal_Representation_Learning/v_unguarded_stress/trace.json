@@ -1,0 +1,49 @@
+{
+  "arm": "v_unguarded_stress",
+  "bundle_hash": "86ca4cb393aeee15e7fcb416084f2ff423dcbf47021961fa72c1f2abcc6bec5f",
+  "descend_events": [],
+  "solve_events": [],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "Causal Representation Learning — Injected invalid unbalanced organization",
+      "candidate_ids": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2304.09010",
+        "arxiv_2504.11609",
+        "arxiv_2306.00542",
+        "arxiv_2310.15450",
+        "arxiv_2402.05052",
+        "arxiv_2305.17225"
+      ],
+      "written_citation_ids": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2304.09010",
+        "arxiv_2306.00542",
+        "arxiv_2310.15450",
+        "arxiv_2402.05052",
+        "arxiv_2305.17225",
+        "arxiv_2504.11609"
+      ],
+      "word_count": 864
+    }
+  ],
+  "validation_events": [
+    {
+      "stage": "injected_stress",
+      "kappa": {
+        "min_total": true,
+        "min_groups": false,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "stage": "unguarded_continue",
+      "action": "write_invalid_grouping"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "doc_id": "arxiv_2203.17247",
+    "title": "VL-InterpreT: An Interactive Visualization Tool for Interpreting\n  Vision-Language Transformers",
+    "year": 2022,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "Breakthroughs in transformer-based models have revolutionized not only the NLP field, but also vision and multimodal systems. However, although visualization and interpretability tools have become available for NLP models, internal mechanisms of vision and multimodal transformers remain largely opaque. With the success of these transformers, it is increasingly critical to understand their inner workings, as unraveling these black-boxes will lead to more capable and trustworthy models. To contribute to this quest, we propose VL-InterpreT, which provides novel interactive visualizations for interpreting the attentions and hidden representations in multimodal transformers. VL-InterpreT is a task agnostic and integrated tool that (1) tracks a variety of statistics in attention heads throughout all layers for both vision and language components, (2) visualizes cross-modal and intra-modal attentions through easily readable heatmaps, and (3) plots the hidden representations of vision and language tokens as they pass through the transformer layers. In this paper, we demonstrate the functionalities of VL-InterpreT through the analysis of KD-VLP, an end-to-end pretraining vision-language mul"
+  },
+  {
+    "doc_id": "arxiv_2409.07463",
+    "title": "Multi-Modal Instruction-Tuning Small-Scale Language-and-Vision Assistant\n  for Semiconductor Electron Micrograph Analysis",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "We present a novel framework for analyzing and interpreting electron microscopy images in semiconductor manufacturing using vision-language instruction tuning. The framework employs a unique teacher-student approach, leveraging pre-trained multimodal large language models such as GPT-4 to generate instruction-following data for zero-shot visual question answering (VQA) and classification tasks, customizing smaller multimodal models (SMMs) for microscopy image analysis, resulting in an instruction-tuned language-and-vision assistant. Our framework merges knowledge engineering with machine learning to integrate domain-specific expertise from larger to smaller multimodal models within this specialized field, greatly reducing the need for extensive human labeling. Our study presents a secure, cost-effective, and customizable approach for analyzing microscopy images, addressing the challenges of adopting proprietary models in semiconductor manufacturing."
+  },
+  {
+    "doc_id": "arxiv_2402.12451",
+    "title": "The Revolution of Multimodal Large Language Models: A Survey",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "Connecting text and visual modalities plays an essential role in generative intelligence. For this reason, inspired by the success of large language models, significant research efforts are being devoted to the development of Multimodal Large Language Models (MLLMs). These models can seamlessly integrate visual and textual modalities, while providing a dialogue-based interface and instruction-following capabilities. In this paper, we provide a comprehensive review of recent visual-based MLLMs, analyzing their architectural choices, multimodal alignment strategies, and training techniques. We also conduct a detailed analysis of these models across a wide range of tasks, including visual grounding, image generation and editing, visual understanding, and domain-specific applications. Additionally, we compile and describe training datasets and evaluation benchmarks, conducting comparisons among existing models in terms of performance and computational requirements. Overall, this survey offers a comprehensive overview of the current state of the art, laying the groundwork for future MLLMs."
+  },
+  {
+    "doc_id": "ss_478371",
+    "title": "LVLM-EHub: A Comprehensive Evaluation Benchmark for Large Vision-Language Models",
+    "year": 2024,
+    "venue": "INTELLIGENCE",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "Large Vision-Language Models (LVLMs) have recently played a dominant role in multimodal vision-language learning. Despite the great success, it lacks a holistic evaluation of their efficacy. This paper presents a comprehensive evaluation of publicly available large multimodal models by building an LVLM evaluation Hub (LVLM-eHub). Our LVLM-eHub consists of 13 representative LVLMs such as InstructBLIP and LLaVA, which are thoroughly evaluated by a quantitative capability evaluation and an online arena platform. The former evaluates five categories of multimodal capabilities of LVLMs such as visual question answering and object hallucination on 42 in-domain text-related visual benchmarks, while the latter provides the user-level evaluation of LVLMs in an open-world question-answering scenario. The study investigates how specific features of LVLMs such as model configurations, modality alignment mechanisms, and training data affect the multimodal understanding. By conducting a comprehensive comparison of these features on quantitative and arena evaluation, our study uncovers several innovative findings, which establish a fundamental framework for the development and evaluation of innov"
+  },
+  {
+    "doc_id": "arxiv_2408.06610",
+    "title": "CROME: Cross-Modal Adapters for Efficient Multimodal LLM",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": 0.0,
+    "abstract": "Multimodal Large Language Models (MLLMs) demonstrate remarkable image-language capabilities, but their widespread use faces challenges in cost-effective training and adaptation. Existing approaches often necessitate expensive language model retraining and limited adaptability. Additionally, the current focus on zero-shot performance improvements offers insufficient guidance for task-specific tuning. We propose CROME, an efficient vision-language instruction tuning framework. It features a novel gated cross-modal adapter that effectively combines visual and textual representations prior to input into a frozen LLM. This lightweight adapter, trained with minimal parameters, enables efficient cross-modal understanding. Notably, CROME demonstrates superior zero-shot performance on standard visual question answering and instruction-following benchmarks. Moreover, it yields fine-tuning with exceptional parameter efficiency, competing with task-specific specialist state-of-the-art methods. CROME demonstrates the potential of pre-LM alignment for building scalable, adaptable, and parameter-efficient multimodal models."
+  },
+  {
+    "doc_id": "arxiv_2309.10020",
+    "title": "Multimodal Foundation Models: From Specialists to General-Purpose\n  Assistants",
+    "year": 2023,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "This paper presents a comprehensive survey of the taxonomy and evolution of multimodal foundation models that demonstrate vision and vision-language capabilities, focusing on the transition from specialist models to general-purpose assistants. The research landscape encompasses five core topics, categorized into two classes. (i) We start with a survey of well-established research areas: multimodal foundation models pre-trained for specific purposes, including two topics -- methods of learning vision backbones for visual understanding and text-to-image generation. (ii) Then, we present recent advances in exploratory, open research areas: multimodal foundation models that aim to play the role of general-purpose assistants, including three topics -- unified vision models inspired by large language models (LLMs), end-to-end training of multimodal LLMs, and chaining multimodal tools with LLMs. The target audiences of the paper are researchers, graduate students, and professionals in computer vision and vision-language multimodal communities who are eager to learn the basics and recent advances in multimodal foundation models."
+  },
+  {
+    "doc_id": "arxiv_2209.06794",
+    "title": "PaLI: A Jointly-Scaled Multilingual Language-Image Model",
+    "year": 2023,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "Effective scaling and a flexible task interface enable large language models to excel at many tasks. We present PaLI (Pathways Language and Image model), a model that extends this approach to the joint modeling of language and vision. PaLI generates text based on visual and textual inputs, and with this interface performs many vision, language, and multimodal tasks, in many languages. To train PaLI, we make use of large pre-trained encoder-decoder language models and Vision Transformers (ViTs). This allows us to capitalize on their existing capabilities and leverage the substantial cost of training them. We find that joint scaling of the vision and language components is important. Since existing Transformers for language are much larger than their vision counterparts, we train a large, 4-billion parameter ViT (ViT-e) to quantify the benefits from even larger-capacity vision models. To train PaLI, we create a large multilingual mix of pretraining tasks, based on a new image-text training set containing 10B images and texts in over 100 languages. PaLI achieves state-of-the-art in multiple vision and language tasks (such as captioning, visual question-answering, scene-text understand"
+  },
+  {
+    "doc_id": "arxiv_2306.09265",
+    "title": "LVLM-eHub: A Comprehensive Evaluation Benchmark for Large\n  Vision-Language Models",
+    "year": 2023,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 0.0,
+    "abstract": "Large Vision-Language Models (LVLMs) have recently played a dominant role in multimodal vision-language learning. Despite the great success, it lacks a holistic evaluation of their efficacy. This paper presents a comprehensive evaluation of publicly available large multimodal models by building a LVLM evaluation Hub (LVLM-eHub). Our LVLM-eHub consists of $8$ representative LVLMs such as InstructBLIP and MiniGPT-4, which are thoroughly evaluated by a quantitative capability evaluation and an online arena platform. The former evaluates $6$ categories of multimodal capabilities of LVLMs such as visual question answering and embodied artificial intelligence on $47$ standard text-related visual benchmarks, while the latter provides the user-level evaluation of LVLMs in an open-world question-answering scenario. The study reveals several innovative findings. First, instruction-tuned LVLM with massive in-domain data such as InstructBLIP heavily overfits many existing tasks, generalizing poorly in the open-world scenario. Second, instruction-tuned LVLM with moderate instruction-following data may result in object hallucination issues (i.e., generate objects that are inconsistent with targe"
+  }
+]

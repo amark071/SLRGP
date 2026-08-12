@@ -1,0 +1,290 @@
+{
+  "arm": "intact",
+  "bundle_hash": "f836575ec087b2547e60a6cf445349351b472258d84851696fdca4c48e3cb681",
+  "descend_events": [
+    {
+      "node_path": "root/0",
+      "parent_seed": "Federated Learning",
+      "group_name": "Surveys and Overviews of Federated Learning",
+      "child_seed": "Federated Learning — Surveys and Overviews of Federated Learning",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ]
+    },
+    {
+      "node_path": "root/1",
+      "parent_seed": "Federated Learning",
+      "group_name": "Differential Privacy in Federated Learning",
+      "child_seed": "Federated Learning — Differential Privacy in Federated Learning",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ]
+    }
+  ],
+  "solve_events": [
+    {
+      "node_path": "root/0",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Federated Learning — Surveys and Overviews of Federated Learning",
+      "retrieved_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ],
+      "filtered_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ],
+      "ranked_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ],
+      "group_names": [
+        "Foundations and General Overview of Federated Learning",
+        "Challenges in Non-IID Data Distribution",
+        "Communication Efficiency in Federated Learning"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Federated Learning — Surveys and Overviews of Federated Learning",
+      "retrieved_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ],
+      "filtered_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ],
+      "ranked_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ],
+      "group_names": [
+        "Foundational Concepts and Evolution of Federated Learning",
+        "Challenges in Federated Learning: Non-IID Data",
+        "Communication Efficiency in Federated Learning"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Federated Learning — Surveys and Overviews of Federated Learning",
+      "retrieved_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ],
+      "filtered_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ],
+      "ranked_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ],
+      "group_names": [
+        "Foundations and General Overview of Federated Learning",
+        "Challenges in Non-IID Data Distribution",
+        "Communication Efficiency in Federated Learning"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Federated Learning — Differential Privacy in Federated Learning",
+      "retrieved_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ],
+      "filtered_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ],
+      "ranked_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ],
+      "group_names": [
+        "Differential Privacy Mechanisms in Federated Learning",
+        "Secure Aggregation Techniques",
+        "Decentralized Aggregation for Privacy"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Federated Learning — Differential Privacy in Federated Learning",
+      "retrieved_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ],
+      "filtered_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ],
+      "ranked_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ],
+      "group_names": [
+        "Differential Privacy Mechanisms in Federated Learning",
+        "Secure Aggregation Techniques in Federated Learning",
+        "Decentralized Aggregation for Privacy in Federated Learning"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Federated Learning — Differential Privacy in Federated Learning",
+      "retrieved_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ],
+      "filtered_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ],
+      "ranked_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ],
+      "group_names": [
+        "Differential Privacy Mechanisms in Federated Learning",
+        "Secure Aggregation Techniques in Federated Learning",
+        "Decentralized Aggregation for Privacy in Federated Learning"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    }
+  ],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "Federated Learning — Surveys and Overviews of Federated Learning",
+      "candidate_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2301.01299",
+        "arxiv_2208.01200"
+      ],
+      "written_citation_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2301.01299",
+        "arxiv_2106.06843",
+        "arxiv_2208.01200"
+      ],
+      "word_count": 438
+    },
+    {
+      "node_path": "root/1",
+      "seed": "Federated Learning — Differential Privacy in Federated Learning",
+      "candidate_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2311.16008",
+        "arxiv_2012.07183"
+      ],
+      "written_citation_ids": [
+        "arxiv_2311.16008",
+        "arxiv_2003.13761",
+        "arxiv_2407.19286",
+        "arxiv_2012.07183"
+      ],
+      "word_count": 532
+    }
+  ],
+  "validation_events": []
+}

@@ -1,0 +1,344 @@
+{
+  "topic_id": "fast_vision_language_pretraining",
+  "system": "autosurvey",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Billions of image-text pairs, ranging from social media posts to news articles and e-commerce listings, are now freely available at web scale, providing a rich and diverse source of supervision for training multimodal models without the need for costly manual annotation [1].",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2102.05918v2",
+          "source_key": "1",
+          "title": "Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision",
+          "abstract": "Pre-trained representations are becoming crucial for many NLP and perception tasks. While representation learning in NLP has transitioned to training on raw text without human annotations, visual and vision-language representations still rely heavily on curated training datasets that are expensive or require expert knowledge. For vision applications, representations are mostly learned using datasets with explicit class labels such as ImageNet or OpenImages. For vision-language, popular datasets like Conceptual Captions, MSCOCO, or CLIP all involve a non-trivial data collection (and cleaning) process. This costly curation process limits the size of datasets and hence hinders the scaling of trained models. In this paper, we leverage a noisy dataset of over one billion image alt-text pairs, obtained without expensive filtering or post-processing steps in the Conceptual Captions dataset. A simple dual-encoder architecture learns to align visual and language representations of the image and text pairs using a contrastive loss. We show that the scale of our corpus can make up for its noise and leads to state-of-the-art representations even with such a simple learning scheme. Our visual representation achieves strong performance when transferred to classification tasks such as ImageNet and VTAB. The aligned visual and language representations enables zero-shot image classification and also set new state-of-the-art results on Flickr30K and MSCOCO image-text retrieval benchmarks, even when compared with more sophisticated cross-attention models. The representations also enable cross-modality search with complex text and text + image queries.",
+          "resolved_arxiv": {
+            "arxiv_id": "2102.05918",
+            "title": "Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision",
+            "abstract": "Pre-trained representations are becoming crucial for many NLP and perception tasks. While representation learning in NLP has transitioned to training on raw text without human annotations, visual and vision-language representations still rely heavily on curated training datasets that are expensive or require expert knowledge. For vision applications, representations are mostly learned using datasets with explicit class labels such as ImageNet or OpenImages. For vision-language, popular datasets like Conceptual Captions, MSCOCO, or CLIP all involve a non-trivial data collection (and cleaning) process. This costly curation process limits the size of datasets and hence hinders the scaling of trained models. In this paper, we leverage a noisy dataset of over one billion image alt-text pairs, obtained without expensive filtering or post-processing steps in the Conceptual Captions dataset. A simple dual-encoder architecture learns to align visual and language representations of the image and text pairs using a contrastive loss. We show that the scale of our corpus can make up for its noise and leads to state-of-the-art representations even with such a simple learning scheme. Our visual representation achieves strong performance when transferred to classification tasks such as ImageNet and VTAB. The aligned visual and language representations enables zero-shot image classification and also set new state-of-the-art results on Flickr30K and MSCOCO image-text retrieval benchmarks, even when compared with more sophisticated cross-attention models. The representations also enable cross-modality search with complex text and text + image queries.",
+            "published": "2021-02-11T10:08:12Z",
+            "source_url": "https://arxiv.org/abs/2102.05918"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The fundamental motivation behind VLP is to overcome these limitations by learning universal, transferable multimodal representations from large-scale, weakly supervised data [4].",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2108.10904v3",
+          "source_key": "4",
+          "title": "SimVLM: Simple Visual Language Model Pretraining with Weak Supervision",
+          "abstract": "With recent progress in joint modeling of visual and textual representations, Vision-Language Pretraining (VLP) has achieved impressive performance on many multimodal downstream tasks. However, the requirement for expensive annotations including clean image captions and regional labels limits the scalability of existing approaches, and complicates the pretraining procedure with the introduction of multiple dataset-specific objectives. In this work, we relax these constraints and present a minimalist pretraining framework, named Simple Visual Language Model (SimVLM). Unlike prior work, SimVLM reduces the training complexity by exploiting large-scale weak supervision, and is trained end-to-end with a single prefix language modeling objective. Without utilizing extra data or task-specific customization, the resulting model significantly outperforms previous pretraining methods and achieves new state-of-the-art results on a wide range of discriminative and generative vision-language benchmarks, including VQA (+3.74% vqa-score), NLVR2 (+1.17% accuracy), SNLI-VE (+1.37% accuracy) and image captioning tasks (+10.1% average CIDEr score). Furthermore, we demonstrate that SimVLM acquires strong generalization and transfer ability, enabling zero-shot behavior including open-ended visual question answering and cross-modality transfer.",
+          "resolved_arxiv": {
+            "arxiv_id": "2108.10904",
+            "title": "SimVLM: Simple Visual Language Model Pretraining with Weak Supervision",
+            "abstract": "With recent progress in joint modeling of visual and textual representations, Vision-Language Pretraining (VLP) has achieved impressive performance on many multimodal downstream tasks. However, the requirement for expensive annotations including clean image captions and regional labels limits the scalability of existing approaches, and complicates the pretraining procedure with the introduction of multiple dataset-specific objectives. In this work, we relax these constraints and present a minimalist pretraining framework, named Simple Visual Language Model (SimVLM). Unlike prior work, SimVLM reduces the training complexity by exploiting large-scale weak supervision, and is trained end-to-end with a single prefix language modeling objective. Without utilizing extra data or task-specific customization, the resulting model significantly outperforms previous pretraining methods and achieves new state-of-the-art results on a wide range of discriminative and generative vision-language benchmarks, including VQA (+3.74% vqa-score), NLVR2 (+1.17% accuracy), SNLI-VE (+1.37% accuracy) and image captioning tasks (+10.1% average CIDEr score). Furthermore, we demonstrate that SimVLM acquires strong generalization and transfer ability, enabling zero-shot behavior including open-ended visual question answering and cross-modality transfer.",
+            "published": "2021-08-24T18:14:00Z",
+            "source_url": "https://arxiv.org/abs/2108.10904"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The introduction of Vision Transformers (ViTs) represented a major architectural shift, applying the transformer architecture—originally developed for NLP—directly to image patches, achieving competitive or superior performance compared to CNNs on standard benchmarks [21].",
+      "citation_markers": [
+        "[21]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2102.03334v2",
+          "source_key": "21",
+          "title": "ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision",
+          "abstract": "Vision-and-Language Pre-training (VLP) has improved performance on various joint vision-and-language downstream tasks. Current approaches to VLP heavily rely on image feature extraction processes, most of which involve region supervision (e.g., object detection) and the convolutional architecture (e.g., ResNet). Although disregarded in the literature, we find it problematic in terms of both (1) efficiency/speed, that simply extracting input features requires much more computation than the multimodal interaction steps; and (2) expressive power, as it is upper bounded to the expressive power of the visual embedder and its predefined visual vocabulary. In this paper, we present a minimal VLP model, Vision-and-Language Transformer (ViLT), monolithic in the sense that the processing of visual inputs is drastically simplified to just the same convolution-free manner that we process textual inputs. We show that ViLT is up to tens of times faster than previous VLP models, yet with competitive or better downstream task performance. Our code and pre-trained weights are available at https://github.com/dandelin/vilt.",
+          "resolved_arxiv": {
+            "arxiv_id": "2102.03334",
+            "title": "ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision",
+            "abstract": "Vision-and-Language Pre-training (VLP) has improved performance on various joint vision-and-language downstream tasks. Current approaches to VLP heavily rely on image feature extraction processes, most of which involve region supervision (e.g., object detection) and the convolutional architecture (e.g., ResNet). Although disregarded in the literature, we find it problematic in terms of both (1) efficiency/speed, that simply extracting input features requires much more computation than the multimodal interaction steps; and (2) expressive power, as it is upper bounded to the expressive power of the visual embedder and its predefined visual vocabulary. In this paper, we present a minimal VLP model, Vision-and-Language Transformer (ViLT), monolithic in the sense that the processing of visual inputs is drastically simplified to just the same convolution-free manner that we process textual inputs. We show that ViLT is up to tens of times faster than previous VLP models, yet with competitive or better downstream task performance. Our code and pre-trained weights are available at https://github.com/dandelin/vilt.",
+            "published": "2021-02-05T18:36:11Z",
+            "source_url": "https://arxiv.org/abs/2102.03334"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Multi-task training further reinforced this view by demonstrating that jointly learning across multiple VL tasks with a single model could improve performance compared to task-specific baselines [3].",
+      "citation_markers": [
+        "[3]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "1912.02315v2",
+          "source_key": "3",
+          "title": "12-in-1: Multi-Task Vision and Language Representation Learning",
+          "abstract": "Much of vision-and-language research focuses on a small but diverse set of independent tasks and supporting datasets often studied in isolation; however, the visually-grounded language understanding skills required for success at these tasks overlap significantly. In this work, we investigate these relationships between vision-and-language tasks by developing a large-scale, multi-task training regime. Our approach culminates in a single model on 12 datasets from four broad categories of task including visual question answering, caption-based image retrieval, grounding referring expressions, and multi-modal verification. Compared to independently trained single-task models, this represents a reduction from approximately 3 billion parameters to 270 million while simultaneously improving performance by 2.05 points on average across tasks. We use our multi-task framework to perform in-depth analysis of the effect of joint training diverse tasks. Further, we show that finetuning task-specific models from our single multi-task model can lead to further improvements, achieving performance at or above the state-of-the-art.",
+          "resolved_arxiv": {
+            "arxiv_id": "1912.02315",
+            "title": "12-in-1: Multi-Task Vision and Language Representation Learning",
+            "abstract": "Much of vision-and-language research focuses on a small but diverse set of independent tasks and supporting datasets often studied in isolation; however, the visually-grounded language understanding skills required for success at these tasks overlap significantly. In this work, we investigate these relationships between vision-and-language tasks by developing a large-scale, multi-task training regime. Our approach culminates in a single model on 12 datasets from four broad categories of task including visual question answering, caption-based image retrieval, grounding referring expressions, and multi-modal verification. Compared to independently trained single-task models, this represents a reduction from approximately 3 billion parameters to 270 million while simultaneously improving performance by 2.05 points on average across tasks. We use our multi-task framework to perform in-depth analysis of the effect of joint training diverse tasks. Further, we show that finetuning task-specific models from our single multi-task model can lead to further improvements, achieving performance at or above the state-of-the-art.",
+            "published": "2019-12-05T00:07:35Z",
+            "source_url": "https://arxiv.org/abs/1912.02315"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The choice of visual encoder critically impacts the quality and efficiency of cross-modal alignment. Early VLP models relied on pretrained object detectors such as Faster R-CNN to extract region-based visual features, which provide semantically rich representations but introduce computational bottlenecks, restrict the concept vocabulary to the detector's training categories, and decouple visual and cross-modal learning [34].",
+      "citation_markers": [
+        "[34]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2106.01804v2",
+          "source_key": "34",
+          "title": "E2E-VLP: End-to-End Vision-Language Pre-training Enhanced by Visual Learning",
+          "abstract": "Vision-language pre-training (VLP) on large-scale image-text pairs has achieved huge success for the cross-modal downstream tasks. The most existing pre-training methods mainly adopt a two-step training procedure, which firstly employs a pre-trained object detector to extract region-based visual features, then concatenates the image representation and text embedding as the input of Transformer to train. However, these methods face problems of using task-specific visual representation of the specific object detector for generic cross-modal understanding, and the computation inefficiency of two-stage pipeline. In this paper, we propose the first end-to-end vision-language pre-trained model for both V+L understanding and generation, namely E2E-VLP, where we build a unified Transformer framework to jointly learn visual representation, and semantic alignments between image and text. We incorporate the tasks of object detection and image captioning into pre-training with a unified Transformer encoder-decoder architecture for enhancing visual learning. An extensive set of experiments have been conducted on well-established vision-language downstream tasks to demonstrate the effectiveness of this novel VLP paradigm.",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.01804",
+            "title": "E2E-VLP: End-to-End Vision-Language Pre-training Enhanced by Visual Learning",
+            "abstract": "Vision-language pre-training (VLP) on large-scale image-text pairs has achieved huge success for the cross-modal downstream tasks. The most existing pre-training methods mainly adopt a two-step training procedure, which firstly employs a pre-trained object detector to extract region-based visual features, then concatenates the image representation and text embedding as the input of Transformer to train. However, these methods face problems of using task-specific visual representation of the specific object detector for generic cross-modal understanding, and the computation inefficiency of two-stage pipeline. In this paper, we propose the first end-to-end vision-language pre-trained model for both V+L understanding and generation, namely E2E-VLP, where we build a unified Transformer framework to jointly learn visual representation, and semantic alignments between image and text. We incorporate the tasks of object detection and image captioning into pre-training with a unified Transformer encoder-decoder architecture for enhancing visual learning. An extensive set of experiments have been conducted on well-established vision-language downstream tasks to demonstrate the effectiveness of this novel VLP paradigm.",
+            "published": "2021-06-03T12:50:26Z",
+            "source_url": "https://arxiv.org/abs/2106.01804"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "More recent architectures such as BEiT-3 [13] generalized masked image modeling—itself inspired by BERT's masked language modeling—to image tokens represented as visual \"words,\" treating images as a foreign language to be processed by the same transformer backbone used for text.",
+      "citation_markers": [
+        "[13]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2208.10442v2",
+          "source_key": "13",
+          "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+          "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.10442",
+            "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+            "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+            "published": "2022-08-22T16:55:04Z",
+            "source_url": "https://arxiv.org/abs/2208.10442"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "BEiT-3 pretrains by performing masked data modeling across monomodal and multimodal data simultaneously, treating image patches, text tokens, and image-text pairs uniformly within the same transformer framework.",
+      "citation_markers": [
+        "[13]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2208.10442v2",
+          "source_key": "13",
+          "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+          "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.10442",
+            "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+            "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+            "published": "2022-08-22T16:55:04Z",
+            "source_url": "https://arxiv.org/abs/2208.10442"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "The [77] model exemplifies this integration philosophy by employing a single transformer network that is shared across image encoding, text encoding, and multimodal fusion tasks. UFO jointly optimizes image-text contrastive loss, image-text matching loss, and masked language modeling loss within a unified architecture by leveraging both bidirectional and seq2seq attention masks.",
+      "citation_markers": [
+        "[77]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2111.10023v1",
+          "source_key": "77",
+          "title": "UFO: A UniFied TransfOrmer for Vision-Language Representation Learning",
+          "abstract": "In this paper, we propose a single UniFied transfOrmer (UFO), which is capable of processing either unimodal inputs (e.g., image or language) or multimodal inputs (e.g., the concatenation of the image and the question), for vision-language (VL) representation learning. Existing approaches typically design an individual network for each modality and/or a specific fusion network for multimodal tasks. To simplify the network architecture, we use a single transformer network and enforce multi-task learning during VL pre-training, which includes the image-text contrastive loss, image-text matching loss, and masked language modeling loss based on the bidirectional and the seq2seq attention mask. The same transformer network is used as the image encoder, the text encoder, or the fusion network in different pre-training tasks. Empirically, we observe less conflict among different tasks and achieve new state of the arts on visual question answering, COCO image captioning (cross-entropy optimization) and nocaps (in SPICE). On other downstream tasks, e.g., image-text retrieval, we also achieve competitive performance.",
+          "resolved_arxiv": {
+            "arxiv_id": "2111.10023",
+            "title": "UFO: A UniFied TransfOrmer for Vision-Language Representation Learning",
+            "abstract": "In this paper, we propose a single UniFied transfOrmer (UFO), which is capable of processing either unimodal inputs (e.g., image or language) or multimodal inputs (e.g., the concatenation of the image and the question), for vision-language (VL) representation learning. Existing approaches typically design an individual network for each modality and/or a specific fusion network for multimodal tasks. To simplify the network architecture, we use a single transformer network and enforce multi-task learning during VL pre-training, which includes the image-text contrastive loss, image-text matching loss, and masked language modeling loss based on the bidirectional and the seq2seq attention mask. The same transformer network is used as the image encoder, the text encoder, or the fusion network in different pre-training tasks. Empirically, we observe less conflict among different tasks and achieve new state of the arts on visual question answering, COCO image captioning (cross-entropy optimization) and nocaps (in SPICE). On other downstream tasks, e.g., image-text retrieval, we also achieve competitive performance.",
+            "published": "2021-11-19T03:23:10Z",
+            "source_url": "https://arxiv.org/abs/2111.10023"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Models such as SimVLM [4] have reported substantial gains on VQA v2, achieving improvements of +3.74% vqa-score over prior pretraining methods, demonstrating how large-scale weak supervision with prefix language modeling objectives can dramatically improve VQA performance.",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2108.10904v3",
+          "source_key": "4",
+          "title": "SimVLM: Simple Visual Language Model Pretraining with Weak Supervision",
+          "abstract": "With recent progress in joint modeling of visual and textual representations, Vision-Language Pretraining (VLP) has achieved impressive performance on many multimodal downstream tasks. However, the requirement for expensive annotations including clean image captions and regional labels limits the scalability of existing approaches, and complicates the pretraining procedure with the introduction of multiple dataset-specific objectives. In this work, we relax these constraints and present a minimalist pretraining framework, named Simple Visual Language Model (SimVLM). Unlike prior work, SimVLM reduces the training complexity by exploiting large-scale weak supervision, and is trained end-to-end with a single prefix language modeling objective. Without utilizing extra data or task-specific customization, the resulting model significantly outperforms previous pretraining methods and achieves new state-of-the-art results on a wide range of discriminative and generative vision-language benchmarks, including VQA (+3.74% vqa-score), NLVR2 (+1.17% accuracy), SNLI-VE (+1.37% accuracy) and image captioning tasks (+10.1% average CIDEr score). Furthermore, we demonstrate that SimVLM acquires strong generalization and transfer ability, enabling zero-shot behavior including open-ended visual question answering and cross-modality transfer.",
+          "resolved_arxiv": {
+            "arxiv_id": "2108.10904",
+            "title": "SimVLM: Simple Visual Language Model Pretraining with Weak Supervision",
+            "abstract": "With recent progress in joint modeling of visual and textual representations, Vision-Language Pretraining (VLP) has achieved impressive performance on many multimodal downstream tasks. However, the requirement for expensive annotations including clean image captions and regional labels limits the scalability of existing approaches, and complicates the pretraining procedure with the introduction of multiple dataset-specific objectives. In this work, we relax these constraints and present a minimalist pretraining framework, named Simple Visual Language Model (SimVLM). Unlike prior work, SimVLM reduces the training complexity by exploiting large-scale weak supervision, and is trained end-to-end with a single prefix language modeling objective. Without utilizing extra data or task-specific customization, the resulting model significantly outperforms previous pretraining methods and achieves new state-of-the-art results on a wide range of discriminative and generative vision-language benchmarks, including VQA (+3.74% vqa-score), NLVR2 (+1.17% accuracy), SNLI-VE (+1.37% accuracy) and image captioning tasks (+10.1% average CIDEr score). Furthermore, we demonstrate that SimVLM acquires strong generalization and transfer ability, enabling zero-shot behavior including open-ended visual question answering and cross-modality transfer.",
+            "published": "2021-08-24T18:14:00Z",
+            "source_url": "https://arxiv.org/abs/2108.10904"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "The VLUE benchmark [57] explicitly incorporates out-of-distribution test sets and efficiency-performance trade-off measures, providing a more honest assessment of VLP model generalization—",
+      "citation_markers": [
+        "[57]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2205.15237v1",
+          "source_key": "57",
+          "title": "VLUE: A Multi-Task Benchmark for Evaluating Vision-Language Models",
+          "abstract": "Recent advances in vision-language pre-training (VLP) have demonstrated impressive performance in a range of vision-language (VL) tasks. However, there exist several challenges for measuring the community's progress in building general multi-modal intelligence. First, most of the downstream VL datasets are annotated using raw images that are already seen during pre-training, which may result in an overestimation of current VLP models' generalization ability. Second, recent VLP work mainly focuses on absolute performance but overlooks the efficiency-performance trade-off, which is also an important indicator for measuring progress. To this end, we introduce the Vision-Language Understanding Evaluation (VLUE) benchmark, a multi-task multi-dimension benchmark for evaluating the generalization capabilities and the efficiency-performance trade-off (``Pareto SOTA'') of VLP models. We demonstrate that there is a sizable generalization gap for all VLP models when testing on out-of-distribution test sets annotated on images from a more diverse distribution that spreads across cultures. Moreover, we find that measuring the efficiency-performance trade-off of VLP models leads to complementary insights for several design choices of VLP. We release the VLUE benchmark to promote research on building vision-language models that generalize well to more diverse images and concepts unseen during pre-training, and are practical in terms of efficiency-performance trade-off.",
+          "resolved_arxiv": {
+            "arxiv_id": "2205.15237",
+            "title": "VLUE: A Multi-Task Benchmark for Evaluating Vision-Language Models",
+            "abstract": "Recent advances in vision-language pre-training (VLP) have demonstrated impressive performance in a range of vision-language (VL) tasks. However, there exist several challenges for measuring the community's progress in building general multi-modal intelligence. First, most of the downstream VL datasets are annotated using raw images that are already seen during pre-training, which may result in an overestimation of current VLP models' generalization ability. Second, recent VLP work mainly focuses on absolute performance but overlooks the efficiency-performance trade-off, which is also an important indicator for measuring progress. To this end, we introduce the Vision-Language Understanding Evaluation (VLUE) benchmark, a multi-task multi-dimension benchmark for evaluating the generalization capabilities and the efficiency-performance trade-off (``Pareto SOTA'') of VLP models. We demonstrate that there is a sizable generalization gap for all VLP models when testing on out-of-distribution test sets annotated on images from a more diverse distribution that spreads across cultures. Moreover, we find that measuring the efficiency-performance trade-off of VLP models leads to complementary insights for several design choices of VLP. We release the VLUE benchmark to promote research on building vision-language models that generalize well to more diverse images and concepts unseen during pre-training, and are practical in terms of efficiency-performance trade-off.",
+            "published": "2022-05-30T16:52:30Z",
+            "source_url": "https://arxiv.org/abs/2205.15237"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "The MMVP benchmark has revealed CLIP-blind pairs—visually distinct images that contrastive models erroneously perceive as semantically similar—exposing systematic visual shortcomings that aggregate retrieval metrics fail to detect.",
+      "citation_markers": [
+        "[70][13]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2206.01127v2",
+          "source_key": "70",
+          "title": "VL-BEiT: Generative Vision-Language Pretraining",
+          "abstract": "We introduce a vision-language foundation model called VL-BEiT, which is a bidirectional multimodal Transformer learned by generative pretraining. Our minimalist solution conducts masked prediction on both monomodal and multimodal data with a shared Transformer. Specifically, we perform masked vision-language modeling on image-text pairs, masked language modeling on texts, and masked image modeling on images. VL-BEiT is learned from scratch with one unified pretraining task, one shared backbone, and one-stage training. Our method is conceptually simple and empirically effective. Experimental results show that VL-BEiT obtains strong results on various vision-language benchmarks, such as visual question answering, visual reasoning, and image-text retrieval. Moreover, our method learns transferable visual features, achieving competitive performance on image classification, and semantic segmentation.",
+          "resolved_arxiv": {
+            "arxiv_id": "2206.01127",
+            "title": "VL-BEiT: Generative Vision-Language Pretraining",
+            "abstract": "We introduce a vision-language foundation model called VL-BEiT, which is a bidirectional multimodal Transformer learned by generative pretraining. Our minimalist solution conducts masked prediction on both monomodal and multimodal data with a shared Transformer. Specifically, we perform masked vision-language modeling on image-text pairs, masked language modeling on texts, and masked image modeling on images. VL-BEiT is learned from scratch with one unified pretraining task, one shared backbone, and one-stage training. Our method is conceptually simple and empirically effective. Experimental results show that VL-BEiT obtains strong results on various vision-language benchmarks, such as visual question answering, visual reasoning, and image-text retrieval. Moreover, our method learns transferable visual features, achieving competitive performance on image classification, and semantic segmentation.",
+            "published": "2022-06-02T16:14:19Z",
+            "source_url": "https://arxiv.org/abs/2206.01127"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2208.10442v2",
+          "source_key": "13",
+          "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+          "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.10442",
+            "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+            "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+            "published": "2022-08-22T16:55:04Z",
+            "source_url": "https://arxiv.org/abs/2208.10442"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Future research must develop principled methods for auditing and mitigating social biases absorbed from web-scale training corpora, building on emerging debiasing and counterfactual evaluation frameworks.",
+      "citation_markers": [
+        "[55]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2207.00221v2",
+          "source_key": "55",
+          "title": "VL-CheckList: Evaluating Pre-trained Vision-Language Models with Objects, Attributes and Relations",
+          "abstract": "Vision-Language Pretraining (VLP) models have recently successfully facilitated many cross-modal downstream tasks. Most existing works evaluated their systems by comparing the fine-tuned downstream task performance. However, only average downstream task accuracy provides little information about the pros and cons of each VLP method, let alone provides insights on how the community can improve the systems in the future. Inspired by the CheckList for testing natural language processing, we exploit VL-CheckList, a novel framework to understand the capabilities of VLP models. The proposed method divides the image-texting ability of a VLP model into three categories: objects, attributes, and relations, and uses a novel taxonomy to further break down these three aspects. We conduct comprehensive studies to analyze seven recently popular VLP models via the proposed framework. Results confirm the effectiveness of the proposed method by revealing fine-grained differences among the compared models that were not visible from downstream task-only evaluation. Further results show promising research direction in building better VLP models. Our data and code are available at: https://github.com/om-ai-lab/VL-CheckList.",
+          "resolved_arxiv": {
+            "arxiv_id": "2207.00221",
+            "title": "VL-CheckList: Evaluating Pre-trained Vision-Language Models with Objects, Attributes and Relations",
+            "abstract": "Vision-Language Pretraining (VLP) models have recently successfully facilitated many cross-modal downstream tasks. Most existing works evaluated their systems by comparing the fine-tuned downstream task performance. However, only average downstream task accuracy provides little information about the pros and cons of each VLP method, let alone provides insights on how the community can improve the systems in the future. Inspired by the CheckList for testing natural language processing, we exploit VL-CheckList, a novel framework to understand the capabilities of VLP models. The proposed method divides the image-texting ability of a VLP model into three categories: objects, attributes, and relations, and uses a novel taxonomy to further break down these three aspects. We conduct comprehensive studies to analyze seven recently popular VLP models via the proposed framework. Results confirm the effectiveness of the proposed method by revealing fine-grained differences among the compared models that were not visible from downstream task-only evaluation. Further results show promising research direction in building better VLP models. Our data and code are available at: https://github.com/om-ai-lab/VL-CheckList.",
+            "published": "2022-07-01T06:25:53Z",
+            "source_url": "https://arxiv.org/abs/2207.00221"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

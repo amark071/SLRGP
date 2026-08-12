@@ -1,0 +1,131 @@
+{
+  "topic_id": "mature_neural_machine_translation",
+  "system": "surveyforge",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Neural machine translation (NMT) has emerged as one of the most transformative developments in artificial intelligence, fundamentally reshaping how computational systems bridge human languages [1; 2].",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The field's evolution—from handcrafted rule-based systems through phrase-based statistical models to end-to-end neural architectures—reflects a progressive shift toward data-driven representations capable of capturing deep linguistic regularities [3; 4].",
+      "citation_markers": [
+        "[3; 4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Early statistical approaches, while principled, suffered from feature engineering bottlenecks and struggled with long-range dependencies and morphological complexity [5; 6].",
+      "citation_markers": [
+        "[5; 6]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "The neural paradigm, anchored in encoder-decoder frameworks [7] and subsequently transformed by attention mechanisms [8] and the Transformer architecture [9], overcame these limitations while introducing new challenges in low-resource settings [10; 11], domain adaptation [12], evaluation reliability [13], and the integration of large language models [14].",
+      "citation_markers": [
+        "[7]",
+        "[8]",
+        "[9]",
+        "[10; 11]",
+        "[12]",
+        "[13]",
+        "[14]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The foundational sequence-to-sequence framework couples a recurrent encoder, which compresses the source sentence into a fixed-length context vector, with a recurrent decoder that generates the target sequence conditioned on this representation [1; 7].",
+      "citation_markers": [
+        "[1; 7]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "LSTM and GRU units mitigate vanishing gradients inherent in vanilla RNNs, yet empirical studies consistently demonstrate translation quality degradation as source length increases, exposing the information bottleneck of fixed-length encodings [9; 5].",
+      "citation_markers": [
+        "[9; 5]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "The seminal soft-attention mechanism resolves this bottleneck by computing a convex combination of all encoder hidden states at each decoding step, enabling dynamic source alignment that bears conceptual resemblance to, yet differs fundamentally from, discrete word alignment in statistical models [2].",
+      "citation_markers": [
+        "[2]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Coverage-augmented attention addresses the systematic over-translation and under-translation errors arising from attention's neglect of alignment history [8].",
+      "citation_markers": [
+        "[8]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The Transformer architecture [19] represents a fundamental departure from recurrence and convolution, establishing a purely attention-based paradigm that has become dominant in neural machine translation.",
+      "citation_markers": [
+        "[19]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Deep Transformer variants employing pre-norm layer normalization and novel layer combination strategies further surpass wider shallow counterparts [20], while transparent attention and layer aggregation mechanisms enable stable optimization of significantly deeper encoder stacks [21; 22].",
+      "citation_markers": [
+        "[20]",
+        "[21; 22]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Large-batch reduced-precision training further accelerates convergence without quality loss [23], and systematic hyperparameter studies confirm that architectural depth, normalization placement, and learning rate scheduling collectively govern translation quality [24; 15].",
+      "citation_markers": [
+        "[23]",
+        "[24; 15]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Targeted evaluations reveal that self-attention excels particularly at semantic feature extraction and word sense disambiguation relative to recurrent and convolutional alternatives [18], underscoring both its strengths and the continued importance of principled architectural search.",
+      "citation_markers": [
+        "[18]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 16595,
+    "completion_tokens": 903,
+    "total_tokens": 17498,
+    "prompt_tokens_details": {
+      "cached_tokens": 16128
+    }
+  }
+}

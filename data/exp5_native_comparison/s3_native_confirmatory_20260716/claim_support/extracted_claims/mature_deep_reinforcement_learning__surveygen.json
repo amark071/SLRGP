@@ -1,0 +1,123 @@
+{
+  "topic_id": "mature_deep_reinforcement_learning",
+  "system": "surveygen",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The Markov Decision Process (MDP) provides the formal mathematical framework underpinning reinforcement learning ref [1].",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The objective is to find an optimal policy π* maximizing the expected cumulative discounted return ref [32].",
+      "citation_markers": [
+        "[32]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Dynamic programming methods, including policy iteration and value iteration, solve MDPs exactly when the environment model is known, leveraging the Bellman equations to compute optimal value functions ref [1].",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Q-learning, a seminal off-policy TD algorithm, directly approximates the optimal action-value function by updating estimates using the maximum future reward, converging to optimal policies in tabular settings ref [1].",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The dueling network architecture introduced a structural decomposition of the Q-function into separate state-value and advantage streams, enabling more efficient policy evaluation across actions with similar values ref [13].",
+      "citation_markers": [
+        "[13]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The policy gradient theorem formally establishes that policies can themselves be represented by differentiable function approximators and updated via gradient ascent on expected return, providing theoretical grounding for this paradigm ref [12].",
+      "citation_markers": [
+        "[12]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Trust Region Policy Optimization (TRPO) addresses a fundamental instability in policy gradient methods: excessively large policy updates can catastrophically degrade performance. TRPO formulates policy optimization as a constrained problem, enforcing a Kullback-Leibler divergence constraint between successive policies to guarantee monotonic improvement ref [3].",
+      "citation_markers": [
+        "[3]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "PPO achieves comparable stability and performance to TRPO with significantly reduced complexity, making it widely adopted across robotics, continuous control, and game-playing applications ref [50].",
+      "citation_markers": [
+        "[50]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The seminal Deep Q-Network demonstrated that convolutional neural networks trained with Q-learning could achieve human-level performance on Atari 2600 games directly from raw pixel inputs ref [5].",
+      "citation_markers": [
+        "[5]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "A prominent application is network planning, traditionally formulated as Integer Linear Programming (ILP), where DRL-based approaches have been shown to surpass hand-tuned heuristics in scalability and solution quality ref [27].",
+      "citation_markers": [
+        "[27]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "A landmark contribution is the application of DRL to dialogue generation, where policy gradient methods are employed to reward conversational properties such as informativity, coherence, and forward-looking engagement, enabling agents to optimize long-term dialogue quality rather than single-turn responses ref [41].",
+      "citation_markers": [
+        "[41]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The combination of bootstrapping, off-policy learning, and nonlinear function approximation—the so-called deadly triad—introduces instabilities whose theoretical characterization is incomplete ref [32].",
+      "citation_markers": [
+        "[32]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8710,
+    "completion_tokens": 799,
+    "total_tokens": 9509,
+    "prompt_tokens_details": {
+      "cached_tokens": 8448
+    }
+  }
+}

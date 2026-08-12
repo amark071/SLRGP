@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-07-16T01:53:19Z",
+  "protocol_path": "<package-root>/S3_NATIVE_END_TO_END_PROTOCOL.md",
+  "protocol_sha256": "296c390580ef0a11f0452948b3ba35431f710230487bfc3305ed61bc24164967",
+  "common_backbone": "anthropic/claude-sonnet-4.6",
+  "selected_systems": [
+    "slrgp",
+    "autosurvey",
+    "surveyforge",
+    "surveygen"
+  ],
+  "per_system_topic_budget_usd": 16.0,
+  "timeout_seconds": 14400,
+  "order_rule": "topic-seed deterministic shuffle",
+  "publication_cutoff": "2023-12-31",
+  "core_reference_sets_sha256": "6497059e6db39a3d9ae8d058d55e539b26d47b0ad7cc15220dc8edc232e57062",
+  "cost_amendment": "4 systems x 8 topics, before quality judging or inference"
+}

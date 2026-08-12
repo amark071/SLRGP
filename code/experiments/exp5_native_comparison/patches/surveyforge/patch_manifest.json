@@ -1,0 +1,25 @@
+{
+  "system": "surveyforge",
+  "source_revision": "9114a0b7895a0f7eb614938d9bc0c956cf25245b",
+  "patches": [
+    {
+      "file": "model_usage.patch",
+      "purpose": "Correct OpenAI-compatible temperature placement; add bounded retries, low concurrency, and API usage logging.",
+      "semantic_effect": "instrumentation_and_compatibility_only"
+    },
+    {
+      "file": "database_device.patch",
+      "purpose": "Allow explicit embedding device selection and enforce the registered cutoff on paper and prior-survey retrieval.",
+      "semantic_effect": "environment_compatibility_and_registered_fairness_filter"
+    },
+    {
+      "file": "runtime_controls.patch",
+      "purpose": "Make embedding device and released thread pools configurable for single-GPU bounded execution.",
+      "semantic_effect": "scheduling_and_environment_only"
+    }
+  ],
+  "publication_cutoff": {
+    "date": "2023-12-31",
+    "enforcement": "date and arXiv YYMM filtering within the released FAISS/TinyDB corpus"
+  }
+}

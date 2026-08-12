@@ -1,0 +1,5427 @@
+{
+  "runner": "s4a_runner.py",
+  "model": "anthropic/claude-sonnet-4.6",
+  "base_url": "http://127.0.0.1:18080/v1",
+  "arms": [
+    "intact",
+    "l_default",
+    "r_pass",
+    "o_rank_slab",
+    "no_recursion"
+  ],
+  "top_n": 60,
+  "d_max": 2,
+  "theta_leaf": 8,
+  "target_leaf_words": 400,
+  "max_groups_per_node": 2,
+  "rank_slab_groups": 2,
+  "n_ok": 40,
+  "n_total": 40,
+  "llm_usage": {
+    "n_calls": 313,
+    "prompt_tokens": 270415,
+    "completion_tokens": 75532
+  },
+  "topics": [
+    {
+      "topic": "3D Gaussian Splatting",
+      "arm": "intact",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 17:32:26",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "3D Gaussian Splatting",
+        "neural radiance fields",
+        "NeRF",
+        "point-based rendering",
+        "volumetric scene representation",
+        "real-time novel view synthesis",
+        "radiance field reconstruction",
+        "differentiable rendering",
+        "Gaussian primitives",
+        "3D scene reconstruction",
+        "splat-based rendering",
+        "implicit neural representation"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Foundational Methods and Surveys of 3DGS",
+          "n": 4
+        },
+        {
+          "name": "Compression, Efficiency, and Memory Optimization",
+          "n": 3
+        },
+        {
+          "name": "Deblurring and Sparse/Degraded Input Reconstruction",
+          "n": 3
+        },
+        {
+          "name": "Surface Reconstruction and Alternative Primitives",
+          "n": 3
+        },
+        {
+          "name": "Scene Editing, Manipulation, and Inverse Rendering",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2210.00379",
+        "arxiv_2308.04079",
+        "arxiv_2311.13681",
+        "arxiv_2311.17245",
+        "arxiv_2312.04564",
+        "arxiv_2403.11134",
+        "arxiv_2406.17074",
+        "arxiv_2407.09510",
+        "arxiv_2410.08017",
+        "arxiv_2501.05757",
+        "arxiv_2502.19318",
+        "arxiv_2502.19457",
+        "arxiv_2504.03059",
+        "arxiv_2509.17083"
+      ],
+      "n_refs": 14,
+      "word_count": 1237,
+      "written_citation_ids": [
+        "arxiv_2308.04079",
+        "arxiv_2403.11134",
+        "arxiv_2502.19318",
+        "arxiv_2210.00379",
+        "arxiv_2504.03059",
+        "arxiv_2502.19457",
+        "arxiv_2407.09510",
+        "arxiv_2406.17074",
+        "arxiv_2311.17245",
+        "arxiv_2501.05757",
+        "arxiv_2312.04564",
+        "arxiv_2410.08017",
+        "arxiv_2509.17083",
+        "arxiv_2311.13681"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2210.00379",
+        "arxiv_2308.04079",
+        "arxiv_2311.13681",
+        "arxiv_2311.17245",
+        "arxiv_2311.18159",
+        "arxiv_2312.04564",
+        "arxiv_2312.13299",
+        "arxiv_2401.00834",
+        "arxiv_2403.11134",
+        "arxiv_2403.14530",
+        "arxiv_2404.09458",
+        "arxiv_2404.19149",
+        "arxiv_2405.00676",
+        "arxiv_2405.06408",
+        "arxiv_2405.17083",
+        "arxiv_2405.20721",
+        "arxiv_2406.02720",
+        "arxiv_2406.17074",
+        "arxiv_2407.09510",
+        "arxiv_2408.03753",
+        "arxiv_2408.03822",
+        "arxiv_2410.02103",
+        "arxiv_2410.04974",
+        "arxiv_2410.08017",
+        "arxiv_2410.23213",
+        "arxiv_2411.03637",
+        "arxiv_2501.05757",
+        "arxiv_2501.13558",
+        "arxiv_2502.19318",
+        "arxiv_2502.19457",
+        "arxiv_2503.08511",
+        "arxiv_2503.16924",
+        "arxiv_2503.18402",
+        "arxiv_2503.20221",
+        "arxiv_2503.23162",
+        "arxiv_2504.01844",
+        "arxiv_2504.03059",
+        "arxiv_2505.18197",
+        "arxiv_2506.10335",
+        "arxiv_2508.03017",
+        "arxiv_2508.04965",
+        "arxiv_2508.05343",
+        "arxiv_2509.07021",
+        "arxiv_2509.13482",
+        "arxiv_2509.17083",
+        "arxiv_2509.24758",
+        "arxiv_2510.10030",
+        "arxiv_2510.14705",
+        "arxiv_2511.06953",
+        "arxiv_2511.13264",
+        "arxiv_2512.07052",
+        "arxiv_2512.07197",
+        "arxiv_2512.24742",
+        "arxiv_2601.12814",
+        "arxiv_2602.04549",
+        "arxiv_2603.09703",
+        "arxiv_2604.01884",
+        "arxiv_2604.26799",
+        "arxiv_2605.25563",
+        "arxiv_2605.30396",
+        "ss_481126"
+      ],
+      "elapsed_sec": 124.2,
+      "llm_usage_delta": {
+        "n_calls": 15,
+        "prompt_tokens": 13518,
+        "completion_tokens": 3522
+      },
+      "llm_usage_so_far": {
+        "n_calls": 15,
+        "prompt_tokens": 13518,
+        "completion_tokens": 3522
+      }
+    },
+    {
+      "topic": "3D Gaussian Splatting",
+      "arm": "l_default",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 18:52:29",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "3D Gaussian Splatting",
+        "neural radiance fields",
+        "NeRF",
+        "point-based rendering",
+        "volumetric rendering",
+        "radiance field reconstruction",
+        "real-time novel view synthesis",
+        "differentiable rasterization",
+        "scene representation learning",
+        "Gaussian primitives",
+        "3D scene reconstruction",
+        "photorealistic rendering"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Foundations and Surveys of 3D Gaussian Splatting",
+          "n": 3
+        },
+        {
+          "name": "Scene Reconstruction and Surface Geometry",
+          "n": 3
+        },
+        {
+          "name": "Deblurring and Pose-Free Reconstruction",
+          "n": 3
+        },
+        {
+          "name": "Few-shot and Sparse Input Novel View Synthesis",
+          "n": 2
+        },
+        {
+          "name": "Dynamic Scenes, Editing, and Representation Extensions",
+          "n": 4
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2308.04079",
+        "arxiv_2401.03890",
+        "arxiv_2402.07181",
+        "arxiv_2403.11134",
+        "arxiv_2403.17888",
+        "arxiv_2404.10772",
+        "arxiv_2405.03417",
+        "arxiv_2406.06521",
+        "arxiv_2410.12262",
+        "arxiv_2411.01853",
+        "arxiv_2411.14974",
+        "arxiv_2502.19318",
+        "arxiv_2502.19457"
+      ],
+      "n_refs": 13,
+      "word_count": 1633,
+      "written_citation_ids": [
+        "arxiv_2308.04079",
+        "arxiv_2502.19318",
+        "arxiv_2411.14974",
+        "arxiv_2411.01853",
+        "arxiv_2403.11134",
+        "arxiv_2402.07181",
+        "arxiv_2410.12262",
+        "arxiv_2502.19457",
+        "arxiv_2401.03890",
+        "arxiv_2405.03417",
+        "arxiv_2406.06521",
+        "arxiv_2403.17888",
+        "arxiv_2404.10772"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2308.04079",
+        "arxiv_2401.03890",
+        "arxiv_2402.07181",
+        "arxiv_2403.11134",
+        "arxiv_2403.17888",
+        "arxiv_2404.10772",
+        "arxiv_2405.03417",
+        "arxiv_2406.06521",
+        "arxiv_2410.12262",
+        "arxiv_2411.01853",
+        "arxiv_2411.14974",
+        "arxiv_2502.19318",
+        "arxiv_2502.19457"
+      ],
+      "elapsed_sec": 157.7,
+      "llm_usage_delta": {
+        "n_calls": 22,
+        "prompt_tokens": 17294,
+        "completion_tokens": 4618
+      },
+      "llm_usage_so_far": {
+        "n_calls": 22,
+        "prompt_tokens": 17294,
+        "completion_tokens": 4618
+      }
+    },
+    {
+      "topic": "3D Gaussian Splatting",
+      "arm": "r_pass",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 18:55:07",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "3D Gaussian Splatting",
+        "neural radiance fields",
+        "NeRF",
+        "volumetric rendering",
+        "point cloud rendering",
+        "radiance field reconstruction",
+        "real-time novel view synthesis",
+        "differentiable rasterization",
+        "scene representation learning",
+        "Gaussian primitives",
+        "explicit scene representation",
+        "photorealistic rendering neural"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Foundational Methods and Surveys",
+          "n": 3
+        },
+        {
+          "name": "Rendering Quality and Volumetric Accuracy",
+          "n": 3
+        },
+        {
+          "name": "Compression, Compactness, and Memory Efficiency",
+          "n": 3
+        },
+        {
+          "name": "Novel Gaussian Primitives and Representations",
+          "n": 3
+        },
+        {
+          "name": "Deblurring and Robust Reconstruction",
+          "n": 2
+        },
+        {
+          "name": "Surface Reconstruction and Scene Geometry",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2308.04079",
+        "arxiv_2312.04564",
+        "arxiv_2312.13299",
+        "arxiv_2401.03890",
+        "arxiv_2403.11134",
+        "arxiv_2403.14244",
+        "arxiv_2403.17888",
+        "arxiv_2406.02720",
+        "arxiv_2408.03356",
+        "arxiv_2410.04974",
+        "arxiv_2410.12262",
+        "arxiv_2412.15867",
+        "arxiv_2501.19196",
+        "arxiv_2502.19318",
+        "arxiv_2503.08166",
+        "arxiv_2503.24366",
+        "arxiv_2508.09977",
+        "arxiv_2509.17083",
+        "arxiv_2510.08491",
+        "arxiv_2510.18101",
+        "arxiv_2510.26694",
+        "arxiv_2512.11800"
+      ],
+      "n_refs": 22,
+      "word_count": 1847,
+      "written_citation_ids": [
+        "arxiv_2308.04079",
+        "arxiv_2403.17888",
+        "arxiv_2406.02720",
+        "arxiv_2410.04974",
+        "arxiv_2401.03890",
+        "arxiv_2403.11134",
+        "arxiv_2508.09977",
+        "arxiv_2510.26694",
+        "arxiv_2410.12262",
+        "arxiv_2503.08166",
+        "arxiv_2502.19318",
+        "arxiv_2510.18101",
+        "arxiv_2512.11800",
+        "arxiv_2503.24366",
+        "arxiv_2408.03356",
+        "arxiv_2501.19196",
+        "arxiv_2412.15867",
+        "arxiv_2403.14244",
+        "arxiv_2311.13681",
+        "arxiv_2408.03822",
+        "arxiv_2312.04564",
+        "arxiv_2312.13299",
+        "arxiv_2510.08491",
+        "arxiv_2509.17083"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2210.00379",
+        "arxiv_2308.04079",
+        "arxiv_2311.13681",
+        "arxiv_2311.16473",
+        "arxiv_2311.18159",
+        "arxiv_2312.03431",
+        "arxiv_2312.04564",
+        "arxiv_2312.07504",
+        "arxiv_2312.13299",
+        "arxiv_2312.13729",
+        "arxiv_2401.00834",
+        "arxiv_2401.03890",
+        "arxiv_2401.06003",
+        "arxiv_2402.00752",
+        "arxiv_2402.07181",
+        "arxiv_2402.15870",
+        "arxiv_2403.11056",
+        "arxiv_2403.11134",
+        "arxiv_2403.11831",
+        "arxiv_2403.13806",
+        "arxiv_2403.14244",
+        "arxiv_2403.17888",
+        "arxiv_2404.03202",
+        "arxiv_2404.09412",
+        "arxiv_2404.09458",
+        "arxiv_2404.10772",
+        "arxiv_2404.12547",
+        "arxiv_2404.19149",
+        "arxiv_2405.00676",
+        "arxiv_2405.05702",
+        "arxiv_2405.06945",
+        "arxiv_2405.12110",
+        "arxiv_2405.17083",
+        "arxiv_2405.17811",
+        "arxiv_2406.01579",
+        "arxiv_2406.02720",
+        "arxiv_2406.08759",
+        "arxiv_2406.17074",
+        "arxiv_2406.18199",
+        "arxiv_2407.12306",
+        "arxiv_2408.03356",
+        "arxiv_2408.03753",
+        "arxiv_2408.03822",
+        "arxiv_2408.08206",
+        "arxiv_2409.08669",
+        "arxiv_2409.10335",
+        "arxiv_2409.11307",
+        "arxiv_2409.12774",
+        "arxiv_2410.01804",
+        "arxiv_2410.02103",
+        "arxiv_2410.04974",
+        "arxiv_2410.08941",
+        "arxiv_2410.11080",
+        "arxiv_2410.12262",
+        "arxiv_2410.17932",
+        "arxiv_2411.01853",
+        "arxiv_2411.03637",
+        "arxiv_2411.14974",
+        "arxiv_2411.18625",
+        "arxiv_2412.03378",
+        "arxiv_2412.12507",
+        "arxiv_2412.15867",
+        "arxiv_2412.19370",
+        "arxiv_2501.05757",
+        "arxiv_2501.18630",
+        "arxiv_2501.19196",
+        "arxiv_2502.01157",
+        "arxiv_2502.07754",
+        "arxiv_2502.19318",
+        "arxiv_2502.19457",
+        "arxiv_2503.06462",
+        "arxiv_2503.08166",
+        "arxiv_2503.12284",
+        "arxiv_2503.17798",
+        "arxiv_2503.18682",
+        "arxiv_2503.24366",
+        "arxiv_2504.01844",
+        "arxiv_2505.10049",
+        "arxiv_2505.19175",
+        "arxiv_2505.24053",
+        "arxiv_2506.09534",
+        "arxiv_2506.10335",
+        "arxiv_2506.11252",
+        "arxiv_2506.12727",
+        "arxiv_2506.16262",
+        "arxiv_2506.20202",
+        "arxiv_2506.23611",
+        "arxiv_2507.11321",
+        "arxiv_2507.15629",
+        "arxiv_2507.19718",
+        "arxiv_2508.09977",
+        "arxiv_2509.13938",
+        "arxiv_2509.17083",
+        "arxiv_2509.23555",
+        "arxiv_2509.25122",
+        "arxiv_2510.03312",
+        "arxiv_2510.08491",
+        "arxiv_2510.16837",
+        "arxiv_2510.18101",
+        "arxiv_2510.26694",
+        "arxiv_2512.02932",
+        "arxiv_2512.11800",
+        "arxiv_2512.16706",
+        "arxiv_2601.02102",
+        "arxiv_2601.09243",
+        "arxiv_2602.19916",
+        "arxiv_2603.02887",
+        "arxiv_2603.19834",
+        "arxiv_2604.12217",
+        "arxiv_2605.13855",
+        "arxiv_2605.29136",
+        "arxiv_2606.03877",
+        "ss_480987"
+      ],
+      "elapsed_sec": 159.9,
+      "llm_usage_delta": {
+        "n_calls": 19,
+        "prompt_tokens": 21261,
+        "completion_tokens": 5255
+      },
+      "llm_usage_so_far": {
+        "n_calls": 41,
+        "prompt_tokens": 38555,
+        "completion_tokens": 9873
+      }
+    },
+    {
+      "topic": "3D Gaussian Splatting",
+      "arm": "o_rank_slab",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 18:57:47",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "3D Gaussian Splatting",
+        "neural radiance fields",
+        "NeRF",
+        "point-based rendering",
+        "volumetric rendering",
+        "radiance field reconstruction",
+        "real-time novel view synthesis",
+        "differentiable rasterization",
+        "scene representation learning",
+        "Gaussian primitives",
+        "explicit scene representation",
+        "photorealistic 3D reconstruction"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "rank_slab_order",
+      "groups": [
+        {
+          "name": "Rank slab 1: positions 1-8",
+          "n": 8
+        },
+        {
+          "name": "Rank slab 2: positions 9-15",
+          "n": 7
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2308.04079",
+        "arxiv_2312.04564",
+        "arxiv_2401.00834",
+        "arxiv_2401.03890",
+        "arxiv_2403.11134",
+        "arxiv_2403.11831",
+        "arxiv_2404.06270",
+        "arxiv_2405.17811",
+        "arxiv_2408.03822",
+        "arxiv_2411.01853",
+        "arxiv_2502.19318",
+        "arxiv_2502.19457",
+        "arxiv_2509.17083"
+      ],
+      "n_refs": 13,
+      "word_count": 827,
+      "written_citation_ids": [
+        "arxiv_2308.04079",
+        "arxiv_2403.11134",
+        "arxiv_2509.17083",
+        "arxiv_2312.04564",
+        "arxiv_2502.19318",
+        "arxiv_2401.00834",
+        "arxiv_2403.11831",
+        "arxiv_2411.01853",
+        "arxiv_2408.03822",
+        "arxiv_2502.19457",
+        "arxiv_2404.06270",
+        "arxiv_2405.17811",
+        "arxiv_2401.03890"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2308.04079",
+        "arxiv_2312.04564",
+        "arxiv_2401.00834",
+        "arxiv_2401.03890",
+        "arxiv_2403.11134",
+        "arxiv_2403.11831",
+        "arxiv_2404.06270",
+        "arxiv_2405.17811",
+        "arxiv_2408.03822",
+        "arxiv_2411.01853",
+        "arxiv_2411.03637",
+        "arxiv_2411.14974",
+        "arxiv_2502.19318",
+        "arxiv_2502.19457",
+        "arxiv_2509.17083"
+      ],
+      "elapsed_sec": 39.9,
+      "llm_usage_delta": {
+        "n_calls": 3,
+        "prompt_tokens": 2860,
+        "completion_tokens": 1452
+      },
+      "llm_usage_so_far": {
+        "n_calls": 44,
+        "prompt_tokens": 41415,
+        "completion_tokens": 11325
+      }
+    },
+    {
+      "topic": "3D Gaussian Splatting",
+      "arm": "no_recursion",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 18:58:27",
+      "d_max_effective": 1,
+      "expanded_terms": [
+        "3D Gaussian Splatting",
+        "neural radiance fields",
+        "NeRF",
+        "point-based rendering",
+        "volumetric scene representation",
+        "real-time novel view synthesis",
+        "radiance field reconstruction",
+        "differentiable rendering",
+        "Gaussian primitives",
+        "3D scene reconstruction",
+        "splat-based rendering",
+        "photorealistic rendering neural"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Foundations and Core 3DGS Methods",
+          "n": 4
+        },
+        {
+          "name": "Memory Efficiency and Compression",
+          "n": 3
+        },
+        {
+          "name": "Deblurring and Degraded Input Handling",
+          "n": 2
+        },
+        {
+          "name": "Few-shot and Sparse Input Novel View Synthesis",
+          "n": 2
+        },
+        {
+          "name": "Surface Reconstruction and Geometry",
+          "n": 2
+        },
+        {
+          "name": "Scene Editing and Manipulation",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2308.04079",
+        "arxiv_2311.13681",
+        "arxiv_2311.17245",
+        "arxiv_2312.04564",
+        "arxiv_2401.06003",
+        "arxiv_2406.17074",
+        "arxiv_2406.18214",
+        "arxiv_2410.08017",
+        "arxiv_2411.14974",
+        "arxiv_2501.05757",
+        "arxiv_2502.19318",
+        "arxiv_2509.07021",
+        "arxiv_2509.13482",
+        "arxiv_2509.17083"
+      ],
+      "n_refs": 14,
+      "word_count": 781,
+      "written_citation_ids": [
+        "arxiv_2308.04079",
+        "arxiv_2502.19318",
+        "arxiv_2401.06003",
+        "arxiv_2411.14974",
+        "arxiv_2311.17245",
+        "arxiv_2502.19457",
+        "arxiv_2407.09510",
+        "arxiv_2403.11134",
+        "arxiv_2406.18214",
+        "arxiv_2509.07021",
+        "arxiv_2312.04564",
+        "arxiv_2311.13681",
+        "arxiv_2509.13482",
+        "arxiv_2406.17074",
+        "arxiv_2501.05757",
+        "arxiv_2509.17083",
+        "arxiv_2410.08017"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2308.04079",
+        "arxiv_2311.13681",
+        "arxiv_2311.17245",
+        "arxiv_2311.18159",
+        "arxiv_2312.04564",
+        "arxiv_2312.13299",
+        "arxiv_2401.00834",
+        "arxiv_2401.06003",
+        "arxiv_2403.08551",
+        "arxiv_2403.11134",
+        "arxiv_2404.02185",
+        "arxiv_2404.19149",
+        "arxiv_2405.00676",
+        "arxiv_2405.06408",
+        "arxiv_2405.17083",
+        "arxiv_2405.20721",
+        "arxiv_2406.02720",
+        "arxiv_2406.17074",
+        "arxiv_2406.18214",
+        "arxiv_2407.09510",
+        "arxiv_2408.03822",
+        "arxiv_2409.01761",
+        "arxiv_2410.08017",
+        "arxiv_2410.23213",
+        "arxiv_2411.01853",
+        "arxiv_2411.03637",
+        "arxiv_2411.14974",
+        "arxiv_2412.05700",
+        "arxiv_2501.05757",
+        "arxiv_2501.13558",
+        "arxiv_2502.19318",
+        "arxiv_2502.19457",
+        "arxiv_2503.08511",
+        "arxiv_2503.16924",
+        "arxiv_2503.23162",
+        "arxiv_2504.01844",
+        "arxiv_2504.03059",
+        "arxiv_2506.10335",
+        "arxiv_2506.22973",
+        "arxiv_2507.06671",
+        "arxiv_2508.03017",
+        "arxiv_2508.04965",
+        "arxiv_2508.15372",
+        "arxiv_2509.07021",
+        "arxiv_2509.13482",
+        "arxiv_2509.17083",
+        "arxiv_2509.24758",
+        "arxiv_2510.03857",
+        "arxiv_2510.08491",
+        "arxiv_2510.10030",
+        "arxiv_2511.06953",
+        "arxiv_2511.13264",
+        "arxiv_2512.07052",
+        "arxiv_2512.07197",
+        "arxiv_2512.19108",
+        "arxiv_2512.24742",
+        "arxiv_2601.12814",
+        "arxiv_2601.14821",
+        "arxiv_2602.04549",
+        "arxiv_2604.26799",
+        "arxiv_2605.30396",
+        "arxiv_2606.02346",
+        "arxiv_2606.03877"
+      ],
+      "elapsed_sec": 71.0,
+      "llm_usage_delta": {
+        "n_calls": 9,
+        "prompt_tokens": 8837,
+        "completion_tokens": 2200
+      },
+      "llm_usage_so_far": {
+        "n_calls": 53,
+        "prompt_tokens": 50252,
+        "completion_tokens": 13525
+      }
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "intact",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 18:59:38",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "graph neural networks",
+        "graph convolutional networks",
+        "message passing neural networks",
+        "spectral graph convolution",
+        "graph attention networks",
+        "geometric deep learning",
+        "node classification",
+        "link prediction",
+        "graph representation learning",
+        "graph transformer",
+        "relational graph convolutional networks",
+        "graph pooling"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Graph Pooling Methods",
+          "n": 7
+        },
+        {
+          "name": "Graph Convolutional Network Architectures",
+          "n": 3
+        },
+        {
+          "name": "Node and Edge Representation Learning",
+          "n": 2
+        },
+        {
+          "name": "Surveys and Overviews of GNNs",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1609.02907",
+        "arxiv_1805.00165",
+        "arxiv_1901.01343",
+        "arxiv_1903.02541",
+        "arxiv_1904.13107",
+        "arxiv_2003.12277",
+        "arxiv_2004.03519",
+        "arxiv_2007.10467",
+        "arxiv_2105.10377",
+        "arxiv_2302.13399",
+        "arxiv_2404.12724",
+        "ss_476188",
+        "ss_477414",
+        "ss_477785"
+      ],
+      "n_refs": 14,
+      "word_count": 1193,
+      "written_citation_ids": [
+        "ss_477785",
+        "arxiv_2004.03519",
+        "arxiv_1904.13107",
+        "arxiv_2007.10467",
+        "arxiv_1903.02541",
+        "arxiv_2302.13399",
+        "arxiv_1805.00165",
+        "ss_476188",
+        "arxiv_1901.01343",
+        "arxiv_2105.10377",
+        "arxiv_1609.02907",
+        "arxiv_2003.12277",
+        "arxiv_2404.12724",
+        "ss_477414"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1609.02907",
+        "arxiv_1805.00165",
+        "arxiv_1901.01343",
+        "arxiv_1903.02541",
+        "arxiv_1904.13107",
+        "arxiv_1905.06259",
+        "arxiv_2003.12277",
+        "arxiv_2004.03519",
+        "arxiv_2007.10467",
+        "arxiv_2105.10377",
+        "arxiv_2302.13399",
+        "arxiv_2404.12724",
+        "ss_476188",
+        "ss_477414",
+        "ss_477785"
+      ],
+      "elapsed_sec": 104.1,
+      "llm_usage_delta": {
+        "n_calls": 14,
+        "prompt_tokens": 10320,
+        "completion_tokens": 3181
+      },
+      "llm_usage_so_far": {
+        "n_calls": 67,
+        "prompt_tokens": 60572,
+        "completion_tokens": 16706
+      }
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "l_default",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 19:01:22",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "graph neural networks",
+        "graph convolutional networks",
+        "message passing neural networks",
+        "spectral graph convolution",
+        "graph attention networks",
+        "geometric deep learning",
+        "node classification",
+        "link prediction",
+        "graph representation learning",
+        "graph transformer",
+        "relational graph convolutional networks",
+        "graph pooling"
+      ],
+      "n_candidates": 80,
+      "solve_rounds": 2,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Graph Pooling Methods",
+          "n": 6
+        },
+        {
+          "name": "Graph Convolutional Network Architectures and Filters",
+          "n": 4
+        },
+        {
+          "name": "Graph Representation and Node/Edge Embedding",
+          "n": 2
+        },
+        {
+          "name": "Surveys and Overviews of GNNs",
+          "n": 2
+        },
+        {
+          "name": "Link Prediction with GNNs",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1903.02541",
+        "arxiv_1904.13107",
+        "arxiv_1905.06259",
+        "arxiv_1909.12038",
+        "arxiv_2002.05287",
+        "arxiv_2004.03519",
+        "arxiv_2007.10467",
+        "arxiv_2101.05519",
+        "arxiv_2302.13399",
+        "ss_476188"
+      ],
+      "n_refs": 10,
+      "word_count": 783,
+      "written_citation_ids": [
+        "arxiv_1904.13107",
+        "arxiv_1905.06259",
+        "arxiv_2007.10467",
+        "arxiv_1903.02541",
+        "arxiv_2302.13399",
+        "arxiv_2004.03519",
+        "ss_476188",
+        "arxiv_2101.05519",
+        "arxiv_2002.05287",
+        "arxiv_1909.12038"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1903.02541",
+        "arxiv_1904.13107",
+        "arxiv_1905.06259",
+        "arxiv_1909.12038",
+        "arxiv_2002.05287",
+        "arxiv_2004.03519",
+        "arxiv_2007.10467",
+        "arxiv_2101.05519",
+        "arxiv_2302.13399",
+        "ss_476188"
+      ],
+      "elapsed_sec": 63.9,
+      "llm_usage_delta": {
+        "n_calls": 9,
+        "prompt_tokens": 7451,
+        "completion_tokens": 2024
+      },
+      "llm_usage_so_far": {
+        "n_calls": 76,
+        "prompt_tokens": 68023,
+        "completion_tokens": 18730
+      }
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "r_pass",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:39:25",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "graph neural networks",
+        "graph convolutional networks",
+        "message passing neural networks",
+        "spectral graph convolution",
+        "graph attention networks",
+        "geometric deep learning",
+        "node classification",
+        "link prediction",
+        "graph representation learning",
+        "graph transformer",
+        "relational graph convolutional networks",
+        "graph pooling"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Graph Pooling Methods",
+          "n": 5
+        },
+        {
+          "name": "Graph Convolution and Message Passing Architectures",
+          "n": 4
+        },
+        {
+          "name": "Node and Edge Representation Learning",
+          "n": 3
+        },
+        {
+          "name": "Graph Classification and Kernel Methods",
+          "n": 2
+        },
+        {
+          "name": "Graph and Network Representation Learning (Embeddings)",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1808.06099",
+        "arxiv_1811.01287",
+        "arxiv_1901.07984",
+        "arxiv_1904.13107",
+        "arxiv_1906.02319",
+        "arxiv_1911.05954",
+        "arxiv_2002.05287",
+        "arxiv_2004.03519",
+        "arxiv_2302.13399"
+      ],
+      "n_refs": 9,
+      "word_count": 792,
+      "written_citation_ids": [
+        "arxiv_1904.13107",
+        "arxiv_1811.01287",
+        "arxiv_1911.05954",
+        "arxiv_2302.13399",
+        "arxiv_2004.03519",
+        "arxiv_1808.06099",
+        "arxiv_2002.05287",
+        "arxiv_1906.02319",
+        "arxiv_1901.07984"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1808.06099",
+        "arxiv_1811.01287",
+        "arxiv_1901.07984",
+        "arxiv_1904.13107",
+        "arxiv_1906.02319",
+        "arxiv_1911.05954",
+        "arxiv_2002.05287",
+        "arxiv_2004.03519",
+        "arxiv_2302.13399"
+      ],
+      "elapsed_sec": 75.7,
+      "llm_usage_delta": {
+        "n_calls": 10,
+        "prompt_tokens": 7045,
+        "completion_tokens": 2111
+      },
+      "llm_usage_so_far": {
+        "n_calls": 10,
+        "prompt_tokens": 7045,
+        "completion_tokens": 2111
+      }
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "o_rank_slab",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:40:40",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "graph neural networks",
+        "graph convolutional networks",
+        "message passing neural networks",
+        "spectral graph convolution",
+        "graph attention networks",
+        "geometric deep learning",
+        "node classification",
+        "link prediction",
+        "graph representation learning",
+        "graph transformer",
+        "relational graph convolutional networks",
+        "graph pooling"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "rank_slab_order",
+      "groups": [
+        {
+          "name": "Rank slab 1: positions 1-8",
+          "n": 8
+        },
+        {
+          "name": "Rank slab 2: positions 9-15",
+          "n": 7
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1605.05273",
+        "arxiv_1901.00596",
+        "arxiv_1903.02541",
+        "arxiv_1904.13107",
+        "arxiv_1906.02174",
+        "arxiv_2002.05287",
+        "arxiv_2004.03519",
+        "arxiv_2102.02026",
+        "arxiv_2302.13399"
+      ],
+      "n_refs": 9,
+      "word_count": 814,
+      "written_citation_ids": [
+        "arxiv_1901.00596",
+        "arxiv_2002.05287",
+        "arxiv_1903.02541",
+        "arxiv_2004.03519",
+        "arxiv_2007.10467",
+        "ss_477785",
+        "arxiv_1904.13107",
+        "arxiv_2102.02026",
+        "arxiv_1605.05273",
+        "arxiv_1906.02174",
+        "arxiv_2302.13399"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1605.05273",
+        "arxiv_1901.00596",
+        "arxiv_1903.02541",
+        "arxiv_1904.13107",
+        "arxiv_1905.06259",
+        "arxiv_1906.02174",
+        "arxiv_2002.05287",
+        "arxiv_2004.03519",
+        "arxiv_2007.10467",
+        "arxiv_2010.13242",
+        "arxiv_2102.02026",
+        "arxiv_2302.13399",
+        "arxiv_2307.00865",
+        "ss_477653",
+        "ss_477785"
+      ],
+      "elapsed_sec": 36.5,
+      "llm_usage_delta": {
+        "n_calls": 3,
+        "prompt_tokens": 2328,
+        "completion_tokens": 1369
+      },
+      "llm_usage_so_far": {
+        "n_calls": 13,
+        "prompt_tokens": 9373,
+        "completion_tokens": 3480
+      }
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "no_recursion",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:41:17",
+      "d_max_effective": 1,
+      "expanded_terms": [
+        "graph neural networks",
+        "graph convolutional networks",
+        "message passing neural networks",
+        "spectral graph convolution",
+        "graph attention networks",
+        "geometric deep learning",
+        "node classification",
+        "link prediction",
+        "graph representation learning",
+        "graph transformer",
+        "relational graph convolutional networks",
+        "graph pooling"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Graph Pooling Methods",
+          "n": 7
+        },
+        {
+          "name": "Graph Convolutional Network Architectures",
+          "n": 3
+        },
+        {
+          "name": "Node and Edge Representation Learning",
+          "n": 2
+        },
+        {
+          "name": "Surveys and Overviews of GNNs",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1609.02907",
+        "arxiv_1809.01090",
+        "arxiv_1811.09971",
+        "arxiv_1901.01343",
+        "arxiv_1903.02541",
+        "arxiv_1904.04238",
+        "arxiv_1904.07785",
+        "arxiv_1904.13107",
+        "arxiv_1906.02319",
+        "arxiv_2002.05287",
+        "arxiv_2003.12277",
+        "arxiv_2004.03519",
+        "arxiv_2007.10467",
+        "arxiv_2010.13242",
+        "arxiv_2302.13399",
+        "ss_477785"
+      ],
+      "n_refs": 16,
+      "word_count": 847,
+      "written_citation_ids": [
+        "ss_477785",
+        "arxiv_2004.03519",
+        "arxiv_2007.10467",
+        "arxiv_1904.13107",
+        "arxiv_1903.02541",
+        "arxiv_2302.13399",
+        "arxiv_1609.02907",
+        "arxiv_1901.01343",
+        "arxiv_1904.07785",
+        "arxiv_2002.05287",
+        "arxiv_1904.04238",
+        "arxiv_1809.01090",
+        "arxiv_2003.12277",
+        "arxiv_1906.02319",
+        "arxiv_1811.09971",
+        "arxiv_2010.13242"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1605.05273",
+        "arxiv_1609.02907",
+        "arxiv_1708.02218",
+        "arxiv_1710.10370",
+        "arxiv_1712.03563",
+        "arxiv_1802.07007",
+        "arxiv_1802.08888",
+        "arxiv_1805.12528",
+        "arxiv_1807.02653",
+        "arxiv_1808.06099",
+        "arxiv_1809.01090",
+        "arxiv_1809.09839",
+        "arxiv_1810.00826",
+        "arxiv_1811.01287",
+        "arxiv_1811.08270",
+        "arxiv_1811.08800",
+        "arxiv_1811.09971",
+        "arxiv_1812.00086",
+        "arxiv_1812.03813",
+        "arxiv_1901.01343",
+        "arxiv_1903.02541",
+        "arxiv_1904.04238",
+        "arxiv_1904.07785",
+        "arxiv_1904.10146",
+        "arxiv_1904.13107",
+        "arxiv_1905.04579",
+        "arxiv_1905.06259",
+        "arxiv_1905.10224",
+        "arxiv_1906.02319",
+        "arxiv_1906.02989",
+        "arxiv_1907.09495",
+        "arxiv_1908.00187",
+        "arxiv_1909.04931",
+        "arxiv_1909.11715",
+        "arxiv_1909.12264",
+        "arxiv_1911.05256",
+        "arxiv_1911.05384",
+        "arxiv_2001.07922",
+        "arxiv_2002.03392",
+        "arxiv_2002.05287",
+        "arxiv_2003.12277",
+        "arxiv_2004.03519",
+        "arxiv_2005.03675",
+        "arxiv_2007.03424",
+        "arxiv_2007.03513",
+        "arxiv_2007.10467",
+        "arxiv_2010.13242",
+        "arxiv_2011.07267",
+        "arxiv_2102.09780",
+        "arxiv_2106.06307",
+        "arxiv_2110.08128",
+        "arxiv_2201.00491",
+        "arxiv_2207.01839",
+        "arxiv_2210.09809",
+        "arxiv_2211.00565",
+        "arxiv_2211.07845",
+        "arxiv_2301.04381",
+        "arxiv_2302.13399",
+        "arxiv_2307.00865",
+        "arxiv_2401.00755",
+        "arxiv_2404.12724",
+        "arxiv_2408.00165",
+        "ss_476188",
+        "ss_477653",
+        "ss_477785",
+        "ss_477854"
+      ],
+      "elapsed_sec": 62.5,
+      "llm_usage_delta": {
+        "n_calls": 7,
+        "prompt_tokens": 6986,
+        "completion_tokens": 2022
+      },
+      "llm_usage_so_far": {
+        "n_calls": 20,
+        "prompt_tokens": 16359,
+        "completion_tokens": 5502
+      }
+    },
+    {
+      "topic": "Multimodal Large Language Models",
+      "arm": "intact",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:42:19",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "multimodal large language models",
+        "vision-language models",
+        "multimodal foundation models",
+        "large vision-language models",
+        "cross-modal learning",
+        "visual question answering",
+        "image-text alignment",
+        "multimodal pretraining",
+        "vision-language pretraining",
+        "multimodal transformers",
+        "grounded language understanding",
+        "multimodal instruction tuning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of Multimodal LLMs",
+          "n": 4
+        },
+        {
+          "name": "Model Architectures and Pretraining for Vision-Language",
+          "n": 4
+        },
+        {
+          "name": "Evaluation and Benchmarking of Vision-Language Models",
+          "n": 3
+        },
+        {
+          "name": "Instruction Tuning and Data Generation for MLLMs",
+          "n": 2
+        },
+        {
+          "name": "Interpretability and Grounding in Vision-Language Models",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2209.06794",
+        "arxiv_2210.09263",
+        "arxiv_2309.10020",
+        "arxiv_2402.12451",
+        "arxiv_2403.08773",
+        "arxiv_2408.06610",
+        "arxiv_2410.05608",
+        "ss_478472"
+      ],
+      "n_refs": 8,
+      "word_count": 835,
+      "written_citation_ids": [
+        "arxiv_2210.09263",
+        "arxiv_2309.10020",
+        "arxiv_2402.12451",
+        "arxiv_2410.05608",
+        "arxiv_2209.06794",
+        "arxiv_2403.08773",
+        "arxiv_2408.06610",
+        "ss_478472"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2209.06794",
+        "arxiv_2210.09263",
+        "arxiv_2309.10020",
+        "arxiv_2402.12451",
+        "arxiv_2403.08773",
+        "arxiv_2408.06610",
+        "arxiv_2410.05608",
+        "ss_478472"
+      ],
+      "elapsed_sec": 70.4,
+      "llm_usage_delta": {
+        "n_calls": 10,
+        "prompt_tokens": 7511,
+        "completion_tokens": 2260
+      },
+      "llm_usage_so_far": {
+        "n_calls": 30,
+        "prompt_tokens": 23870,
+        "completion_tokens": 7762
+      }
+    },
+    {
+      "topic": "Multimodal Large Language Models",
+      "arm": "l_default",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:43:30",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "multimodal large language models",
+        "vision-language models",
+        "large multimodal models",
+        "multimodal foundation models",
+        "visual question answering",
+        "image-text alignment",
+        "cross-modal learning",
+        "multimodal pretraining",
+        "vision-language pretraining",
+        "multimodal transformers",
+        "grounded language understanding",
+        "multimodal instruction tuning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of Multimodal Large Language Models",
+          "n": 5
+        },
+        {
+          "name": "Multimodal Pretraining Architectures and Representation Learning",
+          "n": 5
+        },
+        {
+          "name": "Multilingual and Cross-Lingual Multimodal Learning",
+          "n": 2
+        },
+        {
+          "name": "Knowledge Grounding and Reasoning in Multimodal Models",
+          "n": 2
+        },
+        {
+          "name": "Domain-Specific Applications of Multimodal Models",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2302.00389",
+        "arxiv_2302.10035",
+        "arxiv_2304.08345",
+        "arxiv_2306.07198",
+        "arxiv_2309.10020",
+        "arxiv_2402.12451",
+        "arxiv_2405.16640",
+        "arxiv_2410.05608",
+        "arxiv_2412.17759",
+        "ss_478472"
+      ],
+      "n_refs": 10,
+      "word_count": 840,
+      "written_citation_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2410.05608",
+        "arxiv_2309.10020",
+        "arxiv_2412.17759",
+        "arxiv_2405.16640",
+        "arxiv_2306.07198",
+        "arxiv_2302.00389",
+        "arxiv_2302.10035",
+        "arxiv_2304.08345",
+        "ss_478472"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2302.00389",
+        "arxiv_2302.10035",
+        "arxiv_2304.08345",
+        "arxiv_2306.07198",
+        "arxiv_2309.10020",
+        "arxiv_2402.12451",
+        "arxiv_2405.16640",
+        "arxiv_2410.05608",
+        "arxiv_2412.17759",
+        "ss_478472"
+      ],
+      "elapsed_sec": 87.2,
+      "llm_usage_delta": {
+        "n_calls": 10,
+        "prompt_tokens": 8326,
+        "completion_tokens": 2164
+      },
+      "llm_usage_so_far": {
+        "n_calls": 40,
+        "prompt_tokens": 32196,
+        "completion_tokens": 9926
+      }
+    },
+    {
+      "topic": "Multimodal Large Language Models",
+      "arm": "r_pass",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:44:57",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "multimodal large language models",
+        "vision-language models",
+        "multimodal foundation models",
+        "large vision-language models",
+        "cross-modal learning",
+        "visual question answering",
+        "image-text alignment",
+        "multimodal pretraining",
+        "vision transformer",
+        "contrastive language-image pretraining",
+        "multimodal instruction tuning",
+        "grounded language understanding"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Multimodal Pretraining and Foundation Models",
+          "n": 4
+        },
+        {
+          "name": "Efficient Adaptation and Instruction Tuning of MLLMs",
+          "n": 4
+        },
+        {
+          "name": "Visual Question Answering and Cross-Modal Reasoning",
+          "n": 2
+        },
+        {
+          "name": "Evaluation and Benchmarking of Vision-Language Models",
+          "n": 1
+        },
+        {
+          "name": "Explainability, Interpretability, and Internal Mechanisms of MLLMs",
+          "n": 2
+        },
+        {
+          "name": "Surveys and Tutorials on Multimodal LLMs",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2208.10442",
+        "arxiv_2209.06794",
+        "arxiv_2306.07198",
+        "arxiv_2308.13437",
+        "arxiv_2309.10020",
+        "arxiv_2402.08360",
+        "arxiv_2403.08773",
+        "arxiv_2408.06610"
+      ],
+      "n_refs": 8,
+      "word_count": 793,
+      "written_citation_ids": [
+        "arxiv_2306.07198",
+        "arxiv_2309.10020",
+        "arxiv_2208.10442",
+        "arxiv_2209.06794",
+        "arxiv_2408.06610",
+        "arxiv_2308.13437",
+        "arxiv_2402.08360",
+        "arxiv_2403.08773"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2208.10442",
+        "arxiv_2209.06794",
+        "arxiv_2306.07198",
+        "arxiv_2308.13437",
+        "arxiv_2309.10020",
+        "arxiv_2402.08360",
+        "arxiv_2403.08773",
+        "arxiv_2408.06610"
+      ],
+      "elapsed_sec": 75.1,
+      "llm_usage_delta": {
+        "n_calls": 10,
+        "prompt_tokens": 7576,
+        "completion_tokens": 1959
+      },
+      "llm_usage_so_far": {
+        "n_calls": 50,
+        "prompt_tokens": 39772,
+        "completion_tokens": 11885
+      }
+    },
+    {
+      "topic": "Multimodal Large Language Models",
+      "arm": "o_rank_slab",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:46:12",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "multimodal large language models",
+        "vision-language models",
+        "large multimodal models",
+        "multimodal foundation models",
+        "visual question answering",
+        "image-text alignment",
+        "cross-modal learning",
+        "multimodal pretraining",
+        "vision-language pretraining",
+        "multimodal transformers",
+        "grounded language understanding",
+        "multimodal instruction tuning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "rank_slab_order",
+      "groups": [
+        {
+          "name": "Rank slab 1: positions 1-8",
+          "n": 8
+        },
+        {
+          "name": "Rank slab 2: positions 9-15",
+          "n": 7
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2203.17247",
+        "arxiv_2306.09265",
+        "arxiv_2309.10020",
+        "arxiv_2310.03211",
+        "arxiv_2402.12451",
+        "arxiv_2406.06730",
+        "arxiv_2408.06610",
+        "arxiv_2409.07463",
+        "arxiv_2410.05608",
+        "arxiv_2412.02104",
+        "ss_478371"
+      ],
+      "n_refs": 11,
+      "word_count": 835,
+      "written_citation_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "ss_478371",
+        "arxiv_2406.06730",
+        "arxiv_2408.06610",
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2306.09265",
+        "arxiv_2310.03211",
+        "arxiv_2412.02104"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2109.10246",
+        "arxiv_2203.17247",
+        "arxiv_2210.09263",
+        "arxiv_2306.09265",
+        "arxiv_2309.10020",
+        "arxiv_2310.03211",
+        "arxiv_2402.12451",
+        "arxiv_2406.06730",
+        "arxiv_2408.06610",
+        "arxiv_2409.07463",
+        "arxiv_2410.05608",
+        "arxiv_2411.17558",
+        "arxiv_2412.02104",
+        "ss_478371",
+        "ss_478472"
+      ],
+      "elapsed_sec": 38.5,
+      "llm_usage_delta": {
+        "n_calls": 3,
+        "prompt_tokens": 2877,
+        "completion_tokens": 1395
+      },
+      "llm_usage_so_far": {
+        "n_calls": 53,
+        "prompt_tokens": 42649,
+        "completion_tokens": 13280
+      }
+    },
+    {
+      "topic": "Multimodal Large Language Models",
+      "arm": "no_recursion",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:46:51",
+      "d_max_effective": 1,
+      "expanded_terms": [
+        "multimodal large language models",
+        "vision-language models",
+        "large multimodal models",
+        "multimodal foundation models",
+        "visual question answering",
+        "image-text alignment",
+        "cross-modal learning",
+        "multimodal pretraining",
+        "vision-language pretraining",
+        "multimodal transformers",
+        "grounded language understanding",
+        "multimodal instruction tuning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of Multimodal Large Language Models",
+          "n": 3
+        },
+        {
+          "name": "Vision-Language Pretraining Methods",
+          "n": 3
+        },
+        {
+          "name": "Evaluation and Benchmarking of Vision-Language Models",
+          "n": 4
+        },
+        {
+          "name": "Efficient Training, Adaptation, and Fine-Tuning of MLLMs",
+          "n": 2
+        },
+        {
+          "name": "Interpretability and Explainability of Multimodal Models",
+          "n": 2
+        },
+        {
+          "name": "Enhancing Multimodal Models with Specific Capabilities",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1909.11059",
+        "arxiv_2209.06794",
+        "arxiv_2210.09263",
+        "arxiv_2302.00389",
+        "arxiv_2305.11769",
+        "arxiv_2306.07915",
+        "arxiv_2309.10020",
+        "arxiv_2312.14238",
+        "arxiv_2402.12451",
+        "arxiv_2405.10739",
+        "arxiv_2406.05496",
+        "arxiv_2412.17759",
+        "ss_478371",
+        "ss_478472"
+      ],
+      "n_refs": 14,
+      "word_count": 827,
+      "written_citation_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2412.17759",
+        "arxiv_2406.05496",
+        "arxiv_2405.10739",
+        "ss_478371",
+        "ss_478472",
+        "arxiv_1909.11059",
+        "arxiv_2306.07915",
+        "arxiv_2305.11769",
+        "arxiv_2210.09263",
+        "arxiv_2209.06794",
+        "arxiv_2312.14238",
+        "arxiv_2302.00389"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1909.11059",
+        "arxiv_2106.13884",
+        "arxiv_2108.10904",
+        "arxiv_2109.06082",
+        "arxiv_2109.10246",
+        "arxiv_2111.10023",
+        "arxiv_2202.10936",
+        "arxiv_2203.06386",
+        "arxiv_2203.17247",
+        "arxiv_2205.12005",
+        "arxiv_2206.01127",
+        "arxiv_2206.03354",
+        "arxiv_2207.01772",
+        "arxiv_2208.10442",
+        "arxiv_2208.13628",
+        "arxiv_2209.04372",
+        "arxiv_2209.06794",
+        "arxiv_2210.09263",
+        "arxiv_2211.04861",
+        "arxiv_2302.00389",
+        "arxiv_2302.05016",
+        "arxiv_2302.14045",
+        "arxiv_2303.12513",
+        "arxiv_2305.11769",
+        "arxiv_2305.13782",
+        "arxiv_2305.18279",
+        "arxiv_2306.07198",
+        "arxiv_2306.07915",
+        "arxiv_2306.09265",
+        "arxiv_2306.14895",
+        "arxiv_2306.16774",
+        "arxiv_2307.03254",
+        "arxiv_2308.12966",
+        "arxiv_2309.10020",
+        "arxiv_2309.15857",
+        "arxiv_2310.03211",
+        "arxiv_2311.06791",
+        "arxiv_2311.13165",
+        "arxiv_2311.17092",
+        "arxiv_2312.14238",
+        "arxiv_2312.16862",
+        "arxiv_2401.05163",
+        "arxiv_2402.05472",
+        "arxiv_2402.08360",
+        "arxiv_2402.12451",
+        "arxiv_2403.08773",
+        "arxiv_2403.09027",
+        "arxiv_2403.09530",
+        "arxiv_2403.09611",
+        "arxiv_2403.11399",
+        "arxiv_2403.13164",
+        "arxiv_2404.01322",
+        "arxiv_2404.07214",
+        "arxiv_2405.00740",
+        "arxiv_2405.10739",
+        "arxiv_2405.16640",
+        "arxiv_2406.05496",
+        "arxiv_2406.15768",
+        "arxiv_2407.12498",
+        "arxiv_2407.15272",
+        "arxiv_2408.01319",
+        "arxiv_2408.06610",
+        "arxiv_2408.08632",
+        "arxiv_2408.11813",
+        "arxiv_2408.12902",
+        "arxiv_2409.11402",
+        "arxiv_2409.17692",
+        "arxiv_2409.18142",
+        "arxiv_2410.01261",
+        "arxiv_2410.05608",
+        "arxiv_2410.14154",
+        "arxiv_2410.16163",
+        "arxiv_2410.17779",
+        "arxiv_2411.06284",
+        "arxiv_2411.09273",
+        "arxiv_2411.17558",
+        "arxiv_2411.17773",
+        "arxiv_2411.18620",
+        "arxiv_2412.02104",
+        "arxiv_2412.03220",
+        "arxiv_2412.10758",
+        "arxiv_2412.17759",
+        "arxiv_2501.02699",
+        "arxiv_2502.09906",
+        "arxiv_2502.17516",
+        "arxiv_2504.01017",
+        "arxiv_2504.08269",
+        "arxiv_2504.20996",
+        "arxiv_2505.17436",
+        "arxiv_2505.19616",
+        "arxiv_2509.08715",
+        "arxiv_2512.21583",
+        "arxiv_2602.00653",
+        "arxiv_2602.06056",
+        "arxiv_2602.12302",
+        "arxiv_2602.17871",
+        "arxiv_2603.03276",
+        "arxiv_2603.09689",
+        "arxiv_2605.00809",
+        "ss_478371",
+        "ss_478472"
+      ],
+      "elapsed_sec": 80.2,
+      "llm_usage_delta": {
+        "n_calls": 8,
+        "prompt_tokens": 10495,
+        "completion_tokens": 2204
+      },
+      "llm_usage_so_far": {
+        "n_calls": 61,
+        "prompt_tokens": 53144,
+        "completion_tokens": 15484
+      }
+    },
+    {
+      "topic": "Retrieval-Augmented Generation for Large Language Models",
+      "arm": "intact",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:48:11",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "retrieval-augmented generation",
+        "RAG",
+        "knowledge-grounded language models",
+        "dense passage retrieval",
+        "open-domain question answering",
+        "neural information retrieval",
+        "grounded text generation",
+        "external memory augmentation",
+        "hybrid retrieval generation",
+        "knowledge base integration LLM",
+        "document retrieval transformer",
+        "hallucination mitigation language models"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of RAG",
+          "n": 5
+        },
+        {
+          "name": "RAG System Components and Architecture Improvements",
+          "n": 4
+        },
+        {
+          "name": "Evaluation and Benchmarking of RAG",
+          "n": 2
+        },
+        {
+          "name": "Foundational RAG Methods and Hallucination Mitigation",
+          "n": 2
+        },
+        {
+          "name": "RAG Workshops, Challenges, and Alternative Paradigms",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2312.10997",
+        "arxiv_2402.11129",
+        "arxiv_2404.10981",
+        "arxiv_2404.19543",
+        "arxiv_2405.06211",
+        "arxiv_2406.07348",
+        "arxiv_2406.13249",
+        "arxiv_2407.13193",
+        "arxiv_2502.06864"
+      ],
+      "n_refs": 9,
+      "word_count": 841,
+      "written_citation_ids": [
+        "arxiv_2312.10997",
+        "arxiv_2407.13193",
+        "arxiv_2404.19543",
+        "arxiv_2404.10981",
+        "arxiv_2405.06211",
+        "arxiv_2406.13249",
+        "arxiv_2402.11129",
+        "arxiv_2406.07348",
+        "arxiv_2502.06864"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2312.10997",
+        "arxiv_2402.11129",
+        "arxiv_2404.10981",
+        "arxiv_2404.19543",
+        "arxiv_2405.06211",
+        "arxiv_2406.07348",
+        "arxiv_2406.13249",
+        "arxiv_2407.13193",
+        "arxiv_2502.06864"
+      ],
+      "elapsed_sec": 69.5,
+      "llm_usage_delta": {
+        "n_calls": 10,
+        "prompt_tokens": 7781,
+        "completion_tokens": 2068
+      },
+      "llm_usage_so_far": {
+        "n_calls": 71,
+        "prompt_tokens": 60925,
+        "completion_tokens": 17552
+      }
+    },
+    {
+      "topic": "Retrieval-Augmented Generation for Large Language Models",
+      "arm": "l_default",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:49:20",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "retrieval-augmented generation",
+        "RAG",
+        "knowledge-grounded language models",
+        "dense passage retrieval",
+        "open-domain question answering",
+        "neural information retrieval",
+        "grounded text generation",
+        "external memory augmentation",
+        "hybrid retrieval generation",
+        "knowledge base integration LLM",
+        "document retrieval transformer",
+        "hallucination mitigation language models"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of RAG",
+          "n": 4
+        },
+        {
+          "name": "RAG System Design and Best Practices",
+          "n": 3
+        },
+        {
+          "name": "Retrieval Quality and Query Optimization",
+          "n": 4
+        },
+        {
+          "name": "Evaluation and Benchmarking of RAG",
+          "n": 2
+        },
+        {
+          "name": "Foundational and Alternative Architectures for Knowledge-Augmented Generation",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2312.10997",
+        "arxiv_2404.10981",
+        "arxiv_2406.07348",
+        "arxiv_2407.12101",
+        "arxiv_2407.12325",
+        "arxiv_2407.13193",
+        "arxiv_2408.09017",
+        "arxiv_2410.12837",
+        "arxiv_2411.00744",
+        "arxiv_2411.07396",
+        "arxiv_2411.08438",
+        "arxiv_2412.14751",
+        "arxiv_2501.07391",
+        "arxiv_2502.15025",
+        "arxiv_2503.10677",
+        "arxiv_2508.06056",
+        "arxiv_2602.07297"
+      ],
+      "n_refs": 17,
+      "word_count": 1327,
+      "written_citation_ids": [
+        "arxiv_2312.10997",
+        "arxiv_2404.10981",
+        "arxiv_2407.13193",
+        "arxiv_2503.10677",
+        "arxiv_2410.12837",
+        "arxiv_2501.07391",
+        "arxiv_2508.06056",
+        "arxiv_2407.12325",
+        "arxiv_2411.08438",
+        "arxiv_2407.12101",
+        "arxiv_2411.07396",
+        "arxiv_2602.07297",
+        "arxiv_2406.07348",
+        "arxiv_2411.00744",
+        "arxiv_2412.14751",
+        "arxiv_2408.09017",
+        "arxiv_2502.15025"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2310.20158",
+        "arxiv_2312.05708",
+        "arxiv_2312.10997",
+        "arxiv_2401.05856",
+        "arxiv_2401.14887",
+        "arxiv_2401.17043",
+        "arxiv_2402.01733",
+        "arxiv_2403.00820",
+        "arxiv_2403.09040",
+        "arxiv_2404.01037",
+        "arxiv_2404.04302",
+        "arxiv_2404.07220",
+        "arxiv_2404.07221",
+        "arxiv_2404.10981",
+        "arxiv_2404.12457",
+        "arxiv_2405.07437",
+        "arxiv_2405.12363",
+        "arxiv_2406.07348",
+        "arxiv_2407.01219",
+        "arxiv_2407.10670",
+        "arxiv_2407.12101",
+        "arxiv_2407.12325",
+        "arxiv_2407.13193",
+        "arxiv_2408.02545",
+        "arxiv_2408.07425",
+        "arxiv_2408.09017",
+        "arxiv_2409.09046",
+        "arxiv_2410.12248",
+        "arxiv_2410.12812",
+        "arxiv_2410.12837",
+        "arxiv_2410.13339",
+        "arxiv_2410.15944",
+        "arxiv_2410.20878",
+        "arxiv_2411.00744",
+        "arxiv_2411.01751",
+        "arxiv_2411.07396",
+        "arxiv_2411.08438",
+        "arxiv_2411.13691",
+        "arxiv_2411.19463",
+        "arxiv_2411.19710",
+        "arxiv_2412.14751",
+        "arxiv_2412.15605",
+        "arxiv_2501.04858",
+        "arxiv_2501.07391",
+        "arxiv_2502.14759",
+        "arxiv_2502.15025",
+        "arxiv_2502.16636",
+        "arxiv_2503.00309",
+        "arxiv_2503.10150",
+        "arxiv_2503.10677",
+        "arxiv_2503.14649",
+        "arxiv_2503.15191",
+        "arxiv_2504.08256",
+        "arxiv_2504.14891",
+        "arxiv_2504.17137",
+        "arxiv_2504.19436",
+        "arxiv_2505.08445",
+        "arxiv_2505.10792",
+        "arxiv_2505.11180",
+        "arxiv_2505.23052",
+        "arxiv_2505.24073",
+        "arxiv_2506.00054",
+        "arxiv_2506.03989",
+        "arxiv_2506.06339",
+        "arxiv_2506.06704",
+        "arxiv_2506.11555",
+        "arxiv_2506.20051",
+        "arxiv_2506.23136",
+        "arxiv_2507.05714",
+        "arxiv_2507.06956",
+        "arxiv_2507.18910",
+        "arxiv_2507.20059",
+        "arxiv_2508.06056",
+        "arxiv_2508.15437",
+        "arxiv_2509.14267",
+        "arxiv_2510.01600",
+        "arxiv_2510.09106",
+        "arxiv_2510.11217",
+        "arxiv_2510.20296",
+        "arxiv_2602.03368",
+        "arxiv_2602.07297",
+        "arxiv_2602.22219",
+        "arxiv_2602.23374",
+        "arxiv_2603.26667",
+        "arxiv_2604.07274",
+        "arxiv_2604.07590",
+        "arxiv_2605.02520",
+        "arxiv_2605.25039",
+        "arxiv_2605.27445",
+        "arxiv_2605.30029",
+        "arxiv_2606.00881",
+        "arxiv_2606.26458"
+      ],
+      "elapsed_sec": 138.2,
+      "llm_usage_delta": {
+        "n_calls": 14,
+        "prompt_tokens": 14585,
+        "completion_tokens": 3306
+      },
+      "llm_usage_so_far": {
+        "n_calls": 85,
+        "prompt_tokens": 75510,
+        "completion_tokens": 20858
+      }
+    },
+    {
+      "topic": "Retrieval-Augmented Generation for Large Language Models",
+      "arm": "r_pass",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:51:38",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "retrieval-augmented generation",
+        "RAG",
+        "knowledge-grounded language models",
+        "dense passage retrieval",
+        "open-domain question answering",
+        "neural information retrieval",
+        "grounded text generation",
+        "external memory augmentation",
+        "hybrid retrieval generation",
+        "document retrieval for NLP",
+        "knowledge base integration LLM",
+        "in-context learning with retrieval"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Systematic Reviews of RAG",
+          "n": 5
+        },
+        {
+          "name": "Dynamic and Adaptive Retrieval Mechanisms",
+          "n": 4
+        },
+        {
+          "name": "RAG Architecture Enhancements and Training",
+          "n": 3
+        },
+        {
+          "name": "RAG System Best Practices and Evaluation",
+          "n": 2
+        },
+        {
+          "name": "Alternatives and Limitations of RAG",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2305.15294",
+        "arxiv_2404.10981",
+        "arxiv_2406.07348",
+        "arxiv_2410.12837",
+        "arxiv_2411.16133",
+        "arxiv_2503.10677",
+        "arxiv_2504.19436",
+        "arxiv_2506.00054",
+        "arxiv_2507.18910"
+      ],
+      "n_refs": 9,
+      "word_count": 844,
+      "written_citation_ids": [
+        "arxiv_2404.10981",
+        "arxiv_2410.12837",
+        "arxiv_2507.18910",
+        "arxiv_2503.10677",
+        "arxiv_2506.00054",
+        "arxiv_2305.15294",
+        "arxiv_2406.07348",
+        "arxiv_2411.16133",
+        "arxiv_2504.19436"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2305.15294",
+        "arxiv_2404.10981",
+        "arxiv_2406.07348",
+        "arxiv_2410.12837",
+        "arxiv_2411.16133",
+        "arxiv_2503.10677",
+        "arxiv_2504.19436",
+        "arxiv_2506.00054",
+        "arxiv_2507.18910"
+      ],
+      "elapsed_sec": 98.8,
+      "llm_usage_delta": {
+        "n_calls": 10,
+        "prompt_tokens": 7774,
+        "completion_tokens": 2174
+      },
+      "llm_usage_so_far": {
+        "n_calls": 95,
+        "prompt_tokens": 83284,
+        "completion_tokens": 23032
+      }
+    },
+    {
+      "topic": "Retrieval-Augmented Generation for Large Language Models",
+      "arm": "o_rank_slab",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:53:17",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "retrieval-augmented generation",
+        "RAG",
+        "knowledge-grounded language models",
+        "dense passage retrieval",
+        "open-domain question answering",
+        "neural information retrieval",
+        "grounded text generation",
+        "external memory augmentation",
+        "hybrid retrieval generation",
+        "document retrieval for NLP",
+        "in-context learning with retrieved knowledge",
+        "hallucination mitigation in LLMs"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "rank_slab_order",
+      "groups": [
+        {
+          "name": "Rank slab 1: positions 1-8",
+          "n": 8
+        },
+        {
+          "name": "Rank slab 2: positions 9-15",
+          "n": 7
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2005.11401",
+        "arxiv_2402.18150",
+        "arxiv_2404.10981",
+        "arxiv_2405.06211",
+        "arxiv_2406.07348",
+        "arxiv_2406.13249",
+        "arxiv_2407.03627",
+        "arxiv_2407.13193",
+        "arxiv_2410.20598",
+        "arxiv_2501.07391",
+        "arxiv_2501.15915",
+        "arxiv_2502.10596"
+      ],
+      "n_refs": 12,
+      "word_count": 851,
+      "written_citation_ids": [
+        "arxiv_2005.11401",
+        "arxiv_2407.13193",
+        "arxiv_2404.10981",
+        "arxiv_2410.20598",
+        "arxiv_2406.13249",
+        "arxiv_2406.07348",
+        "arxiv_2407.03627",
+        "arxiv_2501.07391",
+        "arxiv_2402.18150",
+        "arxiv_2502.10596",
+        "arxiv_2405.06211",
+        "arxiv_2501.15915"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2005.11401",
+        "arxiv_2401.14887",
+        "arxiv_2402.18150",
+        "arxiv_2404.10981",
+        "arxiv_2405.06211",
+        "arxiv_2406.07348",
+        "arxiv_2406.13249",
+        "arxiv_2407.03627",
+        "arxiv_2407.13193",
+        "arxiv_2410.20598",
+        "arxiv_2412.15605",
+        "arxiv_2501.07391",
+        "arxiv_2501.15915",
+        "arxiv_2502.10596",
+        "arxiv_2507.05714"
+      ],
+      "elapsed_sec": 44.3,
+      "llm_usage_delta": {
+        "n_calls": 3,
+        "prompt_tokens": 2923,
+        "completion_tokens": 1367
+      },
+      "llm_usage_so_far": {
+        "n_calls": 98,
+        "prompt_tokens": 86207,
+        "completion_tokens": 24399
+      }
+    },
+    {
+      "topic": "Retrieval-Augmented Generation for Large Language Models",
+      "arm": "no_recursion",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:54:02",
+      "d_max_effective": 1,
+      "expanded_terms": [
+        "retrieval-augmented generation",
+        "RAG",
+        "knowledge-grounded language models",
+        "dense passage retrieval",
+        "open-domain question answering",
+        "neural information retrieval",
+        "grounded text generation",
+        "external memory augmentation",
+        "hybrid retrieval generation",
+        "document retrieval for NLP",
+        "knowledge base integration LLM",
+        "in-context learning with retrieval"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of RAG",
+          "n": 3
+        },
+        {
+          "name": "Retrieval Quality and Document Selection Improvements",
+          "n": 4
+        },
+        {
+          "name": "RAG System Design and Best Practices",
+          "n": 3
+        },
+        {
+          "name": "Domain-Specific and Specialized RAG Adaptation",
+          "n": 3
+        },
+        {
+          "name": "RAG Evaluation and Benchmarking",
+          "n": 1
+        },
+        {
+          "name": "Alternatives and Critiques of RAG",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2005.11401",
+        "arxiv_2404.10981",
+        "arxiv_2405.06211",
+        "arxiv_2406.07348",
+        "arxiv_2406.13249",
+        "arxiv_2407.12101",
+        "arxiv_2407.13193",
+        "arxiv_2410.12837",
+        "arxiv_2410.20598",
+        "arxiv_2502.20245",
+        "arxiv_2503.10677",
+        "arxiv_2505.11180"
+      ],
+      "n_refs": 12,
+      "word_count": 812,
+      "written_citation_ids": [
+        "arxiv_2407.13193",
+        "arxiv_2005.11401",
+        "arxiv_2410.12837",
+        "arxiv_2405.06211",
+        "arxiv_2404.10981",
+        "arxiv_2503.10677",
+        "arxiv_2505.11180",
+        "arxiv_2410.20598",
+        "arxiv_2407.12101",
+        "arxiv_2406.07348",
+        "arxiv_2406.13249",
+        "arxiv_2502.20245"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2005.11401",
+        "arxiv_2210.02928",
+        "arxiv_2305.15294",
+        "arxiv_2401.15884",
+        "arxiv_2403.10081",
+        "arxiv_2404.00610",
+        "arxiv_2404.10981",
+        "arxiv_2404.19543",
+        "arxiv_2405.06211",
+        "arxiv_2405.06683",
+        "arxiv_2405.07437",
+        "arxiv_2405.13002",
+        "arxiv_2406.07348",
+        "arxiv_2406.13249",
+        "arxiv_2406.16383",
+        "arxiv_2407.12101",
+        "arxiv_2407.13193",
+        "arxiv_2408.07425",
+        "arxiv_2409.15364",
+        "arxiv_2410.00857",
+        "arxiv_2410.12837",
+        "arxiv_2410.20598",
+        "arxiv_2411.01751",
+        "arxiv_2411.02832",
+        "arxiv_2411.07820",
+        "arxiv_2411.13691",
+        "arxiv_2411.16133",
+        "arxiv_2412.15605",
+        "arxiv_2501.07391",
+        "arxiv_2501.13726",
+        "arxiv_2501.15915",
+        "arxiv_2502.16636",
+        "arxiv_2502.17297",
+        "arxiv_2502.20245",
+        "arxiv_2503.10677",
+        "arxiv_2504.00187",
+        "arxiv_2504.03616",
+        "arxiv_2504.08748",
+        "arxiv_2504.14891",
+        "arxiv_2504.17137",
+        "arxiv_2504.19436",
+        "arxiv_2505.11180",
+        "arxiv_2506.00054",
+        "arxiv_2506.02279",
+        "arxiv_2506.06704",
+        "arxiv_2506.20051",
+        "arxiv_2506.23136",
+        "arxiv_2507.05714",
+        "arxiv_2507.18910",
+        "arxiv_2508.15253",
+        "arxiv_2509.10467",
+        "arxiv_2509.10697",
+        "arxiv_2509.23793",
+        "arxiv_2510.01600",
+        "arxiv_2510.09106",
+        "arxiv_2510.18297",
+        "arxiv_2512.14313",
+        "arxiv_2601.11443",
+        "arxiv_2604.07274",
+        "arxiv_2604.07590"
+      ],
+      "elapsed_sec": 85.5,
+      "llm_usage_delta": {
+        "n_calls": 9,
+        "prompt_tokens": 8905,
+        "completion_tokens": 2100
+      },
+      "llm_usage_so_far": {
+        "n_calls": 107,
+        "prompt_tokens": 95112,
+        "completion_tokens": 26499
+      }
+    },
+    {
+      "topic": "Neural Architecture Search",
+      "arm": "intact",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:55:27",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "neural architecture search",
+        "automated machine learning",
+        "AutoML",
+        "hyperparameter optimization",
+        "network architecture optimization",
+        "differentiable architecture search",
+        "evolutionary neural architecture search",
+        "reinforcement learning architecture search",
+        "one-shot architecture search",
+        "weight sharing neural networks",
+        "efficient neural architecture search",
+        "meta-learning network design"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "methodology",
+      "groups": [
+        {
+          "name": "Survey and Overview of NAS",
+          "n": 4
+        },
+        {
+          "name": "Differentiable and Continuous Search Methods",
+          "n": 4
+        },
+        {
+          "name": "Reinforcement Learning-based NAS",
+          "n": 3
+        },
+        {
+          "name": "Hyperparameter and Joint Optimization",
+          "n": 3
+        },
+        {
+          "name": "Meta-Learning and Cross-Task NAS",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1808.07233",
+        "arxiv_1905.01392",
+        "arxiv_2103.02126",
+        "arxiv_2108.08474",
+        "arxiv_2109.12425",
+        "arxiv_2304.05405",
+        "arxiv_2307.09099",
+        "arxiv_2409.18163"
+      ],
+      "n_refs": 8,
+      "word_count": 783,
+      "written_citation_ids": [
+        "arxiv_1905.01392",
+        "arxiv_2108.08474",
+        "arxiv_2409.18163",
+        "arxiv_2307.09099",
+        "arxiv_1808.07233",
+        "arxiv_2304.05405",
+        "arxiv_2103.02126",
+        "arxiv_2109.12425"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1808.07233",
+        "arxiv_1905.01392",
+        "arxiv_2103.02126",
+        "arxiv_2108.08474",
+        "arxiv_2109.12425",
+        "arxiv_2304.05405",
+        "arxiv_2307.09099",
+        "arxiv_2409.18163"
+      ],
+      "elapsed_sec": 69.5,
+      "llm_usage_delta": {
+        "n_calls": 10,
+        "prompt_tokens": 6576,
+        "completion_tokens": 2003
+      },
+      "llm_usage_so_far": {
+        "n_calls": 117,
+        "prompt_tokens": 101688,
+        "completion_tokens": 28502
+      }
+    },
+    {
+      "topic": "Neural Architecture Search",
+      "arm": "l_default",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:56:37",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "neural architecture search",
+        "automated machine learning",
+        "AutoML",
+        "hyperparameter optimization",
+        "network architecture optimization",
+        "differentiable architecture search",
+        "evolutionary neural architecture search",
+        "reinforcement learning architecture search",
+        "one-shot architecture search",
+        "weight sharing neural search",
+        "efficient neural network design",
+        "meta-learning network architecture"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of NAS",
+          "n": 3
+        },
+        {
+          "name": "Differentiable and Gradient-Based Architecture Search",
+          "n": 4
+        },
+        {
+          "name": "Reinforcement Learning-Based NAS",
+          "n": 2
+        },
+        {
+          "name": "Meta-Learning and Cross-Task NAS",
+          "n": 2
+        },
+        {
+          "name": "Search Space Design and Efficiency",
+          "n": 4
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1808.07233",
+        "arxiv_1812.09926",
+        "arxiv_1905.13577",
+        "arxiv_1912.07651",
+        "arxiv_2003.12238",
+        "arxiv_2006.02903",
+        "arxiv_2103.02126",
+        "arxiv_2103.12529",
+        "arxiv_2104.10450",
+        "arxiv_2106.10784",
+        "arxiv_2106.11655",
+        "arxiv_2108.04392",
+        "arxiv_2108.08128",
+        "arxiv_2108.08474",
+        "arxiv_2108.09306",
+        "arxiv_2109.12425",
+        "arxiv_2210.07998",
+        "arxiv_2301.08727",
+        "arxiv_2302.05629",
+        "arxiv_2302.05632",
+        "arxiv_2409.14433"
+      ],
+      "n_refs": 21,
+      "word_count": 1376,
+      "written_citation_ids": [
+        "arxiv_2006.02903",
+        "arxiv_2108.08474",
+        "arxiv_2301.08727",
+        "arxiv_2108.04392",
+        "arxiv_1905.13577",
+        "arxiv_2108.08128",
+        "arxiv_2210.07998",
+        "arxiv_2104.10450",
+        "arxiv_2302.05632",
+        "arxiv_2003.12238",
+        "arxiv_2106.10784",
+        "arxiv_2106.11655",
+        "arxiv_2409.14433",
+        "arxiv_2302.05629",
+        "arxiv_1812.09926",
+        "arxiv_1912.07651",
+        "arxiv_2108.09306",
+        "arxiv_2103.12529",
+        "arxiv_1808.07233",
+        "arxiv_2103.02126",
+        "arxiv_2109.12425"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1806.10282",
+        "arxiv_1807.06906",
+        "arxiv_1808.07233",
+        "arxiv_1812.05866",
+        "arxiv_1812.09926",
+        "arxiv_1902.07638",
+        "arxiv_1902.08142",
+        "arxiv_1903.09900",
+        "arxiv_1905.01392",
+        "arxiv_1905.08537",
+        "arxiv_1905.13577",
+        "arxiv_1907.08307",
+        "arxiv_1909.00122",
+        "arxiv_1909.02453",
+        "arxiv_1909.03615",
+        "arxiv_1911.05704",
+        "arxiv_1911.09336",
+        "arxiv_1911.10862",
+        "arxiv_1912.06059",
+        "arxiv_1912.07651",
+        "arxiv_1912.12814",
+        "arxiv_1912.13183",
+        "arxiv_2002.05283",
+        "arxiv_2003.12238",
+        "arxiv_2003.12857",
+        "arxiv_2004.01395",
+        "arxiv_2005.07564",
+        "arxiv_2005.11074",
+        "arxiv_2006.02903",
+        "arxiv_2006.06863",
+        "arxiv_2006.10355",
+        "arxiv_2007.03331",
+        "arxiv_2007.16112",
+        "arxiv_2008.01475",
+        "arxiv_2009.09209",
+        "arxiv_2010.05719",
+        "arxiv_2010.08219",
+        "arxiv_2011.05649",
+        "arxiv_2012.06138",
+        "arxiv_2012.06400",
+        "arxiv_2101.11834",
+        "arxiv_2103.02126",
+        "arxiv_2103.12529",
+        "arxiv_2104.05390",
+        "arxiv_2104.10450",
+        "arxiv_2105.01015",
+        "arxiv_2105.06369",
+        "arxiv_2106.02229",
+        "arxiv_2106.06799",
+        "arxiv_2106.07211",
+        "arxiv_2106.10784",
+        "arxiv_2106.11655",
+        "arxiv_2107.00860",
+        "arxiv_2108.04392",
+        "arxiv_2108.08128",
+        "arxiv_2108.08474",
+        "arxiv_2108.09306",
+        "arxiv_2108.09996",
+        "arxiv_2109.12425",
+        "arxiv_2110.04743",
+        "arxiv_2110.05842",
+        "arxiv_2110.14812",
+        "arxiv_2111.13204",
+        "arxiv_2112.00171",
+        "arxiv_2202.12934",
+        "arxiv_2203.01665",
+        "arxiv_2204.11838",
+        "arxiv_2204.12726",
+        "arxiv_2205.06355",
+        "arxiv_2206.02098",
+        "arxiv_2206.09811",
+        "arxiv_2207.10334",
+        "arxiv_2208.08835",
+        "arxiv_2208.14446",
+        "arxiv_2210.07998",
+        "arxiv_2211.10250",
+        "arxiv_2301.06393",
+        "arxiv_2301.08727",
+        "arxiv_2302.05629",
+        "arxiv_2302.05632",
+        "arxiv_2304.01821",
+        "arxiv_2305.05351",
+        "arxiv_2305.08611",
+        "arxiv_2306.06855",
+        "arxiv_2307.06005",
+        "arxiv_2307.09099",
+        "arxiv_2310.15074",
+        "arxiv_2310.17669",
+        "arxiv_2403.11173",
+        "arxiv_2403.17012",
+        "arxiv_2404.02189",
+        "arxiv_2404.16218",
+        "arxiv_2405.03462",
+        "arxiv_2405.16610",
+        "arxiv_2408.05556",
+        "arxiv_2409.14433",
+        "arxiv_2411.00902",
+        "arxiv_2502.03553",
+        "arxiv_2503.06092",
+        "arxiv_2503.10404",
+        "arxiv_2504.16306",
+        "arxiv_2505.22868",
+        "arxiv_2508.09467",
+        "arxiv_2509.05656",
+        "arxiv_2602.17700",
+        "arxiv_2604.00703",
+        "ss_311229",
+        "ss_312185",
+        "ss_314114"
+      ],
+      "elapsed_sec": 114.6,
+      "llm_usage_delta": {
+        "n_calls": 14,
+        "prompt_tokens": 13277,
+        "completion_tokens": 3372
+      },
+      "llm_usage_so_far": {
+        "n_calls": 131,
+        "prompt_tokens": 114965,
+        "completion_tokens": 31874
+      }
+    },
+    {
+      "topic": "Neural Architecture Search",
+      "arm": "r_pass",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 21:58:31",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "neural architecture search",
+        "automated machine learning",
+        "AutoML",
+        "hyperparameter optimization",
+        "network architecture optimization",
+        "differentiable architecture search",
+        "evolutionary neural architecture search",
+        "reinforcement learning architecture search",
+        "one-shot architecture search",
+        "weight sharing neural networks",
+        "efficient neural architecture design",
+        "network topology optimization"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "methodology",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of NAS",
+          "n": 5
+        },
+        {
+          "name": "Reinforcement Learning-Based NAS",
+          "n": 2
+        },
+        {
+          "name": "Differentiable and Continuous Optimization-Based NAS",
+          "n": 2
+        },
+        {
+          "name": "Evolutionary and Constructive Search Methods",
+          "n": 2
+        },
+        {
+          "name": "Efficient NAS Systems and Frameworks",
+          "n": 4
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1710.10776",
+        "arxiv_1905.01392",
+        "arxiv_1909.03615",
+        "arxiv_2103.08157",
+        "arxiv_2105.11694",
+        "arxiv_2108.08474",
+        "arxiv_2109.12425",
+        "arxiv_2110.06751",
+        "arxiv_2307.09099",
+        "arxiv_2403.17012",
+        "arxiv_2409.18163",
+        "arxiv_2410.01431",
+        "arxiv_2509.05656"
+      ],
+      "n_refs": 13,
+      "word_count": 1266,
+      "written_citation_ids": [
+        "arxiv_1905.01392",
+        "arxiv_2403.17012",
+        "arxiv_2108.08474",
+        "arxiv_2409.18163",
+        "arxiv_2307.09099",
+        "arxiv_2110.06751",
+        "arxiv_2103.08157",
+        "arxiv_1909.03615",
+        "arxiv_2410.01431",
+        "arxiv_2105.11694",
+        "arxiv_2109.12425",
+        "arxiv_1710.10776",
+        "arxiv_2509.05656"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1710.10776",
+        "arxiv_1805.07440",
+        "arxiv_1811.01567",
+        "arxiv_1811.09828",
+        "arxiv_1812.09926",
+        "arxiv_1902.07638",
+        "arxiv_1902.08142",
+        "arxiv_1905.01392",
+        "arxiv_1905.02341",
+        "arxiv_1906.06832",
+        "arxiv_1909.00122",
+        "arxiv_1909.03184",
+        "arxiv_1909.03615",
+        "arxiv_1910.10397",
+        "arxiv_1910.14488",
+        "arxiv_1911.03769",
+        "arxiv_1911.05704",
+        "arxiv_1912.06059",
+        "arxiv_1912.07651",
+        "arxiv_2001.06679",
+        "arxiv_2001.08437",
+        "arxiv_2006.00939",
+        "arxiv_2007.09180",
+        "arxiv_2007.09380",
+        "arxiv_2011.14632",
+        "arxiv_2012.06138",
+        "arxiv_2012.06400",
+        "arxiv_2101.00336",
+        "arxiv_2103.02126",
+        "arxiv_2103.08157",
+        "arxiv_2105.09356",
+        "arxiv_2105.11694",
+        "arxiv_2106.02229",
+        "arxiv_2108.01854",
+        "arxiv_2108.04392",
+        "arxiv_2108.08474",
+        "arxiv_2109.12425",
+        "arxiv_2110.05842",
+        "arxiv_2110.06751",
+        "arxiv_2111.04670",
+        "arxiv_2204.07615",
+        "arxiv_2206.01520",
+        "arxiv_2207.04467",
+        "arxiv_2301.08727",
+        "arxiv_2307.09099",
+        "arxiv_2307.15621",
+        "arxiv_2403.01326",
+        "arxiv_2403.17012",
+        "arxiv_2409.18163",
+        "arxiv_2410.01431",
+        "arxiv_2411.14498",
+        "arxiv_2501.17361",
+        "arxiv_2505.22868",
+        "arxiv_2508.09467",
+        "arxiv_2509.05656",
+        "arxiv_2510.19872",
+        "arxiv_2512.06982",
+        "arxiv_2604.00703",
+        "ss_477886",
+        "ss_481220"
+      ],
+      "elapsed_sec": 125.4,
+      "llm_usage_delta": {
+        "n_calls": 15,
+        "prompt_tokens": 12046,
+        "completion_tokens": 3301
+      },
+      "llm_usage_so_far": {
+        "n_calls": 146,
+        "prompt_tokens": 127011,
+        "completion_tokens": 35175
+      }
+    },
+    {
+      "topic": "Neural Architecture Search",
+      "arm": "o_rank_slab",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:00:37",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "neural architecture search",
+        "automated machine learning",
+        "AutoML",
+        "hyperparameter optimization",
+        "network architecture optimization",
+        "differentiable architecture search",
+        "evolutionary neural architecture search",
+        "reinforcement learning architecture search",
+        "one-shot architecture search",
+        "weight sharing neural search",
+        "efficient neural network design",
+        "meta-learning network architecture"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "rank_slab_order",
+      "groups": [
+        {
+          "name": "Rank slab 1: positions 1-8",
+          "n": 8
+        },
+        {
+          "name": "Rank slab 2: positions 9-15",
+          "n": 7
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1807.06906",
+        "arxiv_1808.07233",
+        "arxiv_1905.01392",
+        "arxiv_2104.10450",
+        "arxiv_2108.08474",
+        "arxiv_2109.12425",
+        "arxiv_2110.05842",
+        "arxiv_2310.17669",
+        "arxiv_2409.18163",
+        "arxiv_2410.01431",
+        "arxiv_2502.03553"
+      ],
+      "n_refs": 11,
+      "word_count": 859,
+      "written_citation_ids": [
+        "arxiv_1905.01392",
+        "arxiv_1808.07233",
+        "arxiv_2109.12425",
+        "arxiv_2110.05842",
+        "arxiv_2108.08474",
+        "arxiv_2409.18163",
+        "arxiv_1807.06906",
+        "arxiv_2410.01431",
+        "arxiv_2502.03553",
+        "arxiv_2310.17669",
+        "arxiv_2104.10450"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1807.06906",
+        "arxiv_1808.07233",
+        "arxiv_1905.01392",
+        "arxiv_2001.06679",
+        "arxiv_2103.02126",
+        "arxiv_2104.10450",
+        "arxiv_2108.08474",
+        "arxiv_2109.12425",
+        "arxiv_2110.05842",
+        "arxiv_2110.06751",
+        "arxiv_2304.05405",
+        "arxiv_2310.17669",
+        "arxiv_2409.18163",
+        "arxiv_2410.01431",
+        "arxiv_2502.03553"
+      ],
+      "elapsed_sec": 42.2,
+      "llm_usage_delta": {
+        "n_calls": 3,
+        "prompt_tokens": 2484,
+        "completion_tokens": 1388
+      },
+      "llm_usage_so_far": {
+        "n_calls": 149,
+        "prompt_tokens": 129495,
+        "completion_tokens": 36563
+      }
+    },
+    {
+      "topic": "Neural Architecture Search",
+      "arm": "no_recursion",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:01:19",
+      "d_max_effective": 1,
+      "expanded_terms": [
+        "neural architecture search",
+        "automated machine learning",
+        "AutoML",
+        "hyperparameter optimization",
+        "network architecture optimization",
+        "differentiable architecture search",
+        "evolutionary neural architecture search",
+        "reinforcement learning architecture search",
+        "one-shot architecture search",
+        "weight sharing neural search",
+        "efficient neural network design",
+        "meta-learning architecture"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "methodology",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of NAS",
+          "n": 4
+        },
+        {
+          "name": "Reinforcement Learning-based NAS",
+          "n": 3
+        },
+        {
+          "name": "Differentiable and Gradient-based NAS",
+          "n": 4
+        },
+        {
+          "name": "Search Space and Efficiency Optimization",
+          "n": 3
+        },
+        {
+          "name": "Meta-learning and Cross-task NAS",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1707.04873",
+        "arxiv_1808.07233",
+        "arxiv_1905.01392",
+        "arxiv_1910.10397",
+        "arxiv_2001.06679",
+        "arxiv_2006.04027",
+        "arxiv_2103.08157",
+        "arxiv_2105.11694",
+        "arxiv_2108.08474",
+        "arxiv_2109.12425",
+        "arxiv_2110.06751",
+        "arxiv_2204.07615",
+        "arxiv_2304.05405",
+        "arxiv_2409.18163",
+        "arxiv_2410.01431"
+      ],
+      "n_refs": 15,
+      "word_count": 881,
+      "written_citation_ids": [
+        "arxiv_1905.01392",
+        "arxiv_2108.08474",
+        "arxiv_2409.18163",
+        "arxiv_2304.05405",
+        "arxiv_1707.04873",
+        "arxiv_2105.11694",
+        "arxiv_2110.06751",
+        "arxiv_1910.10397",
+        "arxiv_2109.12425",
+        "arxiv_2001.06679",
+        "arxiv_2410.01431",
+        "arxiv_2103.08157",
+        "arxiv_1808.07233",
+        "arxiv_2006.04027",
+        "arxiv_2204.07615"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1707.04873",
+        "arxiv_1710.10776",
+        "arxiv_1806.10282",
+        "arxiv_1806.10332",
+        "arxiv_1807.06906",
+        "arxiv_1808.07233",
+        "arxiv_1811.09828",
+        "arxiv_1812.07995",
+        "arxiv_1812.09926",
+        "arxiv_1905.01392",
+        "arxiv_1905.02341",
+        "arxiv_1906.07590",
+        "arxiv_1907.06511",
+        "arxiv_1909.03184",
+        "arxiv_1909.03615",
+        "arxiv_1909.06686",
+        "arxiv_1910.10397",
+        "arxiv_1910.12824",
+        "arxiv_1910.14488",
+        "arxiv_1911.03769",
+        "arxiv_1912.06059",
+        "arxiv_1912.07651",
+        "arxiv_2001.06679",
+        "arxiv_2001.08437",
+        "arxiv_2006.00939",
+        "arxiv_2006.04027",
+        "arxiv_2007.09380",
+        "arxiv_2008.11652",
+        "arxiv_2011.14632",
+        "arxiv_2012.13091",
+        "arxiv_2103.02126",
+        "arxiv_2103.08157",
+        "arxiv_2105.01015",
+        "arxiv_2105.09356",
+        "arxiv_2105.11694",
+        "arxiv_2106.02229",
+        "arxiv_2108.01854",
+        "arxiv_2108.08474",
+        "arxiv_2109.12425",
+        "arxiv_2110.05842",
+        "arxiv_2110.06751",
+        "arxiv_2203.15408",
+        "arxiv_2204.07615",
+        "arxiv_2207.04467",
+        "arxiv_2210.09084",
+        "arxiv_2211.10250",
+        "arxiv_2301.06687",
+        "arxiv_2301.08727",
+        "arxiv_2304.05405",
+        "arxiv_2307.09099",
+        "arxiv_2307.15621",
+        "arxiv_2403.17012",
+        "arxiv_2409.18163",
+        "arxiv_2410.01431",
+        "arxiv_2501.17361",
+        "arxiv_2506.08533",
+        "arxiv_2508.09467",
+        "arxiv_2509.05656",
+        "arxiv_2510.19872",
+        "arxiv_2604.00703"
+      ],
+      "elapsed_sec": 84.8,
+      "llm_usage_delta": {
+        "n_calls": 9,
+        "prompt_tokens": 7490,
+        "completion_tokens": 2135
+      },
+      "llm_usage_so_far": {
+        "n_calls": 158,
+        "prompt_tokens": 136985,
+        "completion_tokens": 38698
+      }
+    },
+    {
+      "topic": "Federated Learning",
+      "arm": "intact",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:02:44",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "federated learning",
+        "distributed machine learning",
+        "collaborative learning",
+        "privacy-preserving machine learning",
+        "decentralized learning",
+        "model aggregation",
+        "federated optimization",
+        "differential privacy",
+        "secure aggregation",
+        "non-IID data",
+        "communication efficiency",
+        "split learning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of Federated Learning",
+          "n": 4
+        },
+        {
+          "name": "Differential Privacy in Federated Learning",
+          "n": 3
+        },
+        {
+          "name": "Secure Aggregation Protocols",
+          "n": 3
+        },
+        {
+          "name": "Decentralized and Peer-to-Peer Federated Learning",
+          "n": 2
+        },
+        {
+          "name": "Optimization and Training Frameworks for Federated Learning",
+          "n": 3
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2003.13761",
+        "arxiv_2101.12240",
+        "arxiv_2102.04737",
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2202.05318",
+        "arxiv_2203.03106",
+        "arxiv_2208.01200",
+        "arxiv_2301.01299",
+        "arxiv_2302.11152",
+        "arxiv_2304.05127",
+        "arxiv_2408.08642",
+        "arxiv_2409.13133"
+      ],
+      "n_refs": 13,
+      "word_count": 1234,
+      "written_citation_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2301.01299",
+        "arxiv_2106.06843",
+        "arxiv_2208.01200",
+        "arxiv_2003.13761",
+        "arxiv_2203.03106",
+        "arxiv_2304.05127",
+        "arxiv_2408.08642",
+        "arxiv_2202.05318",
+        "arxiv_2101.12240",
+        "arxiv_2102.04737",
+        "arxiv_2302.11152",
+        "arxiv_2409.13133"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2101.12240",
+        "arxiv_2102.04737",
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2202.05318",
+        "arxiv_2203.03106",
+        "arxiv_2208.01200",
+        "arxiv_2301.01299",
+        "arxiv_2302.11152",
+        "arxiv_2304.05127",
+        "arxiv_2408.08642",
+        "arxiv_2409.13133"
+      ],
+      "elapsed_sec": 116.9,
+      "llm_usage_delta": {
+        "n_calls": 16,
+        "prompt_tokens": 11579,
+        "completion_tokens": 3141
+      },
+      "llm_usage_so_far": {
+        "n_calls": 174,
+        "prompt_tokens": 148564,
+        "completion_tokens": 41839
+      }
+    },
+    {
+      "topic": "Federated Learning",
+      "arm": "l_default",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:04:41",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "federated learning",
+        "distributed machine learning",
+        "collaborative learning",
+        "privacy-preserving machine learning",
+        "decentralized learning",
+        "federated optimization",
+        "differential privacy",
+        "secure aggregation",
+        "model aggregation",
+        "non-IID data",
+        "communication efficiency",
+        "split learning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of Federated Learning",
+          "n": 4
+        },
+        {
+          "name": "Communication Efficiency in Federated Learning",
+          "n": 2
+        },
+        {
+          "name": "Non-IID Data Challenges in Federated Learning",
+          "n": 2
+        },
+        {
+          "name": "Differential Privacy in Federated Learning",
+          "n": 4
+        },
+        {
+          "name": "Decentralized and Peer-to-Peer Federated Learning",
+          "n": 3
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1903.02891",
+        "arxiv_2003.03564",
+        "arxiv_2007.01154",
+        "arxiv_2010.03246",
+        "arxiv_2010.09258",
+        "arxiv_2011.14818",
+        "arxiv_2104.14362",
+        "arxiv_2108.00918",
+        "arxiv_2111.08277",
+        "arxiv_2204.10985",
+        "arxiv_2301.09269",
+        "arxiv_2310.14693",
+        "arxiv_2311.10832",
+        "arxiv_2312.13461",
+        "arxiv_2402.03770"
+      ],
+      "n_refs": 15,
+      "word_count": 1298,
+      "written_citation_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2010.09258",
+        "arxiv_2011.14818",
+        "arxiv_2311.10832",
+        "arxiv_2010.03246",
+        "arxiv_2003.03564",
+        "arxiv_2007.01154",
+        "arxiv_2204.10985",
+        "arxiv_2301.09269",
+        "arxiv_2402.03770",
+        "arxiv_2312.13461",
+        "arxiv_2310.14693",
+        "arxiv_2111.08277",
+        "arxiv_2108.00918",
+        "arxiv_1903.02891"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1903.02891",
+        "arxiv_1908.08340",
+        "arxiv_1911.04655",
+        "arxiv_2002.08958",
+        "arxiv_2003.03564",
+        "arxiv_2007.01154",
+        "arxiv_2010.03246",
+        "arxiv_2010.09258",
+        "arxiv_2011.14818",
+        "arxiv_2101.08696",
+        "arxiv_2102.01593",
+        "arxiv_2104.12416",
+        "arxiv_2104.14362",
+        "arxiv_2105.11028",
+        "arxiv_2106.07155",
+        "arxiv_2108.00918",
+        "arxiv_2109.08819",
+        "arxiv_2111.05454",
+        "arxiv_2111.07599",
+        "arxiv_2111.08277",
+        "arxiv_2111.15071",
+        "arxiv_2112.02656",
+        "arxiv_2112.06694",
+        "arxiv_2201.02664",
+        "arxiv_2201.04557",
+        "arxiv_2202.02812",
+        "arxiv_2204.01273",
+        "arxiv_2204.10985",
+        "arxiv_2205.02719",
+        "arxiv_2206.05723",
+        "arxiv_2206.06976",
+        "arxiv_2206.07021",
+        "arxiv_2206.08330",
+        "arxiv_2206.09888",
+        "arxiv_2207.12779",
+        "arxiv_2210.09626",
+        "arxiv_2211.09320",
+        "arxiv_2212.05602",
+        "arxiv_2301.09269",
+        "arxiv_2305.16416",
+        "arxiv_2306.12625",
+        "arxiv_2310.14693",
+        "arxiv_2310.20682",
+        "arxiv_2311.10832",
+        "arxiv_2312.13461",
+        "arxiv_2401.02609",
+        "arxiv_2401.14211",
+        "arxiv_2402.03770",
+        "arxiv_2403.04348",
+        "arxiv_2405.03248",
+        "arxiv_2405.17522",
+        "arxiv_2407.05125",
+        "arxiv_2408.14736",
+        "arxiv_2409.06319",
+        "arxiv_2412.04538",
+        "arxiv_2501.00216",
+        "arxiv_2502.03092",
+        "arxiv_2506.16309",
+        "arxiv_2509.08233",
+        "arxiv_2511.05770",
+        "arxiv_2602.11584",
+        "arxiv_2603.16353",
+        "arxiv_2604.11146",
+        "arxiv_2606.14354"
+      ],
+      "elapsed_sec": 132.1,
+      "llm_usage_delta": {
+        "n_calls": 15,
+        "prompt_tokens": 12523,
+        "completion_tokens": 3364
+      },
+      "llm_usage_so_far": {
+        "n_calls": 189,
+        "prompt_tokens": 161087,
+        "completion_tokens": 45203
+      }
+    },
+    {
+      "topic": "Federated Learning",
+      "arm": "r_pass",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:06:53",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "federated learning",
+        "distributed machine learning",
+        "collaborative learning",
+        "privacy-preserving machine learning",
+        "decentralized learning",
+        "split learning",
+        "differential privacy",
+        "secure aggregation",
+        "model aggregation",
+        "federated optimization",
+        "non-IID data",
+        "communication efficiency in distributed learning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Privacy and Security Mechanisms in Federated Learning",
+          "n": 4
+        },
+        {
+          "name": "Decentralized and Peer-to-Peer Federated Learning",
+          "n": 2
+        },
+        {
+          "name": "Non-IID Data and Performance Challenges",
+          "n": 3
+        },
+        {
+          "name": "Surveys, Overviews, and Comparative Assessments",
+          "n": 4
+        },
+        {
+          "name": "Optimization, Algorithms, and Frameworks",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1908.08098",
+        "arxiv_2002.08423",
+        "arxiv_2002.08569",
+        "arxiv_2003.13761",
+        "arxiv_2012.07183",
+        "arxiv_2209.07124",
+        "arxiv_2303.03829",
+        "arxiv_2306.02570",
+        "arxiv_2308.04604",
+        "arxiv_2404.17970",
+        "arxiv_2406.10416",
+        "arxiv_2407.05141",
+        "arxiv_2407.19286",
+        "arxiv_2409.17754",
+        "arxiv_2503.07505",
+        "arxiv_2503.13624"
+      ],
+      "n_refs": 16,
+      "word_count": 1292,
+      "written_citation_ids": [
+        "arxiv_2407.19286",
+        "arxiv_2003.13761",
+        "arxiv_2012.07183",
+        "arxiv_2002.08423",
+        "arxiv_2308.04604",
+        "arxiv_2306.02570",
+        "arxiv_2503.07505",
+        "arxiv_2503.13624",
+        "arxiv_2209.07124",
+        "arxiv_2406.10416",
+        "arxiv_2409.17754",
+        "arxiv_2002.08569",
+        "arxiv_1908.08098",
+        "arxiv_2407.05141",
+        "arxiv_2303.03829",
+        "arxiv_2404.17970"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1703.02757",
+        "arxiv_1708.08155",
+        "arxiv_1811.03761",
+        "arxiv_1901.11173",
+        "arxiv_1906.06629",
+        "arxiv_1907.12205",
+        "arxiv_1908.07782",
+        "arxiv_1908.08098",
+        "arxiv_1909.05125",
+        "arxiv_1911.11815",
+        "arxiv_1912.01792",
+        "arxiv_1912.12716",
+        "arxiv_2002.08423",
+        "arxiv_2002.08569",
+        "arxiv_2003.13761",
+        "arxiv_2006.04747",
+        "arxiv_2006.08259",
+        "arxiv_2006.09365",
+        "arxiv_2006.13041",
+        "arxiv_2007.11115",
+        "arxiv_2007.15030",
+        "arxiv_2008.04612",
+        "arxiv_2009.08161",
+        "arxiv_2012.07183",
+        "arxiv_2012.10333",
+        "arxiv_2103.07704",
+        "arxiv_2104.06685",
+        "arxiv_2104.07365",
+        "arxiv_2104.08020",
+        "arxiv_2105.10883",
+        "arxiv_2105.12769",
+        "arxiv_2105.14408",
+        "arxiv_2106.06627",
+        "arxiv_2107.07171",
+        "arxiv_2107.07190",
+        "arxiv_2107.08517",
+        "arxiv_2107.12490",
+        "arxiv_2108.00365",
+        "arxiv_2108.03508",
+        "arxiv_2109.02396",
+        "arxiv_2110.01595",
+        "arxiv_2110.02940",
+        "arxiv_2110.10108",
+        "arxiv_2110.11006",
+        "arxiv_2111.01221",
+        "arxiv_2111.05505",
+        "arxiv_2112.07718",
+        "arxiv_2112.11873",
+        "arxiv_2202.01545",
+        "arxiv_2202.08578",
+        "arxiv_2202.11850",
+        "arxiv_2205.00706",
+        "arxiv_2205.08443",
+        "arxiv_2205.10568",
+        "arxiv_2205.10998",
+        "arxiv_2205.11137",
+        "arxiv_2205.11765",
+        "arxiv_2205.14905",
+        "arxiv_2208.12932",
+        "arxiv_2209.07124",
+        "arxiv_2209.10722",
+        "arxiv_2210.00325",
+        "arxiv_2210.01437",
+        "arxiv_2211.04254",
+        "arxiv_2212.06325",
+        "arxiv_2212.07179",
+        "arxiv_2302.06079",
+        "arxiv_2302.07173",
+        "arxiv_2303.03829",
+        "arxiv_2303.06189",
+        "arxiv_2303.10434",
+        "arxiv_2303.10695",
+        "arxiv_2304.09762",
+        "arxiv_2306.00638",
+        "arxiv_2306.01603",
+        "arxiv_2306.02570",
+        "arxiv_2306.06715",
+        "arxiv_2306.15044",
+        "arxiv_2307.08324",
+        "arxiv_2307.09801",
+        "arxiv_2308.04604",
+        "arxiv_2308.10427",
+        "arxiv_2308.12581",
+        "arxiv_2308.14606",
+        "arxiv_2310.03461",
+        "arxiv_2310.05093",
+        "arxiv_2310.13403",
+        "arxiv_2311.16021",
+        "arxiv_2401.03489",
+        "arxiv_2401.05562",
+        "arxiv_2401.17319",
+        "arxiv_2402.01863",
+        "arxiv_2402.12265",
+        "arxiv_2403.04037",
+        "arxiv_2403.06583",
+        "arxiv_2403.13374",
+        "arxiv_2404.04616",
+        "arxiv_2404.17970",
+        "arxiv_2405.03449",
+        "arxiv_2405.08698",
+        "arxiv_2406.01080",
+        "arxiv_2406.10416",
+        "arxiv_2406.12222",
+        "arxiv_2407.05141",
+        "arxiv_2407.08632",
+        "arxiv_2407.19286",
+        "arxiv_2408.02998",
+        "arxiv_2408.06042",
+        "arxiv_2408.09539",
+        "arxiv_2409.05331",
+        "arxiv_2409.17754",
+        "arxiv_2410.04058",
+        "arxiv_2410.07272",
+        "arxiv_2410.13083",
+        "arxiv_2410.18862",
+        "arxiv_2410.22680",
+        "arxiv_2411.03861",
+        "arxiv_2412.11674",
+        "arxiv_2501.02971",
+        "arxiv_2501.17381",
+        "arxiv_2502.00193",
+        "arxiv_2502.04890",
+        "arxiv_2502.06917",
+        "arxiv_2503.07505",
+        "arxiv_2503.10792",
+        "arxiv_2503.13624",
+        "arxiv_2503.21244",
+        "arxiv_2504.01504",
+        "arxiv_2505.17226",
+        "arxiv_2506.02679",
+        "arxiv_2506.09824",
+        "arxiv_2506.13561",
+        "arxiv_2506.15264",
+        "arxiv_2508.00636",
+        "arxiv_2508.18060",
+        "arxiv_2508.18737",
+        "arxiv_2509.00992",
+        "arxiv_2509.08449",
+        "arxiv_2509.09534",
+        "arxiv_2511.02657",
+        "arxiv_2511.03529",
+        "arxiv_2512.01549",
+        "arxiv_2512.05234",
+        "arxiv_2512.10987",
+        "arxiv_2512.12022",
+        "arxiv_2601.06903",
+        "arxiv_2601.20368",
+        "arxiv_2602.03329",
+        "arxiv_2603.01730",
+        "arxiv_2604.03862",
+        "arxiv_2604.27434",
+        "arxiv_2605.04091",
+        "arxiv_2605.15887",
+        "arxiv_2605.21115",
+        "arxiv_2605.27475",
+        "arxiv_2606.19129",
+        "ss_484545"
+      ],
+      "elapsed_sec": 130.6,
+      "llm_usage_delta": {
+        "n_calls": 16,
+        "prompt_tokens": 17154,
+        "completion_tokens": 3823
+      },
+      "llm_usage_so_far": {
+        "n_calls": 205,
+        "prompt_tokens": 178241,
+        "completion_tokens": 49026
+      }
+    },
+    {
+      "topic": "Federated Learning",
+      "arm": "o_rank_slab",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:09:03",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "federated learning",
+        "distributed machine learning",
+        "collaborative learning",
+        "privacy-preserving machine learning",
+        "decentralized learning",
+        "federated optimization",
+        "differential privacy",
+        "secure aggregation",
+        "model aggregation",
+        "non-IID data",
+        "communication efficiency",
+        "split learning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "rank_slab_order",
+      "groups": [
+        {
+          "name": "Rank slab 1: positions 1-8",
+          "n": 8
+        },
+        {
+          "name": "Rank slab 2: positions 9-15",
+          "n": 7
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2003.13761",
+        "arxiv_2012.07183",
+        "arxiv_2106.06843",
+        "arxiv_2201.07730",
+        "arxiv_2203.17005",
+        "arxiv_2210.00325",
+        "arxiv_2301.01299",
+        "arxiv_2306.02570",
+        "arxiv_2311.16008",
+        "arxiv_2407.19286",
+        "arxiv_2501.05053"
+      ],
+      "n_refs": 11,
+      "word_count": 806,
+      "written_citation_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2201.07730",
+        "arxiv_2106.06843",
+        "arxiv_2306.02570",
+        "arxiv_2012.07183",
+        "arxiv_2210.00325",
+        "arxiv_2311.16008",
+        "arxiv_2407.19286",
+        "arxiv_2301.01299",
+        "arxiv_2203.17005",
+        "arxiv_2501.05053"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2012.07183",
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2107.06917",
+        "arxiv_2201.07730",
+        "arxiv_2203.17005",
+        "arxiv_2208.01200",
+        "arxiv_2210.00325",
+        "arxiv_2301.01299",
+        "arxiv_2306.02570",
+        "arxiv_2311.16008",
+        "arxiv_2402.10145",
+        "arxiv_2407.19286",
+        "arxiv_2501.05053"
+      ],
+      "elapsed_sec": 37.6,
+      "llm_usage_delta": {
+        "n_calls": 3,
+        "prompt_tokens": 2847,
+        "completion_tokens": 1300
+      },
+      "llm_usage_so_far": {
+        "n_calls": 208,
+        "prompt_tokens": 181088,
+        "completion_tokens": 50326
+      }
+    },
+    {
+      "topic": "Federated Learning",
+      "arm": "no_recursion",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:09:41",
+      "d_max_effective": 1,
+      "expanded_terms": [
+        "federated learning",
+        "distributed machine learning",
+        "collaborative learning",
+        "privacy-preserving machine learning",
+        "decentralized learning",
+        "split learning",
+        "differential privacy",
+        "secure aggregation",
+        "model aggregation",
+        "non-IID data",
+        "communication efficiency",
+        "federated optimization"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of Federated Learning",
+          "n": 4
+        },
+        {
+          "name": "Differential Privacy in Federated Learning",
+          "n": 3
+        },
+        {
+          "name": "Secure Aggregation Protocols",
+          "n": 2
+        },
+        {
+          "name": "Decentralized and Peer-to-Peer Federated Learning",
+          "n": 4
+        },
+        {
+          "name": "Federated Optimization",
+          "n": 1
+        },
+        {
+          "name": "Privacy-Preserving FL with Non-IID and Incomplete Data",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2003.13761",
+        "arxiv_2005.00218",
+        "arxiv_2006.13039",
+        "arxiv_2008.01558",
+        "arxiv_2101.12240",
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2202.05318",
+        "arxiv_2203.03106",
+        "arxiv_2203.17005",
+        "arxiv_2209.12528",
+        "arxiv_2211.15893",
+        "arxiv_2301.01299",
+        "arxiv_2302.11152",
+        "arxiv_2304.05127",
+        "arxiv_2405.08299",
+        "arxiv_2409.13133"
+      ],
+      "n_refs": 17,
+      "word_count": 879,
+      "written_citation_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2301.01299",
+        "arxiv_2106.06843",
+        "arxiv_2203.17005",
+        "arxiv_2405.08299",
+        "arxiv_2005.00218",
+        "arxiv_2211.15893",
+        "arxiv_2003.13761",
+        "arxiv_2203.03106",
+        "arxiv_2008.01558",
+        "arxiv_2101.12240",
+        "arxiv_2006.13039",
+        "arxiv_2302.11152",
+        "arxiv_2409.13133",
+        "arxiv_2209.12528",
+        "arxiv_2202.05318",
+        "arxiv_2304.05127"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1712.07557",
+        "arxiv_1911.10071",
+        "arxiv_2003.10637",
+        "arxiv_2003.13761",
+        "arxiv_2005.00218",
+        "arxiv_2006.13039",
+        "arxiv_2007.00914",
+        "arxiv_2007.05553",
+        "arxiv_2007.15789",
+        "arxiv_2008.01558",
+        "arxiv_2010.10572",
+        "arxiv_2011.05578",
+        "arxiv_2012.07183",
+        "arxiv_2101.04163",
+        "arxiv_2101.12240",
+        "arxiv_2102.04737",
+        "arxiv_2102.11158",
+        "arxiv_2104.14362",
+        "arxiv_2106.06843",
+        "arxiv_2106.13673",
+        "arxiv_2107.01154",
+        "arxiv_2108.12978",
+        "arxiv_2111.05454",
+        "arxiv_2201.10092",
+        "arxiv_2202.05318",
+        "arxiv_2202.09897",
+        "arxiv_2203.03106",
+        "arxiv_2203.17005",
+        "arxiv_2204.12284",
+        "arxiv_2206.09888",
+        "arxiv_2206.10565",
+        "arxiv_2209.12528",
+        "arxiv_2209.14086",
+        "arxiv_2211.15893",
+        "arxiv_2301.01299",
+        "arxiv_2302.11152",
+        "arxiv_2304.05127",
+        "arxiv_2306.17794",
+        "arxiv_2307.16196",
+        "arxiv_2308.01139",
+        "arxiv_2308.03320",
+        "arxiv_2308.10457",
+        "arxiv_2402.02230",
+        "arxiv_2403.17775",
+        "arxiv_2405.08299",
+        "arxiv_2405.10096",
+        "arxiv_2407.19286",
+        "arxiv_2408.04315",
+        "arxiv_2408.08642",
+        "arxiv_2408.15621",
+        "arxiv_2409.13133",
+        "arxiv_2410.05733",
+        "arxiv_2501.13916",
+        "arxiv_2501.14453",
+        "arxiv_2503.06021",
+        "arxiv_2503.21154",
+        "arxiv_2505.04889",
+        "arxiv_2506.02563",
+        "arxiv_2506.03618",
+        "arxiv_2509.08195",
+        "arxiv_2509.25906",
+        "arxiv_2510.04902",
+        "arxiv_2602.06838",
+        "arxiv_2604.07125"
+      ],
+      "elapsed_sec": 75.5,
+      "llm_usage_delta": {
+        "n_calls": 9,
+        "prompt_tokens": 7951,
+        "completion_tokens": 2196
+      },
+      "llm_usage_so_far": {
+        "n_calls": 217,
+        "prompt_tokens": 189039,
+        "completion_tokens": 52522
+      }
+    },
+    {
+      "topic": "Causal Representation Learning",
+      "arm": "intact",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:10:56",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "causal representation learning",
+        "disentangled representation learning",
+        "causal discovery",
+        "causal inference",
+        "identifiable latent variable models",
+        "structural causal models",
+        "independent component analysis",
+        "causal generative models",
+        "interventional distribution learning",
+        "causal disentanglement",
+        "out-of-distribution generalization",
+        "causal feature learning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Disentangled Causal Representation Learning",
+          "n": 5
+        },
+        {
+          "name": "Identifiability Theory for Causal Representations",
+          "n": 4
+        },
+        {
+          "name": "Temporal and Sequential Causal Representation Learning",
+          "n": 2
+        },
+        {
+          "name": "Interventional and Implicit Causal Representation Learning",
+          "n": 2
+        },
+        {
+          "name": "Causality for Domain Generalization and Robustness",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2304.09010",
+        "arxiv_2305.17225",
+        "arxiv_2306.00542",
+        "arxiv_2310.15450",
+        "arxiv_2310.18471",
+        "arxiv_2402.05052",
+        "arxiv_2504.11609"
+      ],
+      "n_refs": 9,
+      "word_count": 827,
+      "written_citation_ids": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2304.09010",
+        "arxiv_2504.11609",
+        "arxiv_2310.18471",
+        "arxiv_2306.00542",
+        "arxiv_2310.15450",
+        "arxiv_2402.05052",
+        "arxiv_2305.17225"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2304.09010",
+        "arxiv_2305.17225",
+        "arxiv_2306.00542",
+        "arxiv_2310.15450",
+        "arxiv_2310.18471",
+        "arxiv_2402.05052",
+        "arxiv_2504.11609"
+      ],
+      "elapsed_sec": 72.7,
+      "llm_usage_delta": {
+        "n_calls": 10,
+        "prompt_tokens": 7296,
+        "completion_tokens": 2075
+      },
+      "llm_usage_so_far": {
+        "n_calls": 227,
+        "prompt_tokens": 196335,
+        "completion_tokens": 54597
+      }
+    },
+    {
+      "topic": "Causal Representation Learning",
+      "arm": "l_default",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:12:09",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "causal representation learning",
+        "disentangled representation learning",
+        "causal discovery",
+        "causal inference",
+        "identifiable latent variable models",
+        "structural causal models",
+        "independent component analysis",
+        "causal generative models",
+        "invariant causal prediction",
+        "causal disentanglement",
+        "causal abstraction",
+        "out-of-distribution generalization"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Disentangled Causal Representation Learning with Generative Models",
+          "n": 6
+        },
+        {
+          "name": "Temporal and Sequential Causal Representation Learning",
+          "n": 2
+        },
+        {
+          "name": "Identifiability of Causal Representations from Interventions and Multiple Environments",
+          "n": 4
+        },
+        {
+          "name": "Weakly Supervised and Latent Variable Approaches to Causal Discovery",
+          "n": 2
+        },
+        {
+          "name": "Causality-Inspired Representation Learning for Generalization",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2010.02637",
+        "arxiv_2110.06257",
+        "arxiv_2112.05746",
+        "arxiv_2206.06169",
+        "arxiv_2209.05598",
+        "arxiv_2210.13647",
+        "arxiv_2211.03374",
+        "arxiv_2303.00128",
+        "arxiv_2303.10112",
+        "arxiv_2304.09010",
+        "arxiv_2305.05890",
+        "arxiv_2306.00624",
+        "arxiv_2306.01213",
+        "arxiv_2310.18615",
+        "arxiv_2401.14535",
+        "arxiv_2402.09305",
+        "arxiv_2406.16708",
+        "arxiv_2501.12500",
+        "arxiv_2504.11609",
+        "arxiv_2508.15928"
+      ],
+      "n_refs": 20,
+      "word_count": 1259,
+      "written_citation_ids": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2303.00128",
+        "arxiv_2306.01213",
+        "arxiv_2304.09010",
+        "arxiv_2504.11609",
+        "arxiv_2210.13647",
+        "arxiv_2310.18615",
+        "arxiv_2401.14535",
+        "arxiv_2206.06169",
+        "arxiv_2303.10112",
+        "arxiv_2306.00624",
+        "arxiv_2110.06257",
+        "arxiv_2305.05890",
+        "arxiv_2209.05598",
+        "arxiv_2402.09305",
+        "arxiv_2406.16708",
+        "arxiv_2508.15928",
+        "arxiv_2501.12500",
+        "arxiv_2211.03374"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2006.10833",
+        "arxiv_2010.02637",
+        "arxiv_2010.09429",
+        "arxiv_2102.11107",
+        "arxiv_2107.00848",
+        "arxiv_2110.06257",
+        "arxiv_2112.03085",
+        "arxiv_2112.05746",
+        "arxiv_2206.06169",
+        "arxiv_2207.05723",
+        "arxiv_2209.05598",
+        "arxiv_2209.06367",
+        "arxiv_2210.13647",
+        "arxiv_2211.03374",
+        "arxiv_2302.03246",
+        "arxiv_2302.07458",
+        "arxiv_2303.00128",
+        "arxiv_2303.10112",
+        "arxiv_2303.15027",
+        "arxiv_2304.09010",
+        "arxiv_2305.02640",
+        "arxiv_2305.05890",
+        "arxiv_2305.19695",
+        "arxiv_2306.00624",
+        "arxiv_2306.01213",
+        "arxiv_2306.12896",
+        "arxiv_2310.06312",
+        "arxiv_2310.15709",
+        "arxiv_2310.18471",
+        "arxiv_2310.18615",
+        "arxiv_2311.01412",
+        "arxiv_2401.07231",
+        "arxiv_2401.14535",
+        "arxiv_2402.05052",
+        "arxiv_2402.09305",
+        "arxiv_2404.01466",
+        "arxiv_2405.15325",
+        "arxiv_2406.16708",
+        "arxiv_2408.08023",
+        "arxiv_2410.07013",
+        "arxiv_2410.09516",
+        "arxiv_2501.06534",
+        "arxiv_2501.12500",
+        "arxiv_2504.11609",
+        "arxiv_2505.16308",
+        "arxiv_2505.17708",
+        "arxiv_2506.17065",
+        "arxiv_2507.07898",
+        "arxiv_2507.09439",
+        "arxiv_2507.14126",
+        "arxiv_2508.01848",
+        "arxiv_2508.15928",
+        "arxiv_2508.21742",
+        "arxiv_2510.11084",
+        "arxiv_2510.24639",
+        "arxiv_2510.26485",
+        "arxiv_2511.03168",
+        "arxiv_2511.04790",
+        "arxiv_2601.09579",
+        "arxiv_2602.01433",
+        "arxiv_2602.18662",
+        "arxiv_2603.00041",
+        "arxiv_2603.05370",
+        "arxiv_2603.20980",
+        "arxiv_2603.25017",
+        "arxiv_2605.08111",
+        "arxiv_2605.26759"
+      ],
+      "elapsed_sec": 107.5,
+      "llm_usage_delta": {
+        "n_calls": 13,
+        "prompt_tokens": 11694,
+        "completion_tokens": 3390
+      },
+      "llm_usage_so_far": {
+        "n_calls": 240,
+        "prompt_tokens": 208029,
+        "completion_tokens": 57987
+      }
+    },
+    {
+      "topic": "Causal Representation Learning",
+      "arm": "r_pass",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:13:57",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "causal representation learning",
+        "disentangled representation learning",
+        "causal discovery",
+        "causal inference",
+        "identifiable latent variable models",
+        "structural causal models",
+        "independent component analysis",
+        "causal generative models",
+        "interventional distribution learning",
+        "causal disentanglement",
+        "out-of-distribution generalization",
+        "causal abstraction"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Identifiability and Theoretical Foundations of Causal Representations",
+          "n": 3
+        },
+        {
+          "name": "Disentangled Causal Representation Learning",
+          "n": 4
+        },
+        {
+          "name": "Causal Generative Models and Latent Variable Frameworks",
+          "n": 4
+        },
+        {
+          "name": "Multimodal, Discrete, and Structured Causal Representations",
+          "n": 3
+        },
+        {
+          "name": "Causal Representations for Inference and Deconfounding",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2208.14153",
+        "arxiv_2210.13647",
+        "arxiv_2211.16467",
+        "arxiv_2306.00542",
+        "arxiv_2306.01213",
+        "arxiv_2310.15450",
+        "arxiv_2310.15580",
+        "arxiv_2311.02695",
+        "arxiv_2311.12267",
+        "arxiv_2402.00849"
+      ],
+      "n_refs": 12,
+      "word_count": 1168,
+      "written_citation_ids": [
+        "arxiv_2306.00542",
+        "arxiv_2310.15450",
+        "arxiv_2402.00849",
+        "arxiv_2311.12267",
+        "arxiv_2211.16467",
+        "arxiv_2311.02695",
+        "arxiv_2208.14153",
+        "arxiv_2310.15580",
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2306.01213",
+        "arxiv_2210.13647"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2208.14153",
+        "arxiv_2210.13647",
+        "arxiv_2211.16467",
+        "arxiv_2306.00542",
+        "arxiv_2306.01213",
+        "arxiv_2310.15450",
+        "arxiv_2310.15580",
+        "arxiv_2311.02695",
+        "arxiv_2311.12267",
+        "arxiv_2402.00849"
+      ],
+      "elapsed_sec": 115.0,
+      "llm_usage_delta": {
+        "n_calls": 16,
+        "prompt_tokens": 11665,
+        "completion_tokens": 3162
+      },
+      "llm_usage_so_far": {
+        "n_calls": 256,
+        "prompt_tokens": 219694,
+        "completion_tokens": 61149
+      }
+    },
+    {
+      "topic": "Causal Representation Learning",
+      "arm": "o_rank_slab",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:15:52",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "causal representation learning",
+        "disentangled representation learning",
+        "causal discovery",
+        "causal inference",
+        "identifiable latent variable models",
+        "structural causal models",
+        "independent component analysis",
+        "causal generative models",
+        "interventional distribution learning",
+        "causal disentanglement",
+        "out-of-distribution generalization",
+        "causal abstraction"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "rank_slab_order",
+      "groups": [
+        {
+          "name": "Rank slab 1: positions 1-8",
+          "n": 8
+        },
+        {
+          "name": "Rank slab 2: positions 9-15",
+          "n": 7
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2207.05723",
+        "arxiv_2210.13647",
+        "arxiv_2211.03374",
+        "arxiv_2304.09010",
+        "arxiv_2306.00542",
+        "arxiv_2306.01213",
+        "arxiv_2310.15450",
+        "arxiv_2310.18615",
+        "arxiv_2311.12267",
+        "arxiv_2402.05052",
+        "arxiv_2402.11124"
+      ],
+      "n_refs": 13,
+      "word_count": 799,
+      "written_citation_ids": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2306.00542",
+        "arxiv_2310.15450",
+        "arxiv_2402.05052",
+        "arxiv_2210.13647",
+        "arxiv_2310.18615",
+        "arxiv_2207.05723",
+        "arxiv_2211.03374",
+        "arxiv_2304.09010",
+        "arxiv_2306.01213",
+        "arxiv_2402.11124",
+        "arxiv_2311.12267"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2010.02637",
+        "arxiv_2112.05746",
+        "arxiv_2207.05723",
+        "arxiv_2210.13647",
+        "arxiv_2211.03374",
+        "arxiv_2304.09010",
+        "arxiv_2305.02640",
+        "arxiv_2306.00542",
+        "arxiv_2306.01213",
+        "arxiv_2310.15450",
+        "arxiv_2310.18615",
+        "arxiv_2311.12267",
+        "arxiv_2402.05052",
+        "arxiv_2402.11124",
+        "arxiv_2503.10834"
+      ],
+      "elapsed_sec": 36.7,
+      "llm_usage_delta": {
+        "n_calls": 3,
+        "prompt_tokens": 2631,
+        "completion_tokens": 1348
+      },
+      "llm_usage_so_far": {
+        "n_calls": 259,
+        "prompt_tokens": 222325,
+        "completion_tokens": 62497
+      }
+    },
+    {
+      "topic": "Causal Representation Learning",
+      "arm": "no_recursion",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:16:28",
+      "d_max_effective": 1,
+      "expanded_terms": [
+        "causal representation learning",
+        "disentangled representations",
+        "identifiable latent variable models",
+        "causal discovery",
+        "causal inference",
+        "independent component analysis",
+        "structural causal models",
+        "causal generative models",
+        "invariant causal prediction",
+        "causal disentanglement",
+        "nonlinear ICA",
+        "causal feature learning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Identifiability and Theoretical Foundations of Causal Representation Learning",
+          "n": 5
+        },
+        {
+          "name": "Weakly Supervised and Interventional Approaches to Causal Representation Learning",
+          "n": 3
+        },
+        {
+          "name": "Disentangled Generative Models for Causal Representations",
+          "n": 4
+        },
+        {
+          "name": "Temporal and Sequential Causal Disentanglement",
+          "n": 2
+        },
+        {
+          "name": "Surveys and Broad Frameworks for Deep Causal Learning",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2010.02637",
+        "arxiv_2203.16437",
+        "arxiv_2304.09010",
+        "arxiv_2305.17225",
+        "arxiv_2306.00542",
+        "arxiv_2310.02854",
+        "arxiv_2310.15450",
+        "arxiv_2312.03580",
+        "arxiv_2402.05052",
+        "arxiv_2402.11124",
+        "arxiv_2406.05937",
+        "arxiv_2410.23620",
+        "arxiv_2603.25796"
+      ],
+      "n_refs": 13,
+      "word_count": 914,
+      "written_citation_ids": [
+        "arxiv_2306.00542",
+        "arxiv_2402.05052",
+        "arxiv_2410.23620",
+        "arxiv_2305.17225",
+        "arxiv_2312.03580",
+        "arxiv_2203.16437",
+        "arxiv_2310.15450",
+        "arxiv_2406.05937",
+        "arxiv_2010.02637",
+        "arxiv_2310.02854",
+        "arxiv_2304.09010",
+        "arxiv_2402.11124",
+        "arxiv_2603.25796"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1811.00007",
+        "arxiv_2004.08697",
+        "arxiv_2010.02637",
+        "arxiv_2011.02203",
+        "arxiv_2106.04619",
+        "arxiv_2109.03795",
+        "arxiv_2203.16437",
+        "arxiv_2206.01802",
+        "arxiv_2207.05723",
+        "arxiv_2209.11924",
+        "arxiv_2210.13647",
+        "arxiv_2211.16467",
+        "arxiv_2301.05169",
+        "arxiv_2301.08230",
+        "arxiv_2302.00993",
+        "arxiv_2303.00128",
+        "arxiv_2304.09010",
+        "arxiv_2305.02640",
+        "arxiv_2305.17225",
+        "arxiv_2306.00542",
+        "arxiv_2306.01213",
+        "arxiv_2307.05704",
+        "arxiv_2307.06250",
+        "arxiv_2308.05707",
+        "arxiv_2310.02854",
+        "arxiv_2310.13892",
+        "arxiv_2310.15450",
+        "arxiv_2310.15580",
+        "arxiv_2310.15709",
+        "arxiv_2310.18471",
+        "arxiv_2310.18615",
+        "arxiv_2310.18634",
+        "arxiv_2310.19054",
+        "arxiv_2311.02695",
+        "arxiv_2311.06567",
+        "arxiv_2311.12267",
+        "arxiv_2312.03580",
+        "arxiv_2402.00849",
+        "arxiv_2402.05052",
+        "arxiv_2402.11124",
+        "arxiv_2403.08335",
+        "arxiv_2404.17735",
+        "arxiv_2406.05937",
+        "arxiv_2406.14302",
+        "arxiv_2407.04605",
+        "arxiv_2410.23620",
+        "arxiv_2412.09843",
+        "arxiv_2503.03634",
+        "arxiv_2503.10834",
+        "arxiv_2509.01916",
+        "arxiv_2509.22553",
+        "arxiv_2510.18052",
+        "arxiv_2511.04790",
+        "arxiv_2512.22150",
+        "arxiv_2601.21567",
+        "arxiv_2602.19131",
+        "arxiv_2603.17405",
+        "arxiv_2603.25017",
+        "arxiv_2603.25796",
+        "arxiv_2604.23800"
+      ],
+      "elapsed_sec": 75.1,
+      "llm_usage_delta": {
+        "n_calls": 9,
+        "prompt_tokens": 8689,
+        "completion_tokens": 2256
+      },
+      "llm_usage_so_far": {
+        "n_calls": 268,
+        "prompt_tokens": 231014,
+        "completion_tokens": 64753
+      }
+    },
+    {
+      "topic": "Efficient Inference for Large Language Models",
+      "arm": "intact",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:17:43",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "LLM inference optimization",
+        "transformer model acceleration",
+        "model compression techniques",
+        "knowledge distillation neural networks",
+        "quantization deep learning",
+        "speculative decoding",
+        "key-value cache optimization",
+        "pruning large language models",
+        "low-rank approximation transformers",
+        "batching strategies inference serving",
+        "neural architecture search efficiency",
+        "parameter efficient fine-tuning"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of Efficient LLM Inference",
+          "n": 4
+        },
+        {
+          "name": "Model Compression: Pruning, Quantization, and Distillation",
+          "n": 5
+        },
+        {
+          "name": "KV Cache Optimization",
+          "n": 2
+        },
+        {
+          "name": "Speculative Decoding and Inference Acceleration",
+          "n": 2
+        },
+        {
+          "name": "Neural Architecture Search and Adapter-Based Compression",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2002.11794",
+        "arxiv_2211.07715",
+        "arxiv_2305.14152",
+        "arxiv_2401.02038",
+        "arxiv_2402.09748",
+        "arxiv_2404.14294",
+        "arxiv_2408.03130",
+        "arxiv_2408.08554",
+        "arxiv_2409.17372"
+      ],
+      "n_refs": 9,
+      "word_count": 795,
+      "written_citation_ids": [
+        "arxiv_2404.14294",
+        "arxiv_2402.09748",
+        "arxiv_2401.02038",
+        "arxiv_2408.03130",
+        "arxiv_2408.08554",
+        "arxiv_2305.14152",
+        "arxiv_2409.17372",
+        "arxiv_2211.07715",
+        "arxiv_2002.11794"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2002.11794",
+        "arxiv_2211.07715",
+        "arxiv_2305.14152",
+        "arxiv_2401.02038",
+        "arxiv_2402.09748",
+        "arxiv_2404.14294",
+        "arxiv_2408.03130",
+        "arxiv_2408.08554",
+        "arxiv_2409.17372"
+      ],
+      "elapsed_sec": 71.9,
+      "llm_usage_delta": {
+        "n_calls": 10,
+        "prompt_tokens": 7685,
+        "completion_tokens": 2114
+      },
+      "llm_usage_so_far": {
+        "n_calls": 278,
+        "prompt_tokens": 238699,
+        "completion_tokens": 66867
+      }
+    },
+    {
+      "topic": "Efficient Inference for Large Language Models",
+      "arm": "l_default",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:18:55",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "LLM inference optimization",
+        "transformer model acceleration",
+        "model compression techniques",
+        "knowledge distillation neural networks",
+        "quantization deep learning",
+        "speculative decoding",
+        "key-value cache optimization",
+        "pruning large language models",
+        "tensor parallelism inference",
+        "neural network sparsity",
+        "efficient transformer architectures",
+        "batching strategies language model serving"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of Efficient LLM Inference",
+          "n": 4
+        },
+        {
+          "name": "KV Cache Optimization and Management",
+          "n": 4
+        },
+        {
+          "name": "Model Compression: Pruning, Quantization, and Distillation",
+          "n": 4
+        },
+        {
+          "name": "Hardware-Aware and Accelerator-Based Inference Optimization",
+          "n": 2
+        },
+        {
+          "name": "Speculative Decoding and Decoding Acceleration",
+          "n": 1
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2402.09748",
+        "arxiv_2404.14294",
+        "arxiv_2404.15949",
+        "arxiv_2405.10637",
+        "arxiv_2405.11704",
+        "arxiv_2406.19707",
+        "arxiv_2408.03130",
+        "arxiv_2508.06297"
+      ],
+      "n_refs": 8,
+      "word_count": 781,
+      "written_citation_ids": [
+        "arxiv_2402.09748",
+        "arxiv_2404.14294",
+        "arxiv_2408.03130",
+        "arxiv_2405.11704",
+        "arxiv_2406.19707",
+        "arxiv_2508.06297",
+        "arxiv_2404.15949",
+        "arxiv_2405.10637"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2402.09748",
+        "arxiv_2404.14294",
+        "arxiv_2404.15949",
+        "arxiv_2405.10637",
+        "arxiv_2405.11704",
+        "arxiv_2406.19707",
+        "arxiv_2408.03130",
+        "arxiv_2508.06297"
+      ],
+      "elapsed_sec": 75.9,
+      "llm_usage_delta": {
+        "n_calls": 10,
+        "prompt_tokens": 7049,
+        "completion_tokens": 1973
+      },
+      "llm_usage_so_far": {
+        "n_calls": 288,
+        "prompt_tokens": 245748,
+        "completion_tokens": 68840
+      }
+    },
+    {
+      "topic": "Efficient Inference for Large Language Models",
+      "arm": "r_pass",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:20:11",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "LLM inference optimization",
+        "transformer model acceleration",
+        "model compression techniques",
+        "knowledge distillation neural networks",
+        "quantization deep learning",
+        "speculative decoding",
+        "key-value cache optimization",
+        "pruning large language models",
+        "tensor parallelism inference",
+        "early exit strategies transformers",
+        "batching strategies language model serving",
+        "neural architecture search efficiency"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of LLM Efficient Inference",
+          "n": 3
+        },
+        {
+          "name": "KV Cache Management and Compression",
+          "n": 5
+        },
+        {
+          "name": "Model Compression: Pruning, Quantization, and Distillation",
+          "n": 3
+        },
+        {
+          "name": "Distributed and Hardware-Accelerated Inference",
+          "n": 2
+        },
+        {
+          "name": "Runtime and Decoding Optimization Techniques",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2401.02038",
+        "arxiv_2402.16363",
+        "arxiv_2404.14294",
+        "arxiv_2405.10637",
+        "arxiv_2406.19707",
+        "arxiv_2411.15785",
+        "arxiv_2412.19442",
+        "arxiv_2504.19720",
+        "arxiv_2506.21901",
+        "arxiv_2508.06297",
+        "arxiv_2512.01953",
+        "arxiv_2603.20397",
+        "arxiv_2604.13556"
+      ],
+      "n_refs": 13,
+      "word_count": 1248,
+      "written_citation_ids": [
+        "arxiv_2404.14294",
+        "arxiv_2402.16363",
+        "arxiv_2504.19720",
+        "arxiv_2506.21901",
+        "arxiv_2401.02038",
+        "arxiv_2603.20397",
+        "arxiv_2508.06297",
+        "arxiv_2412.19442",
+        "arxiv_2406.19707",
+        "arxiv_2411.15785",
+        "arxiv_2604.13556",
+        "arxiv_2405.10637",
+        "arxiv_2512.01953"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2305.05920",
+        "arxiv_2305.13144",
+        "arxiv_2310.03003",
+        "arxiv_2310.12072",
+        "arxiv_2311.00502",
+        "arxiv_2312.00678",
+        "arxiv_2312.04916",
+        "arxiv_2312.04985",
+        "arxiv_2401.02038",
+        "arxiv_2401.05391",
+        "arxiv_2401.07851",
+        "arxiv_2402.01799",
+        "arxiv_2402.01869",
+        "arxiv_2402.09748",
+        "arxiv_2402.15678",
+        "arxiv_2402.16363",
+        "arxiv_2403.17312",
+        "arxiv_2404.05741",
+        "arxiv_2404.14294",
+        "arxiv_2404.18057",
+        "arxiv_2405.10637",
+        "arxiv_2405.11704",
+        "arxiv_2406.08413",
+        "arxiv_2406.14319",
+        "arxiv_2406.19707",
+        "arxiv_2407.09111",
+        "arxiv_2407.20272",
+        "arxiv_2408.01050",
+        "arxiv_2408.03130",
+        "arxiv_2409.04833",
+        "arxiv_2409.14961",
+        "arxiv_2410.04466",
+        "arxiv_2411.15785",
+        "arxiv_2412.19442",
+        "arxiv_2502.05610",
+        "arxiv_2502.07115",
+        "arxiv_2502.07578",
+        "arxiv_2503.06433",
+        "arxiv_2503.08415",
+        "arxiv_2503.13427",
+        "arxiv_2503.18869",
+        "arxiv_2504.03360",
+        "arxiv_2504.10326",
+        "arxiv_2504.17674",
+        "arxiv_2504.19720",
+        "arxiv_2505.01658",
+        "arxiv_2505.09319",
+        "arxiv_2505.21077",
+        "arxiv_2506.21901",
+        "arxiv_2507.18007",
+        "arxiv_2508.06297",
+        "arxiv_2508.06753",
+        "arxiv_2510.11331",
+        "arxiv_2510.18245",
+        "arxiv_2510.25977",
+        "arxiv_2512.01953",
+        "arxiv_2601.05047",
+        "arxiv_2602.09323",
+        "arxiv_2603.20397",
+        "arxiv_2604.13556",
+        "arxiv_2604.17709",
+        "arxiv_2604.22906"
+      ],
+      "elapsed_sec": 104.1,
+      "llm_usage_delta": {
+        "n_calls": 13,
+        "prompt_tokens": 12783,
+        "completion_tokens": 3101
+      },
+      "llm_usage_so_far": {
+        "n_calls": 301,
+        "prompt_tokens": 258531,
+        "completion_tokens": 71941
+      }
+    },
+    {
+      "topic": "Efficient Inference for Large Language Models",
+      "arm": "o_rank_slab",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:21:55",
+      "d_max_effective": 2,
+      "expanded_terms": [
+        "LLM inference optimization",
+        "transformer model acceleration",
+        "model compression techniques",
+        "knowledge distillation neural networks",
+        "quantization deep learning",
+        "speculative decoding",
+        "key-value cache optimization",
+        "pruning large language models",
+        "tensor parallelism inference",
+        "low-rank approximation transformers",
+        "batching strategies language models",
+        "hardware-aware neural network inference"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "rank_slab_order",
+      "groups": [
+        {
+          "name": "Rank slab 1: positions 1-8",
+          "n": 8
+        },
+        {
+          "name": "Rank slab 2: positions 9-15",
+          "n": 7
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2211.07715",
+        "arxiv_2309.08168",
+        "arxiv_2311.00502",
+        "arxiv_2402.09748",
+        "arxiv_2404.14294",
+        "arxiv_2405.10637",
+        "arxiv_2408.08554",
+        "arxiv_2409.17372",
+        "arxiv_2503.15921",
+        "arxiv_2503.18869",
+        "arxiv_2504.08850",
+        "arxiv_2508.06297"
+      ],
+      "n_refs": 12,
+      "word_count": 839,
+      "written_citation_ids": [
+        "arxiv_2402.09748",
+        "arxiv_2311.00502",
+        "arxiv_2211.07715",
+        "arxiv_2409.17372",
+        "arxiv_2408.08554",
+        "arxiv_2405.10637",
+        "arxiv_2503.15921",
+        "arxiv_2504.08850",
+        "arxiv_2404.14294",
+        "arxiv_2508.06297",
+        "arxiv_2503.18869",
+        "arxiv_2309.08168"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2211.07715",
+        "arxiv_2309.08168",
+        "arxiv_2311.00502",
+        "arxiv_2401.02038",
+        "arxiv_2401.08294",
+        "arxiv_2402.09748",
+        "arxiv_2404.14294",
+        "arxiv_2405.10637",
+        "arxiv_2408.08554",
+        "arxiv_2409.17372",
+        "arxiv_2502.07578",
+        "arxiv_2503.15921",
+        "arxiv_2503.18869",
+        "arxiv_2504.08850",
+        "arxiv_2508.06297"
+      ],
+      "elapsed_sec": 39.1,
+      "llm_usage_delta": {
+        "n_calls": 3,
+        "prompt_tokens": 2995,
+        "completion_tokens": 1386
+      },
+      "llm_usage_so_far": {
+        "n_calls": 304,
+        "prompt_tokens": 261526,
+        "completion_tokens": 73327
+      }
+    },
+    {
+      "topic": "Efficient Inference for Large Language Models",
+      "arm": "no_recursion",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 22:22:34",
+      "d_max_effective": 1,
+      "expanded_terms": [
+        "LLM inference optimization",
+        "transformer model acceleration",
+        "model compression techniques",
+        "knowledge distillation neural networks",
+        "quantization deep learning",
+        "speculative decoding",
+        "key-value cache optimization",
+        "pruning large language models",
+        "tensor parallelism inference",
+        "early exit strategies transformers",
+        "efficient attention mechanisms",
+        "neural network serving latency"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "theme",
+      "groups": [
+        {
+          "name": "Surveys and Overviews of Efficient LLM Inference",
+          "n": 3
+        },
+        {
+          "name": "KV Cache Optimization and Compression",
+          "n": 4
+        },
+        {
+          "name": "Speculative Decoding and Early Exiting",
+          "n": 2
+        },
+        {
+          "name": "Model Compression: Pruning, Quantization, and Distillation",
+          "n": 3
+        },
+        {
+          "name": "Distributed and Hardware-Accelerated Inference",
+          "n": 2
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_2401.02038",
+        "arxiv_2402.09748",
+        "arxiv_2402.16363",
+        "arxiv_2403.17312",
+        "arxiv_2404.14294",
+        "arxiv_2404.15949",
+        "arxiv_2405.10637",
+        "arxiv_2508.06297"
+      ],
+      "n_refs": 8,
+      "word_count": 849,
+      "written_citation_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2402.09748",
+        "arxiv_2404.14294",
+        "arxiv_2402.16363",
+        "arxiv_2508.06297",
+        "arxiv_2405.10637",
+        "arxiv_2404.15949",
+        "arxiv_2403.17312"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_2305.13144",
+        "arxiv_2309.08168",
+        "arxiv_2310.12072",
+        "arxiv_2311.00502",
+        "arxiv_2312.04916",
+        "arxiv_2312.11462",
+        "arxiv_2401.02038",
+        "arxiv_2401.07851",
+        "arxiv_2401.08294",
+        "arxiv_2401.10774",
+        "arxiv_2402.09025",
+        "arxiv_2402.09748",
+        "arxiv_2402.11809",
+        "arxiv_2402.15678",
+        "arxiv_2402.16363",
+        "arxiv_2403.17312",
+        "arxiv_2403.20041",
+        "arxiv_2404.05741",
+        "arxiv_2404.06709",
+        "arxiv_2404.14294",
+        "arxiv_2404.15949",
+        "arxiv_2405.10637",
+        "arxiv_2405.11704",
+        "arxiv_2406.01698",
+        "arxiv_2406.12930",
+        "arxiv_2406.16758",
+        "arxiv_2407.20272",
+        "arxiv_2408.03130",
+        "arxiv_2408.07802",
+        "arxiv_2408.08554",
+        "arxiv_2408.11743",
+        "arxiv_2409.17372",
+        "arxiv_2410.04466",
+        "arxiv_2411.07942",
+        "arxiv_2411.13157",
+        "arxiv_2412.11242",
+        "arxiv_2502.07578",
+        "arxiv_2502.14008",
+        "arxiv_2502.20727",
+        "arxiv_2503.05096",
+        "arxiv_2503.06433",
+        "arxiv_2503.08415",
+        "arxiv_2503.13427",
+        "arxiv_2503.15921",
+        "arxiv_2503.18869",
+        "arxiv_2505.01658",
+        "arxiv_2505.21077",
+        "arxiv_2505.22758",
+        "arxiv_2506.21901",
+        "arxiv_2506.22396",
+        "arxiv_2508.03726",
+        "arxiv_2508.06297",
+        "arxiv_2508.09072",
+        "arxiv_2509.18362",
+        "arxiv_2510.11331",
+        "arxiv_2510.25977",
+        "arxiv_2512.01953",
+        "arxiv_2601.09865",
+        "arxiv_2603.17435",
+        "arxiv_2604.13556",
+        "arxiv_2604.17709",
+        "arxiv_2605.29639"
+      ],
+      "elapsed_sec": 74.1,
+      "llm_usage_delta": {
+        "n_calls": 9,
+        "prompt_tokens": 8889,
+        "completion_tokens": 2205
+      },
+      "llm_usage_so_far": {
+        "n_calls": 313,
+        "prompt_tokens": 270415,
+        "completion_tokens": 75532
+      }
+    }
+  ]
+}

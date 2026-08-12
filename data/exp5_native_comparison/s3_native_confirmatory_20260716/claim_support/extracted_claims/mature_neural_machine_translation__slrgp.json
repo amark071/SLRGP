@@ -1,0 +1,123 @@
+{
+  "topic_id": "mature_neural_machine_translation",
+  "system": "slrgp",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "An early and influential contribution is the textbook-style overview by Koehn [arxiv_1709.07809], which provides a foundational introduction to NMT as part of a broader treatment of machine translation.",
+      "citation_markers": [
+        "[arxiv_1709.07809]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Complementing these works, Tan et al. [arxiv_2012.15515] provide a broad survey extending coverage beyond methods to encompass resources and tools, reflecting the maturation of NMT into a practical engineering discipline with substantial infrastructure requirements.",
+      "citation_markers": [
+        "[arxiv_2012.15515]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Ranathunga et al. [arxiv_2106.15115] offer a broad survey of techniques specifically targeting low-resource language pairs, observing that despite rapid maturation of the field, performance on such pairs remains sub-optimal relative to high-resource settings, primarily due to parallel data scarcity.",
+      "citation_markers": [
+        "[arxiv_2106.15115]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Lakew et al. [arxiv_2003.14402] contribute an empirical benchmark targeting five African low-resource languages—Swahili, Amharic, Tigrigna, Oromo, and Somali—highlighting the importance of language-specific evaluation, since aggregate findings may obscure difficulties posed by morphologically complex or typologically distant languages.",
+      "citation_markers": [
+        "[arxiv_2003.14402]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Despite NMT's general superiority in fluency, surveys and empirical studies converge on a well-documented complementarity: NMT tends to produce fluent but inadequate translations, whereas statistical MT yields adequate but less fluent output [arxiv_1610.05150].",
+      "citation_markers": [
+        "[arxiv_1610.05150]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Wang et al. [arxiv_1610.05150] propose advising NMT decoding with SMT recommendations to recover translation adequacy, while Stahlberg et al. [arxiv_1605.04569] demonstrate that SMT lattices derived from hierarchical phrase-based models can syntactically guide NMT beam search, yielding measurable quality gains.",
+      "citation_markers": [
+        "[arxiv_1610.05150]",
+        "[arxiv_1605.04569]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "A central challenge is the conditional independence assumption made during decoding, whereby each token is generated without regard to other output tokens [arxiv_1910.11555]. This limitation contributes to the multi-modality problem: because multiple valid translations may exist for a single source sentence, the training reference may be misaligned with the model's output distribution, degrading learning signal quality [arxiv_2211.16863].",
+      "citation_markers": [
+        "[arxiv_1910.11555]",
+        "[arxiv_2211.16863]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Stahlberg and Byrne [arxiv_1704.03169] address the problem that beam search can degrade in quality when a model becomes over-confident about a suboptimal prediction, proposing Minimum Bayes Risk (MBR) decoding to move beyond purely mode-seeking inference toward risk-minimising inference.",
+      "citation_markers": [
+        "[arxiv_1704.03169]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The seminal parent–child framework introduced by Zoph et al. [arxiv_1604.02201] demonstrated that parameters learned from a high-resource language pair could be transferred to a low-resource child model, yielding substantial BLEU improvements across multiple language pairs.",
+      "citation_markers": [
+        "[arxiv_1604.02201]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Meta-learning has emerged as a principled framework for addressing data scarcity by enabling models to rapidly adapt to new low-resource languages from limited examples. The foundational contribution is the application of model-agnostic meta-learning (MAML) to NMT by Gu et al. [arxiv_1808.08437], who reframe low-resource translation as a meta-learning problem.",
+      "citation_markers": [
+        "[arxiv_1808.08437]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Joint training of source-to-target and target-to-source models, iteratively refining both translation directions using monolingual data from each side, has been shown to be more effective than pipeline-style back-translation [arxiv_1803.00353].",
+      "citation_markers": [
+        "[arxiv_1803.00353]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "A foundational step was Google's multilingual NMT system [arxiv_1611.04558], which introduced a simple yet powerful mechanism—prepending a target-language token to the input—enabling a single model to translate across multiple language pairs and to perform zero-shot translation between language pairs never seen together during training. Building on this principle, Aharoni et al. [arxiv_1903.00089] demonstrated that massively multilingual NMT models could handle up to 102 languages within a single architecture, reporting gains for low-resource languages as a direct consequence of positive transfer from higher-resource pairs.",
+      "citation_markers": [
+        "[arxiv_1611.04558]",
+        "[arxiv_1903.00089]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6972,
+    "completion_tokens": 1245,
+    "total_tokens": 8217
+  }
+}

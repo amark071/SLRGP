@@ -1,0 +1,25 @@
+{
+  "run_id": "s3_native_confirmatory_20260716",
+  "system_id": "autosurvey",
+  "source_revision": "5e8f389f3d51b29bad16dc6ae75db3e8a45a3b65",
+  "model_policy": "common_backbone:anthropic/claude-sonnet-4.6",
+  "topic": {
+    "topic_id": "mature_adversarial_robustness",
+    "title": "Adversarial Robustness of Deep Neural Networks",
+    "scope": "Adversarial examples and robustness in deep neural networks, covering threat models, attacks, adversarial training, certified defenses, robustness evaluation, distribution shift connections, adaptive attack methodology, and persistent limitations. General cybersecurity work without a learned-model robustness component is out of scope.",
+    "target_audience": "machine-learning and security researchers",
+    "language": "English",
+    "publication_cutoff": "2023-12-31",
+    "target_words": 4000,
+    "min_words": 3200,
+    "max_words": 4800,
+    "target_references_min": 40,
+    "target_references_max": 60,
+    "seed": 3307,
+    "analysis_role": "confirmatory_primary"
+  },
+  "budget_usd": 16.0,
+  "timeout_seconds": 14400,
+  "protocol_hash": "dd37992ea682a46b3b187827cdc32e2002c6a7b7c5182c1e70de54c003a9c2a4",
+  "run_spec_hash": "dba6c37a3fc9cea71355b79d10a8d9eeea84e9dc4ec1430d123cf8f50ee1dd77"
+}

@@ -1,0 +1,356 @@
+[
+ {
+  "work_id": "W2014505645",
+  "title": "Dynamic terrain traversal skills using reinforcement learning",
+  "abstract": "The locomotion skills developed for physics-based characters most often target flat terrain. However, much of their potential lies with the creation of dynamic, momentum-based motions across more complex terrains. In this paper, we learn controllers that allow simulated characters to traverse terrains with gaps, steps, and walls using highly dynamic gaits. This is achieved using reinforcement learning, with careful attention given to the action representation, non-parametric approximation of both the value function and the policy; epsilon-greedy exploration; and the learning of a good state distance metric. The methods enable a 21-link planar dog and a 7-link planar biped to navigate challenging sequences of terrain using bounding and running gaits. We evaluate the impact of the key features of our skill learning pipeline on the resulting performance.",
+  "authors": [
+   "Xue Bin Peng",
+   "Glen Berseth",
+   "Michiel van de Panne"
+  ],
+  "year": 2015
+ },
+ {
+  "work_id": "W2236244207",
+  "title": "Bayesian Reinforcement Learning: A Survey",
+  "abstract": "Bayesian methods for machine learning have been widely investigated, yielding principled methods for incorporating prior information into inference algorithms. In this survey, we provide an in-depth review of the role of Bayesian methods for the reinforcement learning (RL) paradigm. The major incentives for incorporating Bayesian reasoning in RL are: 1) it provides an elegant approach to action-selection (exploration/exploitation) as a function of the uncertainty in learning; and 2) it provides a machinery to incorporate prior knowledge into the algorithms. We first discuss models and methods for Bayesian inference in the simple single-step Bandit model. We then review the extensive recent literature on Bayesian methods for model-based RL, where prior information can be expressed on the parameters of the Markov model. We also present Bayesian methods for model-free RL, where priors are expressed over the value function or policy class. The objective of the paper is to provide a comprehensive survey on Bayesian RL algorithms and their theoretical and empirical properties.",
+  "authors": [
+   "Mohammed Ghavamzadeh",
+   "Shie Mannor",
+   "Joëlle Pineau",
+   "Aviv Tamar"
+  ],
+  "year": 2015
+ },
+ {
+  "work_id": "W2045583991",
+  "title": "Adaptive Video Transmission Control System Based on Reinforcement Learning Approach Over Heterogeneous Networks",
+  "abstract": "Video may pass through various types of heterogeneous networks during the process of transmission, which has adverse impacts on the real-time video quality. Traditional methods focus on how to compress videos based on the video flow without considering the real-time network information. This paper presents an adaptive method that combines video encoding and the video transmission control system over heterogeneous networks. This method includes the following steps: first, to collect and standardize the real-time information describing the network and the video, then to assess the video quality and calculate the video coding rate based on the standardized information, and then to process the encoded compression of the video according to the calculated coding rate and transfer the compressed video. The experiments show that there is a significant improvement for the quality of real-time videos transmission without changing the existing network, particularly the core equipment. Our solution is easy to deploy and implement quickly and may help to extensively ensure video quality for normal users.",
+  "authors": [
+   "Bo Cheng",
+   "Jialin Yang",
+   "Shangguang Wang",
+   "Junliang Chen"
+  ],
+  "year": 2015
+ },
+ {
+  "work_id": "W2460299708",
+  "title": "Terrain-adaptive locomotion skills using deep reinforcement learning",
+  "abstract": "Reinforcement learning offers a promising methodology for developing skills for simulated characters, but typically requires working with sparse hand-crafted features. Building on recent progress in deep reinforcement learning (DeepRL), we introduce a mixture of actor-critic experts (MACE) approach that learns terrain-adaptive dynamic locomotion skills using high-dimensional state and terrain descriptions as input, and parameterized leaps or steps as output actions. MACE learns more quickly than a single actor-critic approach and results in actor-critic experts that exhibit specialization. Additional elements of our solution that contribute towards efficient learning include Boltzmann exploration and the use of initial actor biases to encourage specialization. Results are demonstrated for multiple planar characters and terrain classes.",
+  "authors": [
+   "Xue Bin Peng",
+   "Glen Berseth",
+   "Michiel van de Panne"
+  ],
+  "year": 2016
+ },
+ {
+  "work_id": "W2343090116",
+  "title": "Adaptive Fault-Tolerant Tracking Control for MIMO Discrete-Time Systems via Reinforcement Learning Algorithm With Less Learning Parameters",
+  "abstract": "This paper is concerned with a reinforcement learning-based adaptive tracking control technique to tolerate faults for a class of unknown multiple-input multiple-output nonlinear discrete-time systems with less learning parameters. Not only abrupt faults are considered, but also incipient faults are taken into account. Based on the approximation ability of neural networks, action network and critic network are proposed to approximate the optimal signal and to generate the novel cost function, respectively. The remarkable feature of the proposed method is that it can reduce the cost in the procedure of tolerating fault and can decrease the number of learning parameters and thus reduce the computational burden. Stability analysis is given to ensure the uniform boundedness of adaptive control signals and tracking errors. Finally, three simulations are used to show the effectiveness of the present strategy.",
+  "authors": [
+   "Lei Liu",
+   "Zhanshan Wang",
+   "Huaguang Zhang"
+  ],
+  "year": 2016
+ },
+ {
+  "work_id": "W2331039021",
+  "title": "Model-Free Reinforcement Learning and Bayesian Classification in System-Level Power Management",
+  "abstract": "To cope with uncertainties and variations that emanate from hardware and/or application characteristics, dynamic power management (DPM) frameworks must be able to learn about the system inputs and environmental variations, and adjust the power management policy on the fly. In this paper, an online adaptive DPM technique is presented based on the model-free reinforcement learning (RL) method, which requires no prior knowledge of the state transition probability function and the reward function. In particular, this paper employs the temporal difference (TD) learning method for semi-Markov decision process (SMDP) as the model-free RL technique since the TD method can accelerate convergence and alleviate the reliance on the Markovian property of the power-managed system. In addition, a novel workload predictor based on an online Bayesian classifier is presented to provide effective estimation of the workload characteristics for the RL algorithm. Several improvements are proposed to manage the size of the action space for the learning algorithm, enhance its convergence speed, and dynamically change the action set associated with each system state. In the proposed DPM framework, power-latency tradeoffs of the power-managed system can be precisely controlled based on a user-defined parameter. Extensive experiments on hard disk drives and wireless network cards show that the maximum power saving without sacrificing any latency is 18.6 percent compared to a reference expert-based approach. Alternatively, the maximum latency saving without any power dissipation increase is 73.0 percent compared to the existing best-of-breed DPM techniques.",
+  "authors": [
+   "Yanzhi Wang",
+   "Massoud Pedram"
+  ],
+  "year": 2016
+ },
+ {
+  "work_id": "W2725582697",
+  "title": "A Survey on Reinforcement Learning Models and Algorithms for Traffic Signal Control",
+  "abstract": "Traffic congestion has become a vexing and complex issue in many urban areas. Of particular interest are the intersections where traffic bottlenecks are known to occur despite being traditionally signalized. Reinforcement learning (RL), which is an artificial intelligence approach, has been adopted in traffic signal control for monitoring and ameliorating traffic congestion. RL enables autonomous decision makers (e.g., traffic signal controllers) to observe, learn, and select the optimal action (e.g., determining the appropriate traffic phase and its timing) to manage traffic such that system performance is improved. This article reviews various RL models and algorithms applied to traffic signal control in the aspects of the representations of the RL model (i.e., state, action, and reward), performance measures, and complexity to establish a foundation for further investigation in this research field. Open issues are presented toward the end of this article to discover new research areas with the objective to spark new interest in this research field.",
+  "authors": [
+   "Kok‐Lim Alvin Yau",
+   "Junaid Qadir",
+   "Hooi Ling Khoo",
+   "Mee Hong Ling",
+   "Peter Komisarczuk"
+  ],
+  "year": 2017
+ },
+ {
+  "work_id": "W2772526503",
+  "title": "Software-Defined Networks with Mobile Edge Computing and Caching for Smart Cities: A Big Data Deep Reinforcement Learning Approach",
+  "abstract": "Recent advances in networking, caching, and computing have significant impacts on the developments of smart cities. Nevertheless, these important enabling technologies have traditionally been studied separately in the existing works on smart cities. In this article, we propose an integrated framework that can enable dynamic orchestration of networking, caching, and computing resources to improve the performance of applications for smart cities. Then we present a novel big data deep reinforcement learning approach. Simulation results with different system parameters are presented to show the effectiveness of the proposed scheme.",
+  "authors": [
+   "Ying He",
+   "F. Richard Yu",
+   "Nan Zhao",
+   "Victor C. M. Leung",
+   "Hongxi Yin"
+  ],
+  "year": 2017
+ },
+ {
+  "work_id": "W2744316982",
+  "title": "Motor Anomaly Detection for Unmanned Aerial Vehicles Using Reinforcement Learning",
+  "abstract": "Unmanned aerial vehicles (UAVs) are used in many fields including weather observation, farming, infrastructure inspection, and monitoring of disaster areas. However, the currently available UAVs are prone to crashing. The goal of this paper is the development of an anomaly detection system to prevent the motor of the drone from operating at abnormal temperatures. In this anomaly detection system, the temperature of the motor is recorded using DS18B20 sensors. Then, using reinforcement learning, the motor is judged to be operating abnormally by a Raspberry Pi processing unit. A specially built user interface allows the activity of the Raspberry Pi to be tracked on a Tablet for observation purposes. The proposed system provides the ability to land a drone when the motor temperature exceeds an automatically generated threshold. The experimental results confirm that the proposed system can safely control the drone using information obtained from temperature sensors attached to the motor.",
+  "authors": [
+   "Huimin Lu",
+   "Yujie Li",
+   "Shenglin Mu",
+   "Dong Wang",
+   "Hyoung Seop Kim",
+   "Seiichi Serikawa"
+  ],
+  "year": 2017
+ },
+ {
+  "work_id": "W2909713847",
+  "title": "Interaction Algorithm Effect on Human Experience with Reinforcement Learning",
+  "abstract": "A goal of interactive machine learning (IML) is to enable people with no specialized training to intuitively teach intelligent agents how to perform tasks. Toward achieving that goal, we are studying how the design of the interaction method for a Bayesian Q-Learning algorithm impacts aspects of the human’s experience of teaching the agent using human-centric metrics such as frustration in addition to traditional ML performance metrics. This study investigated two methods of natural language instruction: critique and action advice. We conducted a human-in-the-loop experiment in which people trained two agents with different teaching methods but, unknown to each participant, the same underlying reinforcement learning algorithm. The results show an agent that learns from action advice creates a better user experience compared to an agent that learns from binary critique in terms of frustration, perceived performance, transparency, immediacy, and perceived intelligence. We identified nine main characteristics of an IML algorithm’s design that impact the human’s experience with the agent, including using human instructions about the future, compliance with input, empowerment, transparency, immediacy, a deterministic interaction, the complexity of the instructions, accuracy of the speech recognition software, and the robust and flexible nature of the interaction algorithm.",
+  "authors": [
+   "Samantha Krening",
+   "Karen M. Feigh"
+  ],
+  "year": 2018
+ },
+ {
+  "work_id": "W2811441028",
+  "title": "Learning basketball dribbling skills using trajectory optimization and deep reinforcement learning",
+  "abstract": "Basketball is one of the world's most popular sports because of the agility and speed demonstrated by the players. This agility and speed makes designing controllers to realize robust control of basketball skills a challenge for physics-based character animation. The highly dynamic behaviors and precise manipulation of the ball that occur in the game are difficult to reproduce for simulated players. In this paper, we present an approach for learning robust basketball dribbling controllers from motion capture data. Our system decouples a basketball controller into locomotion control and arm control components and learns each component separately. To achieve robust control of the ball, we develop an efficient pipeline based on trajectory optimization and deep reinforcement learning and learn non-linear arm control policies. We also present a technique for learning skills and the transition between skills simultaneously. Our system is capable of learning robust controllers for various basketball dribbling skills, such as dribbling between the legs and crossover moves. The resulting control graphs enable a simulated player to perform transitions between these skills and respond to user interaction.",
+  "authors": [
+   "Libin Liu",
+   "Jessica K. Hodgins"
+  ],
+  "year": 2018
+ },
+ {
+  "work_id": "W2822752092",
+  "title": "A Tour of Reinforcement Learning: The View from Continuous Control",
+  "abstract": "This article surveys reinforcement learning from the perspective of optimization and control, with a focus on continuous control applications. It reviews the general formulation, terminology, and typical experimental implementations of reinforcement learning as well as competing solution paradigms. In order to compare the relative merits of various techniques, it presents a case study of the linear quadratic regulator (LQR) with unknown dynamics, perhaps the simplest and best-studied problem in optimal control. It also describes how merging techniques from learning theory and control can provide nonasymptotic characterizations of LQR performance and shows that these characterizations tend to match experimental behavior. In turn, when revisiting more complex applications, many of the observed phenomena in LQR persist. In particular, theory and experiment demonstrate the role and importance of models and the cost of generality in reinforcement learning algorithms. The article concludes with a discussion of some of the challenges in designing learning systems that safely and reliably interact with complex and uncertain environments and how tools from reinforcement learning and control might be combined to approach these challenges.",
+  "authors": [
+   "Benjamin Recht"
+  ],
+  "year": 2018
+ },
+ {
+  "work_id": "W2914949695",
+  "title": "Graph-Based Skill Acquisition For Reinforcement Learning",
+  "abstract": "In machine learning, Reinforcement Learning (RL) is an important tool for creating intelligent agents that learn solely through experience. One particular subarea within the RL domain that has received great attention is how to define macro-actions, which are temporal abstractions composed of a sequence of primitive actions. This subarea, loosely called skill acquisition, has been under development for several years and has led to better results in a diversity of RL problems. Among the many skill acquisition approaches, graph-based methods have received considerable attention. This survey presents an overview of graph-based skill acquisition methods for RL. We cover a diversity of these approaches and discuss how they evolved throughout the years. Finally, we also discuss the current challenges and open issues in the area of graph-based skill acquisition for RL.",
+  "authors": [
+   "Matheus R. F. Mendonça",
+   "Artur Ziviani",
+   "André M. S. Barreto"
+  ],
+  "year": 2019
+ },
+ {
+  "work_id": "W2997873913",
+  "title": "A Reinforcement Learning Approach to Robust Scheduling of Semiconductor Manufacturing Facilities",
+  "abstract": "As semiconductor manufacturers, recently, have focused on producing multichip products (MCPs), scheduling semiconductor manufacturing operations become complicated due to the constraints related to reentrant production flows, sequence-dependent setups, and alternative machines. At the same time, the scheduling problems need to be solved frequently to effectively manage the variabilities in production requirements, available machines, and initial setup status. To minimize the makespan for an MCP scheduling problem, we propose a setup change scheduling method using reinforcement learning (RL) in which each agent determines setup decisions in a decentralized manner and learns a centralized policy by sharing a neural network among the agents to deal with the changes in the number of machines. Furthermore, novel definitions of state, action, and reward are proposed to address the variabilities in production requirements and initial setup status. Numerical experiments demonstrate that the proposed approach outperforms the rule-based, metaheuristic, and other RL methods in terms of the makespan while incurring shorter computation time than the metaheuristics considered.",
+  "authors": [
+   "In-Beom Park",
+   "Jaeseok Huh",
+   "Joong-Kyun Kim",
+   "Jonghun Park"
+  ],
+  "year": 2019
+ },
+ {
+  "work_id": "W2945235903",
+  "title": "Computation Offloading in Multi-Access Edge Computing Using a Deep Sequential Model Based on Reinforcement Learning",
+  "abstract": "MEC is an emerging paradigm that utilizes computing resources at the network edge to deploy heterogeneous applications and services. In the MEC system, mobile users and enterprises can offload computation-intensive tasks to nearby computing resources to reduce latency and save energy. When users make offloading decisions, the task dependency needs to be considered. Due to the NP-hardness of the offloading problem, the existing solutions are mainly heuristic, and therefore have difficulties in adapting to the increasingly complex and dynamic applications. To address the challenges of task dependency and adapting to dynamic scenarios, we propose a new DRL-based offloading framework, which can efficiently learn the offloading policy uniquely represented by a specially designed S2S neural network. The proposed DRL solution can automatically discover the common patterns behind various applications so as to infer an optimal offloading policy in different scenarios. Simulation experiments were conducted to evaluate the performance of the proposed DRL-based method with different data transmission rates and task numbers. The results show that our method outperforms two heuristic baselines and achieves nearly optimal performance.",
+  "authors": [
+   "Jin Wang",
+   "Jia Hu",
+   "Geyong Min",
+   "Wenhan Zhan",
+   "Qiang Ni",
+   "Nektarios Georgalas"
+  ],
+  "year": 2019
+ },
+ {
+  "work_id": "W3003291777",
+  "title": "Adaptive Incident Radiance Field Sampling and Reconstruction Using Deep Reinforcement Learning",
+  "abstract": "Serious noise affects the rendering of global illumination using Monte Carlo (MC) path tracing when insufficient samples are used. The two common solutions to this problem are filtering noisy inputs to generate smooth but biased results and sampling the MC integrand with a carefully crafted probability distribution function (PDF) to produce unbiased results. Both solutions benefit from an efficient incident radiance field sampling and reconstruction algorithm. This study proposes a method for training quality and reconstruction networks (Q- and R-networks, respectively) with a massive offline dataset for the adaptive sampling and reconstruction of first-bounce incident radiance fields. The convolutional neural network (CNN)-based R-network reconstructs the incident radiance field in a 4D space, whereas the deep reinforcement learning (DRL)-based Q-network predicts and guides the adaptive sampling process. The approach is verified by comparing it with state-of-the-art unbiased path guiding methods and filtering methods. Results demonstrate improvements for unbiased path guiding and competitive performance in biased applications, including filtering and irradiance caching.",
+  "authors": [
+   "Yuchi Huo",
+   "Rui Wang",
+   "Ruzahng Zheng",
+   "Hualin Xu",
+   "Hujun Bao",
+   "Sung‐Eui Yoon"
+  ],
+  "year": 2020
+ },
+ {
+  "work_id": "W3037694644",
+  "title": "Multi‐robot path planning based on a deep reinforcement learning DQN algorithm",
+  "abstract": "The unmanned warehouse dispatching system of the ‘goods to people’ model uses a structure mainly based on a handling robot, which saves considerable manpower and improves the efficiency of the warehouse picking operation. However, the optimal performance of the scheduling system algorithm has high requirements. This study uses a deep Q‐network (DQN) algorithm in a deep reinforcement learning algorithm, which combines the Q‐learning algorithm, an empirical playback mechanism, and the volume‐based technology of productive neural networks to generate target Q ‐values to solve the problem of multi‐robot path planning. The aim of the Q‐learning algorithm in deep reinforcement learning is to address two shortcomings of the robot path‐planning problem: slow convergence and excessive randomness. Preceding the start of the algorithmic process, prior knowledge and prior rules are used to improve the DQN algorithm. Simulation results show that the improved DQN algorithm converges faster than the classic deep reinforcement learning algorithm and can more quickly learn the solutions to path‐planning problems. This improves the efficiency of multi‐robot path planning.",
+  "authors": [
+   "Yang Yang",
+   "Juntao Li",
+   "Peng Lingling"
+  ],
+  "year": 2020
+ },
+ {
+  "work_id": "W3006978394",
+  "title": "Deep Reinforcement Learning-Based Approach to Tackle Topic-Aware Influence Maximization",
+  "abstract": "Abstract Motivated by the application of viral marketing , the topic-aware influence maximization (TIM) problem has been proposed to identify the most influential users under given topics. In particular, it aims to find k seeds (users) in social network G , such that the seeds can maximize the influence on users under the specific query topics and diffusion model such as independent cascade (IC) or linear threshold (LT). This problem has been proved to be NP-hard, and most of the proposed techniques suffer from the efficiency issue due to the lack of generalization. Even worse, the design of these algorithms requires significant specialized knowledge which is hard to be understood and implemented. To overcome these issues, this paper aims to learn a generalized heuristic framework to solve TIM problems by meta-learning. To this end, we first propose two topic-aware social influence propagation models based on IC and LT model, respectively, which is conducive to better advertising injections. We then encode the feature of each node by a vector and introduce a model, called deep influence evaluation model , to evaluate the user influence under different circumstances. Based on this model, we can construct the solution according to the influence evaluations efficiently, rather than spending a high cost to compute the exact influence by considering the complex graph structure. We conducted experiments on generated graph instances and real-world social networks. The results show the superiority in performance and comparable quality of our framework.",
+  "authors": [
+   "Shan Tian",
+   "Songsong Mo",
+   "Liwei Wang",
+   "Zhiyong Peng"
+  ],
+  "year": 2020
+ },
+ {
+  "work_id": "W3216656735",
+  "title": "Reinforcement Learning in Healthcare: A Survey",
+  "abstract": "As a subfield of machine learning, reinforcement learning (RL) aims at optimizing decision making by using interaction samples of an agent with its environment and the potentially delayed feedbacks. In contrast to traditional supervised learning that typically relies on one-shot, exhaustive, and supervised reward signals, RL tackles sequential decision-making problems with sampled, evaluative, and delayed feedbacks simultaneously. Such a distinctive feature makes RL techniques a suitable candidate for developing powerful solutions in various healthcare domains, where diagnosing decisions or treatment regimes are usually characterized by a prolonged period with delayed feedbacks. By first briefly examining theoretical foundations and key methods in RL research, this survey provides an extensive overview of RL applications in a variety of healthcare domains, ranging from dynamic treatment regimes in chronic diseases and critical care, automated medical diagnosis, and many other control or scheduling problems that have infiltrated every aspect of the healthcare system. In addition, we discuss the challenges and open issues in the current research and highlight some potential solutions and directions for future research.",
+  "authors": [
+   "Chao Yu",
+   "Jiming Liu",
+   "Shamim Nemati",
+   "Guosheng Yin"
+  ],
+  "year": 2021
+ },
+ {
+  "work_id": "W3168892396",
+  "title": "Hierarchical Reinforcement Learning",
+  "abstract": "Hierarchical Reinforcement Learning (HRL) enables autonomous decomposition of challenging long-horizon decision-making tasks into simpler subtasks. During the past years, the landscape of HRL research has grown profoundly, resulting in copious approaches. A comprehensive overview of this vast landscape is necessary to study HRL in an organized manner. We provide a survey of the diverse HRL approaches concerning the challenges of learning hierarchical policies, subtask discovery, transfer learning, and multi-agent learning using HRL. The survey is presented according to a novel taxonomy of the approaches. Based on the survey, a set of important open problems is proposed to motivate the future research in HRL. Furthermore, we outline a few suitable task domains for evaluating the HRL approaches and a few interesting examples of the practical applications of HRL in the Supplementary Material.",
+  "authors": [
+   "Shubham Pateria",
+   "Budhitama Subagdja",
+   "Ah‐Hwee Tan",
+   "Chai Quek"
+  ],
+  "year": 2021
+ },
+ {
+  "work_id": "W3027406032",
+  "title": "A Survey of Reinforcement Learning Algorithms for Dynamically Varying Environments",
+  "abstract": "Reinforcement learning (RL) algorithms find applications in inventory control, recommender systems, vehicular traffic management, cloud computing, and robotics. The real-world complications arising in these domains makes them difficult to solve with the basic assumptions underlying classical RL algorithms. RL agents in these applications often need to react and adapt to changing operating conditions. A significant part of research on single-agent RL techniques focuses on developing algorithms when the underlying assumption of stationary environment model is relaxed. This article provides a survey of RL methods developed for handling dynamically varying environment models. The goal of methods not limited by the stationarity assumption is to help autonomous agents adapt to varying operating conditions. This is possible either by minimizing the rewards lost during learning by RL agent or by finding a suitable policy for the RL agent that leads to efficient operation of the underlying system. A representative collection of these algorithms is discussed in detail in this work along with their categorization and their relative merits and demerits. Additionally, we also review works that are tailored to application domains. Finally, we discuss future enhancements for this field.",
+  "authors": [
+   "Sindhu Padakandla"
+  ],
+  "year": 2021
+ },
+ {
+  "work_id": "W3123348991",
+  "title": "Reinforcement Learning based Recommender Systems: A Survey",
+  "abstract": "Recommender systems (RSs) have become an inseparable part of our everyday lives. They help us find our favorite items to purchase, our friends on social networks, and our favorite movies to watch. Traditionally, the recommendation problem was considered to be a classification or prediction problem, but it is now widely agreed that formulating it as a sequential decision problem can better reflect the user-system interaction. Therefore, it can be formulated as a Markov decision process (MDP) and be solved by reinforcement learning (RL) algorithms. Unlike traditional recommendation methods, including collaborative filtering and content-based filtering, RL is able to handle the sequential, dynamic user-system interaction and to take into account the long-term user engagement. Although the idea of using RL for recommendation is not new and has been around for about two decades, it was not very practical, mainly because of scalability problems of traditional RL algorithms. However, a new trend has emerged in the field since the introduction of deep reinforcement learning (DRL) , which made it possible to apply RL to the recommendation problem with large state and action spaces. In this paper, a survey on reinforcement learning based recommender systems (RLRSs) is presented. Our aim is to present an outlook on the field and to provide the reader with a fairly complete knowledge of key concepts of the field. We first recognize and illustrate that RLRSs can be generally classified into RL- and DRL-based methods. Then, we propose an RLRS framework with four components, i.e., state representation, policy optimization, reward formulation, and environment building, and survey RLRS algorithms accordingly. We highlight emerging topics and depict important trends using various graphs and tables. Finally, we discuss important aspects and challenges that can be addressed in the future.",
+  "authors": [
+   "M. Mehdi Afsar",
+   "Trafford Crump",
+   "Behrouz H. Far"
+  ],
+  "year": 2022
+ },
+ {
+  "work_id": "W4220970489",
+  "title": "Explainable Deep Reinforcement Learning: State of the Art and Challenges",
+  "abstract": "Interpretability, explainability, and transparency are key issues to introducing artificial intelligence methods in many critical domains. This is important due to ethical concerns and trust issues strongly connected to reliability, robustness, auditability, and fairness, and has important consequences toward keeping the human in the loop in high levels of automation, especially in critical cases for decision making, where both (human and the machine) play important roles. Although the research community has given much attention to explainability of closed (or black) prediction boxes, there are tremendous needs for explainability of closed-box methods that support agents to act autonomously in the real world. Reinforcement learning methods, and especially their deep versions, are such closed-box methods. In this article, we aim to provide a review of state-of-the-art methods for explainable deep reinforcement learning methods, taking also into account the needs of human operators—that is, of those who make the actual and critical decisions in solving real-world problems. We provide a formal specification of the deep reinforcement learning explainability problems, and we identify the necessary components of a general explainable reinforcement learning framework. Based on these, we provide a comprehensive review of state-of-the-art methods, categorizing them into classes according to the paradigm they follow, the interpretable models they use, and the surface representation of explanations provided. The article concludes by identifying open questions and important challenges.",
+  "authors": [
+   "George A. Vouros"
+  ],
+  "year": 2022
+ },
+ {
+  "work_id": "W4288050797",
+  "title": "A Bayesian Approach for Quantifying Data Scarcity when Modeling Human Behavior via Inverse Reinforcement Learning",
+  "abstract": "Computational models that formalize complex human behaviors enable study and understanding of such behaviors. However, collecting behavior data required to estimate the parameters of such models is often tedious and resource intensive. Thus, estimating dataset size as part of data collection planning (also known as Sample Size Determination) is important to reduce the time and effort of behavior data collection while maintaining an accurate estimate of model parameters. In this article, we present a sample size determination method based on Uncertainty Quantification (UQ) for a specific Inverse Reinforcement Learning (IRL) model of human behavior, in two cases: (1) pre-hoc experiment design—conducted in the planning stage before any data is collected, to guide the estimation of how many samples to collect; and (2) post-hoc dataset analysis—performed after data is collected, to decide if the existing dataset has sufficient samples and whether more data is needed. We validate our approach in experiments with a realistic model of behaviors of people with Multiple Sclerosis (MS) and illustrate how to pick a reasonable sample size target. Our work enables model designers to perform a deeper, principled investigation of the effects of dataset size on IRL model parameters.",
+  "authors": [
+   "Tahera Hossain",
+   "Wanggang Shen",
+   "Anindya Das Antar",
+   "Snehal Prabhudesai",
+   "Sozo Inoue",
+   "Xun Huan",
+   "Nikola Banović"
+  ],
+  "year": 2022
+ },
+ {
+  "work_id": "W4386193536",
+  "title": "Explainable Reinforcement Learning: A Survey and Comparative Review",
+  "abstract": "Explainable reinforcement learning (XRL) is an emerging subfield of explainable machine learning that has attracted considerable attention in recent years. The goal of XRL is to elucidate the decision-making process of reinforcement learning (RL) agents in sequential decision-making settings. Equipped with this information, practitioners can better understand important questions about RL agents (especially those deployed in the real world), such as what the agents will do and why. Despite increased interest, there exists a gap in the literature for organizing the plethora of papers—especially in a way that centers the sequential decision-making nature of the problem. In this survey, we propose a novel taxonomy for organizing the XRL literature that prioritizes the RL setting. We propose three high-level categories: feature importance, learning process and Markov decision process, and policy-level. We overview techniques according to this taxonomy, highlighting challenges and opportunities for future work. We conclude by using these gaps to motivate and outline a roadmap for future work.",
+  "authors": [
+   "Stephanie Milani",
+   "Nicholay Topin",
+   "Manuela Veloso",
+   "Fei Fang"
+  ],
+  "year": 2023
+ },
+ {
+  "work_id": "W4379986188",
+  "title": "Reinforcement Learning Methods for Computation Offloading: A Systematic Review",
+  "abstract": "Today, cloud computation offloading may not be an appropriate solution for delay-sensitive applications due to the long distance between end-devices and remote datacenters. In addition, offloading to a remote cloud can consume bandwidth and dramatically increase costs. However, end-devices such as sensors, cameras, and smartphones have limited computing and storage capacity. Processing tasks on such battery-powered and energy-constrained devices becomes even more complex. To address these challenges, a new paradigm called Edge Computing (EC) emerged nearly a decade ago to bring computing resources closer to end-devices. Here, edge servers located between the end-device and the remote cloud perform user tasks. Recently, several new computing paradigms such as Mobile Edge Computing (MEC) and Fog Computing (FC) have emerged to complement Cloud Computing (CC) and EC. Although these paradigms are heterogeneous, they can further reduce energy consumption and task response time, especially for delay-sensitive applications. Computation offloading is a multi-objective, NP-hard optimization problem. A significant part of previous research in this field is devoted to Machine Learning (ML) methods. One of the essential types of ML is Reinforcement Learning (RL), in which an agent learns how to make the best decision using the experiences gained from the environment. This article provides a systematic review of the widely used RL approaches in computation offloading. It covers research in complementary paradigms such as mobile cloud computing, edge computing, fog computing, and the Internet of Things. We explain the reasons for using various RL methods in computation offloading from a technical point of view. This analysis includes both binary offloading and partial offloading techniques. For each method, the essential elements of RL and the characteristics of the environment are discussed regarding the most important criteria. Research challenges and Future trends are also mentioned.",
+  "authors": [
+   "Zeinab Zabihi",
+   "Amir Masoud Eftekhari Moghadam",
+   "Mohammad Hossein Rezvani"
+  ],
+  "year": 2023
+ },
+ {
+  "work_id": "W4386370543",
+  "title": "Relieving Popularity Bias in Interactive Recommendation: A Diversity-Novelty-Aware Reinforcement Learning Approach",
+  "abstract": "While personalization increases the utility of item recommendation, it also suffers from the issue of popularity bias. However, previous methods emphasize adopting supervised learning models to relieve popularity bias in the static recommendation, ignoring the dynamic transfer of user preference and amplification effects of the feedback loop in the recommender system (RS). In this paper, we focus on studying this issue in the interactive recommendation. We argue that diversification and novelty are both equally crucial for improving user satisfaction of IRS in the aforementioned setting. To achieve this goal, we propose a D iversity- N ovelty- a ware I nteractive R ecommendation framework (DNaIR) that augments offline reinforcement learning (RL) to increase the exposure rate of long-tail items with high quality. Its main idea is first to aggregate the item similarity, popularity, and quality into the reward model to help the planning of RL policy. It then designs a diversity-aware stochastic action generator to achieve an efficient and lightweight DNaIR algorithm. Extensive experiments are conducted on the three real-world datasets and an authentic RL environment (Virtual-Taobao). The experiments show that our model can better and full use of the long-tail items to improve recommendation satisfaction, especially those low popularity items with high-quality ones, thus achieving state-of-the-art performance.",
+  "authors": [
+   "Xiaoyu Shi",
+   "Quanliang Liu",
+   "Hong Xie",
+   "Di Wu",
+   "Bo Peng",
+   "Mingsheng Shang",
+   "Defu Lian"
+  ],
+  "year": 2023
+ },
+ {
+  "work_id": "W4404738510",
+  "title": "Deep Reinforcement Learning for Robotics: A Survey of Real-World Successes",
+  "abstract": "Reinforcement learning (RL), particularly its combination with deep neural networks, referred to as deep RL (DRL), has shown tremendous promise across a wide range of applications, suggesting its potential for enabling the development of sophisticated robotic behaviors. Robotics problems, however, pose fundamental difficulties for the application of RL, stemming from the complexity and cost of interacting with the physical world. This article provides a modern survey of DRL for robotics, with a particular focus on evaluating the real-world successes achieved with DRL in realizing several key robotic competencies. Our analysis aims to identify the key factors underlying those exciting successes, reveal underexplored areas, and provide an overall characterization of the status of DRL in robotics. We highlight several important avenues for future work, emphasizing the need for stable and sample-efficient real-world RL paradigms; holistic approaches for discovering and integrating various competencies to tackle complex long-horizon, open-world tasks; and principled development and evaluation procedures. This survey is designed to offer insights for both RL practitioners and roboticists toward harnessing RL's power to create generally capable real-world robotic systems.",
+  "authors": [
+   "Chen Tang",
+   "Ben Abbatematteo",
+   "Jiaheng Hu",
+   "Rohan Chandra",
+   "Roberto Martín-Martín",
+   "Peter Stone"
+  ],
+  "year": 2024
+ },
+ {
+  "work_id": "W4404199324",
+  "title": "Adaptive control and reinforcement learning for vehicle suspension control: A review",
+  "abstract": "The growing adoption of electric vehicles has drawn a renewed interest in intelligent vehicle subsystems, including active suspension. Control methods for active suspension systems have been a research focus for many years, and with recent advances in machine learning, learning-based active suspension control strategies have emerged. Classically, suspension controllers have been model-based and thus limited by necessarily simplified models of complex suspension dynamics. Learning-based methods address these limitations by leveraging system response measurements to improve the system model or controller itself. Previous surveys have reviewed conventional and preview-based active suspension controllers, but a detailed examination of newer learning-based methods is lacking. This article addresses this gap by presenting the mathematical foundations of these controllers and categorizing existing implementations. The review classifies learning-based suspension control literature into two main categories: adaptive control, which emphasizes stability through online learning, and reinforcement learning, which aims for optimality through extensive system interactions. Within these broader domains, various sub-categories are identified, allowing practitioners and researchers to quickly find relevant work within a specific branch of learning-based suspension control. Furthermore, this article discusses current trends in the field and proposes directions for future investigations. These contributions can serve as a comprehensive guide for the future research and development of learning-based suspension controllers. • Reviews reinforcement learning-based active and semi-active suspension controllers. • Reviews adaptive control-based active and semi-active suspension controllers. • Identifies future research opportunities in the domain of learning-based suspension control.",
+  "authors": [
+   "Jeremy B. Kimball",
+   "Benjamin DeBoer",
+   "Kush Bubbar"
+  ],
+  "year": 2024
+ },
+ {
+  "work_id": "W4401541997",
+  "title": "Modular control architecture for safe marine navigation: Reinforcement learning with predictive safety filters",
+  "abstract": "Many autonomous systems are safety-critical, making it essential to have a closed-loop control system that satisfies constraints arising from underlying physical limitations and safety aspects in a robust manner. However, this is often challenging to achieve for real-world systems. For example, autonomous ships at sea have nonlinear and uncertain dynamics and are subject to numerous time-varying environmental disturbances such as waves, currents, and wind. There is increasing interest in using machine learning-based approaches to adapt these systems to more complex scenarios, but there are few standard frameworks that guarantee the safety and stability of such systems. Recently, predictive safety filters (PSF) have emerged as a promising method to ensure constraint satisfaction in learning-based control, bypassing the need for explicit constraint handling in the learning algorithms themselves. The safety filter approach leads to a modular separation of the problem, allowing the use of arbitrary control policies in a task-agnostic way. The filter takes in a potentially unsafe control action from the main controller and solves an optimization problem to compute a minimal perturbation of the proposed action that adheres to both physical and safety constraints. In this work, we combine reinforcement learning (RL) with predictive safety filtering in the context of marine navigation and control. The RL agent is trained on path-following and safety adherence across a wide range of randomly generated environments, while the predictive safety filter continuously monitors the agents' proposed control actions and modifies them if necessary. The combined PSF/RL scheme is implemented on a simulated model of Cybership II, a miniature replica of a typical supply ship. Safety performance and learning rate are evaluated and compared with those of a standard, non-PSF, RL agent. It is demonstrated that the predictive safety filter is able to keep the vessel safe, while not prohibiting the learning rate and performance of the RL agent.",
+  "authors": [
+   "Aksel Vaaler",
+   "Svein Jostein Husa",
+   "Daniel Menges",
+   "Thomas Nakken Larsen",
+   "Adil Rasheed"
+  ],
+  "year": 2024
+ }
+]

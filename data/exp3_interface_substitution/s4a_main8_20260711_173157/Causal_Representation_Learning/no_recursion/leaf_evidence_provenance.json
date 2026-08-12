@@ -1,0 +1,422 @@
+{
+  "arxiv_1811.00007": {
+    "doc_id": "arxiv_1811.00007",
+    "title": "Robustly Disentangled Causal Mechanisms: Validating Deep Representations\n  for Interventional Robustness",
+    "year": 2019,
+    "venue": "stat.ML",
+    "abstract": "The ability to learn disentangled representations that split underlying sources of variation in high dimensional, unstructured data is important for data efficient and robust use of neural networks. While various approaches aiming towards this goal have been proposed in recent times, a commonly accepted definition and validation procedure is missing. We provide a causal perspective on representation learning which covers disentanglement and domain shift robustness as special cases. Our causal framework allows us to introduce a new metric for the quantitative evaluation of deep latent variable models. We show how this metric can be estimated from labeled observational data and further provide an efficient estimation algorithm that scales linearly in the dataset size."
+  },
+  "arxiv_2004.08697": {
+    "doc_id": "arxiv_2004.08697",
+    "title": "CausalVAE: Structured Causal Disentanglement in Variational Autoencoder",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Learning disentanglement aims at finding a low dimensional representation which consists of multiple explanatory and generative factors of the observational data. The framework of variational autoencoder (VAE) is commonly used to disentangle independent factors from observations. However, in real scenarios, factors with semantics are not necessarily independent. Instead, there might be an underlying causal structure which renders these factors dependent. We thus propose a new VAE based framework named CausalVAE, which includes a Causal Layer to transform independent exogenous factors into causal endogenous ones that correspond to causally related concepts in data. We further analyze the model identifiabitily, showing that the proposed model learned from observations recovers the true one up to a certain degree by providing supervision signals (e.g. feature labels). Experiments are conducted on various datasets, including synthetic and real word benchmark CelebA. Results show that the causal representations learned by CausalVAE are semantically interpretable, and their causal relationship as a Directed Acyclic Graph (DAG) is identified with good accuracy. Furthermore, we demonstrate"
+  },
+  "arxiv_2010.02637": {
+    "doc_id": "arxiv_2010.02637",
+    "title": "Weakly Supervised Disentangled Generative Causal Representation Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "This paper proposes a Disentangled gEnerative cAusal Representation (DEAR) learning method under appropriate supervised information. Unlike existing disentanglement methods that enforce independence of the latent variables, we consider the general case where the underlying factors of interests can be causally related. We show that previous methods with independent priors fail to disentangle causally related factors even under supervision. Motivated by this finding, we propose a new disentangled learning method called DEAR that enables causal controllable generation and causal representation learning. The key ingredient of this new formulation is to use a structural causal model (SCM) as the prior distribution for a bidirectional generative model. The prior is then trained jointly with a generator and an encoder using a suitable GAN algorithm incorporated with supervised information on the ground-truth factors and their underlying causal structure. We provide theoretical justification on the identifiability and asymptotic convergence of the proposed method. We conduct extensive experiments on both synthesized and real data sets to demonstrate the effectiveness of DEAR in causal cont"
+  },
+  "arxiv_2011.02203": {
+    "doc_id": "arxiv_2011.02203",
+    "title": "Latent Causal Invariant Model",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Current supervised learning can learn spurious correlation during the data-fitting process, imposing issues regarding interpretability, out-of-distribution (OOD) generalization, and robustness. To avoid spurious correlation, we propose a Latent Causal Invariance Model (LaCIM) which pursues causal prediction. Specifically, we introduce latent variables that are separated into (a) output-causative factors and (b) others that are spuriously correlated to the output via confounders, to model the underlying causal factors. We further assume the generating mechanisms from latent space to observed data to be causally invariant. We give the identifiable claim of such invariance, particularly the disentanglement of output-causative factors from others, as a theoretical guarantee for precise inference and avoiding spurious correlation. We propose a Variational-Bayesian-based method for estimation and to optimize over the latent space for prediction. The utility of our approach is verified by improved interpretability, prediction power on various OOD scenarios (including healthcare) and robustness on security."
+  },
+  "arxiv_2106.04619": {
+    "doc_id": "arxiv_2106.04619",
+    "title": "Self-Supervised Learning with Data Augmentations Provably Isolates\n  Content from Style",
+    "year": 2022,
+    "venue": "stat.ML",
+    "abstract": "Self-supervised representation learning has shown remarkable success in a number of domains. A common practice is to perform data augmentation via hand-crafted transformations intended to leave the semantics of the data invariant. We seek to understand the empirical success of this approach from a theoretical perspective. We formulate the augmentation process as a latent variable model by postulating a partition of the latent representation into a content component, which is assumed invariant to augmentation, and a style component, which is allowed to change. Unlike prior work on disentanglement and independent component analysis, we allow for both nontrivial statistical and causal dependencies in the latent space. We study the identifiability of the latent representation based on pairs of views of the observations and prove sufficient conditions that allow us to identify the invariant content partition up to an invertible mapping in both generative and discriminative settings. We find numerical simulations with dependent latent variables are consistent with our theory. Lastly, we introduce Causal3DIdent, a dataset of high-dimensional, visually complex images with rich causal depen"
+  },
+  "arxiv_2109.03795": {
+    "doc_id": "arxiv_2109.03795",
+    "title": "Desiderata for Representation Learning: A Causal Perspective",
+    "year": 2022,
+    "venue": "stat.ML",
+    "abstract": "Representation learning constructs low-dimensional representations to summarize essential features of high-dimensional data. This learning problem is often approached by describing various desiderata associated with learned representations; e.g., that they be non-spurious, efficient, or disentangled. It can be challenging, however, to turn these intuitive desiderata into formal criteria that can be measured and enhanced based on observed data. In this paper, we take a causal perspective on representation learning, formalizing non-spuriousness and efficiency (in supervised representation learning) and disentanglement (in unsupervised representation learning) using counterfactual quantities and observable consequences of causal assertions. This yields computable metrics that can be used to assess the degree to which representations satisfy the desiderata of interest and learn non-spurious and disentangled representations from single observational datasets."
+  },
+  "arxiv_2203.16437": {
+    "doc_id": "arxiv_2203.16437",
+    "title": "Weakly supervised causal representation learning",
+    "year": 2022,
+    "venue": "stat.ML",
+    "abstract": "Learning high-level causal representations together with a causal model from unstructured low-level data such as pixels is impossible from observational data alone. We prove under mild assumptions that this representation is however identifiable in a weakly supervised setting. This involves a dataset with paired samples before and after random, unknown interventions, but no further labels. We then introduce implicit latent causal models, variational autoencoders that represent causal variables and causal structure without having to optimize an explicit discrete graph structure. On simple image data, including a novel dataset of simulated robotic manipulation, we demonstrate that such models can reliably identify the causal structure and disentangle causal variables."
+  },
+  "arxiv_2206.01802": {
+    "doc_id": "arxiv_2206.01802",
+    "title": "Do-Operation Guided Causal Representation Learning with Reduced\n  Supervision Strength",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning has been proposed to encode relationships between factors presented in the high dimensional data. However, existing methods suffer from merely using a large amount of labeled data and ignore the fact that samples generated by the same causal mechanism follow the same causal relationships. In this paper, we seek to explore such information by leveraging do-operation to reduce supervision strength. We propose a framework that implements do-operation by swapping latent cause and effect factors encoded from a pair of inputs. Moreover, we also identify the inadequacy of existing causal representation metrics empirically and theoretically and introduce new metrics for better evaluation. Experiments conducted on both synthetic and real datasets demonstrate the superiorities of our method compared with state-of-the-art methods."
+  },
+  "arxiv_2207.05723": {
+    "doc_id": "arxiv_2207.05723",
+    "title": "Latent Variable Models for Bayesian Causal Discovery",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Learning predictors that do not rely on spurious correlations involves building causal representations. However, learning such a representation is very challenging. We, therefore, formulate the problem of learning a causal representation from high dimensional data and study causal recovery with synthetic data. This work introduces a latent variable decoder model, Decoder BCD, for Bayesian causal discovery and performs experiments in mildly supervised and unsupervised settings. We present a series of synthetic experiments to characterize important factors for causal discovery and show that using known intervention targets as labels helps in unsupervised Bayesian inference over structure and parameters of linear Gaussian additive noise latent structural causal models."
+  },
+  "arxiv_2209.11924": {
+    "doc_id": "arxiv_2209.11924",
+    "title": "Interventional Causal Representation Learning",
+    "year": 2024,
+    "venue": "stat.ML",
+    "abstract": "Causal representation learning seeks to extract high-level latent factors from low-level sensory data. Most existing methods rely on observational data and structural assumptions (e.g., conditional independence) to identify the latent factors. However, interventional data is prevalent across applications. Can interventional data facilitate causal representation learning? We explore this question in this paper. The key observation is that interventional data often carries geometric signatures of the latent factors' support (i.e. what values each latent can possibly take). For example, when the latent factors are causally connected, interventions can break the dependency between the intervened latents' support and their ancestors'. Leveraging this fact, we prove that the latent causal factors can be identified up to permutation and scaling given data from perfect $do$ interventions. Moreover, we can achieve block affine identification, namely the estimated latent factors are only entangled with a few other latents if we have access to data from imperfect interventions. These results highlight the unique power of interventional data in causal representation learning; they can enable p"
+  },
+  "arxiv_2210.13647": {
+    "doc_id": "arxiv_2210.13647",
+    "title": "Temporally Disentangled Representation Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Recently in the field of unsupervised representation learning, strong identifiability results for disentanglement of causally-related latent variables have been established by exploiting certain side information, such as class labels, in addition to independence. However, most existing work is constrained by functional form assumptions such as independent sources or further with linear transitions, and distribution assumptions such as stationary, exponential family distribution. It is unknown whether the underlying latent variables and their causal relations are identifiable if they have arbitrary, nonparametric causal influences in between. In this work, we establish the identifiability theories of nonparametric latent causal processes from their nonlinear mixtures under fixed temporal causal influences and analyze how distribution changes can further benefit the disentanglement. We propose \\textbf{\\texttt{TDRL}}, a principled framework to recover time-delayed latent causal variables and identify their relations from measured sequential data under stationary environments and under different distribution shifts. Specifically, the framework can factorize unknown distribution shifts "
+  },
+  "arxiv_2211.16467": {
+    "doc_id": "arxiv_2211.16467",
+    "title": "Linear Causal Disentanglement via Interventions",
+    "year": 2023,
+    "venue": "stat.ML",
+    "abstract": "Causal disentanglement seeks a representation of data involving latent variables that relate to one another via a causal model. A representation is identifiable if both the latent model and the transformation from latent to observed variables are unique. In this paper, we study observed variables that are a linear transformation of a linear latent causal model. Data from interventions are necessary for identifiability: if one latent variable is missing an intervention, we show that there exist distinct models that cannot be distinguished. Conversely, we show that a single intervention on each latent variable is sufficient for identifiability. Our proof uses a generalization of the RQ decomposition of a matrix that replaces the usual orthogonal and upper triangular conditions with analogues depending on a partial order on the rows of the matrix, with partial order determined by a latent causal model. We corroborate our theoretical results with a method for causal disentanglement that accurately recovers a latent causal model."
+  },
+  "arxiv_2301.05169": {
+    "doc_id": "arxiv_2301.05169",
+    "title": "Causal Triplet: An Open Challenge for Intervention-centric Causal\n  Representation Learning",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Recent years have seen a surge of interest in learning high-level causal representations from low-level image pairs under interventions. Yet, existing efforts are largely limited to simple synthetic settings that are far away from real-world problems. In this paper, we present Causal Triplet, a causal representation learning benchmark featuring not only visually more complex scenes, but also two crucial desiderata commonly overlooked in previous works: (i) an actionable counterfactual setting, where only certain object-level variables allow for counterfactual observations whereas others do not; (ii) an interventional downstream task with an emphasis on out-of-distribution robustness from the independent causal mechanisms principle. Through extensive experiments, we find that models built with the knowledge of disentangled or object-centric representations significantly outperform their distributed counterparts. However, recent causal representation learning methods still struggle to identify such latent structures, indicating substantial challenges and opportunities for future work. Our code and datasets will be available at https://sites.google.com/view/causaltriplet."
+  },
+  "arxiv_2301.08230": {
+    "doc_id": "arxiv_2301.08230",
+    "title": "Score-based Causal Representation Learning with Interventions",
+    "year": 2023,
+    "venue": "stat.ML",
+    "abstract": "This paper studies the causal representation learning problem when the latent causal variables are observed indirectly through an unknown linear transformation. The objectives are: (i) recovering the unknown linear transformation (up to scaling) and (ii) determining the directed acyclic graph (DAG) underlying the latent variables. Sufficient conditions for DAG recovery are established, and it is shown that a large class of non-linear models in the latent space (e.g., causal mechanisms parameterized by two-layer neural networks) satisfy these conditions. These sufficient conditions ensure that the effect of an intervention can be detected correctly from changes in the score. Capitalizing on this property, recovering a valid transformation is facilitated by the following key property: any valid transformation renders latent variables' score function to necessarily have the minimal variations across different interventional environments. This property is leveraged for perfect recovery of the latent DAG structure using only \\emph{soft} interventions. For the special case of stochastic \\emph{hard} interventions, with an additional hypothesis testing step, one can also uniquely recover t"
+  },
+  "arxiv_2302.00993": {
+    "doc_id": "arxiv_2302.00993",
+    "title": "Unpaired Multi-Domain Causal Representation Learning",
+    "year": 2023,
+    "venue": "stat.ML",
+    "abstract": "The goal of causal representation learning is to find a representation of data that consists of causally related latent variables. We consider a setup where one has access to data from multiple domains that potentially share a causal representation. Crucially, observations in different domains are assumed to be unpaired, that is, we only observe the marginal distribution in each domain but not their joint distribution. In this paper, we give sufficient conditions for identifiability of the joint distribution and the shared causal graph in a linear setup. Identifiability holds if we can uniquely recover the joint distribution and the shared causal representation from the marginal distributions in each domain. We transform our identifiability results into a practical method to recover the shared latent causal graph."
+  },
+  "arxiv_2303.00128": {
+    "doc_id": "arxiv_2303.00128",
+    "title": "Representation Disentaglement via Regularization by Causal\n  Identification",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "In this work, we propose the use of a causal collider structured model to describe the underlying data generative process assumptions in disentangled representation learning. This extends the conventional i.i.d. factorization assumption model $p(\\mathbf{y}) = \\prod_{i} p(\\mathbf{y}_i )$, inadequate to handle learning from biased datasets (e.g., with sampling selection bias). The collider structure, explains that conditional dependencies between the underlying generating variables may be exist, even when these are in reality unrelated, complicating disentanglement. Under the rubric of causal inference, we show this issue can be reconciled under the condition of causal identification; attainable from data and a combination of constraints, aimed at controlling the dependencies characteristic of the \\textit{collider} model. For this, we propose regularization by identification (ReI), a modular regularization engine designed to align the behavior of large scale generative models with the disentanglement constraints imposed by causal identification. Empirical evidence on standard benchmarks demonstrates the superiority of ReI in learning disentangled representations in a variational fram"
+  },
+  "arxiv_2304.09010": {
+    "doc_id": "arxiv_2304.09010",
+    "title": "Causal Flow-based Variational Auto-Encoder for Disentangled Causal\n  Representation Learning",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Disentangled representation learning aims to learn low-dimensional representations where each dimension corresponds to an underlying generative factor. While the Variational Auto-Encoder (VAE) is widely used for this purpose, most existing methods assume independence among factors, a simplification that does not hold in many real-world scenarios where factors are often interdependent and exhibit causal relationships. To overcome this limitation, we propose the Disentangled Causal Variational Auto-Encoder (DCVAE), a novel supervised VAE framework that integrates causal flows into the representation learning process, enabling the learning of more meaningful and interpretable disentangled representations. We evaluate DCVAE on both synthetic and real-world datasets, demonstrating its superior ability in causal disentanglement and intervention experiments. Furthermore, DCVAE outperforms state-of-the-art methods in various downstream tasks, highlighting its potential for learning true causal structures among factors."
+  },
+  "arxiv_2305.02640": {
+    "doc_id": "arxiv_2305.02640",
+    "title": "Towards Causal Representation Learning and Deconfounding from Indefinite\n  Data",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Owing to the cross-pollination between causal discovery and deep learning, non-statistical data (e.g., images, text, etc.) encounters significant conflicts in terms of properties and methods with traditional causal data. To unify these data types of varying forms, we redefine causal data from two novel perspectives and then propose three data paradigms. Among them, the indefinite data (like dialogues or video sources) induce low sample utilization and incapability of the distribution assumption, both leading to the fact that learning causal representation from indefinite data is, as of yet, largely unexplored. We design the causal strength variational model to settle down these two problems. Specifically, we leverage the causal strength instead of independent noise as the latent variable to construct evidence lower bound. By this design ethos, The causal strengths of different structures are regarded as a distribution and can be expressed as a 2D matrix. Moreover, considering the latent confounders, we disentangle the causal graph G into two relation subgraphs O and C. O contains pure relations between observed variables, while C represents the relations from latent variables to ob"
+  },
+  "arxiv_2305.17225": {
+    "doc_id": "arxiv_2305.17225",
+    "title": "Causal Component Analysis",
+    "year": 2024,
+    "venue": "stat.ML",
+    "abstract": "Independent Component Analysis (ICA) aims to recover independent latent variables from observed mixtures thereof. Causal Representation Learning (CRL) aims instead to infer causally related (thus often statistically dependent) latent variables, together with the unknown graph encoding their causal relationships. We introduce an intermediate problem termed Causal Component Analysis (CauCA). CauCA can be viewed as a generalization of ICA, modelling the causal dependence among the latent components, and as a special case of CRL. In contrast to CRL, it presupposes knowledge of the causal graph, focusing solely on learning the unmixing function and the causal mechanisms. Any impossibility results regarding the recovery of the ground truth in CauCA also apply for CRL, while possibility results may serve as a stepping stone for extensions to CRL. We characterize CauCA identifiability from multiple datasets generated through different types of interventions on the latent causal variables. As a corollary, this interventional perspective also leads to new identifiability results for nonlinear ICA -- a special case of CauCA with an empty graph -- requiring strictly fewer datasets than previou"
+  },
+  "arxiv_2306.00542": {
+    "doc_id": "arxiv_2306.00542",
+    "title": "Nonparametric Identifiability of Causal Representations from Unknown\n  Interventions",
+    "year": 2023,
+    "venue": "stat.ML",
+    "abstract": "We study causal representation learning, the task of inferring latent causal variables and their causal relations from high-dimensional mixtures of the variables. Prior work relies on weak supervision, in the form of counterfactual pre- and post-intervention views or temporal structure; places restrictive assumptions, such as linearity, on the mixing function or latent causal model; or requires partial knowledge of the generative process, such as the causal graph or intervention targets. We instead consider the general setting in which both the causal model and the mixing function are nonparametric. The learning signal takes the form of multiple datasets, or environments, arising from unknown interventions in the underlying causal model. Our goal is to identify both the ground truth latents and their causal graph up to a set of ambiguities which we show to be irresolvable from interventional data. We study the fundamental setting of two causal variables and prove that the observational distribution and one perfect intervention per node suffice for identifiability, subject to a genericity condition. This condition rules out spurious solutions that involve fine-tuning of the interven"
+  },
+  "arxiv_2306.01213": {
+    "doc_id": "arxiv_2306.01213",
+    "title": "Learning Causally Disentangled Representations via the Principle of\n  Independent Causal Mechanisms",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Learning disentangled causal representations is a challenging problem that has gained significant attention recently due to its implications for extracting meaningful information for downstream tasks. In this work, we define a new notion of causal disentanglement from the perspective of independent causal mechanisms. We propose ICM-VAE, a framework for learning causally disentangled representations supervised by causally related observed labels. We model causal mechanisms using nonlinear learnable flow-based diffeomorphic functions to map noise variables to latent causal variables. Further, to promote the disentanglement of causal factors, we propose a causal disentanglement prior learned from auxiliary labels and the latent causal structure. We theoretically show the identifiability of causal factors and mechanisms up to permutation and elementwise reparameterization. We empirically demonstrate that our framework induces highly disentangled causal factors, improves interventional robustness, and is compatible with counterfactual generation."
+  },
+  "arxiv_2307.05704": {
+    "doc_id": "arxiv_2307.05704",
+    "title": "A Causal Ordering Prior for Unsupervised Representation Learning",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Unsupervised representation learning with variational inference relies heavily on independence assumptions over latent variables. Causal representation learning (CRL), however, argues that factors of variation in a dataset are, in fact, causally related. Allowing latent variables to be correlated, as a consequence of causal relationships, is more realistic and generalisable. So far, provably identifiable methods rely on: auxiliary information, weak labels, and interventional or even counterfactual data. Inspired by causal discovery with functional causal models, we propose a fully unsupervised representation learning method that considers a data generation process with a latent additive noise model (ANM). We encourage the latent space to follow a causal ordering via loss function based on the Hessian of the latent distribution."
+  },
+  "arxiv_2307.06250": {
+    "doc_id": "arxiv_2307.06250",
+    "title": "Identifiability Guarantees for Causal Disentanglement from Soft\n  Interventions",
+    "year": 2023,
+    "venue": "stat.ML",
+    "abstract": "Causal disentanglement aims to uncover a representation of data using latent variables that are interrelated through a causal model. Such a representation is identifiable if the latent model that explains the data is unique. In this paper, we focus on the scenario where unpaired observational and interventional data are available, with each intervention changing the mechanism of a latent variable. When the causal variables are fully observed, statistically consistent algorithms have been developed to identify the causal model under faithfulness assumptions. We here show that identifiability can still be achieved with unobserved causal variables, given a generalized notion of faithfulness. Our results guarantee that we can recover the latent causal model up to an equivalence class and predict the effect of unseen combinations of interventions, in the limit of infinite data. We implement our causal disentanglement framework by developing an autoencoding variational Bayes algorithm and apply it to the problem of predicting combinatorial perturbation effects in genomics."
+  },
+  "arxiv_2308.05707": {
+    "doc_id": "arxiv_2308.05707",
+    "title": "Shadow Datasets, New challenging datasets for Causal Representation\n  Learning",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Discovering causal relations among semantic factors is an emergent topic in representation learning. Most causal representation learning (CRL) methods are fully supervised, which is impractical due to costly labeling. To resolve this restriction, weakly supervised CRL methods were introduced. To evaluate CRL performance, four existing datasets, Pendulum, Flow, CelebA(BEARD) and CelebA(SMILE), are utilized. However, existing CRL datasets are limited to simple graphs with few generative factors. Thus we propose two new datasets with a larger number of diverse generative factors and more sophisticated causal graphs. In addition, current real datasets, CelebA(BEARD) and CelebA(SMILE), the originally proposed causal graphs are not aligned with the dataset distributions. Thus, we propose modifications to them."
+  },
+  "arxiv_2310.02854": {
+    "doc_id": "arxiv_2310.02854",
+    "title": "Multi-Domain Causal Representation Learning via Weak Distributional\n  Invariances",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning has emerged as the center of action in causal machine learning research. In particular, multi-domain datasets present a natural opportunity for showcasing the advantages of causal representation learning over standard unsupervised representation learning. While recent works have taken crucial steps towards learning causal representations, they often lack applicability to multi-domain datasets due to over-simplifying assumptions about the data; e.g. each domain comes from a different single-node perfect intervention. In this work, we relax these assumptions and capitalize on the following observation: there often exists a subset of latents whose certain distributional properties (e.g., support, variance) remain stable across domains; this property holds when, for example, each domain comes from a multi-node imperfect intervention. Leveraging this observation, we show that autoencoders that incorporate such invariances can provably identify the stable set of latents from the rest across different settings."
+  },
+  "arxiv_2310.13892": {
+    "doc_id": "arxiv_2310.13892",
+    "title": "Specify Robust Causal Representation from Mixed Observations",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Learning representations purely from observations concerns the problem of learning a low-dimensional, compact representation which is beneficial to prediction models. Under the hypothesis that the intrinsic latent factors follow some casual generative models, we argue that by learning a causal representation, which is the minimal sufficient causes of the whole system, we can improve the robustness and generalization performance of machine learning models. In this paper, we develop a learning method to learn such representation from observational data by regularizing the learning procedure with mutual information measures, according to the hypothetical factored causal graph. We theoretically and empirically show that the models trained with the learned causal representations are more robust under adversarial attacks and distribution shifts compared with baselines. The supplementary materials are available at https://github.com/ymy $4323460 / \\mathrm{CaRI} /$."
+  },
+  "arxiv_2310.15450": {
+    "doc_id": "arxiv_2310.15450",
+    "title": "General Identifiability and Achievability for Causal Representation\n  Learning",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "This paper focuses on causal representation learning (CRL) under a general nonparametric latent causal model and a general transformation model that maps the latent data to the observational data. It establishes identifiability and achievability results using two hard uncoupled interventions per node in the latent causal graph. Notably, one does not know which pair of intervention environments have the same node intervened (hence, uncoupled). For identifiability, the paper establishes that perfect recovery of the latent causal model and variables is guaranteed under uncoupled interventions. For achievability, an algorithm is designed that uses observational and interventional data and recovers the latent causal model and variables with provable guarantees. This algorithm leverages score variations across different environments to estimate the inverse of the transformer and, subsequently, the latent variables. The analysis, additionally, recovers the identifiability result for two hard coupled interventions, that is when metadata about the pair of environments that have the same node intervened is known. This paper also shows that when observational data is available, additional fai"
+  },
+  "arxiv_2310.15580": {
+    "doc_id": "arxiv_2310.15580",
+    "title": "Identifiable Latent Polynomial Causal Models Through the Lens of Change",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning aims to unveil latent high-level causal representations from observed low-level data. One of its primary tasks is to provide reliable assurance of identifying these latent causal models, known as identifiability. A recent breakthrough explores identifiability by leveraging the change of causal influences among latent causal variables across multiple environments \\citep{liu2022identifying}. However, this progress rests on the assumption that the causal relationships among latent causal variables adhere strictly to linear Gaussian models. In this paper, we extend the scope of latent causal models to involve nonlinear causal relationships, represented by polynomial models, and general noise distributions conforming to the exponential family. Additionally, we investigate the necessity of imposing changes on all causal parameters and present partial identifiability results when part of them remains unchanged. Further, we propose a novel empirical estimation method, grounded in our theoretical finding, that enables learning consistent latent causal representations. Our experimental results, obtained from both synthetic and real-world data, validate our theo"
+  },
+  "arxiv_2310.15709": {
+    "doc_id": "arxiv_2310.15709",
+    "title": "Causal Representation Learning Made Identifiable by Grouping of\n  Observational Variables",
+    "year": 2024,
+    "venue": "stat.ML",
+    "abstract": "A topic of great current interest is Causal Representation Learning (CRL), whose goal is to learn a causal model for hidden features in a data-driven manner. Unfortunately, CRL is severely ill-posed since it is a combination of the two notoriously ill-posed problems of representation learning and causal discovery. Yet, finding practical identifiability conditions that guarantee a unique solution is crucial for its practical applicability. Most approaches so far have been based on assumptions on the latent causal mechanisms, such as temporal causality, or existence of supervision or interventions; these can be too restrictive in actual applications. Here, we show identifiability based on novel, weak constraints, which requires no temporal structure, intervention, nor weak supervision. The approach is based on assuming the observational mixing exhibits a suitable grouping of the observational variables. We also propose a novel self-supervised estimation framework consistent with the model, prove its statistical consistency, and experimentally show its superior CRL performances compared to the state-of-the-art baselines. We further demonstrate its robustness against latent confounders"
+  },
+  "arxiv_2310.18471": {
+    "doc_id": "arxiv_2310.18471",
+    "title": "Causal disentanglement of multimodal data",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning algorithms discover lower-dimensional representations of data that admit a decipherable interpretation of cause and effect; as achieving such interpretable representations is challenging, many causal learning algorithms utilize elements indicating prior information, such as (linear) structural causal models, interventional data, or weak supervision. Unfortunately, in exploratory causal representation learning, such elements and prior information may not be available or warranted. Alternatively, scientific datasets often have multiple modalities or physics-based constraints, and the use of such scientific, multimodal data has been shown to improve disentanglement in fully unsupervised settings. Consequently, we introduce a causal representation learning algorithm (causalPIMA) that can use multimodal data and known physics to discover important features with causal relationships. Our innovative algorithm utilizes a new differentiable parametrization to learn a directed acyclic graph (DAG) together with a latent space of a variational autoencoder in an end-to-end differentiable framework via a single, tractable evidence lower bound loss function. We plac"
+  },
+  "arxiv_2310.18615": {
+    "doc_id": "arxiv_2310.18615",
+    "title": "Temporally Disentangled Representation Learning under Unknown\n  Nonstationarity",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "In unsupervised causal representation learning for sequential data with time-delayed latent causal influences, strong identifiability results for the disentanglement of causally-related latent variables have been established in stationary settings by leveraging temporal structure. However, in nonstationary setting, existing work only partially addressed the problem by either utilizing observed auxiliary variables (e.g., class labels and/or domain indexes) as side information or assuming simplified latent causal dynamics. Both constrain the method to a limited range of scenarios. In this study, we further explored the Markov Assumption under time-delayed causally related process in nonstationary setting and showed that under mild conditions, the independent latent components can be recovered from their nonlinear mixture up to a permutation and a component-wise transformation, without the observation of auxiliary variables. We then introduce NCTRL, a principled estimation framework, to reconstruct time-delayed latent causal variables and identify their relations from measured sequential data only. Empirical evaluations demonstrated the reliable identification of time-delayed latent c"
+  },
+  "arxiv_2310.18634": {
+    "doc_id": "arxiv_2310.18634",
+    "title": "SSL Framework for Causal Inconsistency between Structures and\n  Representations",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "The cross-pollination between causal discovery and deep learning has led to increasingly extensive interactions. It results in a large number of deep learning data types (such as images, text, etc.) extending into the field of causal discovery, and a multitude of deep learning tasks have begun to utilize causal discovery to explore the internal causal structure and causal representation of data. In this paper, we first identified that a complex data type, ``Indefinite Data\", has conflicts between causal relationships expressed by the causal structure and causal representation generated by deep learning models, a phenomenon referred to as causal inconsistency. We thoroughly analyzed related work to explain why only Indefinite Data exhibits causal inconsistency while other data types do not. Furthermore, to alleviate causal inconsistency, we proposed a self-supervised learning (SSL) framework based on intervention, hoping to provide more causal information from different intervention views to promote consistency between structure and representation. Extensive experiments have shown that the SSL framework enhances causal consistency and can further improve causal structure and represe"
+  },
+  "arxiv_2310.19054": {
+    "doc_id": "arxiv_2310.19054",
+    "title": "Object-centric architectures enable efficient causal representation\n  learning",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning has showed a variety of settings in which we can disentangle latent variables with identifiability guarantees (up to some reasonable equivalence class). Common to all of these approaches is the assumption that (1) the latent variables are represented as $d$-dimensional vectors, and (2) that the observations are the output of some injective generative function of these latent variables. While these assumptions appear benign, we show that when the observations are of multiple objects, the generative function is no longer injective and disentanglement fails in practice. We can address this failure by combining recent developments in object-centric learning and causal representation learning. By modifying the Slot Attention architecture arXiv:2006.15055, we develop an object-centric architecture that leverages weak supervision from sparse perturbations to disentangle each object's properties. This approach is more data-efficient in the sense that it requires significantly fewer perturbations than a comparable approach that encodes to a Euclidean space and we show that this approach successfully disentangles the properties of a set of objects in a series o"
+  },
+  "arxiv_2311.02695": {
+    "doc_id": "arxiv_2311.02695",
+    "title": "Identifying Linearly-Mixed Causal Representations from Multi-Node\n  Interventions",
+    "year": 2024,
+    "venue": "stat.ML",
+    "abstract": "The task of inferring high-level causal variables from low-level observations, commonly referred to as causal representation learning, is fundamentally underconstrained. As such, recent works to address this problem focus on various assumptions that lead to identifiability of the underlying latent causal variables. A large corpus of these preceding approaches consider multi-environment data collected under different interventions on the causal model. What is common to virtually all of these works is the restrictive assumption that in each environment, only a single variable is intervened on. In this work, we relax this assumption and provide the first identifiability result for causal representation learning that allows for multiple variables to be targeted by an intervention within one environment. Our approach hinges on a general assumption on the coverage and diversity of interventions across environments, which also includes the shared assumption of single-node interventions of previous works. The main idea behind our approach is to exploit the trace that interventions leave on the variance of the ground truth causal variables and regularizing for a specific notion of sparsity "
+  },
+  "arxiv_2311.06567": {
+    "doc_id": "arxiv_2311.06567",
+    "title": "SCADI: Self-supervised Causal Disentanglement in Latent Variable Models",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Causal disentanglement has great potential for capturing complex situations. However, there is a lack of practical and efficient approaches. It is already known that most unsupervised disentangling methods are unable to produce identifiable results without additional information, often leading to randomly disentangled output. Therefore, most existing models for disentangling are weakly supervised, providing information about intrinsic factors, which incurs excessive costs. Therefore, we propose a novel model, SCADI(SElf-supervised CAusal DIsentanglement), that enables the model to discover semantic factors and learn their causal relationships without any supervision. This model combines a masked structural causal model (SCM) with a pseudo-label generator for causal disentanglement, aiming to provide a new direction for self-supervised causal disentanglement models."
+  },
+  "arxiv_2311.12267": {
+    "doc_id": "arxiv_2311.12267",
+    "title": "Learning Causal Representations from General Environments:\n  Identifiability and Intrinsic Ambiguity",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "We study causal representation learning, the task of recovering high-level latent variables and their causal relationships in the form of a causal graph from low-level observed data (such as text and images), assuming access to observations generated from multiple environments. Prior results on the identifiability of causal representations typically assume access to single-node interventions which is rather unrealistic in practice, since the latent variables are unknown in the first place. In this work, we provide the first identifiability results based on data that stem from general environments. We show that for linear causal models, while the causal graph can be fully recovered, the latent variables are only identified up to the surrounded-node ambiguity (SNA) \\citep{varici2023score}. We provide a counterpart of our guarantee, showing that SNA is basically unavoidable in our setting. We also propose an algorithm, \\texttt{LiNGCReL} which provably recovers the ground-truth model up to SNA, and we demonstrate its effectiveness via numerical experiments. Finally, we consider general non-parametric causal models and show that the same identification barrier holds when assuming access"
+  },
+  "arxiv_2312.03580": {
+    "doc_id": "arxiv_2312.03580",
+    "title": "Invariance & Causal Representation Learning: Prospects and Limitations",
+    "year": 2023,
+    "venue": "stat.ML",
+    "abstract": "In causal models, a given mechanism is assumed to be invariant to changes of other mechanisms. While this principle has been utilized for inference in settings where the causal variables are observed, theoretical insights when the variables of interest are latent are largely missing. We assay the connection between invariance and causal representation learning by establishing impossibility results which show that invariance alone is insufficient to identify latent causal variables. Together with practical considerations, we use these theoretical findings to highlight the need for additional constraints in order to identify representations by exploiting invariance."
+  },
+  "arxiv_2402.00849": {
+    "doc_id": "arxiv_2402.00849",
+    "title": "Score-based Causal Representation Learning: Linear and General Transformations",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "This paper addresses intervention-based causal representation learning (CRL) under a general nonparametric latent causal model and an unknown transformation that maps the latent variables to the observed variables. Linear and general transformations are investigated. The paper addresses both the identifiability and achievability aspects. Identifiability refers to determining algorithm-agnostic conditions that ensure the recovery of the true latent causal variables and the underlying latent causal graph. Achievability refers to the algorithmic aspects and addresses designing algorithms that achieve identifiability guarantees. By drawing novel connections between score functions (i.e., the gradients of the logarithm of density functions) and CRL, this paper designs a score-based class of algorithms that ensures both identifiability and achievability. First, the paper focuses on linear transformations and shows that one stochastic hard intervention per node suffices to guarantee identifiability. It also provides partial identifiability guarantees for soft interventions, including identifiability up to mixing with parents for general causal models and perfect recovery of the latent gra"
+  },
+  "arxiv_2402.05052": {
+    "doc_id": "arxiv_2402.05052",
+    "title": "Causal Representation Learning from Multiple Distributions: A General\n  Setting",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "In many problems, the measured variables (e.g., image pixels) are just mathematical functions of the latent causal variables (e.g., the underlying concepts or objects). For the purpose of making predictions in changing environments or making proper changes to the system, it is helpful to recover the latent causal variables $Z_i$ and their causal relations represented by graph $\\mathcal{G}_Z$. This problem has recently been known as causal representation learning. This paper is concerned with a general, completely nonparametric setting of causal representation learning from multiple distributions (arising from heterogeneous data or nonstationary time series), without assuming hard interventions behind distribution changes. We aim to develop general solutions in this fundamental case; as a by product, this helps see the unique benefit offered by other assumptions such as parametric causal models or hard interventions. We show that under the sparsity constraint on the recovered graph over the latent variables and suitable sufficient change conditions on the causal influences, interestingly, one can recover the moralized graph of the underlying directed acyclic graph, and the recovered"
+  },
+  "arxiv_2402.11124": {
+    "doc_id": "arxiv_2402.11124",
+    "title": "Implicit Causal Representation Learning via Switchable Mechanisms",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Learning causal representations from observational and interventional data in the absence of known ground-truth graph structures necessitates implicit latent causal representation learning. Implicit learning of causal mechanisms typically involves two categories of interventional data: hard and soft interventions. In real-world scenarios, soft interventions are often more realistic than hard interventions, as the latter require fully controlled environments. Unlike hard interventions, which directly force changes in a causal variable, soft interventions exert influence indirectly by affecting the causal mechanism. However, the subtlety of soft interventions impose several challenges for learning causal models. One challenge is that soft intervention's effects are ambiguous, since parental relations remain intact. In this paper, we tackle the challenges of learning causal models using soft interventions while retaining implicit modelling. We propose ICLR-SM, which models the effects of soft interventions by employing a causal mechanism switch variable designed to toggle between different causal mechanisms. In our experiments, we consistently observe improved learning of identifiable"
+  },
+  "arxiv_2403.08335": {
+    "doc_id": "arxiv_2403.08335",
+    "title": "A Sparsity Principle for Partially Observable Causal Representation\n  Learning",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning aims at identifying high-level causal variables from perceptual data. Most methods assume that all latent causal variables are captured in the high-dimensional observations. We instead consider a partially observed setting, in which each measurement only provides information about a subset of the underlying causal state. Prior work has studied this setting with multiple domains or views, each depending on a fixed subset of latents. Here, we focus on learning from unpaired observations from a dataset with an instance-dependent partial observability pattern. Our main contribution is to establish two identifiability results for this setting: one for linear mixing functions without parametric assumptions on the underlying causal model, and one for piecewise linear mixing functions with Gaussian latent causal variables. Based on these insights, we propose two methods for estimating the underlying causal variables by enforcing sparsity in the inferred representation. Experiments on different simulated datasets and established benchmarks highlight the effectiveness of our approach in recovering the ground-truth latents."
+  },
+  "arxiv_2404.17735": {
+    "doc_id": "arxiv_2404.17735",
+    "title": "Causal Diffusion Autoencoders: Toward Counterfactual Generation via\n  Diffusion Probabilistic Models",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Diffusion probabilistic models (DPMs) have become the state-of-the-art in high-quality image generation. However, DPMs have an arbitrary noisy latent space with no interpretable or controllable semantics. Although there has been significant research effort to improve image sample quality, there is little work on representation-controlled generation using diffusion models. Specifically, causal modeling and controllable counterfactual generation using DPMs is an underexplored area. In this work, we propose CausalDiffAE, a diffusion-based causal representation learning framework to enable counterfactual generation according to a specified causal model. Our key idea is to use an encoder to extract high-level semantically meaningful causal variables from high-dimensional data and model stochastic variation using reverse diffusion. We propose a causal encoding mechanism that maps high-dimensional data to causally related latent factors and parameterize the causal mechanisms among latent factors using neural networks. To enforce the disentanglement of causal variables, we formulate a variational objective and leverage auxiliary label information in a prior to regularize the latent space. "
+  },
+  "arxiv_2406.05937": {
+    "doc_id": "arxiv_2406.05937",
+    "title": "Linear Causal Representation Learning from Unknown Multi-node\n  Interventions",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Despite the multifaceted recent advances in interventional causal representation learning (CRL), they primarily focus on the stylized assumption of single-node interventions. This assumption is not valid in a wide range of applications, and generally, the subset of nodes intervened in an interventional environment is fully unknown. This paper focuses on interventional CRL under unknown multi-node (UMN) interventional environments and establishes the first identifiability results for general latent causal models (parametric or nonparametric) under stochastic interventions (soft or hard) and linear transformation from the latent to observed space. Specifically, it is established that given sufficiently diverse interventional environments, (i) identifiability up to ancestors is possible using only soft interventions, and (ii) perfect identifiability is possible using hard interventions. Remarkably, these guarantees match the best-known results for more restrictive single-node interventions. Furthermore, CRL algorithms are also provided that achieve the identifiability guarantees. A central step in designing these algorithms is establishing the relationships between UMN interventional "
+  },
+  "arxiv_2406.14302": {
+    "doc_id": "arxiv_2406.14302",
+    "title": "Identifiable Exchangeable Mechanisms for Causal Structure and\n  Representation Learning",
+    "year": 2025,
+    "venue": "stat.ML",
+    "abstract": "Identifying latent representations or causal structures is important for good generalization and downstream task performance. However, both fields have been developed rather independently. We observe that several methods in both representation and causal structure learning rely on the same data-generating process (DGP), namely, exchangeable but not i.i.d. (independent and identically distributed) data. We provide a unified framework, termed Identifiable Exchangeable Mechanisms (IEM), for representation and structure learning under the lens of exchangeability. IEM provides new insights that let us relax the necessary conditions for causal structure identification in exchangeable non--i.i.d. data. We also demonstrate the existence of a duality condition in identifiable representation learning, leading to new identifiability results. We hope this work will pave the way for further research in causal representation learning."
+  },
+  "arxiv_2407.04605": {
+    "doc_id": "arxiv_2407.04605",
+    "title": "Linear causal disentanglement via higher-order cumulants",
+    "year": 2024,
+    "venue": "stat.ML",
+    "abstract": "Linear causal disentanglement is a recent method in causal representation learning to describe a collection of observed variables via latent variables with causal dependencies between them. It can be viewed as a generalization of both independent component analysis and linear structural equation models. We study the identifiability of linear causal disentanglement, assuming access to data under multiple contexts, each given by an intervention on a latent variable. We show that one perfect intervention on each latent variable is sufficient and in the worst case necessary to recover parameters under perfect interventions, generalizing previous work to allow more latent than observed variables. We give a constructive proof that computes parameters via a coupled tensor decomposition. For soft interventions, we find the equivalence class of latent graphs and parameters that are consistent with observed data, via the study of a system of polynomial equations. Our results hold assuming the existence of non-zero higher-order cumulants, which implies non-Gaussianity of variables."
+  },
+  "arxiv_2410.23620": {
+    "doc_id": "arxiv_2410.23620",
+    "title": "Identifiability Guarantees for Causal Disentanglement from Purely\n  Observational Data",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Causal disentanglement aims to learn about latent causal factors behind data, holding the promise to augment existing representation learning methods in terms of interpretability and extrapolation. Recent advances establish identifiability results assuming that interventions on (single) latent factors are available; however, it remains debatable whether such assumptions are reasonable due to the inherent nature of intervening on latent variables. Accordingly, we reconsider the fundamentals and ask what can be learned using just observational data.   We provide a precise characterization of latent factors that can be identified in nonlinear causal models with additive Gaussian noise and linear mixing, without any interventions or graphical restrictions. In particular, we show that the causal variables can be identified up to a layer-wise transformation and that further disentanglement is not possible. We transform these theoretical results into a practical algorithm consisting of solving a quadratic program over the score estimation of the observed data. We provide simulation results to support our theoretical guarantees and demonstrate that our algorithm can derive meaningful causa"
+  },
+  "arxiv_2412.09843": {
+    "doc_id": "arxiv_2412.09843",
+    "title": "Learning Structural Causal Models from Ordering: Identifiable Flow\n  Models",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "In this study, we address causal inference when only observational data and a valid causal ordering from the causal graph are available. We introduce a set of flow models that can recover component-wise, invertible transformation of exogenous variables. Our flow-based methods offer flexible model design while maintaining causal consistency regardless of the number of discretization steps. We propose design improvements that enable simultaneous learning of all causal mechanisms and reduce abduction and prediction complexity to linear O(n) relative to the number of layers, independent of the number of causal variables. Empirically, we demonstrate that our method outperforms previous state-of-the-art approaches and delivers consistent performance across a wide range of structural causal models in answering observational, interventional, and counterfactual questions. Additionally, our method achieves a significant reduction in computational time compared to existing diffusion-based techniques, making it practical for large structural causal models."
+  },
+  "arxiv_2503.03634": {
+    "doc_id": "arxiv_2503.03634",
+    "title": "Feature Matching Intervention: Leveraging Observational Data for Causal\n  Representation Learning",
+    "year": 2025,
+    "venue": "stat.ML",
+    "abstract": "A major challenge in causal discovery from observational data is the absence of perfect interventions, making it difficult to distinguish causal features from spurious ones. We propose an innovative approach, Feature Matching Intervention (FMI), which uses a matching procedure to mimic perfect interventions. We define causal latent graphs, extending structural causal models to latent feature space, providing a framework that connects FMI with causal graph learning. Our feature matching procedure emulates perfect interventions within these causal latent graphs. Theoretical results demonstrate that FMI exhibits strong out-of-distribution (OOD) generalizability. Experiments further highlight FMI's superior performance in effectively identifying causal features solely from observational data."
+  },
+  "arxiv_2503.10834": {
+    "doc_id": "arxiv_2503.10834",
+    "title": "On the Identifiability of Causal Abstractions",
+    "year": 2025,
+    "venue": "stat.ML",
+    "abstract": "Causal representation learning (CRL) enhances machine learning models' robustness and generalizability by learning structural causal models associated with data-generating processes. We focus on a family of CRL methods that uses contrastive data pairs in the observable space, generated before and after a random, unknown intervention, to identify the latent causal model. (Brehmer et al., 2022) showed that this is indeed possible, given that all latent variables can be intervened on individually. However, this is a highly restrictive assumption in many systems. In this work, we instead assume interventions on arbitrary subsets of latent variables, which is more realistic. We introduce a theoretical framework that calculates the degree to which we can identify a causal model, given a set of possible interventions, up to an abstraction that describes the system at a higher level of granularity."
+  },
+  "arxiv_2509.01916": {
+    "doc_id": "arxiv_2509.01916",
+    "title": "Causal Representation Learning from Network Data",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Causal disentanglement from soft interventions is identifiable under the assumptions of linear interventional faithfulness and availability of both observational and interventional data. Prior work has focused on unstructured observations without leveraging known relational context among measured entities. In many scientific applications, however, the measured variables come with an observed interaction network that provides structured context, such as protein-protein interactions and pathway-gene membership. We propose GraCE-VAE, a graph-aware causal discrepancy variational autoencoder that treats pathway-level information as an auxiliary view of the latent causal programs. The graph neural network encoder conditions on this auxiliary pathway view and the biological graph to improve amortized inference, while the causal decoder remains a latent SCM with soft interventions. Assuming samples are i.i.d. within each intervention regime, we show that GraCE-VAE inherits the identifiability guarantees of causal discrepancy VAEs and identifies the latent causal graph and intervention targets up to the standard equivalence class. Experiments on three CRISPR perturbation datasets demonstrat"
+  },
+  "arxiv_2509.22553": {
+    "doc_id": "arxiv_2509.22553",
+    "title": "Linear Causal Representation Learning by Topological Ordering, Pruning, and Disentanglement",
+    "year": 2026,
+    "venue": "stat.ML",
+    "abstract": "Causal representation learning (CRL) has garnered increasing interest from the causal inference and artificial intelligence communities due to its potential to disentangle complex data-generating mechanism into causally interpretable latent features by leveraging the heterogeneity of modern datasets. In this paper, we further contribute to the CRL literature, by focusing on the stylized linear structural causal model over latent features and assuming a linear mixing function that maps latent features to the observed data or measurements. Existing linear CRL methods often rely on stringent assumptions, such as access to single-node interventional data or restrictive distributional constraints on latent features and/or exogenous measurement noise. However, these prerequisites can be easy to violate in practice. In this work, we propose a novel linear CRL algorithm that, unlike existing methods, operates under weaker assumptions on environment heterogeneity and data-generating distributions while still recovering latent causal features up to an equivalence class. We further validate our new algorithm via synthetic experiments and an interpretability analysis of large language models, "
+  },
+  "arxiv_2510.18052": {
+    "doc_id": "arxiv_2510.18052",
+    "title": "Measure-Theoretic Anti-Causal Representation Learning",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning in the anti-causal setting (labels cause features rather than the reverse) presents unique challenges requiring specialized approaches. We propose Anti-Causal Invariant Abstractions (ACIA), a novel measure-theoretic framework for anti-causal representation learning. ACIA employs a two-level design, low-level representations capture how labels generate observations, while high-level representations learn stable causal patterns across environment-specific variations. ACIA addresses key limitations of existing approaches by accommodating prefect and imperfect interventions through interventional kernels, eliminating dependency on explicit causal structures, handling high-dimensional data effectively, and providing theoretical guarantees for out-of-distribution generalization. Experiments on synthetic and real-world medical datasets demonstrate that ACIA consistently outperforms state-of-the-art methods in both accuracy and invariance metrics. Furthermore, our theoretical results establish tight bounds on performance gaps between training and unseen environments, confirming the efficacy of our approach for robust anti-causal learning."
+  },
+  "arxiv_2511.04790": {
+    "doc_id": "arxiv_2511.04790",
+    "title": "Causal Structure and Representation Learning with Biomedical Applications",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Massive data collection holds the promise of a better understanding of complex phenomena and, ultimately, better decisions. Representation learning has become a key driver of deep learning applications, as it allows learning latent spaces that capture important properties of the data without requiring any supervised annotations. Although representation learning has been hugely successful in predictive tasks, it can fail miserably in causal tasks including predicting the effect of a perturbation/intervention. This calls for a marriage between representation learning and causal inference. An exciting opportunity in this regard stems from the growing availability of multi-modal data (observational and perturbational, imaging-based and sequencing-based, at the single-cell level, tissue-level, and organism-level). We outline a statistical and computational framework for causal structure and representation learning motivated by fundamental biomedical questions: how to effectively use observational and perturbational data to perform causal discovery on observed causal variables; how to use multi-modal views of the system to learn causal variables; and how to design optimal perturbations."
+  },
+  "arxiv_2512.22150": {
+    "doc_id": "arxiv_2512.22150",
+    "title": "Towards Unsupervised Causal Representation Learning via Latent Additive Noise Model Causal Autoencoders",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Unsupervised representation learning seeks to recover latent generative factors, yet standard methods relying on statistical independence often fail to capture causal dependencies. A central challenge is identifiability: as established in disentangled representation learning and nonlinear ICA literature, disentangling causal variables from observational data is impossible without supervision, auxiliary signals, or strong inductive biases. In this work, we propose the Latent Additive Noise Model Causal Autoencoder (LANCA) to operationalize the Additive Noise Model (ANM) as a strong inductive bias for unsupervised discovery. Theoretically, we prove that while the ANM constraint does not guarantee unique identifiability in the general mixing case, it resolves component-wise indeterminacy by restricting the admissible transformations from arbitrary diffeomorphisms to the affine class. Methodologically, arguing that the stochastic encoding inherent to VAEs obscures the structural residuals required for latent causal discovery, LANCA employs a deterministic Wasserstein Auto-Encoder (WAE) coupled with a differentiable ANM Layer. This architecture transforms residual independence from a pa"
+  },
+  "arxiv_2601.21567": {
+    "doc_id": "arxiv_2601.21567",
+    "title": "FlexCausal: Flexible Causal Disentanglement via Structural Flow Priors and Manifold-Aware Interventions",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Causal Disentangled Representation Learning(CDRL) aims to learn and disentangle low dimensional representations and their underlying causal structure from observations. However, existing disentanglement methods rely on a standard mean-field approximation with a diagonal posterior covariance, which decorrelates all latent dimensions. Additionally, these methods often assume isotropic Gaussian priors for exogenous noise, failing to capture the complex, non-Gaussian statistical properties prevalent in real-world causal factors. Therefore, we propose FlexCausal, a novel CDRL framework based on a block-diagonal covariance VAE. FlexCausal utilizes a Factorized Flow-based Prior to realistically model the complex densities of exogenous noise, effectively decoupling the learning of causal mechanisms from distributional statistics. By integrating supervised alignment objectives with counterfactual consistency constraints, our framework ensures a precise structural correspondence between the learned latent subspaces and the ground-truth causal relations. Finally, we introduce a manifold-aware relative intervention strategy to ensure high-fidelity generation. Experimental results on both synth"
+  },
+  "arxiv_2602.19131": {
+    "doc_id": "arxiv_2602.19131",
+    "title": "Test-Time Learning of Causal Structure from Interventional Data",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Supervised causal learning has shown promise in causal discovery, yet it often struggles with generalization across diverse interventional settings, particularly when intervention targets are unknown. To address this, we propose TICL (Test-time Interventional Causal Learning), a novel method that synergizes Test-Time Training with Joint Causal Inference. Specifically, we design a self-augmentation strategy to generate instance-specific training data at test time, effectively avoiding distribution shifts. Furthermore, by integrating joint causal inference, we developed a PC-inspired two-phase supervised learning scheme, which effectively leverages self-augmented training data while ensuring theoretical identifiability. Extensive experiments on bnlearn benchmarks demonstrate TICL's superiority in multiple aspects of causal discovery and intervention target detection."
+  },
+  "arxiv_2603.17405": {
+    "doc_id": "arxiv_2603.17405",
+    "title": "Causal Representation Learning on High-Dimensional Data: Benchmarks, Reproducibility, and Evaluation Metrics",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning (CRL) models aim to transform high-dimensional data into a latent space, enabling interventions to generate counterfactual samples or modify existing data based on the causal relationships among latent variables. To facilitate the development and evaluation of these models, a variety of synthetic and real-world datasets have been proposed, each with distinct advantages and limitations. For practical applications, CRL models must perform robustly across multiple evaluation directions, including reconstruction, disentanglement, causal discovery, and counterfactual reasoning, using appropriate metrics for each direction. However, this multi-directional evaluation can complicate model comparison, as a model may excel in some direction while under-performing in others. Another significant challenge in this field is reproducibility: the source code corresponding to published results must be publicly available, and repeated runs should yield performance consistent with the original reports. In this study, we critically analyzed the synthetic and real-world datasets currently employed in the literature, highlighting their limitations and proposing a set of es"
+  },
+  "arxiv_2603.25017": {
+    "doc_id": "arxiv_2603.25017",
+    "title": "Discrete Causal Representation Learning",
+    "year": 2026,
+    "venue": "stat.ME",
+    "abstract": "Causal representation learning seeks to uncover causal relationships among high-level latent variables from low-level, entangled, and noisy observations. Existing approaches often either rely on deep neural networks, which lack interpretability and formal guarantees, or impose restrictive assumptions like linearity, continuous-only observations, and strong structural priors. These limitations particularly challenge applications with a large number of discrete latent variables and mixed-type observations. To address these challenges, we propose discrete causal representation learning (DCRL), a generative framework that models a directed acyclic graph among discrete latent variables, along with a sparse bipartite graph linking latent and observed layers. This design accommodates continuous, count, and binary responses through flexible measurement models while maintaining interpretability. Under mild conditions, we prove that both the bipartite measurement graph and the latent causal graph are identifiable from the observed data distribution alone. We further propose a three-stage estimate-resample-discovery pipeline: penalized estimation of the generative model parameters, resampling"
+  },
+  "arxiv_2603.25796": {
+    "doc_id": "arxiv_2603.25796",
+    "title": "Beyond identifiability: Learning causal representations with few environments and finite samples",
+    "year": 2026,
+    "venue": "stat.ML",
+    "abstract": "We provide explicit, finite-sample guarantees for learning causal representations from data with a sublinear number of environments. Causal representation learning seeks to provide a rigourous foundation for the general representation learning problem by bridging causal models with latent factor models in order to learn interpretable representations with causal semantics. Despite a blossoming theory of identifiability in causal representation learning, estimation and finite-sample bounds are less well understood. We show that causal representations can be learned with only a logarithmic number of unknown, multi-node interventions, and that the intervention targets need not be carefully designed in advance. Through a careful perturbation analysis, we provide a new analysis of this problem that guarantees consistent recovery of (a) the latent causal graph, (b) the mixing matrix and representations, and (c) \\emph{unknown} intervention targets."
+  },
+  "arxiv_2604.23800": {
+    "doc_id": "arxiv_2604.23800",
+    "title": "Causal Representation Learning from General Environments under Nonparametric Mixing",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning aims to recover the latent causal variables and their causal relations, typically represented by directed acyclic graphs (DAGs), from low-level observations such as image pixels. A prevailing line of research exploits multiple environments, which assume how data distributions change, including single-node interventions, coupled interventions, or hard interventions, or parametric constraints on the mixing function or the latent causal model, such as linearity. Despite the novelty and elegance of the results, they are often violated in real problems. Accordingly, we formalize a set of desiderata for causal representation learning that applies to a broader class of environments, referred to as general environments. Interestingly, we show that one can fully recover the latent DAG and identify the latent variables up to minor indeterminacies under a nonparametric mixing function and nonlinear latent causal models, such as additive (Gaussian) noise models or heteroscedastic noise models, by properly leveraging sufficient change conditions on the causal mechanisms up to third-order derivatives. These represent, to our knowledge, the first results to fully re"
+  }
+}

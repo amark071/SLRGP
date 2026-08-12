@@ -1,0 +1,314 @@
+{
+  "topic_id": "method_continual_learning",
+  "system": "autosurvey",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Continual learning (CL), also referred to as lifelong learning, incremental learning, or sequential learning, is a machine learning paradigm in which a model acquires knowledge from a continuous, non-stationary stream of data over time, building upon previously learned experiences without losing what it has already mastered [1; 2",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "1802.07569v4",
+          "source_key": "1",
+          "title": "Continual Lifelong Learning with Neural Networks: A Review",
+          "abstract": "Humans and animals have the ability to continually acquire, fine-tune, and transfer knowledge and skills throughout their lifespan. This ability, referred to as lifelong learning, is mediated by a rich set of neurocognitive mechanisms that together contribute to the development and specialization of our sensorimotor skills as well as to long-term memory consolidation and retrieval. Consequently, lifelong learning capabilities are crucial for autonomous agents interacting in the real world and processing continuous streams of information. However, lifelong learning remains a long-standing challenge for machine learning and neural network models since the continual acquisition of incrementally available information from non-stationary data distributions generally leads to catastrophic forgetting or interference. This limitation represents a major drawback for state-of-the-art deep neural network models that typically learn representations from stationary batches of training data, thus without accounting for situations in which information becomes incrementally available over time. In this review, we critically summarize the main challenges linked to lifelong learning for artificial learning systems and compare existing neural network approaches that alleviate, to different extents, catastrophic forgetting. We discuss well-established and emerging research motivated by lifelong learning factors in biological systems such as structural plasticity, memory replay, curriculum and transfer learning, intrinsic motivation, and multisensory integration.",
+          "resolved_arxiv": {
+            "arxiv_id": "1802.07569",
+            "title": "Continual Lifelong Learning with Neural Networks: A Review",
+            "abstract": "Humans and animals have the ability to continually acquire, fine-tune, and transfer knowledge and skills throughout their lifespan. This ability, referred to as lifelong learning, is mediated by a rich set of neurocognitive mechanisms that together contribute to the development and specialization of our sensorimotor skills as well as to long-term memory consolidation and retrieval. Consequently, lifelong learning capabilities are crucial for autonomous agents interacting in the real world and processing continuous streams of information. However, lifelong learning remains a long-standing challenge for machine learning and neural network models since the continual acquisition of incrementally available information from non-stationary data distributions generally leads to catastrophic forgetting or interference. This limitation represents a major drawback for state-of-the-art deep neural network models that typically learn representations from stationary batches of training data, thus without accounting for situations in which information becomes incrementally available over time. In this review, we critically summarize the main challenges linked to lifelong learning for artificial learning systems and compare existing neural network approaches that alleviate, to different extents, catastrophic forgetting. We discuss well-established and emerging research motivated by lifelong learning factors in biological systems such as structural plasticity, memory replay, curriculum and transfer learning, intrinsic motivation, and multisensory integration.",
+            "published": "2018-02-21T13:53:35Z",
+            "source_url": "https://arxiv.org/abs/1802.07569"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2403.05175v1",
+          "source_key": "2",
+          "title": "Continual Learning and Catastrophic Forgetting",
+          "abstract": "This book chapter delves into the dynamics of continual learning, which is the process of incrementally learning from a non-stationary stream of data. Although continual learning is a natural skill for the human brain, it is very challenging for artificial neural networks. An important reason is that, when learning something new, these networks tend to quickly and drastically forget what they had learned before, a phenomenon known as catastrophic forgetting. Especially in the last decade, continual learning has become an extensively studied topic in deep learning. This book chapter reviews the insights that this field has generated.",
+          "resolved_arxiv": {
+            "arxiv_id": "2403.05175",
+            "title": "Continual Learning and Catastrophic Forgetting",
+            "abstract": "This book chapter delves into the dynamics of continual learning, which is the process of incrementally learning from a non-stationary stream of data. Although continual learning is a natural skill for the human brain, it is very challenging for artificial neural networks. An important reason is that, when learning something new, these networks tend to quickly and drastically forget what they had learned before, a phenomenon known as catastrophic forgetting. Especially in the last decade, continual learning has become an extensively studied topic in deep learning. This book chapter reviews the insights that this field has generated.",
+            "published": "2024-03-08T09:32:43Z",
+            "source_url": "https://arxiv.org/abs/2403.05175"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The degree of overlap between task-specific loss minima, which is closely related to the functional and distributional similarity between tasks, therefore plays a central role in determining how severely forgetting manifests [18",
+      "citation_markers": [
+        "[18]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2007.07400v1",
+          "source_key": "18",
+          "title": "Anatomy of Catastrophic Forgetting: Hidden Representations and Task Semantics",
+          "abstract": "A central challenge in developing versatile machine learning systems is catastrophic forgetting: a model trained on tasks in sequence will suffer significant performance drops on earlier tasks. Despite the ubiquity of catastrophic forgetting, there is limited understanding of the underlying process and its causes. In this paper, we address this important knowledge gap, investigating how forgetting affects representations in neural network models. Through representational analysis techniques, we find that deeper layers are disproportionately the source of forgetting. Supporting this, a study of methods to mitigate forgetting illustrates that they act to stabilize deeper layers. These insights enable the development of an analytic argument and empirical picture relating the degree of forgetting to representational similarity between tasks. Consistent with this picture, we observe maximal forgetting occurs for task sequences with intermediate similarity. We perform empirical studies on the standard split CIFAR-10 setup and also introduce a novel CIFAR-100 based task approximating realistic input distribution shift.",
+          "resolved_arxiv": {
+            "arxiv_id": "2007.07400",
+            "title": "Anatomy of Catastrophic Forgetting: Hidden Representations and Task Semantics",
+            "abstract": "A central challenge in developing versatile machine learning systems is catastrophic forgetting: a model trained on tasks in sequence will suffer significant performance drops on earlier tasks. Despite the ubiquity of catastrophic forgetting, there is limited understanding of the underlying process and its causes. In this paper, we address this important knowledge gap, investigating how forgetting affects representations in neural network models. Through representational analysis techniques, we find that deeper layers are disproportionately the source of forgetting. Supporting this, a study of methods to mitigate forgetting illustrates that they act to stabilize deeper layers. These insights enable the development of an analytic argument and empirical picture relating the degree of forgetting to representational similarity between tasks. Consistent with this picture, we observe maximal forgetting occurs for task sequences with intermediate similarity. We perform empirical studies on the standard split CIFAR-10 setup and also introduce a novel CIFAR-100 based task approximating realistic input distribution shift.",
+            "published": "2020-07-14T23:31:14Z",
+            "source_url": "https://arxiv.org/abs/2007.07400"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The concept of the stability-plasticity dilemma was originally articulated in the context of neuroscience and cognitive psychology, where it was used to explain how biological brains manage to learn continuously across an organism's lifespan without systematically erasing prior knowledge [30",
+      "citation_markers": [
+        "[30]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2112.14146v1",
+          "source_key": "30",
+          "title": "Towards continual task learning in artificial neural networks: current approaches and insights from neuroscience",
+          "abstract": "The innate capacity of humans and other animals to learn a diverse, and often interfering, range of knowledge and skills throughout their lifespan is a hallmark of natural intelligence, with obvious evolutionary motivations. In parallel, the ability of artificial neural networks (ANNs) to learn across a range of tasks and domains, combining and re-using learned representations where required, is a clear goal of artificial intelligence. This capacity, widely described as continual learning, has become a prolific subfield of research in machine learning. Despite the numerous successes of deep learning in recent years, across domains ranging from image recognition to machine translation, such continual task learning has proved challenging. Neural networks trained on multiple tasks in sequence with stochastic gradient descent often suffer from representational interference, whereby the learned weights for a given task effectively overwrite those of previous tasks in a process termed catastrophic forgetting. This represents a major impediment to the development of more generalised artificial learning systems, capable of accumulating knowledge over time and task space, in a manner analogous to humans. A repository of selected papers and implementations accompanying this review can be found at https://github.com/mccaffary/continual-learning.",
+          "resolved_arxiv": {
+            "arxiv_id": "2112.14146",
+            "title": "Towards continual task learning in artificial neural networks: current approaches and insights from neuroscience",
+            "abstract": "The innate capacity of humans and other animals to learn a diverse, and often interfering, range of knowledge and skills throughout their lifespan is a hallmark of natural intelligence, with obvious evolutionary motivations. In parallel, the ability of artificial neural networks (ANNs) to learn across a range of tasks and domains, combining and re-using learned representations where required, is a clear goal of artificial intelligence. This capacity, widely described as continual learning, has become a prolific subfield of research in machine learning. Despite the numerous successes of deep learning in recent years, across domains ranging from image recognition to machine translation, such continual task learning has proved challenging. Neural networks trained on multiple tasks in sequence with stochastic gradient descent often suffer from representational interference, whereby the learned weights for a given task effectively overwrite those of previous tasks in a process termed catastrophic forgetting. This represents a major impediment to the development of more generalised artificial learning systems, capable of accumulating knowledge over time and task space, in a manner analogous to humans. A repository of selected papers and implementations accompanying this review can be found at https://github.com/mccaffary/continual-learning.",
+            "published": "2021-12-28T13:50:51Z",
+            "source_url": "https://arxiv.org/abs/2112.14146"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "In task-incremental learning, a model is trained on a sequence of distinct tasks, and crucially, the task identity is provided both at training and at inference time. This makes TIL the most tractable of the standard scenarios",
+      "citation_markers": [
+        "[2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2403.05175v1",
+          "source_key": "2",
+          "title": "Continual Learning and Catastrophic Forgetting",
+          "abstract": "This book chapter delves into the dynamics of continual learning, which is the process of incrementally learning from a non-stationary stream of data. Although continual learning is a natural skill for the human brain, it is very challenging for artificial neural networks. An important reason is that, when learning something new, these networks tend to quickly and drastically forget what they had learned before, a phenomenon known as catastrophic forgetting. Especially in the last decade, continual learning has become an extensively studied topic in deep learning. This book chapter reviews the insights that this field has generated.",
+          "resolved_arxiv": {
+            "arxiv_id": "2403.05175",
+            "title": "Continual Learning and Catastrophic Forgetting",
+            "abstract": "This book chapter delves into the dynamics of continual learning, which is the process of incrementally learning from a non-stationary stream of data. Although continual learning is a natural skill for the human brain, it is very challenging for artificial neural networks. An important reason is that, when learning something new, these networks tend to quickly and drastically forget what they had learned before, a phenomenon known as catastrophic forgetting. Especially in the last decade, continual learning has become an extensively studied topic in deep learning. This book chapter reviews the insights that this field has generated.",
+            "published": "2024-03-08T09:32:43Z",
+            "source_url": "https://arxiv.org/abs/2403.05175"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The CIL setting has attracted the majority of attention in recent continual learning research; however, as argued in [48], an exclusive focus on this scenario may be limiting because class-incremental benchmarks artificially exacerbate catastrophic forgetting by design, suppressing the investigation of forward transfer and computational efficiency",
+      "citation_markers": [
+        "[48]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2112.02925v1",
+          "source_key": "48",
+          "title": "Is Class-Incremental Enough for Continual Learning?",
+          "abstract": "The ability of a model to learn continually can be empirically assessed in different continual learning scenarios. Each scenario defines the constraints and the opportunities of the learning environment. Here, we challenge the current trend in the continual learning literature to experiment mainly on class-incremental scenarios, where classes present in one experience are never revisited. We posit that an excessive focus on this setting may be limiting for future research on continual learning, since class-incremental scenarios artificially exacerbate catastrophic forgetting, at the expense of other important objectives like forward transfer and computational efficiency. In many real-world environments, in fact, repetition of previously encountered concepts occurs naturally and contributes to softening the disruption of previous knowledge. We advocate for a more in-depth study of alternative continual learning scenarios, in which repetition is integrated by design in the stream of incoming information. Starting from already existing proposals, we describe the advantages such class-incremental with repetition scenarios could offer for a more comprehensive assessment of continual learning models.",
+          "resolved_arxiv": {
+            "arxiv_id": "2112.02925",
+            "title": "Is Class-Incremental Enough for Continual Learning?",
+            "abstract": "The ability of a model to learn continually can be empirically assessed in different continual learning scenarios. Each scenario defines the constraints and the opportunities of the learning environment. Here, we challenge the current trend in the continual learning literature to experiment mainly on class-incremental scenarios, where classes present in one experience are never revisited. We posit that an excessive focus on this setting may be limiting for future research on continual learning, since class-incremental scenarios artificially exacerbate catastrophic forgetting, at the expense of other important objectives like forward transfer and computational efficiency. In many real-world environments, in fact, repetition of previously encountered concepts occurs naturally and contributes to softening the disruption of previous knowledge. We advocate for a more in-depth study of alternative continual learning scenarios, in which repetition is integrated by design in the stream of incoming information. Starting from already existing proposals, we describe the advantages such class-incremental with repetition scenarios could offer for a more comprehensive assessment of continual learning models.",
+            "published": "2021-12-06T10:49:24Z",
+            "source_url": "https://arxiv.org/abs/2112.02925"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The stability-plasticity dilemma can be understood through the lens of optimization. When learning task $t$ after having learned tasks $1, \\ldots, t-1$, a continual learning algorithm must update model parameters $\\theta$ to minimize the current task loss $\\mathcal{L}_t(\\theta)$ while simultaneously preserving $\\theta \\approx \\theta^*_{1:t-1}$, the parameter configuration that performed well on prior tasks",
+      "citation_markers": [
+        ""
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [],
+      "unresolved_citation_keys": [],
+      "source_accessible": false
+    },
+    {
+      "claim_id": "C07",
+      "quote": "continual learner. Formal complexity-theoretic analysis within the PAC framework has established that any continual learner — even one permitted to perform improper learning — requires memory that grows **linearly** with the number of tasks $k$ [12",
+      "citation_markers": [
+        "[12]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2204.10830v1",
+          "source_key": "12",
+          "title": "Memory Bounds for Continual Learning",
+          "abstract": "Continual learning, or lifelong learning, is a formidable current challenge to machine learning. It requires the learner to solve a sequence of $k$ different learning tasks, one after the other, while retaining its aptitude for earlier tasks; the continual learner should scale better than the obvious solution of developing and maintaining a separate learner for each of the $k$ tasks. We embark on a complexity-theoretic study of continual learning in the PAC framework. We make novel uses of communication complexity to establish that any continual learner, even an improper one, needs memory that grows linearly with $k$, strongly suggesting that the problem is intractable. When logarithmically many passes over the learning tasks are allowed, we provide an algorithm based on multiplicative weights update whose memory requirement scales well; we also establish that improper learning is necessary for such performance. We conjecture that these results may lead to new promising approaches to continual learning.",
+          "resolved_arxiv": {
+            "arxiv_id": "2204.10830",
+            "title": "Memory Bounds for Continual Learning",
+            "abstract": "Continual learning, or lifelong learning, is a formidable current challenge to machine learning. It requires the learner to solve a sequence of $k$ different learning tasks, one after the other, while retaining its aptitude for earlier tasks; the continual learner should scale better than the obvious solution of developing and maintaining a separate learner for each of the $k$ tasks. We embark on a complexity-theoretic study of continual learning in the PAC framework. We make novel uses of communication complexity to establish that any continual learner, even an improper one, needs memory that grows linearly with $k$, strongly suggesting that the problem is intractable. When logarithmically many passes over the learning tasks are allowed, we provide an algorithm based on multiplicative weights update whose memory requirement scales well; we also establish that improper learning is necessary for such performance. We conjecture that these results may lead to new promising approaches to continual learning.",
+            "published": "2022-04-22T17:19:50Z",
+            "source_url": "https://arxiv.org/abs/2204.10830"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Experience replay, which maintains a buffer of exemplars from previous tasks and interleaves them with new training data, has been extensively studied as a practical remedy for catastrophic forgetting in sequential text classification [129",
+      "citation_markers": [
+        "[129]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "1811.11682v2",
+          "source_key": "129",
+          "title": "Experience Replay for Continual Learning",
+          "abstract": "Continual learning is the problem of learning new tasks or knowledge while protecting old knowledge and ideally generalizing from old experience to learn new tasks faster. Neural networks trained by stochastic gradient descent often degrade on old tasks when trained successively on new tasks with different data distributions. This phenomenon, referred to as catastrophic forgetting, is considered a major hurdle to learning with non-stationary data or sequences of new tasks, and prevents networks from continually accumulating knowledge and skills. We examine this issue in the context of reinforcement learning, in a setting where an agent is exposed to tasks in a sequence. Unlike most other work, we do not provide an explicit indication to the model of task boundaries, which is the most general circumstance for a learning agent exposed to continuous experience. While various methods to counteract catastrophic forgetting have recently been proposed, we explore a straightforward, general, and seemingly overlooked solution - that of using experience replay buffers for all past events - with a mixture of on- and off-policy learning, leveraging behavioral cloning. We show that this strategy can still learn new tasks quickly yet can substantially reduce catastrophic forgetting in both Atari and DMLab domains, even matching the performance of methods that require task identities. When buffer storage is constrained, we confirm that a simple mechanism for randomly discarding data allows a limited size buffer to perform almost as well as an unbounded one.",
+          "resolved_arxiv": {
+            "arxiv_id": "1811.11682",
+            "title": "Experience Replay for Continual Learning",
+            "abstract": "Continual learning is the problem of learning new tasks or knowledge while protecting old knowledge and ideally generalizing from old experience to learn new tasks faster. Neural networks trained by stochastic gradient descent often degrade on old tasks when trained successively on new tasks with different data distributions. This phenomenon, referred to as catastrophic forgetting, is considered a major hurdle to learning with non-stationary data or sequences of new tasks, and prevents networks from continually accumulating knowledge and skills. We examine this issue in the context of reinforcement learning, in a setting where an agent is exposed to tasks in a sequence. Unlike most other work, we do not provide an explicit indication to the model of task boundaries, which is the most general circumstance for a learning agent exposed to continuous experience. While various methods to counteract catastrophic forgetting have recently been proposed, we explore a straightforward, general, and seemingly overlooked solution - that of using experience replay buffers for all past events - with a mixture of on- and off-policy learning, leveraging behavioral cloning. We show that this strategy can still learn new tasks quickly yet can substantially reduce catastrophic forgetting in both Atari and DMLab domains, even matching the performance of methods that require task identities. When buffer storage is constrained, we confirm that a simple mechanism for randomly discarding data allows a limited size buffer to perform almost as well as an unbounded one.",
+            "published": "2018-11-28T17:04:27Z",
+            "source_url": "https://arxiv.org/abs/1811.11682"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "the Continual World benchmark [9] evaluates agents on sequences of robotic manipulation tasks with meaningfully diverse dynamics, providing a more ecologically valid testbed for assessing adaptation under distribution change compared to grid-world or Atari-based evaluations",
+      "citation_markers": [
+        "[9]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2105.10919v3",
+          "source_key": "9",
+          "title": "Continual World: A Robotic Benchmark For Continual Reinforcement Learning",
+          "abstract": "Continual learning (CL) -- the ability to continuously learn, building on previously acquired knowledge -- is a natural requirement for long-lived autonomous reinforcement learning (RL) agents. While building such agents, one needs to balance opposing desiderata, such as constraints on capacity and compute, the ability to not catastrophically forget, and to exhibit positive transfer on new tasks. Understanding the right trade-off is conceptually and computationally challenging, which we argue has led the community to overly focus on catastrophic forgetting. In response to these issues, we advocate for the need to prioritize forward transfer and propose Continual World, a benchmark consisting of realistic and meaningfully diverse robotic tasks built on top of Meta-World as a testbed. Following an in-depth empirical evaluation of existing CL methods, we pinpoint their limitations and highlight unique algorithmic challenges in the RL setting. Our benchmark aims to provide a meaningful and computationally inexpensive challenge for the community and thus help better understand the performance of existing and future solutions. Information about the benchmark, including the open-source code, is available at https://sites.google.com/view/continualworld.",
+          "resolved_arxiv": {
+            "arxiv_id": "2105.10919",
+            "title": "Continual World: A Robotic Benchmark For Continual Reinforcement Learning",
+            "abstract": "Continual learning (CL) -- the ability to continuously learn, building on previously acquired knowledge -- is a natural requirement for long-lived autonomous reinforcement learning (RL) agents. While building such agents, one needs to balance opposing desiderata, such as constraints on capacity and compute, the ability to not catastrophically forget, and to exhibit positive transfer on new tasks. Understanding the right trade-off is conceptually and computationally challenging, which we argue has led the community to overly focus on catastrophic forgetting. In response to these issues, we advocate for the need to prioritize forward transfer and propose Continual World, a benchmark consisting of realistic and meaningfully diverse robotic tasks built on top of Meta-World as a testbed. Following an in-depth empirical evaluation of existing CL methods, we pinpoint their limitations and highlight unique algorithmic challenges in the RL setting. Our benchmark aims to provide a meaningful and computationally inexpensive challenge for the community and thus help better understand the performance of existing and future solutions. Information about the benchmark, including the open-source code, is available at https://sites.google.com/view/continualworld.",
+            "published": "2021-05-23T11:33:04Z",
+            "source_url": "https://arxiv.org/abs/2105.10919"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Studies on unsupervised continual learning (UCL) demonstrate that unsupervised visual representations are surprisingly more resistant to catastrophic forgetting, consistently achieve better generalization performance, and transfer more effectively to out-of-distribution tasks compared to supervised continual learning approaches [177",
+      "citation_markers": [
+        "[177]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2110.06976v3",
+          "source_key": "177",
+          "title": "Representational Continuity for Unsupervised Continual Learning",
+          "abstract": "Continual learning (CL) aims to learn a sequence of tasks without forgetting the previously acquired knowledge. However, recent CL advances are restricted to supervised continual learning (SCL) scenarios. Consequently, they are not scalable to real-world applications where the data distribution is often biased and unannotated. In this work, we focus on unsupervised continual learning (UCL), where we learn the feature representations on an unlabelled sequence of tasks and show that reliance on annotated data is not necessary for continual learning. We conduct a systematic study analyzing the learned feature representations and show that unsupervised visual representations are surprisingly more robust to catastrophic forgetting, consistently achieve better performance, and generalize better to out-of-distribution tasks than SCL. Furthermore, we find that UCL achieves a smoother loss landscape through qualitative analysis of the learned representations and learns meaningful feature representations. Additionally, we propose Lifelong Unsupervised Mixup (LUMP), a simple yet effective technique that interpolates between the current task and previous tasks' instances to alleviate catastrophic forgetting for unsupervised representations.",
+          "resolved_arxiv": {
+            "arxiv_id": "2110.06976",
+            "title": "Representational Continuity for Unsupervised Continual Learning",
+            "abstract": "Continual learning (CL) aims to learn a sequence of tasks without forgetting the previously acquired knowledge. However, recent CL advances are restricted to supervised continual learning (SCL) scenarios. Consequently, they are not scalable to real-world applications where the data distribution is often biased and unannotated. In this work, we focus on unsupervised continual learning (UCL), where we learn the feature representations on an unlabelled sequence of tasks and show that reliance on annotated data is not necessary for continual learning. We conduct a systematic study analyzing the learned feature representations and show that unsupervised visual representations are surprisingly more robust to catastrophic forgetting, consistently achieve better performance, and generalize better to out-of-distribution tasks than SCL. Furthermore, we find that UCL achieves a smoother loss landscape through qualitative analysis of the learned representations and learns meaningful feature representations. Additionally, we propose Lifelong Unsupervised Mixup (LUMP), a simple yet effective technique that interpolates between the current task and previous tasks' instances to alleviate catastrophic forgetting for unsupervised representations.",
+            "published": "2021-10-13T18:38:06Z",
+            "source_url": "https://arxiv.org/abs/2110.06976"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Many state-of-the-art continual learning methods developed for server-class hardware assume access to large replay buffers, computationally intensive generative models, or expensive second-order gradient computations that are infeasible in embedded deployments",
+      "citation_markers": [
+        ""
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [],
+      "unresolved_citation_keys": [],
+      "source_accessible": false
+    },
+    {
+      "claim_id": "C12",
+      "quote": "challenges. Dynamic architectures that grow network capacity with each new task [161] may offer strong forgetting prevention, but the increasing parameter count and associated computational cost conflict directly with the fixed hardware resources available on embedded platforms",
+      "citation_markers": [
+        "[161]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2011.10568v1",
+          "source_key": "161",
+          "title": "Learn to Bind and Grow Neural Structures",
+          "abstract": "Task-incremental learning involves the challenging problem of learning new tasks continually, without forgetting past knowledge. Many approaches address the problem by expanding the structure of a shared neural network as tasks arrive, but struggle to grow optimally, without losing past knowledge. We present a new framework, Learn to Bind and Grow, which learns a neural architecture for a new task incrementally, either by binding with layers of a similar task or by expanding layers which are more likely to conflict between tasks. Central to our approach is a novel, interpretable, parameterization of the shared, multi-task architecture space, which then enables computing globally optimal architectures using Bayesian optimization. Experiments on continual learning benchmarks show that our framework performs comparably with earlier expansion based approaches and is able to flexibly compute multiple optimal solutions with performance-size trade-offs.",
+          "resolved_arxiv": {
+            "arxiv_id": "2011.10568",
+            "title": "Learn to Bind and Grow Neural Structures",
+            "abstract": "Task-incremental learning involves the challenging problem of learning new tasks continually, without forgetting past knowledge. Many approaches address the problem by expanding the structure of a shared neural network as tasks arrive, but struggle to grow optimally, without losing past knowledge. We present a new framework, Learn to Bind and Grow, which learns a neural architecture for a new task incrementally, either by binding with layers of a similar task or by expanding layers which are more likely to conflict between tasks. Central to our approach is a novel, interpretable, parameterization of the shared, multi-task architecture space, which then enables computing globally optimal architectures using Bayesian optimization. Experiments on continual learning benchmarks show that our framework performs comparably with earlier expansion based approaches and is able to flexibly compute multiple optimal solutions with performance-size trade-offs.",
+            "published": "2020-11-21T09:40:26Z",
+            "source_url": "https://arxiv.org/abs/2011.10568"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

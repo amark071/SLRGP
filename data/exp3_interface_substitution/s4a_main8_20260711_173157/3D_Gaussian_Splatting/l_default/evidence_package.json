@@ -1,0 +1,542 @@
+[
+  {
+    "doc_id": "arxiv_2403.11134",
+    "title": "Recent Advances in 3D Gaussian Splatting",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 1.5146958037168534,
+    "abstract": "The emergence of 3D Gaussian Splatting (3DGS) has greatly accelerated the rendering speed of novel view synthesis. Unlike neural implicit representations like Neural Radiance Fields (NeRF) that represent a 3D scene with position and viewpoint-conditioned neural networks, 3D Gaussian Splatting utilizes a set of Gaussian ellipsoids to model the scene so that efficient rendering can be accomplished by rasterizing Gaussian ellipsoids into images. Apart from the fast rendering speed, the explicit representation of 3D Gaussian Splatting facilitates editing tasks like dynamic reconstruction, geometry editing, and physical simulation. Considering the rapid change and growing number of works in this field, we present a literature review of recent 3D Gaussian Splatting methods, which can be roughly classified into 3D reconstruction, 3D editing, and other downstream applications by functionality. Traditional point-based rendering methods and the rendering formulation of 3D Gaussian Splatting are also illustrated for a better understanding of this technique. This survey aims to help beginners get into this field quickly and provide experienced researchers with a comprehensive overview, which c"
+  },
+  {
+    "doc_id": "arxiv_2401.00834",
+    "title": "Deblurring 3D Gaussian Splatting",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T2",
+    "score": 1.176337191918781,
+    "abstract": "Recent studies in Radiance Fields have paved the robust way for novel view synthesis with their photorealistic rendering quality. Nevertheless, they usually employ neural networks and volumetric rendering, which are costly to train and impede their broad use in various real-time applications due to the lengthy rendering time. Lately 3D Gaussians splatting-based approach has been proposed to model the 3D scene, and it achieves remarkable visual quality while rendering the images in real-time. However, it suffers from severe degradation in the rendering quality if the training images are blurry. Blurriness commonly occurs due to the lens defocusing, object motion, and camera shake, and it inevitably intervenes in clean image acquisition. Several previous studies have attempted to render clean and sharp images from blurry input images using neural fields. The majority of those works, however, are designed only for volumetric rendering-based neural radiance fields and are not straightforwardly applicable to rasterization-based 3D Gaussian splatting methods. Thus, we propose a novel real-time deblurring framework, Deblurring 3D Gaussian Splatting, using a small Multi-Layer Perceptron (M"
+  },
+  {
+    "doc_id": "arxiv_2308.04079",
+    "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+    "year": 2023,
+    "venue": "cs.GR",
+    "tier": "T1",
+    "score": 0.895103620205519,
+    "abstract": "Radiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates. We introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (>= 30 fps) novel-view synthesis at 1080p resolution. First, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space; Second, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene; Third, we develop a fast visibility-aware rendering algorithm that supports"
+  },
+  {
+    "doc_id": "arxiv_2403.11831",
+    "title": "BAD-Gaussians: Bundle Adjusted Deblur Gaussian Splatting",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T2",
+    "score": 0.791128338887716,
+    "abstract": "While neural rendering has demonstrated impressive capabilities in 3D scene reconstruction and novel view synthesis, it heavily relies on high-quality sharp images and accurate camera poses. Numerous approaches have been proposed to train Neural Radiance Fields (NeRF) with motion-blurred images, commonly encountered in real-world scenarios such as low-light or long-exposure conditions. However, the implicit representation of NeRF struggles to accurately recover intricate details from severely motion-blurred images and cannot achieve real-time rendering. In contrast, recent advancements in 3D Gaussian Splatting achieve high-quality 3D scene reconstruction and real-time rendering by explicitly optimizing point clouds as Gaussian spheres.   In this paper, we introduce a novel approach, named BAD-Gaussians (Bundle Adjusted Deblur Gaussian Splatting), which leverages explicit Gaussian representation and handles severe motion-blurred images with inaccurate camera poses to achieve high-quality scene reconstruction. Our method models the physical image formation process of motion-blurred images and jointly learns the parameters of Gaussians while recovering camera motion trajectories durin"
+  },
+  {
+    "doc_id": "arxiv_2502.19318",
+    "title": "Does 3D Gaussian Splatting Need Accurate Volumetric Rendering?",
+    "year": 2025,
+    "venue": "cs.GR",
+    "tier": "T1",
+    "score": 0.7744636647267887,
+    "abstract": "Since its introduction, 3D Gaussian Splatting (3DGS) has become an important reference method for learning 3D representations of a captured scene, allowing real-time novel-view synthesis with high visual quality and fast training times. Neural Radiance Fields (NeRFs), which preceded 3DGS, are based on a principled ray-marching approach for volumetric rendering. In contrast, while sharing a similar image formation model with NeRF, 3DGS uses a hybrid rendering solution that builds on the strengths of volume rendering and primitive rasterization. A crucial benefit of 3DGS is its performance, achieved through a set of approximations, in many cases with respect to volumetric rendering theory. A naturally arising question is whether replacing these approximations with more principled volumetric rendering solutions can improve the quality of 3DGS. In this paper, we present an in-depth analysis of the various approximations and assumptions used by the original 3DGS solution. We demonstrate that, while more accurate volumetric rendering can help for low numbers of primitives, the power of efficient optimization and the large number of Gaussians allows 3DGS to outperform volumetric rendering"
+  },
+  {
+    "doc_id": "arxiv_2411.01853",
+    "title": "GVKF: Gaussian Voxel Kernel Functions for Highly Efficient Surface\n  Reconstruction in Open Scenes",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 0.23504455387466883,
+    "abstract": "In this paper we present a novel method for efficient and effective 3D surface reconstruction in open scenes. Existing Neural Radiance Fields (NeRF) based works typically require extensive training and rendering time due to the adopted implicit representations. In contrast, 3D Gaussian splatting (3DGS) uses an explicit and discrete representation, hence the reconstructed surface is built by the huge number of Gaussian primitives, which leads to excessive memory consumption and rough surface details in sparse Gaussian areas. To address these issues, we propose Gaussian Voxel Kernel Functions (GVKF), which establish a continuous scene representation based on discrete 3DGS through kernel regression. The GVKF integrates fast 3DGS rasterization and highly effective scene implicit representations, achieving high-fidelity open scene surface reconstruction. Experiments on challenging scene datasets demonstrate the efficiency and effectiveness of our proposed GVKF, featuring with high reconstruction quality, real-time rendering speed, significant savings in storage and training memory consumption."
+  },
+  {
+    "doc_id": "arxiv_2312.07504",
+    "title": "COLMAP-Free 3D Gaussian Splatting",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": 0.16133002376953234,
+    "abstract": "While neural rendering has led to impressive advances in scene reconstruction and novel view synthesis, it relies heavily on accurately pre-computed camera poses. To relax this constraint, multiple efforts have been made to train Neural Radiance Fields (NeRFs) without pre-processed camera poses. However, the implicit representations of NeRFs provide extra challenges to optimize the 3D structure and camera poses at the same time. On the other hand, the recently proposed 3D Gaussian Splatting provides new opportunities given its explicit point cloud representations. This paper leverages both the explicit geometric representation and the continuity of the input video stream to perform novel view synthesis without any SfM preprocessing. We process the input frames in a sequential manner and progressively grow the 3D Gaussians set by taking one input frame at a time, without the need to pre-compute the camera poses. Our method significantly improves over previous approaches in view synthesis and camera pose estimation under large motion changes. Our project page is https://oasisyang.github.io/colmap-free-3dgs"
+  },
+  {
+    "doc_id": "arxiv_2405.17891",
+    "title": "A Refined 3D Gaussian Representation for High-Quality Dynamic Scene\n  Reconstruction",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": 0.15940414010133871,
+    "abstract": "In recent years, Neural Radiance Fields (NeRF) has revolutionized three-dimensional (3D) reconstruction with its implicit representation. Building upon NeRF, 3D Gaussian Splatting (3D-GS) has departed from the implicit representation of neural networks and instead directly represents scenes as point clouds with Gaussian-shaped distributions. While this shift has notably elevated the rendering quality and speed of radiance fields but inevitably led to a significant increase in memory usage. Additionally, effectively rendering dynamic scenes in 3D-GS has emerged as a pressing challenge. To address these concerns, this paper purposes a refined 3D Gaussian representation for high-quality dynamic scene reconstruction. Firstly, we use a deformable multi-layer perceptron (MLP) network to capture the dynamic offset of Gaussian points and express the color features of points through hash encoding and a tiny MLP to reduce storage requirements. Subsequently, we introduce a learnable denoising mask coupled with denoising loss to eliminate noise points from the scene, thereby further compressing 3D Gaussian model. Finally, motion noise of points is mitigated through static constraints and motio"
+  },
+  {
+    "doc_id": "arxiv_2411.14974",
+    "title": "3D Convex Splatting: Radiance Field Rendering with 3D Smooth Convexes",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 0.13780827868664544,
+    "abstract": "Recent advances in radiance field reconstruction, such as 3D Gaussian Splatting (3DGS), have achieved high-quality novel view synthesis and fast rendering by representing scenes with compositions of Gaussian primitives. However, 3D Gaussians present several limitations for scene reconstruction. Accurately capturing hard edges is challenging without significantly increasing the number of Gaussians, creating a large memory footprint. Moreover, they struggle to represent flat surfaces, as they are diffused in space. Without hand-crafted regularizers, they tend to disperse irregularly around the actual surface. To circumvent these issues, we introduce a novel method, named 3D Convex Splatting (3DCS), which leverages 3D smooth convexes as primitives for modeling geometrically-meaningful radiance fields from multi-view images. Smooth convex shapes offer greater flexibility than Gaussians, allowing for a better representation of 3D scenes with hard edges and dense volumes using fewer primitives. Powered by our efficient CUDA-based rasterizer, 3DCS achieves superior performance over 3DGS on benchmarks such as Mip-NeRF360, Tanks and Temples, and Deep Blending. Specifically, our method attai"
+  },
+  {
+    "doc_id": "arxiv_2401.03890",
+    "title": "A Survey on 3D Gaussian Splatting",
+    "year": 2026,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.023993148940852634,
+    "abstract": "3D Gaussian splatting (GS) has emerged as a transformative technique in radiance fields. Unlike mainstream implicit neural models, 3D GS uses millions of learnable 3D Gaussians for an explicit scene representation. Paired with a differentiable rendering algorithm, this approach achieves real-time rendering and unprecedented editability, making it a potential game-changer for 3D reconstruction and representation. In the present paper, we provide the first systematic overview of the recent developments and critical contributions in 3D GS. We begin with a detailed exploration of the underlying principles and the driving forces behind the emergence of 3D GS, laying the groundwork for understanding its significance. A focal point of our discussion is the practical applicability of 3D GS. By enabling unprecedented rendering speed, 3D GS opens up a plethora of applications, ranging from virtual reality to interactive media and beyond. This is complemented by a comparative analysis of leading 3D GS models, evaluated across various benchmark tasks to highlight their performance and practical utility. The survey concludes by identifying current challenges and suggesting potential avenues for"
+  },
+  {
+    "doc_id": "arxiv_2411.03637",
+    "title": "Structure Consistent Gaussian Splatting with Matching Prior for Few-shot\n  Novel View Synthesis",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.035232784084110944,
+    "abstract": "Despite the substantial progress of novel view synthesis, existing methods, either based on the Neural Radiance Fields (NeRF) or more recently 3D Gaussian Splatting (3DGS), suffer significant degradation when the input becomes sparse. Numerous efforts have been introduced to alleviate this problem, but they still struggle to synthesize satisfactory results efficiently, especially in the large scene. In this paper, we propose SCGaussian, a Structure Consistent Gaussian Splatting method using matching priors to learn 3D consistent scene structure. Considering the high interdependence of Gaussian attributes, we optimize the scene structure in two folds: rendering geometry and, more importantly, the position of Gaussian primitives, which is hard to be directly constrained in the vanilla 3DGS due to the non-structure property. To achieve this, we present a hybrid Gaussian representation. Besides the ordinary non-structure Gaussian primitives, our model also consists of ray-based Gaussian primitives that are bound to matching rays and whose optimization of their positions is restricted along the ray. Thus, we can utilize the matching correspondence to directly enforce the position of the"
+  },
+  {
+    "doc_id": "arxiv_2410.11080",
+    "title": "Few-shot Novel View Synthesis using Depth Aware 3D Gaussian Splatting",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T2",
+    "score": -0.04553172907070542,
+    "abstract": "3D Gaussian splatting has surpassed neural radiance field methods in novel view synthesis by achieving lower computational costs and real-time high-quality rendering. Although it produces a high-quality rendering with a lot of input views, its performance drops significantly when only a few views are available. In this work, we address this by proposing a depth-aware Gaussian splatting method for few-shot novel view synthesis. We use monocular depth prediction as a prior, along with a scale-invariant depth loss, to constrain the 3D shape under just a few input views. We also model color using lower-order spherical harmonics to avoid overfitting. Further, we observe that removing splats with lower opacity periodically, as performed in the original work, leads to a very sparse point cloud and, hence, a lower-quality rendering. To mitigate this, we retain all the splats, leading to a better reconstruction in a few view settings. Experimental results show that our method outperforms the traditional 3D Gaussian splatting methods by achieving improvements of 10.5% in peak signal-to-noise ratio, 6% in structural similarity index, and 14.1% in perceptual similarity, thereby validating the "
+  },
+  {
+    "doc_id": "arxiv_2509.17083",
+    "title": "HyRF: Hybrid Radiance Fields for Memory-efficient and High-quality Novel View Synthesis",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.15901756044298865,
+    "abstract": "Recently, 3D Gaussian Splatting (3DGS) has emerged as a powerful alternative to NeRF-based approaches, enabling real-time, high-quality novel view synthesis through explicit, optimizable 3D Gaussians. However, 3DGS suffers from significant memory overhead due to its reliance on per-Gaussian parameters to model view-dependent effects and anisotropic shapes. While recent works propose compressing 3DGS with neural fields, these methods struggle to capture high-frequency spatial variations in Gaussian properties, leading to degraded reconstruction of fine details. We present Hybrid Radiance Fields (HyRF), a novel scene representation that combines the strengths of explicit Gaussians and neural fields. HyRF decomposes the scene into (1) a compact set of explicit Gaussians storing only critical high-frequency parameters and (2) grid-based neural fields that predict remaining properties. To enhance representational capacity, we introduce a decoupled neural field architecture, separately modeling geometry (scale, opacity, rotation) and view-dependent color. Additionally, we propose a hybrid rendering scheme that composites Gaussian splatting with a neural field-predicted background, addres"
+  },
+  {
+    "doc_id": "arxiv_2403.17888",
+    "title": "2D Gaussian Splatting for Geometrically Accurate Radiance Fields",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.21110857660068627,
+    "abstract": "3D Gaussian Splatting (3DGS) has recently revolutionized radiance field reconstruction, achieving high quality novel view synthesis and fast rendering speed without baking. However, 3DGS fails to accurately represent surfaces due to the multi-view inconsistent nature of 3D Gaussians. We present 2D Gaussian Splatting (2DGS), a novel approach to model and reconstruct geometrically accurate radiance fields from multi-view images. Our key idea is to collapse the 3D volume into a set of 2D oriented planar Gaussian disks. Unlike 3D Gaussians, 2D Gaussians provide view-consistent geometry while modeling surfaces intrinsically. To accurately recover thin surfaces and achieve stable optimization, we introduce a perspective-correct 2D splatting process utilizing ray-splat intersection and rasterization. Additionally, we incorporate depth distortion and normal consistency terms to further enhance the quality of the reconstructions. We demonstrate that our differentiable renderer allows for noise-free and detailed geometry reconstruction while maintaining competitive appearance quality, fast training speed, and real-time rendering."
+  },
+  {
+    "doc_id": "arxiv_2405.17811",
+    "title": "Mani-GS: Gaussian Splatting Manipulation with Triangular Mesh",
+    "year": 2025,
+    "venue": "cs.GR",
+    "tier": "T1",
+    "score": -0.21852708143216598,
+    "abstract": "Neural 3D representations such as Neural Radiance Fields (NeRF), excel at producing photo-realistic rendering results but lack the flexibility for manipulation and editing which is crucial for content creation. Previous works have attempted to address this issue by deforming a NeRF in canonical space or manipulating the radiance field based on an explicit mesh. However, manipulating NeRF is not highly controllable and requires a long training and inference time. With the emergence of 3D Gaussian Splatting (3DGS), extremely high-fidelity novel view synthesis can be achieved using an explicit point-based 3D representation with much faster training and rendering speed. However, there is still a lack of effective means to manipulate 3DGS freely while maintaining rendering quality. In this work, we aim to tackle the challenge of achieving manipulable photo-realistic rendering. We propose to utilize a triangular mesh to manipulate 3DGS directly with self-adaptation. This approach reduces the need to design various algorithms for different types of Gaussian manipulation. By utilizing a triangle shape-aware Gaussian binding and adapting method, we can achieve 3DGS manipulation and preserve"
+  },
+  {
+    "doc_id": "arxiv_2403.14244",
+    "title": "Isotropic Gaussian Splatting for Real-Time Radiance Field Rendering",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.2237564355332158,
+    "abstract": "The 3D Gaussian splatting method has drawn a lot of attention, thanks to its high performance in training and high quality of the rendered image. However, it uses anisotropic Gaussian kernels to represent the scene. Although such anisotropic kernels have advantages in representing the geometry, they lead to difficulties in terms of computation, such as splitting or merging two kernels. In this paper, we propose to use isotropic Gaussian kernels to avoid such difficulties in the computation, leading to a higher performance method. The experiments confirm that the proposed method is about {\\bf 100X} faster without losing the geometry representation accuracy. The proposed method can be applied in a large range applications where the radiance field is needed, such as 3D reconstruction, view synthesis, and dynamic object modeling."
+  },
+  {
+    "doc_id": "arxiv_2404.06270",
+    "title": "3D Geometry-aware Deformable Gaussian Splatting for Dynamic View\n  Synthesis",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.22979346105819726,
+    "abstract": "In this paper, we propose a 3D geometry-aware deformable Gaussian Splatting method for dynamic view synthesis. Existing neural radiance fields (NeRF) based solutions learn the deformation in an implicit manner, which cannot incorporate 3D scene geometry. Therefore, the learned deformation is not necessarily geometrically coherent, which results in unsatisfactory dynamic view synthesis and 3D dynamic reconstruction. Recently, 3D Gaussian Splatting provides a new representation of the 3D scene, building upon which the 3D geometry could be exploited in learning the complex 3D deformation. Specifically, the scenes are represented as a collection of 3D Gaussian, where each 3D Gaussian is optimized to move and rotate over time to model the deformation. To enforce the 3D scene geometry constraint during deformation, we explicitly extract 3D geometry features and integrate them in learning the 3D deformation. In this way, our solution achieves 3D geometry-aware deformation modeling, which enables improved dynamic view synthesis and 3D dynamic reconstruction. Extensive experimental results on both synthetic and real datasets prove the superiority of our solution, which achieves new state-of"
+  },
+  {
+    "doc_id": "arxiv_2602.19916",
+    "title": "Augmented Radiance Field: A General Framework for Enhanced Gaussian Splatting",
+    "year": 2026,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.28923001920871194,
+    "abstract": "Due to the real-time rendering performance, 3D Gaussian Splatting (3DGS) has emerged as the leading method for radiance field reconstruction. However, its reliance on spherical harmonics for color encoding inherently limits its ability to separate diffuse and specular components, making it challenging to accurately represent complex reflections. To address this, we propose a novel enhanced Gaussian kernel that explicitly models specular effects through view-dependent opacity. Meanwhile, we introduce an error-driven compensation strategy to improve rendering quality in existing 3DGS scenes. Our method begins with 2D Gaussian initialization and then adaptively inserts and optimizes enhanced Gaussian kernels, ultimately producing an augmented radiance field. Experiments demonstrate that our method not only surpasses state-of-the-art NeRF methods in rendering performance but also achieves greater parameter efficiency. Project page at: https://xiaoxinyyx.github.io/augs."
+  },
+  {
+    "doc_id": "arxiv_2312.04564",
+    "title": "EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncodingS",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T2",
+    "score": -0.32655291266448006,
+    "abstract": "Recently, 3D Gaussian splatting (3D-GS) has gained popularity in novel-view scene synthesis. It addresses the challenges of lengthy training times and slow rendering speeds associated with Neural Radiance Fields (NeRFs). Through rapid, differentiable rasterization of 3D Gaussians, 3D-GS achieves real-time rendering and accelerated training. They, however, demand substantial memory resources for both training and storage, as they require millions of Gaussians in their point cloud representation for each scene. We present a technique utilizing quantized embeddings to significantly reduce per-point memory storage requirements and a coarse-to-fine training strategy for a faster and more stable optimization of the Gaussian point clouds. Our approach develops a pruning stage which results in scene representations with fewer Gaussians, leading to faster training times and rendering speeds for real-time rendering of high resolution scenes. We reduce storage memory by more than an order of magnitude all while preserving the reconstruction quality. We validate the effectiveness of our approach on a variety of datasets and scenes preserving the visual quality while consuming 10-20x lesser mem"
+  },
+  {
+    "doc_id": "arxiv_2312.13729",
+    "title": "Gaussian Splatting with NeRF-based Color and Opacity",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.3694126139415428,
+    "abstract": "Neural Radiance Fields (NeRFs) have demonstrated the remarkable potential of neural networks to capture the intricacies of 3D objects. By encoding the shape and color information within neural network weights, NeRFs excel at producing strikingly sharp novel views of 3D objects. Recently, numerous generalizations of NeRFs utilizing generative models have emerged, expanding its versatility. In contrast, Gaussian Splatting (GS) offers a similar render quality with faster training and inference as it does not need neural networks to work. It encodes information about the 3D objects in the set of Gaussian distributions that can be rendered in 3D similarly to classical meshes. Unfortunately, GS are difficult to condition since they usually require circa hundred thousand Gaussian components. To mitigate the caveats of both models, we propose a hybrid model Viewing Direction Gaussian Splatting (VDGS) that uses GS representation of the 3D object's shape and NeRF-based encoding of color and opacity. Our model uses Gaussian distributions with trainable positions (i.e. means of Gaussian), shape (i.e. covariance of Gaussian), color and opacity, and a neural network that takes Gaussian parameter"
+  },
+  {
+    "doc_id": "arxiv_2405.17083",
+    "title": "F-3DGS: Factorized Coordinates and Representations for 3D Gaussian\n  Splatting",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.4034843705392685,
+    "abstract": "The neural radiance field (NeRF) has made significant strides in representing 3D scenes and synthesizing novel views. Despite its advancements, the high computational costs of NeRF have posed challenges for its deployment in resource-constrained environments and real-time applications. As an alternative to NeRF-like neural rendering methods, 3D Gaussian Splatting (3DGS) offers rapid rendering speeds while maintaining excellent image quality. However, as it represents objects and scenes using a myriad of Gaussians, it requires substantial storage to achieve high-quality representation. To mitigate the storage overhead, we propose Factorized 3D Gaussian Splatting (F-3DGS), a novel approach that drastically reduces storage requirements while preserving image quality. Inspired by classical matrix and tensor factorization techniques, our method represents and approximates dense clusters of Gaussians with significantly fewer Gaussians through efficient factorization. We aim to efficiently represent dense 3D Gaussians by approximating them with a limited amount of information for each axis and their combinations. This method allows us to encode a substantially large number of Gaussians al"
+  },
+  {
+    "doc_id": "arxiv_2508.09977",
+    "title": "A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing, and Generation",
+    "year": 2026,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.4241609413385593,
+    "abstract": "In the context of novel view synthesis, 3D Gaussian Splatting (3DGS) has recently emerged as an efficient and competitive counterpart to Neural Radiance Field (NeRF), enabling high-fidelity photorealistic rendering in real time. Beyond novel view synthesis, the explicit and compact nature of 3DGS enables a wide range of downstream applications that require geometric and semantic understanding. This survey provides a comprehensive overview of recent progress in 3DGS applications. It first reviews the reconstruction preliminaries of 3DGS, followed by the problem formulation, 2D foundation models, and related NeRF-based research areas that inform downstream 3DGS applications. We then categorize 3DGS applications into three foundational tasks: segmentation, editing, and generation, alongside additional functional applications built upon or tightly coupled with these foundational capabilities. For each, we summarize representative methods, supervision strategies, and learning paradigms, highlighting shared design principles and emerging trends. Commonly used datasets and evaluation protocols are also summarized, along with comparative analyses of recent methods across public benchmarks."
+  },
+  {
+    "doc_id": "arxiv_2408.03753",
+    "title": "3iGS: Factorised Tensorial Illumination for 3D Gaussian Splatting",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T2",
+    "score": -0.47268646712187323,
+    "abstract": "The use of 3D Gaussians as representation of radiance fields has enabled high quality novel view synthesis at real-time rendering speed. However, the choice of optimising the outgoing radiance of each Gaussian independently as spherical harmonics results in unsatisfactory view dependent effects. In response to these limitations, our work, Factorised Tensorial Illumination for 3D Gaussian Splatting, or 3iGS, improves upon 3D Gaussian Splatting (3DGS) rendering quality. Instead of optimising a single outgoing radiance parameter, 3iGS enhances 3DGS view-dependent effects by expressing the outgoing radiance as a function of a local illumination field and Bidirectional Reflectance Distribution Function (BRDF) features. We optimise a continuous incident illumination field through a Tensorial Factorisation representation, while separately fine-tuning the BRDF features of each 3D Gaussian relative to this illumination field. Our methodology significantly enhances the rendering quality of specular view-dependent effects of 3DGS, while maintaining rapid training and rendering speeds."
+  },
+  {
+    "doc_id": "arxiv_2406.17074",
+    "title": "Reducing the Memory Footprint of 3D Gaussian Splatting",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.47571397152989003,
+    "abstract": "3D Gaussian splatting provides excellent visual quality for novel view synthesis, with fast training and real-time rendering; unfortunately, the memory requirements of this method for storing and transmission are unreasonably high. We first analyze the reasons for this, identifying three main areas where storage can be reduced: the number of 3D Gaussian primitives used to represent a scene, the number of coefficients for the spherical harmonics used to represent directional radiance, and the precision required to store Gaussian primitive attributes. We present a solution to each of these issues. First, we propose an efficient, resolution-aware primitive pruning approach, reducing the primitive count by half. Second, we introduce an adaptive adjustment method to choose the number of coefficients used to represent directional radiance for each Gaussian primitive, and finally a codebook-based quantization method, together with a half-float representation for further memory reduction. Taken together, these three components result in a 27 reduction in overall size on disk on the standard datasets we tested, along with a 1.7 speedup in rendering speed. We demonstrate our method on standa"
+  },
+  {
+    "doc_id": "arxiv_2311.13681",
+    "title": "Compact 3D Gaussian Representation for Radiance Field",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.5056002699594044,
+    "abstract": "Neural Radiance Fields (NeRFs) have demonstrated remarkable potential in capturing complex 3D scenes with high fidelity. However, one persistent challenge that hinders the widespread adoption of NeRFs is the computational bottleneck due to the volumetric rendering. On the other hand, 3D Gaussian splatting (3DGS) has recently emerged as an alternative representation that leverages a 3D Gaussisan-based representation and adopts the rasterization pipeline to render the images rather than volumetric rendering, achieving very fast rendering speed and promising image quality. However, a significant drawback arises as 3DGS entails a substantial number of 3D Gaussians to maintain the high fidelity of the rendered images, which requires a large amount of memory and storage. To address this critical issue, we place a specific emphasis on two key objectives: reducing the number of Gaussian points without sacrificing performance and compressing the Gaussian attributes, such as view-dependent color and covariance. To this end, we propose a learnable mask strategy that significantly reduces the number of Gaussians while preserving high performance. In addition, we propose a compact but effective"
+  },
+  {
+    "doc_id": "arxiv_2412.00578",
+    "title": "Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives",
+    "year": 2026,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.57713067757093,
+    "abstract": "3D Gaussian Splatting (3D-GS) is a recent 3D scene reconstruction technique that enables real-time rendering of novel views by modeling scenes as parametric point clouds of differentiable 3D Gaussians. However, its rendering speed and model size still present bottlenecks, especially in resource-constrained settings. In this paper, we identify and address two key inefficiencies in 3D-GS to substantially improve rendering speed. These improvements also yield the ancillary benefits of reduced model size and training time. First, we optimize the rendering pipeline to precisely localize Gaussians in the scene, boosting rendering speed without altering visual fidelity. Second, we introduce a novel pruning technique and integrate it into the training pipeline, significantly reducing model size and training time while further raising rendering speed. Our Speedy-Splat approach combines these techniques to accelerate average rendering speed by a drastic $\\mathit{6.71\\times}$ across scenes from the Mip-NeRF 360, Tanks & Temples, and Deep Blending datasets."
+  },
+  {
+    "doc_id": "arxiv_2408.03822",
+    "title": "Compact 3D Gaussian Splatting for Static and Dynamic Radiance Fields",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.6173792302011013,
+    "abstract": "3D Gaussian splatting (3DGS) has recently emerged as an alternative representation that leverages a 3D Gaussian-based representation and introduces an approximated volumetric rendering, achieving very fast rendering speed and promising image quality. Furthermore, subsequent studies have successfully extended 3DGS to dynamic 3D scenes, demonstrating its wide range of applications. However, a significant drawback arises as 3DGS and its following methods entail a substantial number of Gaussians to maintain the high fidelity of the rendered images, which requires a large amount of memory and storage. To address this critical issue, we place a specific emphasis on two key objectives: reducing the number of Gaussian points without sacrificing performance and compressing the Gaussian attributes, such as view-dependent color and covariance. To this end, we propose a learnable mask strategy that significantly reduces the number of Gaussians while preserving high performance. In addition, we propose a compact but effective representation of view-dependent color by employing a grid-based neural field rather than relying on spherical harmonics. Finally, we learn codebooks to compactly represen"
+  },
+  {
+    "doc_id": "arxiv_2404.12547",
+    "title": "Evaluating Alternatives to SFM Point Cloud Initialization for Gaussian\n  Splatting",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.7865815712513229,
+    "abstract": "3D Gaussian Splatting has recently been embraced as a versatile and effective method for scene reconstruction and novel view synthesis, owing to its high-quality results and compatibility with hardware rasterization. Despite its advantages, Gaussian Splatting's reliance on high-quality point cloud initialization by Structure-from-Motion (SFM) algorithms is a significant limitation to be overcome. To this end, we investigate various initialization strategies for Gaussian Splatting and delve into how volumetric reconstructions from Neural Radiance Fields (NeRF) can be utilized to bypass the dependency on SFM data. Our findings demonstrate that random initialization can perform much better if carefully designed and that by employing a combination of improved initialization strategies and structure distillation from low-cost NeRF models, it is possible to achieve equivalent results, or at times even superior, to those obtained from SFM initialization. Source code is available at https://theialab.github.io/nerf-3dgs ."
+  },
+  {
+    "doc_id": "arxiv_2409.06407",
+    "title": "Sources of Uncertainty in 3D Scene Reconstruction",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T2",
+    "score": -0.8138315865496628,
+    "abstract": "The process of 3D scene reconstruction can be affected by numerous uncertainty sources in real-world scenes. While Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting (GS) achieve high-fidelity rendering, they lack built-in mechanisms to directly address or quantify uncertainties arising from the presence of noise, occlusions, confounding outliers, and imprecise camera pose inputs. In this paper, we introduce a taxonomy that categorizes different sources of uncertainty inherent in these methods. Moreover, we extend NeRF- and GS-based methods with uncertainty estimation techniques, including learning uncertainty outputs and ensembles, and perform an empirical study to assess their ability to capture the sensitivity of the reconstruction. Our study highlights the need for addressing various uncertainty aspects when designing NeRF/GS-based methods for uncertainty-aware 3D reconstruction."
+  },
+  {
+    "doc_id": "arxiv_2412.19370",
+    "title": "BeSplat: Gaussian Splatting from a Single Blurry Image and Event Stream",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.834038621829341,
+    "abstract": "Novel view synthesis has been greatly enhanced by the development of radiance field methods. The introduction of 3D Gaussian Splatting (3DGS) has effectively addressed key challenges, such as long training times and slow rendering speeds, typically associated with Neural Radiance Fields (NeRF), while maintaining high-quality reconstructions. In this work (BeSplat), we demonstrate the recovery of sharp radiance field (Gaussian splats) from a single motion-blurred image and its corresponding event stream. Our method jointly learns the scene representation via Gaussian Splatting and recovers the camera motion through Bezier SE(3) formulation effectively, minimizing discrepancies between synthesized and real-world measurements of both blurry image and corresponding event stream. We evaluate our approach on both synthetic and real datasets, showcasing its ability to render view-consistent, sharp images from the learned radiance field and the estimated camera trajectory. To the best of our knowledge, ours is the first work to address this highly challenging ill-posed problem in a Gaussian Splatting framework with the effective incorporation of temporal information captured using the even"
+  },
+  {
+    "doc_id": "arxiv_2410.12262",
+    "title": "3D Gaussian Splatting in Robotics: A Survey",
+    "year": 2024,
+    "venue": "cs.RO",
+    "tier": "PREPRINT",
+    "score": -0.8764846742027624,
+    "abstract": "Dense 3D representations of the environment have been a long-term goal in the robotics field. While previous Neural Radiance Fields (NeRF) representation have been prevalent for its implicit, coordinate-based model, the recent emergence of 3D Gaussian Splatting (3DGS) has demonstrated remarkable potential in its explicit radiance field representation. By leveraging 3D Gaussian primitives for explicit scene representation and enabling differentiable rendering, 3DGS has shown significant advantages over other radiance fields in real-time rendering and photo-realistic performance, which is beneficial for robotic applications. In this survey, we provide a comprehensive understanding of 3DGS in the field of robotics. We divide our discussion of the related works into two main categories: the application of 3DGS and the advancements in 3DGS techniques. In the application section, we explore how 3DGS has been utilized in various robotics tasks from scene understanding and interaction perspectives. The advance of 3DGS section focuses on the improvements of 3DGS own properties in its adaptability and efficiency, aiming to enhance its performance in robotics. We then summarize the most commo"
+  },
+  {
+    "doc_id": "arxiv_2411.02229",
+    "title": "FewViewGS: Gaussian Splatting with Few View Matching and Multi-stage\n  Training",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.8787103160967615,
+    "abstract": "The field of novel view synthesis from images has seen rapid advancements with the introduction of Neural Radiance Fields (NeRF) and more recently with 3D Gaussian Splatting. Gaussian Splatting became widely adopted due to its efficiency and ability to render novel views accurately. While Gaussian Splatting performs well when a sufficient amount of training images are available, its unstructured explicit representation tends to overfit in scenarios with sparse input images, resulting in poor rendering performance. To address this, we present a 3D Gaussian-based novel view synthesis method using sparse input images that can accurately render the scene from the viewpoints not covered by the training images. We propose a multi-stage training scheme with matching-based consistency constraints imposed on the novel views without relying on pre-trained depth estimation or diffusion models. This is achieved by using the matches of the available training images to supervise the generation of the novel views sampled between the training frames with color, geometry, and semantic losses. In addition, we introduce a locality preserving regularization for 3D Gaussians which removes rendering art"
+  },
+  {
+    "doc_id": "arxiv_2502.19457",
+    "title": "Compression in 3D Gaussian Splatting: A Survey of Methods, Trends, and\n  Future Directions",
+    "year": 2025,
+    "venue": "cs.GR",
+    "tier": "T1",
+    "score": -0.9369948619206208,
+    "abstract": "3D Gaussian Splatting (3DGS) has recently emerged as a pioneering approach in explicit scene rendering and computer graphics. Unlike traditional neural radiance field (NeRF) methods, which typically rely on implicit, coordinate-based models to map spatial coordinates to pixel values, 3DGS utilizes millions of learnable 3D Gaussians. Its differentiable rendering technique and inherent capability for explicit scene representation and manipulation positions 3DGS as a potential game-changer for the next generation of 3D reconstruction and representation technologies. This enables 3DGS to deliver real-time rendering speeds while offering unparalleled editability levels. However, despite its advantages, 3DGS suffers from substantial memory and storage requirements, posing challenges for deployment on resource-constrained devices. In this survey, we provide a comprehensive overview focusing on the scalability and compression of 3DGS. We begin with a detailed background overview of 3DGS, followed by a structured taxonomy of existing compression methods. Additionally, we analyze and compare current methods from the topological perspective, evaluating their strengths and limitations in terms"
+  },
+  {
+    "doc_id": "arxiv_2312.13299",
+    "title": "Compact 3D Scene Representation via Self-Organizing Gaussian Grids",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T2",
+    "score": -0.9561689399393791,
+    "abstract": "3D Gaussian Splatting has recently emerged as a highly promising technique for modeling of static 3D scenes. In contrast to Neural Radiance Fields, it utilizes efficient rasterization allowing for very fast rendering at high-quality. However, the storage size is significantly higher, which hinders practical deployment, e.g. on resource constrained devices. In this paper, we introduce a compact scene representation organizing the parameters of 3D Gaussian Splatting (3DGS) into a 2D grid with local homogeneity, ensuring a drastic reduction in storage requirements without compromising visual quality during rendering. Central to our idea is the explicit exploitation of perceptual redundancies present in natural scenes. In essence, the inherent nature of a scene allows for numerous permutations of Gaussian parameters to equivalently represent it. To this end, we propose a novel highly parallel algorithm that regularly arranges the high-dimensional Gaussian parameters into a 2D grid while preserving their neighborhood structure. During training, we further enforce local smoothness between the sorted parameters in the grid. The uncompressed Gaussians use the same structure as 3DGS, ensuri"
+  },
+  {
+    "doc_id": "arxiv_2505.19175",
+    "title": "Triangle Splatting for Real-Time Radiance Field Rendering",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.999236532022464,
+    "abstract": "The field of computer graphics was revolutionized by models such as Neural Radiance Fields and 3D Gaussian Splatting, displacing triangles as the dominant representation for photogrammetry. In this paper, we argue for a triangle comeback. We develop a differentiable renderer that directly optimizes triangles via end-to-end gradients. We achieve this by rendering each triangle as differentiable splats, combining the efficiency of triangles with the adaptive density of representations based on independent primitives. Compared to popular 2D and 3D Gaussian Splatting methods, our approach achieves higher visual fidelity, faster convergence, and increased rendering throughput. On the Mip-NeRF360 dataset, our method outperforms concurrent non-volumetric primitives in visual fidelity and achieves higher perceptual quality than the state-of-the-art Zip-NeRF on indoor scenes. Triangles are simple, compatible with standard graphics stacks and GPU hardware, and highly efficient: for the \\textit{Garden} scene, we achieve over 2,400 FPS at 1280x720 resolution using an off-the-shelf mesh renderer. These results highlight the efficiency and effectiveness of triangle-based representations for high"
+  },
+  {
+    "doc_id": "arxiv_2312.12337",
+    "title": "pixelSplat: 3D Gaussian Splats from Image Pairs for Scalable\n  Generalizable 3D Reconstruction",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.0193948161473052,
+    "abstract": "We introduce pixelSplat, a feed-forward model that learns to reconstruct 3D radiance fields parameterized by 3D Gaussian primitives from pairs of images. Our model features real-time and memory-efficient rendering for scalable training as well as fast 3D reconstruction at inference time. To overcome local minima inherent to sparse and locally supported representations, we predict a dense probability distribution over 3D and sample Gaussian means from that probability distribution. We make this sampling operation differentiable via a reparameterization trick, allowing us to back-propagate gradients through the Gaussian splatting representation. We benchmark our method on wide-baseline novel view synthesis on the real-world RealEstate10k and ACID datasets, where we outperform state-of-the-art light field transformers and accelerate rendering by 2.5 orders of magnitude while reconstructing an interpretable and editable 3D radiance field."
+  },
+  {
+    "doc_id": "arxiv_2405.12110",
+    "title": "CoR-GS: Sparse-View 3D Gaussian Splatting via Co-Regularization",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T2",
+    "score": -1.0355743051399326,
+    "abstract": "3D Gaussian Splatting (3DGS) creates a radiance field consisting of 3D Gaussians to represent a scene. With sparse training views, 3DGS easily suffers from overfitting, negatively impacting rendering. This paper introduces a new co-regularization perspective for improving sparse-view 3DGS. When training two 3D Gaussian radiance fields, we observe that the two radiance fields exhibit point disagreement and rendering disagreement that can unsupervisedly predict reconstruction quality, stemming from the randomness of densification implementation. We further quantify the two disagreements and demonstrate the negative correlation between them and accurate reconstruction, which allows us to identify inaccurate reconstruction without accessing ground-truth information. Based on the study, we propose CoR-GS, which identifies and suppresses inaccurate reconstruction based on the two disagreements: (1) Co-pruning considers Gaussians that exhibit high point disagreement in inaccurate positions and prunes them. (2) Pseudo-view co-regularization considers pixels that exhibit high rendering disagreement are inaccurate and suppress the disagreement. Results on LLFF, Mip-NeRF360, DTU, and Blender "
+  },
+  {
+    "doc_id": "arxiv_2303.09431",
+    "title": "NeRFMeshing: Distilling Neural Radiance Fields into\n  Geometrically-Accurate 3D Meshes",
+    "year": 2023,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.1072253907344742,
+    "abstract": "With the introduction of Neural Radiance Fields (NeRFs), novel view synthesis has recently made a big leap forward. At the core, NeRF proposes that each 3D point can emit radiance, allowing to conduct view synthesis using differentiable volumetric rendering. While neural radiance fields can accurately represent 3D scenes for computing the image rendering, 3D meshes are still the main scene representation supported by most computer graphics and simulation pipelines, enabling tasks such as real time rendering and physics-based simulations. Obtaining 3D meshes from neural radiance fields still remains an open challenge since NeRFs are optimized for view synthesis, not enforcing an accurate underlying geometry on the radiance field. We thus propose a novel compact and flexible architecture that enables easy 3D surface reconstruction from any NeRF-driven approach. Upon having trained the radiance field, we distill the volumetric 3D representation into a Signed Surface Approximation Network, allowing easy extraction of the 3D mesh and appearance. Our final 3D mesh is physically accurate and can be rendered in real time on an array of devices."
+  },
+  {
+    "doc_id": "arxiv_2512.01296",
+    "title": "EGG-Fusion: Efficient 3D Reconstruction with Geometry-aware Gaussian Surfel on the Fly",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -1.1746450359943332,
+    "abstract": "Real-time 3D reconstruction is a fundamental task in computer graphics. Recently, differentiable-rendering-based SLAM system has demonstrated significant potential, enabling photorealistic scene rendering through learnable scene representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS). Current differentiable rendering methods face dual challenges in real-time computation and sensor noise sensitivity, leading to degraded geometric fidelity in scene reconstruction and limited practicality. To address these challenges, we propose a novel real-time system EGG-Fusion, featuring robust sparse-to-dense camera tracking and a geometry-aware Gaussian surfel mapping module, introducing an information filter-based fusion method that explicitly accounts for sensor noise to achieve high-precision surface reconstruction. The proposed differentiable Gaussian surfel mapping effectively models multi-view consistent surfaces while enabling efficient parameter optimization. Extensive experimental results demonstrate that the proposed system achieves a surface reconstruction error of 0.6\\textit{cm} on standardized benchmark datasets including Replica and ScanNet++, represe"
+  },
+  {
+    "doc_id": "arxiv_2311.16473",
+    "title": "GS-IR: 3D Gaussian Splatting for Inverse Rendering",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.1912887860918895,
+    "abstract": "We propose GS-IR, a novel inverse rendering approach based on 3D Gaussian Splatting (GS) that leverages forward mapping volume rendering to achieve photorealistic novel view synthesis and relighting results. Unlike previous works that use implicit neural representations and volume rendering (e.g. NeRF), which suffer from low expressive power and high computational complexity, we extend GS, a top-performance representation for novel view synthesis, to estimate scene geometry, surface material, and environment illumination from multi-view images captured under unknown lighting conditions. There are two main problems when introducing GS to inverse rendering: 1) GS does not support producing plausible normal natively; 2) forward mapping (e.g. rasterization and splatting) cannot trace the occlusion like backward mapping (e.g. ray tracing). To address these challenges, our GS-IR proposes an efficient optimization scheme that incorporates a depth-derivation-based regularization for normal estimation and a baking-based occlusion to model indirect lighting. The flexible and expressive GS representation allows us to achieve fast and compact geometry reconstruction, photorealistic novel view "
+  },
+  {
+    "doc_id": "arxiv_2408.03356",
+    "title": "RayGauss: Volumetric Gaussian-Based Ray Casting for Photorealistic Novel\n  View Synthesis",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.1941408759550938,
+    "abstract": "Differentiable volumetric rendering-based methods made significant progress in novel view synthesis. On one hand, innovative methods have replaced the Neural Radiance Fields (NeRF) network with locally parameterized structures, enabling high-quality renderings in a reasonable time. On the other hand, approaches have used differentiable splatting instead of NeRF's ray casting to optimize radiance fields rapidly using Gaussian kernels, allowing for fine adaptation to the scene. However, differentiable ray casting of irregularly spaced kernels has been scarcely explored, while splatting, despite enabling fast rendering times, is susceptible to clearly visible artifacts.   Our work closes this gap by providing a physically consistent formulation of the emitted radiance c and density {\\sigma}, decomposed with Gaussian functions associated with Spherical Gaussians/Harmonics for all-frequency colorimetric representation. We also introduce a method enabling differentiable ray casting of irregularly distributed Gaussians using an algorithm that integrates radiance fields slab by slab and leverages a BVH structure. This allows our approach to finely adapt to the scene while avoiding splattin"
+  },
+  {
+    "doc_id": "arxiv_2406.02720",
+    "title": "3D-HGS: 3D Half-Gaussian Splatting",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.2954242651098,
+    "abstract": "Photo-realistic image rendering from 3D scene reconstruction has advanced significantly with neural rendering techniques. Among these, 3D Gaussian Splatting (3D-GS) outperforms Neural Radiance Fields (NeRFs) in quality and speed but struggles with shape and color discontinuities. We propose 3D Half-Gaussian (3D-HGS) kernels as a plug-and-play solution to address these limitations. Our experiments show that 3D-HGS enhances existing 3D-GS methods, achieving state-of-the-art rendering quality without compromising speed."
+  },
+  {
+    "doc_id": "arxiv_2409.12774",
+    "title": "GaRField++: Reinforced Gaussian Radiance Fields for Large-Scale 3D Scene\n  Reconstruction",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.3023065730675327,
+    "abstract": "This paper proposes a novel framework for large-scale scene reconstruction based on 3D Gaussian splatting (3DGS) and aims to address the scalability and accuracy challenges faced by existing methods. For tackling the scalability issue, we split the large scene into multiple cells, and the candidate point-cloud and camera views of each cell are correlated through a visibility-based camera selection and a progressive point-cloud extension. To reinforce the rendering quality, three highlighted improvements are made in comparison with vanilla 3DGS, which are a strategy of the ray-Gaussian intersection and the novel Gaussians density control for learning efficiency, an appearance decoupling module based on ConvKAN network to solve uneven lighting conditions in large-scale scenes, and a refined final loss with the color loss, the depth distortion loss, and the normal consistency loss. Finally, the seamless stitching procedure is executed to merge the individual Gaussian radiance field for novel view synthesis across different cells. Evaluation of Mill19, Urban3D, and MatrixCity datasets shows that our method consistently generates more high-fidelity rendering results than state-of-the-ar"
+  },
+  {
+    "doc_id": "arxiv_2210.00379",
+    "title": "NeRF: Neural Radiance Field in 3D Vision: A Comprehensive Review (Updated Post-Gaussian Splatting)",
+    "year": 2026,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -1.3193954194343602,
+    "abstract": "In March 2020, Neural Radiance Field (NeRF) revolutionized Computer Vision, allowing for implicit, neural network-based scene representation and novel view synthesis. NeRF models have found diverse applications in robotics, urban mapping, autonomous navigation, virtual reality/augmented reality, and more. In August 2023, Gaussian Splatting, a direct competitor to the NeRF-based framework, was proposed, gaining tremendous momentum and overtaking NeRF-based research in terms of interest as the dominant framework for novel view synthesis. We present a comprehensive survey of NeRF papers from the past five years (2020-2025). These include papers from the pre-Gaussian Splatting era, where NeRF dominated the field for novel view synthesis and 3D implicit and hybrid representation neural field learning. We also include works from the post-Gaussian Splatting era where NeRF and implicit/hybrid neural fields found more niche applications.   Our survey is organized into architecture and application-based taxonomies in the pre-Gaussian Splatting era, as well as a categorization of active research areas for NeRF, neural field, and implicit/hybrid neural representation methods. We provide an int"
+  },
+  {
+    "doc_id": "arxiv_2405.11021",
+    "title": "Enhanced 3D Urban Scene Reconstruction and Point Cloud Densification\n  using Gaussian Splatting and Google Earth Imagery",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.3696385892572083,
+    "abstract": "3D urban scene reconstruction and modelling is a crucial research area in remote sensing with numerous applications in academia, commerce, industry, and administration. Recent advancements in view synthesis models have facilitated photorealistic 3D reconstruction solely from 2D images. Leveraging Google Earth imagery, we construct a 3D Gaussian Splatting model of the Waterloo region centered on the University of Waterloo and are able to achieve view-synthesis results far exceeding previous 3D view-synthesis results based on neural radiance fields which we demonstrate in our benchmark. Additionally, we retrieved the 3D geometry of the scene using the 3D point cloud extracted from the 3D Gaussian Splatting model which we benchmarked against our Multi- View-Stereo dense reconstruction of the scene, thereby reconstructing both the 3D geometry and photorealistic lighting of the large-scale urban scene through 3D Gaussian Splatting"
+  },
+  {
+    "doc_id": "arxiv_2606.09034",
+    "title": "Leveraging NeRF-Rendered Images for 3D Gaussian Splatting",
+    "year": 2026,
+    "venue": "cs.CV",
+    "tier": "T3",
+    "score": -1.375605362069414,
+    "abstract": "Neural radiance field (NeRF) and 3D Gaussian splatting (3DGS) are two mainstream approaches for novel view synthesis. They often show complementary performance, i.e., 3DGS demonstrating faster rendering speed and NeRF demonstrating higher rendering quality. Motivated by this, we propose leveraging NeRF-rendered images for 3DGS. Specifically, we target street scenes and utilize a pre-trained street-specific NeRF method to produce training images for a target 3DGS method. In our 3DGS training, NeRF-rendered images are used to remove transient objects in street-level input views and to generate bird's-eye views as additional views, inheriting the higher-quality rendering of NeRF into 3DGS. We further incorporate a diffusion-based image enhancement to improve the image quality of the additional views. Experimental results on one synthetic and two real datasets demonstrate that our proposed method improves street-scene rendering while preserving the speed of 3DGS and the quality of NeRF."
+  },
+  {
+    "doc_id": "arxiv_2606.03877",
+    "title": "MLP Splatting: Object-Centric Neural Fields",
+    "year": 2026,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.377704895367078,
+    "abstract": "3D representations are fundamental to scene rendering, understanding, and interaction. Recent approaches, such as 3D Gaussian Splatting and Neural Radiance Fields, achieve impressive photorealistic novel-view synthesis, but lack the ability to easily decompose scene elements into a few primitives, requiring additional segmentation or grouping for object-level manipulation. We present MLP-Splatting, a method that enables scene decomposition via a few expressive light-field primitives while providing photorealistic novel-view synthesis.   MLP-Splatting models each primitive as an independent compact MLP with localized spatial support that predicts radiance and opacity. In contrast to low-level Gaussian primitives or a single global radiance field, our neural primitives provide greater expressive capacity while remaining spatially localized. Rendering is performed through efficient sparse volumetric compositing over ray-primitive interactions.   Our primitives are supervised using RGB supervision alone, which yields primitives that represent local scene regions often corresponding to objects or object parts, enabling interactive object-level editing without segmentation masks by selec"
+  },
+  {
+    "doc_id": "arxiv_2510.08491",
+    "title": "Splat the Net: Radiance Fields with Splattable Neural Primitives",
+    "year": 2026,
+    "venue": "cs.GR",
+    "tier": "PREPRINT",
+    "score": -1.3955024278037667,
+    "abstract": "Radiance fields have emerged as a predominant representation for modeling 3D scene appearance. Neural formulations such as Neural Radiance Fields provide high expressivity but require costly ray marching for rendering, whereas primitive-based methods such as 3D Gaussian Splatting offer real-time efficiency through splatting, yet at the expense of representational power. Inspired by advances in both these directions, we introduce splattable neural primitives, a new volumetric representation that reconciles the expressivity of neural models with the efficiency of primitive-based splatting. Each primitive encodes a bounded neural density field parameterized by a shallow neural network. Our formulation admits an exact analytical solution for line integrals, enabling efficient computation of perspectively accurate splatting kernels. As a result, our representation supports integration along view rays without the need for costly ray marching. The primitives flexibly adapt to scene geometry and, being larger than prior analytic primitives, reduce the number required per scene. On novel-view synthesis benchmarks, our approach matches the quality and speed of 3D Gaussian Splatting while usi"
+  },
+  {
+    "doc_id": "arxiv_2405.05702",
+    "title": "NGM-SLAM: Gaussian Splatting SLAM with Radiance Field Submap",
+    "year": 2025,
+    "venue": "cs.RO",
+    "tier": "PREPRINT",
+    "score": -1.4463112139076384,
+    "abstract": "SLAM systems based on Gaussian Splatting have garnered attention due to their capabilities for rapid real-time rendering and high-fidelity mapping. However, current Gaussian Splatting SLAM systems usually struggle with large scene representation and lack effective loop closure detection. To address these issues, we introduce NGM-SLAM, the first 3DGS based SLAM system that utilizes neural radiance field submaps for progressive scene expression, effectively integrating the strengths of neural radiance fields and 3D Gaussian Splatting. We utilize neural radiance field submaps as supervision and achieve high-quality scene expression and online loop closure adjustments through Gaussian rendering of fused submaps. Our results on multiple real-world scenes and large-scale scene datasets demonstrate that our method can achieve accurate hole filling and high-quality scene expression, supporting monocular, stereo, and RGB-D inputs, and achieving state-of-the-art scene reconstruction and tracking performance."
+  },
+  {
+    "doc_id": "arxiv_2403.13806",
+    "title": "RadSplat: Radiance Field-Informed Gaussian Splatting for Robust\n  Real-Time Rendering with 900+ FPS",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "T3",
+    "score": -1.4623551409373363,
+    "abstract": "Recent advances in view synthesis and real-time rendering have achieved photorealistic quality at impressive rendering speeds. While Radiance Field-based methods achieve state-of-the-art quality in challenging scenarios such as in-the-wild captures and large-scale scenes, they often suffer from excessively high compute requirements linked to volumetric rendering. Gaussian Splatting-based methods, on the other hand, rely on rasterization and naturally achieve real-time rendering but suffer from brittle optimization heuristics that underperform on more challenging scenes. In this work, we present RadSplat, a lightweight method for robust real-time rendering of complex scenes. Our main contributions are threefold. First, we use radiance fields as a prior and supervision signal for optimizing point-based scene representations, leading to improved quality and more robust optimization. Next, we develop a novel pruning technique reducing the overall point count while maintaining high quality, leading to smaller and more compact scene representations with faster inference speeds. Finally, we propose a novel test-time filtering approach that further accelerates rendering and allows to scale"
+  },
+  {
+    "doc_id": "arxiv_2312.03203",
+    "title": "Feature 3DGS: Supercharging 3D Gaussian Splatting to Enable Distilled\n  Feature Fields",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.5231205530922274,
+    "abstract": "3D scene representations have gained immense popularity in recent years. Methods that use Neural Radiance fields are versatile for traditional tasks such as novel view synthesis. In recent times, some work has emerged that aims to extend the functionality of NeRF beyond view synthesis, for semantically aware tasks such as editing and segmentation using 3D feature field distillation from 2D foundation models. However, these methods have two major limitations: (a) they are limited by the rendering speed of NeRF pipelines, and (b) implicitly represented feature fields suffer from continuity artifacts reducing feature quality. Recently, 3D Gaussian Splatting has shown state-of-the-art performance on real-time radiance field rendering. In this work, we go one step further: in addition to radiance field rendering, we enable 3D Gaussian splatting on arbitrary-dimension semantic features via 2D foundation model distillation. This translation is not straightforward: naively incorporating feature fields in the 3DGS framework encounters significant challenges, notably the disparities in spatial resolution and channel consistency between RGB images and feature maps. We propose architectural an"
+  },
+  {
+    "doc_id": "arxiv_2509.13938",
+    "title": "Plug-and-Play PDE Optimization for 3D Gaussian Splatting: Toward High-Quality Rendering and Reconstruction",
+    "year": 2025,
+    "venue": "cs.GR",
+    "tier": "PREPRINT",
+    "score": -1.5631661635613199,
+    "abstract": "3D Gaussian Splatting (3DGS) has revolutionized radiance field reconstruction by achieving high-quality novel view synthesis with fast rendering speed, introducing 3D Gaussian primitives to represent the scene. However, 3DGS encounters blurring and floaters when applied to complex scenes, caused by the reconstruction of redundant and ambiguous geometric structures. We attribute this issue to the unstable optimization of the Gaussians. To address this limitation, we present a plug-and-play PDE-based optimization method that overcomes the optimization constraints of 3DGS-based approaches in various tasks, such as novel view synthesis and surface reconstruction. Firstly, we theoretically derive that the 3DGS optimization procedure can be modeled as a PDE, and introduce a viscous term to ensure stable optimization. Secondly, we use the Material Point Method (MPM) to obtain a stable numerical solution of the PDE, which enhances both global and local constraints. Additionally, an effective Gaussian densification strategy and particle constraints are introduced to ensure fine-grained details. Extensive qualitative and quantitative experiments confirm that our method achieves state-of-the-"
+  },
+  {
+    "doc_id": "arxiv_2404.10625",
+    "title": "Gaussian Splatting Decoder for 3D-aware Generative Adversarial Networks",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.5841907532541661,
+    "abstract": "NeRF-based 3D-aware Generative Adversarial Networks (GANs) like EG3D or GIRAFFE have shown very high rendering quality under large representational variety. However, rendering with Neural Radiance Fields poses challenges for 3D applications: First, the significant computational demands of NeRF rendering preclude its use on low-power devices, such as mobiles and VR/AR headsets. Second, implicit representations based on neural networks are difficult to incorporate into explicit 3D scenes, such as VR environments or video games. 3D Gaussian Splatting (3DGS) overcomes these limitations by providing an explicit 3D representation that can be rendered efficiently at high frame rates. In this work, we present a novel approach that combines the high rendering quality of NeRF-based 3D-aware GANs with the flexibility and computational advantages of 3DGS. By training a decoder that maps implicit NeRF representations to explicit 3D Gaussian Splatting attributes, we can integrate the representational diversity and quality of 3D GANs into the ecosystem of 3D Gaussian Splatting for the first time. Additionally, our approach allows for a high resolution GAN inversion and real-time GAN editing with "
+  },
+  {
+    "doc_id": "arxiv_2506.10335",
+    "title": "PointGS: Point Attention-Aware Sparse View Synthesis with Gaussian Splatting",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.6058893303773139,
+    "abstract": "3D Gaussian splatting (3DGS) is an innovative rendering technique that surpasses the neural radiance field (NeRF) in both rendering speed and visual quality by leveraging an explicit 3D scene representation. Existing 3DGS approaches require a large number of calibrated views to generate a consistent and complete scene representation. When input views are limited, 3DGS tends to overfit the training views, leading to noticeable degradation in rendering quality. To address this limitation, we propose a Point-wise Feature-Aware Gaussian Splatting framework that enables real-time, high-quality rendering from sparse training views. Specifically, we first employ the latest stereo foundation model to estimate accurate camera poses and reconstruct a dense point cloud for Gaussian initialization. We then encode the colour attributes of each 3D Gaussian by sampling and aggregating multiscale 2D appearance features from sparse inputs. To enhance point-wise appearance representation, we design a point interaction network based on a self-attention mechanism, allowing each Gaussian point to interact with its nearest neighbors. These enriched features are subsequently decoded into Gaussian paramet"
+  },
+  {
+    "doc_id": "arxiv_2406.08759",
+    "title": "GaussianForest: Hierarchical-Hybrid 3D Gaussian Splatting for Compressed\n  Scene Modeling",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.684441266543056,
+    "abstract": "The field of novel-view synthesis has recently witnessed the emergence of 3D Gaussian Splatting, which represents scenes in a point-based manner and renders through rasterization. This methodology, in contrast to Radiance Fields that rely on ray tracing, demonstrates superior rendering quality and speed. However, the explicit and unstructured nature of 3D Gaussians poses a significant storage challenge, impeding its broader application. To address this challenge, we introduce the Gaussian-Forest modeling framework, which hierarchically represents a scene as a forest of hybrid 3D Gaussians. Each hybrid Gaussian retains its unique explicit attributes while sharing implicit ones with its sibling Gaussians, thus optimizing parameterization with significantly fewer variables. Moreover, adaptive growth and pruning strategies are designed, ensuring detailed representation in complex regions and a notable reduction in the number of required Gaussians. Extensive experiments demonstrate that Gaussian-Forest not only maintains comparable speed and quality but also achieves a compression rate surpassing 10 times, marking a significant advancement in efficient scene modeling. Codes will be avai"
+  },
+  {
+    "doc_id": "arxiv_2405.16829",
+    "title": "PyGS: Large-scale Scene Representation with Pyramidal 3D Gaussian\n  Splatting",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.7542786251154532,
+    "abstract": "Neural Radiance Fields (NeRFs) have demonstrated remarkable proficiency in synthesizing photorealistic images of large-scale scenes. However, they are often plagued by a loss of fine details and long rendering durations. 3D Gaussian Splatting has recently been introduced as a potent alternative, achieving both high-fidelity visual results and accelerated rendering performance. Nonetheless, scaling 3D Gaussian Splatting is fraught with challenges. Specifically, large-scale scenes grapples with the integration of objects across multiple scales and disparate viewpoints, which often leads to compromised efficacy as the Gaussians need to balance between detail levels. Furthermore, the generation of initialization points via COLMAP from large-scale dataset is both computationally demanding and prone to incomplete reconstructions. To address these challenges, we present Pyramidal 3D Gaussian Splatting (PyGS) with NeRF Initialization. Our approach represent the scene with a hierarchical assembly of Gaussians arranged in a pyramidal fashion. The top level of the pyramid is composed of a few large Gaussians, while each subsequent layer accommodates a denser collection of smaller Gaussians. W"
+  },
+  {
+    "doc_id": "arxiv_2407.12306",
+    "title": "Splatfacto-W: A Nerfstudio Implementation of Gaussian Splatting for\n  Unconstrained Photo Collections",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.7962860628704622,
+    "abstract": "Novel view synthesis from unconstrained in-the-wild image collections remains a significant yet challenging task due to photometric variations and transient occluders that complicate accurate scene reconstruction. Previous methods have approached these issues by integrating per-image appearance features embeddings in Neural Radiance Fields (NeRFs). Although 3D Gaussian Splatting (3DGS) offers faster training and real-time rendering, adapting it for unconstrained image collections is non-trivial due to the substantially different architecture. In this paper, we introduce Splatfacto-W, an approach that integrates per-Gaussian neural color features and per-image appearance embeddings into the rasterization process, along with a spherical harmonics-based background model to represent varying photometric appearances and better depict backgrounds. Our key contributions include latent appearance modeling, efficient transient object handling, and precise background modeling. Splatfacto-W delivers high-quality, real-time novel view synthesis with improved scene consistency in in-the-wild scenarios. Our method improves the Peak Signal-to-Noise Ratio (PSNR) by an average of 5.3 dB compared to"
+  },
+  {
+    "doc_id": "arxiv_2410.04974",
+    "title": "6DGS: Enhanced Direction-Aware Gaussian Splatting for Volumetric\n  Rendering",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.8295283001858855,
+    "abstract": "Novel view synthesis has advanced significantly with the development of neural radiance fields (NeRF) and 3D Gaussian splatting (3DGS). However, achieving high quality without compromising real-time rendering remains challenging, particularly for physically-based ray tracing with view-dependent effects. Recently, N-dimensional Gaussians (N-DG) introduced a 6D spatial-angular representation to better incorporate view-dependent effects, but the Gaussian representation and control scheme are sub-optimal. In this paper, we revisit 6D Gaussians and introduce 6D Gaussian Splatting (6DGS), which enhances color and opacity representations and leverages the additional directional information in the 6D space for optimized Gaussian control. Our approach is fully compatible with the 3DGS framework and significantly improves real-time radiance field rendering by better modeling view-dependent effects and fine details. Experiments demonstrate that 6DGS significantly outperforms 3DGS and N-DG, achieving up to a 15.73 dB improvement in PSNR with a reduction of 66.5% Gaussian points compared to 3DGS. The project page is: https://gaozhongpai.github.io/6dgs/"
+  },
+  {
+    "doc_id": "arxiv_2503.08166",
+    "title": "Dynamic Scene Reconstruction: Recent Advance in Real-time Rendering and\n  Streaming",
+    "year": 2025,
+    "venue": "cs.GR",
+    "tier": "PREPRINT",
+    "score": -1.9197856362693362,
+    "abstract": "Representing and rendering dynamic scenes from 2D images is a fundamental yet challenging problem in computer vision and graphics. This survey provides a comprehensive review of the evolution and advancements in dynamic scene representation and rendering, with a particular emphasis on recent progress in Neural Radiance Fields based and 3D Gaussian Splatting based reconstruction methods. We systematically summarize existing approaches, categorize them according to their core principles, compile relevant datasets, compare the performance of various methods on these benchmarks, and explore the challenges and future research directions in this rapidly evolving field. In total, we review over 170 relevant papers, offering a broad perspective on the state of the art in this domain."
+  },
+  {
+    "doc_id": "arxiv_2506.23611",
+    "title": "AttentionGS: Towards Initialization-Free 3D Gaussian Splatting via Structural Attention",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -2.0073877464089906,
+    "abstract": "3D Gaussian Splatting (3DGS) is a powerful alternative to Neural Radiance Fields (NeRF), excelling in complex scene reconstruction and efficient rendering. However, it relies on high-quality point clouds from Structure-from-Motion (SfM), limiting its applicability. SfM also fails in texture-deficient or constrained-view scenarios, causing severe degradation in 3DGS reconstruction. To address this limitation, we propose AttentionGS, a novel framework that eliminates the dependency on high-quality initial point clouds by leveraging structural attention for direct 3D reconstruction from randomly initialization. In the early training stage, we introduce geometric attention to rapidly recover the global scene structure. As training progresses, we incorporate texture attention to refine fine-grained details and enhance rendering quality. Furthermore, we employ opacity-weighted gradients to guide Gaussian densification, leading to improved surface reconstruction. Extensive experiments on multiple benchmark datasets demonstrate that AttentionGS significantly outperforms state-of-the-art methods, particularly in scenarios where point cloud initialization is unreliable. Our approach paves th"
+  }
+]

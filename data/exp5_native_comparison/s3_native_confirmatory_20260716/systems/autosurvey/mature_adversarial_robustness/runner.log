@@ -1,0 +1,43 @@
+[2026-07-16T02:31:50Z] command=<package-root>/work/s3_native/envs/autosurvey/bin/python main.py --topic Adversarial Robustness of Deep Neural Networks --gpu 0 --saving_path <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/autosurvey/mature_adversarial_robustness/raw --model s3-common-backbone --section_num 6 --subsection_len 55 --rag_num 40 --outline_reference_num 120 --db_path <package-root>/work/s3_native/assets/autosurvey/database --embedding_model <package-root>/work/s3_native/assets/autosurvey/models/nomic-embed-text-v1 --api_url http://127.0.0.1:18080/v1/chat/completions --api_key <REDACTED>
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<package-root>/work/s3_native/baselines/autosurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here https://python.langchain.com/v0.2/docs/versions/v0_2/ 
+  from langchain.document_loaders import PyPDFLoader
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<All keys matched successfully>
+Hello! How are you doing? Is there something I can help you with today? 😊
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 3684.06it/s]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:17<00:17, 17.18s/it]100%|██████████| 2/2 [00:17<00:00,  8.59s/it]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:06<00:06,  6.05s/it]100%|██████████| 2/2 [00:18<00:00,  9.74s/it]100%|██████████| 2/2 [00:18<00:00,  9.18s/it]
+Traceback (most recent call last):
+  File "<package-root>/work/s3_native/baselines/autosurvey/main.py", line 88, in <module>
+    main(args)
+  File "<package-root>/work/s3_native/baselines/autosurvey/main.py", line 72, in main
+    outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<package-root>/work/s3_native/baselines/autosurvey/main.py", line 33, in write_outline
+    outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<package-root>/work/s3_native/baselines/autosurvey/src/agents/outline_writer.py", line 45, in draft_outline
+    final_outline = self.edit_final_outline(merged_outline)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<package-root>/work/s3_native/baselines/autosurvey/src/agents/outline_writer.py", line 252, in edit_final_outline
+    outline = self.api_model.chat(prompt, temperature=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<package-root>/work/s3_native/baselines/autosurvey/src/model.py", line 68, in chat
+    response = self.__req(text, temperature=temperature, max_try=5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<package-root>/work/s3_native/baselines/autosurvey/src/model.py", line 65, in __req
+    raise RuntimeError(f"AutoSurvey API request failed: {last_error!r}")
+RuntimeError: AutoSurvey API request failed: HTTPError('402 Client Error: Payment Required for url: http://127.0.0.1:18080/v1/chat/completions')
+[2026-07-16T02:36:21Z] returncode=1 elapsed_seconds=271.064 timed_out=False

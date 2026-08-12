@@ -1,0 +1,38 @@
+{
+  "system_id": "autosurvey",
+  "checked_at": "2026-07-16T04:27:44Z",
+  "source_revision": "5e8f389f3d51b29bad16dc6ae75db3e8a45a3b65",
+  "source_clean": true,
+  "entrypoint_present": true,
+  "dependencies_present": true,
+  "native_topic_to_survey": true,
+  "common_cutoff_supported": true,
+  "usage_logging_supported": true,
+  "eligible": true,
+  "issues": [],
+  "details": {
+    "database_dir": "<package-root>/work/s3_native/assets/autosurvey/database",
+    "missing_database_files": [],
+    "embedding_model": "<package-root>/work/s3_native/assets/autosurvey/models/nomic-embed-text-v1",
+    "chat_url": "http://127.0.0.1:18080/v1/chat/completions",
+    "git_status_lines": [
+      " D src/__pycache__/database.cpython-310.pyc",
+      " D src/__pycache__/database.cpython-39.pyc",
+      " D src/__pycache__/evaluation.cpython-39.pyc",
+      " D src/__pycache__/model.cpython-310.pyc",
+      " D src/__pycache__/model.cpython-39.pyc",
+      " D src/__pycache__/prompt.cpython-310.pyc",
+      " D src/__pycache__/prompt.cpython-39.pyc",
+      " D src/__pycache__/utils.cpython-310.pyc",
+      " D src/__pycache__/utils.cpython-39.pyc",
+      " M src/model.py",
+      "?? src/__pycache__/database.cpython-312.pyc",
+      "?? src/__pycache__/model.cpython-312.pyc",
+      "?? src/__pycache__/prompt.cpython-312.pyc",
+      "?? src/__pycache__/utils.cpython-312.pyc",
+      "?? src/agents/__pycache__/judge.cpython-312.pyc",
+      "?? src/agents/__pycache__/outline_writer.cpython-312.pyc",
+      "?? src/agents/__pycache__/writer.cpython-312.pyc"
+    ]
+  }
+}

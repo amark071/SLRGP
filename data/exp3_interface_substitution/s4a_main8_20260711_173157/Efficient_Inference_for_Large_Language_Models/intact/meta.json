@@ -1,0 +1,99 @@
+{
+  "topic": "Efficient Inference for Large Language Models",
+  "arm": "intact",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 22:17:43",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "LLM inference optimization",
+    "transformer model acceleration",
+    "model compression techniques",
+    "knowledge distillation neural networks",
+    "quantization deep learning",
+    "speculative decoding",
+    "key-value cache optimization",
+    "pruning large language models",
+    "low-rank approximation transformers",
+    "batching strategies inference serving",
+    "neural architecture search efficiency",
+    "parameter efficient fine-tuning"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "theme",
+  "groups": [
+    {
+      "name": "Surveys and Overviews of Efficient LLM Inference",
+      "n": 4
+    },
+    {
+      "name": "Model Compression: Pruning, Quantization, and Distillation",
+      "n": 5
+    },
+    {
+      "name": "KV Cache Optimization",
+      "n": 2
+    },
+    {
+      "name": "Speculative Decoding and Inference Acceleration",
+      "n": 2
+    },
+    {
+      "name": "Neural Architecture Search and Adapter-Based Compression",
+      "n": 2
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_2002.11794",
+    "arxiv_2211.07715",
+    "arxiv_2305.14152",
+    "arxiv_2401.02038",
+    "arxiv_2402.09748",
+    "arxiv_2404.14294",
+    "arxiv_2408.03130",
+    "arxiv_2408.08554",
+    "arxiv_2409.17372"
+  ],
+  "n_refs": 9,
+  "word_count": 795,
+  "written_citation_ids": [
+    "arxiv_2404.14294",
+    "arxiv_2402.09748",
+    "arxiv_2401.02038",
+    "arxiv_2408.03130",
+    "arxiv_2408.08554",
+    "arxiv_2305.14152",
+    "arxiv_2409.17372",
+    "arxiv_2211.07715",
+    "arxiv_2002.11794"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2002.11794",
+    "arxiv_2211.07715",
+    "arxiv_2305.14152",
+    "arxiv_2401.02038",
+    "arxiv_2402.09748",
+    "arxiv_2404.14294",
+    "arxiv_2408.03130",
+    "arxiv_2408.08554",
+    "arxiv_2409.17372"
+  ],
+  "elapsed_sec": 71.9,
+  "llm_usage_delta": {
+    "n_calls": 10,
+    "prompt_tokens": 7685,
+    "completion_tokens": 2114
+  },
+  "llm_usage_so_far": {
+    "n_calls": 278,
+    "prompt_tokens": 238699,
+    "completion_tokens": 66867
+  }
+}

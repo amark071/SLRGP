@@ -1,0 +1,562 @@
+{
+  "topic_id": "mature_neural_machine_translation",
+  "system": "surveyforge",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Neural machine translation (NMT) has emerged as one of the most transformative developments in artificial intelligence, fundamentally reshaping how computational systems bridge human languages [1; 2].",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "1",
+          "arxiv_id": "1709.07809v1",
+          "title": "Neural Machine Translation",
+          "abstract": "Draft of textbook chapter on neural machine translation. a comprehensive treatment of the topic, ranging from introduction to neural networks, computation graphs, description of the currently dominant attentional sequence-to-sequence model, recent refinements, alternative architectures and challenges. Written as chapter for the textbook Statistical Machine Translation. Used in the JHU Fall 2017 class on machine translation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1709.07809",
+            "title": "Neural Machine Translation",
+            "abstract": "Draft of textbook chapter on neural machine translation. a comprehensive treatment of the topic, ranging from introduction to neural networks, computation graphs, description of the currently dominant attentional sequence-to-sequence model, recent refinements, alternative architectures and challenges. Written as chapter for the textbook Statistical Machine Translation. Used in the JHU Fall 2017 class on machine translation.",
+            "published": "2017-09-22T15:28:24Z",
+            "source_url": "https://arxiv.org/abs/1709.07809"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "2",
+          "arxiv_id": "1912.02047v2",
+          "title": "Neural Machine Translation: A Review and Survey",
+          "abstract": "The field of machine translation (MT), the automatic translation of written text from one natural language into another, has experienced a major paradigm shift in recent years. Statistical MT, which mainly relies on various count-based models and which used to dominate MT research for decades, has largely been superseded by neural machine translation (NMT), which tackles translation with a single neural network. In this work we will trace back the origins of modern NMT architectures to word and sentence embeddings and earlier examples of the encoder-decoder network family. We will conclude with a survey of recent trends in the field.",
+          "resolved_arxiv": {
+            "arxiv_id": "1912.02047",
+            "title": "Neural Machine Translation: A Review and Survey",
+            "abstract": "The field of machine translation (MT), the automatic translation of written text from one natural language into another, has experienced a major paradigm shift in recent years. Statistical MT, which mainly relies on various count-based models and which used to dominate MT research for decades, has largely been superseded by neural machine translation (NMT), which tackles translation with a single neural network. In this work we will trace back the origins of modern NMT architectures to word and sentence embeddings and earlier examples of the encoder-decoder network family. We will conclude with a survey of recent trends in the field.",
+            "published": "2019-12-04T15:16:03Z",
+            "source_url": "https://arxiv.org/abs/1912.02047"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The field's evolution—from handcrafted rule-based systems through phrase-based statistical models to end-to-end neural architectures—reflects a progressive shift toward data-driven representations capable of capturing deep linguistic regularities [3; 4].",
+      "citation_markers": [
+        "[3; 4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "3",
+          "arxiv_id": "2004.05809v1",
+          "title": "Neural Machine Translation: Challenges, Progress and Future",
+          "abstract": "Machine translation (MT) is a technique that leverages computers to translate human languages automatically. Nowadays, neural machine translation (NMT) which models direct mapping between source and target languages with deep neural networks has achieved a big breakthrough in translation performance and become the de facto paradigm of MT. This article makes a review of NMT framework, discusses the challenges in NMT, introduces some exciting recent progresses and finally looks forward to some potential future research trends. In addition, we maintain the state-of-the-art methods for various NMT tasks at the website https://github.com/ZNLP/SOTA-MT.",
+          "resolved_arxiv": {
+            "arxiv_id": "2004.05809",
+            "title": "Neural Machine Translation: Challenges, Progress and Future",
+            "abstract": "Machine translation (MT) is a technique that leverages computers to translate human languages automatically. Nowadays, neural machine translation (NMT) which models direct mapping between source and target languages with deep neural networks has achieved a big breakthrough in translation performance and become the de facto paradigm of MT. This article makes a review of NMT framework, discusses the challenges in NMT, introduces some exciting recent progresses and finally looks forward to some potential future research trends. In addition, we maintain the state-of-the-art methods for various NMT tasks at the website https://github.com/ZNLP/SOTA-MT.",
+            "published": "2020-04-13T07:53:57Z",
+            "source_url": "https://arxiv.org/abs/2004.05809"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "4",
+          "arxiv_id": "2002.07526v1",
+          "title": "A Survey of Deep Learning Techniques for Neural Machine Translation",
+          "abstract": "In recent years, natural language processing (NLP) has got great development with deep learning techniques. In the sub-field of machine translation, a new approach named Neural Machine Translation (NMT) has emerged and got massive attention from both academia and industry. However, with a significant number of researches proposed in the past several years, there is little work in investigating the development process of this new technology trend. This literature survey traces back the origin and principal development timeline of NMT, investigates the important branches, categorizes different research orientations, and discusses some future research trends in this field.",
+          "resolved_arxiv": {
+            "arxiv_id": "2002.07526",
+            "title": "A Survey of Deep Learning Techniques for Neural Machine Translation",
+            "abstract": "In recent years, natural language processing (NLP) has got great development with deep learning techniques. In the sub-field of machine translation, a new approach named Neural Machine Translation (NMT) has emerged and got massive attention from both academia and industry. However, with a significant number of researches proposed in the past several years, there is little work in investigating the development process of this new technology trend. This literature survey traces back the origin and principal development timeline of NMT, investigates the important branches, categorizes different research orientations, and discusses some future research trends in this field.",
+            "published": "2020-02-18T12:49:14Z",
+            "source_url": "https://arxiv.org/abs/2002.07526"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Early statistical approaches, while principled, suffered from feature engineering bottlenecks and struggled with long-range dependencies and morphological complexity [5; 6].",
+      "citation_markers": [
+        "[5; 6]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "5",
+          "arxiv_id": "1706.03872v1",
+          "title": "Six Challenges for Neural Machine Translation",
+          "abstract": "We explore six challenges for neural machine translation: domain mismatch, amount of training data, rare words, long sentences, word alignment, and beam search. We show both deficiencies and improvements over the quality of phrase-based statistical machine translation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1706.03872",
+            "title": "Six Challenges for Neural Machine Translation",
+            "abstract": "We explore six challenges for neural machine translation: domain mismatch, amount of training data, rare words, long sentences, word alignment, and beam search. We show both deficiencies and improvements over the quality of phrase-based statistical machine translation.",
+            "published": "2017-06-12T23:57:48Z",
+            "source_url": "https://arxiv.org/abs/1706.03872"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "6",
+          "arxiv_id": "1608.04631v2",
+          "title": "Neural versus Phrase-Based Machine Translation Quality: a Case Study",
+          "abstract": "Within the field of Statistical Machine Translation (SMT), the neural approach (NMT) has recently emerged as the first technology able to challenge the long-standing dominance of phrase-based approaches (PBMT). In particular, at the IWSLT 2015 evaluation campaign, NMT outperformed well established state-of-the-art PBMT systems on English-German, a language pair known to be particularly hard because of morphology and syntactic differences. To understand in what respects NMT provides better translation quality than PBMT, we perform a detailed analysis of neural versus phrase-based SMT outputs, leveraging high quality post-edits performed by professional translators on the IWSLT data. For the first time, our analysis provides useful insights on what linguistic phenomena are best modeled by neural models -- such as the reordering of verbs -- while pointing out other aspects that remain to be improved.",
+          "resolved_arxiv": {
+            "arxiv_id": "1608.04631",
+            "title": "Neural versus Phrase-Based Machine Translation Quality: a Case Study",
+            "abstract": "Within the field of Statistical Machine Translation (SMT), the neural approach (NMT) has recently emerged as the first technology able to challenge the long-standing dominance of phrase-based approaches (PBMT). In particular, at the IWSLT 2015 evaluation campaign, NMT outperformed well established state-of-the-art PBMT systems on English-German, a language pair known to be particularly hard because of morphology and syntactic differences. To understand in what respects NMT provides better translation quality than PBMT, we perform a detailed analysis of neural versus phrase-based SMT outputs, leveraging high quality post-edits performed by professional translators on the IWSLT data. For the first time, our analysis provides useful insights on what linguistic phenomena are best modeled by neural models -- such as the reordering of verbs -- while pointing out other aspects that remain to be improved.",
+            "published": "2016-08-16T15:04:18Z",
+            "source_url": "https://arxiv.org/abs/1608.04631"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "The neural paradigm, anchored in encoder-decoder frameworks [7] and subsequently transformed by attention mechanisms [8] and the Transformer architecture [9], overcame these limitations while introducing new challenges in low-resource settings [10; 11], domain adaptation [12], evaluation reliability [13], and the integration of large language models [14].",
+      "citation_markers": [
+        "[7]",
+        "[8]",
+        "[9]",
+        "[10; 11]",
+        "[12]",
+        "[13]",
+        "[14]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "7",
+          "arxiv_id": "1703.01619v1",
+          "title": "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial",
+          "abstract": "This tutorial introduces a new and powerful set of techniques variously called \"neural machine translation\" or \"neural sequence-to-sequence models\". These techniques have been used in a number of tasks regarding the handling of human language, and can be a powerful tool in the toolbox of anyone who wants to model sequential data of some sort. The tutorial assumes that the reader knows the basics of math and programming, but does not assume any particular experience with neural networks or natural language processing. It attempts to explain the intuition behind the various methods covered, then delves into them with enough mathematical detail to understand them concretely, and culiminates with a suggestion for an implementation exercise, where readers can test that they understood the content in practice.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.01619",
+            "title": "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial",
+            "abstract": "This tutorial introduces a new and powerful set of techniques variously called \"neural machine translation\" or \"neural sequence-to-sequence models\". These techniques have been used in a number of tasks regarding the handling of human language, and can be a powerful tool in the toolbox of anyone who wants to model sequential data of some sort. The tutorial assumes that the reader knows the basics of math and programming, but does not assume any particular experience with neural networks or natural language processing. It attempts to explain the intuition behind the various methods covered, then delves into them with enough mathematical detail to understand them concretely, and culiminates with a suggestion for an implementation exercise, where readers can test that they understood the content in practice.",
+            "published": "2017-03-05T16:10:11Z",
+            "source_url": "https://arxiv.org/abs/1703.01619"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "8",
+          "arxiv_id": "1601.04811v6",
+          "title": "Modeling Coverage for Neural Machine Translation",
+          "abstract": "Attention mechanism has enhanced state-of-the-art Neural Machine Translation (NMT) by jointly learning to align and translate. It tends to ignore past alignment information, however, which often leads to over-translation and under-translation. To address this problem, we propose coverage-based NMT in this paper. We maintain a coverage vector to keep track of the attention history. The coverage vector is fed to the attention model to help adjust future attention, which lets NMT system to consider more about untranslated source words. Experiments show that the proposed approach significantly improves both translation quality and alignment quality over standard attention-based NMT.",
+          "resolved_arxiv": {
+            "arxiv_id": "1601.04811",
+            "title": "Modeling Coverage for Neural Machine Translation",
+            "abstract": "Attention mechanism has enhanced state-of-the-art Neural Machine Translation (NMT) by jointly learning to align and translate. It tends to ignore past alignment information, however, which often leads to over-translation and under-translation. To address this problem, we propose coverage-based NMT in this paper. We maintain a coverage vector to keep track of the attention history. The coverage vector is fed to the attention model to help adjust future attention, which lets NMT system to consider more about untranslated source words. Experiments show that the proposed approach significantly improves both translation quality and alignment quality over standard attention-based NMT.",
+            "published": "2016-01-19T07:09:38Z",
+            "source_url": "https://arxiv.org/abs/1601.04811"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "9",
+          "arxiv_id": "1703.03906v2",
+          "title": "Massive Exploration of Neural Machine Translation Architectures",
+          "abstract": "Neural Machine Translation (NMT) has shown remarkable progress over the past few years with production systems now being deployed to end-users. One major drawback of current architectures is that they are expensive to train, typically requiring days to weeks of GPU time to converge. This makes exhaustive hyperparameter search, as is commonly done with other neural network architectures, prohibitively expensive. In this work, we present the first large-scale analysis of NMT architecture hyperparameters. We report empirical results and variance numbers for several hundred experimental runs, corresponding to over 250,000 GPU hours on the standard WMT English to German translation task. Our experiments lead to novel insights and practical advice for building and extending NMT architectures. As part of this contribution, we release an open-source NMT framework that enables researchers to easily experiment with novel techniques and reproduce state of the art results.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.03906",
+            "title": "Massive Exploration of Neural Machine Translation Architectures",
+            "abstract": "Neural Machine Translation (NMT) has shown remarkable progress over the past few years with production systems now being deployed to end-users. One major drawback of current architectures is that they are expensive to train, typically requiring days to weeks of GPU time to converge. This makes exhaustive hyperparameter search, as is commonly done with other neural network architectures, prohibitively expensive. In this work, we present the first large-scale analysis of NMT architecture hyperparameters. We report empirical results and variance numbers for several hundred experimental runs, corresponding to over 250,000 GPU hours on the standard WMT English to German translation task. Our experiments lead to novel insights and practical advice for building and extending NMT architectures. As part of this contribution, we release an open-source NMT framework that enables researchers to easily experiment with novel techniques and reproduce state of the art results.",
+            "published": "2017-03-11T04:17:46Z",
+            "source_url": "https://arxiv.org/abs/1703.03906"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "10",
+          "arxiv_id": "2109.00486v3",
+          "title": "Survey of Low-Resource Machine Translation",
+          "abstract": "We present a survey covering the state of the art in low-resource machine translation research. There are currently around 7000 languages spoken in the world and almost all language pairs lack significant resources for training machine translation models. There has been increasing interest in research addressing the challenge of producing useful translation models when very little translated training data is available. We present a summary of this topical research field and provide a description of the techniques evaluated by researchers in several recent shared tasks in low-resource MT.",
+          "resolved_arxiv": {
+            "arxiv_id": "2109.00486",
+            "title": "Survey of Low-Resource Machine Translation",
+            "abstract": "We present a survey covering the state of the art in low-resource machine translation research. There are currently around 7000 languages spoken in the world and almost all language pairs lack significant resources for training machine translation models. There has been increasing interest in research addressing the challenge of producing useful translation models when very little translated training data is available. We present a summary of this topical research field and provide a description of the techniques evaluated by researchers in several recent shared tasks in low-resource MT.",
+            "published": "2021-09-01T16:57:58Z",
+            "source_url": "https://arxiv.org/abs/2109.00486"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "11",
+          "arxiv_id": "2106.15115v1",
+          "title": "Neural Machine Translation for Low-Resource Languages: A Survey",
+          "abstract": "Neural Machine Translation (NMT) has seen a tremendous spurt of growth in less than ten years, and has already entered a mature phase. While considered as the most widely used solution for Machine Translation, its performance on low-resource language pairs still remains sub-optimal compared to the high-resource counterparts, due to the unavailability of large parallel corpora. Therefore, the implementation of NMT techniques for low-resource language pairs has been receiving the spotlight in the recent NMT research arena, thus leading to a substantial amount of research reported on this topic. This paper presents a detailed survey of research advancements in low-resource language NMT (LRL-NMT), along with a quantitative analysis aimed at identifying the most popular solutions. Based on our findings from reviewing previous work, this survey paper provides a set of guidelines to select the possible NMT technique for a given LRL data setting. It also presents a holistic view of the LRL-NMT research landscape and provides a list of recommendations to further enhance the research efforts on LRL-NMT.",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.15115",
+            "title": "Neural Machine Translation for Low-Resource Languages: A Survey",
+            "abstract": "Neural Machine Translation (NMT) has seen a tremendous spurt of growth in less than ten years, and has already entered a mature phase. While considered as the most widely used solution for Machine Translation, its performance on low-resource language pairs still remains sub-optimal compared to the high-resource counterparts, due to the unavailability of large parallel corpora. Therefore, the implementation of NMT techniques for low-resource language pairs has been receiving the spotlight in the recent NMT research arena, thus leading to a substantial amount of research reported on this topic. This paper presents a detailed survey of research advancements in low-resource language NMT (LRL-NMT), along with a quantitative analysis aimed at identifying the most popular solutions. Based on our findings from reviewing previous work, this survey paper provides a set of guidelines to select the possible NMT technique for a given LRL data setting. It also presents a holistic view of the LRL-NMT research landscape and provides a list of recommendations to further enhance the research efforts on LRL-NMT.",
+            "published": "2021-06-29T06:31:58Z",
+            "source_url": "https://arxiv.org/abs/2106.15115"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "12",
+          "arxiv_id": "1806.00258v1",
+          "title": "A Survey of Domain Adaptation for Neural Machine Translation",
+          "abstract": "Neural machine translation (NMT) is a deep learning based approach for machine translation, which yields the state-of-the-art translation performance in scenarios where large-scale parallel corpora are available. Although the high-quality and domain-specific translation is crucial in the real world, domain-specific corpora are usually scarce or nonexistent, and thus vanilla NMT performs poorly in such scenarios. Domain adaptation that leverages both out-of-domain parallel corpora as well as monolingual corpora for in-domain translation, is very important for domain-specific translation. In this paper, we give a comprehensive survey of the state-of-the-art domain adaptation techniques for NMT.",
+          "resolved_arxiv": {
+            "arxiv_id": "1806.00258",
+            "title": "A Survey of Domain Adaptation for Neural Machine Translation",
+            "abstract": "Neural machine translation (NMT) is a deep learning based approach for machine translation, which yields the state-of-the-art translation performance in scenarios where large-scale parallel corpora are available. Although the high-quality and domain-specific translation is crucial in the real world, domain-specific corpora are usually scarce or nonexistent, and thus vanilla NMT performs poorly in such scenarios. Domain adaptation that leverages both out-of-domain parallel corpora as well as monolingual corpora for in-domain translation, is very important for domain-specific translation. In this paper, we give a comprehensive survey of the state-of-the-art domain adaptation techniques for NMT.",
+            "published": "2018-06-01T09:54:32Z",
+            "source_url": "https://arxiv.org/abs/1806.00258"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "13",
+          "arxiv_id": "2009.09025v2",
+          "title": "COMET: A Neural Framework for MT Evaluation",
+          "abstract": "We present COMET, a neural framework for training multilingual machine translation evaluation models which obtains new state-of-the-art levels of correlation with human judgements. Our framework leverages recent breakthroughs in cross-lingual pretrained language modeling resulting in highly multilingual and adaptable MT evaluation models that exploit information from both the source input and a target-language reference translation in order to more accurately predict MT quality. To showcase our framework, we train three models with different types of human judgements: Direct Assessments, Human-mediated Translation Edit Rate and Multidimensional Quality Metrics. Our models achieve new state-of-the-art performance on the WMT 2019 Metrics shared task and demonstrate robustness to high-performing systems.",
+          "resolved_arxiv": {
+            "arxiv_id": "2009.09025",
+            "title": "COMET: A Neural Framework for MT Evaluation",
+            "abstract": "We present COMET, a neural framework for training multilingual machine translation evaluation models which obtains new state-of-the-art levels of correlation with human judgements. Our framework leverages recent breakthroughs in cross-lingual pretrained language modeling resulting in highly multilingual and adaptable MT evaluation models that exploit information from both the source input and a target-language reference translation in order to more accurately predict MT quality. To showcase our framework, we train three models with different types of human judgements: Direct Assessments, Human-mediated Translation Edit Rate and Multidimensional Quality Metrics. Our models achieve new state-of-the-art performance on the WMT 2019 Metrics shared task and demonstrate robustness to high-performing systems.",
+            "published": "2020-09-18T18:54:15Z",
+            "source_url": "https://arxiv.org/abs/2009.09025"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "14",
+          "arxiv_id": "2305.01181v3",
+          "title": "A Paradigm Shift: The Future of Machine Translation Lies with Large Language Models",
+          "abstract": "Machine Translation (MT) has greatly advanced over the years due to the developments in deep neural networks. However, the emergence of Large Language Models (LLMs) like GPT-4 and ChatGPT is introducing a new phase in the MT domain. In this context, we believe that the future of MT is intricately tied to the capabilities of LLMs. These models not only offer vast linguistic understandings but also bring innovative methodologies, such as prompt-based techniques, that have the potential to further elevate MT. In this paper, we provide an overview of the significant enhancements in MT that are influenced by LLMs and advocate for their pivotal role in upcoming MT research and implementations. We highlight several new MT directions, emphasizing the benefits of LLMs in scenarios such as Long-Document Translation, Stylized Translation, and Interactive Translation. Additionally, we address the important concern of privacy in LLM-driven MT and suggest essential privacy-preserving strategies. By showcasing practical instances, we aim to demonstrate the advantages that LLMs offer, particularly in tasks like translating extended documents. We conclude by emphasizing the critical role of LLMs in guiding the future evolution of MT and offer a roadmap for future exploration in the sector.",
+          "resolved_arxiv": {
+            "arxiv_id": "2305.01181",
+            "title": "A Paradigm Shift: The Future of Machine Translation Lies with Large Language Models",
+            "abstract": "Machine Translation (MT) has greatly advanced over the years due to the developments in deep neural networks. However, the emergence of Large Language Models (LLMs) like GPT-4 and ChatGPT is introducing a new phase in the MT domain. In this context, we believe that the future of MT is intricately tied to the capabilities of LLMs. These models not only offer vast linguistic understandings but also bring innovative methodologies, such as prompt-based techniques, that have the potential to further elevate MT. In this paper, we provide an overview of the significant enhancements in MT that are influenced by LLMs and advocate for their pivotal role in upcoming MT research and implementations. We highlight several new MT directions, emphasizing the benefits of LLMs in scenarios such as Long-Document Translation, Stylized Translation, and Interactive Translation. Additionally, we address the important concern of privacy in LLM-driven MT and suggest essential privacy-preserving strategies. By showcasing practical instances, we aim to demonstrate the advantages that LLMs offer, particularly in tasks like translating extended documents. We conclude by emphasizing the critical role of LLMs in guiding the future evolution of MT and offer a roadmap for future exploration in the sector.",
+            "published": "2023-05-02T03:27:27Z",
+            "source_url": "https://arxiv.org/abs/2305.01181"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The foundational sequence-to-sequence framework couples a recurrent encoder, which compresses the source sentence into a fixed-length context vector, with a recurrent decoder that generates the target sequence conditioned on this representation [1; 7].",
+      "citation_markers": [
+        "[1; 7]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "1",
+          "arxiv_id": "1709.07809v1",
+          "title": "Neural Machine Translation",
+          "abstract": "Draft of textbook chapter on neural machine translation. a comprehensive treatment of the topic, ranging from introduction to neural networks, computation graphs, description of the currently dominant attentional sequence-to-sequence model, recent refinements, alternative architectures and challenges. Written as chapter for the textbook Statistical Machine Translation. Used in the JHU Fall 2017 class on machine translation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1709.07809",
+            "title": "Neural Machine Translation",
+            "abstract": "Draft of textbook chapter on neural machine translation. a comprehensive treatment of the topic, ranging from introduction to neural networks, computation graphs, description of the currently dominant attentional sequence-to-sequence model, recent refinements, alternative architectures and challenges. Written as chapter for the textbook Statistical Machine Translation. Used in the JHU Fall 2017 class on machine translation.",
+            "published": "2017-09-22T15:28:24Z",
+            "source_url": "https://arxiv.org/abs/1709.07809"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "7",
+          "arxiv_id": "1703.01619v1",
+          "title": "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial",
+          "abstract": "This tutorial introduces a new and powerful set of techniques variously called \"neural machine translation\" or \"neural sequence-to-sequence models\". These techniques have been used in a number of tasks regarding the handling of human language, and can be a powerful tool in the toolbox of anyone who wants to model sequential data of some sort. The tutorial assumes that the reader knows the basics of math and programming, but does not assume any particular experience with neural networks or natural language processing. It attempts to explain the intuition behind the various methods covered, then delves into them with enough mathematical detail to understand them concretely, and culiminates with a suggestion for an implementation exercise, where readers can test that they understood the content in practice.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.01619",
+            "title": "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial",
+            "abstract": "This tutorial introduces a new and powerful set of techniques variously called \"neural machine translation\" or \"neural sequence-to-sequence models\". These techniques have been used in a number of tasks regarding the handling of human language, and can be a powerful tool in the toolbox of anyone who wants to model sequential data of some sort. The tutorial assumes that the reader knows the basics of math and programming, but does not assume any particular experience with neural networks or natural language processing. It attempts to explain the intuition behind the various methods covered, then delves into them with enough mathematical detail to understand them concretely, and culiminates with a suggestion for an implementation exercise, where readers can test that they understood the content in practice.",
+            "published": "2017-03-05T16:10:11Z",
+            "source_url": "https://arxiv.org/abs/1703.01619"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "LSTM and GRU units mitigate vanishing gradients inherent in vanilla RNNs, yet empirical studies consistently demonstrate translation quality degradation as source length increases, exposing the information bottleneck of fixed-length encodings [9; 5].",
+      "citation_markers": [
+        "[9; 5]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "9",
+          "arxiv_id": "1703.03906v2",
+          "title": "Massive Exploration of Neural Machine Translation Architectures",
+          "abstract": "Neural Machine Translation (NMT) has shown remarkable progress over the past few years with production systems now being deployed to end-users. One major drawback of current architectures is that they are expensive to train, typically requiring days to weeks of GPU time to converge. This makes exhaustive hyperparameter search, as is commonly done with other neural network architectures, prohibitively expensive. In this work, we present the first large-scale analysis of NMT architecture hyperparameters. We report empirical results and variance numbers for several hundred experimental runs, corresponding to over 250,000 GPU hours on the standard WMT English to German translation task. Our experiments lead to novel insights and practical advice for building and extending NMT architectures. As part of this contribution, we release an open-source NMT framework that enables researchers to easily experiment with novel techniques and reproduce state of the art results.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.03906",
+            "title": "Massive Exploration of Neural Machine Translation Architectures",
+            "abstract": "Neural Machine Translation (NMT) has shown remarkable progress over the past few years with production systems now being deployed to end-users. One major drawback of current architectures is that they are expensive to train, typically requiring days to weeks of GPU time to converge. This makes exhaustive hyperparameter search, as is commonly done with other neural network architectures, prohibitively expensive. In this work, we present the first large-scale analysis of NMT architecture hyperparameters. We report empirical results and variance numbers for several hundred experimental runs, corresponding to over 250,000 GPU hours on the standard WMT English to German translation task. Our experiments lead to novel insights and practical advice for building and extending NMT architectures. As part of this contribution, we release an open-source NMT framework that enables researchers to easily experiment with novel techniques and reproduce state of the art results.",
+            "published": "2017-03-11T04:17:46Z",
+            "source_url": "https://arxiv.org/abs/1703.03906"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "5",
+          "arxiv_id": "1706.03872v1",
+          "title": "Six Challenges for Neural Machine Translation",
+          "abstract": "We explore six challenges for neural machine translation: domain mismatch, amount of training data, rare words, long sentences, word alignment, and beam search. We show both deficiencies and improvements over the quality of phrase-based statistical machine translation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1706.03872",
+            "title": "Six Challenges for Neural Machine Translation",
+            "abstract": "We explore six challenges for neural machine translation: domain mismatch, amount of training data, rare words, long sentences, word alignment, and beam search. We show both deficiencies and improvements over the quality of phrase-based statistical machine translation.",
+            "published": "2017-06-12T23:57:48Z",
+            "source_url": "https://arxiv.org/abs/1706.03872"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "The seminal soft-attention mechanism resolves this bottleneck by computing a convex combination of all encoder hidden states at each decoding step, enabling dynamic source alignment that bears conceptual resemblance to, yet differs fundamentally from, discrete word alignment in statistical models [2].",
+      "citation_markers": [
+        "[2]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "2",
+          "arxiv_id": "1912.02047v2",
+          "title": "Neural Machine Translation: A Review and Survey",
+          "abstract": "The field of machine translation (MT), the automatic translation of written text from one natural language into another, has experienced a major paradigm shift in recent years. Statistical MT, which mainly relies on various count-based models and which used to dominate MT research for decades, has largely been superseded by neural machine translation (NMT), which tackles translation with a single neural network. In this work we will trace back the origins of modern NMT architectures to word and sentence embeddings and earlier examples of the encoder-decoder network family. We will conclude with a survey of recent trends in the field.",
+          "resolved_arxiv": {
+            "arxiv_id": "1912.02047",
+            "title": "Neural Machine Translation: A Review and Survey",
+            "abstract": "The field of machine translation (MT), the automatic translation of written text from one natural language into another, has experienced a major paradigm shift in recent years. Statistical MT, which mainly relies on various count-based models and which used to dominate MT research for decades, has largely been superseded by neural machine translation (NMT), which tackles translation with a single neural network. In this work we will trace back the origins of modern NMT architectures to word and sentence embeddings and earlier examples of the encoder-decoder network family. We will conclude with a survey of recent trends in the field.",
+            "published": "2019-12-04T15:16:03Z",
+            "source_url": "https://arxiv.org/abs/1912.02047"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Coverage-augmented attention addresses the systematic over-translation and under-translation errors arising from attention's neglect of alignment history [8].",
+      "citation_markers": [
+        "[8]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "8",
+          "arxiv_id": "1601.04811v6",
+          "title": "Modeling Coverage for Neural Machine Translation",
+          "abstract": "Attention mechanism has enhanced state-of-the-art Neural Machine Translation (NMT) by jointly learning to align and translate. It tends to ignore past alignment information, however, which often leads to over-translation and under-translation. To address this problem, we propose coverage-based NMT in this paper. We maintain a coverage vector to keep track of the attention history. The coverage vector is fed to the attention model to help adjust future attention, which lets NMT system to consider more about untranslated source words. Experiments show that the proposed approach significantly improves both translation quality and alignment quality over standard attention-based NMT.",
+          "resolved_arxiv": {
+            "arxiv_id": "1601.04811",
+            "title": "Modeling Coverage for Neural Machine Translation",
+            "abstract": "Attention mechanism has enhanced state-of-the-art Neural Machine Translation (NMT) by jointly learning to align and translate. It tends to ignore past alignment information, however, which often leads to over-translation and under-translation. To address this problem, we propose coverage-based NMT in this paper. We maintain a coverage vector to keep track of the attention history. The coverage vector is fed to the attention model to help adjust future attention, which lets NMT system to consider more about untranslated source words. Experiments show that the proposed approach significantly improves both translation quality and alignment quality over standard attention-based NMT.",
+            "published": "2016-01-19T07:09:38Z",
+            "source_url": "https://arxiv.org/abs/1601.04811"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The Transformer architecture [19] represents a fundamental departure from recurrence and convolution, establishing a purely attention-based paradigm that has become dominant in neural machine translation.",
+      "citation_markers": [
+        "[19]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "19",
+          "arxiv_id": "1706.03762v7",
+          "title": "Attention Is All You Need",
+          "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+          "resolved_arxiv": {
+            "arxiv_id": "1706.03762",
+            "title": "Attention Is All You Need",
+            "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
+            "published": "2017-06-12T17:57:34Z",
+            "source_url": "https://arxiv.org/abs/1706.03762"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Deep Transformer variants employing pre-norm layer normalization and novel layer combination strategies further surpass wider shallow counterparts [20], while transparent attention and layer aggregation mechanisms enable stable optimization of significantly deeper encoder stacks [21; 22].",
+      "citation_markers": [
+        "[20]",
+        "[21; 22]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "20",
+          "arxiv_id": "1906.01787v1",
+          "title": "Learning Deep Transformer Models for Machine Translation",
+          "abstract": "Transformer is the state-of-the-art model in recent machine translation evaluations. Two strands of research are promising to improve models of this kind: the first uses wide networks (a.k.a. Transformer-Big) and has been the de facto standard for the development of the Transformer system, and the other uses deeper language representation but faces the difficulty arising from learning deep networks. Here, we continue the line of research on the latter. We claim that a truly deep Transformer model can surpass the Transformer-Big counterpart by 1) proper use of layer normalization and 2) a novel way of passing the combination of previous layers to the next. On WMT'16 English- German, NIST OpenMT'12 Chinese-English and larger WMT'18 Chinese-English tasks, our deep system (30/25-layer encoder) outperforms the shallow Transformer-Big/Base baseline (6-layer encoder) by 0.4-2.4 BLEU points. As another bonus, the deep model is 1.6X smaller in size and 3X faster in training than Transformer-Big.",
+          "resolved_arxiv": {
+            "arxiv_id": "1906.01787",
+            "title": "Learning Deep Transformer Models for Machine Translation",
+            "abstract": "Transformer is the state-of-the-art model in recent machine translation evaluations. Two strands of research are promising to improve models of this kind: the first uses wide networks (a.k.a. Transformer-Big) and has been the de facto standard for the development of the Transformer system, and the other uses deeper language representation but faces the difficulty arising from learning deep networks. Here, we continue the line of research on the latter. We claim that a truly deep Transformer model can surpass the Transformer-Big counterpart by 1) proper use of layer normalization and 2) a novel way of passing the combination of previous layers to the next. On WMT'16 English- German, NIST OpenMT'12 Chinese-English and larger WMT'18 Chinese-English tasks, our deep system (30/25-layer encoder) outperforms the shallow Transformer-Big/Base baseline (6-layer encoder) by 0.4-2.4 BLEU points. As another bonus, the deep model is 1.6X smaller in size and 3X faster in training than Transformer-Big.",
+            "published": "2019-06-05T02:24:12Z",
+            "source_url": "https://arxiv.org/abs/1906.01787"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "21",
+          "arxiv_id": "1808.07561v2",
+          "title": "Training Deeper Neural Machine Translation Models with Transparent Attention",
+          "abstract": "While current state-of-the-art NMT models, such as RNN seq2seq and Transformers, possess a large number of parameters, they are still shallow in comparison to convolutional models used for both text and vision applications. In this work we attempt to train significantly (2-3x) deeper Transformer and Bi-RNN encoders for machine translation. We propose a simple modification to the attention mechanism that eases the optimization of deeper models, and results in consistent gains of 0.7-1.1 BLEU on the benchmark WMT'14 English-German and WMT'15 Czech-English tasks for both architectures.",
+          "resolved_arxiv": {
+            "arxiv_id": "1808.07561",
+            "title": "Training Deeper Neural Machine Translation Models with Transparent Attention",
+            "abstract": "While current state-of-the-art NMT models, such as RNN seq2seq and Transformers, possess a large number of parameters, they are still shallow in comparison to convolutional models used for both text and vision applications. In this work we attempt to train significantly (2-3x) deeper Transformer and Bi-RNN encoders for machine translation. We propose a simple modification to the attention mechanism that eases the optimization of deeper models, and results in consistent gains of 0.7-1.1 BLEU on the benchmark WMT'14 English-German and WMT'15 Czech-English tasks for both architectures.",
+            "published": "2018-08-22T20:53:37Z",
+            "source_url": "https://arxiv.org/abs/1808.07561"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "22",
+          "arxiv_id": "1810.10181v1",
+          "title": "Exploiting Deep Representations for Neural Machine Translation",
+          "abstract": "Advanced neural machine translation (NMT) models generally implement encoder and decoder as multiple layers, which allows systems to model complex functions and capture complicated linguistic structures. However, only the top layers of encoder and decoder are leveraged in the subsequent process, which misses the opportunity to exploit the useful information embedded in other layers. In this work, we propose to simultaneously expose all of these signals with layer aggregation and multi-layer attention mechanisms. In addition, we introduce an auxiliary regularization term to encourage different layers to capture diverse information. Experimental results on widely-used WMT14 English-German and WMT17 Chinese-English translation data demonstrate the effectiveness and universality of the proposed approach.",
+          "resolved_arxiv": {
+            "arxiv_id": "1810.10181",
+            "title": "Exploiting Deep Representations for Neural Machine Translation",
+            "abstract": "Advanced neural machine translation (NMT) models generally implement encoder and decoder as multiple layers, which allows systems to model complex functions and capture complicated linguistic structures. However, only the top layers of encoder and decoder are leveraged in the subsequent process, which misses the opportunity to exploit the useful information embedded in other layers. In this work, we propose to simultaneously expose all of these signals with layer aggregation and multi-layer attention mechanisms. In addition, we introduce an auxiliary regularization term to encourage different layers to capture diverse information. Experimental results on widely-used WMT14 English-German and WMT17 Chinese-English translation data demonstrate the effectiveness and universality of the proposed approach.",
+            "published": "2018-10-24T04:08:22Z",
+            "source_url": "https://arxiv.org/abs/1810.10181"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Large-batch reduced-precision training further accelerates convergence without quality loss [23], and systematic hyperparameter studies confirm that architectural depth, normalization placement, and learning rate scheduling collectively govern translation quality [24; 15].",
+      "citation_markers": [
+        "[23]",
+        "[24; 15]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "23",
+          "arxiv_id": "1806.00187v3",
+          "title": "Scaling Neural Machine Translation",
+          "abstract": "Sequence to sequence learning models still require several days to reach state of the art performance on large benchmark datasets using a single machine. This paper shows that reduced precision and large batch training can speedup training by nearly 5x on a single 8-GPU machine with careful tuning and implementation. On WMT'14 English-German translation, we match the accuracy of Vaswani et al. (2017) in under 5 hours when training on 8 GPUs and we obtain a new state of the art of 29.3 BLEU after training for 85 minutes on 128 GPUs. We further improve these results to 29.8 BLEU by training on the much larger Paracrawl dataset. On the WMT'14 English-French task, we obtain a state-of-the-art BLEU of 43.2 in 8.5 hours on 128 GPUs.",
+          "resolved_arxiv": {
+            "arxiv_id": "1806.00187",
+            "title": "Scaling Neural Machine Translation",
+            "abstract": "Sequence to sequence learning models still require several days to reach state of the art performance on large benchmark datasets using a single machine. This paper shows that reduced precision and large batch training can speedup training by nearly 5x on a single 8-GPU machine with careful tuning and implementation. On WMT'14 English-German translation, we match the accuracy of Vaswani et al. (2017) in under 5 hours when training on 8 GPUs and we obtain a new state of the art of 29.3 BLEU after training for 85 minutes on 128 GPUs. We further improve these results to 29.8 BLEU by training on the much larger Paracrawl dataset. On the WMT'14 English-French task, we obtain a state-of-the-art BLEU of 43.2 in 8.5 hours on 128 GPUs.",
+            "published": "2018-06-01T04:33:16Z",
+            "source_url": "https://arxiv.org/abs/1806.00187"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "24",
+          "arxiv_id": "1804.00247v2",
+          "title": "Training Tips for the Transformer Model",
+          "abstract": "This article describes our experiments in neural machine translation using the recent Tensor2Tensor framework and the Transformer sequence-to-sequence model (Vaswani et al., 2017). We examine some of the critical parameters that affect the final translation quality, memory usage, training stability and training time, concluding each experiment with a set of recommendations for fellow researchers. In addition to confirming the general mantra \"more data and larger models\", we address scaling to multiple GPUs and provide practical tips for improved training regarding batch size, learning rate, warmup steps, maximum sentence length and checkpoint averaging. We hope that our observations will allow others to get better results given their particular hardware and data constraints.",
+          "resolved_arxiv": {
+            "arxiv_id": "1804.00247",
+            "title": "Training Tips for the Transformer Model",
+            "abstract": "This article describes our experiments in neural machine translation using the recent Tensor2Tensor framework and the Transformer sequence-to-sequence model (Vaswani et al., 2017). We examine some of the critical parameters that affect the final translation quality, memory usage, training stability and training time, concluding each experiment with a set of recommendations for fellow researchers. In addition to confirming the general mantra \"more data and larger models\", we address scaling to multiple GPUs and provide practical tips for improved training regarding batch size, learning rate, warmup steps, maximum sentence length and checkpoint averaging. We hope that our observations will allow others to get better results given their particular hardware and data constraints.",
+            "published": "2018-04-01T01:59:52Z",
+            "source_url": "https://arxiv.org/abs/1804.00247"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "15",
+          "arxiv_id": "1804.09849v2",
+          "title": "The Best of Both Worlds: Combining Recent Advances in Neural Machine Translation",
+          "abstract": "The past year has witnessed rapid advances in sequence-to-sequence (seq2seq) modeling for Machine Translation (MT). The classic RNN-based approaches to MT were first out-performed by the convolutional seq2seq model, which was then out-performed by the more recent Transformer model. Each of these new approaches consists of a fundamental architecture accompanied by a set of modeling and training techniques that are in principle applicable to other seq2seq architectures. In this paper, we tease apart the new architectures and their accompanying techniques in two ways. First, we identify several key modeling and training techniques, and apply them to the RNN architecture, yielding a new RNMT+ model that outperforms all of the three fundamental architectures on the benchmark WMT'14 English to French and English to German tasks. Second, we analyze the properties of each fundamental seq2seq architecture and devise new hybrid architectures intended to combine their strengths. Our hybrid models obtain further improvements, outperforming the RNMT+ model on both benchmark datasets.",
+          "resolved_arxiv": {
+            "arxiv_id": "1804.09849",
+            "title": "The Best of Both Worlds: Combining Recent Advances in Neural Machine Translation",
+            "abstract": "The past year has witnessed rapid advances in sequence-to-sequence (seq2seq) modeling for Machine Translation (MT). The classic RNN-based approaches to MT were first out-performed by the convolutional seq2seq model, which was then out-performed by the more recent Transformer model. Each of these new approaches consists of a fundamental architecture accompanied by a set of modeling and training techniques that are in principle applicable to other seq2seq architectures. In this paper, we tease apart the new architectures and their accompanying techniques in two ways. First, we identify several key modeling and training techniques, and apply them to the RNN architecture, yielding a new RNMT+ model that outperforms all of the three fundamental architectures on the benchmark WMT'14 English to French and English to German tasks. Second, we analyze the properties of each fundamental seq2seq architecture and devise new hybrid architectures intended to combine their strengths. Our hybrid models obtain further improvements, outperforming the RNMT+ model on both benchmark datasets.",
+            "published": "2018-04-26T01:24:39Z",
+            "source_url": "https://arxiv.org/abs/1804.09849"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Targeted evaluations reveal that self-attention excels particularly at semantic feature extraction and word sense disambiguation relative to recurrent and convolutional alternatives [18], underscoring both its strengths and the continued importance of principled architectural search.",
+      "citation_markers": [
+        "[18]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "18",
+          "arxiv_id": "1808.08946v3",
+          "title": "Why Self-Attention? A Targeted Evaluation of Neural Machine Translation Architectures",
+          "abstract": "Recently, non-recurrent architectures (convolutional, self-attentional) have outperformed RNNs in neural machine translation. CNNs and self-attentional networks can connect distant words via shorter network paths than RNNs, and it has been speculated that this improves their ability to model long-range dependencies. However, this theoretical argument has not been tested empirically, nor have alternative explanations for their strong performance been explored in-depth. We hypothesize that the strong performance of CNNs and self-attentional networks could also be due to their ability to extract semantic features from the source text, and we evaluate RNNs, CNNs and self-attention networks on two tasks: subject-verb agreement (where capturing long-range dependencies is required) and word sense disambiguation (where semantic feature extraction is required). Our experimental results show that: 1) self-attentional networks and CNNs do not outperform RNNs in modeling subject-verb agreement over long distances; 2) self-attentional networks perform distinctly better than RNNs and CNNs on word sense disambiguation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1808.08946",
+            "title": "Why Self-Attention? A Targeted Evaluation of Neural Machine Translation Architectures",
+            "abstract": "Recently, non-recurrent architectures (convolutional, self-attentional) have outperformed RNNs in neural machine translation. CNNs and self-attentional networks can connect distant words via shorter network paths than RNNs, and it has been speculated that this improves their ability to model long-range dependencies. However, this theoretical argument has not been tested empirically, nor have alternative explanations for their strong performance been explored in-depth. We hypothesize that the strong performance of CNNs and self-attentional networks could also be due to their ability to extract semantic features from the source text, and we evaluate RNNs, CNNs and self-attention networks on two tasks: subject-verb agreement (where capturing long-range dependencies is required) and word sense disambiguation (where semantic feature extraction is required). Our experimental results show that: 1) self-attentional networks and CNNs do not outperform RNNs in modeling subject-verb agreement over long distances; 2) self-attentional networks perform distinctly better than RNNs and CNNs on word sense disambiguation.",
+            "published": "2018-08-27T17:51:27Z",
+            "source_url": "https://arxiv.org/abs/1808.08946"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

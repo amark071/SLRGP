@@ -1,0 +1,1342 @@
+{
+  "root": "<package-root>/results/s4/s4b_qwen4_20260713_1745",
+  "n_rows": 16,
+  "n_eligible": 13,
+  "issues": [
+    {
+      "topic": "3D Gaussian Splatting",
+      "arm": "v_unguarded_stress",
+      "issue": "word_count_out_of_window",
+      "words": 789
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "o_rank_slab_matched",
+      "issue": "word_count_out_of_window",
+      "words": 781
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "v_unguarded_stress",
+      "issue": "word_count_out_of_window",
+      "words": 795
+    }
+  ],
+  "rows": [
+    {
+      "topic": "3D Gaussian Splatting",
+      "arm": "intact",
+      "ok": true,
+      "words": 816,
+      "n_refs": 8,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+      "bundle_hash_matches": true,
+      "n_descend_events": 2,
+      "n_leaf_writes": 2,
+      "n_citations": 8,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 8,
+      "prompt_tokens": 5226,
+      "completion_tokens": 1861
+    },
+    {
+      "topic": "3D Gaussian Splatting",
+      "arm": "o_rank_slab_matched",
+      "ok": true,
+      "words": 830,
+      "n_refs": 8,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+      "bundle_hash_matches": true,
+      "n_descend_events": 2,
+      "n_leaf_writes": 2,
+      "n_citations": 0,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 8,
+      "prompt_tokens": 5147,
+      "completion_tokens": 1870
+    },
+    {
+      "topic": "3D Gaussian Splatting",
+      "arm": "v_guarded_stress",
+      "ok": true,
+      "words": 862,
+      "n_refs": 8,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+      "bundle_hash_matches": true,
+      "n_descend_events": 0,
+      "n_leaf_writes": 2,
+      "n_citations": 8,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 2,
+      "prompt_tokens": 1474,
+      "completion_tokens": 1346
+    },
+    {
+      "topic": "3D Gaussian Splatting",
+      "arm": "v_unguarded_stress",
+      "ok": true,
+      "words": 789,
+      "n_refs": 7,
+      "group_size_vector": [
+        8
+      ],
+      "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+      "bundle_hash_matches": true,
+      "n_descend_events": 0,
+      "n_leaf_writes": 1,
+      "n_citations": 7,
+      "n_invalid_citations": 0,
+      "primary_eligible": false,
+      "llm_calls": 1,
+      "prompt_tokens": 1312,
+      "completion_tokens": 1160
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "intact",
+      "ok": true,
+      "words": 914,
+      "n_refs": 7,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+      "bundle_hash_matches": true,
+      "n_descend_events": 2,
+      "n_leaf_writes": 2,
+      "n_citations": 7,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 8,
+      "prompt_tokens": 4618,
+      "completion_tokens": 1755
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "o_rank_slab_matched",
+      "ok": true,
+      "words": 781,
+      "n_refs": 6,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+      "bundle_hash_matches": true,
+      "n_descend_events": 2,
+      "n_leaf_writes": 2,
+      "n_citations": 6,
+      "n_invalid_citations": 0,
+      "primary_eligible": false,
+      "llm_calls": 8,
+      "prompt_tokens": 4508,
+      "completion_tokens": 1568
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "v_guarded_stress",
+      "ok": true,
+      "words": 881,
+      "n_refs": 7,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+      "bundle_hash_matches": true,
+      "n_descend_events": 0,
+      "n_leaf_writes": 2,
+      "n_citations": 7,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 2,
+      "prompt_tokens": 1243,
+      "completion_tokens": 1190
+    },
+    {
+      "topic": "Graph Neural Networks",
+      "arm": "v_unguarded_stress",
+      "ok": true,
+      "words": 795,
+      "n_refs": 7,
+      "group_size_vector": [
+        8
+      ],
+      "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+      "bundle_hash_matches": true,
+      "n_descend_events": 0,
+      "n_leaf_writes": 1,
+      "n_citations": 7,
+      "n_invalid_citations": 0,
+      "primary_eligible": false,
+      "llm_calls": 1,
+      "prompt_tokens": 1098,
+      "completion_tokens": 1044
+    },
+    {
+      "topic": "Multimodal Large Language Models",
+      "arm": "intact",
+      "ok": true,
+      "words": 906,
+      "n_refs": 8,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "e449b24178822726ea5ce33fca8a3c86161d3b20622b424445771c40b4150eb3",
+      "bundle_hash_matches": true,
+      "n_descend_events": 2,
+      "n_leaf_writes": 2,
+      "n_citations": 8,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 8,
+      "prompt_tokens": 5229,
+      "completion_tokens": 1963
+    },
+    {
+      "topic": "Multimodal Large Language Models",
+      "arm": "o_rank_slab_matched",
+      "ok": true,
+      "words": 867,
+      "n_refs": 8,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "e449b24178822726ea5ce33fca8a3c86161d3b20622b424445771c40b4150eb3",
+      "bundle_hash_matches": true,
+      "n_descend_events": 2,
+      "n_leaf_writes": 2,
+      "n_citations": 8,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 8,
+      "prompt_tokens": 5199,
+      "completion_tokens": 2034
+    },
+    {
+      "topic": "Multimodal Large Language Models",
+      "arm": "v_guarded_stress",
+      "ok": true,
+      "words": 872,
+      "n_refs": 8,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "e449b24178822726ea5ce33fca8a3c86161d3b20622b424445771c40b4150eb3",
+      "bundle_hash_matches": true,
+      "n_descend_events": 0,
+      "n_leaf_writes": 2,
+      "n_citations": 8,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 2,
+      "prompt_tokens": 1594,
+      "completion_tokens": 1219
+    },
+    {
+      "topic": "Multimodal Large Language Models",
+      "arm": "v_unguarded_stress",
+      "ok": true,
+      "words": 823,
+      "n_refs": 8,
+      "group_size_vector": [
+        8
+      ],
+      "bundle_hash": "e449b24178822726ea5ce33fca8a3c86161d3b20622b424445771c40b4150eb3",
+      "bundle_hash_matches": true,
+      "n_descend_events": 0,
+      "n_leaf_writes": 1,
+      "n_citations": 8,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 1,
+      "prompt_tokens": 1426,
+      "completion_tokens": 1140
+    },
+    {
+      "topic": "Federated Learning",
+      "arm": "intact",
+      "ok": true,
+      "words": 981,
+      "n_refs": 8,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "f836575ec087b2547e60a6cf445349351b472258d84851696fdca4c48e3cb681",
+      "bundle_hash_matches": true,
+      "n_descend_events": 2,
+      "n_leaf_writes": 2,
+      "n_citations": 8,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 8,
+      "prompt_tokens": 4745,
+      "completion_tokens": 2026
+    },
+    {
+      "topic": "Federated Learning",
+      "arm": "o_rank_slab_matched",
+      "ok": true,
+      "words": 896,
+      "n_refs": 8,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "f836575ec087b2547e60a6cf445349351b472258d84851696fdca4c48e3cb681",
+      "bundle_hash_matches": true,
+      "n_descend_events": 2,
+      "n_leaf_writes": 2,
+      "n_citations": 8,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 8,
+      "prompt_tokens": 4771,
+      "completion_tokens": 1921
+    },
+    {
+      "topic": "Federated Learning",
+      "arm": "v_guarded_stress",
+      "ok": true,
+      "words": 967,
+      "n_refs": 8,
+      "group_size_vector": [
+        4,
+        4
+      ],
+      "bundle_hash": "f836575ec087b2547e60a6cf445349351b472258d84851696fdca4c48e3cb681",
+      "bundle_hash_matches": true,
+      "n_descend_events": 0,
+      "n_leaf_writes": 2,
+      "n_citations": 8,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 2,
+      "prompt_tokens": 1311,
+      "completion_tokens": 1350
+    },
+    {
+      "topic": "Federated Learning",
+      "arm": "v_unguarded_stress",
+      "ok": true,
+      "words": 850,
+      "n_refs": 6,
+      "group_size_vector": [
+        8
+      ],
+      "bundle_hash": "f836575ec087b2547e60a6cf445349351b472258d84851696fdca4c48e3cb681",
+      "bundle_hash_matches": true,
+      "n_descend_events": 0,
+      "n_leaf_writes": 1,
+      "n_citations": 6,
+      "n_invalid_citations": 0,
+      "primary_eligible": true,
+      "llm_calls": 1,
+      "prompt_tokens": 1158,
+      "completion_tokens": 1330
+    }
+  ],
+  "summary": {
+    "runner": "s4a_matched_runner.py",
+    "model": "qwen3-32b",
+    "arms": [
+      "intact",
+      "o_rank_slab_matched",
+      "v_guarded_stress",
+      "v_unguarded_stress"
+    ],
+    "topics": [
+      "3D Gaussian Splatting",
+      "Graph Neural Networks",
+      "Multimodal Large Language Models",
+      "Federated Learning"
+    ],
+    "controls": {
+      "top_n": 60,
+      "root_groups": 2,
+      "group_size": 4,
+      "total_words": 1000,
+      "min_words": 800,
+      "max_words": 1250,
+      "d_max": 1,
+      "theta_leaf": 8,
+      "min_seed": 4
+    },
+    "n_ok": 16,
+    "n_total": 16,
+    "llm_usage": {
+      "n_calls": 76,
+      "prompt_tokens": 50059,
+      "completion_tokens": 24777
+    },
+    "rows": [
+      {
+        "topic": "3D Gaussian Splatting",
+        "arm": "intact",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+        "started_at": "2026-07-13 17:34:15",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Foundational Methods and Surveys of 3DGS",
+            "n": 4
+          },
+          {
+            "name": "Compression, Efficiency, and Memory Optimization",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_2210.00379",
+          "arxiv_2308.04079",
+          "arxiv_2312.04564",
+          "arxiv_2401.00834",
+          "arxiv_2403.11134",
+          "arxiv_2405.17083",
+          "arxiv_2502.19318",
+          "arxiv_2509.17083"
+        ],
+        "n_refs": 8,
+        "word_count": 816,
+        "written_citation_ids": [
+          "arxiv_2403.11134",
+          "arxiv_2502.19318",
+          "arxiv_2308.04079",
+          "arxiv_2210.00379",
+          "arxiv_2312.04564",
+          "arxiv_2405.17083",
+          "arxiv_2509.17083",
+          "arxiv_2401.00834"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2210.00379",
+          "arxiv_2308.04079",
+          "arxiv_2312.04564",
+          "arxiv_2401.00834",
+          "arxiv_2403.11134",
+          "arxiv_2405.17083",
+          "arxiv_2502.19318",
+          "arxiv_2509.17083"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 326.2,
+        "llm_usage_delta": {
+          "n_calls": 8,
+          "prompt_tokens": 5226,
+          "completion_tokens": 1861
+        }
+      },
+      {
+        "topic": "3D Gaussian Splatting",
+        "arm": "o_rank_slab_matched",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+        "started_at": "2026-07-13 17:39:42",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Rank slab 1: positions 1-4",
+            "n": 4
+          },
+          {
+            "name": "Rank slab 2: positions 5-8",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_2308.04079",
+          "arxiv_2401.00834",
+          "arxiv_2403.11134",
+          "arxiv_2403.11831",
+          "arxiv_2411.01853",
+          "arxiv_2411.03637",
+          "arxiv_2502.19318",
+          "arxiv_2509.17083"
+        ],
+        "n_refs": 8,
+        "word_count": 830,
+        "written_citation_ids": [],
+        "leaf_evidence_ids": [
+          "arxiv_2308.04079",
+          "arxiv_2401.00834",
+          "arxiv_2403.11134",
+          "arxiv_2403.11831",
+          "arxiv_2411.01853",
+          "arxiv_2411.03637",
+          "arxiv_2502.19318",
+          "arxiv_2509.17083"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 158.7,
+        "llm_usage_delta": {
+          "n_calls": 8,
+          "prompt_tokens": 5147,
+          "completion_tokens": 1870
+        }
+      },
+      {
+        "topic": "3D Gaussian Splatting",
+        "arm": "v_guarded_stress",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+        "started_at": "2026-07-13 17:42:20",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Foundational Methods and Surveys of 3DGS",
+            "n": 4
+          },
+          {
+            "name": "Compression, Efficiency, and Memory Optimization",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_2210.00379",
+          "arxiv_2308.04079",
+          "arxiv_2312.04564",
+          "arxiv_2401.00834",
+          "arxiv_2403.11134",
+          "arxiv_2405.17083",
+          "arxiv_2502.19318",
+          "arxiv_2509.17083"
+        ],
+        "n_refs": 8,
+        "word_count": 862,
+        "written_citation_ids": [
+          "arxiv_2403.11134",
+          "arxiv_2308.04079",
+          "arxiv_2210.00379",
+          "arxiv_2502.19318",
+          "arxiv_2312.04564",
+          "arxiv_2509.17083",
+          "arxiv_2405.17083",
+          "arxiv_2401.00834"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2210.00379",
+          "arxiv_2308.04079",
+          "arxiv_2312.04564",
+          "arxiv_2401.00834",
+          "arxiv_2403.11134",
+          "arxiv_2405.17083",
+          "arxiv_2502.19318",
+          "arxiv_2509.17083"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 112.6,
+        "llm_usage_delta": {
+          "n_calls": 2,
+          "prompt_tokens": 1474,
+          "completion_tokens": 1346
+        }
+      },
+      {
+        "topic": "3D Gaussian Splatting",
+        "arm": "v_unguarded_stress",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+        "started_at": "2026-07-13 17:44:13",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Injected invalid unbalanced organization",
+            "n": 8
+          }
+        ],
+        "group_size_vector": [
+          8
+        ],
+        "refs": [
+          "arxiv_2308.04079",
+          "arxiv_2312.04564",
+          "arxiv_2401.00834",
+          "arxiv_2403.11134",
+          "arxiv_2405.17083",
+          "arxiv_2502.19318",
+          "arxiv_2509.17083"
+        ],
+        "n_refs": 7,
+        "word_count": 789,
+        "written_citation_ids": [
+          "arxiv_2403.11134",
+          "arxiv_2509.17083",
+          "arxiv_2312.04564",
+          "arxiv_2405.17083",
+          "arxiv_2502.19318",
+          "arxiv_2401.00834",
+          "arxiv_2308.04079"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2210.00379",
+          "arxiv_2308.04079",
+          "arxiv_2312.04564",
+          "arxiv_2401.00834",
+          "arxiv_2403.11134",
+          "arxiv_2405.17083",
+          "arxiv_2502.19318",
+          "arxiv_2509.17083"
+        ],
+        "primary_length_eligible": false,
+        "elapsed_sec": 97.6,
+        "llm_usage_delta": {
+          "n_calls": 1,
+          "prompt_tokens": 1312,
+          "completion_tokens": 1160
+        }
+      },
+      {
+        "topic": "Graph Neural Networks",
+        "arm": "intact",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+        "started_at": "2026-07-13 17:45:50",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Graph Pooling Methods",
+            "n": 4
+          },
+          {
+            "name": "Graph Convolutional Network Architectures",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_1605.05273",
+          "arxiv_1903.02541",
+          "arxiv_1906.02174",
+          "arxiv_2002.05287",
+          "arxiv_2004.03519",
+          "arxiv_2102.02026",
+          "ss_477785"
+        ],
+        "n_refs": 7,
+        "word_count": 914,
+        "written_citation_ids": [
+          "arxiv_2004.03519",
+          "ss_477785",
+          "arxiv_1903.02541",
+          "arxiv_1605.05273",
+          "arxiv_1906.02174",
+          "arxiv_2002.05287",
+          "arxiv_2102.02026"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_1605.05273",
+          "arxiv_1903.02541",
+          "arxiv_1906.02174",
+          "arxiv_2002.05287",
+          "arxiv_2004.03519",
+          "arxiv_2007.10467",
+          "arxiv_2102.02026",
+          "ss_477785"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 148.3,
+        "llm_usage_delta": {
+          "n_calls": 8,
+          "prompt_tokens": 4618,
+          "completion_tokens": 1755
+        }
+      },
+      {
+        "topic": "Graph Neural Networks",
+        "arm": "o_rank_slab_matched",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+        "started_at": "2026-07-13 17:48:19",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Rank slab 1: positions 1-4",
+            "n": 4
+          },
+          {
+            "name": "Rank slab 2: positions 5-8",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_1903.02541",
+          "arxiv_1904.13107",
+          "arxiv_2002.05287",
+          "arxiv_2004.03519",
+          "arxiv_2102.02026",
+          "ss_477785"
+        ],
+        "n_refs": 6,
+        "word_count": 781,
+        "written_citation_ids": [
+          "arxiv_2004.03519",
+          "ss_477785",
+          "arxiv_2002.05287",
+          "arxiv_1903.02541",
+          "arxiv_2102.02026",
+          "arxiv_1904.13107"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_1901.00596",
+          "arxiv_1903.02541",
+          "arxiv_1904.13107",
+          "arxiv_2002.05287",
+          "arxiv_2004.03519",
+          "arxiv_2007.10467",
+          "arxiv_2102.02026",
+          "ss_477785"
+        ],
+        "primary_length_eligible": false,
+        "elapsed_sec": 132.4,
+        "llm_usage_delta": {
+          "n_calls": 8,
+          "prompt_tokens": 4508,
+          "completion_tokens": 1568
+        }
+      },
+      {
+        "topic": "Graph Neural Networks",
+        "arm": "v_guarded_stress",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+        "started_at": "2026-07-13 17:50:31",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Graph Pooling Methods",
+            "n": 4
+          },
+          {
+            "name": "Graph Convolutional Network Architectures",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_1605.05273",
+          "arxiv_1903.02541",
+          "arxiv_1906.02174",
+          "arxiv_2002.05287",
+          "arxiv_2004.03519",
+          "arxiv_2007.10467",
+          "arxiv_2102.02026"
+        ],
+        "n_refs": 7,
+        "word_count": 881,
+        "written_citation_ids": [
+          "arxiv_2007.10467",
+          "arxiv_2004.03519",
+          "arxiv_1903.02541",
+          "arxiv_1605.05273",
+          "arxiv_1906.02174",
+          "arxiv_2002.05287",
+          "arxiv_2102.02026"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_1605.05273",
+          "arxiv_1903.02541",
+          "arxiv_1906.02174",
+          "arxiv_2002.05287",
+          "arxiv_2004.03519",
+          "arxiv_2007.10467",
+          "arxiv_2102.02026",
+          "ss_477785"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 100.4,
+        "llm_usage_delta": {
+          "n_calls": 2,
+          "prompt_tokens": 1243,
+          "completion_tokens": 1190
+        }
+      },
+      {
+        "topic": "Graph Neural Networks",
+        "arm": "v_unguarded_stress",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+        "started_at": "2026-07-13 17:52:12",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Injected invalid unbalanced organization",
+            "n": 8
+          }
+        ],
+        "group_size_vector": [
+          8
+        ],
+        "refs": [
+          "arxiv_1605.05273",
+          "arxiv_1903.02541",
+          "arxiv_1906.02174",
+          "arxiv_2002.05287",
+          "arxiv_2004.03519",
+          "arxiv_2007.10467",
+          "arxiv_2102.02026"
+        ],
+        "n_refs": 7,
+        "word_count": 795,
+        "written_citation_ids": [
+          "arxiv_2004.03519",
+          "arxiv_2007.10467",
+          "arxiv_1903.02541",
+          "arxiv_2002.05287",
+          "arxiv_1906.02174",
+          "arxiv_1605.05273",
+          "arxiv_2102.02026"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_1605.05273",
+          "arxiv_1903.02541",
+          "arxiv_1906.02174",
+          "arxiv_2002.05287",
+          "arxiv_2004.03519",
+          "arxiv_2007.10467",
+          "arxiv_2102.02026",
+          "ss_477785"
+        ],
+        "primary_length_eligible": false,
+        "elapsed_sec": 87.7,
+        "llm_usage_delta": {
+          "n_calls": 1,
+          "prompt_tokens": 1098,
+          "completion_tokens": 1044
+        }
+      },
+      {
+        "topic": "Multimodal Large Language Models",
+        "arm": "intact",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "e449b24178822726ea5ce33fca8a3c86161d3b20622b424445771c40b4150eb3",
+        "started_at": "2026-07-13 17:53:39",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Surveys and Overviews of Multimodal LLMs",
+            "n": 4
+          },
+          {
+            "name": "Model Architectures and Pretraining for Vision-Language",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_2209.06794",
+          "arxiv_2210.09263",
+          "arxiv_2309.10020",
+          "arxiv_2402.12451",
+          "arxiv_2403.08773",
+          "arxiv_2408.06610",
+          "arxiv_2410.05608",
+          "ss_478472"
+        ],
+        "n_refs": 8,
+        "word_count": 906,
+        "written_citation_ids": [
+          "arxiv_2309.10020",
+          "arxiv_2402.12451",
+          "arxiv_2410.05608",
+          "arxiv_2210.09263",
+          "arxiv_2209.06794",
+          "arxiv_2408.06610",
+          "ss_478472",
+          "arxiv_2403.08773"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2209.06794",
+          "arxiv_2210.09263",
+          "arxiv_2309.10020",
+          "arxiv_2402.12451",
+          "arxiv_2403.08773",
+          "arxiv_2408.06610",
+          "arxiv_2410.05608",
+          "ss_478472"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 165.4,
+        "llm_usage_delta": {
+          "n_calls": 8,
+          "prompt_tokens": 5229,
+          "completion_tokens": 1963
+        }
+      },
+      {
+        "topic": "Multimodal Large Language Models",
+        "arm": "o_rank_slab_matched",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "e449b24178822726ea5ce33fca8a3c86161d3b20622b424445771c40b4150eb3",
+        "started_at": "2026-07-13 17:56:25",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Rank slab 1: positions 1-4",
+            "n": 4
+          },
+          {
+            "name": "Rank slab 2: positions 5-8",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_2203.17247",
+          "arxiv_2209.06794",
+          "arxiv_2306.09265",
+          "arxiv_2309.10020",
+          "arxiv_2402.12451",
+          "arxiv_2408.06610",
+          "arxiv_2409.07463",
+          "ss_478371"
+        ],
+        "n_refs": 8,
+        "word_count": 867,
+        "written_citation_ids": [
+          "arxiv_2402.12451",
+          "ss_478371",
+          "arxiv_2203.17247",
+          "arxiv_2409.07463",
+          "arxiv_2306.09265",
+          "arxiv_2408.06610",
+          "arxiv_2209.06794",
+          "arxiv_2309.10020"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2203.17247",
+          "arxiv_2209.06794",
+          "arxiv_2306.09265",
+          "arxiv_2309.10020",
+          "arxiv_2402.12451",
+          "arxiv_2408.06610",
+          "arxiv_2409.07463",
+          "ss_478371"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 171.3,
+        "llm_usage_delta": {
+          "n_calls": 8,
+          "prompt_tokens": 5199,
+          "completion_tokens": 2034
+        }
+      },
+      {
+        "topic": "Multimodal Large Language Models",
+        "arm": "v_guarded_stress",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "e449b24178822726ea5ce33fca8a3c86161d3b20622b424445771c40b4150eb3",
+        "started_at": "2026-07-13 17:59:16",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Surveys and Overviews of Multimodal LLMs",
+            "n": 4
+          },
+          {
+            "name": "Model Architectures and Pretraining for Vision-Language",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_2209.06794",
+          "arxiv_2210.09263",
+          "arxiv_2309.10020",
+          "arxiv_2402.12451",
+          "arxiv_2403.08773",
+          "arxiv_2408.06610",
+          "arxiv_2410.05608",
+          "ss_478472"
+        ],
+        "n_refs": 8,
+        "word_count": 872,
+        "written_citation_ids": [
+          "arxiv_2210.09263",
+          "arxiv_2309.10020",
+          "arxiv_2402.12451",
+          "arxiv_2410.05608",
+          "arxiv_2403.08773",
+          "arxiv_2408.06610",
+          "arxiv_2209.06794",
+          "ss_478472"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2209.06794",
+          "arxiv_2210.09263",
+          "arxiv_2309.10020",
+          "arxiv_2402.12451",
+          "arxiv_2403.08773",
+          "arxiv_2408.06610",
+          "arxiv_2410.05608",
+          "ss_478472"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 102.5,
+        "llm_usage_delta": {
+          "n_calls": 2,
+          "prompt_tokens": 1594,
+          "completion_tokens": 1219
+        }
+      },
+      {
+        "topic": "Multimodal Large Language Models",
+        "arm": "v_unguarded_stress",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "e449b24178822726ea5ce33fca8a3c86161d3b20622b424445771c40b4150eb3",
+        "started_at": "2026-07-13 18:00:58",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Injected invalid unbalanced organization",
+            "n": 8
+          }
+        ],
+        "group_size_vector": [
+          8
+        ],
+        "refs": [
+          "arxiv_2209.06794",
+          "arxiv_2210.09263",
+          "arxiv_2309.10020",
+          "arxiv_2402.12451",
+          "arxiv_2403.08773",
+          "arxiv_2408.06610",
+          "arxiv_2410.05608",
+          "ss_478472"
+        ],
+        "n_refs": 8,
+        "word_count": 823,
+        "written_citation_ids": [
+          "arxiv_2410.05608",
+          "arxiv_2402.12451",
+          "arxiv_2309.10020",
+          "arxiv_2210.09263",
+          "arxiv_2408.06610",
+          "arxiv_2209.06794",
+          "ss_478472",
+          "arxiv_2403.08773"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2209.06794",
+          "arxiv_2210.09263",
+          "arxiv_2309.10020",
+          "arxiv_2402.12451",
+          "arxiv_2403.08773",
+          "arxiv_2408.06610",
+          "arxiv_2410.05608",
+          "ss_478472"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 96.1,
+        "llm_usage_delta": {
+          "n_calls": 1,
+          "prompt_tokens": 1426,
+          "completion_tokens": 1140
+        }
+      },
+      {
+        "topic": "Federated Learning",
+        "arm": "intact",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "f836575ec087b2547e60a6cf445349351b472258d84851696fdca4c48e3cb681",
+        "started_at": "2026-07-13 18:02:35",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Surveys and Overviews of Federated Learning",
+            "n": 4
+          },
+          {
+            "name": "Differential Privacy in Federated Learning",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_2003.13761",
+          "arxiv_2012.07183",
+          "arxiv_2104.14362",
+          "arxiv_2106.06843",
+          "arxiv_2208.01200",
+          "arxiv_2301.01299",
+          "arxiv_2311.16008",
+          "arxiv_2407.19286"
+        ],
+        "n_refs": 8,
+        "word_count": 981,
+        "written_citation_ids": [
+          "arxiv_2104.14362",
+          "arxiv_2301.01299",
+          "arxiv_2106.06843",
+          "arxiv_2208.01200",
+          "arxiv_2311.16008",
+          "arxiv_2003.13761",
+          "arxiv_2407.19286",
+          "arxiv_2012.07183"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2003.13761",
+          "arxiv_2012.07183",
+          "arxiv_2104.14362",
+          "arxiv_2106.06843",
+          "arxiv_2208.01200",
+          "arxiv_2301.01299",
+          "arxiv_2311.16008",
+          "arxiv_2407.19286"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 171.0,
+        "llm_usage_delta": {
+          "n_calls": 8,
+          "prompt_tokens": 4745,
+          "completion_tokens": 2026
+        }
+      },
+      {
+        "topic": "Federated Learning",
+        "arm": "o_rank_slab_matched",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "f836575ec087b2547e60a6cf445349351b472258d84851696fdca4c48e3cb681",
+        "started_at": "2026-07-13 18:05:26",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Rank slab 1: positions 1-4",
+            "n": 4
+          },
+          {
+            "name": "Rank slab 2: positions 5-8",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_2003.13761",
+          "arxiv_2012.07183",
+          "arxiv_2104.14362",
+          "arxiv_2106.06843",
+          "arxiv_2201.07730",
+          "arxiv_2210.00325",
+          "arxiv_2306.02570",
+          "arxiv_2402.10145"
+        ],
+        "n_refs": 8,
+        "word_count": 896,
+        "written_citation_ids": [
+          "arxiv_2104.14362",
+          "arxiv_2012.07183",
+          "arxiv_2003.13761",
+          "arxiv_2106.06843",
+          "arxiv_2210.00325",
+          "arxiv_2402.10145",
+          "arxiv_2201.07730",
+          "arxiv_2306.02570"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2003.13761",
+          "arxiv_2012.07183",
+          "arxiv_2104.14362",
+          "arxiv_2106.06843",
+          "arxiv_2201.07730",
+          "arxiv_2210.00325",
+          "arxiv_2306.02570",
+          "arxiv_2402.10145"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 162.3,
+        "llm_usage_delta": {
+          "n_calls": 8,
+          "prompt_tokens": 4771,
+          "completion_tokens": 1921
+        }
+      },
+      {
+        "topic": "Federated Learning",
+        "arm": "v_guarded_stress",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "f836575ec087b2547e60a6cf445349351b472258d84851696fdca4c48e3cb681",
+        "started_at": "2026-07-13 18:08:08",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Surveys and Overviews of Federated Learning",
+            "n": 4
+          },
+          {
+            "name": "Differential Privacy in Federated Learning",
+            "n": 4
+          }
+        ],
+        "group_size_vector": [
+          4,
+          4
+        ],
+        "refs": [
+          "arxiv_2003.13761",
+          "arxiv_2012.07183",
+          "arxiv_2104.14362",
+          "arxiv_2106.06843",
+          "arxiv_2208.01200",
+          "arxiv_2301.01299",
+          "arxiv_2311.16008",
+          "arxiv_2407.19286"
+        ],
+        "n_refs": 8,
+        "word_count": 967,
+        "written_citation_ids": [
+          "arxiv_2104.14362",
+          "arxiv_2106.06843",
+          "arxiv_2301.01299",
+          "arxiv_2208.01200",
+          "arxiv_2003.13761",
+          "arxiv_2407.19286",
+          "arxiv_2311.16008",
+          "arxiv_2012.07183"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2003.13761",
+          "arxiv_2012.07183",
+          "arxiv_2104.14362",
+          "arxiv_2106.06843",
+          "arxiv_2208.01200",
+          "arxiv_2301.01299",
+          "arxiv_2311.16008",
+          "arxiv_2407.19286"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 113.8,
+        "llm_usage_delta": {
+          "n_calls": 2,
+          "prompt_tokens": 1311,
+          "completion_tokens": 1350
+        }
+      },
+      {
+        "topic": "Federated Learning",
+        "arm": "v_unguarded_stress",
+        "ok": true,
+        "model_g": "qwen3-32b",
+        "bundle_hash": "f836575ec087b2547e60a6cf445349351b472258d84851696fdca4c48e3cb681",
+        "started_at": "2026-07-13 18:10:02",
+        "target_total_words": 1000,
+        "groups": [
+          {
+            "name": "Injected invalid unbalanced organization",
+            "n": 8
+          }
+        ],
+        "group_size_vector": [
+          8
+        ],
+        "refs": [
+          "arxiv_2003.13761",
+          "arxiv_2012.07183",
+          "arxiv_2104.14362",
+          "arxiv_2106.06843",
+          "arxiv_2311.16008",
+          "arxiv_2407.19286"
+        ],
+        "n_refs": 6,
+        "word_count": 850,
+        "written_citation_ids": [
+          "arxiv_2104.14362",
+          "arxiv_2106.06843",
+          "arxiv_2311.16008",
+          "arxiv_2003.13761",
+          "arxiv_2407.19286",
+          "arxiv_2012.07183"
+        ],
+        "leaf_evidence_ids": [
+          "arxiv_2003.13761",
+          "arxiv_2012.07183",
+          "arxiv_2104.14362",
+          "arxiv_2106.06843",
+          "arxiv_2208.01200",
+          "arxiv_2301.01299",
+          "arxiv_2311.16008",
+          "arxiv_2407.19286"
+        ],
+        "primary_length_eligible": true,
+        "elapsed_sec": 112.1,
+        "llm_usage_delta": {
+          "n_calls": 1,
+          "prompt_tokens": 1158,
+          "completion_tokens": 1330
+        }
+      }
+    ]
+  }
+}

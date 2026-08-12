@@ -1,0 +1,542 @@
+[
+  {
+    "doc_id": "arxiv_2402.12451",
+    "title": "The Revolution of Multimodal Large Language Models: A Survey",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 1.5213357304431447,
+    "abstract": "Connecting text and visual modalities plays an essential role in generative intelligence. For this reason, inspired by the success of large language models, significant research efforts are being devoted to the development of Multimodal Large Language Models (MLLMs). These models can seamlessly integrate visual and textual modalities, while providing a dialogue-based interface and instruction-following capabilities. In this paper, we provide a comprehensive review of recent visual-based MLLMs, analyzing their architectural choices, multimodal alignment strategies, and training techniques. We also conduct a detailed analysis of these models across a wide range of tasks, including visual grounding, image generation and editing, visual understanding, and domain-specific applications. Additionally, we compile and describe training datasets and evaluation benchmarks, conducting comparisons among existing models in terms of performance and computational requirements. Overall, this survey offers a comprehensive overview of the current state of the art, laying the groundwork for future MLLMs."
+  },
+  {
+    "doc_id": "ss_478472",
+    "title": "VALOR: Vision-Audio-Language Omni-Perception Pretraining Model and Dataset",
+    "year": 2024,
+    "venue": "INTELLIGENCE",
+    "tier": "T1",
+    "score": 0.8397491694823495,
+    "abstract": "In this paper, we propose the Vision-Audio-Language Omni-peRception pretraining model (VALOR) for multimodal understanding and generation. Unlike widely-studied vision-language pretraining models, VALOR jointly models the relationships among vision, audio, and language in an end-to-end manner. It consists of three separate encoders for single modality representations and a decoder for multimodal conditional text generation. We design two pretext tasks to pretrain the VALOR model: Multimodal Grouping Alignment (MGA) and Multimodal Grouping Captioning (MGC). MGA projects vision, language, and audio into the same common space, simultaneously building vision-language, audio-language, and audiovisual-language alignment. MGC learns to generate text tokens under conditions of vision, audio, or both. To promote vision-audio-language pretraining research, we construct a large-scale, high-quality tri-modality dataset named VALOR-1M, containing 1 million audible videos with human-annotated audiovisual captions. Extensive experiments show that VALOR can learn strong multimodal correlations and generalize to various downstream tasks (e.g., retrieval, captioning, and question answering) with dif"
+  },
+  {
+    "doc_id": "arxiv_2409.07463",
+    "title": "Multi-Modal Instruction-Tuning Small-Scale Language-and-Vision Assistant\n  for Semiconductor Electron Micrograph Analysis",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 0.43832699627592064,
+    "abstract": "We present a novel framework for analyzing and interpreting electron microscopy images in semiconductor manufacturing using vision-language instruction tuning. The framework employs a unique teacher-student approach, leveraging pre-trained multimodal large language models such as GPT-4 to generate instruction-following data for zero-shot visual question answering (VQA) and classification tasks, customizing smaller multimodal models (SMMs) for microscopy image analysis, resulting in an instruction-tuned language-and-vision assistant. Our framework merges knowledge engineering with machine learning to integrate domain-specific expertise from larger to smaller multimodal models within this specialized field, greatly reducing the need for extensive human labeling. Our study presents a secure, cost-effective, and customizable approach for analyzing microscopy images, addressing the challenges of adopting proprietary models in semiconductor manufacturing."
+  },
+  {
+    "doc_id": "arxiv_2302.00389",
+    "title": "Multimodality Representation Learning: A Survey on Evolution,\n  Pretraining and Its Applications",
+    "year": 2024,
+    "venue": "cs.AI",
+    "tier": "T1",
+    "score": 0.30339814318621405,
+    "abstract": "Multimodality Representation Learning, as a technique of learning to embed information from different modalities and their correlations, has achieved remarkable success on a variety of applications, such as Visual Question Answering (VQA), Natural Language for Visual Reasoning (NLVR), and Vision Language Retrieval (VLR). Among these applications, cross-modal interaction and complementary information from different modalities are crucial for advanced models to perform any multimodal task, e.g., understand, recognize, retrieve, or generate optimally. Researchers have proposed diverse methods to address these tasks. The different variants of transformer-based architectures performed extraordinarily on multiple modalities. This survey presents the comprehensive literature on the evolution and enhancement of deep learning multimodal architectures to deal with textual, visual and audio features for diverse cross-modal and modern multimodal tasks. This study summarizes the (i) recent task-specific deep learning methodologies, (ii) the pretraining types and multimodal pretraining objectives, (iii) from state-of-the-art pretrained multimodal approaches to unifying architectures, and (iv) mu"
+  },
+  {
+    "doc_id": "arxiv_2309.10020",
+    "title": "Multimodal Foundation Models: From Specialists to General-Purpose\n  Assistants",
+    "year": 2023,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": 0.2609299741706534,
+    "abstract": "This paper presents a comprehensive survey of the taxonomy and evolution of multimodal foundation models that demonstrate vision and vision-language capabilities, focusing on the transition from specialist models to general-purpose assistants. The research landscape encompasses five core topics, categorized into two classes. (i) We start with a survey of well-established research areas: multimodal foundation models pre-trained for specific purposes, including two topics -- methods of learning vision backbones for visual understanding and text-to-image generation. (ii) Then, we present recent advances in exploratory, open research areas: multimodal foundation models that aim to play the role of general-purpose assistants, including three topics -- unified vision models inspired by large language models (LLMs), end-to-end training of multimodal LLMs, and chaining multimodal tools with LLMs. The target audiences of the paper are researchers, graduate students, and professionals in computer vision and vision-language multimodal communities who are eager to learn the basics and recent advances in multimodal foundation models."
+  },
+  {
+    "doc_id": "arxiv_2304.08345",
+    "title": "VALOR: Vision-Audio-Language Omni-Perception Pretraining Model and\n  Dataset",
+    "year": 2025,
+    "venue": "cs.LG",
+    "tier": "T1",
+    "score": 0.18999169415642908,
+    "abstract": "In this paper, we propose a Vision-Audio-Language Omni-peRception pretraining model (VALOR) for multi-modal understanding and generation. Different from widely-studied vision-language pretraining models, VALOR jointly models relationships of vision, audio and language in an end-to-end manner. It contains three separate encoders for single modality representations, and a decoder for multimodal conditional text generation. We design two pretext tasks to pretrain VALOR model, including Multimodal Grouping Alignment (MGA) and Multimodal Grouping Captioning (MGC). MGA projects vision, language and audio to the same common space, building vision-language, audio-language and audiovisual-language alignment simultaneously. MGC learns how to generate text tokens in conditions of vision, audio or their both. To promote vision-audio-language pretraining research, we construct a large-scale high-quality tri-modality dataset named VALOR-1M, which contains 1M audiable videos with human annotated audiovisual captions. Extensive experiments show that VALOR can learn strong multimodal correlations and be generalized to various downstream tasks (e.g., retrieval, captioning and question answering), wi"
+  },
+  {
+    "doc_id": "arxiv_2109.06082",
+    "title": "xGQA: Cross-Lingual Visual Question Answering",
+    "year": 2022,
+    "venue": "cs.CL",
+    "tier": "T1",
+    "score": 0.14767075861608153,
+    "abstract": "Recent advances in multimodal vision and language modeling have predominantly focused on the English language, mostly due to the lack of multilingual multimodal datasets to steer modeling efforts. In this work, we address this gap and provide xGQA, a new multilingual evaluation benchmark for the visual question answering task. We extend the established English GQA dataset to 7 typologically diverse languages, enabling us to detect and explore crucial challenges in cross-lingual visual question answering. We further propose new adapter-based approaches to adapt multimodal transformer-based models to become multilingual, and -- vice versa -- multilingual models to become multimodal. Our proposed methods outperform current state-of-the-art multilingual multimodal models (e.g., M3P) in zero-shot cross-lingual settings, but the accuracy remains low across the board; a performance drop of around 38 accuracy points in target languages showcases the difficulty of zero-shot cross-lingual transfer for this task. Our results suggest that simple cross-lingual transfer of multimodal models yields latent multilingual multimodal misalignment, calling for more sophisticated methods for vision and "
+  },
+  {
+    "doc_id": "arxiv_2410.05608",
+    "title": "Multimodal Large Language Models and Tunings: Vision, Language, Sensors,\n  Audio, and Beyond",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": 0.10552504294843007,
+    "abstract": "This tutorial explores recent advancements in multimodal pretrained and large models, capable of integrating and processing diverse data forms such as text, images, audio, and video. Participants will gain an understanding of the foundational concepts of multimodality, the evolution of multimodal research, and the key technical challenges addressed by these models. We will cover the latest multimodal datasets and pretrained models, including those beyond vision and language. Additionally, the tutorial will delve into the intricacies of multimodal large models and instruction tuning strategies to optimise performance for specific tasks. Hands-on laboratories will offer practical experience with state-of-the-art multimodal models, demonstrating real-world applications like visual storytelling and visual question answering. This tutorial aims to equip researchers, practitioners, and newcomers with the knowledge and skills to leverage multimodal AI. ACM Multimedia 2024 is the ideal venue for this tutorial, aligning perfectly with our goal of understanding multimodal pretrained and large language models, and their tuning mechanisms."
+  },
+  {
+    "doc_id": "arxiv_2412.17759",
+    "title": "Survey of Large Multimodal Model Datasets, Application Categories and\n  Taxonomy",
+    "year": 2024,
+    "venue": "cs.AI",
+    "tier": "T3",
+    "score": -0.0743278353013741,
+    "abstract": "Multimodal learning, a rapidly evolving field in artificial intelligence, seeks to construct more versatile and robust systems by integrating and analyzing diverse types of data, including text, images, audio, and video. Inspired by the human ability to assimilate information through many senses, this method enables applications such as text-to-video conversion, visual question answering, and image captioning. Recent developments in datasets that support multimodal language models (MLLMs) are highlighted in this overview. Large-scale multimodal datasets are essential because they allow for thorough testing and training of these models. With an emphasis on their contributions to the discipline, the study examines a variety of datasets, including those for training, domain-specific tasks, and real-world applications. It also emphasizes how crucial benchmark datasets are for assessing models' performance in a range of scenarios, scalability, and applicability. Since multimodal learning is always changing, overcoming these obstacles will help AI research and applications reach new heights."
+  },
+  {
+    "doc_id": "arxiv_2109.10246",
+    "title": "Does Vision-and-Language Pretraining Improve Lexical Grounding?",
+    "year": 2021,
+    "venue": "cs.CL",
+    "tier": "T2",
+    "score": -0.11769413380136626,
+    "abstract": "Linguistic representations derived from text alone have been criticized for their lack of grounding, i.e., connecting words to their meanings in the physical world. Vision-and-Language (VL) models, trained jointly on text and image or video data, have been offered as a response to such criticisms. However, while VL pretraining has shown success on multimodal tasks such as visual question answering, it is not yet known how the internal linguistic representations themselves compare to their text-only counterparts. This paper compares the semantic representations learned via VL vs. text-only pretraining for two recent VL models using a suite of analyses (clustering, probing, and performance on a commonsense question answering task) in a language-only setting. We find that the multimodal models fail to significantly outperform the text-only variants, suggesting that future work is required if multimodal pretraining is to be pursued as a means of improving NLP in general."
+  },
+  {
+    "doc_id": "arxiv_2405.16640",
+    "title": "A Survey of Multimodal Large Language Model from A Data-centric\n  Perspective",
+    "year": 2024,
+    "venue": "cs.AI",
+    "tier": "PREPRINT",
+    "score": -0.22552078093819775,
+    "abstract": "Multimodal large language models (MLLMs) enhance the capabilities of standard large language models by integrating and processing data from multiple modalities, including text, vision, audio, video, and 3D environments. Data plays a pivotal role in the development and refinement of these models. In this survey, we comprehensively review the literature on MLLMs from a data-centric perspective. Specifically, we explore methods for preparing multimodal data during the pretraining and adaptation phases of MLLMs. Additionally, we analyze the evaluation methods for the datasets and review the benchmarks for evaluating MLLMs. Our survey also outlines potential future research directions. This work aims to provide researchers with a detailed understanding of the data-driven aspects of MLLMs, fostering further exploration and innovation in this field."
+  },
+  {
+    "doc_id": "arxiv_2302.10035",
+    "title": "Large-scale Multi-Modal Pre-trained Models: A Comprehensive Survey",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.27936521852964297,
+    "abstract": "With the urgent demand for generalized deep models, many pre-trained big models are proposed, such as BERT, ViT, GPT, etc. Inspired by the success of these models in single domains (like computer vision and natural language processing), the multi-modal pre-trained big models have also drawn more and more attention in recent years. In this work, we give a comprehensive survey of these models and hope this paper could provide new insights and helps fresh researchers to track the most cutting-edge works. Specifically, we firstly introduce the background of multi-modal pre-training by reviewing the conventional deep learning, pre-training works in natural language process, computer vision, and speech. Then, we introduce the task definition, key challenges, and advantages of multi-modal pre-training models (MM-PTMs), and discuss the MM-PTMs with a focus on data, objectives, network architectures, and knowledge enhanced pre-training. After that, we introduce the downstream tasks used for the validation of large-scale MM-PTMs, including generative, classification, and regression tasks. We also give visualization and analysis of the model parameters and results on representative downstream"
+  },
+  {
+    "doc_id": "arxiv_2306.07198",
+    "title": "A Survey of Vision-Language Pre-training from the Lens of Multimodal\n  Machine Translation",
+    "year": 2023,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -0.30661114250698535,
+    "abstract": "Large language models such as BERT and the GPT series started a paradigm shift that calls for building general-purpose models via pre-training on large datasets, followed by fine-tuning on task-specific datasets. There is now a plethora of large pre-trained models for Natural Language Processing and Computer Vision. Recently, we have seen rapid developments in the joint Vision-Language space as well, where pre-trained models such as CLIP (Radford et al., 2021) have demonstrated improvements in downstream tasks like image captioning and visual question answering. However, surprisingly there is comparatively little work on exploring these models for the task of multimodal machine translation, where the goal is to leverage image/video modality in text-to-text translation. To fill this gap, this paper surveys the landscape of language-and-vision pre-training from the lens of multimodal machine translation. We summarize the common architectures, pre-training objectives, and datasets from literature and conjecture what further is needed to make progress on multimodal machine translation."
+  },
+  {
+    "doc_id": "arxiv_2406.02030",
+    "title": "Multimodal Reasoning with Multimodal Knowledge Graph",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "T1",
+    "score": -0.3703988670532466,
+    "abstract": "Multimodal reasoning with large language models (LLMs) often suffers from hallucinations and the presence of deficient or outdated knowledge within LLMs. Some approaches have sought to mitigate these issues by employing textual knowledge graphs, but their singular modality of knowledge limits comprehensive cross-modal understanding. In this paper, we propose the Multimodal Reasoning with Multimodal Knowledge Graph (MR-MKG) method, which leverages multimodal knowledge graphs (MMKGs) to learn rich and semantic knowledge across modalities, significantly enhancing the multimodal reasoning capabilities of LLMs. In particular, a relation graph attention network is utilized for encoding MMKGs and a cross-modal alignment module is designed for optimizing image-text alignment. A MMKG-grounded dataset is constructed to equip LLMs with initial expertise in multimodal reasoning through pretraining. Remarkably, MR-MKG achieves superior performance while training on only a small fraction of parameters, approximately 2.25% of the LLM's parameter size. Experimental results on multimodal question answering and multimodal analogy reasoning tasks demonstrate that our MR-MKG method outperforms previou"
+  },
+  {
+    "doc_id": "arxiv_2308.12038",
+    "title": "Large Multilingual Models Pivot Zero-Shot Multimodal Learning across\n  Languages",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -0.3783576024450653,
+    "abstract": "Recently there has been a significant surge in multimodal learning in terms of both image-to-text and text-to-image generation. However, the success is typically limited to English, leaving other languages largely behind. Building a competitive counterpart in other languages is highly challenging due to the low-resource nature of non-English multimodal data (i.e., lack of large-scale, high-quality image-text data). In this work, we propose MPM, an effective training paradigm for training large multimodal models in non-English languages. MPM demonstrates that Multilingual language models can Pivot zero-shot Multimodal learning across languages. Specifically, based on a strong multilingual large language model, multimodal models pretrained on English-only image-text data can well generalize to other languages in a (quasi)-zero-shot manner, even surpassing models trained on image-text data in native languages. Taking Chinese as a practice of MPM, we build large multimodal models VisCPM in image-to-text and text-to-image generation, which achieve state-of-the-art (open-source) performance in Chinese. To facilitate future research, we open-source codes and model weights at https://githu"
+  },
+  {
+    "doc_id": "arxiv_2403.09611",
+    "title": "MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "T2",
+    "score": -0.4098560317882814,
+    "abstract": "In this work, we discuss building performant Multimodal Large Language Models (MLLMs). In particular, we study the importance of various architecture components and data choices. Through careful and comprehensive ablations of the image encoder, the vision language connector, and various pre-training data choices, we identified several crucial design lessons. For example, we demonstrate that for large-scale multimodal pre-training using a careful mix of image-caption, interleaved image-text, and text-only data is crucial for achieving state-of-the-art (SOTA) few-shot results across multiple benchmarks, compared to other published pre-training results. Further, we show that the image encoder together with image resolution and the image token count has substantial impact, while the vision-language connector design is of comparatively negligible importance. By scaling up the presented recipe, we build MM1, a family of multimodal models up to 30B parameters, including both dense models and mixture-of-experts (MoE) variants, that are SOTA in pre-training metrics and achieve competitive performance after supervised fine-tuning on a range of established multimodal benchmarks. Thanks to lar"
+  },
+  {
+    "doc_id": "arxiv_2410.16236",
+    "title": "LLaVA-KD: A Framework of Distilling Multimodal Large Language Models",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.42762892998599034,
+    "abstract": "The success of Large Language Models (LLMs) has inspired the development of Multimodal Large Language Models (MLLMs) for unified understanding of vision and language. However, the increasing model size and computational complexity of large-scale MLLMs (l-MLLMs) limit their use in resource-constrained scenarios. Although small-scale MLLMs (s-MLLMs) are designed to reduce computational costs, they typically suffer from performance degradation. To mitigate this limitation, we propose a novel LLaVA-KD framework to transfer knowledge from l-MLLMs to s-MLLMs. Specifically, we introduce Multimodal Distillation (MDist) to transfer teacher model's robust representations across both visual and linguistic modalities, and Relation Distillation (RDist) to transfer teacher model's ability to capture visual token relationships. Additionally, we propose a three-stage training scheme to fully exploit the potential of the proposed distillation strategy: 1) Distilled Pre-Training to strengthen the alignment between visual-linguistic representations in s-MLLMs, 2) Supervised Fine-Tuning to equip the s-MLLMs with multimodal understanding capacity, and 3) Distilled Fine-Tuning to refine s-MLLM's knowled"
+  },
+  {
+    "doc_id": "arxiv_2310.03211",
+    "title": "On the Performance of Multimodal Language Models",
+    "year": 2023,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -0.4489258431726279,
+    "abstract": "Instruction-tuned large language models (LLMs) have demonstrated promising zero-shot generalization capabilities across various downstream tasks. Recent research has introduced multimodal capabilities to LLMs by integrating independently pretrained vision encoders through model grafting. These multimodal variants undergo instruction tuning, similar to LLMs, enabling effective zero-shot generalization for multimodal tasks. This study conducts a comparative analysis of different multimodal instruction tuning approaches and evaluates their performance across a range of tasks, including complex reasoning, conversation, image captioning, multiple-choice questions (MCQs), and binary classification. Through rigorous benchmarking and ablation experiments, we reveal key insights for guiding architectural choices when incorporating multimodal capabilities into LLMs. However, current approaches have limitations; they do not sufficiently address the need for a diverse multimodal instruction dataset, which is crucial for enhancing task generalization. Additionally, they overlook issues related to truthfulness and factuality when generating responses. These findings illuminate current methodolog"
+  },
+  {
+    "doc_id": "arxiv_2311.13165",
+    "title": "Multimodal Large Language Models: A Survey",
+    "year": 2023,
+    "venue": "cs.AI",
+    "tier": "T3",
+    "score": -0.4579439217022253,
+    "abstract": "The exploration of multimodal language models integrates multiple data types, such as images, text, language, audio, and other heterogeneity. While the latest large language models excel in text-based tasks, they often struggle to understand and process other data types. Multimodal models address this limitation by combining various modalities, enabling a more comprehensive understanding of diverse data. This paper begins by defining the concept of multimodal and examining the historical development of multimodal algorithms. Furthermore, we introduce a range of multimodal products, focusing on the efforts of major technology companies. A practical guide is provided, offering insights into the technical aspects of multimodal models. Moreover, we present a compilation of the latest algorithms and commonly used datasets, providing researchers with valuable resources for experimentation and evaluation. Lastly, we explore the applications of multimodal models and discuss the challenges associated with their development. By addressing these aspects, this paper aims to facilitate a deeper understanding of multimodal models and their potential in various domains."
+  },
+  {
+    "doc_id": "arxiv_2304.08485",
+    "title": "Visual Instruction Tuning",
+    "year": 2023,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.4629977746587984,
+    "abstract": "Instruction tuning large language models (LLMs) using machine-generated instruction-following data has improved zero-shot capabilities on new tasks, but the idea is less explored in the multimodal field. In this paper, we present the first attempt to use language-only GPT-4 to generate multimodal language-image instruction-following data. By instruction tuning on such generated data, we introduce LLaVA: Large Language and Vision Assistant, an end-to-end trained large multimodal model that connects a vision encoder and LLM for general-purpose visual and language understanding.Our early experiments show that LLaVA demonstrates impressive multimodel chat abilities, sometimes exhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and yields a 85.1% relative score compared with GPT-4 on a synthetic multimodal instruction-following dataset. When fine-tuned on Science QA, the synergy of LLaVA and GPT-4 achieves a new state-of-the-art accuracy of 92.53%. We make GPT-4 generated visual instruction tuning data, our model and code base publicly available."
+  },
+  {
+    "doc_id": "arxiv_2412.02104",
+    "title": "Explainable and Interpretable Multimodal Large Language Models: A\n  Comprehensive Survey",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -0.5621258251901683,
+    "abstract": "The rapid development of Artificial Intelligence (AI) has revolutionized numerous fields, with large language models (LLMs) and computer vision (CV) systems driving advancements in natural language understanding and visual processing, respectively. The convergence of these technologies has catalyzed the rise of multimodal AI, enabling richer, cross-modal understanding that spans text, vision, audio, and video modalities. Multimodal large language models (MLLMs), in particular, have emerged as a powerful framework, demonstrating impressive capabilities in tasks like image-text generation, visual question answering, and cross-modal retrieval. Despite these advancements, the complexity and scale of MLLMs introduce significant challenges in interpretability and explainability, essential for establishing transparency, trustworthiness, and reliability in high-stakes applications. This paper provides a comprehensive survey on the interpretability and explainability of MLLMs, proposing a novel framework that categorizes existing research across three perspectives: (I) Data, (II) Model, (III) Training \\& Inference. We systematically analyze interpretability from token-level to embedding-lev"
+  },
+  {
+    "doc_id": "arxiv_2301.13823",
+    "title": "Grounding Language Models to Images for Multimodal Inputs and Outputs",
+    "year": 2023,
+    "venue": "cs.CL",
+    "tier": "T1",
+    "score": -0.6551994548047814,
+    "abstract": "We propose an efficient method to ground pretrained text-only language models to the visual domain, enabling them to process arbitrarily interleaved image-and-text data, and generate text interleaved with retrieved images. Our method leverages the abilities of language models learnt from large scale text-only pretraining, such as in-context learning and free-form text generation. We keep the language model frozen, and finetune input and output linear layers to enable cross-modality interactions. This allows our model to process arbitrarily interleaved image-and-text inputs, and generate free-form text interleaved with retrieved images. We achieve strong zero-shot performance on grounded tasks such as contextual image retrieval and multimodal dialogue, and showcase compelling interactive abilities. Our approach works with any off-the-shelf language model and paves the way towards an effective, general solution for leveraging pretrained language models in visually grounded settings."
+  },
+  {
+    "doc_id": "arxiv_2203.17247",
+    "title": "VL-InterpreT: An Interactive Visualization Tool for Interpreting\n  Vision-Language Transformers",
+    "year": 2022,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -0.6748685864444968,
+    "abstract": "Breakthroughs in transformer-based models have revolutionized not only the NLP field, but also vision and multimodal systems. However, although visualization and interpretability tools have become available for NLP models, internal mechanisms of vision and multimodal transformers remain largely opaque. With the success of these transformers, it is increasingly critical to understand their inner workings, as unraveling these black-boxes will lead to more capable and trustworthy models. To contribute to this quest, we propose VL-InterpreT, which provides novel interactive visualizations for interpreting the attentions and hidden representations in multimodal transformers. VL-InterpreT is a task agnostic and integrated tool that (1) tracks a variety of statistics in attention heads throughout all layers for both vision and language components, (2) visualizes cross-modal and intra-modal attentions through easily readable heatmaps, and (3) plots the hidden representations of vision and language tokens as they pass through the transformer layers. In this paper, we demonstrate the functionalities of VL-InterpreT through the analysis of KD-VLP, an end-to-end pretraining vision-language mul"
+  },
+  {
+    "doc_id": "arxiv_2005.07310",
+    "title": "Behind the Scene: Revealing the Secrets of Pre-trained\n  Vision-and-Language Models",
+    "year": 2020,
+    "venue": "cs.CV",
+    "tier": "T2",
+    "score": -0.8151580865108133,
+    "abstract": "Recent Transformer-based large-scale pre-trained models have revolutionized vision-and-language (V+L) research. Models such as ViLBERT, LXMERT and UNITER have significantly lifted state of the art across a wide range of V+L benchmarks with joint image-text pre-training. However, little is known about the inner mechanisms that destine their impressive success. To reveal the secrets behind the scene of these powerful models, we present VALUE (Vision-And-Language Understanding Evaluation), a set of meticulously designed probing tasks (e.g., Visual Coreference Resolution, Visual Relation Detection, Linguistic Probing Tasks) generalizable to standard pre-trained V+L models, aiming to decipher the inner workings of multimodal pre-training (e.g., the implicit knowledge garnered in individual attention heads, the inherent cross-modal alignment learned through contextualized multimodal embeddings). Through extensive analysis of each archetypal model architecture via these probing tasks, our key observations are: (i) Pre-trained models exhibit a propensity for attending over text rather than images during inference. (ii) There exists a subset of attention heads that are tailored for capturin"
+  },
+  {
+    "doc_id": "arxiv_2406.15768",
+    "title": "MR-MLLM: Mutual Reinforcement of Multimodal Comprehension and Vision\n  Perception",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.8697566914291164,
+    "abstract": "In recent years, multimodal large language models (MLLMs) have shown remarkable capabilities in tasks like visual question answering and common sense reasoning, while visual perception models have made significant strides in perception tasks, such as detection and segmentation. However, MLLMs mainly focus on high-level image-text interpretations and struggle with fine-grained visual understanding, and vision perception models usually suffer from open-world distribution shifts due to their limited model capacity. To overcome these challenges, we propose the Mutually Reinforced Multimodal Large Language Model (MR-MLLM), a novel framework that synergistically enhances visual perception and multimodal comprehension. First, a shared query fusion mechanism is proposed to harmonize detailed visual inputs from vision models with the linguistic depth of language models, enhancing multimodal comprehension and vision perception synergistically. Second, we propose the perception-enhanced cross-modal integration method, incorporating novel modalities from vision perception outputs, like object detection bounding boxes, to capture subtle visual elements, thus enriching the understanding of both "
+  },
+  {
+    "doc_id": "arxiv_2306.14895",
+    "title": "Large Multimodal Models: Notes on CVPR 2023 Tutorial",
+    "year": 2023,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.9443903444470707,
+    "abstract": "This tutorial note summarizes the presentation on ``Large Multimodal Models: Towards Building and Surpassing Multimodal GPT-4'', a part of CVPR 2023 tutorial on ``Recent Advances in Vision Foundation Models''. The tutorial consists of three parts. We first introduce the background on recent GPT-like large models for vision-and-language modeling to motivate the research in instruction-tuned large multimodal models (LMMs). As a pre-requisite, we describe the basics of instruction-tuning in large language models, which is further extended to the multimodal space. Lastly, we illustrate how to build the minimum prototype of multimodal GPT-4 like models with the open-source resource, and review the recently emerged topics."
+  },
+  {
+    "doc_id": "arxiv_2411.17558",
+    "title": "Natural Language Understanding and Inference with MLLM in Visual\n  Question Answering: A Survey",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "T1",
+    "score": -0.9474134214514787,
+    "abstract": "Visual Question Answering (VQA) is a challenge task that combines natural language processing and computer vision techniques and gradually becomes a benchmark test task in multimodal large language models (MLLMs). The goal of our survey is to provide an overview of the development of VQA and a detailed description of the latest models with high timeliness. This survey gives an up-to-date synthesis of natural language understanding of images and text, as well as the knowledge reasoning module based on image-question information on the core VQA tasks. In addition, we elaborate on recent advances in extracting and fusing modal information with vision-language pretraining models and multimodal large language models in VQA. We also exhaustively review the progress of knowledge reasoning in VQA by detailing the extraction of internal knowledge and the introduction of external knowledge. Finally, we present the datasets of VQA and different evaluation metrics and discuss possible directions for future work."
+  },
+  {
+    "doc_id": "arxiv_2310.00653",
+    "title": "Reformulating Vision-Language Foundation Models and Datasets Towards\n  Universal Multimodal Assistants",
+    "year": 2023,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.9708424715975323,
+    "abstract": "Recent Multimodal Large Language Models (MLLMs) exhibit impressive abilities to perceive images and follow open-ended instructions. The capabilities of MLLMs depend on two crucial factors: the model architecture to facilitate the feature alignment of visual modules and large language models; the multimodal instruction tuning datasets for human instruction following. (i) For the model architecture, most existing models introduce an external bridge module to connect vision encoders with language models, which needs an additional feature-alignment pre-training. In this work, we discover that compact pre-trained vision language models can inherently serve as ``out-of-the-box'' bridges between vision and language. Based on this, we propose Muffin framework, which directly employs pre-trained vision-language models to act as providers of visual signals. (ii) For the multimodal instruction tuning datasets, existing methods omit the complementary relationship between different datasets and simply mix datasets from different tasks. Instead, we propose UniMM-Chat dataset which explores the complementarities of datasets to generate 1.1M high-quality and diverse multimodal instructions. We mer"
+  },
+  {
+    "doc_id": "arxiv_2402.08360",
+    "title": "Visual Question Answering Instruction: Unlocking Multimodal Large\n  Language Model To Domain-Specific Visual Multitasks",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -0.9724771589247069,
+    "abstract": "Having revolutionized natural language processing (NLP) applications, large language models (LLMs) are expanding into the realm of multimodal inputs. Owing to their ability to interpret images, multimodal LLMs (MLLMs) have been primarily used for vision-language tasks. Currently, MLLMs have not yet been extended for domain-specific visual tasks, which require a more explicit understanding of visual information. We developed a method to transform domain-specific visual and vision-language datasets into a unified question answering format called Visual Question Answering Instruction (VQA-IN), thereby extending MLLM to domain-specific tasks. The VQA-IN was applied to train multiple MLLM architectures using smaller versions of LLMs (sLLMs). The experimental results indicated that the proposed method achieved a high score metric on domainspecific visual tasks while also maintaining its performance on vision-language tasks in a multitask manner."
+  },
+  {
+    "doc_id": "arxiv_2210.12079",
+    "title": "Do Vision-and-Language Transformers Learn Grounded Predicate-Noun\n  Dependencies?",
+    "year": 2022,
+    "venue": "cs.CL",
+    "tier": "T2",
+    "score": -1.036222230284047,
+    "abstract": "Recent advances in vision-and-language modeling have seen the development of Transformer architectures that achieve remarkable performance on multimodal reasoning tasks. Yet, the exact capabilities of these black-box models are still poorly understood. While much of previous work has focused on studying their ability to learn meaning at the word-level, their ability to track syntactic dependencies between words has received less attention. We take a first step in closing this gap by creating a new multimodal task targeted at evaluating understanding of predicate-noun dependencies in a controlled setup. We evaluate a range of state-of-the-art models and find that their performance on the task varies considerably, with some models performing relatively well and others at chance level. In an effort to explain this variability, our analyses indicate that the quality (and not only sheer quantity) of pretraining data is essential. Additionally, the best performing models leverage fine-grained multimodal pretraining objectives in addition to the standard image-text matching objectives. This study highlights that targeted and controlled evaluations are a crucial step for a precise and rigo"
+  },
+  {
+    "doc_id": "arxiv_2408.06610",
+    "title": "CROME: Cross-Modal Adapters for Efficient Multimodal LLM",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.0520505624016325,
+    "abstract": "Multimodal Large Language Models (MLLMs) demonstrate remarkable image-language capabilities, but their widespread use faces challenges in cost-effective training and adaptation. Existing approaches often necessitate expensive language model retraining and limited adaptability. Additionally, the current focus on zero-shot performance improvements offers insufficient guidance for task-specific tuning. We propose CROME, an efficient vision-language instruction tuning framework. It features a novel gated cross-modal adapter that effectively combines visual and textual representations prior to input into a frozen LLM. This lightweight adapter, trained with minimal parameters, enables efficient cross-modal understanding. Notably, CROME demonstrates superior zero-shot performance on standard visual question answering and instruction-following benchmarks. Moreover, it yields fine-tuning with exceptional parameter efficiency, competing with task-specific specialist state-of-the-art methods. CROME demonstrates the potential of pre-LM alignment for building scalable, adaptable, and parameter-efficient multimodal models."
+  },
+  {
+    "doc_id": "arxiv_2308.13437",
+    "title": "Position-Enhanced Visual Instruction Tuning for Multimodal Large\n  Language Models",
+    "year": 2023,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.0822333814217724,
+    "abstract": "Recently, Multimodal Large Language Models (MLLMs) that enable Large Language Models (LLMs) to interpret images through visual instruction tuning have achieved significant success. However, existing visual instruction tuning methods only utilize image-language instruction data to align the language and image modalities, lacking a more fine-grained cross-modal alignment. In this paper, we propose Position-enhanced Visual Instruction Tuning (PVIT), which extends the functionality of MLLMs by integrating an additional region-level vision encoder. This integration promotes a more detailed comprehension of images for the MLLM. In addition, to efficiently achieve a fine-grained alignment between the vision modules and the LLM, we design multiple data generation strategies to construct an image-region-language instruction dataset. Finally, we present both quantitative experiments and qualitative analysis that demonstrate the superiority of the proposed model. Code and data will be released at https://github.com/PVIT-official/PVIT."
+  },
+  {
+    "doc_id": "arxiv_2411.18620",
+    "title": "Cross-modal Information Flow in Multimodal Large Language Models",
+    "year": 2025,
+    "venue": "cs.AI",
+    "tier": "PREPRINT",
+    "score": -1.149389421205672,
+    "abstract": "The recent advancements in auto-regressive multimodal large language models (MLLMs) have demonstrated promising progress for vision-language tasks. While there exists a variety of studies investigating the processing of linguistic information within large language models, little is currently known about the inner working mechanism of MLLMs and how linguistic and visual information interact within these models. In this study, we aim to fill this gap by examining the information flow between different modalities -- language and vision -- in MLLMs, focusing on visual question answering. Specifically, given an image-question pair as input, we investigate where in the model and how the visual and linguistic information are combined to generate the final prediction. Conducting experiments with a series of models from the LLaVA series, we find that there are two distinct stages in the process of integration of the two modalities. In the lower layers, the model first transfers the more general visual features of the whole image into the representations of (linguistic) question tokens. In the middle layers, it once again transfers visual information about specific objects relevant to the qu"
+  },
+  {
+    "doc_id": "arxiv_2311.17647",
+    "title": "Text as Images: Can Multimodal Large Language Models Follow Printed\n  Instructions in Pixels?",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.1990681910009064,
+    "abstract": "Recent multimodal large language models (MLLMs) have shown promising instruction following capabilities on vision-language tasks. In this work, we introduce VISUAL MODALITY INSTRUCTION (VIM), and investigate how well multimodal models can understand textual instructions provided in pixels, despite not being explicitly trained on such data during pretraining or fine-tuning. We adapt VIM to eight benchmarks, including OKVQA, MM-Vet, MathVista, MMMU, and probe diverse MLLMs in both the text-modality instruction (TEM) setting and VIM setting. Notably, we observe a significant performance disparity between the original TEM and VIM settings for open-source MLLMs, indicating that open-source MLLMs face greater challenges when text instruction is presented solely in image form. To address this issue, we train v-MLLM, a generalizable model that is capable to conduct robust instruction following in both text-modality and visual-modality instructions."
+  },
+  {
+    "doc_id": "arxiv_2502.09906",
+    "title": "Insect-Foundation: A Foundation Model and Large Multimodal Dataset for\n  Vision-Language Insect Understanding",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "T1",
+    "score": -1.3277752520000459,
+    "abstract": "Multimodal conversational generative AI has shown impressive capabilities in various vision and language understanding through learning massive text-image data. However, current conversational models still lack knowledge about visual insects since they are often trained on the general knowledge of vision-language data. Meanwhile, understanding insects is a fundamental problem in precision agriculture, helping to promote sustainable development in agriculture. Therefore, this paper proposes a novel multimodal conversational model, Insect-LLaVA, to promote visual understanding in insect-domain knowledge. In particular, we first introduce a new large-scale Multimodal Insect Dataset with Visual Insect Instruction Data that enables the capability of learning the multimodal foundation models. Our proposed dataset enables conversational models to comprehend the visual and semantic features of the insects. Second, we propose a new Insect-LLaVA model, a new general Large Language and Vision Assistant in Visual Insect Understanding. Then, to enhance the capability of learning insect features, we develop an Insect Foundation Model by introducing a new micro-feature self-supervised learning wi"
+  },
+  {
+    "doc_id": "arxiv_2307.04087",
+    "title": "SVIT: Scaling up Visual Instruction Tuning",
+    "year": 2023,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.3403693524925313,
+    "abstract": "Thanks to the emerging of foundation models, the large language and vision models are integrated to acquire the multimodal ability of visual captioning, question answering, etc. Although existing multimodal models present impressive performance of visual understanding and reasoning, their limits are still largely under-explored due to the scarcity of high-quality instruction tuning data. To push the limits of multimodal capability, we Scale up Visual Instruction Tuning (SVIT) by constructing a dataset of 4.2 million visual instruction tuning data including 1.6M conversation question-answer (QA) pairs, 1.6M complex reasoning QA pairs, 1.0M referring QA pairs and 106K detailed image descriptions. Besides the volume, the proposed dataset is also featured by the high quality and rich diversity, which is generated by prompting GPT-4 with the abundant manual annotations of images. We also propose a new data recipe to select subset with better diversity and balance, which evokes model's superior capabilities. Extensive experiments verify that SVIT-v1.5, trained on the proposed dataset, outperforms state-of-the-art Multimodal Large Language Models on popular benchmarks. The data and code a"
+  },
+  {
+    "doc_id": "arxiv_2208.10442",
+    "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and\n  Vision-Language Tasks",
+    "year": 2022,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.3596470841309534,
+    "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO)."
+  },
+  {
+    "doc_id": "arxiv_2403.08773",
+    "title": "Veagle: Advancements in Multimodal Representation Learning",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.4445056024233809,
+    "abstract": "Lately, researchers in artificial intelligence have been really interested in how language and vision come together, giving rise to the development of multimodal models that aim to seamlessly integrate textual and visual information. Multimodal models, an extension of Large Language Models (LLMs), have exhibited remarkable capabilities in addressing a diverse array of tasks, ranging from image captioning and visual question answering (VQA) to visual grounding. While these models have showcased significant advancements, challenges persist in accurately interpreting images and answering the question, a common occurrence in real-world scenarios. This paper introduces a novel approach to enhance the multimodal capabilities of existing models. In response to the limitations observed in current Vision Language Models (VLMs) and Multimodal Large Language Models (MLLMs), our proposed model Veagle, incorporates a unique mechanism inspired by the successes and insights of previous works. Veagle leverages a dynamic mechanism to project encoded visual information directly into the language model. This dynamic approach allows for a more nuanced understanding of intricate details present in visu"
+  },
+  {
+    "doc_id": "arxiv_2411.06284",
+    "title": "A Comprehensive Survey and Guide to Multimodal Large Language Models in Vision-Language Tasks",
+    "year": 2025,
+    "venue": "cs.AI",
+    "tier": "T2",
+    "score": -1.4648302734254621,
+    "abstract": "This survey and application guide to multimodal large language models(MLLMs) explores the rapidly developing field of MLLMs, examining their architectures, applications, and impact on AI and Generative Models. Starting with foundational concepts, we delve into how MLLMs integrate various data types, including text, images, video and audio, to enable complex AI systems for cross-modal understanding and generation. It covers essential topics such as training methods, architectural components, and practical applications in various fields, from visual storytelling to enhanced accessibility. Through detailed case studies and technical analysis, the text examines prominent MLLM implementations while addressing key challenges in scalability, robustness, and cross-modal learning. Concluding with a discussion of ethical considerations, responsible AI development, and future directions, this authoritative resource provides both theoretical frameworks and practical insights. It offers a balanced perspective on the opportunities and challenges in the development and deployment of MLLMs, and is highly valuable for researchers, practitioners, and students interested in the intersection of natura"
+  },
+  {
+    "doc_id": "arxiv_2512.15885",
+    "title": "Seeing Beyond Words: Self-Supervised Visual Learning for Multimodal Large Language Models",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.529524337478334,
+    "abstract": "Multimodal Large Language Models (MLLMs) have recently demonstrated impressive capabilities in connecting vision and language, yet their proficiency in fundamental visual reasoning tasks remains limited. This limitation can be attributed to the fact that MLLMs learn visual understanding primarily from textual descriptions, which constitute a subjective and inherently incomplete supervisory signal. Furthermore, the modest scale of multimodal instruction tuning compared to massive text-only pre-training leads MLLMs to overfit language priors while overlooking visual details. To address these issues, we introduce JARVIS, a JEPA-inspired framework for self-supervised visual enhancement in MLLMs. Specifically, we integrate the I-JEPA learning paradigm into the standard vision-language alignment pipeline of MLLMs training. Our approach leverages frozen vision foundation models as context and target encoders, while training the predictor, implemented as the early layers of an LLM, to learn structural and semantic regularities from images without relying exclusively on language supervision. Extensive experiments on standard MLLM benchmarks show that JARVIS consistently improves performance"
+  },
+  {
+    "doc_id": "arxiv_2408.08632",
+    "title": "A Survey on Benchmarks of Multimodal Large Language Models",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -1.6173127839391002,
+    "abstract": "Multimodal Large Language Models (MLLMs) are gaining increasing popularity in both academia and industry due to their remarkable performance in various applications such as visual question answering, visual perception, understanding, and reasoning. Over the past few years, significant efforts have been made to examine MLLMs from multiple perspectives. This paper presents a comprehensive review of 200 benchmarks and evaluations for MLLMs, focusing on (1)perception and understanding, (2)cognition and reasoning, (3)specific domains, (4)key capabilities, and (5)other modalities. Finally, we discuss the limitations of the current evaluation methods for MLLMs and explore promising future directions. Our key argument is that evaluation should be regarded as a crucial discipline to support the development of MLLMs better. For more details, please visit our GitHub repository: https://github.com/swordlidev/Evaluation-Multimodal-LLMs-Survey."
+  },
+  {
+    "doc_id": "arxiv_2504.08269",
+    "title": "VLMT: Vision-Language Multimodal Transformer for Multimodal Multi-hop\n  Question Answering",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.6411468435983319,
+    "abstract": "The increasing availability of multimodal data across text, tables, and images presents new challenges for developing models capable of complex cross-modal reasoning. Existing methods for Multimodal Multi-hop Question Answering (MMQA) often suffer from limited reasoning capabilities, reliance on modality conversion, and inadequate alignment between visual and textual representations. To address these limitations, this paper introduces Vision-Language Multimodal Transformer (VLMT), a unified architecture that integrates a transformer-based vision encoder with a sequence-to-sequence language model. VLMT employs a direct token-level injection mechanism to fuse visual and textual inputs within a shared embedding space, eliminating the need for intermediate projection layers. To enhance cross-modal alignment and reasoning, a three-stage pretraining strategy is proposed to progressively align vision-language representations and improve the model's capacity for multimodal understanding. Based on the pretrained backbone, two task-specific modules are instantiated to form a two-stage MMQA framework: a multimodal reranker that predicts document relevance scores and utilizes a relative thresh"
+  },
+  {
+    "doc_id": "arxiv_2101.10044",
+    "title": "Cross-lingual Visual Pre-training for Multimodal Machine Translation",
+    "year": 2021,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -1.6606817872492807,
+    "abstract": "Pre-trained language models have been shown to improve performance in many natural language tasks substantially. Although the early focus of such models was single language pre-training, recent advances have resulted in cross-lingual and visual pre-training methods. In this paper, we combine these two approaches to learn visually-grounded cross-lingual representations. Specifically, we extend the translation language modelling (Lample and Conneau, 2019) with masked region classification and perform pre-training with three-way parallel vision & language corpora. We show that when fine-tuned for multimodal machine translation, these models obtain state-of-the-art performance. We also provide qualitative insights into the usefulness of the learned grounded representations."
+  },
+  {
+    "doc_id": "arxiv_2408.03735",
+    "title": "Advancing Multimodal Large Language Models with Quantization-Aware Scale\n  Learning for Efficient Adaptation",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.6675444836298539,
+    "abstract": "This paper presents the first study to explore the potential of parameter quantization for multimodal large language models to alleviate the significant resource constraint encountered during vision-language instruction tuning. We introduce a Quantization-aware Scale LeArning method based on multimodal Warmup, termed QSLAW. This method is grounded in two key innovations: (1) The learning of group-wise scale factors for quantized LLM weights to mitigate the quantization error arising from activation outliers and achieve more effective vision-language instruction tuning; (2) The implementation of a multimodal warmup that progressively integrates linguistic and multimodal training samples, thereby preventing overfitting of the quantized model to multimodal data while ensuring stable adaptation of multimodal large language models to downstream vision-language tasks. Extensive experiments demonstrate that models quantized by QSLAW perform on par with, or even surpass, their full-precision counterparts, while facilitating up to 1.4 times reduction in VL tuning time and GPU consumption. Our code is released at https://github.com/xjjxmu/QSLAW."
+  },
+  {
+    "doc_id": "arxiv_2505.05626",
+    "title": "Perceiving Beyond Language Priors: Enhancing Visual Comprehension and Attention in Multimodal Models",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.6797993868114178,
+    "abstract": "Achieving deep alignment between vision and language remains a central challenge for Multimodal Large Language Models (MLLMs). These models often fail to fully leverage visual input, defaulting to strong language priors. Our approach first provides insights into how MLLMs internally build visual understanding of image regions and then introduces techniques to amplify this capability. Specifically, we explore techniques designed both to deepen the model's understanding of visual content and to ensure that these visual insights actively guide language generation. We demonstrate the superior multimodal understanding of our resultant model through a detailed upstream analysis quantifying its ability to predict visually-dependent tokens as well as 10 pt boost on visually challenging tasks."
+  },
+  {
+    "doc_id": "arxiv_2408.11813",
+    "title": "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.719135662196437,
+    "abstract": "Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities by integrating visual and textual inputs, yet modality alignment remains one of the most challenging aspects. Current MLLMs typically rely on simple adapter architectures and pretraining approaches to bridge vision encoders with large language models (LLM), guided by image-level supervision. We identify this paradigm often leads to suboptimal alignment between modalities, significantly constraining the LLM's ability to properly interpret and reason with visual features particularly for smaller language models. This limitation degrades overall performance-particularly for smaller language models where capacity constraints are more pronounced and adaptation capabilities are limited. To address this fundamental limitation, we propose Supervised Embedding Alignment (SEA), a token-level supervision alignment method that enables more precise visual-text alignment during pretraining. SEA introduces minimal computational overhead while preserving language capabilities and substantially improving cross-modal understanding. Our comprehensive analyses reveal critical insights into the adapter's role in multimod"
+  },
+  {
+    "doc_id": "arxiv_2603.03276",
+    "title": "Beyond Language Modeling: An Exploration of Multimodal Pretraining",
+    "year": 2026,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.8076945667489202,
+    "abstract": "The visual world offers a critical axis for advancing foundation models beyond language. Despite growing interest in this direction, the design space for native multimodal models remains opaque. We provide empirical clarity through controlled, from-scratch pretraining experiments, isolating the factors that govern multimodal pretraining without interference from language pretraining. We adopt the Transfusion framework, using next-token prediction for language and diffusion for vision, to train on diverse data including text, video, image-text pairs, and even action-conditioned video. Our experiments yield four key insights: (i) Representation Autoencoder (RAE) provides an optimal unified visual representation by excelling at both visual understanding and generation; (ii) visual and language data are complementary and yield synergy for downstream capabilities; (iii) unified multimodal pretraining leads naturally to world modeling, with capabilities emerging from general training; and (iv) Mixture-of-Experts (MoE) enables efficient and effective multimodal scaling while naturally inducing modality specialization. Through IsoFLOP analysis, we compute scaling laws for both modalities a"
+  },
+  {
+    "doc_id": "arxiv_2602.06056",
+    "title": "Analyzing Diffusion and Autoregressive Vision Language Models in Multimodal Embedding Space",
+    "year": 2026,
+    "venue": "cs.MM",
+    "tier": "PREPRINT",
+    "score": -1.8083896077168606,
+    "abstract": "Embedding models are a fundamental component of modern AI systems such as semantic search and retrieval-augmented generation. Recent advances in large foundation models have substantially accelerated the development of embedding models, including those based on Large Language Models (LLMs), Vision Language Models (VLMs), and Multimodal LLMs. More recently, Large Diffusion Language Models (dLLMs) and Multimodal dLLMs have emerged as competitive alternatives to autoregressive models, offering advantages such as bidirectional attention and parallel generation. This progress naturally raises a critical yet unexplored question: can Multimodal dLLMs serve as effective multimodal embedding models? To answer this, we present the first systematic study of converting Multimodal dLLMs into embedding models. We evaluate state-of-the-art Multimodal dLLMs and Autoregressive VLMs across three categories of embedding tasks: classification, visual question answering, and information retrieval. Our results show that Multimodal dLLM embeddings generally underperform their autoregressive VLM counterparts. The stronger diffusion-based model, LaViDa, lags by only 3.5 points on classification, 2.5 points"
+  },
+  {
+    "doc_id": "arxiv_2505.16933",
+    "title": "LLaDA-V: Large Language Diffusion Models with Visual Instruction Tuning",
+    "year": 2025,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.8096957315921691,
+    "abstract": "In this work, we introduce LLaDA-V, a purely diffusion-based Multimodal Large Language Model (MLLM) that integrates visual instruction tuning with masked diffusion models, representing a departure from the autoregressive paradigms dominant in current multimodal approaches. Built upon LLaDA, a representative large language diffusion model, LLaDA-V incorporates a vision encoder and MLP connector that projects visual features into the language embedding space, enabling effective multimodal alignment. Our empirical investigation reveals several intriguing results: First, LLaDA-V demonstrates promising multimodal performance despite its language model being weaker on purely textual tasks than counterparts like LLaMA3-8B and Qwen2-7B. When trained on the same instruction data, LLaDA-V is highly competitive to LLaMA3-V across multimodal tasks with better data scalability. It also narrows the performance gap to Qwen2-VL, suggesting the effectiveness of its architecture for multimodal tasks. Second, LLaDA-V achieves state-of-the-art performance in multimodal understanding compared to existing hybrid autoregressive-diffusion and purely diffusion-based MLLMs. Our findings suggest that large l"
+  },
+  {
+    "doc_id": "arxiv_2403.11399",
+    "title": "X-LLaVA: Optimizing Bilingual Large Vision-Language Alignment",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -1.840493082907282,
+    "abstract": "The impressive development of large language models (LLMs) is expanding into the realm of large multimodal models (LMMs), which incorporate multiple types of data beyond text. However, the nature of multimodal models leads to significant expenses in the creation of training data. Furthermore, constructing multilingual data for LMMs presents its own set of challenges due to language diversity and complexity. Therefore, in this study, we propose two cost-effective methods to solve this problem: (1) vocabulary expansion and pretraining of multilingual LLM for specific languages, and (2) automatic and elaborate construction of multimodal datasets using GPT4-V. Based on015 these methods, we constructed a 91K English-Korean-Chinese multilingual, multimodal training dataset. Additionally, we developed a bilingual multimodal model that exhibits excellent performance in both Korean and English, surpassing existing approaches."
+  },
+  {
+    "doc_id": "arxiv_2302.14045",
+    "title": "Language Is Not All You Need: Aligning Perception with Language Models",
+    "year": 2023,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -1.8544302485192041,
+    "abstract": "A big convergence of language, multimodal perception, action, and world modeling is a key step toward artificial general intelligence. In this work, we introduce Kosmos-1, a Multimodal Large Language Model (MLLM) that can perceive general modalities, learn in context (i.e., few-shot), and follow instructions (i.e., zero-shot). Specifically, we train Kosmos-1 from scratch on web-scale multimodal corpora, including arbitrarily interleaved text and images, image-caption pairs, and text data. We evaluate various settings, including zero-shot, few-shot, and multimodal chain-of-thought prompting, on a wide range of tasks without any gradient updates or finetuning. Experimental results show that Kosmos-1 achieves impressive performance on (i) language understanding, generation, and even OCR-free NLP (directly fed with document images), (ii) perception-language tasks, including multimodal dialogue, image captioning, visual question answering, and (iii) vision tasks, such as image recognition with descriptions (specifying classification via text instructions). We also show that MLLMs can benefit from cross-modal transfer, i.e., transfer knowledge from language to multimodal, and from multim"
+  },
+  {
+    "doc_id": "arxiv_2410.16163",
+    "title": "Griffon-G: Bridging Vision-Language and Vision-Centric Tasks via Large\n  Multimodal Models",
+    "year": 2024,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.9431463860982148,
+    "abstract": "Large Multimodal Models (LMMs) have achieved significant breakthroughs in various vision-language and vision-centric tasks based on auto-regressive modeling. However, these models typically focus on either vision-centric tasks, such as visual grounding and region description, or vision-language tasks, like image caption and multi-scenario VQAs. None of the LMMs have yet comprehensively unified both types of tasks within a single model, as seen in Large Language Models in the natural language processing field. Furthermore, even with abundant multi-task instruction-following data, directly stacking these data for universal capabilities extension remains challenging. To address these issues, we introduce a novel multi-dimension curated and consolidated multimodal dataset, named CCMD-8M, which overcomes the data barriers of unifying vision-centric and vision-language tasks through multi-level data curation and multi-task consolidation. More importantly, we present Griffon-G, a general large multimodal model that addresses both vision-centric and vision-language tasks within a single end-to-end paradigm. Griffon-G resolves the training collapse issue encountered during the joint optimiz"
+  },
+  {
+    "doc_id": "arxiv_2411.09273",
+    "title": "Cross-Modal Consistency in Multimodal Large Language Models",
+    "year": 2024,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -1.9659543344944124,
+    "abstract": "Recent developments in multimodal methodologies have marked the beginning of an exciting era for models adept at processing diverse data types, encompassing text, audio, and visual content. Models like GPT-4V, which merge computer vision with advanced language processing, exhibit extraordinary proficiency in handling intricate tasks that require a simultaneous understanding of both textual and visual information. Prior research efforts have meticulously evaluated the efficacy of these Vision Large Language Models (VLLMs) in various domains, including object detection, image captioning, and other related fields. However, existing analyses have often suffered from limitations, primarily centering on the isolated evaluation of each modality's performance while neglecting to explore their intricate cross-modal interactions. Specifically, the question of whether these models achieve the same level of accuracy when confronted with identical task instances across different modalities remains unanswered. In this study, we take the initiative to delve into the interaction and comparison among these modalities of interest by introducing a novel concept termed cross-modal consistency. Further"
+  },
+  {
+    "doc_id": "arxiv_2509.07979",
+    "title": "Visual Representation Alignment for Multimodal Large Language Models",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -1.9705469868702337,
+    "abstract": "Multimodal large language models (MLLMs) trained with visual instruction tuning have achieved strong performance across diverse tasks, yet they remain limited in vision-centric tasks such as object counting or spatial reasoning. We attribute this gap to the prevailing text-only supervision paradigm, which provides only indirect guidance for the visual pathway and often leads MLLMs to discard fine-grained visual details during training. In this paper, we present VIsual Representation ALignment (VIRAL), a simple yet effective regularization strategy that aligns the internal visual representations of MLLMs with those of pre-trained vision foundation models (VFMs). By explicitly enforcing this alignment, VIRAL enables the model not only to retain critical visual details from the input vision encoder but also to complement additional visual knowledge from VFMs, thereby enhancing its ability to reason over complex visual inputs. Our experiments demonstrate consistent improvements across all tasks on widely adopted multimodal benchmarks. Furthermore, we conduct comprehensive ablation studies to validate the key design choices underlying our framework. We believe this simple finding opens "
+  },
+  {
+    "doc_id": "arxiv_2502.17516",
+    "title": "A Survey on Mechanistic Interpretability for Multi-Modal Foundation\n  Models",
+    "year": 2025,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.9984576733993866,
+    "abstract": "The rise of foundation models has transformed machine learning research, prompting efforts to uncover their inner workings and develop more efficient and reliable applications for better control. While significant progress has been made in interpreting Large Language Models (LLMs), multimodal foundation models (MMFMs) - such as contrastive vision-language models, generative vision-language models, and text-to-image models - pose unique interpretability challenges beyond unimodal frameworks. Despite initial studies, a substantial gap remains between the interpretability of LLMs and MMFMs. This survey explores two key aspects: (1) the adaptation of LLM interpretability methods to multimodal models and (2) understanding the mechanistic differences between unimodal language models and crossmodal systems. By systematically reviewing current MMFM analysis techniques, we propose a structured taxonomy of interpretability methods, compare insights across unimodal and multimodal architectures, and highlight critical research gaps."
+  },
+  {
+    "doc_id": "arxiv_2506.21596",
+    "title": "Evaluating Multimodal Large Language Models on Educational Textbook Question Answering",
+    "year": 2025,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -2.035233417100126,
+    "abstract": "Multimodal large language models (MLLMs) have shown success in vision-language tasks, but their ability to reason over complex educational materials remains largely untested. This work presents the first evaluation of state-of-the-art MLLMs, including LLaVA-1.5 and LLaMA 3.2-Vision, on the textbook question answering (TQA) task using the CK12-QA dataset. We introduce a multimodal retrieval-augmented generation (RAG) pipeline to simulate real-world learning by providing relevant lesson paragraphs and diagrams as context. Our zero-shot experiments reveal a critical trade-off: while retrieved context improves LLaVA's performance on text-based questions, it significantly degrades the accuracy of the more powerful LLaMA 3.2-Vision on diagram-based tasks, dropping its validation accuracy from 74.07% to 25.93%. We term this statistically significant phenomenon \"catastrophic context interference.\" Furthermore, fine-tuning highlights architectural differences: LLaMA 3.2-Vision's performance improves to 71.16% on the test set, demonstrating its capacity to learn multimodal integration, whereas LLaVA's performance declines, indicating challenges with generalization. Our results underscore the"
+  },
+  {
+    "doc_id": "arxiv_2506.23639",
+    "title": "Unified Multimodal Understanding via Byte-Pair Visual Encoding",
+    "year": 2025,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -2.0446036323990753,
+    "abstract": "Multimodal large language models (MLLMs) have made significant progress in vision-language understanding, yet effectively aligning different modalities remains a fundamental challenge. We present a framework that unifies multimodal understanding by applying byte-pair encoding to visual tokens. Unlike conventional approaches that rely on modality-specific encoders, our method directly incorporates structural information into visual tokens, mirroring successful tokenization strategies in text-only language models. We introduce a priority-guided encoding scheme that considers both frequency and spatial consistency, coupled with a multi-stage training procedure based on curriculum-driven data composition. These enhancements enable the transformer model to better capture cross-modal relationships and reason with visual information. Comprehensive experiments demonstrate improved performance across diverse vision-language tasks. By bridging the gap between visual and textual representations, our approach contributes to the advancement of more capable and efficient multimodal foundation models."
+  },
+  {
+    "doc_id": "arxiv_2308.12067",
+    "title": "MM-LIMA: Less Is More for Alignment in Multi-Modal Datasets",
+    "year": 2026,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -2.076091037587721,
+    "abstract": "Multimodal large language models are typically trained in two stages: first pre-training on image-text pairs, and then fine-tuning using supervised vision-language instruction data. Recent studies have shown that large language models can achieve satisfactory results even with a limited amount of high-quality instruction-following data. In this paper, we introduce MM-LIMA, which is fine-tuned on a small dataset comprising only 200 examples, amounting to approximately 6% of the instruction-following data used in the alignment dataset for MiniGPT-4. To achieve this, we first propose several metrics to access the quality of multimodal instruction data. Based on these metrics, we present an effective and trainable data selector to automatically identify and filter low-quality vision-language data. By employing this method, MM-LIMA outperforms the original MiniGPT-4 on various evaluations. Overall, our findings demonstrate that less but high-quality instruction tuning data is efficient in enabling multimodal large language models to generate better output. Our code is available at https://github.com/waltonfuture/InstructionGPT-4."
+  },
+  {
+    "doc_id": "arxiv_2601.07645",
+    "title": "PlaM: Training-Free Plateau-Guided Model Merging for Better Visual Grounding in MLLMs",
+    "year": 2026,
+    "venue": "cs.CL",
+    "tier": "PREPRINT",
+    "score": -2.1881520862493926,
+    "abstract": "Multimodal Large Language Models (MLLMs) rely on strong linguistic reasoning inherited from their base language models. However, multimodal instruction fine-tuning paradoxically degrades this text's reasoning capability, undermining multimodal performance. To address this issue, we propose a training-free framework to mitigate this degradation. Through layer-wise vision token masking, we reveal a common three-stage pattern in multimodal large language models: early-modal separation, mid-modal alignment, and late-modal degradation. By analyzing the behavior of MLLMs at different stages, we propose a plateau-guided model merging method that selectively injects base language model parameters into MLLMs. Experimental results based on five MLLMs on nine benchmarks demonstrate the effectiveness of our method. Attention-based analysis further reveals that merging shifts attention from diffuse, scattered patterns to focused localization on task-relevant visual regions. Our repository is on https://github.com/wzj1718/PlaM."
+  },
+  {
+    "doc_id": "arxiv_2603.27693",
+    "title": "LVRPO: Language-Visual Alignment with GRPO for Multimodal Understanding and Generation",
+    "year": 2026,
+    "venue": "cs.CV",
+    "tier": "PREPRINT",
+    "score": -2.695941498834736,
+    "abstract": "Unified multimodal pretraining has emerged as a promising paradigm for jointly modeling language and vision within a single foundation model. However, existing approaches largely rely on implicit or indirect alignment signals and remain suboptimal for simultaneously supporting multimodal understanding and generation, particularly in settings that require fine-grained language-visual reasoning and controllable generation. In this work, we propose LVRPO, a language-visual reinforcement-based preference optimization framework that explicitly aligns language and visual representations using Group Relative Policy Optimization (GRPO). Instead of introducing additional alignment losses at the representation level, LVRPO directly optimizes multimodal model behaviors through preference-driven reinforcement signals, encouraging consistent and semantically grounded interactions between language and vision across both understanding and generation tasks. This formulation enables effective alignment without requiring auxiliary encoders or handcrafted cross-modal objectives, and naturally extends to diverse multimodal capabilities. Empirically, LVRPO consistently outperforms strong unified-pretra"
+  }
+]

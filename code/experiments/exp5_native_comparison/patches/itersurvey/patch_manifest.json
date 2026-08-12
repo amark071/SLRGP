@@ -1,0 +1,27 @@
+{
+  "system": "itersurvey",
+  "source_revision": "9b49b73cedd41ea1ab9a2dbf92931c5ab84a7799",
+  "primary_eligibility": "failed_preflight",
+  "exclusion_reason": "The required approximately 680K-paper native database and its builder were not released; borrowing another system's corpus is disallowed by the registered protocol.",
+  "patches": [
+    {
+      "file": "main_runtime.patch",
+      "purpose": "Honor released section/reference/use-abstract controls and bound section-level scheduling.",
+      "semantic_effect": "released_parameter_wiring_and_scheduling"
+    },
+    {
+      "file": "model_usage.patch",
+      "purpose": "Isolate model caches by run, bound API concurrency, and record token usage.",
+      "semantic_effect": "instrumentation_and_scheduling_only"
+    },
+    {
+      "file": "database_device.patch",
+      "purpose": "Allow explicit embedding device selection while preserving native retrieval.",
+      "semantic_effect": "environment_compatibility_only"
+    }
+  ],
+  "publication_cutoff": {
+    "date": "2023-12-31",
+    "enforcement": "adapter support implemented but not used for primary generation because source-provenance preflight failed"
+  }
+}

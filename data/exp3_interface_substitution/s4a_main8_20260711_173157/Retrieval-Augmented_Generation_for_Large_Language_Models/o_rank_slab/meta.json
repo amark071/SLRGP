@@ -1,0 +1,99 @@
+{
+  "topic": "Retrieval-Augmented Generation for Large Language Models",
+  "arm": "o_rank_slab",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 21:53:17",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "retrieval-augmented generation",
+    "RAG",
+    "knowledge-grounded language models",
+    "dense passage retrieval",
+    "open-domain question answering",
+    "neural information retrieval",
+    "grounded text generation",
+    "external memory augmentation",
+    "hybrid retrieval generation",
+    "document retrieval for NLP",
+    "in-context learning with retrieved knowledge",
+    "hallucination mitigation in LLMs"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "rank_slab_order",
+  "groups": [
+    {
+      "name": "Rank slab 1: positions 1-8",
+      "n": 8
+    },
+    {
+      "name": "Rank slab 2: positions 9-15",
+      "n": 7
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_2005.11401",
+    "arxiv_2402.18150",
+    "arxiv_2404.10981",
+    "arxiv_2405.06211",
+    "arxiv_2406.07348",
+    "arxiv_2406.13249",
+    "arxiv_2407.03627",
+    "arxiv_2407.13193",
+    "arxiv_2410.20598",
+    "arxiv_2501.07391",
+    "arxiv_2501.15915",
+    "arxiv_2502.10596"
+  ],
+  "n_refs": 12,
+  "word_count": 851,
+  "written_citation_ids": [
+    "arxiv_2005.11401",
+    "arxiv_2407.13193",
+    "arxiv_2404.10981",
+    "arxiv_2410.20598",
+    "arxiv_2406.13249",
+    "arxiv_2406.07348",
+    "arxiv_2407.03627",
+    "arxiv_2501.07391",
+    "arxiv_2402.18150",
+    "arxiv_2502.10596",
+    "arxiv_2405.06211",
+    "arxiv_2501.15915"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2005.11401",
+    "arxiv_2401.14887",
+    "arxiv_2402.18150",
+    "arxiv_2404.10981",
+    "arxiv_2405.06211",
+    "arxiv_2406.07348",
+    "arxiv_2406.13249",
+    "arxiv_2407.03627",
+    "arxiv_2407.13193",
+    "arxiv_2410.20598",
+    "arxiv_2412.15605",
+    "arxiv_2501.07391",
+    "arxiv_2501.15915",
+    "arxiv_2502.10596",
+    "arxiv_2507.05714"
+  ],
+  "elapsed_sec": 44.3,
+  "llm_usage_delta": {
+    "n_calls": 3,
+    "prompt_tokens": 2923,
+    "completion_tokens": 1367
+  },
+  "llm_usage_so_far": {
+    "n_calls": 98,
+    "prompt_tokens": 86207,
+    "completion_tokens": 24399
+  }
+}

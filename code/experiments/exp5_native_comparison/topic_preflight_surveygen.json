@@ -1,0 +1,121 @@
+{
+  "system": "surveygen",
+  "native_retrieval_service": "Semantic Scholar",
+  "minimum_pre_cutoff_candidates": 30,
+  "publication_cutoff": "2023-12-31",
+  "topics": {
+    "mature_neural_machine_translation": {
+      "title": "Neural Machine Translation",
+      "valid_count": 78,
+      "returned": 100,
+      "last_http_status": 200,
+      "attempts": 14,
+      "passed": true,
+      "last_round": 14
+    },
+    "mature_deep_reinforcement_learning": {
+      "title": "Deep Reinforcement Learning",
+      "valid_count": 65,
+      "returned": 100,
+      "last_http_status": 200,
+      "attempts": 2,
+      "passed": true,
+      "last_round": 2
+    },
+    "mature_adversarial_robustness": {
+      "title": "Adversarial Robustness of Deep Neural Networks",
+      "valid_count": 0,
+      "returned": 0,
+      "last_http_status": 429,
+      "attempts": 22,
+      "passed": false,
+      "last_round": 2
+    },
+    "fast_text_to_image_diffusion": {
+      "title": "Text-to-Image Diffusion Models",
+      "valid_count": 86,
+      "returned": 100,
+      "last_http_status": 200,
+      "attempts": 11,
+      "passed": true,
+      "last_round": 11
+    },
+    "fast_vision_language_pretraining": {
+      "title": "Vision-Language Pretraining",
+      "valid_count": 84,
+      "returned": 100,
+      "last_http_status": 200,
+      "attempts": 9,
+      "passed": true,
+      "last_round": 9
+    },
+    "fast_large_language_model_agents": {
+      "title": "Large Language Model Agents",
+      "valid_count": 81,
+      "returned": 100,
+      "last_http_status": 200,
+      "attempts": 2,
+      "passed": true,
+      "last_round": 2
+    },
+    "method_self_supervised_learning": {
+      "title": "Self-Supervised Representation Learning",
+      "valid_count": 78,
+      "returned": 100,
+      "last_http_status": 200,
+      "attempts": 13,
+      "passed": true,
+      "last_round": 13
+    },
+    "method_continual_learning": {
+      "title": "Continual Learning",
+      "valid_count": 77,
+      "returned": 100,
+      "last_http_status": 200,
+      "attempts": 2,
+      "passed": true,
+      "last_round": 2
+    },
+    "method_uncertainty_quantification": {
+      "title": "Uncertainty Quantification in Deep Learning",
+      "valid_count": 0,
+      "returned": 0,
+      "last_http_status": 429,
+      "attempts": 21,
+      "passed": false,
+      "last_round": 1
+    },
+    "cross_medical_image_analysis": {
+      "title": "Deep Learning for Medical Image Analysis",
+      "valid_count": 72,
+      "returned": 100,
+      "last_http_status": 200,
+      "attempts": 2,
+      "passed": true,
+      "last_round": 2
+    },
+    "cross_ml_drug_discovery": {
+      "title": "Machine Learning for Drug Discovery",
+      "valid_count": 82,
+      "returned": 100,
+      "last_http_status": 200,
+      "attempts": 20,
+      "passed": true,
+      "last_round": 20
+    },
+    "cross_efficient_deep_learning": {
+      "title": "Efficient Deep Learning",
+      "valid_count": 64,
+      "returned": 100,
+      "last_http_status": 200,
+      "attempts": 2,
+      "passed": true,
+      "last_round": 2
+    }
+  },
+  "complete": false,
+  "failed_topics": [
+    "mature_adversarial_robustness",
+    "method_uncertainty_quantification"
+  ]
+}

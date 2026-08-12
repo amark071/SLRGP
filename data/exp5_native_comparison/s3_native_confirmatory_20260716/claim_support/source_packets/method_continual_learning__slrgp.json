@@ -1,0 +1,396 @@
+{
+  "topic_id": "method_continual_learning",
+  "system": "slrgp",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The taxonomy has since become a standard reference point for situating experimental results, and subsequent surveys have built directly upon it [arxiv_1909.08383, ss_475710].",
+      "citation_markers": [
+        "[arxiv_1909.08383, ss_475710]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1909.08383",
+          "doc_id": "arxiv_1909.08383",
+          "title": "A continual learning survey: Defying forgetting in classification tasks",
+          "year": 2021,
+          "venue": "cs.CV",
+          "abstract": "Artificial neural networks thrive in solving the classification problem for a particular rigid task, acquiring knowledge through generalized learning behaviour from a distinct training phase. The resulting network resembles a static entity of knowledge, with endeavours to extend this knowledge without targeting the original task resulting in a catastrophic forgetting. Continual learning shifts this paradigm towards networks that can continually accumulate knowledge over different tasks without the need to retrain from scratch. We focus on task incremental classification, where tasks arrive sequentially and are delineated by clear boundaries. Our main contributions concern 1) a taxonomy and extensive overview of the state-of-the-art, 2) a novel framework to continually determine the stability-plasticity trade-off of the continual learner, 3) a comprehensive experimental comparison of 11 state-of-the-art continual learning methods and 4 baselines. We empirically scrutinize method strengths and weaknesses on three benchmarks, considering Tiny Imagenet and large-scale unbalanced iNaturalist and a sequence of recognition datasets. We study the influence of model capacity, weight decay and dropout regularization, and the order in which the tasks are presented, and qualitatively compare methods in terms of required memory, computation time, and storage.",
+          "resolved_arxiv": {
+            "arxiv_id": "1909.08383",
+            "title": "A continual learning survey: Defying forgetting in classification tasks",
+            "abstract": "Artificial neural networks thrive in solving the classification problem for a particular rigid task, acquiring knowledge through generalized learning behaviour from a distinct training phase. The resulting network resembles a static entity of knowledge, with endeavours to extend this knowledge without targeting the original task resulting in a catastrophic forgetting. Continual learning shifts this paradigm towards networks that can continually accumulate knowledge over different tasks without the need to retrain from scratch. We focus on task incremental classification, where tasks arrive sequentially and are delineated by clear boundaries. Our main contributions concern 1) a taxonomy and extensive overview of the state-of-the-art, 2) a novel framework to continually determine the stability-plasticity trade-off of the continual learner, 3) a comprehensive experimental comparison of 11 state-of-the-art continual learning methods and 4 baselines. We empirically scrutinize method strengths and weaknesses on three benchmarks, considering Tiny Imagenet and large-scale unbalanced iNaturalist and a sequence of recognition datasets. We study the influence of model capacity, weight decay and dropout regularization, and the order in which the tasks are presented, and qualitatively compare methods in terms of required memory, computation time, and storage.",
+            "published": "2019-09-18T12:07:36Z",
+            "source_url": "https://arxiv.org/abs/1909.08383"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "ss_475710",
+          "doc_id": "ss_475710",
+          "title": "A continual learning survey: Defying forgetting in classification tasks",
+          "year": 2021,
+          "venue": "INTELLIGENCE",
+          "source_accessible": false
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": false
+    },
+    {
+      "claim_id": "C02",
+      "quote": "De Lange et al. [arxiv_2205.13452] identified a further methodological gap by demonstrating that standard evaluation practices—which typically assess model performance only at the end of each task—obscure a phenomenon they term the \"stability gap\": a transient but substantial drop in performance on previously learned tasks that occurs at the onset of training on a new task.",
+      "citation_markers": [
+        "[arxiv_2205.13452]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2205.13452",
+          "doc_id": "arxiv_2205.13452",
+          "title": "Continual evaluation for lifelong learning: Identifying the stability\n  gap",
+          "year": 2023,
+          "venue": "cs.LG",
+          "abstract": "Time-dependent data-generating distributions have proven to be difficult for gradient-based training of neural networks, as the greedy updates result in catastrophic forgetting of previously learned knowledge. Despite the progress in the field of continual learning to overcome this forgetting, we show that a set of common state-of-the-art methods still suffers from substantial forgetting upon starting to learn new tasks, except that this forgetting is temporary and followed by a phase of performance recovery. We refer to this intriguing but potentially problematic phenomenon as the stability gap. The stability gap had likely remained under the radar due to standard practice in the field of evaluating continual learning models only after each task. Instead, we establish a framework for continual evaluation that uses per-iteration evaluation and we define a new set of metrics to quantify worst-case performance. Empirically we show that experience replay, constraint-based replay, knowledge-distillation, and parameter regularization methods are all prone to the stability gap; and that the stability gap can be observed in class-, task-, and domain-incremental learning benchmarks. Additionally, a controlled experiment shows that the stability gap increases when tasks are more dissimilar. Finally, by disentangling gradients into plasticity and stability components, we propose a conceptual explanation for the stability gap.",
+          "resolved_arxiv": {
+            "arxiv_id": "2205.13452",
+            "title": "Continual evaluation for lifelong learning: Identifying the stability gap",
+            "abstract": "Time-dependent data-generating distributions have proven to be difficult for gradient-based training of neural networks, as the greedy updates result in catastrophic forgetting of previously learned knowledge. Despite the progress in the field of continual learning to overcome this forgetting, we show that a set of common state-of-the-art methods still suffers from substantial forgetting upon starting to learn new tasks, except that this forgetting is temporary and followed by a phase of performance recovery. We refer to this intriguing but potentially problematic phenomenon as the stability gap. The stability gap had likely remained under the radar due to standard practice in the field of evaluating continual learning models only after each task. Instead, we establish a framework for continual evaluation that uses per-iteration evaluation and we define a new set of metrics to quantify worst-case performance. Empirically we show that experience replay, constraint-based replay, knowledge-distillation, and parameter regularization methods are all prone to the stability gap; and that the stability gap can be observed in class-, task-, and domain-incremental learning benchmarks. Additionally, a controlled experiment shows that the stability gap increases when tasks are more dissimilar. Finally, by disentangling gradients into plasticity and stability components, we propose a conceptual explanation for the stability gap.",
+            "published": "2022-05-26T15:56:08Z",
+            "source_url": "https://arxiv.org/abs/2205.13452"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Harun et al. [arxiv_2303.18171] shifted the evaluative lens toward computational efficiency, noting that despite the motivating premise of avoiding full retraining, many contemporary CL algorithms have not been rigorously assessed for their efficiency properties—revealing a gap between theoretical motivation and empirical benchmarking practice.",
+      "citation_markers": [
+        "[arxiv_2303.18171]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2303.18171",
+          "doc_id": "arxiv_2303.18171",
+          "title": "How Efficient Are Today's Continual Learning Algorithms?",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Supervised Continual learning involves updating a deep neural network (DNN) from an ever-growing stream of labeled data. While most work has focused on overcoming catastrophic forgetting, one of the major motivations behind continual learning is being able to efficiently update a network with new information, rather than retraining from scratch on the training dataset as it grows over time. Despite recent continual learning methods largely solving the catastrophic forgetting problem, there has been little attention paid to the efficiency of these algorithms. Here, we study recent methods for incremental class learning and illustrate that many are highly inefficient in terms of compute, memory, and storage. Some methods even require more compute than training from scratch! We argue that for continual learning to have real-world applicability, the research community cannot ignore the resources used by these algorithms. There is more to continual learning than mitigating catastrophic forgetting.",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.18171",
+            "title": "How Efficient Are Today's Continual Learning Algorithms?",
+            "abstract": "Supervised Continual learning involves updating a deep neural network (DNN) from an ever-growing stream of labeled data. While most work has focused on overcoming catastrophic forgetting, one of the major motivations behind continual learning is being able to efficiently update a network with new information, rather than retraining from scratch on the training dataset as it grows over time. Despite recent continual learning methods largely solving the catastrophic forgetting problem, there has been little attention paid to the efficiency of these algorithms. Here, we study recent methods for incremental class learning and illustrate that many are highly inefficient in terms of compute, memory, and storage. Some methods even require more compute than training from scratch! We argue that for continual learning to have real-world applicability, the research community cannot ignore the resources used by these algorithms. There is more to continual learning than mitigating catastrophic forgetting.",
+            "published": "2023-03-29T18:52:10Z",
+            "source_url": "https://arxiv.org/abs/2303.18171"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Srinivasan et al. [arxiv_2206.09059] introduce CLiMB, a benchmark specifically designed for vision-and-language tasks, highlighting that existing benchmarks are largely confined to unimodal settings and thus fail to reflect the multimodal nature of many practical applications. In the video domain, Villa et al. [arxiv_2201.09381] present vCLIMB, addressing the imbalanced class distributions and unsuitable datasets that have hampered prior video CL research, and demonstrating that findings from image-based CL do not straightforwardly transfer to the video domain.",
+      "citation_markers": [
+        "[arxiv_2206.09059]",
+        "[arxiv_2201.09381]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2206.09059",
+          "doc_id": "arxiv_2206.09059",
+          "title": "CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks",
+          "year": 2022,
+          "venue": "cs.CL",
+          "abstract": "Current state-of-the-art vision-and-language models are evaluated on tasks either individually or in a multi-task setting, overlooking the challenges of continually learning (CL) tasks as they arrive. Existing CL benchmarks have facilitated research on task adaptation and mitigating \"catastrophic forgetting\", but are limited to vision-only and language-only tasks. We present CLiMB, a benchmark to study the challenge of learning multimodal tasks in a CL setting, and to systematically evaluate how upstream continual learning can rapidly generalize to new multimodal and unimodal tasks. CLiMB includes implementations of several CL algorithms and a modified Vision-Language Transformer (ViLT) model that can be deployed on both multimodal and unimodal tasks. We find that common CL methods can help mitigate forgetting during multimodal task learning, but do not enable cross-task knowledge transfer. We envision that CLiMB will facilitate research on a new class of CL algorithms for this challenging multimodal setting.",
+          "resolved_arxiv": {
+            "arxiv_id": "2206.09059",
+            "title": "CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks",
+            "abstract": "Current state-of-the-art vision-and-language models are evaluated on tasks either individually or in a multi-task setting, overlooking the challenges of continually learning (CL) tasks as they arrive. Existing CL benchmarks have facilitated research on task adaptation and mitigating \"catastrophic forgetting\", but are limited to vision-only and language-only tasks. We present CLiMB, a benchmark to study the challenge of learning multimodal tasks in a CL setting, and to systematically evaluate how upstream continual learning can rapidly generalize to new multimodal and unimodal tasks. CLiMB includes implementations of several CL algorithms and a modified Vision-Language Transformer (ViLT) model that can be deployed on both multimodal and unimodal tasks. We find that common CL methods can help mitigate forgetting during multimodal task learning, but do not enable cross-task knowledge transfer. We envision that CLiMB will facilitate research on a new class of CL algorithms for this challenging multimodal setting.",
+            "published": "2022-06-18T00:16:37Z",
+            "source_url": "https://arxiv.org/abs/2206.09059"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2201.09381",
+          "doc_id": "arxiv_2201.09381",
+          "title": "vCLIMB: A Novel Video Class Incremental Learning Benchmark",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "Continual learning (CL) is under-explored in the video domain. The few existing works contain splits with imbalanced class distributions over the tasks, or study the problem in unsuitable datasets. We introduce vCLIMB, a novel video continual learning benchmark. vCLIMB is a standardized test-bed to analyze catastrophic forgetting of deep models in video continual learning. In contrast to previous work, we focus on class incremental continual learning with models trained on a sequence of disjoint tasks, and distribute the number of classes uniformly across the tasks. We perform in-depth evaluations of existing CL methods in vCLIMB, and observe two unique challenges in video data. The selection of instances to store in episodic memory is performed at the frame level. Second, untrimmed training data influences the effectiveness of frame sampling strategies. We address these two challenges by proposing a temporal consistency regularization that can be applied on top of memory-based continual learning methods. Our approach significantly improves the baseline, by up to 24% on the untrimmed continual learning task.",
+          "resolved_arxiv": {
+            "arxiv_id": "2201.09381",
+            "title": "vCLIMB: A Novel Video Class Incremental Learning Benchmark",
+            "abstract": "Continual learning (CL) is under-explored in the video domain. The few existing works contain splits with imbalanced class distributions over the tasks, or study the problem in unsuitable datasets. We introduce vCLIMB, a novel video continual learning benchmark. vCLIMB is a standardized test-bed to analyze catastrophic forgetting of deep models in video continual learning. In contrast to previous work, we focus on class incremental continual learning with models trained on a sequence of disjoint tasks, and distribute the number of classes uniformly across the tasks. We perform in-depth evaluations of existing CL methods in vCLIMB, and observe two unique challenges in video data. The selection of instances to store in episodic memory is performed at the frame level. Second, untrimmed training data influences the effectiveness of frame sampling strategies. We address these two challenges by proposing a temporal consistency regularization that can be applied on top of memory-based continual learning methods. Our approach significantly improves the baseline, by up to 24% on the untrimmed continual learning task.",
+            "published": "2022-01-23T22:14:17Z",
+            "source_url": "https://arxiv.org/abs/2201.09381"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "One prominent line of work explores modular and multi-network designs as an alternative to monolithic architectures. Wang et al. [arxiv_2207.06543] theoretically analyze the generalization properties of continual learners and propose CoSCL, a framework in which cooperation among multiple small learners outperforms a single large model.",
+      "citation_markers": [
+        "[arxiv_2207.06543]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2207.06543",
+          "doc_id": "arxiv_2207.06543",
+          "title": "CoSCL: Cooperation of Small Continual Learners is Stronger than a Big\n  One",
+          "year": 2022,
+          "venue": "cs.LG",
+          "abstract": "Continual learning requires incremental compatibility with a sequence of tasks. However, the design of model architecture remains an open question: In general, learning all tasks with a shared set of parameters suffers from severe interference between tasks; while learning each task with a dedicated parameter subspace is limited by scalability. In this work, we theoretically analyze the generalization errors for learning plasticity and memory stability in continual learning, which can be uniformly upper-bounded by (1) discrepancy between task distributions, (2) flatness of loss landscape and (3) cover of parameter space. Then, inspired by the robust biological learning system that processes sequential experiences with multiple parallel compartments, we propose Cooperation of Small Continual Learners (CoSCL) as a general strategy for continual learning. Specifically, we present an architecture with a fixed number of narrower sub-networks to learn all incremental tasks in parallel, which can naturally reduce the two errors through improving the three components of the upper bound. To strengthen this advantage, we encourage to cooperate these sub-networks by penalizing the difference of predictions made by their feature representations. With a fixed parameter budget, CoSCL can improve a variety of representative continual learning approaches by a large margin (e.g., up to 10.64% on CIFAR-100-SC, 9.33% on CIFAR-100-RS, 11.45% on CUB-200-2011 and 6.72% on Tiny-ImageNet) and achieve the new state-of-the-art performance.",
+          "resolved_arxiv": {
+            "arxiv_id": "2207.06543",
+            "title": "CoSCL: Cooperation of Small Continual Learners is Stronger than a Big One",
+            "abstract": "Continual learning requires incremental compatibility with a sequence of tasks. However, the design of model architecture remains an open question: In general, learning all tasks with a shared set of parameters suffers from severe interference between tasks; while learning each task with a dedicated parameter subspace is limited by scalability. In this work, we theoretically analyze the generalization errors for learning plasticity and memory stability in continual learning, which can be uniformly upper-bounded by (1) discrepancy between task distributions, (2) flatness of loss landscape and (3) cover of parameter space. Then, inspired by the robust biological learning system that processes sequential experiences with multiple parallel compartments, we propose Cooperation of Small Continual Learners (CoSCL) as a general strategy for continual learning. Specifically, we present an architecture with a fixed number of narrower sub-networks to learn all incremental tasks in parallel, which can naturally reduce the two errors through improving the three components of the upper bound. To strengthen this advantage, we encourage to cooperate these sub-networks by penalizing the difference of predictions made by their feature representations. With a fixed parameter budget, CoSCL can improve a variety of representative continual learning approaches by a large margin (e.g., up to 10.64% on CIFAR-100-SC, 9.33% on CIFAR-100-RS, 11.45% on CUB-200-2011 and 6.72% on Tiny-ImageNet) and achieve the new state-of-the-art performance.",
+            "published": "2022-07-13T23:00:27Z",
+            "source_url": "https://arxiv.org/abs/2207.06543"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Mirzadeh et al. [arxiv_2110.11526] demonstrate that wider neural networks exhibit systematically less catastrophic forgetting, suggesting that network capacity itself is a meaningful variable in CL performance, independent of the specific algorithm employed.",
+      "citation_markers": [
+        "[arxiv_2110.11526]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2110.11526",
+          "doc_id": "arxiv_2110.11526",
+          "title": "Wide Neural Networks Forget Less Catastrophically",
+          "year": 2022,
+          "venue": "cs.LG",
+          "abstract": "A primary focus area in continual learning research is alleviating the \"catastrophic forgetting\" problem in neural networks by designing new algorithms that are more robust to the distribution shifts. While the recent progress in continual learning literature is encouraging, our understanding of what properties of neural networks contribute to catastrophic forgetting is still limited. To address this, instead of focusing on continual learning algorithms, in this work, we focus on the model itself and study the impact of \"width\" of the neural network architecture on catastrophic forgetting, and show that width has a surprisingly significant effect on forgetting. To explain this effect, we study the learning dynamics of the network from various perspectives such as gradient orthogonality, sparsity, and lazy training regime. We provide potential explanations that are consistent with the empirical results across different architectures and continual learning benchmarks.",
+          "resolved_arxiv": {
+            "arxiv_id": "2110.11526",
+            "title": "Wide Neural Networks Forget Less Catastrophically",
+            "abstract": "A primary focus area in continual learning research is alleviating the \"catastrophic forgetting\" problem in neural networks by designing new algorithms that are more robust to the distribution shifts. While the recent progress in continual learning literature is encouraging, our understanding of what properties of neural networks contribute to catastrophic forgetting is still limited. To address this, instead of focusing on continual learning algorithms, in this work, we focus on the model itself and study the impact of \"width\" of the neural network architecture on catastrophic forgetting, and show that width has a surprisingly significant effect on forgetting. To explain this effect, we study the learning dynamics of the network from various perspectives such as gradient orthogonality, sparsity, and lazy training regime. We provide potential explanations that are consistent with the empirical results across different architectures and continual learning benchmarks.",
+            "published": "2021-10-21T23:49:23Z",
+            "source_url": "https://arxiv.org/abs/2110.11526"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Fini et al. [arxiv_2008.01510] formalize the problem of Memory-Constrained Online Continual Learning, demonstrating that effective rehearsal remains feasible even under extreme storage limitations. Soutif-Cormerais et al. [arxiv_2308.10328] provide a comprehensive empirical evaluation of online CL methods, highlighting the trade-offs between memory size and performance in class-incremental scenarios.",
+      "citation_markers": [
+        "[arxiv_2008.01510]",
+        "[arxiv_2308.10328]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2008.01510",
+          "doc_id": "arxiv_2008.01510",
+          "title": "Online Continual Learning under Extreme Memory Constraints",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "Continual Learning (CL) aims to develop agents emulating the human ability to sequentially learn new tasks while being able to retain knowledge obtained from past experiences. In this paper, we introduce the novel problem of Memory-Constrained Online Continual Learning (MC-OCL) which imposes strict constraints on the memory overhead that a possible algorithm can use to avoid catastrophic forgetting. As most, if not all, previous CL methods violate these constraints, we propose an algorithmic solution to MC-OCL: Batch-level Distillation (BLD), a regularization-based CL approach, which effectively balances stability and plasticity in order to learn from data streams, while preserving the ability to solve old tasks through distillation. Our extensive experimental evaluation, conducted on three publicly available benchmarks, empirically demonstrates that our approach successfully addresses the MC-OCL problem and achieves comparable accuracy to prior distillation methods requiring higher memory overhead.",
+          "resolved_arxiv": {
+            "arxiv_id": "2008.01510",
+            "title": "Online Continual Learning under Extreme Memory Constraints",
+            "abstract": "Continual Learning (CL) aims to develop agents emulating the human ability to sequentially learn new tasks while being able to retain knowledge obtained from past experiences. In this paper, we introduce the novel problem of Memory-Constrained Online Continual Learning (MC-OCL) which imposes strict constraints on the memory overhead that a possible algorithm can use to avoid catastrophic forgetting. As most, if not all, previous CL methods violate these constraints, we propose an algorithmic solution to MC-OCL: Batch-level Distillation (BLD), a regularization-based CL approach, which effectively balances stability and plasticity in order to learn from data streams, while preserving the ability to solve old tasks through distillation. Our extensive experimental evaluation, conducted on three publicly available benchmarks, empirically demonstrates that our approach successfully addresses the MC-OCL problem and achieves comparable accuracy to prior distillation methods requiring higher memory overhead.",
+            "published": "2020-08-04T13:25:26Z",
+            "source_url": "https://arxiv.org/abs/2008.01510"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2308.10328",
+          "doc_id": "arxiv_2308.10328",
+          "title": "A Comprehensive Empirical Evaluation on Online Continual Learning",
+          "year": 2023,
+          "venue": "cs.LG",
+          "abstract": "Online continual learning aims to get closer to a live learning experience by learning directly on a stream of data with temporally shifting distribution and by storing a minimum amount of data from that stream. In this empirical evaluation, we evaluate various methods from the literature that tackle online continual learning. More specifically, we focus on the class-incremental setting in the context of image classification, where the learner must learn new classes incrementally from a stream of data. We compare these methods on the Split-CIFAR100 and Split-TinyImagenet benchmarks, and measure their average accuracy, forgetting, stability, and quality of the representations, to evaluate various aspects of the algorithm at the end but also during the whole training period. We find that most methods suffer from stability and underfitting issues. However, the learned representations are comparable to i.i.d. training under the same computational budget. No clear winner emerges from the results and basic experience replay, when properly tuned and implemented, is a very strong baseline. We release our modular and extensible codebase at https://github.com/AlbinSou/ocl_survey based on the avalanche framework to reproduce our results and encourage future research.",
+          "resolved_arxiv": {
+            "arxiv_id": "2308.10328",
+            "title": "A Comprehensive Empirical Evaluation on Online Continual Learning",
+            "abstract": "Online continual learning aims to get closer to a live learning experience by learning directly on a stream of data with temporally shifting distribution and by storing a minimum amount of data from that stream. In this empirical evaluation, we evaluate various methods from the literature that tackle online continual learning. More specifically, we focus on the class-incremental setting in the context of image classification, where the learner must learn new classes incrementally from a stream of data. We compare these methods on the Split-CIFAR100 and Split-TinyImagenet benchmarks, and measure their average accuracy, forgetting, stability, and quality of the representations, to evaluate various aspects of the algorithm at the end but also during the whole training period. We find that most methods suffer from stability and underfitting issues. However, the learned representations are comparable to i.i.d. training under the same computational budget. No clear winner emerges from the results and basic experience replay, when properly tuned and implemented, is a very strong baseline. We release our modular and extensible codebase at https://github.com/AlbinSou/ocl_survey based on the avalanche framework to reproduce our results and encourage future research.",
+            "published": "2023-08-20T17:52:02Z",
+            "source_url": "https://arxiv.org/abs/2308.10328"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "As demonstrated by Verwimp et al. [arxiv_2210.06443], repeated optimization over a small, fixed memory pool can introduce a hidden pitfall whereby the rehearsed representations become overfitted, undermining the very stability the approach seeks to preserve.",
+      "citation_markers": [
+        "[arxiv_2210.06443]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2210.06443",
+          "doc_id": "arxiv_2210.06443",
+          "title": "On the Effectiveness of Lipschitz-Driven Rehearsal in Continual Learning",
+          "year": 2022,
+          "venue": "cs.LG",
+          "abstract": "Rehearsal approaches enjoy immense popularity with Continual Learning (CL) practitioners. These methods collect samples from previously encountered data distributions in a small memory buffer; subsequently, they repeatedly optimize on the latter to prevent catastrophic forgetting. This work draws attention to a hidden pitfall of this widespread practice: repeated optimization on a small pool of data inevitably leads to tight and unstable decision boundaries, which are a major hindrance to generalization. To address this issue, we propose Lipschitz-DrivEn Rehearsal (LiDER), a surrogate objective that induces smoothness in the backbone network by constraining its layer-wise Lipschitz constants w.r.t. replay examples. By means of extensive experiments, we show that applying LiDER delivers a stable performance gain to several state-of-the-art rehearsal CL methods across multiple datasets, both in the presence and absence of pre-training. Through additional ablative experiments, we highlight peculiar aspects of buffer overfitting in CL and better characterize the effect produced by LiDER. Code is available at https://github.com/aimagelab/LiDER",
+          "resolved_arxiv": {
+            "arxiv_id": "2210.06443",
+            "title": "On the Effectiveness of Lipschitz-Driven Rehearsal in Continual Learning",
+            "abstract": "Rehearsal approaches enjoy immense popularity with Continual Learning (CL) practitioners. These methods collect samples from previously encountered data distributions in a small memory buffer; subsequently, they repeatedly optimize on the latter to prevent catastrophic forgetting. This work draws attention to a hidden pitfall of this widespread practice: repeated optimization on a small pool of data inevitably leads to tight and unstable decision boundaries, which are a major hindrance to generalization. To address this issue, we propose Lipschitz-DrivEn Rehearsal (LiDER), a surrogate objective that induces smoothness in the backbone network by constraining its layer-wise Lipschitz constants w.r.t. replay examples. By means of extensive experiments, we show that applying LiDER delivers a stable performance gain to several state-of-the-art rehearsal CL methods across multiple datasets, both in the presence and absence of pre-training. Through additional ablative experiments, we highlight peculiar aspects of buffer overfitting in CL and better characterize the effect produced by LiDER. Code is available at https://github.com/aimagelab/LiDER",
+            "published": "2022-10-12T17:45:13Z",
+            "source_url": "https://arxiv.org/abs/2210.06443"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "A foundational contribution is variational continual learning (VCL) [arxiv_1710.10628], which fuses online variational inference with Monte Carlo estimation to maintain a posterior over network weights that is updated sequentially across tasks.",
+      "citation_markers": [
+        "[arxiv_1710.10628]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1710.10628",
+          "doc_id": "arxiv_1710.10628",
+          "title": "Variational Continual Learning",
+          "year": 2018,
+          "venue": "stat.ML",
+          "abstract": "This paper develops variational continual learning (VCL), a simple but general framework for continual learning that fuses online variational inference (VI) and recent advances in Monte Carlo VI for neural networks. The framework can successfully train both deep discriminative models and deep generative models in complex continual learning settings where existing tasks evolve over time and entirely new tasks emerge. Experimental results show that VCL outperforms state-of-the-art continual learning methods on a variety of tasks, avoiding catastrophic forgetting in a fully automatic way.",
+          "resolved_arxiv": {
+            "arxiv_id": "1710.10628",
+            "title": "Variational Continual Learning",
+            "abstract": "This paper develops variational continual learning (VCL), a simple but general framework for continual learning that fuses online variational inference (VI) and recent advances in Monte Carlo VI for neural networks. The framework can successfully train both deep discriminative models and deep generative models in complex continual learning settings where existing tasks evolve over time and entirely new tasks emerge. Experimental results show that VCL outperforms state-of-the-art continual learning methods on a variety of tasks, avoiding catastrophic forgetting in a fully automatic way.",
+            "published": "2017-10-29T15:30:58Z",
+            "source_url": "https://arxiv.org/abs/1710.10628"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Ye and Bors [arxiv_2112.08370] investigate how Variational Autoencoders suffer from catastrophic forgetting and propose combining generative replay with expanding network architectures to address knowledge degradation across successive tasks.",
+      "citation_markers": [
+        "[arxiv_2112.08370]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2112.08370",
+          "doc_id": "arxiv_2112.08370",
+          "title": "Lifelong Generative Modelling Using Dynamic Expansion Graph Model",
+          "year": 2021,
+          "venue": "cs.LG",
+          "abstract": "Variational Autoencoders (VAEs) suffer from degenerated performance, when learning several successive tasks. This is caused by catastrophic forgetting. In order to address the knowledge loss, VAEs are using either Generative Replay (GR) mechanisms or Expanding Network Architectures (ENA). In this paper we study the forgetting behaviour of VAEs using a joint GR and ENA methodology, by deriving an upper bound on the negative marginal log-likelihood. This theoretical analysis provides new insights into how VAEs forget the previously learnt knowledge during lifelong learning. The analysis indicates the best performance achieved when considering model mixtures, under the ENA framework, where there are no restrictions on the number of components. However, an ENA-based approach may require an excessive number of parameters. This motivates us to propose a novel Dynamic Expansion Graph Model (DEGM). DEGM expands its architecture, according to the novelty associated with each new databases, when compared to the information already learnt by the network from previous tasks. DEGM training optimizes knowledge structuring, characterizing the joint probabilistic representations corresponding to the past and more recently learned tasks. We demonstrate that DEGM guarantees optimal performance for each task while also minimizing the required number of parameters. Supplementary materials (SM) and source code are available in https://github.com/dtuzi123/Expansion-Graph-Model.",
+          "resolved_arxiv": {
+            "arxiv_id": "2112.08370",
+            "title": "Lifelong Generative Modelling Using Dynamic Expansion Graph Model",
+            "abstract": "Variational Autoencoders (VAEs) suffer from degenerated performance, when learning several successive tasks. This is caused by catastrophic forgetting. In order to address the knowledge loss, VAEs are using either Generative Replay (GR) mechanisms or Expanding Network Architectures (ENA). In this paper we study the forgetting behaviour of VAEs using a joint GR and ENA methodology, by deriving an upper bound on the negative marginal log-likelihood. This theoretical analysis provides new insights into how VAEs forget the previously learnt knowledge during lifelong learning. The analysis indicates the best performance achieved when considering model mixtures, under the ENA framework, where there are no restrictions on the number of components. However, an ENA-based approach may require an excessive number of parameters. This motivates us to propose a novel Dynamic Expansion Graph Model (DEGM). DEGM expands its architecture, according to the novelty associated with each new databases, when compared to the information already learnt by the network from previous tasks. DEGM training optimizes knowledge structuring, characterizing the joint probabilistic representations corresponding to the past and more recently learned tasks. We demonstrate that DEGM guarantees optimal performance for each task while also minimizing the required number of parameters. Supplementary materials (SM) and source code are available in https://github.com/dtuzi123/Expansion-Graph-Model.",
+            "published": "2021-12-15T17:35:27Z",
+            "source_url": "https://arxiv.org/abs/2112.08370"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Wang et al. [arxiv_2207.13516] employ a contrastive vision transformer framework that uses focal contrastive learning to stabilize representations across sequential tasks without explicit task boundaries.",
+      "citation_markers": [
+        "[arxiv_2207.13516]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2207.13516",
+          "doc_id": "arxiv_2207.13516",
+          "title": "Online Continual Learning with Contrastive Vision Transformer",
+          "year": 2022,
+          "venue": "cs.LG",
+          "abstract": "Online continual learning (online CL) studies the problem of learning sequential tasks from an online data stream without task boundaries, aiming to adapt to new data while alleviating catastrophic forgetting on the past tasks. This paper proposes a framework Contrastive Vision Transformer (CVT), which designs a focal contrastive learning strategy based on a transformer architecture, to achieve a better stability-plasticity trade-off for online CL. Specifically, we design a new external attention mechanism for online CL that implicitly captures previous tasks' information. Besides, CVT contains learnable focuses for each class, which could accumulate the knowledge of previous classes to alleviate forgetting. Based on the learnable focuses, we design a focal contrastive loss to rebalance contrastive learning between new and past classes and consolidate previously learned representations. Moreover, CVT contains a dual-classifier structure for decoupling learning current classes and balancing all observed classes. The extensive experimental results show that our approach achieves state-of-the-art performance with even fewer parameters on online CL benchmarks and effectively alleviates the catastrophic forgetting.",
+          "resolved_arxiv": {
+            "arxiv_id": "2207.13516",
+            "title": "Online Continual Learning with Contrastive Vision Transformer",
+            "abstract": "Online continual learning (online CL) studies the problem of learning sequential tasks from an online data stream without task boundaries, aiming to adapt to new data while alleviating catastrophic forgetting on the past tasks. This paper proposes a framework Contrastive Vision Transformer (CVT), which designs a focal contrastive learning strategy based on a transformer architecture, to achieve a better stability-plasticity trade-off for online CL. Specifically, we design a new external attention mechanism for online CL that implicitly captures previous tasks' information. Besides, CVT contains learnable focuses for each class, which could accumulate the knowledge of previous classes to alleviate forgetting. Based on the learnable focuses, we design a focal contrastive loss to rebalance contrastive learning between new and past classes and consolidate previously learned representations. Moreover, CVT contains a dual-classifier structure for decoupling learning current classes and balancing all observed classes. The extensive experimental results show that our approach achieves state-of-the-art performance with even fewer parameters on online CL benchmarks and effectively alleviates the catastrophic forgetting.",
+            "published": "2022-07-24T08:51:02Z",
+            "source_url": "https://arxiv.org/abs/2207.13516"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "An important conceptual distinction within this space is drawn by Caccia et al. [arxiv_2004.11545], who differentiate between meta-continual learning, in which a model is pre-trained to minimize forgetting, and continual-meta learning, which targets faster adaptation to new tasks.",
+      "citation_markers": [
+        "[arxiv_2004.11545]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2004.11545",
+          "doc_id": "arxiv_2004.11545",
+          "title": "Dropout as an Implicit Gating Mechanism For Continual Learning",
+          "year": 2020,
+          "venue": "cs.LG",
+          "abstract": "In recent years, neural networks have demonstrated an outstanding ability to achieve complex learning tasks across various domains. However, they suffer from the \"catastrophic forgetting\" problem when they face a sequence of learning tasks, where they forget the old ones as they learn new tasks. This problem is also highly related to the \"stability-plasticity dilemma\". The more plastic the network, the easier it can learn new tasks, but the faster it also forgets previous ones. Conversely, a stable network cannot learn new tasks as fast as a very plastic network. However, it is more reliable to preserve the knowledge it has learned from the previous tasks. Several solutions have been proposed to overcome the forgetting problem by making the neural network parameters more stable, and some of them have mentioned the significance of dropout in continual learning. However, their relationship has not been sufficiently studied yet. In this paper, we investigate this relationship and show that a stable network with dropout learns a gating mechanism such that for different tasks, different paths of the network are active. Our experiments show that the stability achieved by this implicit gating plays a very critical role in leading to performance comparable to or better than other involved continual learning algorithms to overcome catastrophic forgetting.",
+          "resolved_arxiv": {
+            "arxiv_id": "2004.11545",
+            "title": "Dropout as an Implicit Gating Mechanism For Continual Learning",
+            "abstract": "In recent years, neural networks have demonstrated an outstanding ability to achieve complex learning tasks across various domains. However, they suffer from the \"catastrophic forgetting\" problem when they face a sequence of learning tasks, where they forget the old ones as they learn new tasks. This problem is also highly related to the \"stability-plasticity dilemma\". The more plastic the network, the easier it can learn new tasks, but the faster it also forgets previous ones. Conversely, a stable network cannot learn new tasks as fast as a very plastic network. However, it is more reliable to preserve the knowledge it has learned from the previous tasks. Several solutions have been proposed to overcome the forgetting problem by making the neural network parameters more stable, and some of them have mentioned the significance of dropout in continual learning. However, their relationship has not been sufficiently studied yet. In this paper, we investigate this relationship and show that a stable network with dropout learns a gating mechanism such that for different tasks, different paths of the network are active. Our experiments show that the stability achieved by this implicit gating plays a very critical role in leading to performance comparable to or better than other involved continual learning algorithms to overcome catastrophic forgetting.",
+            "published": "2020-04-24T06:04:15Z",
+            "source_url": "https://arxiv.org/abs/2004.11545"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

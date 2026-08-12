@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-16T01:53:19Z",
+  "common_backbone": "anthropic/claude-sonnet-4.6",
+  "publication_cutoff": "2023-12-31",
+  "executable_primary_pilot": [
+    "slrgp",
+    "autosurvey",
+    "surveyforge",
+    "surveygen"
+  ],
+  "preflight_exclusions": {
+    "itersurvey": "The released approximately 680K-paper database and builder are absent. Using AutoSurvey's corpus would violate the registered no-borrowed-retrieval rule.",
+    "surveyg": "The released workflow mixes a hard-required Semantic Scholar key, direct Gemini SDK generation, and date-relative crawling. Enforcing the common backbone and exact cutoff would require replacing core retrieval/writing paths rather than a thin adapter.",
+    "arise": "Repeated native retrieval preflights stalled in released CrewAI tool execution and the released citation parser collapsed multiple citations into one record. Replacing that stage with direct Serper retrieval would change the core system treatment."
+  }
+}

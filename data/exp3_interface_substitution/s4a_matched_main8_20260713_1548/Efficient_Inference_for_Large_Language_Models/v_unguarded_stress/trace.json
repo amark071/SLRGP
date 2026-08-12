@@ -1,0 +1,49 @@
+{
+  "arm": "v_unguarded_stress",
+  "bundle_hash": "3e96394844ae826ab254d03163d5a0f58778d9f7804d18ace057cddde723348f",
+  "descend_events": [],
+  "solve_events": [],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "Efficient Inference for Large Language Models — Injected invalid unbalanced organization",
+      "candidate_ids": [
+        "arxiv_2402.09748",
+        "arxiv_2401.02038",
+        "arxiv_2404.14294",
+        "arxiv_2408.03130",
+        "arxiv_2409.17372",
+        "arxiv_2211.07715",
+        "arxiv_2002.11794",
+        "arxiv_2408.08554"
+      ],
+      "written_citation_ids": [
+        "arxiv_2402.09748",
+        "arxiv_2404.14294",
+        "arxiv_2401.02038",
+        "arxiv_2408.03130",
+        "arxiv_2408.08554",
+        "arxiv_2211.07715",
+        "arxiv_2409.17372",
+        "arxiv_2002.11794"
+      ],
+      "word_count": 914
+    }
+  ],
+  "validation_events": [
+    {
+      "stage": "injected_stress",
+      "kappa": {
+        "min_total": true,
+        "min_groups": false,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "stage": "unguarded_continue",
+      "action": "write_invalid_grouping"
+    }
+  ]
+}

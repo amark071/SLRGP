@@ -1,0 +1,391 @@
+{
+  "system_id": "surveygen",
+  "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+  "common_backbone": "anthropic/claude-sonnet-4.6",
+  "preflight_reports": [
+    {
+      "system_id": "surveygen",
+      "topic_id": "mature_neural_machine_translation",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "mature_deep_reinforcement_learning",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "mature_adversarial_robustness",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "fast_text_to_image_diffusion",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "fast_vision_language_pretraining",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "fast_large_language_model_agents",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "method_self_supervised_learning",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "method_continual_learning",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "method_uncertainty_quantification",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "cross_medical_image_analysis",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "cross_ml_drug_discovery",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    },
+    {
+      "system_id": "surveygen",
+      "topic_id": "cross_efficient_deep_learning",
+      "checked_at": "2026-07-16T01:53:19Z",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_clean": true,
+      "entrypoint_present": true,
+      "dependencies_present": true,
+      "native_topic_to_survey": true,
+      "common_cutoff_supported": true,
+      "usage_logging_supported": true,
+      "eligible": true,
+      "issues": [],
+      "details": {
+        "missing_scripts": [],
+        "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+        "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+        "chat_base_url": "http://127.0.0.1:18080/v1",
+        "retrieval_services": [
+          "Semantic Scholar",
+          "OpenAlex"
+        ],
+        "git_status_lines": [
+          " M Code/outline_generation.py",
+          " M Code/paper_reranking.py",
+          " M Code/paper_retrieval.py",
+          " M Code/quality_signal_augmentation.py",
+          " M Code/survey_generation.py",
+          "?? Code/__pycache__/"
+        ]
+      }
+    }
+  ]
+}

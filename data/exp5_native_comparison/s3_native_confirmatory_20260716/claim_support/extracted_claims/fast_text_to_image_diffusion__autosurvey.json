@@ -1,0 +1,124 @@
+{
+  "topic_id": "fast_text_to_image_diffusion",
+  "system": "autosurvey",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Training instability, mode collapse, and the tendency to produce blurry or artifact-laden images at high resolutions constrained their practical utility [4",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The introduction of Denoising Diffusion Probabilistic Models (DDPMs) demonstrated that this framework could achieve image quality surpassing GANs on established benchmarks while avoiding training instabilities. The subsequent development of latent diffusion models, which perform the diffusion process in the compressed latent space of a pretrained autoencoder rather than in pixel space, dramatically improved computational efficiency without sacrificing visual quality [9",
+      "citation_markers": [
+        "[9]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The noise-prediction objective in DDPMs is intimately connected to score matching: predicting $\\boldsymbol{\\epsilon}_\\theta$ is equivalent to estimating the score $\\nabla_{\\mathbf{x}_t} \\log q(\\mathbf{x}_t)$ of the perturbed data distribution [15",
+      "citation_markers": [
+        "[15]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Convergence analyses have established polynomial-time guarantees for sampling from complex distributions given sufficiently accurate score estimates [27; 28; 29]. These results do not require strong assumptions such as log-concavity or smoothness, making them applicable to the highly multimodal distributions encountered in image generation",
+      "citation_markers": [
+        "[27; 28; 29]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The quality of the autoencoder directly governs the upper bound on generative fidelity: any information lost during encoding cannot be recovered by the diffusion model, making autoencoder design a critical bottleneck for the overall system",
+      "citation_markers": [
+        "[35]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The use of CLIP embeddings as conditioning signals in diffusion models has become a foundational design choice in modern text-to-image systems. In the DALL-E 2 framework, a two-stage architecture is employed wherein a prior model first generates a CLIP image embedding from a given text caption, after which a diffusion-based decoder synthesizes the final image conditioned on this embedding [41",
+      "citation_markers": [
+        "[41]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "The use of classifier-free guidance [57] is central to controlling the fidelity-diversity tradeoff during inference",
+      "citation_markers": [
+        "[57]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "jointly training a single model with and without conditioning signals and then linearly extrapolating between the two at inference time, CFG effectively amplifies the influence of the text prompt on the generated output",
+      "citation_markers": [
+        "[57]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "92] demonstrates this approach explicitly, showing that diffusion models' cross-attention layers inherently provide annotation-free attention masks aligned with corresponding text inputs on generated images",
+      "citation_markers": [
+        "[92]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Many landmark text-to-image models, including Imagen [10] and CogView [7], report FID scores on MS-COCO as a standard point of comparison, with Imagen achieving a state-of-the-art zero-shot FID of 7.27 on COCO",
+      "citation_markers": [
+        "[10]",
+        "[7]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "This approach substantially lowers the barrier to image manipulation, enabling non-expert users to perform complex edits through conversational-style directives, and sits naturally alongside inversion-based and localized editing methods as part of the broader landscape of text-driven image manipulation",
+      "citation_markers": [
+        "[87]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "involves exploiting the internal representations of diffusion models—specifically their cross-attention maps—to construct annotation-free datasets",
+      "citation_markers": [
+        "[92]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 68012,
+    "completion_tokens": 916,
+    "total_tokens": 68928,
+    "prompt_tokens_details": {
+      "cached_tokens": 67840
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "topic_id": "method_continual_learning",
+  "system": "slrgp",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The taxonomy has since become a standard reference point for situating experimental results, and subsequent surveys have built directly upon it [arxiv_1909.08383, ss_475710].",
+      "citation_markers": [
+        "[arxiv_1909.08383, ss_475710]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "De Lange et al. [arxiv_2205.13452] identified a further methodological gap by demonstrating that standard evaluation practices—which typically assess model performance only at the end of each task—obscure a phenomenon they term the \"stability gap\": a transient but substantial drop in performance on previously learned tasks that occurs at the onset of training on a new task.",
+      "citation_markers": [
+        "[arxiv_2205.13452]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Harun et al. [arxiv_2303.18171] shifted the evaluative lens toward computational efficiency, noting that despite the motivating premise of avoiding full retraining, many contemporary CL algorithms have not been rigorously assessed for their efficiency properties—revealing a gap between theoretical motivation and empirical benchmarking practice.",
+      "citation_markers": [
+        "[arxiv_2303.18171]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Srinivasan et al. [arxiv_2206.09059] introduce CLiMB, a benchmark specifically designed for vision-and-language tasks, highlighting that existing benchmarks are largely confined to unimodal settings and thus fail to reflect the multimodal nature of many practical applications. In the video domain, Villa et al. [arxiv_2201.09381] present vCLIMB, addressing the imbalanced class distributions and unsuitable datasets that have hampered prior video CL research, and demonstrating that findings from image-based CL do not straightforwardly transfer to the video domain.",
+      "citation_markers": [
+        "[arxiv_2206.09059]",
+        "[arxiv_2201.09381]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "One prominent line of work explores modular and multi-network designs as an alternative to monolithic architectures. Wang et al. [arxiv_2207.06543] theoretically analyze the generalization properties of continual learners and propose CoSCL, a framework in which cooperation among multiple small learners outperforms a single large model.",
+      "citation_markers": [
+        "[arxiv_2207.06543]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Mirzadeh et al. [arxiv_2110.11526] demonstrate that wider neural networks exhibit systematically less catastrophic forgetting, suggesting that network capacity itself is a meaningful variable in CL performance, independent of the specific algorithm employed.",
+      "citation_markers": [
+        "[arxiv_2110.11526]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Fini et al. [arxiv_2008.01510] formalize the problem of Memory-Constrained Online Continual Learning, demonstrating that effective rehearsal remains feasible even under extreme storage limitations. Soutif-Cormerais et al. [arxiv_2308.10328] provide a comprehensive empirical evaluation of online CL methods, highlighting the trade-offs between memory size and performance in class-incremental scenarios.",
+      "citation_markers": [
+        "[arxiv_2008.01510]",
+        "[arxiv_2308.10328]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "As demonstrated by Verwimp et al. [arxiv_2210.06443], repeated optimization over a small, fixed memory pool can introduce a hidden pitfall whereby the rehearsed representations become overfitted, undermining the very stability the approach seeks to preserve.",
+      "citation_markers": [
+        "[arxiv_2210.06443]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "A foundational contribution is variational continual learning (VCL) [arxiv_1710.10628], which fuses online variational inference with Monte Carlo estimation to maintain a posterior over network weights that is updated sequentially across tasks.",
+      "citation_markers": [
+        "[arxiv_1710.10628]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Ye and Bors [arxiv_2112.08370] investigate how Variational Autoencoders suffer from catastrophic forgetting and propose combining generative replay with expanding network architectures to address knowledge degradation across successive tasks.",
+      "citation_markers": [
+        "[arxiv_2112.08370]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Wang et al. [arxiv_2207.13516] employ a contrastive vision transformer framework that uses focal contrastive learning to stabilize representations across sequential tasks without explicit task boundaries.",
+      "citation_markers": [
+        "[arxiv_2207.13516]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "An important conceptual distinction within this space is drawn by Caccia et al. [arxiv_2004.11545], who differentiate between meta-continual learning, in which a model is pre-trained to minimize forgetting, and continual-meta learning, which targets faster adaptation to new tasks.",
+      "citation_markers": [
+        "[arxiv_2004.11545]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6398,
+    "completion_tokens": 1203,
+    "total_tokens": 7601,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888
+    }
+  }
+}

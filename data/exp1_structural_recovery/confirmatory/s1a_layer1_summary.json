@@ -1,0 +1,115 @@
+{
+  "input_parse_summary": {
+    "total": 2862,
+    "ok": 2223,
+    "failed_reasons": {
+      "source_is_pdf_only": 506,
+      "too_few_citations": 46,
+      "too_few_sections": 34,
+      "not_gzip_or_tar": 12,
+      "no_documentclass": 41
+    }
+  },
+  "total_json_records_seen": 2862,
+  "recoverable_reviews_layer1": 2221,
+  "failure_counts_recomputed": {
+    "source_is_pdf_only": 506,
+    "too_few_citations": 46,
+    "too_few_sections": 34,
+    "not_gzip_or_tar": 12,
+    "no_documentclass": 41,
+    "fewer_than_two_top_level_sections": 2
+  },
+  "by_discipline": {
+    "astrophysics": {
+      "ok": 292,
+      "source_is_pdf_only": 3,
+      "too_few_citations": 3,
+      "too_few_sections": 1
+    },
+    "computer_science": {
+      "ok": 263,
+      "source_is_pdf_only": 29,
+      "too_few_sections": 4,
+      "too_few_citations": 3
+    },
+    "condensed_matter": {
+      "ok": 177,
+      "source_is_pdf_only": 111,
+      "too_few_sections": 7,
+      "too_few_citations": 5
+    },
+    "economics": {
+      "source_is_pdf_only": 59,
+      "ok": 70,
+      "too_few_citations": 2
+    },
+    "eess": {
+      "source_is_pdf_only": 52,
+      "not_gzip_or_tar": 5,
+      "ok": 237,
+      "too_few_citations": 3,
+      "no_documentclass": 3
+    },
+    "hep_theory": {
+      "ok": 203,
+      "too_few_sections": 6,
+      "no_documentclass": 30,
+      "too_few_citations": 5,
+      "fewer_than_two_top_level_sections": 1
+    },
+    "mathematics": {
+      "ok": 274,
+      "too_few_citations": 4,
+      "no_documentclass": 2,
+      "not_gzip_or_tar": 1,
+      "too_few_sections": 6,
+      "source_is_pdf_only": 13
+    },
+    "quantitative_biology": {
+      "too_few_citations": 4,
+      "not_gzip_or_tar": 3,
+      "ok": 135,
+      "source_is_pdf_only": 158
+    },
+    "quantitative_finance": {
+      "not_gzip_or_tar": 1,
+      "ok": 67,
+      "too_few_citations": 2,
+      "source_is_pdf_only": 19
+    },
+    "quantum_physics": {
+      "source_is_pdf_only": 22,
+      "ok": 257,
+      "too_few_citations": 5,
+      "too_few_sections": 8,
+      "not_gzip_or_tar": 1,
+      "fewer_than_two_top_level_sections": 1,
+      "no_documentclass": 6
+    },
+    "statistics": {
+      "ok": 246,
+      "source_is_pdf_only": 40,
+      "too_few_citations": 10,
+      "too_few_sections": 2,
+      "not_gzip_or_tar": 1
+    }
+  },
+  "deterministic_tree_stats": {
+    "n_reviews": 2221,
+    "n_branching_nodes_without_synthetic_root": 12111,
+    "mean_sections": 28.480864475461505,
+    "median_sections": 23,
+    "mean_max_depth": 2.4781629896443045,
+    "median_max_depth": 3
+  },
+  "s2e_root_repaired_corpus": {
+    "n_reviews": 2221,
+    "n_organization_nodes_with_synthetic_root": 14332,
+    "n_synthetic_review_root_nodes": 2221,
+    "citation_child_coverage_mean": 0.9353476820685176,
+    "citation_child_coverage_median": 1.0,
+    "n_nodes_with_citation_coverage": 13533
+  },
+  "layer1_interpretation": "Deterministic LaTeX-to-ordered-tree recovery with citation assignment; no semantic labels used."
+}

@@ -1,0 +1,542 @@
+[
+  {
+    "doc_id": "arxiv_2003.13761",
+    "title": "Concentrated Differentially Private and Utility Preserving Federated\n  Learning",
+    "year": 2020,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": 0.6480798509271427,
+    "abstract": "Federated learning is a machine learning setting where a set of edge devices collaboratively train a model under the orchestration of a central server without sharing their local data. At each communication round of federated learning, edge devices perform multiple steps of stochastic gradient descent with their local data and then upload the computation results to the server for model update. During this process, the challenge of privacy leakage arises due to the information exchange between edge devices and the server when the server is not fully trusted. While some previous privacy-preserving mechanisms could readily be used for federated learning, they usually come at a high cost on convergence of the algorithm and utility of the learned model. In this paper, we develop a federated learning approach that addresses the privacy challenge without much degradation on model utility through a combination of local gradient perturbation, secure aggregation, and zero-concentrated differential privacy (zCDP). We provide a tight end-to-end privacy guarantee of our approach and analyze its theoretical convergence rates. Through extensive numerical experiments on real-world datasets, we dem"
+  },
+  {
+    "doc_id": "arxiv_2104.14362",
+    "title": "From Distributed Machine Learning to Federated Learning: A Survey",
+    "year": 2022,
+    "venue": "cs.DC",
+    "tier": "T1",
+    "score": 0.45993560353892216,
+    "abstract": "In recent years, data and computing resources are typically distributed in the devices of end users, various regions or organizations. Because of laws or regulations, the distributed data and computing resources cannot be directly shared among different regions or organizations for machine learning tasks. Federated learning emerges as an efficient approach to exploit distributed data and computing resources, so as to collaboratively train machine learning models, while obeying the laws and regulations and ensuring data security and data privacy. In this paper, we provide a comprehensive survey of existing works for federated learning. We propose a functional architecture of federated learning systems and a taxonomy of related techniques. Furthermore, we present the distributed training, data communication, and security of FL systems. Finally, we analyze their limitations and propose future research directions."
+  },
+  {
+    "doc_id": "arxiv_2012.07183",
+    "title": "Privacy-preserving Decentralized Aggregation for Federated Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": 0.4186617900061206,
+    "abstract": "Federated learning is a promising framework for learning over decentralized data spanning multiple regions. This approach avoids expensive central training data aggregation cost and can improve privacy because distributed sites do not have to reveal privacy-sensitive data. In this paper, we develop a privacy-preserving decentralized aggregation protocol for federated learning. We formulate the distributed aggregation protocol with the Alternating Direction Method of Multiplier (ADMM) and examine its privacy weakness. Unlike prior work that use Differential Privacy or homomorphic encryption for privacy, we develop a protocol that controls communication among participants in each round of aggregation to minimize privacy leakage. We establish its privacy guarantee against an honest-but-curious adversary. We also propose an efficient algorithm to construct such a communication pattern, inspired by combinatorial block design theory. Our secure aggregation protocol based on this novel group communication pattern design leads to an efficient algorithm for federated training with privacy guarantees. We evaluate our federated training algorithm on image classification and next-word predicti"
+  },
+  {
+    "doc_id": "arxiv_2106.06843",
+    "title": "Federated Learning on Non-IID Data: A Survey",
+    "year": 2021,
+    "venue": "cs.LG",
+    "tier": "T1",
+    "score": 0.30924827077722833,
+    "abstract": "Federated learning is an emerging distributed machine learning framework for privacy preservation. However, models trained in federated learning usually have worse performance than those trained in the standard centralized learning mode, especially when the training data are not independent and identically distributed (Non-IID) on the local devices. In this survey, we pro-vide a detailed analysis of the influence of Non-IID data on both parametric and non-parametric machine learning models in both horizontal and vertical federated learning. In addition, cur-rent research work on handling challenges of Non-IID data in federated learning are reviewed, and both advantages and disadvantages of these approaches are discussed. Finally, we suggest several future research directions before concluding the paper."
+  },
+  {
+    "doc_id": "arxiv_2210.00325",
+    "title": "Privacy-preserving Decentralized Federated Learning over Time-varying\n  Communication Graph",
+    "year": 2022,
+    "venue": "cs.CR",
+    "tier": "T1",
+    "score": 0.30230857227337193,
+    "abstract": "Establishing how a set of learners can provide privacy-preserving federated learning in a fully decentralized (peer-to-peer, no coordinator) manner is an open problem. We propose the first privacy-preserving consensus-based algorithm for the distributed learners to achieve decentralized global model aggregation in an environment of high mobility, where the communication graph between the learners may vary between successive rounds of model aggregation. In particular, in each round of global model aggregation, the Metropolis-Hastings method is applied to update the weighted adjacency matrix based on the current communication topology. In addition, the Shamir's secret sharing scheme is integrated to facilitate privacy in reaching consensus of the global model. The paper establishes the correctness and privacy properties of the proposed algorithm. The computational efficiency is evaluated by a simulation built on a federated learning framework with a real-word dataset."
+  },
+  {
+    "doc_id": "arxiv_2402.10145",
+    "title": "A chaotic maps-based privacy-preserving distributed deep learning for\n  incomplete and Non-IID datasets",
+    "year": 2024,
+    "venue": "cs.LG",
+    "tier": "T1",
+    "score": 0.24073900897405703,
+    "abstract": "Federated Learning is a machine learning approach that enables the training of a deep learning model among several participants with sensitive data that wish to share their own knowledge without compromising the privacy of their data. In this research, the authors employ a secured Federated Learning method with an additional layer of privacy and proposes a method for addressing the non-IID challenge. Moreover, differential privacy is compared with chaotic-based encryption as layer of privacy. The experimental approach assesses the performance of the federated deep learning model with differential privacy using both IID and non-IID data. In each experiment, the Federated Learning process improves the average performance metrics of the deep neural network, even in the case of non-IID data."
+  },
+  {
+    "doc_id": "arxiv_2306.02570",
+    "title": "When Decentralized Optimization Meets Federated Learning",
+    "year": 2023,
+    "venue": "cs.LG",
+    "tier": "T1",
+    "score": 0.19529031960283436,
+    "abstract": "Federated learning is a new learning paradigm for extracting knowledge from distributed data. Due to its favorable properties in preserving privacy and saving communication costs, it has been extensively studied and widely applied to numerous data analysis applications. However, most existing federated learning approaches concentrate on the centralized setting, which is vulnerable to a single-point failure. An alternative strategy for addressing this issue is the decentralized communication topology. In this article, we systematically investigate the challenges and opportunities when renovating decentralized optimization for federated learning. In particular, we discussed them from the model, data, and communication sides, respectively, which can deepen our understanding about decentralized federated learning."
+  },
+  {
+    "doc_id": "arxiv_2201.07730",
+    "title": "SCOTCH: An Efficient Secure Computation Framework for Secure Aggregation",
+    "year": 2022,
+    "venue": "cs.CR",
+    "tier": "T1",
+    "score": 0.14265593627219694,
+    "abstract": "Federated learning enables multiple data owners to jointly train a machine learning model without revealing their private datasets. However, a malicious aggregation server might use the model parameters to derive sensitive information about the training dataset used. To address such leakage, differential privacy and cryptographic techniques have been investigated in prior work, but these often result in large communication overheads or impact model performance. To mitigate this centralization of power, we propose SCOTCH, a decentralized m-party secure-computation framework for federated aggregation that deploys MPC primitives, such as secret sharing. Our protocol is simple, efficient, and provides strict privacy guarantees against curious aggregators or colluding data-owners with minimal communication overheads compared to other existing state-of-the-art privacy-preserving federated learning frameworks. We evaluate our framework by performing extensive experiments on multiple datasets with promising results. SCOTCH can train the standard MLP NN with the training dataset split amongst 3 participating users and 3 aggregating servers with 96.57% accuracy on MNIST, and 98.40% accuracy "
+  },
+  {
+    "doc_id": "arxiv_2407.19286",
+    "title": "On Using Secure Aggregation in Differentially Private Federated Learning\n  with Multiple Local Steps",
+    "year": 2025,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": 0.02610939768050362,
+    "abstract": "Federated learning is a distributed learning setting where the main aim is to train machine learning models without having to share raw data but only what is required for learning. To guarantee training data privacy and high-utility models, differential privacy and secure aggregation techniques are often combined with federated learning. However, with fine-grained protection granularities, e.g., with the common sample-level protection, the currently existing techniques generally require the parties to communicate for each local optimization step, if they want to fully benefit from the secure aggregation in terms of the resulting formal privacy guarantees. In this paper, we show how a simple new analysis allows the parties to perform multiple local optimization steps while still benefiting from using secure aggregation. We show that our analysis enables higher utility models with guaranteed privacy protection under limited number of communication rounds."
+  },
+  {
+    "doc_id": "arxiv_2311.16008",
+    "title": "Using Decentralized Aggregation for Federated Learning with Differential\n  Privacy",
+    "year": 2023,
+    "venue": "cs.LG",
+    "tier": "T2",
+    "score": 0.014552065795837347,
+    "abstract": "Nowadays, the ubiquitous usage of mobile devices and networks have raised concerns about the loss of control over personal data and research advance towards the trade-off between privacy and utility in scenarios that combine exchange communications, big databases and distributed and collaborative (P2P) Machine Learning techniques. On the other hand, although Federated Learning (FL) provides some level of privacy by retaining the data at the local node, which executes a local training to enrich a global model, this scenario is still susceptible to privacy breaches as membership inference attacks. To provide a stronger level of privacy, this research deploys an experimental environment for FL with Differential Privacy (DP) using benchmark datasets. The obtained results show that the election of parameters and techniques of DP is central in the aforementioned trade-off between privacy and utility by means of a classification example."
+  },
+  {
+    "doc_id": "arxiv_2301.01299",
+    "title": "Recent Advances on Federated Learning: A Systematic Survey",
+    "year": 2023,
+    "venue": "cs.LG",
+    "tier": "T1",
+    "score": -0.0023394998655478167,
+    "abstract": "Federated learning has emerged as an effective paradigm to achieve privacy-preserving collaborative learning among different parties. Compared to traditional centralized learning that requires collecting data from each party, in federated learning, only the locally trained models or computed gradients are exchanged, without exposing any data information. As a result, it is able to protect privacy to some extent. In recent years, federated learning has become more and more prevalent and there have been many surveys for summarizing related methods in this hot research topic. However, most of them focus on a specific perspective or lack the latest research progress. In this paper, we provide a systematic survey on federated learning, aiming to review the recent advanced federated methods and applications from different aspects. Specifically, this paper includes four major contributions. First, we present a new taxonomy of federated learning in terms of the pipeline and challenges in federated scenarios. Second, we summarize federated learning methods into several categories and briefly introduce the state-of-the-art methods under these categories. Third, we overview some prevalent fed"
+  },
+  {
+    "doc_id": "arxiv_2208.01200",
+    "title": "Towards Efficient Communications in Federated Learning: A Contemporary\n  Survey",
+    "year": 2022,
+    "venue": "cs.DC",
+    "tier": "T1",
+    "score": -0.1325209339269596,
+    "abstract": "In the traditional distributed machine learning scenario, the user's private data is transmitted between clients and a central server, which results in significant potential privacy risks. In order to balance the issues of data privacy and joint training of models, federated learning (FL) is proposed as a particular distributed machine learning procedure with privacy protection mechanisms, which can achieve multi-party collaborative computing without revealing the original data. However, in practice, FL faces a variety of challenging communication problems. This review seeks to elucidate the relationship between these communication issues by methodically assessing the development of FL communication research from three perspectives: communication efficiency, communication environment, and communication resource allocation. Firstly, we sort out the current challenges existing in the communications of FL. Second, we have collated FL communications-related papers and described the overall development trend of the field based on their logical relationship. Ultimately, we discuss the future directions of research for communications in FL."
+  },
+  {
+    "doc_id": "arxiv_2501.05053",
+    "title": "TAPFed: Threshold Secure Aggregation for Privacy-Preserving Federated\n  Learning",
+    "year": 2025,
+    "venue": "cs.CR",
+    "tier": "T1",
+    "score": -0.13287277084170693,
+    "abstract": "Federated learning is a computing paradigm that enhances privacy by enabling multiple parties to collaboratively train a machine learning model without revealing personal data. However, current research indicates that traditional federated learning platforms are unable to ensure privacy due to privacy leaks caused by the interchange of gradients. To achieve privacy-preserving federated learning, integrating secure aggregation mechanisms is essential. Unfortunately, existing solutions are vulnerable to recently demonstrated inference attacks such as the disaggregation attack. This paper proposes TAPFed, an approach for achieving privacy-preserving federated learning in the context of multiple decentralized aggregators with malicious actors. TAPFed uses a proposed threshold functional encryption scheme and allows for a certain number of malicious aggregators while maintaining security and privacy. We provide formal security and privacy analyses of TAPFed and compare it to various baselines through experimental evaluation. Our results show that TAPFed offers equivalent performance in terms of model quality compared to state-of-the-art approaches while reducing transmission overhead by"
+  },
+  {
+    "doc_id": "arxiv_2107.06917",
+    "title": "A Field Guide to Federated Optimization",
+    "year": 2021,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -0.13470912863758433,
+    "abstract": "Federated learning and analytics are a distributed approach for collaboratively learning models (or statistics) from decentralized data, motivated by and designed for privacy protection. The distributed learning process can be formulated as solving federated optimization problems, which emphasize communication efficiency, data heterogeneity, compatibility with privacy and system requirements, and other constraints that are not primary considerations in other problem settings. This paper provides recommendations and guidelines on formulating, designing, evaluating and analyzing federated optimization algorithms through concrete examples and practical implementation, with a focus on conducting effective simulations to infer real-world performance. The goal of this work is not to survey the current literature, but to inspire researchers and practitioners to design federated learning algorithms that can be used in various practical applications."
+  },
+  {
+    "doc_id": "arxiv_2004.12088",
+    "title": "SplitFed: When Federated Learning Meets Split Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "tier": "T1",
+    "score": -0.1468593514909179,
+    "abstract": "Federated learning (FL) and split learning (SL) are two popular distributed machine learning approaches. Both follow a model-to-data scenario; clients train and test machine learning models without sharing raw data. SL provides better model privacy than FL due to the machine learning model architecture split between clients and the server. Moreover, the split model makes SL a better option for resource-constrained environments. However, SL performs slower than FL due to the relay-based training across multiple clients. In this regard, this paper presents a novel approach, named splitfed learning (SFL), that amalgamates the two approaches eliminating their inherent drawbacks, along with a refined architectural configuration incorporating differential privacy and PixelDP to enhance data privacy and model robustness. Our analysis and empirical results demonstrate that (pure) SFL provides similar test accuracy and communication efficiency as SL while significantly decreasing its computation time per global epoch than in SL for multiple clients. Furthermore, as in SL, its communication efficiency over FL improves with the number of clients. Besides, the performance of SFL with privacy a"
+  },
+  {
+    "doc_id": "arxiv_2311.10832",
+    "title": "Exploring Machine Learning Models for Federated Learning: A Review of\n  Approaches, Performance, and Limitations",
+    "year": 2023,
+    "venue": "cs.LG",
+    "tier": "T1",
+    "score": -0.14858879004949527,
+    "abstract": "In the growing world of artificial intelligence, federated learning is a distributed learning framework enhanced to preserve the privacy of individuals' data. Federated learning lays the groundwork for collaborative research in areas where the data is sensitive. Federated learning has several implications for real-world problems. In times of crisis, when real-time decision-making is critical, federated learning allows multiple entities to work collectively without sharing sensitive data. This distributed approach enables us to leverage information from multiple sources and gain more diverse insights. This paper is a systematic review of the literature on privacy-preserving machine learning in the last few years based on the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines. Specifically, we have presented an extensive review of supervised/unsupervised machine learning algorithms, ensemble methods, meta-heuristic approaches, blockchain technology, and reinforcement learning used in the framework of federated learning, in addition to an overview of federated learning applications. This paper reviews the literature on the components of federated le"
+  },
+  {
+    "doc_id": "arxiv_2203.17005",
+    "title": "Privacy-Preserving Aggregation in Federated Learning: A Survey",
+    "year": 2022,
+    "venue": "cs.CR",
+    "tier": "T1",
+    "score": -0.2100266206424431,
+    "abstract": "Over the recent years, with the increasing adoption of Federated Learning (FL) algorithms and growing concerns over personal data privacy, Privacy-Preserving Federated Learning (PPFL) has attracted tremendous attention from both academia and industry. Practical PPFL typically allows multiple participants to individually train their machine learning models, which are then aggregated to construct a global model in a privacy-preserving manner. As such, Privacy-Preserving Aggregation (PPAgg) as the key protocol in PPFL has received substantial research interest. This survey aims to fill the gap between a large number of studies on PPFL, where PPAgg is adopted to provide a privacy guarantee, and the lack of a comprehensive survey on the PPAgg protocols applied in FL systems. In this survey, we review the PPAgg protocols proposed to address privacy and security issues in FL systems. The focus is placed on the construction of PPAgg protocols with an extensive analysis of the advantages and disadvantages of these selected PPAgg protocols and solutions. Additionally, we discuss the open-source FL frameworks that support PPAgg. Finally, we highlight important challenges and future research d"
+  },
+  {
+    "doc_id": "arxiv_2101.12240",
+    "title": "Differential Privacy Meets Federated Learning under Communication\n  Constraints",
+    "year": 2021,
+    "venue": "cs.LG",
+    "tier": "T1",
+    "score": -0.24797293465247316,
+    "abstract": "The performance of federated learning systems is bottlenecked by communication costs and training variance. The communication overhead problem is usually addressed by three communication-reduction techniques, namely, model compression, partial device participation, and periodic aggregation, at the cost of increased training variance. Different from traditional distributed learning systems, federated learning suffers from data heterogeneity (since the devices sample their data from possibly different distributions), which induces additional variance among devices during training. Various variance-reduced training algorithms have been introduced to combat the effects of data heterogeneity, while they usually cost additional communication resources to deliver necessary control information. Additionally, data privacy remains a critical issue in FL, and thus there have been attempts at bringing Differential Privacy to this framework as a mediator between utility and privacy requirements. This paper investigates the trade-offs between communication costs and training variance under a resource-constrained federated system theoretically and experimentally, and how communication reduction t"
+  },
+  {
+    "doc_id": "arxiv_2106.10662",
+    "title": "FedXGBoost: Privacy-Preserving XGBoost for Federated Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -0.2662105899186958,
+    "abstract": "Federated learning is the distributed machine learning framework that enables collaborative training across multiple parties while ensuring data privacy. Practical adaptation of XGBoost, the state-of-the-art tree boosting framework, to federated learning remains limited due to high cost incurred by conventional privacy-preserving methods. To address the problem, we propose two variants of federated XGBoost with privacy guarantee: FedXGBoost-SMM and FedXGBoost-LDP. Our first protocol FedXGBoost-SMM deploys enhanced secure matrix multiplication method to preserve privacy with lossless accuracy and lower overhead than encryption-based techniques. Developed independently, the second protocol FedXGBoost-LDP is heuristically designed with noise perturbation for local differential privacy, and empirically evaluated on real-world and synthetic datasets."
+  },
+  {
+    "doc_id": "arxiv_2010.09258",
+    "title": "From Distributed Machine Learning To Federated Learning: In The View Of\n  Data Privacy And Security",
+    "year": 2020,
+    "venue": "cs.DC",
+    "tier": "T2",
+    "score": -0.3112187738946076,
+    "abstract": "Federated learning is an improved version of distributed machine learning that further offloads operations which would usually be performed by a central server. The server becomes more like an assistant coordinating clients to work together rather than micro-managing the workforce as in traditional DML. One of the greatest advantages of federated learning is the additional privacy and security guarantees it affords. Federated learning architecture relies on smart devices, such as smartphones and IoT sensors, that collect and process their own data, so sensitive information never has to leave the client device. Rather, clients train a sub-model locally and send an encrypted update to the central server for aggregation into the global model. These strong privacy guarantees make federated learning an attractive choice in a world where data breaches and information theft are common and serious threats. This survey outlines the landscape and latest developments in data privacy and security for federated learning. We identify the different mechanisms used to provide privacy and security, such as differential privacy, secure multi-party computation and secure aggregation. We also survey t"
+  },
+  {
+    "doc_id": "arxiv_2007.00914",
+    "title": "Federated Learning and Differential Privacy: Software tools analysis,\n  the Sherpa.ai FL framework and methodological guidelines for preserving data\n  privacy",
+    "year": 2020,
+    "venue": "cs.LG",
+    "tier": "T1",
+    "score": -0.3760523158376559,
+    "abstract": "The high demand of artificial intelligence services at the edges that also preserve data privacy has pushed the research on novel machine learning paradigms that fit those requirements. Federated learning has the ambition to protect data privacy through distributed learning methods that keep the data in their data silos. Likewise, differential privacy attains to improve the protection of data privacy by measuring the privacy loss in the communication among the elements of federated learning. The prospective matching of federated learning and differential privacy to the challenges of data privacy protection has caused the release of several software tools that support their functionalities, but they lack of the needed unified vision for those techniques, and a methodological workflow that support their use. Hence, we present the Sherpa.ai Federated Learning framework that is built upon an holistic view of federated learning and differential privacy. It results from the study of how to adapt the machine learning paradigm to federated learning, and the definition of methodological guidelines for developing artificial intelligence services based on federated learning and differential p"
+  },
+  {
+    "doc_id": "arxiv_2002.08423",
+    "title": "PrivacyFL: A simulator for privacy-preserving and secure federated\n  learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -0.4166401661088338,
+    "abstract": "Federated learning is a technique that enables distributed clients to collaboratively learn a shared machine learning model while keeping their training data localized. This reduces data privacy risks, however, privacy concerns still exist since it is possible to leak information about the training dataset from the trained model's weights or parameters. Setting up a federated learning environment, especially with security and privacy guarantees, is a time-consuming process with numerous configurations and parameters that can be manipulated. In order to help clients ensure that collaboration is feasible and to check that it improves their model accuracy, a real-world simulator for privacy-preserving and secure federated learning is required. In this paper, we introduce PrivacyFL, which is an extensible, easily configurable and scalable simulator for federated learning environments. Its key features include latency simulation, robustness to client departure, support for both centralized and decentralized learning, and configurable privacy and security mechanisms based on differential privacy and secure multiparty computation. In this paper, we motivate our research, describe the arch"
+  },
+  {
+    "doc_id": "arxiv_2201.10092",
+    "title": "Stochastic Coded Federated Learning with Convergence and Privacy\n  Guarantees",
+    "year": 2022,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -0.44136811911185797,
+    "abstract": "Federated learning (FL) has attracted much attention as a privacy-preserving distributed machine learning framework, where many clients collaboratively train a machine learning model by exchanging model updates with a parameter server instead of sharing their raw data. Nevertheless, FL training suffers from slow convergence and unstable performance due to stragglers caused by the heterogeneous computational resources of clients and fluctuating communication rates. This paper proposes a coded FL framework to mitigate the straggler issue, namely stochastic coded federated learning (SCFL). In this framework, each client generates a privacy-preserving coded dataset by adding additive noise to the random linear combination of its local data. The server collects the coded datasets from all the clients to construct a composite dataset, which helps to compensate for the straggling effect. In the training process, the server as well as clients perform mini-batch stochastic gradient descent (SGD), and the server adds a make-up term in model aggregation to obtain unbiased gradient estimates. We characterize the privacy guarantee by the mutual information differential privacy (MI-DP) and analy"
+  },
+  {
+    "doc_id": "arxiv_2405.08299",
+    "title": "Differentially Private Federated Learning: A Systematic Review",
+    "year": 2025,
+    "venue": "cs.CR",
+    "tier": "T1",
+    "score": -0.5501788856852179,
+    "abstract": "In recent years, privacy and security concerns in machine learning have promoted trusted federated learning to the forefront of research. Differential privacy has emerged as the de facto standard for privacy protection in federated learning due to its rigorous mathematical foundation and provable guarantee. Despite extensive research on algorithms that incorporate differential privacy within federated learning, there remains an evident deficiency in systematic reviews that categorize and synthesize these studies. Our work presents a systematic overview of the differentially private federated learning. Existing taxonomies have not adequately considered objects and level of privacy protection provided by various differential privacy models in federated learning. To rectify this gap, we propose a new taxonomy of differentially private federated learning based on definition and guarantee of various differential privacy models and federated scenarios. Our classification allows for a clear delineation of the protected objects across various differential privacy models and their respective neighborhood levels within federated learning environments. Furthermore, we explore the applications"
+  },
+  {
+    "doc_id": "arxiv_2202.01529",
+    "title": "Comparative assessment of federated and centralized machine learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -0.5785775185668005,
+    "abstract": "Federated Learning (FL) is a privacy preserving machine learning scheme, where training happens with data federated across devices and not leaving them to sustain user privacy. This is ensured by making the untrained or partially trained models to reach directly the individual devices and getting locally trained \"on-device\" using the device owned data, and the server aggregating all the partially trained model learnings to update a global model. Although almost all the model learning schemes in the federated learning setup use gradient descent, there are certain characteristic differences brought about by the non-IID nature of the data availability, that affects the training in comparison to the centralized schemes. In this paper, we discuss the various factors that affect the federated learning training, because of the non-IID distributed nature of the data, as well as the inherent differences in the federating learning approach as against the typical centralized gradient descent techniques. We empirically demonstrate the effect of number of samples per device and the distribution of output labels on federated learning. In addition to the privacy advantage we seek through federate"
+  },
+  {
+    "doc_id": "arxiv_2404.18814",
+    "title": "Belt and Braces: When Federated Learning Meets Differential Privacy",
+    "year": 2024,
+    "venue": "cs.CR",
+    "tier": "T1",
+    "score": -0.6668837647027641,
+    "abstract": "Federated learning (FL) has great potential for large-scale machine learning (ML) without exposing raw data.Differential privacy (DP) is the de facto standard of privacy protection with provable guarantees.Advances in ML suggest that DP would be a perfect fit for FL with comprehensive privacy preservation. Hence, extensive efforts have been devoted to achieving practically usable FL with DP, which however is still challenging.Practitioners often not only are not fully aware of its development and categorization, but also face a hard choice between privacy and utility. Therefore, it calls for a holistic review of current advances and an investigation on the challenges and opportunities for highly usable FL systems with a DP guarantee. In this article, we first introduce the primary concepts of FL and DP, and highlight the benefits of integration. We then review the current developments by categorizing different paradigms and notions. Aiming at usable FL with DP, we present the optimization principles to seek a better tradeoff between model utility and privacy loss. Finally, we discuss future challenges in the emergent areas and relevant research topics."
+  },
+  {
+    "doc_id": "arxiv_2409.13133",
+    "title": "CorBin-FL: A Differentially Private Federated Learning Mechanism using\n  Common Randomness",
+    "year": 2024,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -0.7031132777225543,
+    "abstract": "Federated learning (FL) has emerged as a promising framework for distributed machine learning. It enables collaborative learning among multiple clients, utilizing distributed data and computing resources. However, FL faces challenges in balancing privacy guarantees, communication efficiency, and overall model accuracy. In this work, we introduce CorBin-FL, a privacy mechanism that uses correlated binary stochastic quantization to achieve differential privacy while maintaining overall model accuracy. The approach uses secure multi-party computation techniques to enable clients to perform correlated quantization of their local model updates without compromising individual privacy. We provide theoretical analysis showing that CorBin-FL achieves parameter-level local differential privacy (PLDP), and that it asymptotically optimizes the privacy-utility trade-off between the mean square error utility measure and the PLDP privacy measure. We further propose AugCorBin-FL, an extension that, in addition to PLDP, achieves user-level and sample-level central differential privacy guarantees. For both mechanisms, we derive bounds on privacy parameters and mean squared error performance measures"
+  },
+  {
+    "doc_id": "arxiv_2501.03477",
+    "title": "A study on performance limitations in Federated Learning",
+    "year": 2025,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -0.7815379810623799,
+    "abstract": "Increasing privacy concerns and unrestricted access to data lead to the development of a novel machine learning paradigm called Federated Learning (FL). FL borrows many of the ideas from distributed machine learning, however, the challenges associated with federated learning makes it an interesting engineering problem since the models are trained on edge devices. It was introduced in 2016 by Google, and since then active research is being carried out in different areas within FL such as federated optimization algorithms, model and update compression, differential privacy, robustness, and attacks, federated GANs and privacy preserved personalization. There are many open challenges in the development of such federated machine learning systems and this project will be focusing on the communication bottleneck and data Non IID-ness, and its effect on the performance of the models. These issues are characterized on a baseline model, model performance is evaluated, and discussions are made to overcome these issues."
+  },
+  {
+    "doc_id": "arxiv_2304.05127",
+    "title": "Balancing Privacy and Performance for Private Federated Learning\n  Algorithms",
+    "year": 2023,
+    "venue": "cs.CR",
+    "tier": "PREPRINT",
+    "score": -0.8069791306975986,
+    "abstract": "Federated learning (FL) is a distributed machine learning (ML) framework where multiple clients collaborate to train a model without exposing their private data. FL involves cycles of local computations and bi-directional communications between the clients and server. To bolster data security during this process, FL algorithms frequently employ a differential privacy (DP) mechanism that introduces noise into each client's model updates before sharing. However, while enhancing privacy, the DP mechanism often hampers convergence performance. In this paper, we posit that an optimal balance exists between the number of local steps and communication rounds, one that maximizes the convergence performance within a given privacy budget. Specifically, we present a proof for the optimal number of local steps and communication rounds that enhance the convergence bounds of the DP version of the ScaffNew algorithm. Our findings reveal a direct correlation between the optimal number of local steps, communication rounds, and a set of variables, e.g the DP privacy budget and other problem parameters, specifically in the context of strongly convex optimization. We furthermore provide empirical evid"
+  },
+  {
+    "doc_id": "arxiv_2504.17703",
+    "title": "Federated Learning: A Survey on Privacy-Preserving Collaborative Intelligence",
+    "year": 2026,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -0.836893633354262,
+    "abstract": "Federated Learning (FL) has emerged as a transformative paradigm in the field of distributed machine learning, enabling multiple clients such as mobile devices, edge nodes, or organizations to collaboratively train a shared global model without the need to centralize sensitive data. This decentralized approach addresses growing concerns around data privacy, security, and regulatory compliance, making it particularly attractive in domains such as healthcare, finance, and smart IoT systems. This survey provides a concise yet comprehensive overview of Federated Learning, beginning with its core architecture and communication protocol. We discuss the standard FL lifecycle, including local training, model aggregation, and global updates. A particular emphasis is placed on key technical challenges such as handling non-IID (non-independent and identically distributed) data, mitigating system and hardware heterogeneity, reducing communication overhead, and ensuring privacy through mechanisms like differential privacy and secure aggregation. Furthermore, we examine emerging trends in FL research, including personalized FL, cross-device versus cross-silo settings, and integration with other "
+  },
+  {
+    "doc_id": "arxiv_2104.06557",
+    "title": "Towards Causal Federated Learning For Enhanced Robustness and Privacy",
+    "year": 2021,
+    "venue": "cs.LG",
+    "tier": "T1",
+    "score": -1.0097500304617189,
+    "abstract": "Federated Learning is an emerging privacy-preserving distributed machine learning approach to building a shared model by performing distributed training locally on participating devices (clients) and aggregating the local models into a global one. As this approach prevents data collection and aggregation, it helps in reducing associated privacy risks to a great extent. However, the data samples across all participating clients are usually not independent and identically distributed (non-iid), and Out of Distribution(OOD) generalization for the learned models can be poor. Besides this challenge, federated learning also remains vulnerable to various attacks on security wherein a few malicious participating entities work towards inserting backdoors, degrading the generated aggregated model as well as inferring the data owned by participating entities. In this paper, we propose an approach for learning invariant (causal) features common to all participating clients in a federated learning setup and analyze empirically how it enhances the Out of Distribution (OOD) accuracy as well as the privacy of the final learned model."
+  },
+  {
+    "doc_id": "arxiv_2209.14086",
+    "title": "Momentum Gradient Descent Federated Learning with Local Differential\n  Privacy",
+    "year": 2022,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.0266498015508956,
+    "abstract": "Nowadays, the development of information technology is growing rapidly. In the big data era, the privacy of personal information has been more pronounced. The major challenge is to find a way to guarantee that sensitive personal information is not disclosed while data is published and analyzed. Centralized differential privacy is established on the assumption of a trusted third-party data curator. However, this assumption is not always true in reality. As a new privacy preservation model, local differential privacy has relatively strong privacy guarantees. Although federated learning has relatively been a privacy-preserving approach for distributed learning, it still introduces various privacy concerns. To avoid privacy threats and reduce communication costs, in this article, we propose integrating federated learning and local differential privacy with momentum gradient descent to improve the performance of machine learning models."
+  },
+  {
+    "doc_id": "arxiv_2402.02230",
+    "title": "Federated Learning with Differential Privacy",
+    "year": 2024,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.0688402346178518,
+    "abstract": "Federated learning (FL), as a type of distributed machine learning, is capable of significantly preserving client's private data from being shared among different parties. Nevertheless, private information can still be divulged by analyzing uploaded parameter weights from clients. In this report, we showcase our empirical benchmark of the effect of the number of clients and the addition of differential privacy (DP) mechanisms on the performance of the model on different types of data. Our results show that non-i.i.d and small datasets have the highest decrease in performance in a distributed and differentially private setting."
+  },
+  {
+    "doc_id": "arxiv_2304.03841",
+    "title": "Efficient Secure Aggregation for Privacy-Preserving Federated Machine\n  Learning",
+    "year": 2024,
+    "venue": "cs.CR",
+    "tier": "T2",
+    "score": -1.1012331653876617,
+    "abstract": "Secure aggregation protocols ensure the privacy of users' data in federated learning by preventing the disclosure of local gradients. Many existing protocols impose significant communication and computational burdens on participants and may not efficiently handle the large update vectors typical of machine learning models. Correspondingly, we present e-SeaFL, an efficient verifiable secure aggregation protocol taking only one communication round during the aggregation phase. e-SeaFL allows the aggregation server to generate proof of honest aggregation to participants via authenticated homomorphic vector commitments. Our core idea is the use of assisting nodes to help the aggregation server, under similar trust assumptions existing works place upon the participating users. Our experiments show that the user enjoys an order of magnitude efficiency improvement over the state-of-the-art (IEEE S\\&P 2023) for large gradient vectors with thousands of parameters. Our open-source implementation is available at https://github.com/vt-asaplab/e-SeaFL."
+  },
+  {
+    "doc_id": "arxiv_2110.03017",
+    "title": "Two-Bit Aggregation for Communication Efficient and Differentially\n  Private Federated Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.1095935048432108,
+    "abstract": "In federated learning (FL), a machine learning model is trained on multiple nodes in a decentralized manner, while keeping the data local and not shared with other nodes. However, FL requires the nodes to also send information on the model parameters to a central server for aggregation. However, the information sent from the nodes to the server may reveal some details about each node's local data, thus raising privacy concerns. Furthermore, the repetitive uplink transmission from the nodes to the server may result in a communication overhead and network congestion. To address these two challenges, in this paper, a novel two-bit aggregation algorithm is proposed with guaranteed differential privacy and reduced uplink communication overhead. Extensive experiments demonstrate that the proposed aggregation algorithm can achieve the same performance as state-of-the-art approaches on datasets such as MNIST, Fashion MNIST, CIFAR-10, and CIFAR-100, while ensuring differential privacy and improving communication efficiency."
+  },
+  {
+    "doc_id": "arxiv_2012.05433",
+    "title": "Communication-Computation Efficient Secure Aggregation for Federated\n  Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.1113541004051335,
+    "abstract": "Federated learning has been spotlighted as a way to train neural networks using distributed data with no need for individual nodes to share data. Unfortunately, it has also been shown that adversaries may be able to extract local data contents off model parameters transmitted during federated learning. A recent solution based on the secure aggregation primitive enabled privacy-preserving federated learning, but at the expense of significant extra communication/computational resources. In this paper, we propose a low-complexity scheme that provides data privacy using substantially reduced communication/computational resources relative to the existing secure solution. The key idea behind the suggested scheme is to design the topology of secret-sharing nodes as a sparse random graph instead of the complete graph corresponding to the existing solution. We first obtain the necessary and sufficient condition on the graph to guarantee both reliability and privacy. We then suggest using the Erd\\H{o}s-R\\'enyi graph in particular and provide theoretical guarantees on the reliability/privacy of the proposed scheme. Through extensive real-world experiments, we demonstrate that our scheme, usin"
+  },
+  {
+    "doc_id": "arxiv_2302.12503",
+    "title": "FedPDC:Federated Learning for Public Dataset Correction",
+    "year": 2023,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.1874660216803263,
+    "abstract": "As people pay more and more attention to privacy protection, Federated Learning (FL), as a promising distributed machine learning paradigm, is receiving more and more attention. However, due to the biased distribution of data on devices in real life, federated learning has lower classification accuracy than traditional machine learning in Non-IID scenarios. Although there are many optimization algorithms, the local model aggregation in the parameter server is still relatively traditional. In this paper, a new algorithm FedPDC is proposed to optimize the aggregation mode of local models and the loss function of local training by using the shared data sets in some industries. In many benchmark experiments, FedPDC can effectively improve the accuracy of the global model in the case of extremely unbalanced data distribution, while ensuring the privacy of the client data. At the same time, the accuracy improvement of FedPDC does not bring additional communication costs."
+  },
+  {
+    "doc_id": "arxiv_2508.13730",
+    "title": "On the Security and Privacy of Federated Learning: A Survey with Attacks, Defenses, Frameworks, Applications, and Future Directions",
+    "year": 2025,
+    "venue": "cs.CR",
+    "tier": "T1",
+    "score": -1.2414449296147747,
+    "abstract": "Federated Learning (FL) is an emerging distributed machine learning paradigm enabling multiple clients to train a global model collaboratively without sharing their raw data. While FL enhances data privacy by design, it remains vulnerable to various security and privacy threats. This survey provides a comprehensive overview of more than 200 papers regarding the state-of-the-art attacks and defense mechanisms developed to address these challenges, categorizing them into security-enhancing and privacy-preserving techniques. Security-enhancing methods aim to improve FL robustness against malicious behaviors such as byzantine attacks, poisoning, and Sybil attacks. At the same time, privacy-preserving techniques focus on protecting sensitive data through cryptographic approaches, differential privacy, and secure aggregation. We critically analyze the strengths and limitations of existing methods, highlight the trade-offs between privacy, security, and model performance, and discuss the implications of non-IID data distributions on the effectiveness of these defenses. Furthermore, we identify open research challenges and future directions, including the need for scalable, adaptive, and e"
+  },
+  {
+    "doc_id": "arxiv_2602.03052",
+    "title": "Fedcompass: Federated Clustered and Periodic Aggregation Framework for Hybrid Classical-Quantum Models",
+    "year": 2026,
+    "venue": "cs.LG",
+    "tier": "T2",
+    "score": -1.248058155821568,
+    "abstract": "Federated learning enables collaborative model training across decentralized clients under privacy constraints. Quantum computing offers potential for alleviating computational and communication burdens in federated learning, yet hybrid classical-quantum federated learning remains susceptible to performance degradation under non-IID data. To address this,we propose FEDCOMPASS, a layered aggregation framework for hybrid classical-quantum federated learning. FEDCOMPASS employs spectral clustering to group clients by class distribution similarity and performs cluster-wise aggregation for classical feature extractors. For quantum parameters, it uses circular mean aggregation combined with adaptive optimization to ensure stable global updates. Experiments on three benchmark datasets show that FEDCOMPASS improves test accuracy by up to 10.22% and enhances convergence stability under non-IID settings, outperforming six strong federated learning baselines."
+  },
+  {
+    "doc_id": "arxiv_2503.21154",
+    "title": "Federated Learning with Differential Privacy: An Utility-Enhanced\n  Approach",
+    "year": 2025,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.251265797561709,
+    "abstract": "Federated learning has emerged as an attractive approach to protect data privacy by eliminating the need for sharing clients' data while reducing communication costs compared with centralized machine learning algorithms. However, recent studies have shown that federated learning alone does not guarantee privacy, as private data may still be inferred from the uploaded parameters to the central server. In order to successfully avoid data leakage, adopting differential privacy (DP) in the local optimization process or in the local update aggregation process has emerged as two feasible ways for achieving sample-level or user-level privacy guarantees respectively, in federated learning models. However, compared to their non-private equivalents, these approaches suffer from a poor utility. To improve the privacy-utility trade-off, we present a modification to these vanilla differentially private algorithms based on a Haar wavelet transformation step and a novel noise injection scheme that significantly lowers the asymptotic bound of the noise variance. We also present a holistic convergence analysis of our proposed algorithm, showing that our method yields better convergence performance "
+  },
+  {
+    "doc_id": "arxiv_2303.08355",
+    "title": "Efficient and Secure Federated Learning for Financial Applications",
+    "year": 2023,
+    "venue": "cs.LG",
+    "tier": "T2",
+    "score": -1.3881823985225685,
+    "abstract": "The conventional machine learning (ML) and deep learning approaches need to share customers' sensitive information with an external credit bureau to generate a prediction model that opens the door to privacy leakage. This leakage risk makes financial companies face an enormous challenge in their cooperation. Federated learning is a machine learning setting that can protect data privacy, but the high communication cost is often the bottleneck of the federated systems, especially for large neural networks. Limiting the number and size of communications is necessary for the practical training of large neural structures. Gradient sparsification has received increasing attention as a method to reduce communication cost, which only updates significant gradients and accumulates insignificant gradients locally. However, the secure aggregation framework cannot directly use gradient sparsification. This article proposes two sparsification methods to reduce communication cost in federated learning. One is a time-varying hierarchical sparsification method for model parameter update, which solves the problem of maintaining model accuracy after high ratio sparsity. It can significantly reduce th"
+  },
+  {
+    "doc_id": "arxiv_2107.07171",
+    "title": "DeceFL: A Principled Decentralized Federated Learning Framework",
+    "year": 2021,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.4045697283750842,
+    "abstract": "Traditional machine learning relies on a centralized data pipeline, i.e., data are provided to a central server for model training. In many applications, however, data are inherently fragmented. Such a decentralized nature of these databases presents the biggest challenge for collaboration: sending all decentralized datasets to a central server raises serious privacy concerns. Although there has been a joint effort in tackling such a critical issue by proposing privacy-preserving machine learning frameworks, such as federated learning, most state-of-the-art frameworks are built still in a centralized way, in which a central client is needed for collecting and distributing model information (instead of data itself) from every other client, leading to high communication pressure and high vulnerability when there exists a failure at or attack on the central client. Here we propose a principled decentralized federated learning algorithm (DeceFL), which does not require a central client and relies only on local information transmission between clients and their neighbors, representing a fully decentralized learning framework. It has been further proven that every client reaches the glob"
+  },
+  {
+    "doc_id": "arxiv_2105.14408",
+    "title": "PPT: A Privacy-Preserving Global Model Training Protocol for Federated\n  Learning in P2P Networks",
+    "year": 2021,
+    "venue": "cs.CR",
+    "tier": "T1",
+    "score": -1.4094817042459498,
+    "abstract": "The concept of Federated Learning (FL) has emerged as a convergence of machine learning, information, and communication technology. It is vital to the development of machine learning, which is expected to be fully decentralized, privacy-preserving, secure, and robust. However, general federated learning settings with a central server can't meet requirements in decentralized environment. In this paper, we propose a decentralized, secure and privacy-preserving global model training protocol, named PPT, for federated learning in Peer-to-peer (P2P) Networks. PPT uses a one-hop communication form to aggregate local model update parameters and adopts the symmetric cryptosystem to ensure security. It is worth mentioning that PPT modifies the Eschenauer-Gligor (E-G) scheme to distribute keys for encryption. In terms of privacy preservation, PPT generates random noise to disturb local model update parameters. The noise is eliminated ultimately, which ensures the global model performance compared with other noise-based privacy-preserving methods in FL, e.g., differential privacy. PPT also adopts Game Theory to resist collusion attacks. Through extensive analysis, we demonstrate that PPT vari"
+  },
+  {
+    "doc_id": "arxiv_1812.03224",
+    "title": "A Hybrid Approach to Privacy-Preserving Federated Learning",
+    "year": 2019,
+    "venue": "cs.LG",
+    "tier": "T3",
+    "score": -1.4368592148948687,
+    "abstract": "Federated learning facilitates the collaborative training of models without the sharing of raw data. However, recent attacks demonstrate that simply maintaining data locality during training processes does not provide sufficient privacy guarantees. Rather, we need a federated learning system capable of preventing inference over both the messages exchanged during training and the final trained model while ensuring the resulting model also has acceptable predictive accuracy. Existing federated learning approaches either use secure multiparty computation (SMC) which is vulnerable to inference or differential privacy which can lead to low accuracy given a large number of parties with relatively small amounts of data each. In this paper, we present an alternative approach that utilizes both differential privacy and SMC to balance these trade-offs. Combining differential privacy with secure multiparty computation enables us to reduce the growth of noise injection as the number of parties increases without sacrificing privacy while maintaining a pre-defined rate of trust. Our system is therefore a scalable approach that protects against inference threats and produces models with high accu"
+  },
+  {
+    "doc_id": "arxiv_2408.08904",
+    "title": "Privacy in Federated Learning",
+    "year": 2025,
+    "venue": "cs.CR",
+    "tier": "PREPRINT",
+    "score": -1.4491473534560795,
+    "abstract": "Federated Learning (FL) represents a significant advancement in distributed machine learning, enabling multiple participants to collaboratively train models without sharing raw data. This decentralized approach enhances privacy by keeping data on local devices. However, FL introduces new privacy challenges, as model updates shared during training can inadvertently leak sensitive information. This chapter delves into the core privacy concerns within FL, including the risks of data reconstruction, model inversion attacks, and membership inference. It explores various privacy-preserving techniques, such as Differential Privacy (DP) and Secure Multi-Party Computation (SMPC), which are designed to mitigate these risks. The chapter also examines the trade-offs between model accuracy and privacy, emphasizing the importance of balancing these factors in practical implementations. Furthermore, it discusses the role of regulatory frameworks, such as GDPR, in shaping the privacy standards for FL. By providing a comprehensive overview of the current state of privacy in FL, this chapter aims to equip researchers and practitioners with the knowledge necessary to navigate the complexities of secu"
+  },
+  {
+    "doc_id": "arxiv_2104.12678",
+    "title": "Semi-Decentralized Federated Edge Learning for Fast Convergence on\n  Non-IID Data",
+    "year": 2024,
+    "venue": "cs.NI",
+    "tier": "PREPRINT",
+    "score": -1.5025929444093973,
+    "abstract": "Federated edge learning (FEEL) has emerged as an effective approach to reduce the large communication latency in Cloud-based machine learning solutions, while preserving data privacy. Unfortunately, the learning performance of FEEL may be compromised due to limited training data in a single edge cluster. In this paper, we investigate a novel framework of FEEL, namely semi-decentralized federated edge learning (SD-FEEL). By allowing model aggregation across different edge clusters, SD-FEEL enjoys the benefit of FEEL in reducing the training latency, while improving the learning performance by accessing richer training data from multiple edge clusters. A training algorithm for SD-FEEL with three main procedures in each round is presented, including local model updates, intra-cluster and inter-cluster model aggregations, which is proved to converge on non-independent and identically distributed (non-IID) data. We also characterize the interplay between the network topology of the edge servers and the communication overhead of inter-cluster model aggregation on the training performance. Experiment results corroborate our analysis and demonstrate the effectiveness of SD-FFEL in achievin"
+  },
+  {
+    "doc_id": "arxiv_2111.09278",
+    "title": "Differentially Private Federated Learning on Heterogeneous Data",
+    "year": 2023,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.5069540581698408,
+    "abstract": "Federated Learning (FL) is a paradigm for large-scale distributed learning which faces two key challenges: (i) efficient training from highly heterogeneous user data, and (ii) protecting the privacy of participating users. In this work, we propose a novel FL approach (DP-SCAFFOLD) to tackle these two challenges together by incorporating Differential Privacy (DP) constraints into the popular SCAFFOLD algorithm. We focus on the challenging setting where users communicate with a \"honest-but-curious\" server without any trusted intermediary, which requires to ensure privacy not only towards a third-party with access to the final model but also towards the server who observes all user communications. Using advanced results from DP theory, we establish the convergence of our algorithm for convex and non-convex objectives. Our analysis clearly highlights the privacy-utility trade-off under data heterogeneity, and demonstrates the superiority of DP-SCAFFOLD over the state-of-the-art algorithm DP-FedAvg when the number of local updates and the level of heterogeneity grow. Our numerical results confirm our analysis and show that DP-SCAFFOLD provides significant gains in practice."
+  },
+  {
+    "doc_id": "arxiv_2503.07505",
+    "title": "From Centralized to Decentralized Federated Learning: Theoretical\n  Insights, Privacy Preservation, and Robustness Challenges",
+    "year": 2025,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.5799534336106222,
+    "abstract": "Federated Learning (FL) enables collaborative learning without directly sharing individual's raw data. FL can be implemented in either a centralized (server-based) or decentralized (peer-to-peer) manner. In this survey, we present a novel perspective: the fundamental difference between centralized FL (CFL) and decentralized FL (DFL) is not merely the network topology, but the underlying training protocol: separate aggregation vs. joint optimization. We argue that this distinction in protocol leads to significant differences in model utility, privacy preservation, and robustness to attacks. We systematically review and categorize existing works in both CFL and DFL according to the type of protocol they employ. This taxonomy provides deeper insights into prior research and clarifies how various approaches relate or differ. Through our analysis, we identify key gaps in the literature. In particular, we observe a surprising lack of exploration of DFL approaches based on distributed optimization methods, despite their potential advantages. We highlight this under-explored direction and call for more research on leveraging distributed optimization for federated learning. Overall, this wo"
+  },
+  {
+    "doc_id": "arxiv_2402.15968",
+    "title": "CoDream: Exchanging dreams instead of models for federated aggregation\n  with heterogeneous models",
+    "year": 2024,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.6834761328027839,
+    "abstract": "Federated Learning (FL) enables collaborative optimization of machine learning models across decentralized data by aggregating model parameters. Our approach extends this concept by aggregating \"knowledge\" derived from models, instead of model parameters. We present a novel framework called CoDream, where clients collaboratively optimize randomly initialized data using federated optimization in the input data space, similar to how randomly initialized model parameters are optimized in FL. Our key insight is that jointly optimizing this data can effectively capture the properties of the global data distribution. Sharing knowledge in data space offers numerous benefits: (1) model-agnostic collaborative learning, i.e., different clients can have different model architectures; (2) communication that is independent of the model size, eliminating scalability concerns with model parameters; (3) compatibility with secure aggregation, thus preserving the privacy benefits of federated learning; (4) allowing of adaptive optimization of knowledge shared for personalized learning. We empirically validate CoDream on standard FL tasks, demonstrating competitive performance despite not sharing mod"
+  },
+  {
+    "doc_id": "arxiv_2112.06872",
+    "title": "Efficient Differentially Private Secure Aggregation for Federated\n  Learning via Hardness of Learning with Errors",
+    "year": 2021,
+    "venue": "cs.CR",
+    "tier": "PREPRINT",
+    "score": -1.7620306558553192,
+    "abstract": "Federated machine learning leverages edge computing to develop models from network user data, but privacy in federated learning remains a major challenge. Techniques using differential privacy have been proposed to address this, but bring their own challenges -- many require a trusted third party or else add too much noise to produce useful models. Recent advances in \\emph{secure aggregation} using multiparty computation eliminate the need for a third party, but are computationally expensive especially at scale. We present a new federated learning protocol that leverages a novel differentially private, malicious secure aggregation protocol based on techniques from Learning With Errors. Our protocol outperforms current state-of-the art techniques, and empirical results show that it scales to a large number of parties, with optimal accuracy for any differentially private federated learning scheme."
+  },
+  {
+    "doc_id": "arxiv_2206.10565",
+    "title": "sqSGD: Locally Private and Communication Efficient Federated Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.8053220393585399,
+    "abstract": "Federated learning (FL) is a technique that trains machine learning models from decentralized data sources. We study FL under local notions of privacy constraints, which provides strong protection against sensitive data disclosures via obfuscating the data before leaving the client. We identify two major concerns in designing practical privacy-preserving FL algorithms: communication efficiency and high-dimensional compatibility. We then develop a gradient-based learning algorithm called \\emph{sqSGD} (selective quantized stochastic gradient descent) that addresses both concerns. The proposed algorithm is based on a novel privacy-preserving quantization scheme that uses a constant number of bits per dimension per client. Then we improve the base algorithm in three ways: first, we apply a gradient subsampling strategy that simultaneously offers better training performance and smaller communication costs under a fixed privacy budget. Secondly, we utilize randomized rotation as a preprocessing step to reduce quantization error. Thirdly, an adaptive gradient norm upper bound shrinkage strategy is adopted to improve accuracy and stabilize training. Finally, the practicality of the propose"
+  },
+  {
+    "doc_id": "arxiv_2405.20431",
+    "title": "Exploring the Practicality of Federated Learning: A Survey Towards the\n  Communication Perspective",
+    "year": 2024,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.8241009176690108,
+    "abstract": "Federated Learning (FL) is a promising paradigm that offers significant advancements in privacy-preserving, decentralized machine learning by enabling collaborative training of models across distributed devices without centralizing data. However, the practical deployment of FL systems faces a significant bottleneck: the communication overhead caused by frequently exchanging large model updates between numerous devices and a central server. This communication inefficiency can hinder training speed, model performance, and the overall feasibility of real-world FL applications. In this survey, we investigate various strategies and advancements made in communication-efficient FL, highlighting their impact and potential to overcome the communication challenges inherent in FL systems. Specifically, we define measures for communication efficiency, analyze sources of communication inefficiency in FL systems, and provide a taxonomy and comprehensive review of state-of-the-art communication-efficient FL methods. Additionally, we discuss promising future research directions for enhancing the communication efficiency of FL systems. By addressing the communication bottleneck, FL can be effective"
+  },
+  {
+    "doc_id": "arxiv_2308.13849",
+    "title": "Effectively Heterogeneous Federated Learning: A Pairing and Split\n  Learning Based Approach",
+    "year": 2023,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.8317410626603385,
+    "abstract": "As a promising paradigm federated Learning (FL) is widely used in privacy-preserving machine learning, which allows distributed devices to collaboratively train a model while avoiding data transmission among clients. Despite its immense potential, the FL suffers from bottlenecks in training speed due to client heterogeneity, leading to escalated training latency and straggling server aggregation. To deal with this challenge, a novel split federated learning (SFL) framework that pairs clients with different computational resources is proposed, where clients are paired based on computing resources and communication rates among clients, meanwhile the neural network model is split into two parts at the logical level, and each client only computes the part assigned to it by using the SL to achieve forward inference and backward training. Moreover, to effectively deal with the client pairing problem, a heuristic greedy algorithm is proposed by reconstructing the optimization of training latency as a graph edge selection problem. Simulation results show the proposed method can significantly improve the FL training speed and achieve high performance both in independent identical distributi"
+  },
+  {
+    "doc_id": "arxiv_2207.07779",
+    "title": "DeTrust-FL: Privacy-Preserving Federated Learning in Decentralized Trust\n  Setting",
+    "year": 2022,
+    "venue": "cs.CR",
+    "tier": "PREPRINT",
+    "score": -1.927468126630367,
+    "abstract": "Federated learning has emerged as a privacy-preserving machine learning approach where multiple parties can train a single model without sharing their raw training data. Federated learning typically requires the utilization of multi-party computation techniques to provide strong privacy guarantees by ensuring that an untrusted or curious aggregator cannot obtain isolated replies from parties involved in the training process, thereby preventing potential inference attacks. Until recently, it was thought that some of these secure aggregation techniques were sufficient to fully protect against inference attacks coming from a curious aggregator. However, recent research has demonstrated that a curious aggregator can successfully launch a disaggregation attack to learn information about model updates of a target party. This paper presents DeTrust-FL, an efficient privacy-preserving federated learning framework for addressing the lack of transparency that enables isolation attacks, such as disaggregation attacks, during secure aggregation by assuring that parties' model updates are included in the aggregated model in a private and secure manner. DeTrust-FL proposes a decentralized trust "
+  },
+  {
+    "doc_id": "arxiv_2207.12779",
+    "title": "Reconciling Security and Communication Efficiency in Federated Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.9381168732343643,
+    "abstract": "Cross-device Federated Learning is an increasingly popular machine learning setting to train a model by leveraging a large population of client devices with high privacy and security guarantees. However, communication efficiency remains a major bottleneck when scaling federated learning to production environments, particularly due to bandwidth constraints during uplink communication. In this paper, we formalize and address the problem of compressing client-to-server model updates under the Secure Aggregation primitive, a core component of Federated Learning pipelines that allows the server to aggregate the client updates without accessing them individually. In particular, we adapt standard scalar quantization and pruning methods to Secure Aggregation and propose Secure Indexing, a variant of Secure Aggregation that supports quantization for extreme compression. We establish state-of-the-art results on LEAF benchmarks in a secure Federated Learning setup with up to 40$\\times$ compression in uplink communication with no meaningful loss in utility compared to uncompressed baselines."
+  },
+  {
+    "doc_id": "arxiv_2503.21159",
+    "title": "Multi-Objective Optimization for Privacy-Utility Balance in\n  Differentially Private Federated Learning",
+    "year": 2025,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.9754870503025161,
+    "abstract": "Federated learning (FL) enables collaborative model training across distributed clients without sharing raw data, making it a promising approach for privacy-preserving machine learning. However, ensuring differential privacy (DP) in FL presents challenges due to the trade-off between model utility and privacy protection. Clipping gradients before aggregation is a common strategy to limit privacy loss, but selecting an optimal clipping norm is non-trivial, as excessively high values compromise privacy, while overly restrictive clipping degrades model performance. In this work, we propose an adaptive clipping mechanism that dynamically adjusts the clipping norm using a multi-objective optimization framework. By integrating privacy and utility considerations into the optimization objective, our approach balances privacy preservation with model accuracy. We theoretically analyze the convergence properties of our method and demonstrate its effectiveness through extensive experiments on MNIST, Fashion-MNIST, and CIFAR-10 datasets. Our results show that adaptive clipping consistently outperforms fixed-clipping baselines, achieving improved accuracy under the same privacy constraints. This"
+  },
+  {
+    "doc_id": "arxiv_2505.19823",
+    "title": "LAPA-based Dynamic Privacy Optimization for Wireless Federated Learning in Heterogeneous Environments",
+    "year": 2025,
+    "venue": "cs.LG",
+    "tier": "PREPRINT",
+    "score": -1.9778473932441474,
+    "abstract": "Federated Learning (FL) is a distributed machine learning paradigm based on protecting data privacy of devices, which however, can still be broken by gradient leakage attack via parameter inversion techniques. Differential privacy (DP) technology reduces the risk of private data leakage by adding artificial noise to the gradients, but detrimental to the FL utility at the same time, especially in the scenario where the data is Non-Independent Identically Distributed (Non-IID). Based on the impact of heterogeneous data on aggregation performance, this paper proposes a Lightweight Adaptive Privacy Allocation (LAPA) strategy, which assigns personalized privacy budgets to devices in each aggregation round without transmitting any additional information beyond gradients, ensuring both privacy protection and aggregation efficiency. Furthermore, the Deep Deterministic Policy Gradient (DDPG) algorithm is employed to optimize the transmission power, in order to determine the optimal timing at which the adaptively attenuated artificial noise aligns with the communication noise, enabling an effective balance between DP and system utility. Finally, a reliable aggregation strategy is designed by"
+  },
+  {
+    "doc_id": "arxiv_2306.01356",
+    "title": "FedCIP: Federated Client Intellectual Property Protection with Traitor\n  Tracking",
+    "year": 2023,
+    "venue": "cs.CR",
+    "tier": "PREPRINT",
+    "score": -2.0129588699509595,
+    "abstract": "Federated learning is an emerging privacy-preserving distributed machine learning that enables multiple parties to collaboratively learn a shared model while keeping each party's data private. However, federated learning faces two main problems: semi-honest server privacy inference attacks and malicious client-side model theft. To address privacy inference attacks, parameter-based encrypted federated learning secure aggregation can be used. To address model theft, a watermark-based intellectual property protection scheme can verify model ownership. Although watermark-based intellectual property protection schemes can help verify model ownership, they are not sufficient to address the issue of continuous model theft by uncaught malicious clients in federated learning. Existing IP protection schemes that have the ability to track traitors are also not compatible with federated learning security aggregation. Thus, in this paper, we propose a Federated Client-side Intellectual Property Protection (FedCIP), which is compatible with federated learning security aggregation and has the ability to track traitors. To the best of our knowledge, this is the first IP protection scheme in federa"
+  },
+  {
+    "doc_id": "arxiv_2210.16917",
+    "title": "PHY-Fed: An Information-Theoretic Secure Aggregation in Federated\n  Learning in Wireless Communications",
+    "year": 2022,
+    "venue": "cs.IT",
+    "tier": "PREPRINT",
+    "score": -2.292466918159626,
+    "abstract": "Federated learning (FL) is a type of distributed machine learning at the wireless edge that preserves the privacy of clients' data from adversaries and even the central server. Existing federated learning approaches either use (i) secure multiparty computation (SMC) which is vulnerable to inference or (ii) differential privacy which may decrease the test accuracy given a large number of parties with relatively small amounts of data each. To tackle the problem with the existing methods in the literature, In this paper, we introduce PHY-Fed, a new framework that secures federated algorithms from an information-theoretic point of view."
+  },
+  {
+    "doc_id": "arxiv_2211.06324",
+    "title": "Secure Aggregation Is Not All You Need: Mitigating Privacy Attacks with\n  Noise Tolerance in Federated Learning",
+    "year": 2022,
+    "venue": "cs.CR",
+    "tier": "PREPRINT",
+    "score": -2.30963624633143,
+    "abstract": "Federated learning is a collaborative method that aims to preserve data privacy while creating AI models. Current approaches to federated learning tend to rely heavily on secure aggregation protocols to preserve data privacy. However, to some degree, such protocols assume that the entity orchestrating the federated learning process (i.e., the server) is not fully malicious or dishonest. We investigate vulnerabilities to secure aggregation that could arise if the server is fully malicious and attempts to obtain access to private, potentially sensitive data. Furthermore, we provide a method to further defend against such a malicious server, and demonstrate effectiveness against known attacks that reconstruct data in a federated learning setting."
+  }
+]

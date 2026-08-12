@@ -1,0 +1,485 @@
+{
+  "topic_id": "cross_ml_drug_discovery",
+  "system": "surveyforge",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "These systemic inefficiencies have catalyzed the adoption of computational approaches, evolving from early quantitative structure-activity relationship models and rule-based cheminformatics toward sophisticated data-driven machine learning frameworks [1; 2].",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "1",
+          "arxiv_id": "2106.05386v4",
+          "title": "Artificial Intelligence in Drug Discovery: Applications and Techniques",
+          "abstract": "Artificial intelligence (AI) has been transforming the practice of drug discovery in the past decade. Various AI techniques have been used in a wide range of applications, such as virtual screening and drug design. In this survey, we first give an overview on drug discovery and discuss related applications, which can be reduced to two major tasks, i.e., molecular property prediction and molecule generation. We then discuss common data resources, molecule representations and benchmark platforms. Furthermore, to summarize the progress of AI in drug discovery, we present the relevant AI techniques including model architectures and learning paradigms in the papers surveyed. We expect that this survey will serve as a guide for researchers who are interested in working at the interface of artificial intelligence and drug discovery. We also provide a GitHub repository (https://github.com/dengjianyuan/Survey_AI_Drug_Discovery) with the collection of papers and codes, if applicable, as a learning resource, which is regularly updated.",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.05386",
+            "title": "Artificial Intelligence in Drug Discovery: Applications and Techniques",
+            "abstract": "Artificial intelligence (AI) has been transforming the practice of drug discovery in the past decade. Various AI techniques have been used in a wide range of applications, such as virtual screening and drug design. In this survey, we first give an overview on drug discovery and discuss related applications, which can be reduced to two major tasks, i.e., molecular property prediction and molecule generation. We then discuss common data resources, molecule representations and benchmark platforms. Furthermore, to summarize the progress of AI in drug discovery, we present the relevant AI techniques including model architectures and learning paradigms in the papers surveyed. We expect that this survey will serve as a guide for researchers who are interested in working at the interface of artificial intelligence and drug discovery. We also provide a GitHub repository (https://github.com/dengjianyuan/Survey_AI_Drug_Discovery) with the collection of papers and codes, if applicable, as a learning resource, which is regularly updated.",
+            "published": "2021-06-09T20:46:44Z",
+            "source_url": "https://arxiv.org/abs/2106.05386"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "2",
+          "arxiv_id": "1701.04503v1",
+          "title": "Deep Learning for Computational Chemistry",
+          "abstract": "The rise and fall of artificial neural networks is well documented in the scientific literature of both computer science and computational chemistry. Yet almost two decades later, we are now seeing a resurgence of interest in deep learning, a machine learning algorithm based on multilayer neural networks. Within the last few years, we have seen the transformative impact of deep learning in many domains, particularly in speech recognition and computer vision, to the extent that the majority of expert practitioners in those field are now regularly eschewing prior established models in favor of deep learning models. In this review, we provide an introductory overview into the theory of deep neural networks and their unique properties that distinguish them from traditional machine learning algorithms used in cheminformatics. By providing an overview of the variety of emerging applications of deep neural networks, we highlight its ubiquity and broad applicability to a wide range of challenges in the field, including QSAR, virtual screening, protein structure prediction, quantum chemistry, materials design and property prediction. In reviewing the performance of deep neural networks, we observed a consistent outperformance against non-neural networks state-of-the-art models across disparate research topics, and deep neural network based models often exceeded the \"glass ceiling\" expectations of their respective tasks. Coupled with the maturity of GPU-accelerated computing for training deep neural networks and the exponential growth of chemical data on which to train these networks on, we anticipate that deep learning algorithms will be a valuable tool for computational chemistry.",
+          "resolved_arxiv": {
+            "arxiv_id": "1701.04503",
+            "title": "Deep Learning for Computational Chemistry",
+            "abstract": "The rise and fall of artificial neural networks is well documented in the scientific literature of both computer science and computational chemistry. Yet almost two decades later, we are now seeing a resurgence of interest in deep learning, a machine learning algorithm based on multilayer neural networks. Within the last few years, we have seen the transformative impact of deep learning in many domains, particularly in speech recognition and computer vision, to the extent that the majority of expert practitioners in those field are now regularly eschewing prior established models in favor of deep learning models. In this review, we provide an introductory overview into the theory of deep neural networks and their unique properties that distinguish them from traditional machine learning algorithms used in cheminformatics. By providing an overview of the variety of emerging applications of deep neural networks, we highlight its ubiquity and broad applicability to a wide range of challenges in the field, including QSAR, virtual screening, protein structure prediction, quantum chemistry, materials design and property prediction. In reviewing the performance of deep neural networks, we observed a consistent outperformance against non-neural networks state-of-the-art models across disparate research topics, and deep neural network based models often exceeded the \"glass ceiling\" expectations of their respective tasks. Coupled with the maturity of GPU-accelerated computing for training deep neural networks and the exponential growth of chemical data on which to train these networks on, we anticipate that deep learning algorithms will be a valuable tool for computational chemistry.",
+            "published": "2017-01-17T01:15:14Z",
+            "source_url": "https://arxiv.org/abs/1701.04503"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The emergence of deep learning, graph neural networks, and large-scale pretrained architectures has fundamentally transformed this landscape, enabling unprecedented predictive accuracy across molecular property prediction, virtual screening, and generative molecular design [3; 4; 5].",
+      "citation_markers": [
+        "[3; 4; 5]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "3",
+          "arxiv_id": "1703.00564v3",
+          "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+          "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.00564",
+            "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+            "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+            "published": "2017-03-02T00:39:53Z",
+            "source_url": "https://arxiv.org/abs/1703.00564"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "4",
+          "arxiv_id": "1502.02072v1",
+          "title": "Massively Multitask Networks for Drug Discovery",
+          "abstract": "Massively multitask neural architectures provide a learning framework for drug discovery that synthesizes information from many distinct biological sources. To train these architectures at scale, we gather large amounts of data from public sources to create a dataset of nearly 40 million measurements across more than 200 biological targets. We investigate several aspects of the multitask framework by performing a series of empirical studies and obtain some interesting results: (1) massively multitask networks obtain predictive accuracies significantly better than single-task methods, (2) the predictive power of multitask networks improves as additional tasks and data are added, (3) the total amount of data and the total number of tasks both contribute significantly to multitask improvement, and (4) multitask networks afford limited transferability to tasks not in the training set. Our results underscore the need for greater data sharing and further algorithmic innovation to accelerate the drug discovery process.",
+          "resolved_arxiv": {
+            "arxiv_id": "1502.02072",
+            "title": "Massively Multitask Networks for Drug Discovery",
+            "abstract": "Massively multitask neural architectures provide a learning framework for drug discovery that synthesizes information from many distinct biological sources. To train these architectures at scale, we gather large amounts of data from public sources to create a dataset of nearly 40 million measurements across more than 200 biological targets. We investigate several aspects of the multitask framework by performing a series of empirical studies and obtain some interesting results: (1) massively multitask networks obtain predictive accuracies significantly better than single-task methods, (2) the predictive power of multitask networks improves as additional tasks and data are added, (3) the total amount of data and the total number of tasks both contribute significantly to multitask improvement, and (4) multitask networks afford limited transferability to tasks not in the training set. Our results underscore the need for greater data sharing and further algorithmic innovation to accelerate the drug discovery process.",
+            "published": "2015-02-06T23:04:01Z",
+            "source_url": "https://arxiv.org/abs/1502.02072"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "5",
+          "arxiv_id": "2212.13295v1",
+          "title": "Structure-based drug discovery with deep learning",
+          "abstract": "Artificial intelligence (AI) in the form of deep learning bears promise for drug discovery and chemical biology, $\\textit{e.g.}$, to predict protein structure and molecular bioactivity, plan organic synthesis, and design molecules $\\textit{de novo}$. While most of the deep learning efforts in drug discovery have focused on ligand-based approaches, structure-based drug discovery has the potential to tackle unsolved challenges, such as affinity prediction for unexplored protein targets, binding-mechanism elucidation, and the rationalization of related chemical kinetic properties. Advances in deep learning methodologies and the availability of accurate predictions for protein tertiary structure advocate for a $\\textit{renaissance}$ in structure-based approaches for drug discovery guided by AI. This review summarizes the most prominent algorithmic concepts in structure-based deep learning for drug discovery, and forecasts opportunities, applications, and challenges ahead.",
+          "resolved_arxiv": {
+            "arxiv_id": "2212.13295",
+            "title": "Structure-based drug discovery with deep learning",
+            "abstract": "Artificial intelligence (AI) in the form of deep learning bears promise for drug discovery and chemical biology, $\\textit{e.g.}$, to predict protein structure and molecular bioactivity, plan organic synthesis, and design molecules $\\textit{de novo}$. While most of the deep learning efforts in drug discovery have focused on ligand-based approaches, structure-based drug discovery has the potential to tackle unsolved challenges, such as affinity prediction for unexplored protein targets, binding-mechanism elucidation, and the rationalization of related chemical kinetic properties. Advances in deep learning methodologies and the availability of accurate predictions for protein tertiary structure advocate for a $\\textit{renaissance}$ in structure-based approaches for drug discovery guided by AI. This review summarizes the most prominent algorithmic concepts in structure-based deep learning for drug discovery, and forecasts opportunities, applications, and challenges ahead.",
+            "published": "2022-12-26T20:52:26Z",
+            "source_url": "https://arxiv.org/abs/2212.13295"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The availability of high-quality curated datasets and standardized evaluation frameworks constitutes a foundational prerequisite for reproducible machine learning research in drug discovery.",
+      "citation_markers": [
+        "[3; 19]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "3",
+          "arxiv_id": "1703.00564v3",
+          "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+          "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.00564",
+            "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+            "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+            "published": "2017-03-02T00:39:53Z",
+            "source_url": "https://arxiv.org/abs/1703.00564"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "19",
+          "arxiv_id": "1904.01561v5",
+          "title": "Analyzing Learned Molecular Representations for Property Prediction",
+          "abstract": "Advancements in neural machinery have led to a wide range of algorithmic solutions for molecular property prediction. Two classes of models in particular have yielded promising results: neural networks applied to computed molecular fingerprints or expert-crafted descriptors, and graph convolutional neural networks that construct a learned molecular representation by operating on the graph structure of the molecule. However, recent literature has yet to clearly determine which of these two methods is superior when generalizing to new chemical space. Furthermore, prior research has rarely examined these new models in industry research settings in comparison to existing employed models. In this paper, we benchmark models extensively on 19 public and 16 proprietary industrial datasets spanning a wide variety of chemical endpoints. In addition, we introduce a graph convolutional model that consistently matches or outperforms models using fixed molecular descriptors as well as previous graph neural architectures on both public and proprietary datasets. Our empirical findings indicate that while approaches based on these representations have yet to reach the level of experimental reproducibility, our proposed model nevertheless offers significant improvements over models currently used in industrial workflows.",
+          "resolved_arxiv": {
+            "arxiv_id": "1904.01561",
+            "title": "Analyzing Learned Molecular Representations for Property Prediction",
+            "abstract": "Advancements in neural machinery have led to a wide range of algorithmic solutions for molecular property prediction. Two classes of models in particular have yielded promising results: neural networks applied to computed molecular fingerprints or expert-crafted descriptors, and graph convolutional neural networks that construct a learned molecular representation by operating on the graph structure of the molecule. However, recent literature has yet to clearly determine which of these two methods is superior when generalizing to new chemical space. Furthermore, prior research has rarely examined these new models in industry research settings in comparison to existing employed models. In this paper, we benchmark models extensively on 19 public and 16 proprietary industrial datasets spanning a wide variety of chemical endpoints. In addition, we introduce a graph convolutional model that consistently matches or outperforms models using fixed molecular descriptors as well as previous graph neural architectures on both public and proprietary datasets. Our empirical findings indicate that while approaches based on these representations have yet to reach the level of experimental reproducibility, our proposed model nevertheless offers significant improvements over models currently used in industrial workflows.",
+            "published": "2019-04-02T17:35:27Z",
+            "source_url": "https://arxiv.org/abs/1904.01561"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Community benchmarks such as [3] have consolidated diverse molecular property prediction tasks—spanning quantum mechanics, physicochemical properties, biophysics, and clinical endpoints—providing unified evaluation protocols against which competing representations and architectures can be fairly compared [19].",
+      "citation_markers": [
+        "[3]",
+        "[19]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "3",
+          "arxiv_id": "1703.00564v3",
+          "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+          "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.00564",
+            "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+            "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+            "published": "2017-03-02T00:39:53Z",
+            "source_url": "https://arxiv.org/abs/1703.00564"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "19",
+          "arxiv_id": "1904.01561v5",
+          "title": "Analyzing Learned Molecular Representations for Property Prediction",
+          "abstract": "Advancements in neural machinery have led to a wide range of algorithmic solutions for molecular property prediction. Two classes of models in particular have yielded promising results: neural networks applied to computed molecular fingerprints or expert-crafted descriptors, and graph convolutional neural networks that construct a learned molecular representation by operating on the graph structure of the molecule. However, recent literature has yet to clearly determine which of these two methods is superior when generalizing to new chemical space. Furthermore, prior research has rarely examined these new models in industry research settings in comparison to existing employed models. In this paper, we benchmark models extensively on 19 public and 16 proprietary industrial datasets spanning a wide variety of chemical endpoints. In addition, we introduce a graph convolutional model that consistently matches or outperforms models using fixed molecular descriptors as well as previous graph neural architectures on both public and proprietary datasets. Our empirical findings indicate that while approaches based on these representations have yet to reach the level of experimental reproducibility, our proposed model nevertheless offers significant improvements over models currently used in industrial workflows.",
+          "resolved_arxiv": {
+            "arxiv_id": "1904.01561",
+            "title": "Analyzing Learned Molecular Representations for Property Prediction",
+            "abstract": "Advancements in neural machinery have led to a wide range of algorithmic solutions for molecular property prediction. Two classes of models in particular have yielded promising results: neural networks applied to computed molecular fingerprints or expert-crafted descriptors, and graph convolutional neural networks that construct a learned molecular representation by operating on the graph structure of the molecule. However, recent literature has yet to clearly determine which of these two methods is superior when generalizing to new chemical space. Furthermore, prior research has rarely examined these new models in industry research settings in comparison to existing employed models. In this paper, we benchmark models extensively on 19 public and 16 proprietary industrial datasets spanning a wide variety of chemical endpoints. In addition, we introduce a graph convolutional model that consistently matches or outperforms models using fixed molecular descriptors as well as previous graph neural architectures on both public and proprietary datasets. Our empirical findings indicate that while approaches based on these representations have yet to reach the level of experimental reproducibility, our proposed model nevertheless offers significant improvements over models currently used in industrial workflows.",
+            "published": "2019-04-02T17:35:27Z",
+            "source_url": "https://arxiv.org/abs/1904.01561"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Massively multitask neural architectures demonstrated early that synthesizing information across nearly 40 million measurements spanning over 200 biological targets yields predictive accuracies significantly exceeding single-task approaches, establishing shared representation learning as a cornerstone paradigm [4].",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "4",
+          "arxiv_id": "1502.02072v1",
+          "title": "Massively Multitask Networks for Drug Discovery",
+          "abstract": "Massively multitask neural architectures provide a learning framework for drug discovery that synthesizes information from many distinct biological sources. To train these architectures at scale, we gather large amounts of data from public sources to create a dataset of nearly 40 million measurements across more than 200 biological targets. We investigate several aspects of the multitask framework by performing a series of empirical studies and obtain some interesting results: (1) massively multitask networks obtain predictive accuracies significantly better than single-task methods, (2) the predictive power of multitask networks improves as additional tasks and data are added, (3) the total amount of data and the total number of tasks both contribute significantly to multitask improvement, and (4) multitask networks afford limited transferability to tasks not in the training set. Our results underscore the need for greater data sharing and further algorithmic innovation to accelerate the drug discovery process.",
+          "resolved_arxiv": {
+            "arxiv_id": "1502.02072",
+            "title": "Massively Multitask Networks for Drug Discovery",
+            "abstract": "Massively multitask neural architectures provide a learning framework for drug discovery that synthesizes information from many distinct biological sources. To train these architectures at scale, we gather large amounts of data from public sources to create a dataset of nearly 40 million measurements across more than 200 biological targets. We investigate several aspects of the multitask framework by performing a series of empirical studies and obtain some interesting results: (1) massively multitask networks obtain predictive accuracies significantly better than single-task methods, (2) the predictive power of multitask networks improves as additional tasks and data are added, (3) the total amount of data and the total number of tasks both contribute significantly to multitask improvement, and (4) multitask networks afford limited transferability to tasks not in the training set. Our results underscore the need for greater data sharing and further algorithmic innovation to accelerate the drug discovery process.",
+            "published": "2015-02-06T23:04:01Z",
+            "source_url": "https://arxiv.org/abs/1502.02072"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Standardized benchmarking through platforms such as MoleculeNet and the Therapeutics Data Commons has enabled systematic comparative evaluation, revealing that learnable representations broadly outperform fixed fingerprints yet still struggle under data scarcity and severe class imbalance [3; 6].",
+      "citation_markers": [
+        "[3; 6]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "3",
+          "arxiv_id": "1703.00564v3",
+          "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+          "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.00564",
+            "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+            "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+            "published": "2017-03-02T00:39:53Z",
+            "source_url": "https://arxiv.org/abs/1703.00564"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "6",
+          "arxiv_id": "2102.09548v2",
+          "title": "Therapeutics Data Commons: Machine Learning Datasets and Tasks for Drug Discovery and Development",
+          "abstract": "Therapeutics machine learning is an emerging field with incredible opportunities for innovatiaon and impact. However, advancement in this field requires formulation of meaningful learning tasks and careful curation of datasets. Here, we introduce Therapeutics Data Commons (TDC), the first unifying platform to systematically access and evaluate machine learning across the entire range of therapeutics. To date, TDC includes 66 AI-ready datasets spread across 22 learning tasks and spanning the discovery and development of safe and effective medicines. TDC also provides an ecosystem of tools and community resources, including 33 data functions and types of meaningful data splits, 23 strategies for systematic model evaluation, 17 molecule generation oracles, and 29 public leaderboards. All resources are integrated and accessible via an open Python library. We carry out extensive experiments on selected datasets, demonstrating that even the strongest algorithms fall short of solving key therapeutics challenges, including real dataset distributional shifts, multi-scale modeling of heterogeneous data, and robust generalization to novel data points. We envision that TDC can facilitate algorithmic and scientific advances and considerably accelerate machine-learning model development, validation and transition into biomedical and clinical implementation. TDC is an open-science initiative available at https://tdcommons.ai.",
+          "resolved_arxiv": {
+            "arxiv_id": "2102.09548",
+            "title": "Therapeutics Data Commons: Machine Learning Datasets and Tasks for Drug Discovery and Development",
+            "abstract": "Therapeutics machine learning is an emerging field with incredible opportunities for innovatiaon and impact. However, advancement in this field requires formulation of meaningful learning tasks and careful curation of datasets. Here, we introduce Therapeutics Data Commons (TDC), the first unifying platform to systematically access and evaluate machine learning across the entire range of therapeutics. To date, TDC includes 66 AI-ready datasets spread across 22 learning tasks and spanning the discovery and development of safe and effective medicines. TDC also provides an ecosystem of tools and community resources, including 33 data functions and types of meaningful data splits, 23 strategies for systematic model evaluation, 17 molecule generation oracles, and 29 public leaderboards. All resources are integrated and accessible via an open Python library. We carry out extensive experiments on selected datasets, demonstrating that even the strongest algorithms fall short of solving key therapeutics challenges, including real dataset distributional shifts, multi-scale modeling of heterogeneous data, and robust generalization to novel data points. We envision that TDC can facilitate algorithmic and scientific advances and considerably accelerate machine-learning model development, validation and transition into biomedical and clinical implementation. TDC is an open-science initiative available at https://tdcommons.ai.",
+            "published": "2021-02-18T18:50:31Z",
+            "source_url": "https://arxiv.org/abs/2102.09548"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Surrogate models trained to emulate classical docking algorithms—including graph neural networks operating on molecular graphs and chemical language models processing SMILES representations [19; 37]—enable rapid pre-filtering at a fraction of the computational cost of physics-based docking, with the critical trade-off between recall fidelity and throughput governed by model expressiveness and training set diversity.",
+      "citation_markers": [
+        "[19; 37]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "19",
+          "arxiv_id": "1904.01561v5",
+          "title": "Analyzing Learned Molecular Representations for Property Prediction",
+          "abstract": "Advancements in neural machinery have led to a wide range of algorithmic solutions for molecular property prediction. Two classes of models in particular have yielded promising results: neural networks applied to computed molecular fingerprints or expert-crafted descriptors, and graph convolutional neural networks that construct a learned molecular representation by operating on the graph structure of the molecule. However, recent literature has yet to clearly determine which of these two methods is superior when generalizing to new chemical space. Furthermore, prior research has rarely examined these new models in industry research settings in comparison to existing employed models. In this paper, we benchmark models extensively on 19 public and 16 proprietary industrial datasets spanning a wide variety of chemical endpoints. In addition, we introduce a graph convolutional model that consistently matches or outperforms models using fixed molecular descriptors as well as previous graph neural architectures on both public and proprietary datasets. Our empirical findings indicate that while approaches based on these representations have yet to reach the level of experimental reproducibility, our proposed model nevertheless offers significant improvements over models currently used in industrial workflows.",
+          "resolved_arxiv": {
+            "arxiv_id": "1904.01561",
+            "title": "Analyzing Learned Molecular Representations for Property Prediction",
+            "abstract": "Advancements in neural machinery have led to a wide range of algorithmic solutions for molecular property prediction. Two classes of models in particular have yielded promising results: neural networks applied to computed molecular fingerprints or expert-crafted descriptors, and graph convolutional neural networks that construct a learned molecular representation by operating on the graph structure of the molecule. However, recent literature has yet to clearly determine which of these two methods is superior when generalizing to new chemical space. Furthermore, prior research has rarely examined these new models in industry research settings in comparison to existing employed models. In this paper, we benchmark models extensively on 19 public and 16 proprietary industrial datasets spanning a wide variety of chemical endpoints. In addition, we introduce a graph convolutional model that consistently matches or outperforms models using fixed molecular descriptors as well as previous graph neural architectures on both public and proprietary datasets. Our empirical findings indicate that while approaches based on these representations have yet to reach the level of experimental reproducibility, our proposed model nevertheless offers significant improvements over models currently used in industrial workflows.",
+            "published": "2019-04-02T17:35:27Z",
+            "source_url": "https://arxiv.org/abs/1904.01561"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "37",
+          "arxiv_id": "2012.01981v3",
+          "title": "Advanced Graph and Sequence Neural Networks for Molecular Property Prediction and Drug Discovery",
+          "abstract": "Properties of molecules are indicative of their functions and thus are useful in many applications. With the advances of deep learning methods, computational approaches for predicting molecular properties are gaining increasing momentum. However, there lacks customized and advanced methods and comprehensive tools for this task currently. Here we develop a suite of comprehensive machine learning methods and tools spanning different computational models, molecular representations, and loss functions for molecular property prediction and drug discovery. Specifically, we represent molecules as both graphs and sequences. Built on these representations, we develop novel deep models for learning from molecular graphs and sequences. In order to learn effectively from highly imbalanced datasets, we develop advanced loss functions that optimize areas under precision-recall curves. Altogether, our work not only serves as a comprehensive tool, but also contributes towards developing novel and advanced graph and sequence learning methodologies. Results on both online and offline antibiotics discovery and molecular property prediction tasks show that our methods achieve consistent improvements over prior methods. In particular, our methods achieve #1 ranking in terms of both ROC-AUC and PRC-AUC on the AI Cures Open Challenge for drug discovery related to COVID-19. Our software is released as part of the MoleculeX library under AdvProp.",
+          "resolved_arxiv": {
+            "arxiv_id": "2012.01981",
+            "title": "Advanced Graph and Sequence Neural Networks for Molecular Property Prediction and Drug Discovery",
+            "abstract": "Properties of molecules are indicative of their functions and thus are useful in many applications. With the advances of deep learning methods, computational approaches for predicting molecular properties are gaining increasing momentum. However, there lacks customized and advanced methods and comprehensive tools for this task currently. Here we develop a suite of comprehensive machine learning methods and tools spanning different computational models, molecular representations, and loss functions for molecular property prediction and drug discovery. Specifically, we represent molecules as both graphs and sequences. Built on these representations, we develop novel deep models for learning from molecular graphs and sequences. In order to learn effectively from highly imbalanced datasets, we develop advanced loss functions that optimize areas under precision-recall curves. Altogether, our work not only serves as a comprehensive tool, but also contributes towards developing novel and advanced graph and sequence learning methodologies. Results on both online and offline antibiotics discovery and molecular property prediction tasks show that our methods achieve consistent improvements over prior methods. In particular, our methods achieve #1 ranking in terms of both ROC-AUC and PRC-AUC on the AI Cures Open Challenge for drug discovery related to COVID-19. Our software is released as part of the MoleculeX library under AdvProp.",
+            "published": "2020-12-02T02:09:31Z",
+            "source_url": "https://arxiv.org/abs/2012.01981"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Conformal prediction frameworks extend these capabilities by providing distribution-free, finite-sample coverage guarantees without parametric assumptions, making them particularly attractive for deployment across diverse chemical spaces. Critically, UQ utility depends not merely on uncertainty magnitude but on calibration quality—the degree to which predicted confidence intervals reflect true empirical coverage—a property that degrades severely under scaffold-based distribution shifts [3].",
+      "citation_markers": [
+        "[3]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "3",
+          "arxiv_id": "1703.00564v3",
+          "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+          "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.00564",
+            "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+            "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+            "published": "2017-03-02T00:39:53Z",
+            "source_url": "https://arxiv.org/abs/1703.00564"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The foundational insight that molecular strings exhibit sequential dependencies analogous to natural language syntax has motivated a progression from early recurrent architectures toward increasingly expressive transformer-based chemical language models.",
+      "citation_markers": [
+        "[9; 49]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "9",
+          "arxiv_id": "2002.06053v1",
+          "title": "Exploring Chemical Space using Natural Language Processing Methodologies for Drug Discovery",
+          "abstract": "Text-based representations of chemicals and proteins can be thought of as unstructured languages codified by humans to describe domain-specific knowledge. Advances in natural language processing (NLP) methodologies in the processing of spoken languages accelerated the application of NLP to elucidate hidden knowledge in textual representations of these biochemical entities and then use it to construct models to predict molecular properties or to design novel molecules. This review outlines the impact made by these advances on drug discovery and aims to further the dialogue between medicinal chemists and computer scientists.",
+          "resolved_arxiv": {
+            "arxiv_id": "2002.06053",
+            "title": "Exploring Chemical Space using Natural Language Processing Methodologies for Drug Discovery",
+            "abstract": "Text-based representations of chemicals and proteins can be thought of as unstructured languages codified by humans to describe domain-specific knowledge. Advances in natural language processing (NLP) methodologies in the processing of spoken languages accelerated the application of NLP to elucidate hidden knowledge in textual representations of these biochemical entities and then use it to construct models to predict molecular properties or to design novel molecules. This review outlines the impact made by these advances on drug discovery and aims to further the dialogue between medicinal chemists and computer scientists.",
+            "published": "2020-02-10T21:02:05Z",
+            "source_url": "https://arxiv.org/abs/2002.06053"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "49",
+          "arxiv_id": "2008.09000v1",
+          "title": "Generative chemistry: drug discovery with deep learning generative models",
+          "abstract": "The de novo design of molecular structures using deep learning generative models introduces an encouraging solution to drug discovery in the face of the continuously increased cost of new drug development. From the generation of original texts, images, and videos, to the scratching of novel molecular structures, the incredible creativity of deep learning generative models surprised us about the height machine intelligence can achieve. The purpose of this paper is to review the latest advances in generative chemistry which relies on generative modeling to expedite the drug discovery process. This review starts with a brief history of artificial intelligence in drug discovery to outline this emerging paradigm. Commonly used chemical databases, molecular representations, and tools in cheminformatics and machine learning are covered as the infrastructure for the generative chemistry. The detailed discussions on utilizing cutting-edge generative architectures, including recurrent neural network, variational autoencoder, adversarial autoencoder, and generative adversarial network for compound generation are focused. Challenges and future perspectives follow.",
+          "resolved_arxiv": {
+            "arxiv_id": "2008.09000",
+            "title": "Generative chemistry: drug discovery with deep learning generative models",
+            "abstract": "The de novo design of molecular structures using deep learning generative models introduces an encouraging solution to drug discovery in the face of the continuously increased cost of new drug development. From the generation of original texts, images, and videos, to the scratching of novel molecular structures, the incredible creativity of deep learning generative models surprised us about the height machine intelligence can achieve. The purpose of this paper is to review the latest advances in generative chemistry which relies on generative modeling to expedite the drug discovery process. This review starts with a brief history of artificial intelligence in drug discovery to outline this emerging paradigm. Commonly used chemical databases, molecular representations, and tools in cheminformatics and machine learning are covered as the infrastructure for the generative chemistry. The detailed discussions on utilizing cutting-edge generative architectures, including recurrent neural network, variational autoencoder, adversarial autoencoder, and generative adversarial network for compound generation are focused. Challenges and future perspectives follow.",
+            "published": "2020-08-20T14:38:21Z",
+            "source_url": "https://arxiv.org/abs/2008.09000"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "The introduction of variational autoencoders enabled continuous latent space representations of SMILES strings, facilitating gradient-based optimization and property-conditioned sampling [52; 53].",
+      "citation_markers": [
+        "[52; 53]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "52",
+          "arxiv_id": "2206.09010v1",
+          "title": "LIMO: Latent Inceptionism for Targeted Molecule Generation",
+          "abstract": "Generation of drug-like molecules with high binding affinity to target proteins remains a difficult and resource-intensive task in drug discovery. Existing approaches primarily employ reinforcement learning, Markov sampling, or deep generative models guided by Gaussian processes, which can be prohibitively slow when generating molecules with high binding affinity calculated by computationally-expensive physics-based methods. We present Latent Inceptionism on Molecules (LIMO), which significantly accelerates molecule generation with an inceptionism-like technique. LIMO employs a variational autoencoder-generated latent space and property prediction by two neural networks in sequence to enable faster gradient-based reverse-optimization of molecular properties. Comprehensive experiments show that LIMO performs competitively on benchmark tasks and markedly outperforms state-of-the-art techniques on the novel task of generating drug-like compounds with high binding affinity, reaching nanomolar range against two protein targets. We corroborate these docking-based results with more accurate molecular dynamics-based calculations of absolute binding free energy and show that one of our generated drug-like compounds has a predicted $K_D$ (a measure of binding affinity) of $6 \\cdot 10^{-14}$ M against the human estrogen receptor, well beyond the affinities of typical early-stage drug candidates and most FDA-approved drugs to their respective targets. Code is available at https://github.com/Rose-STL-Lab/LIMO.",
+          "resolved_arxiv": {
+            "arxiv_id": "2206.09010",
+            "title": "LIMO: Latent Inceptionism for Targeted Molecule Generation",
+            "abstract": "Generation of drug-like molecules with high binding affinity to target proteins remains a difficult and resource-intensive task in drug discovery. Existing approaches primarily employ reinforcement learning, Markov sampling, or deep generative models guided by Gaussian processes, which can be prohibitively slow when generating molecules with high binding affinity calculated by computationally-expensive physics-based methods. We present Latent Inceptionism on Molecules (LIMO), which significantly accelerates molecule generation with an inceptionism-like technique. LIMO employs a variational autoencoder-generated latent space and property prediction by two neural networks in sequence to enable faster gradient-based reverse-optimization of molecular properties. Comprehensive experiments show that LIMO performs competitively on benchmark tasks and markedly outperforms state-of-the-art techniques on the novel task of generating drug-like compounds with high binding affinity, reaching nanomolar range against two protein targets. We corroborate these docking-based results with more accurate molecular dynamics-based calculations of absolute binding free energy and show that one of our generated drug-like compounds has a predicted $K_D$ (a measure of binding affinity) of $6 \\cdot 10^{-14}$ M against the human estrogen receptor, well beyond the affinities of typical early-stage drug candidates and most FDA-approved drugs to their respective targets. Code is available at https://github.com/Rose-STL-Lab/LIMO.",
+            "published": "2022-06-17T21:05:58Z",
+            "source_url": "https://arxiv.org/abs/2206.09010"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "53",
+          "arxiv_id": "1809.02032v1",
+          "title": "Latent Molecular Optimization for Targeted Therapeutic Design",
+          "abstract": "We devise an approach for targeted molecular design, a problem of interest in computational drug discovery: given a target protein site, we wish to generate a chemical with both high binding affinity to the target and satisfactory pharmacological properties. This problem is made difficult by the enormity and discreteness of the space of potential therapeutics, as well as the graph-structured nature of biomolecular surface sites. Using a dataset of protein-ligand complexes, we surmount these issues by extracting a signature of the target site with a graph convolutional network and by encoding the discrete chemical into a continuous latent vector space. The latter embedding permits gradient-based optimization in molecular space, which we perform using learned differentiable models of binding affinity and other pharmacological properties. We show that our approach is able to efficiently optimize these multiple objectives and discover new molecules with potentially useful binding properties, validated via docking methods.",
+          "resolved_arxiv": {
+            "arxiv_id": "1809.02032",
+            "title": "Latent Molecular Optimization for Targeted Therapeutic Design",
+            "abstract": "We devise an approach for targeted molecular design, a problem of interest in computational drug discovery: given a target protein site, we wish to generate a chemical with both high binding affinity to the target and satisfactory pharmacological properties. This problem is made difficult by the enormity and discreteness of the space of potential therapeutics, as well as the graph-structured nature of biomolecular surface sites. Using a dataset of protein-ligand complexes, we surmount these issues by extracting a signature of the target site with a graph convolutional network and by encoding the discrete chemical into a continuous latent vector space. The latter embedding permits gradient-based optimization in molecular space, which we perform using learned differentiable models of binding affinity and other pharmacological properties. We show that our approach is able to efficiently optimize these multiple objectives and discover new molecules with potentially useful binding properties, validated via docking methods.",
+            "published": "2018-09-05T17:19:41Z",
+            "source_url": "https://arxiv.org/abs/1809.02032"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Graph-based generative models treat molecules as attributed graphs, enabling direct enforcement of chemical valence constraints and capturing topological richness inaccessible to linear string representations [56; 57].",
+      "citation_markers": [
+        "[56; 57]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "56",
+          "arxiv_id": "1603.00856v3",
+          "title": "Molecular Graph Convolutions: Moving Beyond Fingerprints",
+          "abstract": "Molecular \"fingerprints\" encoding structural information are the workhorse of cheminformatics and machine learning in drug discovery applications. However, fingerprint representations necessarily emphasize particular aspects of the molecular structure while ignoring others, rather than allowing the model to make data-driven decisions. We describe molecular \"graph convolutions\", a machine learning architecture for learning from undirected graphs, specifically small molecules. Graph convolutions use a simple encoding of the molecular graph---atoms, bonds, distances, etc.---which allows the model to take greater advantage of information in the graph structure. Although graph convolutions do not outperform all fingerprint-based methods, they (along with other graph-based methods) represent a new paradigm in ligand-based virtual screening with exciting opportunities for future improvement.",
+          "resolved_arxiv": {
+            "arxiv_id": "1603.00856",
+            "title": "Molecular Graph Convolutions: Moving Beyond Fingerprints",
+            "abstract": "Molecular \"fingerprints\" encoding structural information are the workhorse of cheminformatics and machine learning in drug discovery applications. However, fingerprint representations necessarily emphasize particular aspects of the molecular structure while ignoring others, rather than allowing the model to make data-driven decisions. We describe molecular \"graph convolutions\", a machine learning architecture for learning from undirected graphs, specifically small molecules. Graph convolutions use a simple encoding of the molecular graph---atoms, bonds, distances, etc.---which allows the model to take greater advantage of information in the graph structure. Although graph convolutions do not outperform all fingerprint-based methods, they (along with other graph-based methods) represent a new paradigm in ligand-based virtual screening with exciting opportunities for future improvement.",
+            "published": "2016-03-02T20:34:08Z",
+            "source_url": "https://arxiv.org/abs/1603.00856"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "57",
+          "arxiv_id": "2303.00313v2",
+          "title": "Deep Learning Methods for Small Molecule Drug Discovery: A Survey",
+          "abstract": "With the development of computer-assisted techniques, research communities including biochemistry and deep learning have been devoted into the drug discovery field for over a decade. Various applications of deep learning have drawn great attention in drug discovery, such as molecule generation, molecular property prediction, retrosynthesis prediction, and reaction prediction. While most existing surveys only focus on one of the applications, limiting the view of researchers in the community. In this paper, we present a comprehensive review on the aforementioned four aspects, and discuss the relationships among different applications. The latest literature and classical benchmarks are presented for better understanding the development of variety of approaches. We commence by summarizing the molecule representation format in these works, followed by an introduction of recent proposed approaches for each of the four tasks. Furthermore, we review a variety of commonly used datasets and evaluation metrics and compare the performance of deep learning-based models. Finally, we conclude by identifying remaining challenges and discussing the future trend for deep learning methods in drug discovery.",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.00313",
+            "title": "Deep Learning Methods for Small Molecule Drug Discovery: A Survey",
+            "abstract": "With the development of computer-assisted techniques, research communities including biochemistry and deep learning have been devoted into the drug discovery field for over a decade. Various applications of deep learning have drawn great attention in drug discovery, such as molecule generation, molecular property prediction, retrosynthesis prediction, and reaction prediction. While most existing surveys only focus on one of the applications, limiting the view of researchers in the community. In this paper, we present a comprehensive review on the aforementioned four aspects, and discuss the relationships among different applications. The latest literature and classical benchmarks are presented for better understanding the development of variety of approaches. We commence by summarizing the molecule representation format in these works, followed by an introduction of recent proposed approaches for each of the four tasks. Furthermore, we review a variety of commonly used datasets and evaluation metrics and compare the performance of deep learning-based models. Finally, we conclude by identifying remaining challenges and discussing the future trend for deep learning methods in drug discovery.",
+            "published": "2023-03-01T08:16:38Z",
+            "source_url": "https://arxiv.org/abs/2303.00313"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "This survey has traced the remarkable transformation of drug discovery through machine learning, from classical fingerprint-based QSAR models to equivariant geometric deep learning, generative architectures, and autonomous closed-loop platforms [2; 3].",
+      "citation_markers": [
+        "[2; 3]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "2",
+          "arxiv_id": "1701.04503v1",
+          "title": "Deep Learning for Computational Chemistry",
+          "abstract": "The rise and fall of artificial neural networks is well documented in the scientific literature of both computer science and computational chemistry. Yet almost two decades later, we are now seeing a resurgence of interest in deep learning, a machine learning algorithm based on multilayer neural networks. Within the last few years, we have seen the transformative impact of deep learning in many domains, particularly in speech recognition and computer vision, to the extent that the majority of expert practitioners in those field are now regularly eschewing prior established models in favor of deep learning models. In this review, we provide an introductory overview into the theory of deep neural networks and their unique properties that distinguish them from traditional machine learning algorithms used in cheminformatics. By providing an overview of the variety of emerging applications of deep neural networks, we highlight its ubiquity and broad applicability to a wide range of challenges in the field, including QSAR, virtual screening, protein structure prediction, quantum chemistry, materials design and property prediction. In reviewing the performance of deep neural networks, we observed a consistent outperformance against non-neural networks state-of-the-art models across disparate research topics, and deep neural network based models often exceeded the \"glass ceiling\" expectations of their respective tasks. Coupled with the maturity of GPU-accelerated computing for training deep neural networks and the exponential growth of chemical data on which to train these networks on, we anticipate that deep learning algorithms will be a valuable tool for computational chemistry.",
+          "resolved_arxiv": {
+            "arxiv_id": "1701.04503",
+            "title": "Deep Learning for Computational Chemistry",
+            "abstract": "The rise and fall of artificial neural networks is well documented in the scientific literature of both computer science and computational chemistry. Yet almost two decades later, we are now seeing a resurgence of interest in deep learning, a machine learning algorithm based on multilayer neural networks. Within the last few years, we have seen the transformative impact of deep learning in many domains, particularly in speech recognition and computer vision, to the extent that the majority of expert practitioners in those field are now regularly eschewing prior established models in favor of deep learning models. In this review, we provide an introductory overview into the theory of deep neural networks and their unique properties that distinguish them from traditional machine learning algorithms used in cheminformatics. By providing an overview of the variety of emerging applications of deep neural networks, we highlight its ubiquity and broad applicability to a wide range of challenges in the field, including QSAR, virtual screening, protein structure prediction, quantum chemistry, materials design and property prediction. In reviewing the performance of deep neural networks, we observed a consistent outperformance against non-neural networks state-of-the-art models across disparate research topics, and deep neural network based models often exceeded the \"glass ceiling\" expectations of their respective tasks. Coupled with the maturity of GPU-accelerated computing for training deep neural networks and the exponential growth of chemical data on which to train these networks on, we anticipate that deep learning algorithms will be a valuable tool for computational chemistry.",
+            "published": "2017-01-17T01:15:14Z",
+            "source_url": "https://arxiv.org/abs/1701.04503"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "3",
+          "arxiv_id": "1703.00564v3",
+          "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+          "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.00564",
+            "title": "MoleculeNet: A Benchmark for Molecular Machine Learning",
+            "abstract": "Molecular machine learning has been maturing rapidly over the last few years. Improved methods and the presence of larger datasets have enabled machine learning algorithms to make increasingly accurate predictions about molecular properties. However, algorithmic progress has been limited due to the lack of a standard benchmark to compare the efficacy of proposed methods; most new algorithms are benchmarked on different datasets making it challenging to gauge the quality of proposed methods. This work introduces MoleculeNet, a large scale benchmark for molecular machine learning. MoleculeNet curates multiple public datasets, establishes metrics for evaluation, and offers high quality open-source implementations of multiple previously proposed molecular featurization and learning algorithms (released as part of the DeepChem open source library). MoleculeNet benchmarks demonstrate that learnable representations are powerful tools for molecular machine learning and broadly offer the best performance. However, this result comes with caveats. Learnable representations still struggle to deal with complex tasks under data scarcity and highly imbalanced classification. For quantum mechanical and biophysical datasets, the use of physics-aware featurizations can be more important than choice of particular learning algorithm.",
+            "published": "2017-03-02T00:39:53Z",
+            "source_url": "https://arxiv.org/abs/1703.00564"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

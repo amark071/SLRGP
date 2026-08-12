@@ -1,0 +1,2950 @@
+{
+  "schema_version": "1.0",
+  "status": "frozen_before_confirmatory_generation",
+  "publication_cutoff": "2023-12-31",
+  "topics": {
+    "mature_neural_machine_translation": {
+      "topic_id": "mature_neural_machine_translation",
+      "title": "Neural Machine Translation",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W2592864539",
+          "doi": "https://doi.org/10.48550/arxiv.1703.01619",
+          "title": "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial",
+          "publication_date": "2017-03-05",
+          "cited_by_count": 121,
+          "n_referenced_works": 97
+        },
+        {
+          "openalex_id": "https://openalex.org/W2992693294",
+          "doi": "https://doi.org/10.1613/jair.1.12007",
+          "title": "Neural Machine Translation: A Review",
+          "publication_date": "2020-10-02",
+          "cited_by_count": 5,
+          "n_referenced_works": 330
+        },
+        {
+          "openalex_id": "https://openalex.org/W3005724337",
+          "doi": "https://doi.org/10.48550/arxiv.2002.07526",
+          "title": "A Survey of Deep Learning Techniques for Neural Machine Translation",
+          "publication_date": "2020-02-18",
+          "cited_by_count": 98,
+          "n_referenced_works": 133
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W1753482797",
+          "doi": "https://doi.org/10.18653/v1/d13-1176",
+          "title": "Recurrent Continuous Translation Models",
+          "publication_date": "2013-01-01",
+          "cited_by_count": 1346,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2529548870",
+          "doi": "https://doi.org/10.18653/v1/e17-1099",
+          "title": "Learning to Translate in Real-time with Neural Machine Translation",
+          "publication_date": "2017-01-01",
+          "cited_by_count": 189,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2311921240",
+          "doi": "https://doi.org/10.18653/v1/p16-1160",
+          "title": "A Character-level Decoder without Explicit Segmentation for Neural Machine Translation",
+          "publication_date": "2016-01-01",
+          "cited_by_count": 182,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2194775991",
+          "doi": "https://doi.org/10.1109/cvpr.2016.90",
+          "title": "Deep Residual Learning for Image Recognition",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 223533,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2064675550",
+          "doi": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "title": "Long Short-Term Memory",
+          "publication_date": "1997-11-01",
+          "cited_by_count": 98999,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2112796928",
+          "doi": "https://doi.org/10.1109/5.726791",
+          "title": "Gradient-based learning applied to document recognition",
+          "publication_date": "1998-01-01",
+          "cited_by_count": 58559,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2157331557",
+          "doi": "https://doi.org/10.3115/v1/d14-1179",
+          "title": "Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation",
+          "publication_date": "2014-01-01",
+          "cited_by_count": 24604,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2130942839",
+          "doi": "https://doi.org/10.48550/arxiv.1409.3215",
+          "title": "Sequence to Sequence Learning with Neural Networks",
+          "publication_date": "2014-09-10",
+          "cited_by_count": 13360,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2950577311",
+          "doi": null,
+          "title": "Efficient Estimation of Word Representations in Vector Space",
+          "publication_date": "2013-01-16",
+          "cited_by_count": 11737,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2110485445",
+          "doi": "https://doi.org/10.1207/s15516709cog1402_1",
+          "title": "Finding Structure in Time",
+          "publication_date": "1990-03-01",
+          "cited_by_count": 10896,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1924770834",
+          "doi": "https://doi.org/10.48550/arxiv.1412.3555",
+          "title": "Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling",
+          "publication_date": "2014-12-11",
+          "cited_by_count": 10809,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1902237438",
+          "doi": "https://doi.org/10.18653/v1/d15-1166",
+          "title": "Effective Approaches to Attention-based Neural Machine Translation",
+          "publication_date": "2015-01-01",
+          "cited_by_count": 8593,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1514535095",
+          "doi": "https://doi.org/10.48550/arxiv.1502.03044",
+          "title": "Show, Attend and Tell: Neural Image Caption Generation with Visual Attention",
+          "publication_date": "2015-02-10",
+          "cited_by_count": 7527,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2525778437",
+          "doi": "https://doi.org/10.48550/arxiv.1609.08144",
+          "title": "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation",
+          "publication_date": "2016-09-26",
+          "cited_by_count": 5673,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2006969979",
+          "doi": null,
+          "title": "The mathematics of statistical machine translation: parameter estimation",
+          "publication_date": "1993-06-01",
+          "cited_by_count": 4126,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2120615054",
+          "doi": "https://doi.org/10.3115/v1/p14-1062",
+          "title": "A Convolutional Neural Network for Modelling Sentences",
+          "publication_date": "2014-01-01",
+          "cited_by_count": 3564,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2117671523",
+          "doi": "https://doi.org/10.1109/29.21701",
+          "title": "Phoneme recognition using time-delay neural networks",
+          "publication_date": "1989-03-01",
+          "cited_by_count": 2642,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2550821151",
+          "doi": "https://doi.org/10.1162/tacl_a_00065",
+          "title": "Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation",
+          "publication_date": "2017-12-01",
+          "cited_by_count": 1747,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1971844566",
+          "doi": "https://doi.org/10.1016/0004-3702(90)90005-k",
+          "title": "Recursive distributed representations",
+          "publication_date": "1990-11-01",
+          "cited_by_count": 874,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2100664567",
+          "doi": "https://doi.org/10.3115/v1/p15-1001",
+          "title": "On Using Very Large Target Vocabulary for Neural Machine Translation",
+          "publication_date": "2015-01-01",
+          "cited_by_count": 873,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2251682575",
+          "doi": "https://doi.org/10.3115/v1/p14-1129",
+          "title": "Fast and Robust Neural Network Joint Models for Statistical Machine Translation",
+          "publication_date": "2014-01-01",
+          "cited_by_count": 491,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1586532344",
+          "doi": "https://doi.org/10.48550/arxiv.1412.1602",
+          "title": "End-to-end Continuous Speech Recognition using Attention-based Recurrent NN: First Results",
+          "publication_date": "2014-12-04",
+          "cited_by_count": 416,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2540404261",
+          "doi": "https://doi.org/10.48550/arxiv.1610.10099",
+          "title": "Neural Machine Translation in Linear Time",
+          "publication_date": "2016-10-31",
+          "cited_by_count": 317,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2789541106",
+          "doi": "https://doi.org/10.18653/v1/n18-2074",
+          "title": "Self-Attention with Relative Position Representations",
+          "publication_date": "2018-01-01",
+          "cited_by_count": 272,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2555428947",
+          "doi": "https://doi.org/10.18653/v1/d17-1039",
+          "title": "Unsupervised Pretraining for Sequence to Sequence Learning",
+          "publication_date": "2017-01-01",
+          "cited_by_count": 259,
+          "source_review_frequency": 2
+        }
+      ]
+    },
+    "mature_deep_reinforcement_learning": {
+      "topic_id": "mature_deep_reinforcement_learning",
+      "title": "Deep Reinforcement Learning",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W2580175322",
+          "doi": "https://doi.org/10.48550/arxiv.1701.07274",
+          "title": "Deep Reinforcement Learning: An Overview",
+          "publication_date": "2017-01-25",
+          "cited_by_count": 546,
+          "n_referenced_works": 399
+        },
+        {
+          "openalex_id": "https://openalex.org/W3100789280",
+          "doi": "https://doi.org/10.1109/msp.2017.2743240",
+          "title": "Deep Reinforcement Learning: A Brief Survey",
+          "publication_date": "2017-11-01",
+          "cited_by_count": 4329,
+          "n_referenced_works": 252
+        },
+        {
+          "openalex_id": "https://openalex.org/W3100366369",
+          "doi": "https://doi.org/10.1561/2200000071",
+          "title": "An Introduction to Deep Reinforcement Learning",
+          "publication_date": "2018-12-20",
+          "cited_by_count": 1265,
+          "n_referenced_works": 104
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W2145339207",
+          "doi": "https://doi.org/10.1038/nature14236",
+          "title": "Human-level control through deep reinforcement learning",
+          "publication_date": "2015-02-24",
+          "cited_by_count": 30260,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2173564293",
+          "doi": "https://doi.org/10.48550/arxiv.1511.06581",
+          "title": "Dueling Network Architectures for Deep Reinforcement Learning",
+          "publication_date": "2015-11-20",
+          "cited_by_count": 1816,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W779494576",
+          "doi": "https://doi.org/10.48550/arxiv.1507.00814",
+          "title": "Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models",
+          "publication_date": "2015-07-03",
+          "cited_by_count": 304,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2919115771",
+          "doi": "https://doi.org/10.1038/nature14539",
+          "title": "Deep learning",
+          "publication_date": "2015-05-26",
+          "cited_by_count": 82364,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2121863487",
+          "doi": "https://doi.org/10.1109/tnn.2004.842673",
+          "title": "Reinforcement Learning: An Introduction",
+          "publication_date": "2005-01-01",
+          "cited_by_count": 25794,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2099471712",
+          "doi": "https://doi.org/10.3156/jsoft.29.5_177_2",
+          "title": "GAN（Generative Adversarial Nets）",
+          "publication_date": "2017-10-15",
+          "cited_by_count": 21802,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2257979135",
+          "doi": "https://doi.org/10.1038/nature16961",
+          "title": "Mastering the game of Go with deep neural networks and tree search",
+          "publication_date": "2016-01-26",
+          "cited_by_count": 15887,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1959608418",
+          "doi": "https://doi.org/10.48550/arxiv.1312.6114",
+          "title": "Auto-Encoding Variational Bayes",
+          "publication_date": "2013-12-20",
+          "cited_by_count": 15629,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2736601468",
+          "doi": "https://doi.org/10.4230/oasics.dx.2024.16",
+          "title": "Diagnosing Non-Intermittent Anomalies in Reinforcement Learning Policy Executions (Short Paper)",
+          "publication_date": "2017-07-20",
+          "cited_by_count": 11342,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2119717200",
+          "doi": "https://doi.org/10.1007/bf00992696",
+          "title": "Simple statistical gradient-following algorithms for connectionist reinforcement learning",
+          "publication_date": "1992-05-01",
+          "cited_by_count": 7471,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963864421",
+          "doi": null,
+          "title": "Continuous control with deep reinforcement learning",
+          "publication_date": "2016-07-22",
+          "cited_by_count": 6787,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2553303224",
+          "doi": "https://doi.org/10.48550/arxiv.1611.01578",
+          "title": "Neural Architecture Search with Reinforcement Learning",
+          "publication_date": "2016-11-05",
+          "cited_by_count": 3871,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2109910161",
+          "doi": "https://doi.org/10.1016/s0004-3702(99)00052-1",
+          "title": "Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning",
+          "publication_date": "1999-08-01",
+          "cited_by_count": 3162,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2951527505",
+          "doi": null,
+          "title": "Recurrent Models of Visual Attention",
+          "publication_date": "2014-06-24",
+          "cited_by_count": 2277,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2099618002",
+          "doi": "https://doi.org/10.1109/tsmcc.2007.913919",
+          "title": "A Comprehensive Survey of Multiagent Reinforcement Learning",
+          "publication_date": "2008-02-27",
+          "cited_by_count": 2205,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2061562262",
+          "doi": "https://doi.org/10.2460/ajvr.67.2.323",
+          "title": "Pharmacokinetics of a novel formulation of ivermectin after administration to goats",
+          "publication_date": "2006-02-01",
+          "cited_by_count": 1782,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2165150801",
+          "doi": null,
+          "title": "Deterministic policy gradient algorithms",
+          "publication_date": "2014-01-01",
+          "cited_by_count": 1742,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2964161785",
+          "doi": null,
+          "title": "End-to-end training of deep visuomotor policies",
+          "publication_date": "2016-01-01",
+          "cited_by_count": 1715,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2141559645",
+          "doi": "https://doi.org/10.1007/bf00992699",
+          "title": "Self-improving reactive agents based on reinforcement learning, planning and teaching",
+          "publication_date": "1992-05-01",
+          "cited_by_count": 1653,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2962887844",
+          "doi": "https://doi.org/10.1109/icra.2017.7989381",
+          "title": "Target-driven visual navigation in indoor scenes using deep reinforcement learning",
+          "publication_date": "2017-05-01",
+          "cited_by_count": 1512,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2139418546",
+          "doi": "https://doi.org/10.1109/9.580874",
+          "title": "An analysis of temporal-difference learning with function approximation",
+          "publication_date": "1997-05-01",
+          "cited_by_count": 1226,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2596367596",
+          "doi": "https://doi.org/10.48550/arxiv.1703.03864",
+          "title": "Evolution Strategies as a Scalable Alternative to Reinforcement Learning",
+          "publication_date": "2017-03-10",
+          "cited_by_count": 1026,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2342662072",
+          "doi": "https://doi.org/10.48550/arxiv.1604.06778",
+          "title": "Benchmarking Deep Reinforcement Learning for Continuous Control",
+          "publication_date": "2016-04-22",
+          "cited_by_count": 973,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2176263492",
+          "doi": "https://doi.org/10.48550/arxiv.1511.06732",
+          "title": "Sequence Level Training with Recurrent Neural Networks",
+          "publication_date": "2015-11-20",
+          "cited_by_count": 949,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2395575420",
+          "doi": "https://doi.org/10.48550/arxiv.1605.06676",
+          "title": "Learning to Communicate with Deep Multi-Agent Reinforcement Learning",
+          "publication_date": "2016-05-21",
+          "cited_by_count": 871,
+          "source_review_frequency": 2
+        }
+      ]
+    },
+    "mature_adversarial_robustness": {
+      "topic_id": "mature_adversarial_robustness",
+      "title": "Adversarial Robustness of Deep Neural Networks",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W2962700793",
+          "doi": "https://doi.org/10.1109/access.2018.2807385",
+          "title": "Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey",
+          "publication_date": "2018-01-01",
+          "cited_by_count": 2052,
+          "n_referenced_works": 252
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963178695",
+          "doi": "https://doi.org/10.1109/tnnls.2018.2886017",
+          "title": "Adversarial Examples: Attacks and Defenses for Deep Learning",
+          "publication_date": "2019-01-14",
+          "cited_by_count": 1752,
+          "n_referenced_works": 200
+        },
+        {
+          "openalex_id": "https://openalex.org/W4285729166",
+          "doi": "https://doi.org/10.1145/3547330",
+          "title": "Adversarial Attacks and Defenses in Deep Learning: From a Perspective of Cybersecurity",
+          "publication_date": "2022-07-18",
+          "cited_by_count": 144,
+          "n_referenced_works": 91
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W2183341477",
+          "doi": "https://doi.org/10.1109/cvpr.2016.308",
+          "title": "Rethinking the Inception Architecture for Computer Vision",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 31091,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2746600820",
+          "doi": "https://doi.org/10.1145/3128572.3140448",
+          "title": "ZOO",
+          "publication_date": "2017-11-03",
+          "cited_by_count": 1751,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2513314332",
+          "doi": "https://doi.org/10.48550/arxiv.1608.07690",
+          "title": "A Boundary Tilting Persepective on the Phenomenon of Adversarial Examples",
+          "publication_date": "2016-08-27",
+          "cited_by_count": 136,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W4295803779",
+          "doi": "https://doi.org/10.48550/arxiv.1608.07690",
+          "title": "A Boundary Tilting Persepective on the Phenomenon of Adversarial\\n Examples",
+          "publication_date": "2016-08-27",
+          "cited_by_count": 98,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2194775991",
+          "doi": "https://doi.org/10.1109/cvpr.2016.90",
+          "title": "Deep Residual Learning for Image Recognition",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 223533,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2163605009",
+          "doi": "https://doi.org/10.1145/3065386",
+          "title": "ImageNet classification with deep convolutional neural networks",
+          "publication_date": "2017-05-24",
+          "cited_by_count": 75715,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1686810756",
+          "doi": "https://doi.org/10.48550/arxiv.1409.1556",
+          "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+          "publication_date": "2014-09-04",
+          "cited_by_count": 75542,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2112796928",
+          "doi": "https://doi.org/10.1109/5.726791",
+          "title": "Gradient-based learning applied to document recognition",
+          "publication_date": "1998-01-01",
+          "cited_by_count": 58559,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W639708223",
+          "doi": "https://doi.org/10.1109/tpami.2016.2577031",
+          "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+          "publication_date": "2016-06-06",
+          "cited_by_count": 54579,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2097117768",
+          "doi": "https://doi.org/10.1109/cvpr.2015.7298594",
+          "title": "Going deeper with convolutions",
+          "publication_date": "2015-06-01",
+          "cited_by_count": 46947,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2117539524",
+          "doi": "https://doi.org/10.1007/s11263-015-0816-y",
+          "title": "ImageNet Large Scale Visual Recognition Challenge",
+          "publication_date": "2015-04-10",
+          "cited_by_count": 40318,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1903029394",
+          "doi": "https://doi.org/10.1109/cvpr.2015.7298965",
+          "title": "Fully convolutional networks for semantic segmentation",
+          "publication_date": "2015-06-01",
+          "cited_by_count": 37041,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2570343428",
+          "doi": "https://doi.org/10.1109/cvpr.2017.690",
+          "title": "YOLO9000: Better, Faster, Stronger",
+          "publication_date": "2017-07-01",
+          "cited_by_count": 19045,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2613718673",
+          "doi": "https://doi.org/10.48550/arxiv.1506.01497",
+          "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+          "publication_date": "2015-06-04",
+          "cited_by_count": 18240,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1821462560",
+          "doi": "https://doi.org/10.48550/arxiv.1503.02531",
+          "title": "Distilling the Knowledge in a Neural Network",
+          "publication_date": "2015-03-09",
+          "cited_by_count": 13985,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2130942839",
+          "doi": "https://doi.org/10.48550/arxiv.1409.3215",
+          "title": "Sequence to Sequence Learning with Neural Networks",
+          "publication_date": "2014-09-10",
+          "cited_by_count": 13360,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1945616565",
+          "doi": "https://doi.org/10.48550/arxiv.1412.6572",
+          "title": "Explaining and Harnessing Adversarial Examples",
+          "publication_date": "2014-12-20",
+          "cited_by_count": 8152,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1673923490",
+          "doi": "https://doi.org/10.48550/arxiv.1312.6199",
+          "title": "Intriguing properties of neural networks",
+          "publication_date": "2013-12-21",
+          "cited_by_count": 5744,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2243397390",
+          "doi": "https://doi.org/10.1109/cvpr.2016.282",
+          "title": "DeepFool: A Simple and Accurate Method to Fool Deep Neural Networks",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 5337,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2535690855",
+          "doi": "https://doi.org/10.1109/sp.2017.41",
+          "title": "Membership Inference Attacks Against Machine Learning Models",
+          "publication_date": "2017-05-01",
+          "cited_by_count": 4283,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2180612164",
+          "doi": "https://doi.org/10.1109/eurosp.2016.36",
+          "title": "The Limitations of Deep Learning in Adversarial Settings",
+          "publication_date": "2016-03-01",
+          "cited_by_count": 3929,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1932198206",
+          "doi": "https://doi.org/10.1109/cvpr.2015.7298640",
+          "title": "Deep neural networks are easily fooled: High confidence predictions for unrecognizable images",
+          "publication_date": "2015-06-01",
+          "cited_by_count": 3314,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2774644650",
+          "doi": "https://doi.org/10.1109/cvpr.2018.00957",
+          "title": "Boosting Adversarial Attacks with Momentum",
+          "publication_date": "2018-06-01",
+          "cited_by_count": 2967,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2543927648",
+          "doi": "https://doi.org/10.1109/cvpr.2017.17",
+          "title": "Universal Adversarial Perturbations",
+          "publication_date": "2017-07-01",
+          "cited_by_count": 2717,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963744840",
+          "doi": null,
+          "title": "Ensemble Adversarial Training: Attacks and Defenses",
+          "publication_date": "2017-05-19",
+          "cited_by_count": 1866,
+          "source_review_frequency": 2
+        }
+      ]
+    },
+    "fast_text_to_image_diffusion": {
+      "topic_id": "fast_text_to_image_diffusion",
+      "title": "Text-to-Image Diffusion Models",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W4327525621",
+          "doi": "https://doi.org/10.48550/arxiv.2303.07909",
+          "title": "Text-to-image Diffusion Models in Generative AI: A Survey",
+          "publication_date": "2023-03-14",
+          "cited_by_count": 79,
+          "n_referenced_works": 0
+        },
+        {
+          "openalex_id": "https://openalex.org/W4386552375",
+          "doi": "https://doi.org/10.48550/arxiv.2309.00810",
+          "title": "RenAIssance: A Survey into AI Text-to-Image Generation in the Era of Large Model",
+          "publication_date": "2023-09-02",
+          "cited_by_count": 10,
+          "n_referenced_works": 0
+        },
+        {
+          "openalex_id": "https://openalex.org/W4360884927",
+          "doi": "https://doi.org/10.1109/tpami.2023.3261988",
+          "title": "Diffusion Models in Vision: A Survey",
+          "publication_date": "2023-03-27",
+          "cited_by_count": 1660,
+          "n_referenced_works": 259
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W1901129140",
+          "doi": "https://doi.org/10.1007/978-3-319-24574-4_28",
+          "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+          "publication_date": "2015-01-01",
+          "cited_by_count": 89647,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4385245566",
+          "doi": "https://doi.org/10.4230/lipics.itp.2023.19",
+          "title": "Inline Hardware KV-Cache Compression for Long-Context Transformer Inference: An Architectural Case for a Memory-Path Compression Engine",
+          "publication_date": "2023-01-01",
+          "cited_by_count": 76992,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2100495367",
+          "doi": "https://doi.org/10.1126/science.1127647",
+          "title": "Reducing the Dimensionality of Data with Neural Networks",
+          "publication_date": "2006-07-27",
+          "cited_by_count": 21033,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4320013936",
+          "doi": "https://doi.org/10.1007/978-3-658-40442-0_9",
+          "title": "Generative Adversarial Nets",
+          "publication_date": "2023-01-01",
+          "cited_by_count": 19942,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W1959608418",
+          "doi": "https://doi.org/10.48550/arxiv.1312.6114",
+          "title": "Auto-Encoding Variational Bayes",
+          "publication_date": "2013-12-20",
+          "cited_by_count": 15629,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4312933868",
+          "doi": "https://doi.org/10.1109/cvpr52688.2022.01042",
+          "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "publication_date": "2022-06-01",
+          "cited_by_count": 13950,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2163922914",
+          "doi": "https://doi.org/10.1109/tpami.2013.50",
+          "title": "Representation Learning: A Review and New Perspectives",
+          "publication_date": "2013-05-31",
+          "cited_by_count": 13076,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2464708700",
+          "doi": "https://doi.org/10.1007/978-3-319-46723-8_49",
+          "title": "3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation",
+          "publication_date": "2016-01-01",
+          "cited_by_count": 7711,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963684088",
+          "doi": "https://doi.org/10.48550/arxiv.1511.06434",
+          "title": "Unsupervised Representation Learning with Deep Convolutional Generative\\n Adversarial Networks",
+          "publication_date": "2015-11-19",
+          "cited_by_count": 7678,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W3005680577",
+          "doi": "https://doi.org/10.48550/arxiv.2002.05709",
+          "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+          "publication_date": "2020-02-13",
+          "cited_by_count": 7340,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W3036167779",
+          "doi": "https://doi.org/10.48550/arxiv.2006.11239",
+          "title": "Denoising Diffusion Probabilistic Models",
+          "publication_date": "2020-06-19",
+          "cited_by_count": 5649,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4297808394",
+          "doi": "https://doi.org/10.48550/arxiv.1807.03748",
+          "title": "Representation Learning with Contrastive Predictive Coding",
+          "publication_date": "2018-07-10",
+          "cited_by_count": 4538,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2842511635",
+          "doi": null,
+          "title": "Representation Learning with Contrastive Predictive Coding",
+          "publication_date": "2018-07-10",
+          "cited_by_count": 3770,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2753738274",
+          "doi": null,
+          "title": "beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework",
+          "publication_date": "2017-04-24",
+          "cited_by_count": 3103,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2962974533",
+          "doi": "https://doi.org/10.1109/cvpr.2019.00244",
+          "title": "Semantic Image Synthesis With Spatially-Adaptive Normalization",
+          "publication_date": "2019-06-01",
+          "cited_by_count": 2845,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2953070460",
+          "doi": "https://doi.org/10.48550/arxiv.1703.01780",
+          "title": "Mean teachers are better role models: Weight-averaged consistency\\n targets improve semi-supervised deep learning results",
+          "publication_date": "2017-03-06",
+          "cited_by_count": 2532,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4224035735",
+          "doi": "https://doi.org/10.48550/arxiv.2204.06125",
+          "title": "Hierarchical Text-Conditional Image Generation with CLIP Latents",
+          "publication_date": "2022-04-13",
+          "cited_by_count": 2289,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W3162926177",
+          "doi": "https://doi.org/10.48550/arxiv.2105.05233",
+          "title": "Diffusion Models Beat GANs on Image Synthesis",
+          "publication_date": "2021-05-11",
+          "cited_by_count": 2179,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4281485151",
+          "doi": "https://doi.org/10.48550/arxiv.2205.11487",
+          "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+          "publication_date": "2022-05-23",
+          "cited_by_count": 2109,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2752796333",
+          "doi": null,
+          "title": "Neural Discrete Representation Learning.",
+          "publication_date": "2017-11-02",
+          "cited_by_count": 1969,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963799213",
+          "doi": "https://doi.org/10.48550/arxiv.1711.00937",
+          "title": "Neural Discrete Representation Learning",
+          "publication_date": "2017-11-02",
+          "cited_by_count": 1929,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W3036224891",
+          "doi": "https://doi.org/10.48550/arxiv.2006.09882",
+          "title": "Unsupervised Learning of Visual Features by Contrasting Cluster Assignments",
+          "publication_date": "2020-06-17",
+          "cited_by_count": 1911,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W3155072588",
+          "doi": "https://doi.org/10.1109/tpami.2022.3204461",
+          "title": "Image Super-Resolution Via Iterative Refinement",
+          "publication_date": "2022-01-01",
+          "cited_by_count": 1650,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W2423557781",
+          "doi": null,
+          "title": "Conditional Image Generation with PixelCNN Decoders",
+          "publication_date": "2016-06-16",
+          "cited_by_count": 1589,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W3212516020",
+          "doi": "https://doi.org/10.1145/3528233.3530757",
+          "title": "Palette: Image-to-Image Diffusion Models",
+          "publication_date": "2022-07-20",
+          "cited_by_count": 1516,
+          "source_review_frequency": 1
+        }
+      ]
+    },
+    "fast_vision_language_pretraining": {
+      "topic_id": "fast_vision_language_pretraining",
+      "title": "Vision-Language Pretraining",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W4225832925",
+          "doi": "https://doi.org/10.1007/s11633-022-1369-5",
+          "title": "VLP: A Survey on Vision-language Pre-training",
+          "publication_date": "2023-01-10",
+          "cited_by_count": 242,
+          "n_referenced_works": 156
+        },
+        {
+          "openalex_id": "https://openalex.org/W4225683910",
+          "doi": "https://doi.org/10.24963/ijcai.2022/762",
+          "title": "A Survey of Vision-Language Pre-Trained Models",
+          "publication_date": "2022-07-01",
+          "cited_by_count": 141,
+          "n_referenced_works": 50
+        },
+        {
+          "openalex_id": "https://openalex.org/W4312810944",
+          "doi": "https://doi.org/10.1561/0600000105",
+          "title": "Vision-Language Pre-Training: Basics, Recent Advances, and Future Trends",
+          "publication_date": "2022-12-05",
+          "cited_by_count": 147,
+          "n_referenced_works": 291
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W1861492603",
+          "doi": "https://doi.org/10.1007/978-3-319-10602-1_48",
+          "title": "Microsoft COCO: Common Objects in Context",
+          "publication_date": "2014-01-01",
+          "cited_by_count": 42445,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2277195237",
+          "doi": "https://doi.org/10.1007/s11263-016-0981-7",
+          "title": "Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations",
+          "publication_date": "2017-02-06",
+          "cited_by_count": 5221,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2970231061",
+          "doi": "https://doi.org/10.18653/v1/d19-1514",
+          "title": "LXMERT: Learning Cross-Modality Encoder Representations from Transformers",
+          "publication_date": "2019-01-01",
+          "cited_by_count": 2286,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W3090449556",
+          "doi": "https://doi.org/10.1007/978-3-030-58577-8_7",
+          "title": "UNITER: UNiversal Image-TExt Representation Learning",
+          "publication_date": "2020-01-01",
+          "cited_by_count": 1858,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2886641317",
+          "doi": "https://doi.org/10.18653/v1/p18-1238",
+          "title": "Conceptual Captions: A Cleaned, Hypernymed, Image Alt-text Dataset For Automatic Image Captioning",
+          "publication_date": "2018-01-01",
+          "cited_by_count": 1817,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2997591391",
+          "doi": "https://doi.org/10.1609/aaai.v34i07.7005",
+          "title": "Unified Vision-Language Pre-Training for Image Captioning and VQA",
+          "publication_date": "2020-04-03",
+          "cited_by_count": 841,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2998356391",
+          "doi": "https://doi.org/10.1609/aaai.v34i07.6795",
+          "title": "Unicoder-VL: A Universal Encoder for Vision and Language by Cross-Modal Pre-Training",
+          "publication_date": "2020-04-03",
+          "cited_by_count": 746,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W4312877428",
+          "doi": "https://doi.org/10.1109/cvpr52688.2022.01522",
+          "title": "Vision-Language Pre-Training with Triple Contrastive Learning",
+          "publication_date": "2022-06-01",
+          "cited_by_count": 271,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W3184784418",
+          "doi": "https://doi.org/10.1109/cvpr46437.2021.01278",
+          "title": "Seeing Out of tHe bOx: End-to-End Pre-training for Vision-Language Representation Learning",
+          "publication_date": "2021-06-01",
+          "cited_by_count": 216,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2194775991",
+          "doi": "https://doi.org/10.1109/cvpr.2016.90",
+          "title": "Deep Residual Learning for Image Recognition",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 223533,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2108598243",
+          "doi": "https://doi.org/10.1109/cvpr.2009.5206848",
+          "title": "ImageNet: A large-scale hierarchical image database",
+          "publication_date": "2009-06-01",
+          "cited_by_count": 62119,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1895577753",
+          "doi": "https://doi.org/10.1109/cvpr.2015.7298935",
+          "title": "Show and tell: A neural image caption generator",
+          "publication_date": "2015-06-01",
+          "cited_by_count": 6386,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2745461083",
+          "doi": "https://doi.org/10.1109/cvpr.2018.00636",
+          "title": "Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering",
+          "publication_date": "2018-06-01",
+          "cited_by_count": 5104,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1933349210",
+          "doi": "https://doi.org/10.1109/iccv.2015.279",
+          "title": "VQA: Visual Question Answering",
+          "publication_date": "2015-12-01",
+          "cited_by_count": 4318,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2990503944",
+          "doi": "https://doi.org/10.1109/iccv.2019.00630",
+          "title": "SlowFast Networks for Video Recognition",
+          "publication_date": "2019-10-01",
+          "cited_by_count": 3636,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2560730294",
+          "doi": "https://doi.org/10.1109/cvpr.2017.670",
+          "title": "Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering",
+          "publication_date": "2017-07-01",
+          "cited_by_count": 2211,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2966715458",
+          "doi": "https://doi.org/10.48550/arxiv.1908.02265",
+          "title": "ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks",
+          "publication_date": "2019-08-06",
+          "cited_by_count": 1675,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W3091588028",
+          "doi": "https://doi.org/10.1007/978-3-030-58577-8_8",
+          "title": "Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks",
+          "publication_date": "2020-01-01",
+          "cited_by_count": 1533,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2962964995",
+          "doi": "https://doi.org/10.1007/978-3-030-01225-0_13",
+          "title": "Stacked Cross Attention for Image-Text Matching",
+          "publication_date": "2018-01-01",
+          "cited_by_count": 1344,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2968124245",
+          "doi": "https://doi.org/10.48550/arxiv.1908.03557",
+          "title": "VisualBERT: A Simple and Performant Baseline for Vision and Language",
+          "publication_date": "2019-08-09",
+          "cited_by_count": 1236,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W3126337491",
+          "doi": "https://doi.org/10.48550/arxiv.2102.05918",
+          "title": "Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision",
+          "publication_date": "2021-02-11",
+          "cited_by_count": 1196,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2981851019",
+          "doi": "https://doi.org/10.1109/iccv.2019.00756",
+          "title": "VideoBERT: A Joint Model for Video and Language Representation Learning",
+          "publication_date": "2019-10-01",
+          "cited_by_count": 1129,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2109586012",
+          "doi": null,
+          "title": "Im2Text: Describing Images Using 1 Million Captioned Photographs",
+          "publication_date": "2011-12-12",
+          "cited_by_count": 944,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2984008963",
+          "doi": "https://doi.org/10.48550/arxiv.1906.03327",
+          "title": "HowTo100M: Learning a Text-Video Embedding by Watching Hundred Million\\n Narrated Video Clips",
+          "publication_date": "2019-06-07",
+          "cited_by_count": 918,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W3173220247",
+          "doi": "https://doi.org/10.1109/cvpr46437.2021.00553",
+          "title": "VinVL: Revisiting Visual Representations in Vision-Language Models",
+          "publication_date": "2021-06-01",
+          "cited_by_count": 869,
+          "source_review_frequency": 2
+        }
+      ]
+    },
+    "fast_large_language_model_agents": {
+      "topic_id": "fast_large_language_model_agents",
+      "title": "Large Language Model Agents",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": "Registered arXiv identifiers deterministically extracted from frozen review source when OpenAlex omitted its bibliography"
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W4386184788",
+          "doi": "https://doi.org/10.48550/arxiv.2308.11432",
+          "title": "A Survey on Large Language Model based Autonomous Agents",
+          "publication_date": "2023-08-22",
+          "cited_by_count": 114,
+          "n_referenced_works": 0
+        },
+        {
+          "openalex_id": "https://openalex.org/W4386794445",
+          "doi": "https://doi.org/10.48550/arxiv.2309.07864",
+          "title": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+          "publication_date": "2023-09-14",
+          "cited_by_count": 254,
+          "n_referenced_works": 0
+        },
+        {
+          "openalex_id": "https://openalex.org/W4390046143",
+          "doi": "https://doi.org/10.48550/arxiv.2312.11970",
+          "title": "Large Language Models Empowered Agent-based Modeling and Simulation: A Survey and Perspectives",
+          "publication_date": "2023-12-19",
+          "cited_by_count": 11,
+          "n_referenced_works": 0
+        }
+      ],
+      "fallback_reference_arxiv_ids": [
+        "1509.02971",
+        "1707.06347",
+        "2303.08774",
+        "2302.13971",
+        "2307.09288",
+        "2307.16789",
+        "2305.17144",
+        "2306.00924",
+        "2307.07924",
+        "2306.02552",
+        "2307.02485",
+        "2308.00352",
+        "2304.07590",
+        "2307.00184",
+        "2304.05335",
+        "2305.12647",
+        "2302.01560",
+        "2308.04026",
+        "2304.13343",
+        "2308.03983",
+        "2305.16291",
+        "2305.10250",
+        "2306.03901",
+        "2305.14322",
+        "2301.04589",
+        "2308.10144",
+        "2305.18323",
+        "2203.11171",
+        "2308.14296",
+        "2308.09687",
+        "2308.10379",
+        "2305.14992",
+        "2304.11477",
+        "2308.06391",
+        "2207.05608",
+        "2308.01552",
+        "2305.14323",
+        "2112.09332",
+        "2308.03427",
+        "2305.15334",
+        "2304.08244",
+        "2306.06624",
+        "2205.00445",
+        "2303.08128",
+        "2304.05376",
+        "2303.11381",
+        "2307.14984",
+        "2204.01691",
+        "2303.17760",
+        "2305.16960"
+      ],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W2173248099",
+          "doi": "https://doi.org/10.48550/arxiv.1509.02971",
+          "title": "Continuous control with deep reinforcement learning",
+          "publication_date": "2015-09-09",
+          "cited_by_count": 5381,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4322718191",
+          "doi": "https://doi.org/10.48550/arxiv.2302.13971",
+          "title": "LLaMA: Open and Efficient Foundation Language Models",
+          "publication_date": "2023-02-27",
+          "cited_by_count": 3921,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4384918448",
+          "doi": "https://doi.org/10.48550/arxiv.2307.09288",
+          "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+          "publication_date": "2023-07-18",
+          "cited_by_count": 2638,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4221161695",
+          "doi": "https://doi.org/10.48550/arxiv.2203.11171",
+          "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+          "publication_date": "2022-03-21",
+          "cited_by_count": 702,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4224912544",
+          "doi": "https://doi.org/10.48550/arxiv.2204.01691",
+          "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+          "publication_date": "2022-04-04",
+          "cited_by_count": 519,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4285428875",
+          "doi": "https://doi.org/10.48550/arxiv.2207.05608",
+          "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+          "publication_date": "2022-07-12",
+          "cited_by_count": 207,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4378505261",
+          "doi": "https://doi.org/10.48550/arxiv.2305.16291",
+          "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+          "publication_date": "2023-05-25",
+          "cited_by_count": 200,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4385963839",
+          "doi": "https://doi.org/10.48550/arxiv.2308.00352",
+          "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+          "publication_date": "2023-08-01",
+          "cited_by_count": 145,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4365597205",
+          "doi": "https://doi.org/10.48550/arxiv.2304.05376",
+          "title": "ChemCrow: Augmenting large-language models with chemistry tools",
+          "publication_date": "2023-04-11",
+          "cited_by_count": 134,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4362508448",
+          "doi": "https://doi.org/10.48550/arxiv.2303.17760",
+          "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+          "publication_date": "2023-03-31",
+          "cited_by_count": 99,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4378474282",
+          "doi": "https://doi.org/10.48550/arxiv.2305.15334",
+          "title": "Gorilla: Large Language Model Connected with Massive APIs",
+          "publication_date": "2023-05-24",
+          "cited_by_count": 85,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4366999541",
+          "doi": "https://doi.org/10.48550/arxiv.2304.11477",
+          "title": "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency",
+          "publication_date": "2023-04-22",
+          "cited_by_count": 84,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4353113046",
+          "doi": "https://doi.org/10.48550/arxiv.2303.11381",
+          "title": "MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action",
+          "publication_date": "2023-03-20",
+          "cited_by_count": 79,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4385474529",
+          "doi": "https://doi.org/10.48550/arxiv.2307.16789",
+          "title": "Counterfactually Auditable Lifecycle Certification for Autonomous Agents",
+          "publication_date": "2023-07-31",
+          "cited_by_count": 71,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4384812233",
+          "doi": "https://doi.org/10.48550/arxiv.2307.07924",
+          "title": "ChatDev: Communicative Agents for Software Development",
+          "publication_date": "2023-07-16",
+          "cited_by_count": 69,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4319323461",
+          "doi": "https://doi.org/10.48550/arxiv.2302.01560",
+          "title": "Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents",
+          "publication_date": "2023-02-03",
+          "cited_by_count": 51,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4225405251",
+          "doi": "https://doi.org/10.48550/arxiv.2205.00445",
+          "title": "MRKL Systems: A modular, neuro-symbolic architecture that combines large language models, external knowledge sources and discrete reasoning",
+          "publication_date": "2022-05-01",
+          "cited_by_count": 43,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4383473935",
+          "doi": "https://doi.org/10.48550/arxiv.2307.02485",
+          "title": "Building Cooperative Embodied Agents Modularly with Large Language Models",
+          "publication_date": "2023-07-05",
+          "cited_by_count": 37,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4386080721",
+          "doi": "https://doi.org/10.48550/arxiv.2308.09687",
+          "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
+          "publication_date": "2023-08-18",
+          "cited_by_count": 35,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4226227340",
+          "doi": "https://doi.org/10.48550/arxiv.2112.09332",
+          "title": "WebGPT: Browser-assisted question-answering with human feedback",
+          "publication_date": "2021-12-17",
+          "cited_by_count": 33,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4366342667",
+          "doi": "https://doi.org/10.48550/arxiv.2304.07590",
+          "title": "Self-collaboration Code Generation via ChatGPT",
+          "publication_date": "2023-04-15",
+          "cited_by_count": 26,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4365211621",
+          "doi": "https://doi.org/10.48550/arxiv.2304.05335",
+          "title": "Toxicity in ChatGPT: Analyzing Persona-assigned Language Models",
+          "publication_date": "2023-04-11",
+          "cited_by_count": 25,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4378768661",
+          "doi": "https://doi.org/10.48550/arxiv.2305.17144",
+          "title": "Ghost in the Minecraft: Generally Capable Agents for Open-World Environments via Large Language Models with Text-based Knowledge and Memory",
+          "publication_date": "2023-05-25",
+          "cited_by_count": 24,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4383175795",
+          "doi": "https://doi.org/10.48550/arxiv.2307.00184",
+          "title": "Personality Traits in Large Language Models",
+          "publication_date": "2023-07-01",
+          "cited_by_count": 24,
+          "source_review_frequency": 1
+        },
+        {
+          "openalex_id": "https://openalex.org/W4377163995",
+          "doi": "https://doi.org/10.48550/arxiv.2305.10250",
+          "title": "MemoryBank: Enhancing Large Language Models with Long-Term Memory",
+          "publication_date": "2023-05-17",
+          "cited_by_count": 16,
+          "source_review_frequency": 1
+        }
+      ]
+    },
+    "method_self_supervised_learning": {
+      "topic_id": "method_self_supervised_learning",
+      "title": "Self-Supervised Representation Learning",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W3023371261",
+          "doi": "https://doi.org/10.1109/tpami.2020.2992393",
+          "title": "Self-Supervised Visual Feature Learning With Deep Neural Networks: A Survey",
+          "publication_date": "2020-05-04",
+          "cited_by_count": 1949,
+          "n_referenced_works": 265
+        },
+        {
+          "openalex_id": "https://openalex.org/W3207924272",
+          "doi": "https://doi.org/10.1109/msp.2021.3134634",
+          "title": "Self-Supervised Representation Learning: Introduction, advances, and challenges",
+          "publication_date": "2022-05-01",
+          "cited_by_count": 410,
+          "n_referenced_works": 175
+        },
+        {
+          "openalex_id": "https://openalex.org/W3035725276",
+          "doi": "https://doi.org/10.1109/tkde.2021.3090866",
+          "title": "Self-supervised Learning: Generative or Contrastive",
+          "publication_date": "2021-01-01",
+          "cited_by_count": 1029,
+          "n_referenced_works": 144
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W2194775991",
+          "doi": "https://doi.org/10.1109/cvpr.2016.90",
+          "title": "Deep Residual Learning for Image Recognition",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 223533,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2108598243",
+          "doi": "https://doi.org/10.1109/cvpr.2009.5206848",
+          "title": "ImageNet: A large-scale hierarchical image database",
+          "publication_date": "2009-06-01",
+          "cited_by_count": 62119,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2883725317",
+          "doi": "https://doi.org/10.1007/978-3-030-01264-9_9",
+          "title": "Deep Clustering for Unsupervised Learning of Visual Features",
+          "publication_date": "2018-01-01",
+          "cited_by_count": 2477,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2308529009",
+          "doi": "https://doi.org/10.1007/978-3-319-46493-0_35",
+          "title": "Learning Representations for Automatic Colorization",
+          "publication_date": "2016-01-01",
+          "cited_by_count": 948,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W1903029394",
+          "doi": "https://doi.org/10.1109/cvpr.2015.7298965",
+          "title": "Fully convolutional networks for semantic segmentation",
+          "publication_date": "2015-06-01",
+          "cited_by_count": 37041,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2102605133",
+          "doi": "https://doi.org/10.1109/cvpr.2014.81",
+          "title": "Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation",
+          "publication_date": "2014-06-01",
+          "cited_by_count": 31868,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963470893",
+          "doi": "https://doi.org/10.1109/cvpr.2017.19",
+          "title": "Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network",
+          "publication_date": "2017-07-01",
+          "cited_by_count": 12380,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W3035524453",
+          "doi": "https://doi.org/10.1109/cvpr42600.2020.00975",
+          "title": "Momentum Contrast for Unsupervised Visual Representation Learning",
+          "publication_date": "2020-06-01",
+          "cited_by_count": 12122,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2962756421",
+          "doi": "https://doi.org/10.1145/2939672.2939754",
+          "title": "node2vec",
+          "publication_date": "2016-08-08",
+          "cited_by_count": 10940,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W4297808394",
+          "doi": "https://doi.org/10.48550/arxiv.1807.03748",
+          "title": "Representation Learning with Contrastive Predictive Coding",
+          "publication_date": "2018-07-10",
+          "cited_by_count": 4538,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2842511635",
+          "doi": null,
+          "title": "Representation Learning with Contrastive Predictive Coding",
+          "publication_date": "2018-07-10",
+          "cited_by_count": 3770,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2326925005",
+          "doi": "https://doi.org/10.1007/978-3-319-46487-9_40",
+          "title": "Colorful Image Colorization",
+          "publication_date": "2016-01-01",
+          "cited_by_count": 3343,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2593116425",
+          "doi": "https://doi.org/10.1109/icassp.2017.7952261",
+          "title": "Audio Set: An ontology and human-labeled dataset for audio events",
+          "publication_date": "2017-03-01",
+          "cited_by_count": 3001,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2619947201",
+          "doi": "https://doi.org/10.48550/arxiv.1705.06950",
+          "title": "The Kinetics Human Action Video Dataset",
+          "publication_date": "2017-05-19",
+          "cited_by_count": 2894,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2321533354",
+          "doi": "https://doi.org/10.1007/978-3-319-46466-4_5",
+          "title": "Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles",
+          "publication_date": "2016-01-01",
+          "cited_by_count": 2806,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W343636949",
+          "doi": "https://doi.org/10.1109/iccv.2015.167",
+          "title": "Unsupervised Visual Representation Learning by Context Prediction",
+          "publication_date": "2015-12-01",
+          "cited_by_count": 2690,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2738588019",
+          "doi": "https://doi.org/10.1145/3072959.3073659",
+          "title": "Globally and locally consistent image completion",
+          "publication_date": "2017-07-20",
+          "cited_by_count": 2312,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W3108655343",
+          "doi": "https://doi.org/10.1007/978-3-030-58621-8_45",
+          "title": "Contrastive Multiview Coding",
+          "publication_date": "2020-01-01",
+          "cited_by_count": 1779,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2785325870",
+          "doi": "https://doi.org/10.48550/arxiv.1803.07728",
+          "title": "Unsupervised Representation Learning by Predicting Image Rotations",
+          "publication_date": "2018-03-21",
+          "cited_by_count": 1540,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2962852342",
+          "doi": "https://doi.org/10.1109/cvpr.2016.556",
+          "title": "Joint Unsupervised Learning of Deep Representations and Image Clusters",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 796,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2913939497",
+          "doi": "https://doi.org/10.1109/cvpr.2019.00202",
+          "title": "Revisiting Self-Supervised Visual Representation Learning",
+          "publication_date": "2019-06-01",
+          "cited_by_count": 700,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2558661413",
+          "doi": "https://doi.org/10.1109/cvpr.2017.76",
+          "title": "Split-Brain Autoencoders: Unsupervised Learning by Cross-Channel Prediction",
+          "publication_date": "2017-07-01",
+          "cited_by_count": 658,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2599837529",
+          "doi": "https://doi.org/10.1109/cvpr.2017.96",
+          "title": "Colorization as a Proxy Task for Visual Understanding",
+          "publication_date": "2017-07-01",
+          "cited_by_count": 486,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W3080997787",
+          "doi": "https://doi.org/10.1145/3394486.3403237",
+          "title": "GPT-GNN",
+          "publication_date": "2020-08-20",
+          "cited_by_count": 445,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2948242301",
+          "doi": "https://doi.org/10.1109/cvpr.2019.01058",
+          "title": "Self-Supervised Spatiotemporal Learning via Video Clip Order Prediction",
+          "publication_date": "2019-06-01",
+          "cited_by_count": 438,
+          "source_review_frequency": 2
+        }
+      ]
+    },
+    "method_continual_learning": {
+      "topic_id": "method_continual_learning",
+      "title": "Continual Learning",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W2788388592",
+          "doi": "https://doi.org/10.1016/j.neunet.2019.01.012",
+          "title": "Continual lifelong learning with neural networks: A review",
+          "publication_date": "2019-02-10",
+          "cited_by_count": 3043,
+          "n_referenced_works": 304
+        },
+        {
+          "openalex_id": "https://openalex.org/W3097816393",
+          "doi": "https://doi.org/10.1016/j.tics.2020.09.004",
+          "title": "Embracing Change: Continual Learning in Deep Neural Networks",
+          "publication_date": "2020-11-03",
+          "cited_by_count": 464,
+          "n_referenced_works": 200
+        },
+        {
+          "openalex_id": "https://openalex.org/W3030364939",
+          "doi": "https://doi.org/10.1109/tpami.2021.3057446",
+          "title": "A continual learning survey: Defying forgetting in classification tasks",
+          "publication_date": "2021-01-01",
+          "cited_by_count": 1607,
+          "n_referenced_works": 179
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W1821462560",
+          "doi": "https://doi.org/10.48550/arxiv.1503.02531",
+          "title": "Distilling the Knowledge in a Neural Network",
+          "publication_date": "2015-03-09",
+          "cited_by_count": 13985,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2560647685",
+          "doi": "https://doi.org/10.1073/pnas.1611835114",
+          "title": "Overcoming catastrophic forgetting in neural networks",
+          "publication_date": "2017-03-14",
+          "cited_by_count": 7268,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2296073425",
+          "doi": "https://doi.org/10.1145/1553374.1553380",
+          "title": "Curriculum learning",
+          "publication_date": "2009-06-14",
+          "cited_by_count": 5021,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W4319988532",
+          "doi": "https://doi.org/10.48550/arxiv.1606.04671",
+          "title": "Progressive Neural Networks",
+          "publication_date": "2016-06-15",
+          "cited_by_count": 1140,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2737492962",
+          "doi": null,
+          "title": "Continual Learning Through Synaptic Intelligence.",
+          "publication_date": "2017-01-01",
+          "cited_by_count": 979,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2116522068",
+          "doi": "https://doi.org/10.1080/09540099550039318",
+          "title": "Catastrophic Forgetting, Rehearsal and Pseudorehearsal",
+          "publication_date": "1995-06-01",
+          "cited_by_count": 851,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W3021931813",
+          "doi": "https://doi.org/10.1007/978-3-319-46493-0_37",
+          "title": "Learning Without Forgetting",
+          "publication_date": "2016-01-01",
+          "cited_by_count": 679,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2583761661",
+          "doi": "https://doi.org/10.48550/arxiv.1701.08734",
+          "title": "PathNet: Evolution Channels Gradient Descent in Super Neural Networks",
+          "publication_date": "2017-01-30",
+          "cited_by_count": 645,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2964067969",
+          "doi": null,
+          "title": "An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks",
+          "publication_date": "2014-01-01",
+          "cited_by_count": 499,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2113839990",
+          "doi": "https://doi.org/10.48550/arxiv.1312.6211",
+          "title": "An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks",
+          "publication_date": "2013-12-21",
+          "cited_by_count": 493,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2782276075",
+          "doi": "https://doi.org/10.48550/arxiv.1801.01423",
+          "title": "Overcoming catastrophic forgetting with hard attention to the task",
+          "publication_date": "2018-01-04",
+          "cited_by_count": 225,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2165698076",
+          "doi": "https://doi.org/10.1109/tkde.2009.191",
+          "title": "A Survey on Transfer Learning",
+          "publication_date": "2009-10-16",
+          "cited_by_count": 23312,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1682403713",
+          "doi": "https://doi.org/10.1016/s0079-7421(08)60536-8",
+          "title": "Catastrophic Interference in Connectionist Networks: The Sequential Learning Problem",
+          "publication_date": "1989-01-01",
+          "cited_by_count": 3745,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2060277733",
+          "doi": "https://doi.org/10.1016/s1364-6613(99)01294-2",
+          "title": "Catastrophic forgetting in connectionist networks",
+          "publication_date": "1999-04-01",
+          "cited_by_count": 2309,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2738724892",
+          "doi": "https://doi.org/10.1016/j.neuron.2017.06.011",
+          "title": "Neuroscience-Inspired Artificial Intelligence",
+          "publication_date": "2017-07-01",
+          "cited_by_count": 1568,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2530887700",
+          "doi": "https://doi.org/10.1038/nature20101",
+          "title": "Hybrid computing using a neural network with dynamic external memory",
+          "publication_date": "2016-10-12",
+          "cited_by_count": 1438,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2432717477",
+          "doi": "https://doi.org/10.48550/arxiv.1606.04080",
+          "title": "Matching Networks for One Shot Learning",
+          "publication_date": "2016-06-13",
+          "cited_by_count": 945,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2902625698",
+          "doi": "https://doi.org/10.48550/arxiv.1812.00420",
+          "title": "Efficient Lifelong Learning with A-GEM",
+          "publication_date": "2018-12-02",
+          "cited_by_count": 579,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2743151379",
+          "doi": "https://doi.org/10.1609/aaai.v32i1.11651",
+          "title": "Measuring Catastrophic Forgetting in Neural Networks",
+          "publication_date": "2018-04-29",
+          "cited_by_count": 555,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2734314755",
+          "doi": "https://doi.org/10.48550/arxiv.1706.08840",
+          "title": "Gradient Episodic Memory for Continual Learning",
+          "publication_date": "2017-06-26",
+          "cited_by_count": 497,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2765101016",
+          "doi": "https://doi.org/10.48550/arxiv.1710.10628",
+          "title": "Variational Continual Learning",
+          "publication_date": "2017-10-29",
+          "cited_by_count": 296,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2804175194",
+          "doi": null,
+          "title": "Progress & Compress: A scalable framework for continual learning",
+          "publication_date": "2018-05-16",
+          "cited_by_count": 293,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2618767506",
+          "doi": "https://doi.org/10.48550/arxiv.1705.08690",
+          "title": "Continual Learning with Deep Generative Replay",
+          "publication_date": "2017-05-24",
+          "cited_by_count": 202,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2804746922",
+          "doi": "https://doi.org/10.48550/arxiv.1805.09733",
+          "title": "Towards Robust Evaluations of Continual Learning",
+          "publication_date": "2018-05-24",
+          "cited_by_count": 186,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2474280151",
+          "doi": "https://doi.org/10.48550/arxiv.1607.00122",
+          "title": "Less-forgetting Learning in Deep Neural Networks",
+          "publication_date": "2016-07-01",
+          "cited_by_count": 162,
+          "source_review_frequency": 2
+        }
+      ]
+    },
+    "method_uncertainty_quantification": {
+      "topic_id": "method_uncertainty_quantification",
+      "title": "Uncertainty Quantification in Deep Learning",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W3102100346",
+          "doi": "https://doi.org/10.1016/j.inffus.2021.05.008",
+          "title": "A review of uncertainty quantification in deep learning: Techniques, applications and challenges",
+          "publication_date": "2021-05-23",
+          "cited_by_count": 2506,
+          "n_referenced_works": 1221
+        },
+        {
+          "openalex_id": "https://openalex.org/W3205854703",
+          "doi": "https://doi.org/10.1145/3477140",
+          "title": "A Survey on Uncertainty Estimation in Deep Learning Classification Systems from a Bayesian Perspective",
+          "publication_date": "2021-10-08",
+          "cited_by_count": 101,
+          "n_referenced_works": 56
+        },
+        {
+          "openalex_id": "https://openalex.org/W3183048323",
+          "doi": "https://doi.org/10.1007/s10462-023-10562-9",
+          "title": "A survey of uncertainty in deep neural networks",
+          "publication_date": "2023-07-29",
+          "cited_by_count": 1199,
+          "n_referenced_works": 401
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W1567512734",
+          "doi": "https://doi.org/10.1007/978-1-4612-0745-0",
+          "title": "Bayesian Learning for Neural Networks",
+          "publication_date": "1996-01-01",
+          "cited_by_count": 4385,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W3102961490",
+          "doi": "https://doi.org/10.5167/uzh-197704",
+          "title": "A General Framework for Uncertainty Estimation in Deep Learning",
+          "publication_date": "2020-01-01",
+          "cited_by_count": 271,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W1901129140",
+          "doi": "https://doi.org/10.1007/978-3-319-24574-4_28",
+          "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+          "publication_date": "2015-01-01",
+          "cited_by_count": 89647,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2964059111",
+          "doi": "https://doi.org/10.48550/arxiv.1506.02142",
+          "title": "Dropout as a Bayesian Approximation: Representing Model Uncertainty in\\n Deep Learning",
+          "publication_date": "2015-06-06",
+          "cited_by_count": 4184,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2059448777",
+          "doi": "https://doi.org/10.1016/0370-2693(87)91197-x",
+          "title": "Hybrid Monte Carlo",
+          "publication_date": "1987-09-01",
+          "cited_by_count": 3933,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963238274",
+          "doi": "https://doi.org/10.48550/arxiv.1612.01474",
+          "title": "Simple and Scalable Predictive Uncertainty Estimation using Deep\\n Ensembles",
+          "publication_date": "2016-12-05",
+          "cited_by_count": 3006,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2111051539",
+          "doi": "https://doi.org/10.1162/neco.1992.4.3.448",
+          "title": "A Practical Bayesian Framework for Backpropagation Networks",
+          "publication_date": "1992-05-01",
+          "cited_by_count": 2946,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2600383743",
+          "doi": "https://doi.org/10.48550/arxiv.1703.04977",
+          "title": "What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?",
+          "publication_date": "2017-03-15",
+          "cited_by_count": 2541,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2167433878",
+          "doi": null,
+          "title": "Bayesian Learning via Stochastic Gradient Langevin Dynamics",
+          "publication_date": "2011-01-01",
+          "cited_by_count": 1500,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2887976372",
+          "doi": "https://doi.org/10.1016/j.neucom.2019.01.103",
+          "title": "Aleatoric uncertainty estimation with test-time augmentation for medical image segmentation with convolutional neural networks",
+          "publication_date": "2019-02-10",
+          "cited_by_count": 647,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2798820905",
+          "doi": "https://doi.org/10.1109/cvpr.2018.00976",
+          "title": "The Power of Ensembles for Active Learning in Image Classification",
+          "publication_date": "2018-06-01",
+          "cited_by_count": 628,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W601603264",
+          "doi": "https://doi.org/10.48550/arxiv.1506.02158",
+          "title": "Bayesian Convolutional Neural Networks with Bernoulli Approximate Variational Inference",
+          "publication_date": "2015-06-06",
+          "cited_by_count": 617,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2904422658",
+          "doi": "https://doi.org/10.1038/s42256-018-0004-1",
+          "title": "The need for uncertainty quantification in machine-assisted medical decision making",
+          "publication_date": "2018-12-18",
+          "cited_by_count": 535,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2806471870",
+          "doi": "https://doi.org/10.48550/arxiv.1806.01768",
+          "title": "Evidential Deep Learning to Quantify Classification Uncertainty",
+          "publication_date": "2018-06-05",
+          "cited_by_count": 526,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2951965145",
+          "doi": "https://doi.org/10.1038/s41598-017-17876-z",
+          "title": "Leveraging uncertainty information from deep neural networks for disease detection",
+          "publication_date": "2017-12-13",
+          "cited_by_count": 475,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2597787948",
+          "doi": "https://doi.org/10.17863/cam.11070",
+          "title": "Deep Bayesian Active Learning with Image Data",
+          "publication_date": "2017-01-01",
+          "cited_by_count": 435,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W3035056458",
+          "doi": "https://doi.org/10.1109/cvpr42600.2020.00136",
+          "title": "D3VO: Deep Depth, Deep Pose and Deep Uncertainty for Monocular Visual Odometry",
+          "publication_date": "2020-06-01",
+          "cited_by_count": 415,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2904981516",
+          "doi": "https://doi.org/10.48550/arxiv.1812.04606",
+          "title": "Deep Anomaly Detection with Outlier Exposure",
+          "publication_date": "2018-12-11",
+          "cited_by_count": 402,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2970859221",
+          "doi": null,
+          "title": "Can you trust your model's uncertainty? Evaluating predictive uncertainty under dataset shift",
+          "publication_date": "2019-06-06",
+          "cited_by_count": 368,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2991523350",
+          "doi": "https://doi.org/10.1109/tmi.2020.3006437",
+          "title": "Confidence Calibration and Predictive Uncertainty Estimation for Deep Medical Image Segmentation",
+          "publication_date": "2020-07-01",
+          "cited_by_count": 348,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2956805085",
+          "doi": "https://doi.org/10.1109/lra.2020.2974682",
+          "title": "A General Framework for Uncertainty Estimation in Deep Learning",
+          "publication_date": "2020-02-18",
+          "cited_by_count": 274,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2592505114",
+          "doi": "https://doi.org/10.48550/arxiv.1703.01961",
+          "title": "Multiplicative Normalizing Flows for Variational Bayesian Neural Networks",
+          "publication_date": "2017-03-06",
+          "cited_by_count": 237,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2586067474",
+          "doi": "https://doi.org/10.48550/arxiv.1702.01182",
+          "title": "Uncertainty-Aware Reinforcement Learning for Collision Avoidance",
+          "publication_date": "2017-02-03",
+          "cited_by_count": 227,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2236244207",
+          "doi": "https://doi.org/10.1561/2200000049",
+          "title": "Bayesian Reinforcement Learning: A Survey",
+          "publication_date": "2015-11-26",
+          "cited_by_count": 224,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963215553",
+          "doi": "https://doi.org/10.17863/cam.35237",
+          "title": "Predictive Uncertainty Estimation via Prior Networks",
+          "publication_date": "2018-12-31",
+          "cited_by_count": 197,
+          "source_review_frequency": 2
+        }
+      ]
+    },
+    "cross_medical_image_analysis": {
+      "topic_id": "cross_medical_image_analysis",
+      "title": "Deep Learning for Medical Image Analysis",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W2592929672",
+          "doi": "https://doi.org/10.1016/j.media.2017.07.005",
+          "title": "A survey on deep learning in medical image analysis",
+          "publication_date": "2017-07-26",
+          "cited_by_count": 14568,
+          "n_referenced_works": 578
+        },
+        {
+          "openalex_id": "https://openalex.org/W2533800772",
+          "doi": "https://doi.org/10.1146/annurev-bioeng-071516-044442",
+          "title": "Deep Learning in Medical Image Analysis",
+          "publication_date": "2017-03-16",
+          "cited_by_count": 4833,
+          "n_referenced_works": 123
+        },
+        {
+          "openalex_id": "https://openalex.org/W3074741277",
+          "doi": "https://doi.org/10.1109/jproc.2021.3054390",
+          "title": "A Review of Deep Learning in Medical Imaging: Imaging Traits, Technology Trends, Case Studies With Progress Highlights, and Future Promises",
+          "publication_date": "2021-02-26",
+          "cited_by_count": 1024,
+          "n_referenced_works": 231
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W2919115771",
+          "doi": "https://doi.org/10.1038/nature14539",
+          "title": "Deep learning",
+          "publication_date": "2015-05-26",
+          "cited_by_count": 82364,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2097117768",
+          "doi": "https://doi.org/10.1109/cvpr.2015.7298594",
+          "title": "Going deeper with convolutions",
+          "publication_date": "2015-06-01",
+          "cited_by_count": 46947,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2253429366",
+          "doi": "https://doi.org/10.1109/tmi.2016.2528162",
+          "title": "Deep Convolutional Neural Networks for Computer-Aided Detection: CNN Architectures, Dataset Characteristics and Transfer Learning",
+          "publication_date": "2016-02-11",
+          "cited_by_count": 5812,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W1884191083",
+          "doi": "https://doi.org/10.1016/j.media.2016.05.004",
+          "title": "Brain tumor segmentation with Deep Neural Networks",
+          "publication_date": "2016-05-21",
+          "cited_by_count": 3260,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2248620004",
+          "doi": "https://doi.org/10.1109/tmi.2015.2458702",
+          "title": "Stacked Sparse Autoencoder (SSAE) for Nuclei Detection on Breast Cancer Histopathology Images",
+          "publication_date": "2015-07-20",
+          "cited_by_count": 867,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W1871050032",
+          "doi": "https://doi.org/10.1109/tmi.2015.2482920",
+          "title": "Improving Computer-Aided Detection UsingConvolutional Neural Networks and Random View Aggregation",
+          "publication_date": "2015-09-28",
+          "cited_by_count": 590,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2284198383",
+          "doi": "https://doi.org/10.1016/j.neuroimage.2016.01.024",
+          "title": "Deep MRI brain extraction: A 3D convolutional neural network for skull stripping",
+          "publication_date": "2016-01-22",
+          "cited_by_count": 516,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2194775991",
+          "doi": "https://doi.org/10.1109/cvpr.2016.90",
+          "title": "Deep Residual Learning for Image Recognition",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 223533,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1901129140",
+          "doi": "https://doi.org/10.1007/978-3-319-24574-4_28",
+          "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+          "publication_date": "2015-01-01",
+          "cited_by_count": 89647,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2163605009",
+          "doi": "https://doi.org/10.1145/3065386",
+          "title": "ImageNet classification with deep convolutional neural networks",
+          "publication_date": "2017-05-24",
+          "cited_by_count": 75715,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1686810756",
+          "doi": "https://doi.org/10.48550/arxiv.1409.1556",
+          "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+          "publication_date": "2014-09-04",
+          "cited_by_count": 75542,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2112796928",
+          "doi": "https://doi.org/10.1109/5.726791",
+          "title": "Gradient-based learning applied to document recognition",
+          "publication_date": "1998-01-01",
+          "cited_by_count": 58559,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2117539524",
+          "doi": "https://doi.org/10.1007/s11263-015-0816-y",
+          "title": "ImageNet Large Scale Visual Recognition Challenge",
+          "publication_date": "2015-04-10",
+          "cited_by_count": 40318,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1903029394",
+          "doi": "https://doi.org/10.1109/cvpr.2015.7298965",
+          "title": "Fully convolutional networks for semantic segmentation",
+          "publication_date": "2015-06-01",
+          "cited_by_count": 37041,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2100495367",
+          "doi": "https://doi.org/10.1126/science.1127647",
+          "title": "Reducing the Dimensionality of Data with Neural Networks",
+          "publication_date": "2006-07-27",
+          "cited_by_count": 21033,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2136922672",
+          "doi": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "title": "A Fast Learning Algorithm for Deep Belief Nets",
+          "publication_date": "2006-05-29",
+          "cited_by_count": 16441,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2395611524",
+          "doi": "https://doi.org/10.1109/tpami.2016.2572683",
+          "title": "Fully Convolutional Networks for Semantic Segmentation",
+          "publication_date": "2016-05-24",
+          "cited_by_count": 11126,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2557738935",
+          "doi": "https://doi.org/10.1001/jama.2016.17216",
+          "title": "Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs",
+          "publication_date": "2016-11-29",
+          "cited_by_count": 7611,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2145094598",
+          "doi": null,
+          "title": "Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion",
+          "publication_date": "2010-01-01",
+          "cited_by_count": 5025,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1905882502",
+          "doi": "https://doi.org/10.1109/cvpr.2015.7298932",
+          "title": "Deep visual-semantic alignments for generating image descriptions",
+          "publication_date": "2015-06-01",
+          "cited_by_count": 4997,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2533800772",
+          "doi": "https://doi.org/10.1146/annurev-bioeng-071516-044442",
+          "title": "Deep Learning in Medical Image Analysis",
+          "publication_date": "2017-03-16",
+          "cited_by_count": 4833,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2110798204",
+          "doi": "https://doi.org/10.7551/mitpress/7503.003.0024",
+          "title": "Greedy Layer-Wise Training of Deep Networks",
+          "publication_date": "2007-09-07",
+          "cited_by_count": 4710,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2301358467",
+          "doi": "https://doi.org/10.1016/j.media.2016.10.004",
+          "title": "Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation",
+          "publication_date": "2016-10-29",
+          "cited_by_count": 3529,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2310992461",
+          "doi": "https://doi.org/10.1109/tmi.2016.2538465",
+          "title": "Brain Tumor Segmentation Using Convolutional Neural Networks in MRI Images",
+          "publication_date": "2016-03-04",
+          "cited_by_count": 2702,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2345010043",
+          "doi": "https://doi.org/10.1109/tmi.2016.2553401",
+          "title": "Guest Editorial Deep Learning in Medical Imaging: Overview and Future Promise of an Exciting New Technique",
+          "publication_date": "2016-04-29",
+          "cited_by_count": 1731,
+          "source_review_frequency": 2
+        }
+      ]
+    },
+    "cross_ml_drug_discovery": {
+      "topic_id": "cross_ml_drug_discovery",
+      "title": "Machine Learning for Drug Discovery",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W2790808809",
+          "doi": "https://doi.org/10.1016/j.drudis.2018.01.039",
+          "title": "The rise of deep learning in drug discovery",
+          "publication_date": "2018-01-31",
+          "cited_by_count": 1788,
+          "n_referenced_works": 166
+        },
+        {
+          "openalex_id": "https://openalex.org/W2937307539",
+          "doi": "https://doi.org/10.1038/s41573-019-0024-5",
+          "title": "Applications of machine learning in drug discovery and development",
+          "publication_date": "2019-04-11",
+          "cited_by_count": 2998,
+          "n_referenced_works": 116
+        },
+        {
+          "openalex_id": "https://openalex.org/W3201055938",
+          "doi": "https://doi.org/10.3390/ijms22189983",
+          "title": "Comprehensive Survey of Recent Drug Discovery Using Deep Learning",
+          "publication_date": "2021-09-15",
+          "cited_by_count": 139,
+          "n_referenced_works": 227
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W2594183968",
+          "doi": "https://doi.org/10.1039/c7sc02664a",
+          "title": "MoleculeNet: a benchmark for molecular machine learning",
+          "publication_date": "2017-10-31",
+          "cited_by_count": 2995,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2736137960",
+          "doi": "https://doi.org/10.1021/acs.molpharmaceut.7b00346",
+          "title": "druGAN: An Advanced Generative Adversarial Autoencoder Model for de Novo Generation of New Molecules with Desired Molecular Properties in Silico",
+          "publication_date": "2017-07-13",
+          "cited_by_count": 618,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2134967712",
+          "doi": "https://doi.org/10.1002/jcc.21334",
+          "title": "AutoDock Vina: Improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading",
+          "publication_date": "2009-06-04",
+          "cited_by_count": 37393,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2095705004",
+          "doi": null,
+          "title": "Dropout: a simple way to prevent neural networks from overfitting",
+          "publication_date": "2014-01-01",
+          "cited_by_count": 34283,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2177317049",
+          "doi": "https://doi.org/10.1093/nar/gkv951",
+          "title": "PubChem Substance and Compound databases",
+          "publication_date": "2015-09-22",
+          "cited_by_count": 5502,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2529996553",
+          "doi": "https://doi.org/10.1021/acscentsci.7b00572",
+          "title": "Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules",
+          "publication_date": "2018-01-12",
+          "cited_by_count": 3066,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2606780347",
+          "doi": "https://doi.org/10.48550/arxiv.1704.01212",
+          "title": "Neural Message Passing for Quantum Chemistry",
+          "publication_date": "2017-04-04",
+          "cited_by_count": 3013,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1968319881",
+          "doi": "https://doi.org/10.1021/jm300687e",
+          "title": "Directory of Useful Decoys, Enhanced (DUD-E): Better Ligands and Decoys for Better Benchmarking",
+          "publication_date": "2012-06-20",
+          "cited_by_count": 2429,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2558999090",
+          "doi": "https://doi.org/10.1093/nar/gkw1074",
+          "title": "The ChEMBL database in 2017",
+          "publication_date": "2016-10-31",
+          "cited_by_count": 2428,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2034549041",
+          "doi": "https://doi.org/10.1038/nchem.1243",
+          "title": "Quantifying the chemical beauty of drugs",
+          "publication_date": "2012-01-24",
+          "cited_by_count": 2301,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W3098269892",
+          "doi": "https://doi.org/10.17863/cam.34134",
+          "title": "Automatic Chemical Design Using a Data-Driven Continuous Representation of Molecules.",
+          "publication_date": "2018-02-28",
+          "cited_by_count": 1979,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2747592475",
+          "doi": "https://doi.org/10.1038/nature25978",
+          "title": "Planning chemical syntheses with deep neural networks and symbolic AI",
+          "publication_date": "2018-03-01",
+          "cited_by_count": 1918,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2044834685",
+          "doi": "https://doi.org/10.1021/c160017a018",
+          "title": "The Generation of a Unique Machine Description for Chemical Structures-A Technique Developed at Chemical Abstracts Service.",
+          "publication_date": "1965-05-01",
+          "cited_by_count": 1750,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2204695023",
+          "doi": "https://doi.org/10.1093/nar/gkv1072",
+          "title": "BindingDB in 2015: A public database for medicinal chemistry, computational chemistry and systems pharmacology",
+          "publication_date": "2015-10-19",
+          "cited_by_count": 1690,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2502949459",
+          "doi": "https://doi.org/10.15252/msb.20156651",
+          "title": "Deep learning for computational biology",
+          "publication_date": "2016-07-01",
+          "cited_by_count": 1542,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2610148085",
+          "doi": "https://doi.org/10.1186/s13321-017-0235-x",
+          "title": "Molecular de-novo design through deep reinforcement learning",
+          "publication_date": "2017-09-04",
+          "cited_by_count": 1431,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W1999798000",
+          "doi": "https://doi.org/10.1021/ci500747n",
+          "title": "Deep Neural Nets as a Method for Quantitative Structure–Activity Relationships",
+          "publication_date": "2015-01-30",
+          "cited_by_count": 1192,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2583907533",
+          "doi": "https://doi.org/10.1021/acs.jcim.6b00740",
+          "title": "Protein–Ligand Scoring with Convolutional Neural Networks",
+          "publication_date": "2017-04-04",
+          "cited_by_count": 803,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2621742623",
+          "doi": "https://doi.org/10.1021/acscentsci.7b00303",
+          "title": "Retrosynthetic Reaction Prediction Using Neural Sequence-to-Sequence Models",
+          "publication_date": "2017-09-05",
+          "cited_by_count": 593,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2886544065",
+          "doi": "https://doi.org/10.1093/bib/bby061",
+          "title": "Recent applications of deep learning and machine intelligence on in silico drug discovery: methods, tools and databases",
+          "publication_date": "2018-06-16",
+          "cited_by_count": 546,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2735246657",
+          "doi": "https://doi.org/10.1021/acs.jcim.6b00601",
+          "title": "Convolutional Embedding of Attributed Molecular Graphs for Physical Property Prediction",
+          "publication_date": "2017-07-11",
+          "cited_by_count": 516,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963445908",
+          "doi": "https://doi.org/10.1002/minf.201700123",
+          "title": "Application of Generative Autoencoder in <i>De Novo</i> Molecular Design",
+          "publication_date": "2017-12-13",
+          "cited_by_count": 406,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2740946158",
+          "doi": "https://doi.org/10.1186/s13321-017-0232-0",
+          "title": "Beyond the hype: deep neural networks outperform established methods using a ChEMBL bioactivity benchmark set",
+          "publication_date": "2017-08-14",
+          "cited_by_count": 338,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2734982589",
+          "doi": "https://doi.org/10.1021/acs.jcim.7b00146",
+          "title": "Is Multitask Deep Learning Practical for Pharma?",
+          "publication_date": "2017-07-10",
+          "cited_by_count": 281,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2593632281",
+          "doi": "https://doi.org/10.1186/s13321-017-0203-5",
+          "title": "ExCAPE-DB: an integrated large scale dataset facilitating Big Data analysis in chemogenomics",
+          "publication_date": "2017-03-07",
+          "cited_by_count": 249,
+          "source_review_frequency": 2
+        }
+      ]
+    },
+    "cross_efficient_deep_learning": {
+      "topic_id": "cross_efficient_deep_learning",
+      "title": "Efficient Deep Learning",
+      "publication_cutoff": "2023-12-31",
+      "construction": {
+        "source_review_count": 3,
+        "priority": "cited by at least two source reviews, then cutoff-safe citation centrality",
+        "target_size": 25,
+        "deduplication": "OpenAlex work ID with DOI retained when available",
+        "fallback": null
+      },
+      "source_reviews": [
+        {
+          "openalex_id": "https://openalex.org/W2604319603",
+          "doi": "https://doi.org/10.1109/jproc.2017.2761740",
+          "title": "Efficient Processing of Deep Neural Networks: A Tutorial and Survey",
+          "publication_date": "2017-11-20",
+          "cited_by_count": 4047,
+          "n_referenced_works": 200
+        },
+        {
+          "openalex_id": "https://openalex.org/W2783538964",
+          "doi": "https://doi.org/10.1109/msp.2017.2765695",
+          "title": "Model Compression and Acceleration for Deep Neural Networks: The Principles, Progress, and Challenges",
+          "publication_date": "2018-01-01",
+          "cited_by_count": 798,
+          "n_referenced_works": 67
+        },
+        {
+          "openalex_id": "https://openalex.org/W3170647102",
+          "doi": "https://doi.org/10.1145/3578938",
+          "title": "Efficient Deep Learning: A Survey on Making Deep Learning Models Smaller, Faster, and Better",
+          "publication_date": "2023-01-20",
+          "cited_by_count": 522,
+          "n_referenced_works": 178
+        }
+      ],
+      "fallback_reference_arxiv_ids": [],
+      "core_references": [
+        {
+          "openalex_id": "https://openalex.org/W2194775991",
+          "doi": "https://doi.org/10.1109/cvpr.2016.90",
+          "title": "Deep Residual Learning for Image Recognition",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 223533,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W1686810756",
+          "doi": "https://doi.org/10.48550/arxiv.1409.1556",
+          "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+          "publication_date": "2014-09-04",
+          "cited_by_count": 75542,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2112796928",
+          "doi": "https://doi.org/10.1109/5.726791",
+          "title": "Gradient-based learning applied to document recognition",
+          "publication_date": "1998-01-01",
+          "cited_by_count": 58559,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W1821462560",
+          "doi": "https://doi.org/10.48550/arxiv.1503.02531",
+          "title": "Distilling the Knowledge in a Neural Network",
+          "publication_date": "2015-03-09",
+          "cited_by_count": 13985,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2300242332",
+          "doi": "https://doi.org/10.1007/978-3-319-46493-0_32",
+          "title": "XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks",
+          "publication_date": "2016-01-01",
+          "cited_by_count": 4151,
+          "source_review_frequency": 3
+        },
+        {
+          "openalex_id": "https://openalex.org/W2163605009",
+          "doi": "https://doi.org/10.1145/3065386",
+          "title": "ImageNet classification with deep convolutional neural networks",
+          "publication_date": "2017-05-24",
+          "cited_by_count": 75715,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2097117768",
+          "doi": "https://doi.org/10.1109/cvpr.2015.7298594",
+          "title": "Going deeper with convolutions",
+          "publication_date": "2015-06-01",
+          "cited_by_count": 46947,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2531409750",
+          "doi": "https://doi.org/10.1109/cvpr.2017.195",
+          "title": "Xception: Deep Learning with Depthwise Separable Convolutions",
+          "publication_date": "2017-07-01",
+          "cited_by_count": 19081,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2119144962",
+          "doi": "https://doi.org/10.48550/arxiv.1510.00149",
+          "title": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+          "publication_date": "2015-10-01",
+          "cited_by_count": 3534,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2114766824",
+          "doi": null,
+          "title": "Optimal Brain Damage",
+          "publication_date": "1989-01-01",
+          "cited_by_count": 2614,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2294370754",
+          "doi": "https://doi.org/10.1145/1150402.1150464",
+          "title": "Model compression",
+          "publication_date": "2006-08-20",
+          "cited_by_count": 2097,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2134797427",
+          "doi": "https://doi.org/10.48550/arxiv.1312.6184",
+          "title": "Do Deep Nets Really Need to be Deep?",
+          "publication_date": "2013-12-21",
+          "cited_by_count": 1484,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2524428287",
+          "doi": "https://doi.org/10.48550/arxiv.1609.07061",
+          "title": "Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations",
+          "publication_date": "2016-09-22",
+          "cited_by_count": 1425,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2233116163",
+          "doi": "https://doi.org/10.1109/cvpr.2016.521",
+          "title": "Quantized Convolutional Neural Networks for Mobile Devices",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 1254,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2167215970",
+          "doi": "https://doi.org/10.48550/arxiv.1404.0736",
+          "title": "Exploiting Linear Structure Within Convolutional Networks for Efficient Evaluation",
+          "publication_date": "2014-04-02",
+          "cited_by_count": 1096,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963911037",
+          "doi": null,
+          "title": "Network In Network",
+          "publication_date": "2014-03-04",
+          "cited_by_count": 1040,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2172654076",
+          "doi": "https://doi.org/10.1109/cvpr.2016.435",
+          "title": "Fast Algorithms for Convolutional Neural Networks",
+          "publication_date": "2016-06-01",
+          "cited_by_count": 923,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963374099",
+          "doi": null,
+          "title": "Deep Learning with Limited Numerical Precision",
+          "publication_date": "2015-07-06",
+          "cited_by_count": 775,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2405920868",
+          "doi": "https://doi.org/10.48550/arxiv.1605.04711",
+          "title": "Ternary Weight Networks",
+          "publication_date": "2016-05-16",
+          "cited_by_count": 762,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2560017826",
+          "doi": "https://doi.org/10.48550/arxiv.1612.01064",
+          "title": "Trained Ternary Quantization",
+          "publication_date": "2016-12-04",
+          "cited_by_count": 749,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2276892413",
+          "doi": "https://doi.org/10.1145/3005348",
+          "title": "Structured Pruning of Deep Convolutional Neural Networks",
+          "publication_date": "2017-02-09",
+          "cited_by_count": 719,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2962988160",
+          "doi": "https://doi.org/10.48550/arxiv.1511.06530",
+          "title": "Compression of Deep Convolutional Neural Networks for Fast and Low Power\\n Mobile Applications",
+          "publication_date": "2015-11-20",
+          "cited_by_count": 686,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W587794757",
+          "doi": null,
+          "title": "Improving the speed of neural networks on CPUs",
+          "publication_date": "2011-01-01",
+          "cited_by_count": 677,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2172166488",
+          "doi": "https://doi.org/10.48550/arxiv.1504.04788",
+          "title": "Compressing Neural Networks with the Hashing Trick",
+          "publication_date": "2015-04-19",
+          "cited_by_count": 566,
+          "source_review_frequency": 2
+        },
+        {
+          "openalex_id": "https://openalex.org/W2963340555",
+          "doi": null,
+          "title": "Fast Training of Convolutional Networks through FFTs",
+          "publication_date": "2014-01-01",
+          "cited_by_count": 320,
+          "source_review_frequency": 2
+        }
+      ]
+    }
+  }
+}

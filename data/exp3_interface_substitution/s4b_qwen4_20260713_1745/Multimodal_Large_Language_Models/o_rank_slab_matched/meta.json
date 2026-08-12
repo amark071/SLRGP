@@ -1,0 +1,62 @@
+{
+  "topic": "Multimodal Large Language Models",
+  "arm": "o_rank_slab_matched",
+  "ok": true,
+  "model_g": "qwen3-32b",
+  "bundle_hash": "e449b24178822726ea5ce33fca8a3c86161d3b20622b424445771c40b4150eb3",
+  "started_at": "2026-07-13 17:56:25",
+  "target_total_words": 1000,
+  "groups": [
+    {
+      "name": "Rank slab 1: positions 1-4",
+      "n": 4
+    },
+    {
+      "name": "Rank slab 2: positions 5-8",
+      "n": 4
+    }
+  ],
+  "group_size_vector": [
+    4,
+    4
+  ],
+  "refs": [
+    "arxiv_2203.17247",
+    "arxiv_2209.06794",
+    "arxiv_2306.09265",
+    "arxiv_2309.10020",
+    "arxiv_2402.12451",
+    "arxiv_2408.06610",
+    "arxiv_2409.07463",
+    "ss_478371"
+  ],
+  "n_refs": 8,
+  "word_count": 867,
+  "written_citation_ids": [
+    "arxiv_2402.12451",
+    "ss_478371",
+    "arxiv_2203.17247",
+    "arxiv_2409.07463",
+    "arxiv_2306.09265",
+    "arxiv_2408.06610",
+    "arxiv_2209.06794",
+    "arxiv_2309.10020"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2203.17247",
+    "arxiv_2209.06794",
+    "arxiv_2306.09265",
+    "arxiv_2309.10020",
+    "arxiv_2402.12451",
+    "arxiv_2408.06610",
+    "arxiv_2409.07463",
+    "ss_478371"
+  ],
+  "primary_length_eligible": true,
+  "elapsed_sec": 171.3,
+  "llm_usage_delta": {
+    "n_calls": 8,
+    "prompt_tokens": 5199,
+    "completion_tokens": 2034
+  }
+}

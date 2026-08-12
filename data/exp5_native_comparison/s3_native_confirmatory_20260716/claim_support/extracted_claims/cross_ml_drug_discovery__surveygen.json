@@ -1,0 +1,131 @@
+{
+  "topic_id": "cross_ml_drug_discovery",
+  "system": "surveygen",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The traditional drug discovery pipeline is a multi-stage, resource-intensive process encompassing target identification, hit discovery, lead optimization, preclinical evaluation, and clinical trials ref [28].",
+      "citation_markers": [
+        "ref [28]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Bringing a novel therapeutic to market typically requires 10–15 years and investments exceeding one billion USD, with high attrition rates persisting across all development phases ref [33].",
+      "citation_markers": [
+        "ref [33]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Traditional high-throughput screening yields hit rates of merely 1–2%, reflecting the immense difficulty of navigating expansive chemical and biological spaces ref [20]. Furthermore, experimental approaches for identifying drug-target interactions are labor-intensive, costly, and temporally inefficient ref [34].",
+      "citation_markers": [
+        "ref [20]",
+        "ref [34]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Machine learning (ML) and artificial intelligence (AI) represent transformative paradigms that fundamentally reorient drug discovery from hypothesis-driven experimentation toward data-driven decision-making ref [28]. By leveraging vast repositories of biological, chemical, and clinical data, ML algorithms can identify complex patterns imperceptible to conventional analysis ref [15].",
+      "citation_markers": [
+        "ref [28]",
+        "ref [15]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "SVM is particularly valued for its ability to operate in high-dimensional feature spaces ref [41], while RF and gradient boosting methods offer robustness and interpretability ref [31]. These algorithms remain competitive benchmarks even as deep learning advances ref [54].",
+      "citation_markers": [
+        "ref [41]",
+        "ref [31]",
+        "ref [54]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Convolutional Neural Networks (CNNs) excel at capturing local structural patterns in molecular graphs and biological images, demonstrating utility in phenotypic drug discovery ref [24]. Recurrent Neural Networks (RNNs) and Long Short-Term Memory networks (LSTMs) process sequential molecular representations such as SMILES strings, enabling generative molecular design ref [32].",
+      "citation_markers": [
+        "ref [24]",
+        "ref [32]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Generative machine learning frameworks have emerged as transformative tools for de novo molecular design, enabling the automated generation of novel drug-like molecules with desired properties ref [44]. Prominent architectures include Variational Autoencoders (VAEs), which encode molecular representations into continuous latent spaces to facilitate interpolation and optimization ref [32], and Generative Adversarial Networks (GANs), which employ adversarial training to produce chemically valid structures ref [9].",
+      "citation_markers": [
+        "ref [44]",
+        "ref [32]",
+        "ref [9]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "These repositories collectively enable the integration of chemical structure, biological activity, and clinical data ref [34]. However, data heterogeneity, inconsistent assay conditions, and variable annotation quality necessitate rigorous curation and standardization prior to ML model development ref [4].",
+      "citation_markers": [
+        "ref [34]",
+        "ref [4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Data scarcity, class imbalance, and heterogeneity represent fundamental obstacles in ML-based drug discovery. Labeled bioactivity data are often sparse, as experimental acquisition is costly and time-consuming ref [3], while datasets frequently exhibit severe class imbalance, with active compounds constituting a small minority ref [27].",
+      "citation_markers": [
+        "ref [3]",
+        "ref [27]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Random splitting of datasets into training and test folds leads to near-complete data memorization, producing highly over-optimistic results that fail to reflect real-world applicability ref [25]. Widely used benchmarks such as DUD-E harbor well-documented biases, where artificial enrichment of decoys introduces physicochemical artifacts that inflate model performance metrics ref [10].",
+      "citation_markers": [
+        "ref [25]",
+        "ref [10]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Community-wide efforts have established guidelines for improving model quality, including benchmarking against well-curated external validation datasets, standardized reporting metrics, and best practices for code publication and workflow automation ref [4].",
+      "citation_markers": [
+        "ref [4]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Quantum machine learning (QML) offers the potential to dramatically reduce computational costs and timelines in preclinical development by leveraging quantum supremacy for complex molecular simulations ref [55], though significant practical challenges remain ref [60].",
+      "citation_markers": [
+        "ref [55]",
+        "ref [60]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9240,
+    "completion_tokens": 1090,
+    "total_tokens": 10330
+  }
+}

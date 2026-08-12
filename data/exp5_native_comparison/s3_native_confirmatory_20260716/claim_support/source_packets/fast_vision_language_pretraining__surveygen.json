@@ -1,0 +1,708 @@
+{
+  "topic_id": "fast_vision_language_pretraining",
+  "system": "surveygen",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Unimodal systems trained exclusively on images or text fail to model the rich correspondences between visual and linguistic content essential for tasks such as visual question answering, image captioning, and cross-modal retrieval ref [29].",
+      "citation_markers": [
+        "ref [29]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Vision-and-Language Pretraining",
+          "doi": "10.48550/arXiv.2207.01772",
+          "abstract": "With the burgeoning amount of data of image-text pairs and diversity of Vision-and-Language (V\\&amp;L) tasks, scholars have introduced an abundance of deep learning models in this research domain. Furthermore, in recent years, transfer learning has also shown tremendous success in Computer Vision for tasks such as Image Classification, Object Detection, etc., and in Natural Language Processing for Question Answering, Machine Translation, etc. Inheriting the spirit of Transfer Learning, research works in V\\&amp;L have devised multiple pretraining techniques on large-scale datasets in order to enhance the performance of downstream tasks. The aim of this article is to provide a comprehensive revision of contemporary V\\&amp;L pretraining models. In particular, we categorize and delineate pretraining approaches, along with the summary of state-of-the-art vision-and-language pretrained models. Moreover, a list of training datasets and downstream tasks is supplied to further polish the perspective into V\\&amp;L pretraining. Lastly, we decided to take a further step to discuss numerous directions for future research.",
+          "cited_by_count": "2.0",
+          "cited_by_bin": "Q3",
+          "first_author_hindex": "83.0",
+          "last_author_hindex": "",
+          "author_hindex_avg": "83.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.926557183265686",
+          "composite_score": "0.5409031573753954",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2207.01772",
+            "title": "Vision-and-Language Pretraining",
+            "abstract": "With the burgeoning amount of data of image-text pairs and diversity of Vision-and-Language (V\\&L) tasks, scholars have introduced an abundance of deep learning models in this research domain. Furthermore, in recent years, transfer learning has also shown tremendous success in Computer Vision for tasks such as Image Classification, Object Detection, etc., and in Natural Language Processing for Question Answering, Machine Translation, etc. Inheriting the spirit of Transfer Learning, research works in V\\&L have devised multiple pretraining techniques on large-scale datasets in order to enhance the performance of downstream tasks. The aim of this article is to provide a comprehensive revision of contemporary V\\&L pretraining models. In particular, we categorize and delineate pretraining approaches, along with the summary of state-of-the-art vision-and-language pretrained models. Moreover, a list of training datasets and downstream tasks is supplied to further polish the perspective into V\\&L pretraining. Lastly, we decided to take a further step to discuss numerous directions for future research.",
+            "published": "2022-07-05T02:18:49Z",
+            "source_url": "https://arxiv.org/abs/2207.01772"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "VLP models like BEiT-3 ref [2] and FLAVA ref [10] demonstrate that unified multimodal pretraining achieves state-of-the-art performance across diverse benchmarks simultaneously.",
+      "citation_markers": [
+        "ref [2]",
+        "ref [10]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+          "doi": "10.48550/arXiv.2208.10442",
+          "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+          "cited_by_count": "151.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "20.0",
+          "last_author_hindex": "83.0",
+          "author_hindex_avg": "51.5",
+          "author_h_bin": "Q1",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9208054542541504",
+          "composite_score": "0.672647277675306",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.10442",
+            "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+            "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+            "published": "2022-08-22T16:55:04Z",
+            "source_url": "https://arxiv.org/abs/2208.10442"
+          },
+          "source_accessible": true
+        },
+        {
+          "title": "FLAVA: A Foundational Language And Vision Alignment Model",
+          "doi": "10.1109/CVPR52688.2022.01519",
+          "abstract": "State-of-the-art vision and vision-and-language models rely on large-scale visio-linguistic pretraining for obtaining good performance on a variety of downstream tasks. Generally, such models are often either cross-modal (contrastive) or multi-modal (with earlier fusion) but not both; and they often only target specific modalities or tasks. A promising direction would be to use a single holistic universal model, as a “foundation”, that targets all modalities at once-a true vision and language foundation model should be good at vision tasks, language tasks, and cross- and multi-modal vision and language tasks. We introduce FLAVA as such a model and demonstrate impressive performance on a wide range of 35 tasks spanning these target modalities.",
+          "cited_by_count": "499.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "20.0",
+          "last_author_hindex": "48.0",
+          "author_hindex_avg": "34.0",
+          "author_h_bin": "Q2",
+          "journal_hindex": "203.0",
+          "journal_h_bin": "Q4",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9140989184379578",
+          "composite_score": "0.6072488969291014",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Early VLP models, including Unicoder-VL ref [9], bridged these domains by feeding visual and linguistic inputs into shared transformers. Subsequent works such as CLIP introduced contrastive dual-stream pretraining, while BEiT-3 ref [2] exemplified the convergence toward unified multimodal foundation models supporting vision, language, and cross-modal tasks within a single backbone.",
+      "citation_markers": [
+        "ref [9]",
+        "ref [2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Unicoder-VL: A Universal Encoder for Vision and Language by Cross-modal Pre-training",
+          "doi": "10.1609/AAAI.V34I07.6795",
+          "abstract": "We propose Unicoder-VL, a universal encoder that aims to learn joint representations of vision and language in a pre-training manner. Borrow ideas from cross-lingual pre-trained models, such as XLM (Lample and Conneau 2019) and Unicoder (Huang et al. 2019), both visual and linguistic contents are fed into a multi-layer Transformer (Vaswani et al. 2017) for the cross-modal pre-training, where three pre-trained tasks are employed, including Masked Language Modeling(MLM), Masked Object Classification(MOC) and Visual-linguistic Matching(VLM). The first two tasks learn context-aware representations for input tokens based on linguistic and visual contents jointly. The last task tries to predict whether an image and a text describe each other. After pretraining on large-scale image-caption pairs, we transfer Unicoder-VL to caption-based image-text retrieval and visual commonsense reasoning, with just one additional output layer. We achieve state-of-the-art or comparable results on both two tasks and show the powerful ability of the cross-modal pre-training.",
+          "cited_by_count": "746.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "12.0",
+          "last_author_hindex": "44.0",
+          "author_hindex_avg": "28.0",
+          "author_h_bin": "Q2",
+          "journal_hindex": "293.0",
+          "journal_h_bin": "Q3",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9219291806221008",
+          "composite_score": "0.6124568094454977",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+          "doi": "10.48550/arXiv.2208.10442",
+          "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+          "cited_by_count": "151.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "20.0",
+          "last_author_hindex": "83.0",
+          "author_hindex_avg": "51.5",
+          "author_h_bin": "Q1",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9208054542541504",
+          "composite_score": "0.672647277675306",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.10442",
+            "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+            "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+            "published": "2022-08-22T16:55:04Z",
+            "source_url": "https://arxiv.org/abs/2208.10442"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Vision-language pretraining supports a diverse spectrum of downstream tasks, which can be systematically categorized into several groups. Understanding tasks include visual question answering (VQA) ref [2], visual reasoning ref [28], and visual entailment ref [24]. Retrieval tasks encompass image-text and cross-modal retrieval ref [51].",
+      "citation_markers": [
+        "ref [2]",
+        "ref [28]",
+        "ref [24]",
+        "ref [51]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+          "doi": "10.48550/arXiv.2208.10442",
+          "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+          "cited_by_count": "151.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "20.0",
+          "last_author_hindex": "83.0",
+          "author_hindex_avg": "51.5",
+          "author_h_bin": "Q1",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9208054542541504",
+          "composite_score": "0.672647277675306",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.10442",
+            "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+            "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+            "published": "2022-08-22T16:55:04Z",
+            "source_url": "https://arxiv.org/abs/2208.10442"
+          },
+          "source_accessible": true
+        },
+        {
+          "title": "VL-BEiT: Generative Vision-Language Pretraining",
+          "doi": "10.48550/arXiv.2206.01127",
+          "abstract": "We introduce a vision-language foundation model called VL-BEiT, which is a bidirectional multimodal Transformer learned by generative pretraining. Our minimalist solution conducts masked prediction on both monomodal and multimodal data with a shared Transformer. Specifically, we perform masked vision-language modeling on image-text pairs, masked language modeling on texts, and masked image modeling on images. VL-BEiT is learned from scratch with one unified pretraining task, one shared backbone, and one-stage training. Our method is conceptually simple and empirically effective. Experimental results show that VL-BEiT obtains strong results on various vision-language benchmarks, such as visual question answering, visual reasoning, and image-text retrieval. Moreover, our method learns transferable visual features, achieving competitive performance on image classification, and semantic segmentation.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9227519035339355",
+          "composite_score": "0.5478752261866474",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2206.01127",
+            "title": "VL-BEiT: Generative Vision-Language Pretraining",
+            "abstract": "We introduce a vision-language foundation model called VL-BEiT, which is a bidirectional multimodal Transformer learned by generative pretraining. Our minimalist solution conducts masked prediction on both monomodal and multimodal data with a shared Transformer. Specifically, we perform masked vision-language modeling on image-text pairs, masked language modeling on texts, and masked image modeling on images. VL-BEiT is learned from scratch with one unified pretraining task, one shared backbone, and one-stage training. Our method is conceptually simple and empirically effective. Experimental results show that VL-BEiT obtains strong results on various vision-language benchmarks, such as visual question answering, visual reasoning, and image-text retrieval. Moreover, our method learns transferable visual features, achieving competitive performance on image classification, and semantic segmentation.",
+            "published": "2022-06-02T16:14:19Z",
+            "source_url": "https://arxiv.org/abs/2206.01127"
+          },
+          "source_accessible": true
+        },
+        {
+          "title": "MAP: Multimodal Uncertainty-Aware Vision-Language Pre-training Model",
+          "doi": "10.1109/CVPR52729.2023.02228",
+          "abstract": "Multimodal semantic understanding often has to deal with uncertainty, which means the obtained messages tend to refer to multiple targets. Such uncertainty is problematic for our interpretation, including inter- and intra-modal uncertainty. Little effort has studied the modeling of this uncertainty, particularly in pretraining on unlabeled datasets and fine-tuning in task-specific downstream datasets. In this paper, we project the representations of all modalities as probabilistic distributions via a Probability Distribution Encoder (PDE) by utilizing sequence-level interactions. Compared to the existing deterministic methods, such uncertainty modeling can convey richer multimodal semantic information and more complex relationships. Furthermore, we integrate uncertainty modeling with popular pretraining frameworks and propose suitable pretraining tasks: Distribution-based Vision-Language Contrastive learning (D-VLC), Distribution-based Masked Language Modeling (D-MLM), and Distribution-based Image-Text Matching (D-ITM). The fine-tuned models are applied to challenging downstream tasks, including image-text retrieval, visual question answering, visual reasoning, and visual entailment, and achieve state-of-the-art results.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9209189414978027",
+          "composite_score": "0.5578654477764675",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "COOKIE: Contrastive Cross-Modal Knowledge Sharing Pre-training for Vision-Language Representation",
+          "doi": "10.1109/ICCV48922.2021.00221",
+          "abstract": "There has been a recent surge of interest in cross-modal pre-training. However, existed approaches pre-train a one-stream model to learn joint vision-language representation, which suffers from calculation explosion when conducting cross-modal retrieval. In this work, we propose the Contrastive Cross-Modal Knowledge Sharing Pretraining (COOKIE) method to learn universal text-image representations. There are two key designs in it, one is the weight-sharing transformer on top of the visual and textual encoders to align text and image semantically, the other is three kinds of contrastive learning designed for sharing knowledge between different modalities. Cross-modal knowledge sharing greatly promotes the learning of unimodal representation. Experiments on multi-modal matching tasks including cross-modal retrieval, text matching, and image retrieval show the effectiveness and efficiency of our pre-training framework. Our COOKIE finetuned on cross-modal datasets MSCOCO, Flickr30K, and MSRVTT achieves new state-of-the-art results while using only 3/1000 inference time comparing to one-stream models. There are also 5.7% and 3.9% improvements in the task of image retrieval and text matching. Source code will be available at https://github.com/kywen1119/COOKIE.",
+          "cited_by_count": "33.0",
+          "cited_by_bin": "Q2",
+          "first_author_hindex": "5.0",
+          "last_author_hindex": "44.0",
+          "author_hindex_avg": "24.5",
+          "author_h_bin": "Q3",
+          "journal_hindex": "156.0",
+          "journal_h_bin": "Q4",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9201628565788269",
+          "composite_score": "0.5073027457777881",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Vision Transformers (ViT) have emerged as the dominant backbone, underpinning models such as BEiT-3 ref [2], CLIP-based architectures ref [6], and RegionCLIP ref [13], offering scalable patch-level representations that facilitate both global alignment and dense prediction tasks.",
+      "citation_markers": [
+        "ref [2]",
+        "ref [6]",
+        "ref [13]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+          "doi": "10.48550/arXiv.2208.10442",
+          "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+          "cited_by_count": "151.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "20.0",
+          "last_author_hindex": "83.0",
+          "author_hindex_avg": "51.5",
+          "author_h_bin": "Q1",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9208054542541504",
+          "composite_score": "0.672647277675306",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.10442",
+            "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+            "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+            "published": "2022-08-22T16:55:04Z",
+            "source_url": "https://arxiv.org/abs/2208.10442"
+          },
+          "source_accessible": true
+        },
+        {
+          "title": "PyramidCLIP: Hierarchical Feature Alignment for Vision-language Model Pretraining",
+          "doi": "10.48550/arXiv.2204.14095",
+          "abstract": "Large-scale vision-language pre-training has achieved promising results on downstream tasks. Existing methods highly rely on the assumption that the image-text pairs crawled from the Internet are in perfect one-to-one correspondence. However, in real scenarios, this assumption can be difficult to hold: the text description, obtained by crawling the affiliated metadata of the image, often suffers from the semantic mismatch and the mutual compatibility. To address these issues, we introduce PyramidCLIP, which constructs an input pyramid with different semantic levels for each modality, and aligns visual elements and linguistic elements in the form of hierarchy via peer-level semantics alignment and cross-level relation alignment. Furthermore, we soften the loss of negative samples (unpaired samples) so as to weaken the strict constraint during the pre-training stage, thus mitigating the risk of forcing the model to distinguish compatible negative pairs. Experiments on five downstream tasks demonstrate the effectiveness of the proposed PyramidCLIP. In particular, with the same amount of 15 million pre-training image-text pairs, PyramidCLIP exceeds CLIP on ImageNet zero-shot classification top-1 accuracy by 10.6%/13.2%/10.0% with ResNet50/ViT-B32/ViT-B16 based image encoder respectively. When scaling to larger datasets, PyramidCLIP achieves the state-of-the-art results on several downstream tasks. In particular, the results of PyramidCLIP-ResNet50 trained on 143M image-text pairs surpass that of CLIP using 400M data on ImageNet zero-shot classification task, significantly improving the data efficiency of CLIP.",
+          "cited_by_count": "42.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "26.0",
+          "last_author_hindex": "",
+          "author_hindex_avg": "26.0",
+          "author_h_bin": "Q3",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9154533743858337",
+          "composite_score": "0.6470282045461906",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2204.14095",
+            "title": "PyramidCLIP: Hierarchical Feature Alignment for Vision-language Model Pretraining",
+            "abstract": "Large-scale vision-language pre-training has achieved promising results on downstream tasks. Existing methods highly rely on the assumption that the image-text pairs crawled from the Internet are in perfect one-to-one correspondence. However, in real scenarios, this assumption can be difficult to hold: the text description, obtained by crawling the affiliated metadata of the image, often suffers from the semantic mismatch and the mutual compatibility. To address these issues, we introduce PyramidCLIP, which constructs an input pyramid with different semantic levels for each modality, and aligns visual elements and linguistic elements in the form of hierarchy via peer-level semantics alignment and cross-level relation alignment. Furthermore, we soften the loss of negative samples (unpaired samples) so as to weaken the strict constraint during the pre-training stage, thus mitigating the risk of forcing the model to distinguish compatible negative pairs. Experiments on five downstream tasks demonstrate the effectiveness of the proposed PyramidCLIP. In particular, with the same amount of 15 million pre-training image-text pairs, PyramidCLIP exceeds CLIP on ImageNet zero-shot classification top-1 accuracy by 10.6%/13.2%/10.0% with ResNet50/ViT-B32/ViT-B16 based image encoder respectively. When scaling to larger datasets, PyramidCLIP achieves the state-of-the-art results on several downstream tasks. In particular, the results of PyramidCLIP-ResNet50 trained on 143M image-text pairs surpass that of CLIP using 400M data on ImageNet zero-shot classification task, significantly improving the data efficiency of CLIP.",
+            "published": "2022-04-29T13:38:42Z",
+            "source_url": "https://arxiv.org/abs/2204.14095"
+          },
+          "source_accessible": true
+        },
+        {
+          "title": "RegionCLIP: Region-based Language-Image Pretraining",
+          "doi": "10.1109/CVPR52688.2022.01629",
+          "abstract": "Contrastive language-image pretraining (CLIP) using image-text pairs has achieved impressive results on image classification in both zero-shot and transfer learning set-tings. However, we show that directly applying such mod-els to recognize image regions for object detection leads to unsatisfactory performance due to a major domain shift: CLIP was trained to match an image as a whole to a text de-scription, without capturing the fine-grained alignment be-tween image regions and text spans. To mitigate this issue, we propose a new method called RegionCLIP that signifi-cantly extends CLIP to learn region-level visual representations, thus enabling fine-grained alignment between image regions and textual concepts. Our method leverages a CLIP model to match image regions with template captions, and then pretrains our model to align these region-text pairs in the feature space. When transferring our pretrained model to the open-vocabulary object detection task, our method outperforms the state of the art by 3.8 AP50 and 2.2 AP for novel categories on COCO and LVIS datasets, respectively. Further, the learned region representations support zero-shot inference for object detection, showing promising results on both COCO and LVIS datasets. Our code is available at https://github.com/microsoft/RegionCLIP.",
+          "cited_by_count": "506.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "10.0",
+          "last_author_hindex": "53.0",
+          "author_hindex_avg": "31.5",
+          "author_h_bin": "Q2",
+          "journal_hindex": "203.0",
+          "journal_h_bin": "Q4",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9175043106079102",
+          "composite_score": "0.59490020239559",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "BEiT-3 ref [2] further advanced single-stream modeling through Multiway Transformers, enabling modality-specific encoding alongside deep fusion, achieving state-of-the-art performance across diverse vision-language benchmarks.",
+      "citation_markers": [
+        "ref [2]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+          "doi": "10.48550/arXiv.2208.10442",
+          "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+          "cited_by_count": "151.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "20.0",
+          "last_author_hindex": "83.0",
+          "author_hindex_avg": "51.5",
+          "author_h_bin": "Q1",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9208054542541504",
+          "composite_score": "0.672647277675306",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.10442",
+            "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks",
+            "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO).",
+            "published": "2022-08-22T16:55:04Z",
+            "source_url": "https://arxiv.org/abs/2208.10442"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "CLIP established this paradigm, enabling efficient inference through independent modality encoding. ALIGN and COOKIE extended contrastive pretraining to larger noisy datasets. COTS enhances two-stream models with token-level and task-level interactions via momentum contrastive learning, achieving inference efficiency orders of magnitude faster than single-stream alternatives ref [20].",
+      "citation_markers": [
+        "ref [20]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "COTS: Collaborative Two-Stream Vision-Language Pre-Training Model for Cross-Modal Retrieval",
+          "doi": "10.1109/CVPR52688.2022.01524",
+          "abstract": "Large-scale single-stream pre-training has shown dramatic performance in image-text retrieval. Regrettably, it faces low inference efficiency due to heavy attention layers. Recently, two-stream methods like CLIP and ALIGN with high inference efficiency have also shown promising performance, however, they only consider instance-level alignment between the two streams (thus there is still room for improvement). To overcome these limitations, we propose a novel COllaborative Two-Stream vision-language pretraining model termed COTS for image-text retrieval by enhancing cross-modal interaction. In addition to instance-level alignment via momentum contrastive learning, we leverage two extra levels of cross-modal interactions in our COTS: (1) Token-level interaction - a masked vision-language modeling (MVLM) learning objective is devised without using a cross-stream network module, where variational autoencoder is imposed on the visual encoder to generate visual tokens for each image. (2) Task-level interaction - a KL-alignment learning objective is devised between text-to-image and image-to-text retrieval tasks, where the probability distribution per task is computed with the negative queues in momentum contrastive learning. Under a fair comparison setting, our COTS achieves the highest performance among all two-stream methods and comparable performance (but with 10,800× faster in inference) w.r.t. the latest single-stream methods. Importantly, our COTS is also applicable to text-to-video retrieval, yielding new state-of-the-art on the widely-used MSR-VTT dataset.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9186162352561951",
+          "composite_score": "0.5704159235399794",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "LEMON ref [27] provides the first systematic study of VLP scaling for image captioning, varying transformer parameters from 13M to 675M and pretraining data up to 200M image-text pairs (ALT200M), demonstrating log-linear improvements with scale.",
+      "citation_markers": [
+        "ref [27]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Scaling Up Vision-Language Pretraining for Image Captioning",
+          "doi": "10.1109/CVPR52688.2022.01745",
+          "abstract": "In recent years, we have witnessed significant performance boost in the image captioning task based on vision-language pre-training (VLP). Scale is believed to be an important factor for this advance. However, most existing work only focuses on pre-training transformers with moderate sizes (e.g., 12 or 24 layers) on roughly 4 million images. In this paper, we present LEMON O, a LargE-scale iMage captiONer, and provide the first empirical study on the scaling behavior of VLP for image captioning. We use the state-of-the-art Vin VL model as our reference model, which consists of an image feature extractor and a transformer model, and scale the transformer both up and down, with model sizes ranging from 13 to 675 million parameters. In terms of data, we conduct experiments with up to 200 million imagetext pairs which are automatically collected from web based on the alt attribute of the image (dubbed as ALT200M11The dataset is released at https://github.com/xiaoweihu/ALT200M). Extensive analysis helps to characterize the performance trend as the model size and the pre-training data size increase. We also compare different training recipes, especially for training on large-scale noisy data. As a result, LEMON achieves new state of the arts on several major image captioning benchmarks, including COCO Caption, nocaps, and Conceptual Captions. We also show LEMON can generate captions with long-tail vi-sual concepts when used in a zero-shot manner.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9223626255989075",
+          "composite_score": "0.5499969137908071",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "PyramidCLIP ref [6] addresses semantic mismatch in web-crawled data via hierarchical peer-level and cross-level alignment with softened negative loss. HiCLIP ref [14] introduces hierarchy-aware attention for progressive semantic alignment.",
+      "citation_markers": [
+        "ref [6]",
+        "ref [14]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "PyramidCLIP: Hierarchical Feature Alignment for Vision-language Model Pretraining",
+          "doi": "10.48550/arXiv.2204.14095",
+          "abstract": "Large-scale vision-language pre-training has achieved promising results on downstream tasks. Existing methods highly rely on the assumption that the image-text pairs crawled from the Internet are in perfect one-to-one correspondence. However, in real scenarios, this assumption can be difficult to hold: the text description, obtained by crawling the affiliated metadata of the image, often suffers from the semantic mismatch and the mutual compatibility. To address these issues, we introduce PyramidCLIP, which constructs an input pyramid with different semantic levels for each modality, and aligns visual elements and linguistic elements in the form of hierarchy via peer-level semantics alignment and cross-level relation alignment. Furthermore, we soften the loss of negative samples (unpaired samples) so as to weaken the strict constraint during the pre-training stage, thus mitigating the risk of forcing the model to distinguish compatible negative pairs. Experiments on five downstream tasks demonstrate the effectiveness of the proposed PyramidCLIP. In particular, with the same amount of 15 million pre-training image-text pairs, PyramidCLIP exceeds CLIP on ImageNet zero-shot classification top-1 accuracy by 10.6%/13.2%/10.0% with ResNet50/ViT-B32/ViT-B16 based image encoder respectively. When scaling to larger datasets, PyramidCLIP achieves the state-of-the-art results on several downstream tasks. In particular, the results of PyramidCLIP-ResNet50 trained on 143M image-text pairs surpass that of CLIP using 400M data on ImageNet zero-shot classification task, significantly improving the data efficiency of CLIP.",
+          "cited_by_count": "42.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "26.0",
+          "last_author_hindex": "",
+          "author_hindex_avg": "26.0",
+          "author_h_bin": "Q3",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9154533743858337",
+          "composite_score": "0.6470282045461906",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2204.14095",
+            "title": "PyramidCLIP: Hierarchical Feature Alignment for Vision-language Model Pretraining",
+            "abstract": "Large-scale vision-language pre-training has achieved promising results on downstream tasks. Existing methods highly rely on the assumption that the image-text pairs crawled from the Internet are in perfect one-to-one correspondence. However, in real scenarios, this assumption can be difficult to hold: the text description, obtained by crawling the affiliated metadata of the image, often suffers from the semantic mismatch and the mutual compatibility. To address these issues, we introduce PyramidCLIP, which constructs an input pyramid with different semantic levels for each modality, and aligns visual elements and linguistic elements in the form of hierarchy via peer-level semantics alignment and cross-level relation alignment. Furthermore, we soften the loss of negative samples (unpaired samples) so as to weaken the strict constraint during the pre-training stage, thus mitigating the risk of forcing the model to distinguish compatible negative pairs. Experiments on five downstream tasks demonstrate the effectiveness of the proposed PyramidCLIP. In particular, with the same amount of 15 million pre-training image-text pairs, PyramidCLIP exceeds CLIP on ImageNet zero-shot classification top-1 accuracy by 10.6%/13.2%/10.0% with ResNet50/ViT-B32/ViT-B16 based image encoder respectively. When scaling to larger datasets, PyramidCLIP achieves the state-of-the-art results on several downstream tasks. In particular, the results of PyramidCLIP-ResNet50 trained on 143M image-text pairs surpass that of CLIP using 400M data on ImageNet zero-shot classification task, significantly improving the data efficiency of CLIP.",
+            "published": "2022-04-29T13:38:42Z",
+            "source_url": "https://arxiv.org/abs/2204.14095"
+          },
+          "source_accessible": true
+        },
+        {
+          "title": "HiCLIP: Contrastive Language-Image Pretraining with Hierarchy-aware Attention",
+          "doi": "10.48550/arXiv.2303.02995",
+          "abstract": "The success of large-scale contrastive vision-language pretraining (CLIP) has benefited both visual recognition and multimodal content understanding. The concise design brings CLIP the advantage in inference efficiency against other vision-language models with heavier cross-attention fusion layers, making it a popular choice for a wide spectrum of downstream tasks. However, CLIP does not explicitly capture the hierarchical nature of high-level and fine-grained semantics conveyed in images and texts, which is arguably critical to vision-language understanding and reasoning. To this end, we equip both the visual and language branches in CLIP with hierarchy-aware attentions, namely Hierarchy-aware CLIP (HiCLIP), to progressively discover semantic hierarchies layer-by-layer from both images and texts in an unsupervised manner. As a result, such hierarchical aggregation significantly improves the cross-modal alignment. To demonstrate the advantages of HiCLIP, we conduct qualitative analysis on its unsupervised hierarchy induction during inference, as well as extensive quantitative experiments on both visual recognition and vision-language downstream tasks.",
+          "cited_by_count": "11.0",
+          "cited_by_bin": "Q2",
+          "first_author_hindex": "19.0",
+          "last_author_hindex": "47.0",
+          "author_hindex_avg": "33.0",
+          "author_h_bin": "Q2",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9216156005859375",
+          "composite_score": "0.591752521181403",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.02995",
+            "title": "HiCLIP: Contrastive Language-Image Pretraining with Hierarchy-aware Attention",
+            "abstract": "The success of large-scale contrastive vision-language pretraining (CLIP) has benefited both visual recognition and multimodal content understanding. The concise design brings CLIP the advantage in inference efficiency against other vision-language models with heavier cross-attention fusion layers, making it a popular choice for a wide spectrum of downstream tasks. However, CLIP does not explicitly capture the hierarchical nature of high-level and fine-grained semantics conveyed in images and texts, which is arguably critical to vision-language understanding and reasoning. To this end, we equip both the visual and language branches in CLIP with hierarchy-aware attentions, namely Hierarchy-aware CLIP (HiCLIP), to progressively discover semantic hierarchies layer-by-layer from both images and texts in an unsupervised manner. As a result, such hierarchical aggregation significantly improves the cross-modal alignment. To demonstrate the advantages of HiCLIP, we conduct qualitative analysis on its unsupervised hierarchy induction during inference, as well as extensive quantitative experiments on both visual recognition and vision-language downstream tasks.",
+            "published": "2023-03-06T09:44:01Z",
+            "source_url": "https://arxiv.org/abs/2303.02995"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Chinese CLIP ref [12] represents a prominent effort in this direction, constructing a large-scale Chinese image-text dataset by retrieving pairs from publicly available sources and proposing a two-stage pretraining strategy—first training with a frozen image encoder, then jointly optimizing all parameters—to achieve state-of-the-art performance on Chinese benchmarks including MUGE, Flickr30K-CN, and COCO-CN.",
+      "citation_markers": [
+        "ref [12]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Chinese CLIP: Contrastive Vision-Language Pretraining in Chinese",
+          "doi": "10.48550/arXiv.2211.01335",
+          "abstract": "The tremendous success of CLIP (Radford et al., 2021) has promoted the research and application of contrastive learning for vision-language pretraining. In this work, we construct a large-scale dataset of image-text pairs in Chinese, where most data are retrieved from publicly available datasets, and we pretrain Chinese CLIP models on the new dataset. We develop 5 Chinese CLIP models of multiple sizes, spanning from 77 to 958 million parameters. Furthermore, we propose a two-stage pretraining method, where the model is first trained with the image encoder frozen and then trained with all parameters being optimized, to achieve enhanced model performance. Our comprehensive experiments demonstrate that Chinese CLIP can achieve the state-of-the-art performance on MUGE, Flickr30K-CN, and COCO-CN in the setups of zero-shot learning and finetuning, and it is able to achieve competitive performance in zero-shot image classification based on the evaluation on the ELEVATER benchmark (Li et al., 2022). We have released our codes, models, and demos in https://github.com/OFA-Sys/Chinese-CLIP",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9136180877685547",
+          "composite_score": "0.5976574047904464",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2211.01335",
+            "title": "Chinese CLIP: Contrastive Vision-Language Pretraining in Chinese",
+            "abstract": "The tremendous success of CLIP (Radford et al., 2021) has promoted the research and application of contrastive learning for vision-language pretraining. In this work, we construct a large-scale dataset of image-text pairs in Chinese, where most data are retrieved from publicly available datasets, and we pretrain Chinese CLIP models on the new dataset. We develop 5 Chinese CLIP models of multiple sizes, spanning from 77 to 958 million parameters. Furthermore, we propose a two-stage pretraining method, where the model is first trained with the image encoder frozen and then trained with all parameters being optimized, to achieve enhanced model performance. Our comprehensive experiments demonstrate that Chinese CLIP can achieve the state-of-the-art performance on MUGE, Flickr30K-CN, and COCO-CN in the setups of zero-shot learning and finetuning, and it is able to achieve competitive performance in zero-shot image classification based on the evaluation on the ELEVATER benchmark (Li et al., 2022). We have released our codes, models, and demos in https://github.com/OFA-Sys/Chinese-CLIP",
+            "published": "2022-11-02T17:47:23Z",
+            "source_url": "https://arxiv.org/abs/2211.01335"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "RegionCLIP extends CLIP by aligning image regions with textual concepts, achieving significant gains in open-vocabulary object detection on COCO and LVIS ref [13]. SCLIP introduces a Correlative Self-Attention mechanism enabling training-free zero-shot semantic segmentation ref [49], while SILC augments contrastive pretraining with local-to-global self-distillation to improve dense prediction ref [30].",
+      "citation_markers": [
+        "ref [13]",
+        "ref [49]",
+        "ref [30]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "RegionCLIP: Region-based Language-Image Pretraining",
+          "doi": "10.1109/CVPR52688.2022.01629",
+          "abstract": "Contrastive language-image pretraining (CLIP) using image-text pairs has achieved impressive results on image classification in both zero-shot and transfer learning set-tings. However, we show that directly applying such mod-els to recognize image regions for object detection leads to unsatisfactory performance due to a major domain shift: CLIP was trained to match an image as a whole to a text de-scription, without capturing the fine-grained alignment be-tween image regions and text spans. To mitigate this issue, we propose a new method called RegionCLIP that signifi-cantly extends CLIP to learn region-level visual representations, thus enabling fine-grained alignment between image regions and textual concepts. Our method leverages a CLIP model to match image regions with template captions, and then pretrains our model to align these region-text pairs in the feature space. When transferring our pretrained model to the open-vocabulary object detection task, our method outperforms the state of the art by 3.8 AP50 and 2.2 AP for novel categories on COCO and LVIS datasets, respectively. Further, the learned region representations support zero-shot inference for object detection, showing promising results on both COCO and LVIS datasets. Our code is available at https://github.com/microsoft/RegionCLIP.",
+          "cited_by_count": "506.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "10.0",
+          "last_author_hindex": "53.0",
+          "author_hindex_avg": "31.5",
+          "author_h_bin": "Q2",
+          "journal_hindex": "203.0",
+          "journal_h_bin": "Q4",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9175043106079102",
+          "composite_score": "0.59490020239559",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "SCLIP: Rethinking Self-Attention for Dense Vision-Language Inference",
+          "doi": "10.48550/arXiv.2312.01597",
+          "abstract": "Recent advances in contrastive language-image pretraining (CLIP) have demonstrated strong capabilities in zero-shot classification by aligning visual representations with target text embeddings in an image level. However, in dense prediction tasks, CLIP often struggles to localize visual features within an image and fails to give accurate pixel-level predictions, which prevents it from functioning as a generalized visual foundation model. In this work, we aim to enhance CLIP's potential for semantic segmentation with minimal modifications to its pretrained models. By rethinking self-attention, we surprisingly find that CLIP can adapt to dense prediction tasks by simply introducing a novel Correlative Self-Attention (CSA) mechanism. Specifically, we replace the traditional self-attention block of CLIP vision encoder's last layer by our CSA module and reuse its pretrained projection matrices of query, key, and value, leading to a training-free adaptation approach for CLIP's zero-shot semantic segmentation. Extensive experiments show the advantage of CSA: we obtain a 38.2% average zero-shot mIoU across eight semantic segmentation benchmarks highlighted in this paper, significantly outperforming the existing SoTA's 33.9% and the vanilla CLIP's 14.1%.",
+          "cited_by_count": "2.0",
+          "cited_by_bin": "Q3",
+          "first_author_hindex": "10.0",
+          "last_author_hindex": "131.0",
+          "author_hindex_avg": "70.5",
+          "author_h_bin": "Q1",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.9123879671096802",
+          "composite_score": "0.5091185020887191",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2312.01597",
+            "title": "SCLIP: Rethinking Self-Attention for Dense Vision-Language Inference",
+            "abstract": "Recent advances in contrastive language-image pretraining (CLIP) have demonstrated strong capabilities in zero-shot classification by aligning visual representations with target text embeddings in an image level. However, in dense prediction tasks, CLIP often struggles to localize visual features within an image and fails to give accurate pixel-level predictions, which prevents it from functioning as a generalized visual foundation model. In this work, we aim to enhance CLIP's potential for semantic segmentation with minimal modifications to its pretrained models. By rethinking self-attention, we surprisingly find that CLIP can adapt to dense prediction tasks by simply introducing a novel Correlative Self-Attention (CSA) mechanism. Specifically, we replace the traditional self-attention block of CLIP vision encoder's last layer by our CSA module and reuse its pretrained projection matrices of query, key, and value, leading to a training-free adaptation approach for CLIP's zero-shot semantic segmentation. Extensive experiments show the advantage of CSA: we obtain a 38.2% average zero-shot mIoU across eight semantic segmentation benchmarks highlighted in this paper, significantly outperforming the existing SoTA's 33.9% and the vanilla CLIP's 14.1%.",
+            "published": "2023-12-04T03:18:46Z",
+            "source_url": "https://arxiv.org/abs/2312.01597"
+          },
+          "source_accessible": true
+        },
+        {
+          "title": "SILC: Improving Vision Language Pretraining with Self-Distillation",
+          "doi": "10.48550/arXiv.2310.13355",
+          "abstract": "Image-Text pretraining on web-scale image caption datasets has become the default recipe for open vocabulary classification and retrieval models thanks to the success of CLIP and its variants. Several works have also used CLIP features for dense prediction tasks and have shown the emergence of open-set abilities. However, the contrastive objective used by these models only focuses on image-text alignment and does not incentivise image feature learning for dense prediction tasks. In this work, we introduce SILC, a novel framework for vision language pretraining. SILC improves image-text contrastive learning with the simple addition of local-to-global correspondence learning by self-distillation. We show that distilling local image features from an exponential moving average (EMA) teacher model significantly improves model performance on dense predictions tasks like detection and segmentation, while also providing improvements on image-level tasks such as classification and retrieval. SILC models sets a new state of the art for zero-shot classification, few shot classification, image and text retrieval, zero-shot segmentation, and open vocabulary segmentation. We further show that SILC features greatly benefit open vocabulary detection, captioning and visual question answering.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9240790605545044",
+          "composite_score": "0.5406418015664949",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2310.13355",
+            "title": "SILC: Improving Vision Language Pretraining with Self-Distillation",
+            "abstract": "Image-Text pretraining on web-scale image caption datasets has become the default recipe for open vocabulary classification and retrieval models thanks to the success of CLIP and its variants. Several works have also used CLIP features for dense prediction tasks and have shown the emergence of open-set abilities. However, the contrastive objective used by these models only focuses on image-text alignment and does not incentivise image feature learning for dense prediction tasks. In this work, we introduce SILC, a novel framework for vision language pretraining. SILC improves image-text contrastive learning with the simple addition of local-to-global correspondence learning by self-distillation. We show that distilling local image features from an exponential moving average (EMA) teacher model significantly improves model performance on dense predictions tasks like detection and segmentation, while also providing improvements on image-level tasks such as classification and retrieval. SILC models sets a new state of the art for zero-shot classification, few shot classification, image and text retrieval, zero-shot segmentation, and open vocabulary segmentation. We further show that SILC features greatly benefit open vocabulary detection, captioning and visual question answering.",
+            "published": "2023-10-20T08:44:47Z",
+            "source_url": "https://arxiv.org/abs/2310.13355"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Research has demonstrated that contrastive vision-language models pretrained on web-scraped data exhibit sexual objectification bias, reflecting harmful societal stereotypes encoded in large-scale corpora ref [1]. Studies on gender bias quantify amplification during both pretraining and fine-tuning across multiple VLP model families, revealing that continued pretraining on gender-neutral data reduces group disparities and promotes fairness on VQAv2 and retrieval tasks without substantially compromising performance ref [43].",
+      "citation_markers": [
+        "ref [1]",
+        "ref [43]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Contrastive Language-Vision AI Models Pretrained on Web-Scraped Multimodal Data Exhibit Sexual Objectification Bias",
+          "doi": "10.1145/3593013.3594072",
+          "abstract": "Warning: The content of this paper may be upsetting or triggering.",
+          "cited_by_count": "34.0",
+          "cited_by_bin": "Q2",
+          "first_author_hindex": "17.0",
+          "last_author_hindex": "24.0",
+          "author_hindex_avg": "20.5",
+          "author_h_bin": "Q3",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "3.0",
+          "relevance_bin": "Q4",
+          "avg_cos_sim_to_others": "0.8397980332374573",
+          "composite_score": "0.7032884902840059",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Evaluating Bias and Fairness in Gender-Neutral Pretrained Vision-and-Language Models",
+          "doi": "10.48550/arXiv.2310.17530",
+          "abstract": "Pretrained machine learning models are known to perpetuate and even amplify existing biases in data, which can result in unfair outcomes that ultimately impact user experience. Therefore, it is crucial to understand the mechanisms behind those prejudicial biases to ensure that model performance does not result in discriminatory behaviour toward certain groups or populations. In this work, we define gender bias as our case study. We quantify bias amplification in pretraining and after fine-tuning on three families of vision-and-language models. We investigate the connection, if any, between the two learning stages, and evaluate how bias amplification reflects on model performance. Overall, we find that bias amplification in pretraining and after fine-tuning are independent. We then examine the effect of continued pretraining on gender-neutral data, finding that this reduces group disparities, i.e., promotes fairness, on VQAv2 and retrieval tasks without significantly compromising task performance.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.9051076173782349",
+          "composite_score": "0.5190421543689352",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2310.17530",
+            "title": "Evaluating Bias and Fairness in Gender-Neutral Pretrained Vision-and-Language Models",
+            "abstract": "Pretrained machine learning models are known to perpetuate and even amplify existing biases in data, which can result in unfair outcomes that ultimately impact user experience. Therefore, it is crucial to understand the mechanisms behind those prejudicial biases to ensure that model performance does not result in discriminatory behaviour toward certain groups or populations. In this work, we define gender bias as our case study. We quantify bias amplification in pretraining and after fine-tuning on three families of vision-and-language models. We investigate the connection, if any, between the two learning stages, and evaluate how bias amplification reflects on model performance. Overall, we find that bias amplification in pretraining and after fine-tuning are independent. We then examine the effect of continued pretraining on gender-neutral data, finding that this reduces group disparities, i.e., promotes fairness, on VQAv2 and retrieval tasks without significantly compromising task performance.",
+            "published": "2023-10-26T16:19:19Z",
+            "source_url": "https://arxiv.org/abs/2310.17530"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "arxiv_2002.11794": {
+    "doc_id": "arxiv_2002.11794",
+    "title": "Train Large, Then Compress: Rethinking Model Size for Efficient Training\n  and Inference of Transformers",
+    "year": 2020,
+    "venue": "cs.CL",
+    "abstract": "Since hardware resources are limited, the objective of training deep learning models is typically to maximize accuracy subject to the time and memory constraints of training and inference. We study the impact of model size in this setting, focusing on Transformer models for NLP tasks that are limited by compute: self-supervised pretraining and high-resource machine translation. We first show that even though smaller Transformer models execute faster per iteration, wider and deeper models converge in significantly fewer steps. Moreover, this acceleration in convergence typically outpaces the additional computational overhead of using larger models. Therefore, the most compute-efficient training strategy is to counterintuitively train extremely large models but stop after a small number of iterations.   This leads to an apparent trade-off between the training efficiency of large Transformer models and the inference efficiency of small Transformer models. However, we show that large models are more robust to compression techniques such as quantization and pruning than small models. Consequently, one can get the best of both worlds: heavily compressed, large models achieve higher accur"
+  },
+  "arxiv_2211.07715": {
+    "doc_id": "arxiv_2211.07715",
+    "title": "Fast DistilBERT on CPUs",
+    "year": 2022,
+    "venue": "cs.CL",
+    "abstract": "Transformer-based language models have become the standard approach to solving natural language processing tasks. However, industry adoption usually requires the maximum throughput to comply with certain latency constraints that prevents Transformer models from being used in production. To address this gap, model compression techniques such as quantization and pruning may be used to improve inference efficiency. However, these compression techniques require specialized software to apply and deploy at scale. In this work, we propose a new pipeline for creating and running Fast Transformer models on CPUs, utilizing hardware-aware pruning, knowledge distillation, quantization, and our own Transformer inference runtime engine with optimized kernels for sparse and quantized operators. We demonstrate the efficiency of our pipeline by creating a Fast DistilBERT model showing minimal accuracy loss on the question-answering SQuADv1.1 benchmark, and throughput results under typical production constraints and environments. Our results outperform existing state-of-the-art Neural Magic's DeepSparse runtime performance by up to 50% and up to 4.1x performance speedup over ONNX Runtime. Source cod"
+  },
+  "arxiv_2401.02038": {
+    "doc_id": "arxiv_2401.02038",
+    "title": "Understanding LLMs: A Comprehensive Overview from Training to Inference",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "The introduction of ChatGPT has led to a significant increase in the utilization of Large Language Models (LLMs) for addressing downstream tasks. There's an increasing focus on cost-efficient training and deployment within this context. Low-cost training and deployment of LLMs represent the future development trend. This paper reviews the evolution of large language model training techniques and inference deployment technologies aligned with this emerging trend. The discussion on training includes various aspects, including data preprocessing, training architecture, pre-training tasks, parallel training, and relevant content related to model fine-tuning. On the inference side, the paper covers topics such as model compression, parallel computation, memory scheduling, and structural optimization. It also explores LLMs' utilization and provides insights into their future development."
+  },
+  "arxiv_2402.09748": {
+    "doc_id": "arxiv_2402.09748",
+    "title": "Model Compression and Efficient Inference for Large Language Models: A\n  Survey",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Transformer based large language models have achieved tremendous success. However, the significant memory and computational costs incurred during the inference process make it challenging to deploy large models on resource-constrained devices. In this paper, we investigate compression and efficient inference methods for large language models from an algorithmic perspective. Regarding taxonomy, similar to smaller models, compression and acceleration algorithms for large language models can still be categorized into quantization, pruning, distillation, compact architecture design, dynamic networks. However, Large language models have two prominent characteristics compared to smaller models: (1) Most of compression algorithms require finetuning or even retraining the model after compression. The most notable aspect of large models is the very high cost associated with model finetuning or training. Therefore, many algorithms for large models, such as quantization and pruning, start to explore tuning-free algorithms. (2) Large models emphasize versatility and generalization rather than performance on a single task. Hence, many algorithms, such as knowledge distillation, focus on how to "
+  },
+  "arxiv_2404.15949": {
+    "doc_id": "arxiv_2404.15949",
+    "title": "CORM: Cache Optimization with Recent Message for Large Language Model\n  Inference",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Large Language Models (LLMs), despite their remarkable performance across a wide range of tasks, necessitate substantial GPU memory and consume significant computational resources. Beyond the memory taken up by model weights, the memory used by the KV cache rises linearly with sequence length, becoming a primary bottleneck for inference. In this paper, we introduce an innovative method for optimizing the KV cache, which considerably minimizes its memory footprint. Upon thorough investigation, we discover that in most Transformer models, (i) there is a striking similarity between adjacent tokens' query vectors, and (ii) the attention calculation of the current query can rely exclusively on the attention information of a small fraction of preceding queries. Based on these observations, we present CORM, a KV cache eviction policy that dynamically retains essential key-value pairs for inference without the need for model fine-tuning. Our validation shows that CORM reduces the inference memory usage of KV cache by up to 70\\% with negligible performance degradation across six tasks in LongBench. Furthermore, we demonstrate that CORM is compatible with GQA for further compression rate."
+  },
+  "arxiv_2409.17372": {
+    "doc_id": "arxiv_2409.17372",
+    "title": "Search for Efficient Large Language Models",
+    "year": 2024,
+    "venue": "cs.AI",
+    "abstract": "Large Language Models (LLMs) have long held sway in the realms of artificial intelligence research. Numerous efficient techniques, including weight pruning, quantization, and distillation, have been embraced to compress LLMs, targeting memory reduction and inference acceleration, which underscore the redundancy in LLMs. However, most model compression techniques concentrate on weight optimization, overlooking the exploration of optimal architectures. Besides, traditional architecture search methods, limited by the elevated complexity with extensive parameters, struggle to demonstrate their effectiveness on LLMs. In this paper, we propose a training-free architecture search framework to identify optimal subnets that preserve the fundamental strengths of the original LLMs while achieving inference acceleration. Furthermore, after generating subnets that inherit specific weights from the original LLMs, we introduce a reformation algorithm that utilizes the omitted weights to rectify the inherited weights with a small amount of calibration data. Compared with SOTA training-free structured pruning works that can generate smaller networks, our method demonstrates superior performance acr"
+  },
+  "arxiv_2501.16372": {
+    "doc_id": "arxiv_2501.16372",
+    "title": "Low-Rank Adapters Meet Neural Architecture Search for LLM Compression",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "The rapid expansion of Large Language Models (LLMs) has posed significant challenges regarding the computational resources required for fine-tuning and deployment. Recent advancements in low-rank adapters have demonstrated their efficacy in parameter-efficient fine-tuning (PEFT) of these models. This retrospective paper comprehensively discusses innovative approaches that synergize low-rank representations with Neural Architecture Search (NAS) techniques, particularly weight-sharing super-networks. Robust solutions for compressing and fine-tuning large pre-trained models are developed by integrating these methodologies. Our analysis highlights the potential of these combined strategies to democratize the use of LLMs, making them more accessible for deployment in resource-constrained environments. The resulting models exhibit reduced memory footprints and faster inference times, paving the way for more practical and scalable applications of LLMs. Models and code are available at https://github.com/IntelLabs/Hardware-Aware-Automated-Machine-Learning."
+  },
+  "arxiv_2508.06297": {
+    "doc_id": "arxiv_2508.06297",
+    "title": "KV Cache Compression for Inference Efficiency in LLMs: A Review",
+    "year": 2025,
+    "venue": "cs.DC",
+    "abstract": "Withtherapid advancement of large language models (LLMs), the context length for inference has been continuously increasing, leading to an exponential growth in the demand for Key-Value (KV) caching. This has resulted in a significant memory bottleneck, limiting the inference efficiency and scalability of the models. Therefore, optimizing the KV cache during inference is crucial for enhancing performance and efficiency. This review systematically examines current KV cache optimization techniques, including compression strategies such as selective token strategies, quantization, and attention compression. We evaluate the effectiveness, trade-offs, and application scenarios of these methods, providing a comprehensive analysis of their impact on memory usage and inference speed. We focus on identifying the limitations and challenges of existing methods, such as compatibility issues with different models and tasks. Additionally, this review highlights future research directions, including hybrid optimization techniques, adaptive dynamic strategies, and software-hardware co-design. These approaches aim to improve inference efficiency and promote the practical application of large langua"
+  }
+}

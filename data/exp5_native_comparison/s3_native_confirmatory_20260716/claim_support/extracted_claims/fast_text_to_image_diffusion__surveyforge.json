@@ -1,0 +1,120 @@
+{
+  "topic_id": "fast_text_to_image_diffusion",
+  "system": "surveyforge",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The forward diffusion process defines a fixed Markov chain that progressively corrupts a clean data sample $\\mathbf{x}_0 \\sim q(\\mathbf{x}_0)$ by injecting Gaussian noise across $T$ discrete timesteps, yielding the transition kernel $q(\\mathbf{x}_t|\\mathbf{x}_{t-1}) = \\mathcal{N}(\\mathbf{x}_t; \\sqrt{1-\\beta_t}\\mathbf{x}_{t-1}, \\beta_t\\mathbf{I})$.",
+      "citation_markers": [
+        "[1; 8; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The signal-to-noise ratio $\\text{SNR}(t) = \\bar{\\alpha}_t/(1-\\bar{\\alpha}_t)$ provides a unified lens for comparing variance schedules: linear schedules destroy signal too rapidly at low resolutions, motivating cosine and learned schedules that maintain perceptually informative intermediate noise levels [8],",
+      "citation_markers": [
+        "[8]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "the forward Markov chain admits a limiting stochastic differential equation (SDE) driven by Brownian motion, and the corresponding reverse-time SDE involves the score function of the marginal data density [10; 12].",
+      "citation_markers": [
+        "[10; 12]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "every such SDE possesses an associated probability flow ordinary differential equation sharing identical marginal distributions, enabling deterministic trajectory integration and exact likelihood evaluation via instantaneous change-of-variables [8; 13].",
+      "citation_markers": [
+        "[8; 13]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Classifier guidance derives a modified score by augmenting the unconditional score function with the gradient of a noise-aware classifier's log-probability, enabling a principled trade-off between sample fidelity and diversity through a guidance scale hyperparameter [15].",
+      "citation_markers": [
+        "[15]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Classifier-free guidance eliminates the separate classifier by jointly training the denoising network on conditional and unconditional objectives via random prompt dropout, then extrapolating beyond the conditional score at inference time [15; 16],",
+      "citation_markers": [
+        "[15; 16]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Compared to GANs, diffusion models optimize likelihood-based objectives that avoid adversarial instability and mode collapse [9],",
+      "citation_markers": [
+        "[9]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Discrete latent formulations, where mask-and-replace diffusion operates over vector-quantized token sequences [22], further demonstrate that the paradigm generalizes beyond continuous representations, mitigating autoregressive error accumulation while enabling efficient parallel decoding.",
+      "citation_markers": [
+        "[22]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Text-to-image diffusion models have emerged as powerful automated data factories, enabling the synthesis of richly annotated training corpora for discriminative vision tasks where real data collection remains prohibitively expensive or ethically constrained.",
+      "citation_markers": [
+        "[50]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "[50] demonstrates that inverting real images into diffusion latent spaces and conditioning generation on perturbed codes yields synthetic augmentation that consistently outperforms prompt-based baselines, achieving two-to-three-fold improvements in sample complexity for classification.",
+      "citation_markers": [
+        "[50]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Medical imaging represents a particularly compelling frontier: as surveyed in [12], diffusion-generated synthetic images address chronic data scarcity in radiology and pathology while mitigating patient privacy concerns.",
+      "citation_markers": [
+        "[12]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The signal-to-noise ratio perspective formalized in [8] further reveals that the variational lower bound simplifies to a compact expression in terms of SNR, enabling joint optimization of noise schedules alongside model parameters and yielding faster convergence—a finding with direct implications for compute-optimal training recipes.",
+      "citation_markers": [
+        "[8]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 15001,
+    "completion_tokens": 937,
+    "total_tokens": 15938
+  }
+}

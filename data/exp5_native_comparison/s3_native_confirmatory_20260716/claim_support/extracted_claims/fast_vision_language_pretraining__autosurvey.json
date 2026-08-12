@@ -1,0 +1,123 @@
+{
+  "topic_id": "fast_vision_language_pretraining",
+  "system": "autosurvey",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Billions of image-text pairs, ranging from social media posts to news articles and e-commerce listings, are now freely available at web scale, providing a rich and diverse source of supervision for training multimodal models without the need for costly manual annotation [1].",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The fundamental motivation behind VLP is to overcome these limitations by learning universal, transferable multimodal representations from large-scale, weakly supervised data [4].",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The introduction of Vision Transformers (ViTs) represented a major architectural shift, applying the transformer architecture—originally developed for NLP—directly to image patches, achieving competitive or superior performance compared to CNNs on standard benchmarks [21].",
+      "citation_markers": [
+        "[21]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Multi-task training further reinforced this view by demonstrating that jointly learning across multiple VL tasks with a single model could improve performance compared to task-specific baselines [3].",
+      "citation_markers": [
+        "[3]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The choice of visual encoder critically impacts the quality and efficiency of cross-modal alignment. Early VLP models relied on pretrained object detectors such as Faster R-CNN to extract region-based visual features, which provide semantically rich representations but introduce computational bottlenecks, restrict the concept vocabulary to the detector's training categories, and decouple visual and cross-modal learning [34].",
+      "citation_markers": [
+        "[34]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "More recent architectures such as BEiT-3 [13] generalized masked image modeling—itself inspired by BERT's masked language modeling—to image tokens represented as visual \"words,\" treating images as a foreign language to be processed by the same transformer backbone used for text.",
+      "citation_markers": [
+        "[13]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "BEiT-3 pretrains by performing masked data modeling across monomodal and multimodal data simultaneously, treating image patches, text tokens, and image-text pairs uniformly within the same transformer framework.",
+      "citation_markers": [
+        "[13]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "The [77] model exemplifies this integration philosophy by employing a single transformer network that is shared across image encoding, text encoding, and multimodal fusion tasks. UFO jointly optimizes image-text contrastive loss, image-text matching loss, and masked language modeling loss within a unified architecture by leveraging both bidirectional and seq2seq attention masks.",
+      "citation_markers": [
+        "[77]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Models such as SimVLM [4] have reported substantial gains on VQA v2, achieving improvements of +3.74% vqa-score over prior pretraining methods, demonstrating how large-scale weak supervision with prefix language modeling objectives can dramatically improve VQA performance.",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "The VLUE benchmark [57] explicitly incorporates out-of-distribution test sets and efficiency-performance trade-off measures, providing a more honest assessment of VLP model generalization—",
+      "citation_markers": [
+        "[57]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "The MMVP benchmark has revealed CLIP-blind pairs—visually distinct images that contrastive models erroneously perceive as semantically similar—exposing systematic visual shortcomings that aggregate retrieval metrics fail to detect.",
+      "citation_markers": [
+        "[70][13]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Future research must develop principled methods for auditing and mitigating social biases absorbed from web-scale training corpora, building on emerging debiasing and counterfactual evaluation frameworks.",
+      "citation_markers": [
+        "[55]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 72787,
+    "completion_tokens": 906,
+    "total_tokens": 73693,
+    "prompt_tokens_details": {
+      "cached_tokens": 72448
+    }
+  }
+}

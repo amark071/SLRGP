@@ -1,0 +1,32 @@
+[S5a] run_id=s5a_smoke_20260713_2009 root=results/s5/s5a_smoke_20260713_2009
+[S5a] topics=code/experiments/exp4_structural_recursion/topics_s5a.txt tiers=short arms=recursive_slrgp,fixed_outline_no_reentry,flat_single_pass model=anthropic/claude-sonnet-4.6 limit=1
+[S5a] RUN 3D Gaussian Splatting | short | recursive_slrgp
+    [llm] call #1 chars=4431 max_tokens=1500 attempt=0
+    [llm] done 21.1s usage={'prompt_tokens': 1074, 'completion_tokens': 913, 'total_tokens': 1987}
+    [llm] call #2 chars=4437 max_tokens=1500 attempt=0
+    [llm] done 20.4s usage={'prompt_tokens': 1067, 'completion_tokens': 917, 'total_tokens': 1984}
+[S5a] 3D Gaussian Splatting | short | recursive_slrgp ok=True words=1206 refs=8
+[S5a] RUN 3D Gaussian Splatting | short | fixed_outline_no_reentry
+    [llm] call #3 chars=4431 max_tokens=1500 attempt=0
+    [llm] done 19.9s usage={'prompt_tokens': 1074, 'completion_tokens': 920, 'total_tokens': 1994}
+    [llm] call #4 chars=4437 max_tokens=1500 attempt=0
+    [llm] done 19.1s usage={'prompt_tokens': 1067, 'completion_tokens': 903, 'total_tokens': 1970}
+[S5a] 3D Gaussian Splatting | short | fixed_outline_no_reentry ok=True words=1184 refs=8
+[S5a] RUN 3D Gaussian Splatting | short | flat_single_pass
+    [llm] call #5 chars=8453 max_tokens=3000 attempt=0
+    [llm] done 41.0s usage={'prompt_tokens': 2020, 'completion_tokens': 1619, 'total_tokens': 3639}
+[S5a] 3D Gaussian Splatting | short | flat_single_pass ok=True words=1060 refs=8
+[S5a] summary n_ok=3/3 usage={'n_calls': 5, 'prompt_tokens': 6302, 'completion_tokens': 5272}
+wrote results/s5/s5a_smoke_20260713_2009/s5a_design_audit.json; eligible=3/3; issues=0
+S5a blind scoring: 9 calls remaining
+review_001 gpt55 error=False
+review_001 gemini31pro error=False
+review_001 sonnet5 error=False
+review_002 gpt55 error=False
+review_002 gemini31pro error=False
+review_002 sonnet5 error=False
+review_003 gpt55 error=False
+review_003 gemini31pro error=False
+review_003 sonnet5 error=False
+wrote results/s5/s5a_smoke_20260713_2009/S5A_LENGTH_STATS.json and results/s5/s5a_smoke_20260713_2009/S5A_LENGTH_STATS.md
+[S5a] DONE root=results/s5/s5a_smoke_20260713_2009

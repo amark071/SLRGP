@@ -1,0 +1,277 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+\newcommand{\snote}[1]{\section*{Supplementary Note #1}}
+
+\title{Supplementary Information\\[4pt]\large Formalizing literature-review construction as a compositional and recursive operator system}
+\author{%
+Haoyu Wang$^{1}$,
+Yizhuo Zheng$^{2}$,
+Yue Ding$^{3,\ast}$,
+Tingyang Huang$^{4}$,
+Qian Li$^{5}$
+}
+\date{%
+\normalsize
+$^{1}$Beijing Liaoyuan Shuke Information Technology Co., Ltd., Beijing, China\\
+$^{2}$School of Mathematical Sciences, Peking University, Beijing, China\\
+$^{3}$Sino-French Institute, Renmin University of China, Suzhou, China\\
+$^{4}$School of Economics, Beijing Wuzi University, Beijing 101149, China\\
+$^{5}$Trueland Information Technology (Shanghai) Co., Ltd., Shanghai, China\\[6pt]
+$^{\ast}$Corresponding author: Yue Ding (\href{mailto:dingyue0827@ruc.edu.cn}{dingyue0827@ruc.edu.cn})
+}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\clearpage
+
+\snote{1: Structural corpus construction and failure ledger}
+\addcontentsline{toc}{section}{Supplementary Note 1: Structural corpus construction and failure ledger}
+
+The candidate population contained 2,862 arXiv review records across eleven disciplines. Deterministic LaTeX parsing (macro expansion for \texttt{\textbackslash input}/\texttt{\textbackslash include}, comment stripping, main-file identification, section-command recovery and citation-command assignment) returned a usable tree for 2,223 records; two further reviews were excluded for having fewer than two top-level sections, yielding the analytic population of 2,221 reviews. Records that failed recovery are retained in a failure ledger categorized by cause and are reported as a sampling-frame limitation rather than silently dropped.
+
+The 2,221 recovered trees contain 12,111 branching nodes before repair. Because top-level organization (the division of a review into its main sections) is itself an organizational decision, a synthetic review-root node was added for every review with at least two top-level sections, yielding 14,332 organization nodes (2,221 of them synthetic roots). Depth distribution: 2,221 nodes at depth 0, 7,834 at depth 1 and 4,277 at depth 2. Mean citation-child coverage among nodes with coverage defined was 0.935 (median 1.0).
+
+\snote{2: Blind expressibility discrimination and a corrected blinding failure}
+\addcontentsline{toc}{section}{Supplementary Note 2: Blind expressibility discrimination and a corrected blinding failure}
+
+For each of the 2,881 held-out authentic organization nodes, two synthetic sibling groups were constructed. \emph{Tier 1 (matched synthetic)}: same discipline, same parent cardinality, section titles resampled from other reviews of the same discipline. \emph{Tier 2 (hard matched synthetic, primary)}: additionally matched on topic neighbourhood, node depth, title length, branch count and citation-bearing child count, with titles drawn from semantically close sibling groups belonging to different parents --- locally plausible material whose only defect is that it was never organized together by an expert.
+
+All 8,643 items (authentic, tier-1, tier-2) were scored by a single frozen annotation model (GPT-5.4-mini) in randomized order. A first annotation pass was discarded and is not used anywhere in the reported analysis: its prompt-visible item identifiers encoded the condition (\texttt{authentic}/\texttt{tier1}/\texttt{tier2}) and therefore broke blinding. The final run exposes only batch-local opaque identifiers (for example \texttt{item\_000}) and maps them back after annotation. Statistics use 10,000 bootstrap and 10,000 permutation iterations.
+
+\begin{table}[h]
+\caption*{\textbf{Supplementary Table 1.} Authentic-versus-synthetic expressibility discrimination (2,881 pairs per tier).}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Control tier & Pairwise accuracy & ROC-AUC & Mean difference & 95\% bootstrap CI \\
+\midrule
+Tier 1 matched synthetic & 0.592 & 0.594 & +0.105 & [0.090, 0.120] \\
+Tier 2 hard matched (primary) & 0.565 & 0.581 & +0.082 & [0.067, 0.096] \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Both permutation $p<10^{-4}$. The tier-1 effect is larger than the tier-2 effect, as expected for the easier control; the main text reports only the harder tier-2 contrast.
+
+\snote{3: Social-science coverage}
+\addcontentsline{toc}{section}{Supplementary Note 3: Social-science coverage}
+
+The eleven-discipline confirmatory corpus spans two quantitative social sciences, economics and quantitative finance, parsed deterministically from arXiv LaTeX and evaluated at the same held-out nested-node endpoint as the main claim (Supplementary Note 2). Restricting the frozen blind tier-2 endpoint to these strata yields 132 held-out nested-node pairs with a mean authentic-minus-synthetic expressibility difference of $+0.077$ (95\% bootstrap CI [$+0.005$, $+0.149$]), pairwise accuracy 0.523, ROC-AUC 0.573 and permutation $p=0.037$, consistent with the full-corpus effect of $+0.082$. Discipline-resolved, quantitative finance alone reaches $+0.137$ (95\% CI [$+0.017$, $+0.251$], $p=0.029$, $n=51$) and economics is directionally positive but individually underpowered ($+0.039$, 95\% CI [$-0.054$, $+0.130$], $p=0.40$, $n=81$). The semantic-expressibility discrimination null is therefore rejected within quantitative social science at the registered endpoint, without any new data acquisition or scoring: the analysis is a discipline-resolved slice of the frozen blind pass over the confirmatory corpus.
+
+\snote{4: Organization annotation instrument and agreement}
+\addcontentsline{toc}{section}{Supplementary Note 4: Organization annotation instrument and agreement}
+
+Each organization node was labelled twice by the frozen annotation model on two independent axes: partition facet (topic, method, theory, object, level, controversy, application/task, other) and ordering relation (chronological, foundational-to-applied, simple-to-complex, consensus-to-controversy, general-to-specific, enumerative/none, other). Two-pass agreement was 0.718 for facet (Cohen's $\kappa=0.633$) and 0.627 for relation ($\kappa=0.488$). The largest relation disagreements are between general-to-specific and enumerative/none. Consensus labels used the shared label when passes agreed, otherwise the higher-confidence label with the disagreement source retained.
+
+\snote{5: Learned expansion operator ($E$)}
+\addcontentsline{toc}{section}{Supplementary Note 5: Learned expansion operator ($E$)}
+
+Test-time inputs were restricted to review title, abstract, discipline and top-50 BM25 pseudo-relevance-feedback documents. A logistic term selector was trained on training-split supervision only (term occurrence in the audited citation neighbourhood). The pre-registered validation rule (maximize macro Coverage@300, ties toward fewer terms) selected 10 expansion terms (validation $\Delta=+0.0032$, 95\% CI [$-0.0001$, $+0.0072$]).
+
+Held-out test, primary endpoint macro Coverage@300: baseline 0.2996 versus expanded 0.2982, paired $\Delta=-0.0014$ (95\% CI [$-0.0071$, $+0.0037$], Wilcoxon $p=0.911$). Depth profile: Coverage@1000 $+0.0033$; retrieval ceiling 0.559 versus 0.569. Cascade to the frozen learned ranker on the expanded top-300 pool: nDCG@10 0.412 $\rightarrow$ 0.305 ($\Delta=-0.107$, 95\% CI [$-0.157$, $-0.069$], $p=0.00031$); Recall@50 $\Delta=-0.084$; MRR $\Delta=-0.149$. Learned $E$ marginally broadens the deep pool but degrades the deployed cascade; it is not deployed.
+
+\snote{6: Learned location operator ($L$)}
+\addcontentsline{toc}{section}{Supplementary Note 6: Learned location operator ($L$)}
+
+All numbers are computed on a from-scratch depth-3,000 retrieval base: full BM25 and dense retrieval over the 3.66M-document corpus for all 1,102 qualifying reviews, with the BM25$\cup$dense union as candidate universe (reproduction check: 37,245/37,245 originally retrieved positives recovered). Review-grouped SHA-256 split 70/15/15 (765/184/153 reviews), test scored once after code freeze.
+
+\begin{table}[h]
+\caption*{\textbf{Supplementary Table 2.} Coverage decomposition at the deployment interface (test split, micro).}
+\centering
+\small
+\begin{tabular}{@{}lc@{}}
+\toprule
+Quantity & Value \\
+\midrule
+Retrieval ceiling @3000 (BM25$\cup$dense) & 0.534 \\
+Deployment interface: RRF @300 & 0.244 \\
+Rank gap (inside pool, below rank 300) & 0.290 \\
+Retrieval gap (unreachable at any depth $\le$3000) & 0.466 \\
+Random-order floor @300 & 0.035 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+RRF coverage climbs 0.244 (@300) $\rightarrow$ 0.520 (@500) $\rightarrow$ 0.534 (@1000) and then plateaus: most of the rank gap is a depth-budget artefact of the fixed top-300 interface, while the $\approx$47\% retrieval gap is a genuine recall ceiling. Tier-1 learned fusion (LambdaMART over leakage-safe retrieval features) improved Coverage@300 over the RRF input ordering by $+0.0113$ (BCa 95\% CI [$+0.0040$, $+0.0195$], Wilcoxon $p=0.0027$); the label-permutation sentinel collapses fusion to 0.099, near the random floor. Tier-2 citation-supervised bi-encoder fine-tuning alone did not improve coverage ($\Delta=-0.003$, $p=0.30$); fused with RRF it yields the strongest system ($\Delta=+0.018$ over RRF, $p=7.6\times10^{-5}$; ceiling 0.46 $\rightarrow$ 0.51). One correction is disclosed here for completeness: an initial fine-tuning run, conducted under an anomalously small batch size, collapsed the embedding geometry and was discarded; the reported run uses cached contrastive loss with batch size 256 and does not exhibit this collapse.
+
+\snote{7: Learned filtering operator ($F$)}
+\addcontentsline{toc}{section}{Supplementary Note 7: Learned filtering operator ($F$)}
+
+Eligibility supervision came from a stratified, blind three-model consensus proxy over depth-500 candidate pools (citation positives, rule-clear negatives, semantic hard negatives, high-scoring uncited candidates, ambiguous candidates); uncertain cases were retained as uncertain, and uncited status was never treated as proof of ineligibility. Of a 500-item audit sample, 388 held-out test items received decided consensus labels. A LightGBM eligibility model showed semantic signal (eligible-versus-other AUC 0.707) but did not improve the registered high-recall operating point: learned $F$ reached eligibility recall 0.926 and precision 0.761 at 89.4\% pool retention, versus 0.954 recall and 0.766 precision at 91.5\% retention for a simple RRF threshold. The learned filter pruned slightly more but lost more admissible, citation-bearing material without improving precision; it is not deployed. Because the labels are model-consensus proxies rather than human gold, this experiment supports a directional semantic signal and an operational negative only.
+
+\snote{8: Learned ranking operator ($R$): label audit, sentinels and sensitivity}
+\addcontentsline{toc}{section}{Supplementary Note 8: Learned ranking operator ($R$): label audit, sentinels and sensitivity}
+
+\textbf{Linkage audit.} Positives are bibliography entries whose citation keys are used in the body text. A first audit of the automatic bibliography-to-corpus linkage measured population-stratified precision 0.910 (below the pre-registered gate), driven by short/generic-title homographs. An author-surname/year-proximity guard for $\le$3-word titles was added; re-resolution dropped 185 homograph mislinks (12.9\% of the short-title stratum). The re-audit (200 stratified items) measured population-stratified linkage precision 0.962 (95\% CI [0.931, 0.987]), passing the dual gate (point $\ge$0.95 and CI lower $\ge$0.90); residual mislinks concentrate in preprint-versus-journal version conflation.
+
+\textbf{Leakage sentinels.} The single-feature probe passed (no single feature reaches 90\% of full-model validation nDCG@10). The label-permutation and per-query MRR-saturation sentinels triggered on their pre-registered thresholds and were resolved by validation-set forensics as threshold misspecification before the test split was scored: a tree ranker on permuted labels attains a small feature-structure floor above uniform random (real 0.441 versus permuted $\approx$0.10--0.14), and first-position saturation is driven by legitimate temporally-safe signals.
+
+\begin{table}[h]
+\caption*{\textbf{Supplementary Table 3.} Held-out ranking results at the top-300 deployment interface (test, $n=153$ reviews; zero-positive queries scored 0).}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\resizebox{0.85\linewidth}{!}{%
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Arm & nDCG@10 & Recall@50 & MRR \\
+\midrule
+RRF fusion (deployment input order) & 0.259 & 0.421 & 0.468 \\
+BM25-only & 0.239 & --- & --- \\
+Dense-only & 0.234 & --- & --- \\
+SPECTER2 cosine & 0.255 & 0.471 & 0.467 \\
+Linear pairwise (same features) & 0.310 & 0.460 & 0.553 \\
+Learned ranker (LambdaMART, main) & \textbf{0.412} & \textbf{0.594} & \textbf{0.674} \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\textbf{Label-noise sensitivity.} The audit leaves $\approx$3.8\% residual positive-label noise. Test positives were flipped at measured per-stratum error rates scaled to 1$\times$/2$\times$/3$\times$ (200 Monte-Carlo draws each): learned-versus-RRF $\Delta$nDCG@10 remains $+0.148$/$+0.144$/$+0.139$ with 100\% of draws positive at every level. \textbf{Rank--value decay.} Hit density follows a power law at both the pool-inclusion and learned-ranker loci ($\Delta$AIC versus exponential $-373$ and $-49$); the learned ranker decays more steeply ($b=0.853$ versus 0.497) with higher head density ($h(1)=0.569$ versus 0.320), the mechanistic picture behind the nDCG gain. No unique optimal pool depth is claimed; an operating-region family over cost-to-value ratios is reported instead.
+
+\snote{9: Matched operator substitutions and open-weight robustness}
+\addcontentsline{toc}{section}{Supplementary Note 9: Matched operator substitutions and open-weight robustness}
+
+\textbf{Preliminary pilot (excluded from inference).} A first 8-topic, 5-arm generation batch completed with full provenance (40/40 outputs, zero citation-provenance violations) but failed the pre-specified design gate for causal quality comparison: only 1/8 topics stayed within a 1.15 max/min word-count ratio across arms, and the executed rank-slab arm changed the root group structure. That batch is retained only as a process/cost reference and was never blind-scored.
+
+\textbf{Matched confirmatory rerun.} For each topic a root bundle from the intact trace (candidate order, evidence set, semantic grouping, group-count/size vector) was frozen across arms; all arms used the same backbone and a fixed 1,000-word target. 40/40 generations completed; the design gate admitted 38/40 (two unguarded-stress outputs below the 850-word bound were excluded, so the validation-stress contrast uses six paired topics). Blind judging produced 120/120 valid scores.
+
+\begin{table}[h]
+\caption*{\textbf{Supplementary Table 4.} Matched-substitution experiment: primary panel-overall contrasts and key dimension results.}
+\centering
+\small
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Contrast & $n$ & $\Delta$ & 95\% CI & exact $p$ / $q$ & W/T/L \\
+\midrule
+Semantic $O$ vs rank slabs & 8 & +0.417 & [+0.156, +0.729] & 0.016 / 0.047 & 7/0/1 \\
+Recursion vs flat no-reentry & 8 & $-0.021$ & [$-0.135$, +0.083] & 0.875 / 0.875 & 4/1/3 \\
+Guarded $V$ vs unguarded stress & 6 & +0.375 & [+0.194, +0.569] & 0.031 / 0.047 & 6/0/0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Dimension level: semantic $O$ chiefly improves organizational quality ($+0.917$, $q=0.023$, 8/0/0) and global coherence ($+0.708$, $q=0.047$); guarded $V$ under stress improves organizational quality ($+1.111$, $q=0.047$); citation plausibility does not change in either contrast.
+
+\textbf{Open-weight robustness companion.} The two positive contrasts were repeated under a self-hosted Qwen3-32B backbone (4-bit quantized service, held identical across arms) on four topics. All 16 outputs completed with 48/48 valid blind scores; 13/16 rows passed the word-count design gate, leaving $n=3$ (organization) and $n=2$ (stress-validation) primary pairs. Panel-overall deltas favoured the same direction as the Claude-backbone experiment in every eligible pair: organization $+0.889$ (95\% CI [+0.500, +1.417], 3/0/0), stress validation $+1.458$ ([+1.333, +1.583], 2/0/0); the all-rows sensitivity set ($n=4$ each) preserved both directions (4/0/0 each). This companion is registered as a directional robustness check, not an independent significance claim.
+
+\snote{10: Length scaling: Stage-A boundary and Stage-B structural recursion}
+\addcontentsline{toc}{section}{Supplementary Note 10: Length scaling: Stage-A boundary and Stage-B structural recursion}
+
+\textbf{Stage A.} Six topics $\times$ three tiers (short 1,200; medium 3,600; long 9,000 target words; $d_{\max}$ 1/2/3) $\times$ three arms (registered \texttt{recursive\_slrgp}, fixed outline, flat single pass) = 54 generations; 54/54 completed and passed the design gate; 162/162 valid blind judge records.
+
+\begin{table}[h]
+\caption*{\textbf{Supplementary Table 5.} Stage-A panel-overall contrasts (positive favours the registered recursive arm).}
+\centering
+\small
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+Tier & Contrast & $\Delta$ & 95\% CI & exact $p$ & W/T/L \\
+\midrule
+short & vs flat & $-0.028$ & [$-0.056$, $-0.000$] & 0.500 & 0/4/2 \\
+short & vs fixed outline & $-0.014$ & [$-0.069$, +0.042] & 1.000 & 2/1/3 \\
+medium & vs flat & $-0.250$ & [$-0.667$, +0.222] & 0.375 & 1/0/5 \\
+medium & vs fixed outline & $-0.417$ & [$-0.667$, $-0.139$] & 0.062 & 1/0/5 \\
+long & vs flat & +0.083 & [$-0.389$, +0.569] & 0.812 & 3/0/3 \\
+long & vs fixed outline & +0.028 & [$-0.125$, +0.181] & 0.875 & 3/1/2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A post-hoc implementation audit established that the Stage-A arm partitioned fixed evidence groups and wrote adjacent leaves without re-invoking organization at internal nodes or merging child outputs upward --- naive chunking, not the stated recursion. Stage A is therefore reported as a boundary result: chunking alone is not structural recursion.
+
+\textbf{Construct-validity diagnostic.} A one-topic long-tier diagnostic instantiated the corrected algebra and verified its operator signature: the structural arm produced 6 organization calls, 28 descent events, 11 bounded leaf writes and 7 upward merge events, versus 0/12/8/0 for naive chunking and 0/0/1/0 for flat generation; all three arms passed citation closure.
+
+\textbf{Stage B.} On the same six topics at the long tier, with the same frozen evidence pool and the same thirty-two leaf evidence cards per topic as controls, the structural arm improved panel-overall quality over naive chunking $+1.125$ (95\% CI [0.903, 1.375]), fixed outline $+1.139$ ([1.028, 1.278]) and flat generation $+1.375$ ([0.847, 1.889]); each exact $p=0.031$, $q=0.039$, 6/6 topic wins. Organizational quality, global coherence and critical synthesis improved in all three contrasts; citation plausibility was unchanged against naive chunking and fixed outline and directionally higher than flat ($\Delta=+1.000$, $q=0.072$). Dynamic child-level $E/L/F/R$ re-entry was not implemented or tested. All contrasts and per-dimension results appear in Supplementary Table 6.
+
+\begin{table}[h]
+\caption*{\textbf{Supplementary Table 6.} Stage-B structural-recursion contrasts at the long tier (six topics; positive favours the structural arm).}
+\centering
+\small
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+Contrast & Endpoint & $\Delta$ & 95\% CI & exact $p$ & BH-FDR $q$ & W/T/L \\
+\midrule
+vs naive chunking & overall & $+1.125$ & [+0.903, +1.375] & 0.031 & 0.039 & 6/0/0 \\
+vs naive chunking & organizational quality & $+2.222$ & [+2.056, +2.444] & 0.031 & 0.039 & 6/0/0 \\
+vs naive chunking & critical synthesis & $+0.611$ & [+0.389, +0.944] & 0.031 & 0.039 & 6/0/0 \\
+vs naive chunking & global coherence & $+1.611$ & [+1.333, +1.889] & 0.031 & 0.039 & 6/0/0 \\
+vs naive chunking & citation plausibility & $+0.056$ & [$-0.222$, +0.333] & 1.000 & 1.000 & 2/2/2 \\
+\midrule
+vs fixed outline & overall & $+1.139$ & [+1.028, +1.278] & 0.031 & 0.039 & 6/0/0 \\
+vs fixed outline & organizational quality & $+2.222$ & [+2.056, +2.444] & 0.031 & 0.039 & 6/0/0 \\
+vs fixed outline & critical synthesis & $+0.667$ & [+0.500, +0.833] & 0.031 & 0.039 & 6/0/0 \\
+vs fixed outline & global coherence & $+1.667$ & [+1.389, +1.889] & 0.031 & 0.039 & 6/0/0 \\
+vs fixed outline & citation plausibility & $0.000$ & [$-0.222$, +0.222] & 1.000 & 1.000 & 2/2/2 \\
+\midrule
+vs flat generation & overall & $+1.375$ & [+0.847, +1.889] & 0.031 & 0.039 & 6/0/0 \\
+vs flat generation & organizational quality & $+1.778$ & [+1.056, +2.444] & 0.031 & 0.039 & 6/0/0 \\
+vs flat generation & critical synthesis & $+1.278$ & [+0.833, +1.667] & 0.031 & 0.039 & 6/0/0 \\
+vs flat generation & global coherence & $+1.444$ & [+0.889, +1.944] & 0.031 & 0.039 & 6/0/0 \\
+vs flat generation & citation plausibility & $+1.000$ & [+0.278, +1.833] & 0.062 & 0.072 & 5/1/0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\snote{11: Native end-to-end comparison: protocol detail}
+\addcontentsline{toc}{section}{Supplementary Note 11: Native end-to-end comparison: protocol detail}
+
+\textbf{Topic freezing and cost amendment.} The parent manifest contained 12 topics in four registered categories with manually verified source reviews (explicit DOI/arXiv identity, not title search). All mandatory systems passed retrieval-only availability gates on their native indices before freezing. Because of the observed cost envelope, the matrix was mechanically reduced to the first two topics per category (4 systems $\times$ 8 topics = 32 outputs) \emph{before} any quality judging or inferential analysis; the eight-topic minimum was pre-specified as the smallest confirmatory scale and no topic was selected using generated quality.
+
+\textbf{Execution audit.} All 32 runs completed with validated hashes; no post-cutoff citation was detected. Citation closure: SLRGP, AutoSurvey and SURVEYFORGE 1.000; SurveyGen 0.921. SURVEYFORGE retained detectable meta/prompt language in 8/8 normalized outputs. A source-review-derived core-paper recall diagnostic (not an expert gold standard) averaged 0.045 (SLRGP), 0.045 (AutoSurvey), 0.055 (SURVEYFORGE) and 0.100 (SurveyGen).
+
+\textbf{Preference judging.} Three heterogeneous judges evaluated both A/B orders per pair; the unit of inference was the topic and ties contributed 0.5. The full-native AutoSurvey contrast was judge-heterogeneous: SLRGP preference 0.500 (GPT-5.5), 0.375 (Gemini 3.1 Pro Preview) and 0.062 (Claude Sonnet 5). The 4,000-word common window sampled equal front/middle/rear windows without model rewriting.
+
+\textbf{Claim--source pipeline and disclosed defect.} Twelve substantive cited claims were extracted per output (384 total), resolved to independently fetched title/abstract packets, and labelled by two primary judges with adjudication of disagreements. During the final audit, a pagination defect in the pipeline's arXiv-API metadata retrieval was discovered: records beyond the API's default per-query return limit had been incorrectly marked as inaccessible. The retrieval step was corrected, all packets regenerated and every claim judgment rerun from scratch before analysis. Final accessibility: 94/96 (SLRGP), 86/96 (AutoSurvey), 94/96 (SURVEYFORGE), 92/96 (SurveyGen) claims scorable. Treating inaccessible claims as unsupported preserves all directions ($+0.339$, $+0.271$, $+0.141$).
+
+\textbf{Cost accounting.} Generation-only official-price equivalents from recorded token ledgers ($3/M input, $15/M output for the common backbone): SLRGP \$5.16 total (\$0.65/output; \$0.160/1,000 words); AutoSurvey \$91.01 (\$11.38; \$0.188); SURVEYFORGE \$59.69 (\$7.46; \$0.615); SurveyGen \$24.10 (\$3.01; \$0.538). Pilots, failed/retried calls and evaluation calls are excluded.
+
+\snote{12: Evaluation-instrument validation (Instrument J)}
+\addcontentsline{toc}{section}{Supplementary Note 12: Evaluation-instrument validation (Instrument J)}
+
+Validation used two full-length published arXiv reviews from different disciplines (2,621 and 7,661 words), eight conditions (control, structure-shuffled, citation-shuffled/deleted/replaced, shortened, redundantly lengthened, synthesis-flattened), three judges and two repeats per condition: 96/96 valid calls.
+
+\begin{table}[h]
+\caption*{\textbf{Supplementary Table 7.} Instrument sensitivity probes (difference from control on the targeted dimension).}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}llccl@{}}
+\toprule
+Probe & Dimension & $\Delta$ & Wilcoxon $p$ & Verdict \\
+\midrule
+Structure shuffled & organizational quality & $-1.58$ & 0.0039 & separates \\
+Citation shuffled & citation plausibility & $-2.67$ & 0.0005 & separates \\
+Citation replaced & citation plausibility & $-1.42$ & 0.0078 & separates \\
+Citation deleted & citation plausibility & $-0.08$ & 1.0 & null (disclosed) \\
+Redundant lengthening & global coherence & $-1.33$ & --- & penalized, not rewarded \\
+Synthesis flattened & critical synthesis & $-0.33$ & 0.375 & directional, n.s.\ (disclosed) \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Two null results are reported for transparency rather than omitted. First, outright citation deletion is barely detected; omission is instead carried by the deterministic citation-closure and coverage metrics collected in every protocol, so citation plausibility should be read as sensitive to misattribution. Second, the lexical synthesis-flattening probe (rule-based substitution of $\approx$50 discourse markers, 0.14--0.19\% of words) moved critical synthesis directionally but not significantly; that dimension is therefore the least independently validated of the four and is interpreted with that caveat. Krippendorff's $\alpha$ across six raters ranged 0.26--0.47 by dimension; headline comparisons are accordingly paired, within-topic and judge-normalized rather than absolute.
+
+\snote{13: Models, infrastructure and reproducibility}
+\addcontentsline{toc}{section}{Supplementary Note 13: Models, infrastructure and reproducibility}
+
+Annotation used a single frozen commercial model (GPT-5.4-mini) with frozen prompts and temperature settings for all corpus labelling and blind discrimination; no annotation model participates in judging. Generation used Claude Sonnet 4.6 as the common backbone for all matched-substitution, length-scaling and native-comparison experiments, and self-hosted Qwen3-32B for the open-weight robustness arm. Judging used a heterogeneous panel (GPT-5.5, Gemini 3.1 Pro Preview, Claude Sonnet 5) disjoint from generation configuration knowledge. Splits and seeds derive from SHA-256 review identifiers; all protocols were frozen before their first confirmatory run, with deviations logged with date, reason and endpoint impact. Complete outputs, retrieval manifests, traces, token ledgers, blind mappings, extracted claims, source packets and judgment logs are archived per run.
+
+\textbf{Code and data availability.} The corpus provenance manifests, learned-operator code, generation and evaluation pipelines, and all confirmatory outputs, traces and judgment logs referenced in this study accompany this submission as a code-and-data package and are publicly available at \url{https://github.com/amark071/SLRGP}.
+
+\end{document}

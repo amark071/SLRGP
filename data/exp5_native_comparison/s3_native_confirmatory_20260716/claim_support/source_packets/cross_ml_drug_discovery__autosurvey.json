@@ -1,0 +1,400 @@
+{
+  "topic_id": "cross_ml_drug_discovery",
+  "system": "autosurvey",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Bringing a new therapeutic agent from initial concept to patient bedside typically spans more than a decade and demands billions of dollars in investment, with no guarantee of ultimate success [1; 2].",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2307.06521v1",
+          "source_key": "1",
+          "title": "Artificial Intelligence for Drug Discovery: Are We There Yet?",
+          "abstract": "Drug discovery is adapting to novel technologies such as data science, informatics, and artificial intelligence (AI) to accelerate effective treatment development while reducing costs and animal experiments. AI is transforming drug discovery, as indicated by increasing interest from investors, industrial and academic scientists, and legislators. Successful drug discovery requires optimizing properties related to pharmacodynamics, pharmacokinetics, and clinical outcomes. This review discusses the use of AI in the three pillars of drug discovery: diseases, targets, and therapeutic modalities, with a focus on small molecule drugs. AI technologies, such as generative chemistry, machine learning, and multi-property optimization, have enabled several compounds to enter clinical trials. The scientific community must carefully vet known information to address the reproducibility crisis. The full potential of AI in drug discovery can only be realized with sufficient ground truth and appropriate human intervention at later pipeline stages.",
+          "resolved_arxiv": {
+            "arxiv_id": "2307.06521",
+            "title": "Artificial Intelligence for Drug Discovery: Are We There Yet?",
+            "abstract": "Drug discovery is adapting to novel technologies such as data science, informatics, and artificial intelligence (AI) to accelerate effective treatment development while reducing costs and animal experiments. AI is transforming drug discovery, as indicated by increasing interest from investors, industrial and academic scientists, and legislators. Successful drug discovery requires optimizing properties related to pharmacodynamics, pharmacokinetics, and clinical outcomes. This review discusses the use of AI in the three pillars of drug discovery: diseases, targets, and therapeutic modalities, with a focus on small molecule drugs. AI technologies, such as generative chemistry, machine learning, and multi-property optimization, have enabled several compounds to enter clinical trials. The scientific community must carefully vet known information to address the reproducibility crisis. The full potential of AI in drug discovery can only be realized with sufficient ground truth and appropriate human intervention at later pipeline stages.",
+            "published": "2023-07-13T01:51:26Z",
+            "source_url": "https://arxiv.org/abs/2307.06521"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2402.08703v1",
+          "source_key": "2",
+          "title": "A Survey of Generative AI for de novo Drug Design: New Frontiers in Molecule and Protein Generation",
+          "abstract": "Artificial intelligence (AI)-driven methods can vastly improve the historically costly drug design process, with various generative models already in widespread use. Generative models for de novo drug design, in particular, focus on the creation of novel biological compounds entirely from scratch, representing a promising future direction. Rapid development in the field, combined with the inherent complexity of the drug design process, creates a difficult landscape for new researchers to enter. In this survey, we organize de novo drug design into two overarching themes: small molecule and protein generation. Within each theme, we identify a variety of subtasks and applications, highlighting important datasets, benchmarks, and model architectures and comparing the performance of top models. We take a broad approach to AI-driven drug design, allowing for both micro-level comparisons of various methods within each subtask and macro-level observations across different fields. We discuss parallel challenges and approaches between the two applications and highlight future directions for AI-driven de novo drug design as a whole. An organized repository of all covered sources is available at https://github.com/gersteinlab/GenAI4Drug.",
+          "resolved_arxiv": {
+            "arxiv_id": "2402.08703",
+            "title": "A Survey of Generative AI for de novo Drug Design: New Frontiers in Molecule and Protein Generation",
+            "abstract": "Artificial intelligence (AI)-driven methods can vastly improve the historically costly drug design process, with various generative models already in widespread use. Generative models for de novo drug design, in particular, focus on the creation of novel biological compounds entirely from scratch, representing a promising future direction. Rapid development in the field, combined with the inherent complexity of the drug design process, creates a difficult landscape for new researchers to enter. In this survey, we organize de novo drug design into two overarching themes: small molecule and protein generation. Within each theme, we identify a variety of subtasks and applications, highlighting important datasets, benchmarks, and model architectures and comparing the performance of top models. We take a broad approach to AI-driven drug design, allowing for both micro-level comparisons of various methods within each subtask and macro-level observations across different fields. We discuss parallel challenges and approaches between the two applications and highlight future directions for AI-driven de novo drug design as a whole. An organized repository of all covered sources is available at https://github.com/gersteinlab/GenAI4Drug.",
+            "published": "2024-02-13T16:56:31Z",
+            "source_url": "https://arxiv.org/abs/2402.08703"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Traditionally, this is accomplished through high-throughput screening (HTS) of large chemical libraries, which may contain millions of compounds, or through fragment-based drug discovery and virtual screening approaches [4].",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2211.03208v1",
+          "source_key": "4",
+          "title": "Recent Developments in Structure-Based Virtual Screening Approaches",
+          "abstract": "Drug development is a wide scientific field that faces many challenges these days. Among them are extremely high development costs, long development times, as well as a low number of new drugs that are approved each year. To solve these problems, new and innovate technologies are needed that make the drug discovery process of small-molecules more time and cost-efficient, and which allow to target previously undruggable target classes such as protein-protein interactions. Structure-based virtual screenings have become a leading contender in this context. In this review, we give an introduction to the foundations of structure-based virtual screenings, and survey their progress in the past few years. We outline key principles, recent success stories, new methods, available software, and promising future research directions. Virtual screenings have an enormous potential for the development of new small-molecule drugs, and are already starting to transform early-stage drug discovery.",
+          "resolved_arxiv": {
+            "arxiv_id": "2211.03208",
+            "title": "Recent Developments in Structure-Based Virtual Screening Approaches",
+            "abstract": "Drug development is a wide scientific field that faces many challenges these days. Among them are extremely high development costs, long development times, as well as a low number of new drugs that are approved each year. To solve these problems, new and innovate technologies are needed that make the drug discovery process of small-molecules more time and cost-efficient, and which allow to target previously undruggable target classes such as protein-protein interactions. Structure-based virtual screenings have become a leading contender in this context. In this review, we give an introduction to the foundations of structure-based virtual screenings, and survey their progress in the past few years. We outline key principles, recent success stories, new methods, available software, and promising future research directions. Virtual screenings have an enormous potential for the development of new small-molecule drugs, and are already starting to transform early-stage drug discovery.",
+            "published": "2022-11-06T19:28:25Z",
+            "source_url": "https://arxiv.org/abs/2211.03208"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Phase I trials primarily assess safety and tolerability in a small number of healthy volunteers or patients, often including dose-escalation studies to determine the maximum tolerated dose [7].",
+      "citation_markers": [
+        "[7]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2006.05026v2",
+          "source_key": "7",
+          "title": "Learning for Dose Allocation in Adaptive Clinical Trials with Safety Constraints",
+          "abstract": "Phase I dose-finding trials are increasingly challenging as the relationship between efficacy and toxicity of new compounds (or combination of them) becomes more complex. Despite this, most commonly used methods in practice focus on identifying a Maximum Tolerated Dose (MTD) by learning only from toxicity events. We present a novel adaptive clinical trial methodology, called Safe Efficacy Exploration Dose Allocation (SEEDA), that aims at maximizing the cumulative efficacies while satisfying the toxicity safety constraint with high probability. We evaluate performance objectives that have operational meanings in practical clinical trials, including cumulative efficacy, recommendation/allocation success probabilities, toxicity violation probability, and sample efficiency. An extended SEEDA-Plateau algorithm that is tailored for the increase-then-plateau efficacy behavior of molecularly targeted agents (MTA) is also presented. Through numerical experiments using both synthetic and real-world datasets, we show that SEEDA outperforms state-of-the-art clinical trial designs by finding the optimal dose with higher success rate and fewer patients.",
+          "resolved_arxiv": {
+            "arxiv_id": "2006.05026",
+            "title": "Learning for Dose Allocation in Adaptive Clinical Trials with Safety Constraints",
+            "abstract": "Phase I dose-finding trials are increasingly challenging as the relationship between efficacy and toxicity of new compounds (or combination of them) becomes more complex. Despite this, most commonly used methods in practice focus on identifying a Maximum Tolerated Dose (MTD) by learning only from toxicity events. We present a novel adaptive clinical trial methodology, called Safe Efficacy Exploration Dose Allocation (SEEDA), that aims at maximizing the cumulative efficacies while satisfying the toxicity safety constraint with high probability. We evaluate performance objectives that have operational meanings in practical clinical trials, including cumulative efficacy, recommendation/allocation success probabilities, toxicity violation probability, and sample efficiency. An extended SEEDA-Plateau algorithm that is tailored for the increase-then-plateau efficacy behavior of molecularly targeted agents (MTA) is also presented. Through numerical experiments using both synthetic and real-world datasets, we show that SEEDA outperforms state-of-the-art clinical trial designs by finding the optimal dose with higher success rate and fewer patients.",
+            "published": "2020-06-09T03:06:45Z",
+            "source_url": "https://arxiv.org/abs/2006.05026"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "The attrition of candidate compounds across these stages is dramatic; it has been estimated that only a tiny fraction of initially identified hits ultimately achieve regulatory approval. This sequential, resource-intensive architecture, combined with the biological complexity of human disease and the challenge of translating preclinical findings into clinical outcomes, defines the fundamental challenge that modern computational and machine learning approaches seek to address [1; 13].",
+      "citation_markers": [
+        "[1; 13]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2307.06521v1",
+          "source_key": "1",
+          "title": "Artificial Intelligence for Drug Discovery: Are We There Yet?",
+          "abstract": "Drug discovery is adapting to novel technologies such as data science, informatics, and artificial intelligence (AI) to accelerate effective treatment development while reducing costs and animal experiments. AI is transforming drug discovery, as indicated by increasing interest from investors, industrial and academic scientists, and legislators. Successful drug discovery requires optimizing properties related to pharmacodynamics, pharmacokinetics, and clinical outcomes. This review discusses the use of AI in the three pillars of drug discovery: diseases, targets, and therapeutic modalities, with a focus on small molecule drugs. AI technologies, such as generative chemistry, machine learning, and multi-property optimization, have enabled several compounds to enter clinical trials. The scientific community must carefully vet known information to address the reproducibility crisis. The full potential of AI in drug discovery can only be realized with sufficient ground truth and appropriate human intervention at later pipeline stages.",
+          "resolved_arxiv": {
+            "arxiv_id": "2307.06521",
+            "title": "Artificial Intelligence for Drug Discovery: Are We There Yet?",
+            "abstract": "Drug discovery is adapting to novel technologies such as data science, informatics, and artificial intelligence (AI) to accelerate effective treatment development while reducing costs and animal experiments. AI is transforming drug discovery, as indicated by increasing interest from investors, industrial and academic scientists, and legislators. Successful drug discovery requires optimizing properties related to pharmacodynamics, pharmacokinetics, and clinical outcomes. This review discusses the use of AI in the three pillars of drug discovery: diseases, targets, and therapeutic modalities, with a focus on small molecule drugs. AI technologies, such as generative chemistry, machine learning, and multi-property optimization, have enabled several compounds to enter clinical trials. The scientific community must carefully vet known information to address the reproducibility crisis. The full potential of AI in drug discovery can only be realized with sufficient ground truth and appropriate human intervention at later pipeline stages.",
+            "published": "2023-07-13T01:51:26Z",
+            "source_url": "https://arxiv.org/abs/2307.06521"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2103.02843v2",
+          "source_key": "13",
+          "title": "Pandemic Drugs at Pandemic Speed: Infrastructure for Accelerating COVID-19 Drug Discovery with Hybrid Machine Learning- and Physics-based Simulations on High Performance Computers",
+          "abstract": "The race to meet the challenges of the global pandemic has served as a reminder that the existing drug discovery process is expensive, inefficient and slow. There is a major bottleneck screening the vast number of potential small molecules to shortlist lead compounds for antiviral drug development. New opportunities to accelerate drug discovery lie at the interface between machine learning methods, in this case developed for linear accelerators, and physics-based methods. The two in silico methods, each have their own advantages and limitations which, interestingly, complement each other. Here, we present an innovative infrastructural development that combines both approaches to accelerate drug discovery. The scale of the potential resulting workflow is such that it is dependent on supercomputing to achieve extremely high throughput. We have demonstrated the viability of this workflow for the study of inhibitors for four COVID-19 target proteins and our ability to perform the required large-scale calculations to identify lead antiviral compounds through repurposing on a variety of supercomputers.",
+          "resolved_arxiv": {
+            "arxiv_id": "2103.02843",
+            "title": "Pandemic Drugs at Pandemic Speed: Infrastructure for Accelerating COVID-19 Drug Discovery with Hybrid Machine Learning- and Physics-based Simulations on High Performance Computers",
+            "abstract": "The race to meet the challenges of the global pandemic has served as a reminder that the existing drug discovery process is expensive, inefficient and slow. There is a major bottleneck screening the vast number of potential small molecules to shortlist lead compounds for antiviral drug development. New opportunities to accelerate drug discovery lie at the interface between machine learning methods, in this case developed for linear accelerators, and physics-based methods. The two in silico methods, each have their own advantages and limitations which, interestingly, complement each other. Here, we present an innovative infrastructural development that combines both approaches to accelerate drug discovery. The scale of the potential resulting workflow is such that it is dependent on supercomputing to achieve extremely high throughput. We have demonstrated the viability of this workflow for the study of inhibitors for four COVID-19 target proteins and our ability to perform the required large-scale calculations to identify lead antiviral compounds through repurposing on a variety of supercomputers.",
+            "published": "2021-03-04T05:43:18Z",
+            "source_url": "https://arxiv.org/abs/2103.02843"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The past decade has witnessed a remarkable emergence and rapid growth of machine learning (ML) and artificial intelligence (AI) technologies within pharmaceutical research and drug discovery, fundamentally reshaping how the field approaches the complex challenges of identifying and developing new therapeutics [27; 19].",
+      "citation_markers": [
+        "[27; 19]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2106.05386v4",
+          "source_key": "27",
+          "title": "Artificial Intelligence in Drug Discovery: Applications and Techniques",
+          "abstract": "Artificial intelligence (AI) has been transforming the practice of drug discovery in the past decade. Various AI techniques have been used in a wide range of applications, such as virtual screening and drug design. In this survey, we first give an overview on drug discovery and discuss related applications, which can be reduced to two major tasks, i.e., molecular property prediction and molecule generation. We then discuss common data resources, molecule representations and benchmark platforms. Furthermore, to summarize the progress of AI in drug discovery, we present the relevant AI techniques including model architectures and learning paradigms in the papers surveyed. We expect that this survey will serve as a guide for researchers who are interested in working at the interface of artificial intelligence and drug discovery. We also provide a GitHub repository (https://github.com/dengjianyuan/Survey_AI_Drug_Discovery) with the collection of papers and codes, if applicable, as a learning resource, which is regularly updated.",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.05386",
+            "title": "Artificial Intelligence in Drug Discovery: Applications and Techniques",
+            "abstract": "Artificial intelligence (AI) has been transforming the practice of drug discovery in the past decade. Various AI techniques have been used in a wide range of applications, such as virtual screening and drug design. In this survey, we first give an overview on drug discovery and discuss related applications, which can be reduced to two major tasks, i.e., molecular property prediction and molecule generation. We then discuss common data resources, molecule representations and benchmark platforms. Furthermore, to summarize the progress of AI in drug discovery, we present the relevant AI techniques including model architectures and learning paradigms in the papers surveyed. We expect that this survey will serve as a guide for researchers who are interested in working at the interface of artificial intelligence and drug discovery. We also provide a GitHub repository (https://github.com/dengjianyuan/Survey_AI_Drug_Discovery) with the collection of papers and codes, if applicable, as a learning resource, which is regularly updated.",
+            "published": "2021-06-09T20:46:44Z",
+            "source_url": "https://arxiv.org/abs/2106.05386"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2202.07096v1",
+          "source_key": "19",
+          "title": "Learning to Discover Medicines",
+          "abstract": "Discovering new medicines is the hallmark of human endeavor to live a better and longer life. Yet the pace of discovery has slowed down as we need to venture into more wildly unexplored biomedical space to find one that matches today's high standard. Modern AI-enabled by powerful computing, large biomedical databases, and breakthroughs in deep learning-offers a new hope to break this loop as AI is rapidly maturing, ready to make a huge impact in the area. In this paper we review recent advances in AI methodologies that aim to crack this challenge. We organize the vast and rapidly growing literature of AI for drug discovery into three relatively stable sub-areas: (a) representation learning over molecular sequences and geometric graphs; (b) data-driven reasoning where we predict molecular properties and their binding, optimize existing compounds, generate de novo molecules, and plan the synthesis of target molecules; and (c) knowledge-based reasoning where we discuss the construction and reasoning over biomedical knowledge graphs. We will also identify open challenges and chart possible research directions for the years to come.",
+          "resolved_arxiv": {
+            "arxiv_id": "2202.07096",
+            "title": "Learning to Discover Medicines",
+            "abstract": "Discovering new medicines is the hallmark of human endeavor to live a better and longer life. Yet the pace of discovery has slowed down as we need to venture into more wildly unexplored biomedical space to find one that matches today's high standard. Modern AI-enabled by powerful computing, large biomedical databases, and breakthroughs in deep learning-offers a new hope to break this loop as AI is rapidly maturing, ready to make a huge impact in the area. In this paper we review recent advances in AI methodologies that aim to crack this challenge. We organize the vast and rapidly growing literature of AI for drug discovery into three relatively stable sub-areas: (a) representation learning over molecular sequences and geometric graphs; (b) data-driven reasoning where we predict molecular properties and their binding, optimize existing compounds, generate de novo molecules, and plan the synthesis of target molecules; and (c) knowledge-based reasoning where we discuss the construction and reasoning over biomedical knowledge graphs. We will also identify open challenges and chart possible research directions for the years to come.",
+            "published": "2022-02-14T23:43:51Z",
+            "source_url": "https://arxiv.org/abs/2202.07096"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Researchers now have access to databases containing billions of drug-like molecules alongside pre-computed molecular descriptors, fingerprints, and structural properties [37].",
+      "citation_markers": [
+        "[37]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2006.02431v1",
+          "source_key": "37",
+          "title": "Targeting SARS-CoV-2 with AI- and HPC-enabled Lead Generation: A First Data Release",
+          "abstract": "Researchers across the globe are seeking to rapidly repurpose existing drugs or discover new drugs to counter the the novel coronavirus disease (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). One promising approach is to train machine learning (ML) and artificial intelligence (AI) tools to screen large numbers of small molecules. As a contribution to that effort, we are aggregating numerous small molecules from a variety of sources, using high-performance computing (HPC) to computer diverse properties of those molecules, using the computed properties to train ML/AI models, and then using the resulting models for screening. In this first data release, we make available 23 datasets collected from community sources representing over 4.2 B molecules enriched with pre-computed: 1) molecular fingerprints to aid similarity searches, 2) 2D images of molecules to enable exploration and application of image-based deep learning methods, and 3) 2D and 3D molecular descriptors to speed development of machine learning models. This data release encompasses structural information on the 4.2 B molecules and 60 TB of pre-computed data. Future releases will expand the data to include more detailed molecular simulations, computed models, and other products.",
+          "resolved_arxiv": {
+            "arxiv_id": "2006.02431",
+            "title": "Targeting SARS-CoV-2 with AI- and HPC-enabled Lead Generation: A First Data Release",
+            "abstract": "Researchers across the globe are seeking to rapidly repurpose existing drugs or discover new drugs to counter the the novel coronavirus disease (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). One promising approach is to train machine learning (ML) and artificial intelligence (AI) tools to screen large numbers of small molecules. As a contribution to that effort, we are aggregating numerous small molecules from a variety of sources, using high-performance computing (HPC) to computer diverse properties of those molecules, using the computed properties to train ML/AI models, and then using the resulting models for screening. In this first data release, we make available 23 datasets collected from community sources representing over 4.2 B molecules enriched with pre-computed: 1) molecular fingerprints to aid similarity searches, 2) 2D images of molecules to enable exploration and application of image-based deep learning methods, and 3) 2D and 3D molecular descriptors to speed development of machine learning models. This data release encompasses structural information on the 4.2 B molecules and 60 TB of pre-computed data. Future releases will expand the data to include more detailed molecular simulations, computed models, and other products.",
+            "published": "2020-05-28T01:33:07Z",
+            "source_url": "https://arxiv.org/abs/2006.02431"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Exascale computing resources have further expanded the scope of what is computationally feasible in AI-driven drug discovery, enabling large-scale virtual screening campaigns and the integration of physics-based molecular simulation with ML scoring functions at unprecedented throughput [13; 39].",
+      "citation_markers": [
+        "[13; 39]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2103.02843v2",
+          "source_key": "13",
+          "title": "Pandemic Drugs at Pandemic Speed: Infrastructure for Accelerating COVID-19 Drug Discovery with Hybrid Machine Learning- and Physics-based Simulations on High Performance Computers",
+          "abstract": "The race to meet the challenges of the global pandemic has served as a reminder that the existing drug discovery process is expensive, inefficient and slow. There is a major bottleneck screening the vast number of potential small molecules to shortlist lead compounds for antiviral drug development. New opportunities to accelerate drug discovery lie at the interface between machine learning methods, in this case developed for linear accelerators, and physics-based methods. The two in silico methods, each have their own advantages and limitations which, interestingly, complement each other. Here, we present an innovative infrastructural development that combines both approaches to accelerate drug discovery. The scale of the potential resulting workflow is such that it is dependent on supercomputing to achieve extremely high throughput. We have demonstrated the viability of this workflow for the study of inhibitors for four COVID-19 target proteins and our ability to perform the required large-scale calculations to identify lead antiviral compounds through repurposing on a variety of supercomputers.",
+          "resolved_arxiv": {
+            "arxiv_id": "2103.02843",
+            "title": "Pandemic Drugs at Pandemic Speed: Infrastructure for Accelerating COVID-19 Drug Discovery with Hybrid Machine Learning- and Physics-based Simulations on High Performance Computers",
+            "abstract": "The race to meet the challenges of the global pandemic has served as a reminder that the existing drug discovery process is expensive, inefficient and slow. There is a major bottleneck screening the vast number of potential small molecules to shortlist lead compounds for antiviral drug development. New opportunities to accelerate drug discovery lie at the interface between machine learning methods, in this case developed for linear accelerators, and physics-based methods. The two in silico methods, each have their own advantages and limitations which, interestingly, complement each other. Here, we present an innovative infrastructural development that combines both approaches to accelerate drug discovery. The scale of the potential resulting workflow is such that it is dependent on supercomputing to achieve extremely high throughput. We have demonstrated the viability of this workflow for the study of inhibitors for four COVID-19 target proteins and our ability to perform the required large-scale calculations to identify lead antiviral compounds through repurposing on a variety of supercomputers.",
+            "published": "2021-03-04T05:43:18Z",
+            "source_url": "https://arxiv.org/abs/2103.02843"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2304.09953v1",
+          "source_key": "39",
+          "title": "Tunable and Portable Extreme-Scale Drug Discovery Platform at Exascale: the LIGATE Approach",
+          "abstract": "Today digital revolution is having a dramatic impact on the pharmaceutical industry and the entire healthcare system. The implementation of machine learning, extreme-scale computer simulations, and big data analytics in the drug design and development process offers an excellent opportunity to lower the risk of investment and reduce the time to the patient. Within the LIGATE project, we aim to integrate, extend, and co-design best-in-class European components to design Computer-Aided Drug Design (CADD) solutions exploiting today's high-end supercomputers and tomorrow's Exascale resources, fostering European competitiveness in the field. The proposed LIGATE solution is a fully integrated workflow that enables to deliver the result of a virtual screening campaign for drug discovery with the highest speed along with the highest accuracy. The full automation of the solution and the possibility to run it on multiple supercomputing centers at once permit to run an extreme scale in silico drug discovery campaign in few days to respond promptly for example to a worldwide pandemic crisis.",
+          "resolved_arxiv": {
+            "arxiv_id": "2304.09953",
+            "title": "Tunable and Portable Extreme-Scale Drug Discovery Platform at Exascale: the LIGATE Approach",
+            "abstract": "Today digital revolution is having a dramatic impact on the pharmaceutical industry and the entire healthcare system. The implementation of machine learning, extreme-scale computer simulations, and big data analytics in the drug design and development process offers an excellent opportunity to lower the risk of investment and reduce the time to the patient. Within the LIGATE project, we aim to integrate, extend, and co-design best-in-class European components to design Computer-Aided Drug Design (CADD) solutions exploiting today's high-end supercomputers and tomorrow's Exascale resources, fostering European competitiveness in the field. The proposed LIGATE solution is a fully integrated workflow that enables to deliver the result of a virtual screening campaign for drug discovery with the highest speed along with the highest accuracy. The full automation of the solution and the possibility to run it on multiple supercomputing centers at once permit to run an extreme scale in silico drug discovery campaign in few days to respond promptly for example to a worldwide pandemic crisis.",
+            "published": "2023-04-19T20:06:10Z",
+            "source_url": "https://arxiv.org/abs/2304.09953"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Graph neural networks, in particular, have proven exceptionally well-suited to molecular data, as the natural graph-theoretic representation of molecular structures as atoms and bonds maps directly onto the node-and-edge formalism of these architectures [42].",
+      "citation_markers": [
+        "[42]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2302.08261v2",
+          "source_key": "42",
+          "title": "Knowledge-augmented Graph Machine Learning for Drug Discovery: A Survey",
+          "abstract": "The integration of Artificial Intelligence (AI) into the field of drug discovery has been a growing area of interdisciplinary scientific research. However, conventional AI models are heavily limited in handling complex biomedical structures (such as 2D or 3D protein and molecule structures) and providing interpretations for outputs, which hinders their practical application. As of late, Graph Machine Learning (GML) has gained considerable attention for its exceptional ability to model graph-structured biomedical data and investigate their properties and functional relationships. Despite extensive efforts, GML methods still suffer from several deficiencies, such as the limited ability to handle supervision sparsity and provide interpretability in learning and inference processes, and their ineffectiveness in utilising relevant domain knowledge. In response, recent studies have proposed integrating external biomedical knowledge into the GML pipeline to realise more precise and interpretable drug discovery with limited training instances. However, a systematic definition for this burgeoning research direction is yet to be established. This survey presents a comprehensive overview of long-standing drug discovery principles, provides the foundational concepts and cutting-edge techniques for graph-structured data and knowledge databases, and formally summarises Knowledge-augmented Graph Machine Learning (KaGML) for drug discovery. we propose a thorough review of related KaGML works, collected following a carefully designed search methodology, and organise them into four categories following a novel-defined taxonomy. To facilitate research in this promptly emerging field, we also share collected practical resources that are valuable for intelligent drug discovery and provide an in-depth discussion of the potential avenues for future advancements.",
+          "resolved_arxiv": {
+            "arxiv_id": "2302.08261",
+            "title": "Knowledge-augmented Graph Machine Learning for Drug Discovery: A Survey",
+            "abstract": "The integration of Artificial Intelligence (AI) into the field of drug discovery has been a growing area of interdisciplinary scientific research. However, conventional AI models are heavily limited in handling complex biomedical structures (such as 2D or 3D protein and molecule structures) and providing interpretations for outputs, which hinders their practical application. As of late, Graph Machine Learning (GML) has gained considerable attention for its exceptional ability to model graph-structured biomedical data and investigate their properties and functional relationships. Despite extensive efforts, GML methods still suffer from several deficiencies, such as the limited ability to handle supervision sparsity and provide interpretability in learning and inference processes, and their ineffectiveness in utilising relevant domain knowledge. In response, recent studies have proposed integrating external biomedical knowledge into the GML pipeline to realise more precise and interpretable drug discovery with limited training instances. However, a systematic definition for this burgeoning research direction is yet to be established. This survey presents a comprehensive overview of long-standing drug discovery principles, provides the foundational concepts and cutting-edge techniques for graph-structured data and knowledge databases, and formally summarises Knowledge-augmented Graph Machine Learning (KaGML) for drug discovery. we propose a thorough review of related KaGML works, collected following a carefully designed search methodology, and organise them into four categories following a novel-defined taxonomy. To facilitate research in this promptly emerging field, we also share collected practical resources that are valuable for intelligent drug discovery and provide an in-depth discussion of the potential avenues for future advancements.",
+            "published": "2023-02-16T12:38:01Z",
+            "source_url": "https://arxiv.org/abs/2302.08261"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The release of AlphaFold2 by DeepMind in 2021 marked what many regard as the single most impactful event in computational structural biology in decades.",
+      "citation_markers": [
+        "[33]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2310.13913v2",
+          "source_key": "33",
+          "title": "Pre-Training on Large-Scale Generated Docking Conformations with HelixDock to Unlock the Potential of Protein-ligand Structure Prediction Models",
+          "abstract": "Protein-ligand structure prediction is an essential task in drug discovery, predicting the binding interactions between small molecules (ligands) and target proteins (receptors). Recent advances have incorporated deep learning techniques to improve the accuracy of protein-ligand structure prediction. Nevertheless, the experimental validation of docking conformations remains costly, it raises concerns regarding the generalizability of these deep learning-based methods due to the limited training data. In this work, we show that by pre-training on a large-scale docking conformation generated by traditional physics-based docking tools and then fine-tuning with a limited set of experimentally validated receptor-ligand complexes, we can obtain a protein-ligand structure prediction model with outstanding performance. Specifically, this process involved the generation of 100 million docking conformations for protein-ligand pairings, an endeavor consuming roughly 1 million CPU core days. The proposed model, HelixDock, aims to acquire the physical knowledge encapsulated by the physics-based docking tools during the pre-training phase. HelixDock has been rigorously benchmarked against both physics-based and deep learning-based baselines, demonstrating its exceptional precision and robust transferability in predicting binding confirmation. In addition, our investigation reveals the scaling laws governing pre-trained protein-ligand structure prediction models, indicating a consistent enhancement in performance with increases in model parameters and the volume of pre-training data. Moreover, we applied HelixDock to several drug discovery-related tasks to validate its practical utility. HelixDock demonstrates outstanding capabilities on both cross-docking and structure-based virtual screening benchmarks.",
+          "resolved_arxiv": {
+            "arxiv_id": "2310.13913",
+            "title": "Pre-Training on Large-Scale Generated Docking Conformations with HelixDock to Unlock the Potential of Protein-ligand Structure Prediction Models",
+            "abstract": "Protein-ligand structure prediction is an essential task in drug discovery, predicting the binding interactions between small molecules (ligands) and target proteins (receptors). Recent advances have incorporated deep learning techniques to improve the accuracy of protein-ligand structure prediction. Nevertheless, the experimental validation of docking conformations remains costly, it raises concerns regarding the generalizability of these deep learning-based methods due to the limited training data. In this work, we show that by pre-training on a large-scale docking conformation generated by traditional physics-based docking tools and then fine-tuning with a limited set of experimentally validated receptor-ligand complexes, we can obtain a protein-ligand structure prediction model with outstanding performance. Specifically, this process involved the generation of 100 million docking conformations for protein-ligand pairings, an endeavor consuming roughly 1 million CPU core days. The proposed model, HelixDock, aims to acquire the physical knowledge encapsulated by the physics-based docking tools during the pre-training phase. HelixDock has been rigorously benchmarked against both physics-based and deep learning-based baselines, demonstrating its exceptional precision and robust transferability in predicting binding confirmation. In addition, our investigation reveals the scaling laws governing pre-trained protein-ligand structure prediction models, indicating a consistent enhancement in performance with increases in model parameters and the volume of pre-training data. Moreover, we applied HelixDock to several drug discovery-related tasks to validate its practical utility. HelixDock demonstrates outstanding capabilities on both cross-docking and structure-based virtual screening benchmarks.",
+            "published": "2023-10-21T05:54:26Z",
+            "source_url": "https://arxiv.org/abs/2310.13913"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Graph neural networks (GNNs) have emerged as a dominant paradigm for DDI prediction due to their natural ability to model molecular structures and relational biological networks.",
+      "citation_markers": [
+        "[27]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2106.05386v4",
+          "source_key": "27",
+          "title": "Artificial Intelligence in Drug Discovery: Applications and Techniques",
+          "abstract": "Artificial intelligence (AI) has been transforming the practice of drug discovery in the past decade. Various AI techniques have been used in a wide range of applications, such as virtual screening and drug design. In this survey, we first give an overview on drug discovery and discuss related applications, which can be reduced to two major tasks, i.e., molecular property prediction and molecule generation. We then discuss common data resources, molecule representations and benchmark platforms. Furthermore, to summarize the progress of AI in drug discovery, we present the relevant AI techniques including model architectures and learning paradigms in the papers surveyed. We expect that this survey will serve as a guide for researchers who are interested in working at the interface of artificial intelligence and drug discovery. We also provide a GitHub repository (https://github.com/dengjianyuan/Survey_AI_Drug_Discovery) with the collection of papers and codes, if applicable, as a learning resource, which is regularly updated.",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.05386",
+            "title": "Artificial Intelligence in Drug Discovery: Applications and Techniques",
+            "abstract": "Artificial intelligence (AI) has been transforming the practice of drug discovery in the past decade. Various AI techniques have been used in a wide range of applications, such as virtual screening and drug design. In this survey, we first give an overview on drug discovery and discuss related applications, which can be reduced to two major tasks, i.e., molecular property prediction and molecule generation. We then discuss common data resources, molecule representations and benchmark platforms. Furthermore, to summarize the progress of AI in drug discovery, we present the relevant AI techniques including model architectures and learning paradigms in the papers surveyed. We expect that this survey will serve as a guide for researchers who are interested in working at the interface of artificial intelligence and drug discovery. We also provide a GitHub repository (https://github.com/dengjianyuan/Survey_AI_Drug_Discovery) with the collection of papers and codes, if applicable, as a learning resource, which is regularly updated.",
+            "published": "2021-06-09T20:46:44Z",
+            "source_url": "https://arxiv.org/abs/2106.05386"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "The prediction of three-dimensional protein structures from amino acid sequences has long been considered one of the most fundamental and challenging problems in structural biology.",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2211.03208v1",
+          "source_key": "4",
+          "title": "Recent Developments in Structure-Based Virtual Screening Approaches",
+          "abstract": "Drug development is a wide scientific field that faces many challenges these days. Among them are extremely high development costs, long development times, as well as a low number of new drugs that are approved each year. To solve these problems, new and innovate technologies are needed that make the drug discovery process of small-molecules more time and cost-efficient, and which allow to target previously undruggable target classes such as protein-protein interactions. Structure-based virtual screenings have become a leading contender in this context. In this review, we give an introduction to the foundations of structure-based virtual screenings, and survey their progress in the past few years. We outline key principles, recent success stories, new methods, available software, and promising future research directions. Virtual screenings have an enormous potential for the development of new small-molecule drugs, and are already starting to transform early-stage drug discovery.",
+          "resolved_arxiv": {
+            "arxiv_id": "2211.03208",
+            "title": "Recent Developments in Structure-Based Virtual Screening Approaches",
+            "abstract": "Drug development is a wide scientific field that faces many challenges these days. Among them are extremely high development costs, long development times, as well as a low number of new drugs that are approved each year. To solve these problems, new and innovate technologies are needed that make the drug discovery process of small-molecules more time and cost-efficient, and which allow to target previously undruggable target classes such as protein-protein interactions. Structure-based virtual screenings have become a leading contender in this context. In this review, we give an introduction to the foundations of structure-based virtual screenings, and survey their progress in the past few years. We outline key principles, recent success stories, new methods, available software, and promising future research directions. Virtual screenings have an enormous potential for the development of new small-molecule drugs, and are already starting to transform early-stage drug discovery.",
+            "published": "2022-11-06T19:28:25Z",
+            "source_url": "https://arxiv.org/abs/2211.03208"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The vision of fully autonomous, AI-driven closed-loop drug discovery represents one of the most transformative and ambitious frontiers in computational pharmaceutical research.",
+      "citation_markers": [
+        "[109; 105]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2207.08806v1",
+          "source_key": "109",
+          "title": "Unified 2D and 3D Pre-Training of Molecular Representations",
+          "abstract": "Molecular representation learning has attracted much attention recently. A molecule can be viewed as a 2D graph with nodes/atoms connected by edges/bonds, and can also be represented by a 3D conformation with 3-dimensional coordinates of all atoms. We note that most previous work handles 2D and 3D information separately, while jointly leveraging these two sources may foster a more informative representation. In this work, we explore this appealing idea and propose a new representation learning method based on a unified 2D and 3D pre-training. Atom coordinates and interatomic distances are encoded and then fused with atomic representations through graph neural networks. The model is pre-trained on three tasks: reconstruction of masked atoms and coordinates, 3D conformation generation conditioned on 2D graph, and 2D graph generation conditioned on 3D conformation. We evaluate our method on 11 downstream molecular property prediction tasks: 7 with 2D information only and 4 with both 2D and 3D information. Our method achieves state-of-the-art results on 10 tasks, and the average improvement on 2D-only tasks is 8.3%. Our method also achieves significant improvement on two 3D conformation generation tasks.",
+          "resolved_arxiv": {
+            "arxiv_id": "2207.08806",
+            "title": "Unified 2D and 3D Pre-Training of Molecular Representations",
+            "abstract": "Molecular representation learning has attracted much attention recently. A molecule can be viewed as a 2D graph with nodes/atoms connected by edges/bonds, and can also be represented by a 3D conformation with 3-dimensional coordinates of all atoms. We note that most previous work handles 2D and 3D information separately, while jointly leveraging these two sources may foster a more informative representation. In this work, we explore this appealing idea and propose a new representation learning method based on a unified 2D and 3D pre-training. Atom coordinates and interatomic distances are encoded and then fused with atomic representations through graph neural networks. The model is pre-trained on three tasks: reconstruction of masked atoms and coordinates, 3D conformation generation conditioned on 2D graph, and 2D graph generation conditioned on 3D conformation. We evaluate our method on 11 downstream molecular property prediction tasks: 7 with 2D information only and 4 with both 2D and 3D information. Our method achieves state-of-the-art results on 10 tasks, and the average improvement on 2D-only tasks is 8.3%. Our method also achieves significant improvement on two 3D conformation generation tasks.",
+            "published": "2022-07-14T11:36:56Z",
+            "source_url": "https://arxiv.org/abs/2207.08806"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2106.06130v4",
+          "source_key": "105",
+          "title": "ChemRL-GEM: Geometry Enhanced Molecular Representation Learning for Property Prediction",
+          "abstract": "Effective molecular representation learning is of great importance to facilitate molecular property prediction, which is a fundamental task for the drug and material industry. Recent advances in graph neural networks (GNNs) have shown great promise in applying GNNs for molecular representation learning. Moreover, a few recent studies have also demonstrated successful applications of self-supervised learning methods to pre-train the GNNs to overcome the problem of insufficient labeled molecules. However, existing GNNs and pre-training strategies usually treat molecules as topological graph data without fully utilizing the molecular geometry information. Whereas, the three-dimensional (3D) spatial structure of a molecule, a.k.a molecular geometry, is one of the most critical factors for determining molecular physical, chemical, and biological properties. To this end, we propose a novel Geometry Enhanced Molecular representation learning method (GEM) for Chemical Representation Learning (ChemRL). At first, we design a geometry-based GNN architecture that simultaneously models atoms, bonds, and bond angles in a molecule. To be specific, we devised double graphs for a molecule: The first one encodes the atom-bond relations; The second one encodes bond-angle relations. Moreover, on top of the devised GNN architecture, we propose several novel geometry-level self-supervised learning strategies to learn spatial knowledge by utilizing the local and global molecular 3D structures. We compare ChemRL-GEM with various state-of-the-art (SOTA) baselines on different molecular benchmarks and exhibit that ChemRL-GEM can significantly outperform all baselines in both regression and classification tasks. For example, the experimental results show an overall improvement of 8.8% on average compared to SOTA baselines on the regression tasks, demonstrating the superiority of the proposed method.",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.06130",
+            "title": "ChemRL-GEM: Geometry Enhanced Molecular Representation Learning for Property Prediction",
+            "abstract": "Effective molecular representation learning is of great importance to facilitate molecular property prediction, which is a fundamental task for the drug and material industry. Recent advances in graph neural networks (GNNs) have shown great promise in applying GNNs for molecular representation learning. Moreover, a few recent studies have also demonstrated successful applications of self-supervised learning methods to pre-train the GNNs to overcome the problem of insufficient labeled molecules. However, existing GNNs and pre-training strategies usually treat molecules as topological graph data without fully utilizing the molecular geometry information. Whereas, the three-dimensional (3D) spatial structure of a molecule, a.k.a molecular geometry, is one of the most critical factors for determining molecular physical, chemical, and biological properties. To this end, we propose a novel Geometry Enhanced Molecular representation learning method (GEM) for Chemical Representation Learning (ChemRL). At first, we design a geometry-based GNN architecture that simultaneously models atoms, bonds, and bond angles in a molecule. To be specific, we devised double graphs for a molecule: The first one encodes the atom-bond relations; The second one encodes bond-angle relations. Moreover, on top of the devised GNN architecture, we propose several novel geometry-level self-supervised learning strategies to learn spatial knowledge by utilizing the local and global molecular 3D structures. We compare ChemRL-GEM with various state-of-the-art (SOTA) baselines on different molecular benchmarks and exhibit that ChemRL-GEM can significantly outperform all baselines in both regression and classification tasks. For example, the experimental results show an overall improvement of 8.8% on average compared to SOTA baselines on the regression tasks, demonstrating the superiority of the proposed method.",
+            "published": "2021-06-11T02:35:53Z",
+            "source_url": "https://arxiv.org/abs/2106.06130"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

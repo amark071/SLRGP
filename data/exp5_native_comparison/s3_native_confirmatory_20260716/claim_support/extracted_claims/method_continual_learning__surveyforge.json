@@ -1,0 +1,124 @@
+{
+  "topic_id": "method_continual_learning",
+  "system": "surveyforge",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The continual learning community has converged on a core set of benchmarks—Permuted MNIST, Split CIFAR-10/100, and Split Mini-ImageNet—that, while enabling reproducible comparisons [2; 8; 20], suffer from artificially clean task boundaries and limited scale that poorly reflect the real deployment complexity anticipated by the formal problem setting outlined above [27",
+      "citation_markers": [
+        "[2; 8; 20]",
+        "[27]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The seminal metric framework introduced alongside [32] established the community's canonical vocabulary: average accuracy across all observed tasks, backward transfer (BWT) quantifying how learning new tasks affects previously consolidated knowledge—negative BWT signaling catastrophic forgetting and positive BWT indicating beneficial consolidation—and forward transfer (FWT) measuring how accumulated representations accelerate learning on future tasks",
+      "citation_markers": [
+        "[32]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Critically, real-time evaluation studies [33] demonstrate that computationally naive baselines outperform sophisticated methods when training time is bounded, revealing that most existing evaluation protocols implicitly grant unlimited computation—a luxury absent in deployed systems and a significant source of unfair comparison",
+      "citation_markers": [
+        "[33]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Foundational work such as [34] demonstrated that maintaining a bounded exemplar memory with herding-based selection, combined with nearest-mean-of-exemplars classification, enables strong class-incremental performance, establishing episodic replay as a competitive baseline against which subsequent methods are measured",
+      "citation_markers": [
+        "[34]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Complementary evaluations [8; 20] confirm that even naive rehearsal strategies can match or surpass sophisticated regularization approaches, underscoring the practical potency of direct data retention",
+      "citation_markers": [
+        "[8; 20]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The Neural Tangent Kernel framework provides closed-form proxies for task similarity and transfer, yielding the first generalization bounds for orthogonal gradient descent and identifying the NTK variation as a key quantity modulating continual learning performance [41",
+      "citation_markers": [
+        "[41]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "The stability gap phenomenon, wherein performance transiently collapses upon task transition before recovering, further underscores that plasticity loss is not monotonic but episodic, demanding per-iteration evaluation protocols rather than post-task snapshots [25",
+      "citation_markers": [
+        "[25]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Continual learning in natural language processing presents distinctive challenges rooted in the discrete compositional structure of language, the heterogeneity of NLP tasks, and the widespread adoption of large pretrained language models whose parameters encode rich but potentially fragile linguistic knowledge",
+      "citation_markers": [
+        "[62]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Empirical investigations reveal a non-trivial tension: uncertainty-based queries that maximally reduce epistemic uncertainty for new tasks can simultaneously destabilize previously learned decision boundaries, particularly in class-incremental settings where cross-task class discrimination compounds the annotation challenge [76; 77",
+      "citation_markers": [
+        "[76; 77]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "The relationship between out-of-distribution generalization and catastrophic forgetting is theoretically deep. [77] formally demonstrates that class-incremental learning decomposes into within-task prediction and task-identity prediction, where the latter is provably equivalent to out-of-distribution detection—establishing that robust OOD detection is not merely complementary to continual learning but constitutive of solving it",
+      "citation_markers": [
+        "[77]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "A persistent concern is that dominant benchmarks—permuted MNIST, Split-CIFAR variants—employ artificial task boundaries and short sequences that mask failure modes emerging only over extended horizons [74; 33; 46",
+      "citation_markers": [
+        "[74; 33; 46]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The hidden challenge of inter-task class separation, wherein models must discriminate among classes never jointly observed, remains underaddressed in both vision and NLP settings [13; 9",
+      "citation_markers": [
+        "[13; 9]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 16453,
+    "completion_tokens": 996,
+    "total_tokens": 17449,
+    "prompt_tokens_details": {
+      "cached_tokens": 16128
+    }
+  }
+}

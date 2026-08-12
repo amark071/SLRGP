@@ -1,0 +1,430 @@
+{
+  "topic_id": "mature_deep_reinforcement_learning",
+  "system": "slrgp",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Arulkumaran et al. offer an accessible entry point by situating deep RL as a transformative development within artificial intelligence, arguing that deep learning is enabling reinforcement learning to scale to previously intractable problems, such as learning control policies directly from raw pixel inputs [arxiv_1708.05866].",
+      "citation_markers": [
+        "[arxiv_1708.05866]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1708.05866",
+          "doc_id": "arxiv_1708.05866",
+          "title": "A Brief Survey of Deep Reinforcement Learning",
+          "year": 2017,
+          "venue": "cs.LG",
+          "abstract": "Deep reinforcement learning is poised to revolutionise the field of AI and represents a step towards building autonomous systems with a higher level understanding of the visual world. Currently, deep learning is enabling reinforcement learning to scale to problems that were previously intractable, such as learning to play video games directly from pixels. Deep reinforcement learning algorithms are also applied to robotics, allowing control policies for robots to be learned directly from camera inputs in the real world. In this survey, we begin with an introduction to the general field of reinforcement learning, then progress to the main streams of value-based and policy-based methods. Our survey will cover central algorithms in deep reinforcement learning, including the deep $Q$-network, trust region policy optimisation, and asynchronous advantage actor-critic. In parallel, we highlight the unique advantages of deep neural networks, focusing on visual understanding via reinforcement learning. To conclude, we describe several current areas of research within the field.",
+          "resolved_arxiv": {
+            "arxiv_id": "1708.05866",
+            "title": "A Brief Survey of Deep Reinforcement Learning",
+            "abstract": "Deep reinforcement learning is poised to revolutionise the field of AI and represents a step towards building autonomous systems with a higher level understanding of the visual world. Currently, deep learning is enabling reinforcement learning to scale to problems that were previously intractable, such as learning to play video games directly from pixels. Deep reinforcement learning algorithms are also applied to robotics, allowing control policies for robots to be learned directly from camera inputs in the real world. In this survey, we begin with an introduction to the general field of reinforcement learning, then progress to the main streams of value-based and policy-based methods. Our survey will cover central algorithms in deep reinforcement learning, including the deep $Q$-network, trust region policy optimisation, and asynchronous advantage actor-critic. In parallel, we highlight the unique advantages of deep neural networks, focusing on visual understanding via reinforcement learning. To conclude, we describe several current areas of research within the field.",
+            "published": "2017-08-19T15:55:31Z",
+            "source_url": "https://arxiv.org/abs/1708.05866"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Li produces two extensive overview treatments that share a common organizational framework built around six core elements, six important mechanisms, and twelve applications [arxiv_1701.07274; arxiv_1810.06339].",
+      "citation_markers": [
+        "[arxiv_1701.07274; arxiv_1810.06339]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1810.06339",
+          "doc_id": "arxiv_1810.06339",
+          "title": "Deep Reinforcement Learning",
+          "year": 2018,
+          "venue": "cs.LG",
+          "abstract": "We discuss deep reinforcement learning in an overview style. We draw a big picture, filled with details. We discuss six core elements, six important mechanisms, and twelve applications, focusing on contemporary work, and in historical contexts. We start with background of artificial intelligence, machine learning, deep learning, and reinforcement learning (RL), with resources. Next we discuss RL core elements, including value function, policy, reward, model, exploration vs. exploitation, and representation. Then we discuss important mechanisms for RL, including attention and memory, unsupervised learning, hierarchical RL, multi-agent RL, relational RL, and learning to learn. After that, we discuss RL applications, including games, robotics, natural language processing (NLP), computer vision, finance, business management, healthcare, education, energy, transportation, computer systems, and, science, engineering, and art. Finally we summarize briefly, discuss challenges and opportunities, and close with an epilogue.",
+          "resolved_arxiv": {
+            "arxiv_id": "1810.06339",
+            "title": "Deep Reinforcement Learning",
+            "abstract": "We discuss deep reinforcement learning in an overview style. We draw a big picture, filled with details. We discuss six core elements, six important mechanisms, and twelve applications, focusing on contemporary work, and in historical contexts. We start with background of artificial intelligence, machine learning, deep learning, and reinforcement learning (RL), with resources. Next we discuss RL core elements, including value function, policy, reward, model, exploration vs. exploitation, and representation. Then we discuss important mechanisms for RL, including attention and memory, unsupervised learning, hierarchical RL, multi-agent RL, relational RL, and learning to learn. After that, we discuss RL applications, including games, robotics, natural language processing (NLP), computer vision, finance, business management, healthcare, education, energy, transportation, computer systems, and, science, engineering, and art. Finally we summarize briefly, discuss challenges and opportunities, and close with an epilogue.",
+            "published": "2018-10-15T13:20:56Z",
+            "source_url": "https://arxiv.org/abs/1810.06339"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [
+        "arxiv_1701.07274"
+      ],
+      "source_accessible": false
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Mousavi et al. survey the intersection of deep learning and reinforcement learning, highlighting how deep representations have enabled agents to learn useful features for decision-making [arxiv_1806.08894].",
+      "citation_markers": [
+        "[arxiv_1806.08894]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1806.08894",
+          "doc_id": "arxiv_1806.08894",
+          "title": "Deep Reinforcement Learning: An Overview",
+          "year": 2018,
+          "venue": "cs.LG",
+          "abstract": "In recent years, a specific machine learning method called deep learning has gained huge attraction, as it has obtained astonishing results in broad applications such as pattern recognition, speech recognition, computer vision, and natural language processing. Recent research has also been shown that deep learning techniques can be combined with reinforcement learning methods to learn useful representations for the problems with high dimensional raw data input. This chapter reviews the recent advances in deep reinforcement learning with a focus on the most used deep architectures such as autoencoders, convolutional neural networks and recurrent neural networks which have successfully been come together with the reinforcement learning framework.",
+          "resolved_arxiv": {
+            "arxiv_id": "1806.08894",
+            "title": "Deep Reinforcement Learning: An Overview",
+            "abstract": "In recent years, a specific machine learning method called deep learning has gained huge attraction, as it has obtained astonishing results in broad applications such as pattern recognition, speech recognition, computer vision, and natural language processing. Recent research has also been shown that deep learning techniques can be combined with reinforcement learning methods to learn useful representations for the problems with high dimensional raw data input. This chapter reviews the recent advances in deep reinforcement learning with a focus on the most used deep architectures such as autoencoders, convolutional neural networks and recurrent neural networks which have successfully been come together with the reinforcement learning framework.",
+            "published": "2018-06-23T02:18:26Z",
+            "source_url": "https://arxiv.org/abs/1806.08894"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "The extension of deep RL to multiagent environments introduces substantial additional complexity, as the future rewards of any agent depend on the joint actions of all participants [arxiv_2106.15691].",
+      "citation_markers": [
+        "[arxiv_2106.15691]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2106.15691",
+          "doc_id": "arxiv_2106.15691",
+          "title": "Deep Multiagent Reinforcement Learning: Challenges and Directions",
+          "year": 2022,
+          "venue": "cs.LG",
+          "abstract": "This paper surveys the field of deep multiagent reinforcement learning. The combination of deep neural networks with reinforcement learning has gained increased traction in recent years and is slowly shifting the focus from single-agent to multiagent environments. Dealing with multiple agents is inherently more complex as (a) the future rewards depend on multiple players' joint actions and (b) the computational complexity increases. We present the most common multiagent problem representations and their main challenges, and identify five research areas that address one or more of these challenges: centralised training and decentralised execution, opponent modelling, communication, efficient coordination, and reward shaping. We find that many computational studies rely on unrealistic assumptions or are not generalisable to other settings; they struggle to overcome the curse of dimensionality or nonstationarity. Approaches from psychology and sociology capture promising relevant behaviours, such as communication and coordination, to help agents achieve better performance in multiagent settings. We suggest that, for multiagent reinforcement learning to be successful, future research should address these challenges with an interdisciplinary approach to open up new possibilities in multiagent reinforcement learning.",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.15691",
+            "title": "Deep Multiagent Reinforcement Learning: Challenges and Directions",
+            "abstract": "This paper surveys the field of deep multiagent reinforcement learning. The combination of deep neural networks with reinforcement learning has gained increased traction in recent years and is slowly shifting the focus from single-agent to multiagent environments. Dealing with multiple agents is inherently more complex as (a) the future rewards depend on multiple players' joint actions and (b) the computational complexity increases. We present the most common multiagent problem representations and their main challenges, and identify five research areas that address one or more of these challenges: centralised training and decentralised execution, opponent modelling, communication, efficient coordination, and reward shaping. We find that many computational studies rely on unrealistic assumptions or are not generalisable to other settings; they struggle to overcome the curse of dimensionality or nonstationarity. Approaches from psychology and sociology capture promising relevant behaviours, such as communication and coordination, to help agents achieve better performance in multiagent settings. We suggest that, for multiagent reinforcement learning to be successful, future research should address these challenges with an interdisciplinary approach to open up new possibilities in multiagent reinforcement learning.",
+            "published": "2021-06-29T19:53:15Z",
+            "source_url": "https://arxiv.org/abs/2106.15691"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Agent modeling [arxiv_1907.09597] and communication mechanisms such as message-dropout [arxiv_1902.06527] represent complementary strategies for improving coordination in multiagent systems.",
+      "citation_markers": [
+        "[arxiv_1907.09597]",
+        "[arxiv_1902.06527]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1907.09597",
+          "doc_id": "arxiv_1907.09597",
+          "title": "Agent Modeling as Auxiliary Task for Deep Reinforcement Learning",
+          "year": 2019,
+          "venue": "cs.MA",
+          "abstract": "In this paper we explore how actor-critic methods in deep reinforcement learning, in particular Asynchronous Advantage Actor-Critic (A3C), can be extended with agent modeling. Inspired by recent works on representation learning and multiagent deep reinforcement learning, we propose two architectures to perform agent modeling: the first one based on parameter sharing, and the second one based on agent policy features. Both architectures aim to learn other agents' policies as auxiliary tasks, besides the standard actor (policy) and critic (values). We performed experiments in both cooperative and competitive domains. The former is a problem of coordinated multiagent object transportation and the latter is a two-player mini version of the Pommerman game. Our results show that the proposed architectures stabilize learning and outperform the standard A3C architecture when learning a best response in terms of expected rewards.",
+          "resolved_arxiv": {
+            "arxiv_id": "1907.09597",
+            "title": "Agent Modeling as Auxiliary Task for Deep Reinforcement Learning",
+            "abstract": "In this paper we explore how actor-critic methods in deep reinforcement learning, in particular Asynchronous Advantage Actor-Critic (A3C), can be extended with agent modeling. Inspired by recent works on representation learning and multiagent deep reinforcement learning, we propose two architectures to perform agent modeling: the first one based on parameter sharing, and the second one based on agent policy features. Both architectures aim to learn other agents' policies as auxiliary tasks, besides the standard actor (policy) and critic (values). We performed experiments in both cooperative and competitive domains. The former is a problem of coordinated multiagent object transportation and the latter is a two-player mini version of the Pommerman game. Our results show that the proposed architectures stabilize learning and outperform the standard A3C architecture when learning a best response in terms of expected rewards.",
+            "published": "2019-07-22T21:54:44Z",
+            "source_url": "https://arxiv.org/abs/1907.09597"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_1902.06527",
+          "doc_id": "arxiv_1902.06527",
+          "title": "Message-Dropout: An Efficient Training Method for Multi-Agent Deep\n  Reinforcement Learning",
+          "year": 2019,
+          "venue": "cs.LG",
+          "abstract": "In this paper, we propose a new learning technique named message-dropout to improve the performance for multi-agent deep reinforcement learning under two application scenarios: 1) classical multi-agent reinforcement learning with direct message communication among agents and 2) centralized training with decentralized execution. In the first application scenario of multi-agent systems in which direct message communication among agents is allowed, the message-dropout technique drops out the received messages from other agents in a block-wise manner with a certain probability in the training phase and compensates for this effect by multiplying the weights of the dropped-out block units with a correction probability. The applied message-dropout technique effectively handles the increased input dimension in multi-agent reinforcement learning with communication and makes learning robust against communication errors in the execution phase. In the second application scenario of centralized training with decentralized execution, we particularly consider the application of the proposed message-dropout to Multi-Agent Deep Deterministic Policy Gradient (MADDPG), which uses a centralized critic to train a decentralized actor for each agent. We evaluate the proposed message-dropout technique for several games, and numerical results show that the proposed message-dropout technique with proper dropout rate improves the reinforcement learning performance significantly in terms of the training speed and the steady-state performance in the execution phase.",
+          "resolved_arxiv": {
+            "arxiv_id": "1902.06527",
+            "title": "Message-Dropout: An Efficient Training Method for Multi-Agent Deep Reinforcement Learning",
+            "abstract": "In this paper, we propose a new learning technique named message-dropout to improve the performance for multi-agent deep reinforcement learning under two application scenarios: 1) classical multi-agent reinforcement learning with direct message communication among agents and 2) centralized training with decentralized execution. In the first application scenario of multi-agent systems in which direct message communication among agents is allowed, the message-dropout technique drops out the received messages from other agents in a block-wise manner with a certain probability in the training phase and compensates for this effect by multiplying the weights of the dropped-out block units with a correction probability. The applied message-dropout technique effectively handles the increased input dimension in multi-agent reinforcement learning with communication and makes learning robust against communication errors in the execution phase. In the second application scenario of centralized training with decentralized execution, we particularly consider the application of the proposed message-dropout to Multi-Agent Deep Deterministic Policy Gradient (MADDPG), which uses a centralized critic to train a decentralized actor for each agent. We evaluate the proposed message-dropout technique for several games, and numerical results show that the proposed message-dropout technique with proper dropout rate improves the reinforcement learning performance significantly in terms of the training speed and the steady-state performance in the execution phase.",
+            "published": "2019-02-18T11:40:29Z",
+            "source_url": "https://arxiv.org/abs/1902.06527"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "A dominant design paradigm in cooperative settings is centralized training with decentralized execution (CTDE), which permits agents to share global information during training while acting on local observations at deployment.",
+      "citation_markers": [
+        "[arxiv_1907.09597]",
+        "[arxiv_1902.06527]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1907.09597",
+          "doc_id": "arxiv_1907.09597",
+          "title": "Agent Modeling as Auxiliary Task for Deep Reinforcement Learning",
+          "year": 2019,
+          "venue": "cs.MA",
+          "abstract": "In this paper we explore how actor-critic methods in deep reinforcement learning, in particular Asynchronous Advantage Actor-Critic (A3C), can be extended with agent modeling. Inspired by recent works on representation learning and multiagent deep reinforcement learning, we propose two architectures to perform agent modeling: the first one based on parameter sharing, and the second one based on agent policy features. Both architectures aim to learn other agents' policies as auxiliary tasks, besides the standard actor (policy) and critic (values). We performed experiments in both cooperative and competitive domains. The former is a problem of coordinated multiagent object transportation and the latter is a two-player mini version of the Pommerman game. Our results show that the proposed architectures stabilize learning and outperform the standard A3C architecture when learning a best response in terms of expected rewards.",
+          "resolved_arxiv": {
+            "arxiv_id": "1907.09597",
+            "title": "Agent Modeling as Auxiliary Task for Deep Reinforcement Learning",
+            "abstract": "In this paper we explore how actor-critic methods in deep reinforcement learning, in particular Asynchronous Advantage Actor-Critic (A3C), can be extended with agent modeling. Inspired by recent works on representation learning and multiagent deep reinforcement learning, we propose two architectures to perform agent modeling: the first one based on parameter sharing, and the second one based on agent policy features. Both architectures aim to learn other agents' policies as auxiliary tasks, besides the standard actor (policy) and critic (values). We performed experiments in both cooperative and competitive domains. The former is a problem of coordinated multiagent object transportation and the latter is a two-player mini version of the Pommerman game. Our results show that the proposed architectures stabilize learning and outperform the standard A3C architecture when learning a best response in terms of expected rewards.",
+            "published": "2019-07-22T21:54:44Z",
+            "source_url": "https://arxiv.org/abs/1907.09597"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_1902.06527",
+          "doc_id": "arxiv_1902.06527",
+          "title": "Message-Dropout: An Efficient Training Method for Multi-Agent Deep\n  Reinforcement Learning",
+          "year": 2019,
+          "venue": "cs.LG",
+          "abstract": "In this paper, we propose a new learning technique named message-dropout to improve the performance for multi-agent deep reinforcement learning under two application scenarios: 1) classical multi-agent reinforcement learning with direct message communication among agents and 2) centralized training with decentralized execution. In the first application scenario of multi-agent systems in which direct message communication among agents is allowed, the message-dropout technique drops out the received messages from other agents in a block-wise manner with a certain probability in the training phase and compensates for this effect by multiplying the weights of the dropped-out block units with a correction probability. The applied message-dropout technique effectively handles the increased input dimension in multi-agent reinforcement learning with communication and makes learning robust against communication errors in the execution phase. In the second application scenario of centralized training with decentralized execution, we particularly consider the application of the proposed message-dropout to Multi-Agent Deep Deterministic Policy Gradient (MADDPG), which uses a centralized critic to train a decentralized actor for each agent. We evaluate the proposed message-dropout technique for several games, and numerical results show that the proposed message-dropout technique with proper dropout rate improves the reinforcement learning performance significantly in terms of the training speed and the steady-state performance in the execution phase.",
+          "resolved_arxiv": {
+            "arxiv_id": "1902.06527",
+            "title": "Message-Dropout: An Efficient Training Method for Multi-Agent Deep Reinforcement Learning",
+            "abstract": "In this paper, we propose a new learning technique named message-dropout to improve the performance for multi-agent deep reinforcement learning under two application scenarios: 1) classical multi-agent reinforcement learning with direct message communication among agents and 2) centralized training with decentralized execution. In the first application scenario of multi-agent systems in which direct message communication among agents is allowed, the message-dropout technique drops out the received messages from other agents in a block-wise manner with a certain probability in the training phase and compensates for this effect by multiplying the weights of the dropped-out block units with a correction probability. The applied message-dropout technique effectively handles the increased input dimension in multi-agent reinforcement learning with communication and makes learning robust against communication errors in the execution phase. In the second application scenario of centralized training with decentralized execution, we particularly consider the application of the proposed message-dropout to Multi-Agent Deep Deterministic Policy Gradient (MADDPG), which uses a centralized critic to train a decentralized actor for each agent. We evaluate the proposed message-dropout technique for several games, and numerical results show that the proposed message-dropout technique with proper dropout rate improves the reinforcement learning performance significantly in terms of the training speed and the steady-state performance in the execution phase.",
+            "published": "2019-02-18T11:40:29Z",
+            "source_url": "https://arxiv.org/abs/1902.06527"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Training agents from scratch in each new environment remains computationally prohibitive [arxiv_1811.12560; arxiv_1708.05866], and transfer learning offers a principled solution by leveraging knowledge acquired in source tasks to accelerate learning in related target tasks [ss_475943; arxiv_2009.07888].",
+      "citation_markers": [
+        "[arxiv_1811.12560; arxiv_1708.05866]",
+        "[ss_475943; arxiv_2009.07888]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1811.12560",
+          "doc_id": "arxiv_1811.12560",
+          "title": "An Introduction to Deep Reinforcement Learning",
+          "year": 2018,
+          "venue": "cs.LG",
+          "abstract": "Deep reinforcement learning is the combination of reinforcement learning (RL) and deep learning. This field of research has been able to solve a wide range of complex decision-making tasks that were previously out of reach for a machine. Thus, deep RL opens up many new applications in domains such as healthcare, robotics, smart grids, finance, and many more. This manuscript provides an introduction to deep reinforcement learning models, algorithms and techniques. Particular focus is on the aspects related to generalization and how deep RL can be used for practical applications. We assume the reader is familiar with basic machine learning concepts.",
+          "resolved_arxiv": {
+            "arxiv_id": "1811.12560",
+            "title": "An Introduction to Deep Reinforcement Learning",
+            "abstract": "Deep reinforcement learning is the combination of reinforcement learning (RL) and deep learning. This field of research has been able to solve a wide range of complex decision-making tasks that were previously out of reach for a machine. Thus, deep RL opens up many new applications in domains such as healthcare, robotics, smart grids, finance, and many more. This manuscript provides an introduction to deep reinforcement learning models, algorithms and techniques. Particular focus is on the aspects related to generalization and how deep RL can be used for practical applications. We assume the reader is familiar with basic machine learning concepts.",
+            "published": "2018-11-30T00:57:30Z",
+            "source_url": "https://arxiv.org/abs/1811.12560"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_1708.05866",
+          "doc_id": "arxiv_1708.05866",
+          "title": "A Brief Survey of Deep Reinforcement Learning",
+          "year": 2017,
+          "venue": "cs.LG",
+          "abstract": "Deep reinforcement learning is poised to revolutionise the field of AI and represents a step towards building autonomous systems with a higher level understanding of the visual world. Currently, deep learning is enabling reinforcement learning to scale to problems that were previously intractable, such as learning to play video games directly from pixels. Deep reinforcement learning algorithms are also applied to robotics, allowing control policies for robots to be learned directly from camera inputs in the real world. In this survey, we begin with an introduction to the general field of reinforcement learning, then progress to the main streams of value-based and policy-based methods. Our survey will cover central algorithms in deep reinforcement learning, including the deep $Q$-network, trust region policy optimisation, and asynchronous advantage actor-critic. In parallel, we highlight the unique advantages of deep neural networks, focusing on visual understanding via reinforcement learning. To conclude, we describe several current areas of research within the field.",
+          "resolved_arxiv": {
+            "arxiv_id": "1708.05866",
+            "title": "A Brief Survey of Deep Reinforcement Learning",
+            "abstract": "Deep reinforcement learning is poised to revolutionise the field of AI and represents a step towards building autonomous systems with a higher level understanding of the visual world. Currently, deep learning is enabling reinforcement learning to scale to problems that were previously intractable, such as learning to play video games directly from pixels. Deep reinforcement learning algorithms are also applied to robotics, allowing control policies for robots to be learned directly from camera inputs in the real world. In this survey, we begin with an introduction to the general field of reinforcement learning, then progress to the main streams of value-based and policy-based methods. Our survey will cover central algorithms in deep reinforcement learning, including the deep $Q$-network, trust region policy optimisation, and asynchronous advantage actor-critic. In parallel, we highlight the unique advantages of deep neural networks, focusing on visual understanding via reinforcement learning. To conclude, we describe several current areas of research within the field.",
+            "published": "2017-08-19T15:55:31Z",
+            "source_url": "https://arxiv.org/abs/1708.05866"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [
+        "ss_475943",
+        "arxiv_2009.07888"
+      ],
+      "source_accessible": false
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Policy distillation constitutes a further mechanism for knowledge transfer, compressing larger teacher networks into smaller student networks while preserving performance.",
+      "citation_markers": [
+        "[ss_475943; arxiv_2009.07888]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [],
+      "unresolved_citation_keys": [
+        "ss_475943",
+        "arxiv_2009.07888"
+      ],
+      "source_accessible": false
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Undirected approaches, such as ε-greedy policies or Gaussian noise injection, are widely used in practice [arxiv_1812.05551], yet they are known to fail in off-policy continuous control settings [arxiv_2210.00293].",
+      "citation_markers": [
+        "[arxiv_1812.05551]",
+        "[arxiv_2210.00293]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1812.05551",
+          "doc_id": "arxiv_1812.05551",
+          "title": "Exploration Conscious Reinforcement Learning Revisited",
+          "year": 2019,
+          "venue": "cs.LG",
+          "abstract": "The Exploration-Exploitation tradeoff arises in Reinforcement Learning when one cannot tell if a policy is optimal. Then, there is a constant need to explore new actions instead of exploiting past experience. In practice, it is common to resolve the tradeoff by using a fixed exploration mechanism, such as $ε$-greedy exploration or by adding Gaussian noise, while still trying to learn an optimal policy. In this work, we take a different approach and study exploration-conscious criteria, that result in optimal policies with respect to the exploration mechanism. Solving these criteria, as we establish, amounts to solving a surrogate Markov Decision Process. We continue and analyze properties of exploration-conscious optimal policies and characterize two general approaches to solve such criteria. Building on the approaches, we apply simple changes in existing tabular and deep Reinforcement Learning algorithms and empirically demonstrate superior performance relatively to their non-exploration-conscious counterparts, both for discrete and continuous action spaces.",
+          "resolved_arxiv": {
+            "arxiv_id": "1812.05551",
+            "title": "Exploration Conscious Reinforcement Learning Revisited",
+            "abstract": "The Exploration-Exploitation tradeoff arises in Reinforcement Learning when one cannot tell if a policy is optimal. Then, there is a constant need to explore new actions instead of exploiting past experience. In practice, it is common to resolve the tradeoff by using a fixed exploration mechanism, such as $ε$-greedy exploration or by adding Gaussian noise, while still trying to learn an optimal policy. In this work, we take a different approach and study exploration-conscious criteria, that result in optimal policies with respect to the exploration mechanism. Solving these criteria, as we establish, amounts to solving a surrogate Markov Decision Process. We continue and analyze properties of exploration-conscious optimal policies and characterize two general approaches to solve such criteria. Building on the approaches, we apply simple changes in existing tabular and deep Reinforcement Learning algorithms and empirically demonstrate superior performance relatively to their non-exploration-conscious counterparts, both for discrete and continuous action spaces.",
+            "published": "2018-12-13T18:08:04Z",
+            "source_url": "https://arxiv.org/abs/1812.05551"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2210.00293",
+          "doc_id": "arxiv_2210.00293",
+          "title": "Deep Intrinsically Motivated Exploration in Continuous Control",
+          "year": 2022,
+          "venue": "cs.LG",
+          "abstract": "In continuous control, exploration is often performed through undirected strategies in which parameters of the networks or selected actions are perturbed by random noise. Although the deep setting of undirected exploration has been shown to improve the performance of on-policy methods, they introduce an excessive computational complexity and are known to fail in the off-policy setting. The intrinsically motivated exploration is an effective alternative to the undirected strategies, but they are usually studied for discrete action domains. In this paper, we investigate how intrinsic motivation can effectively be combined with deep reinforcement learning in the control of continuous systems to obtain a directed exploratory behavior. We adapt the existing theories on animal motivational systems into the reinforcement learning paradigm and introduce a novel and scalable directed exploration strategy. The introduced approach, motivated by the maximization of the value function's error, can benefit from a collected set of experiences by extracting useful information and unify the intrinsic exploration motivations in the literature under a single exploration objective. An extensive set of empirical studies demonstrate that our framework extends to larger and more diverse state spaces, dramatically improves the baselines, and outperforms the undirected strategies significantly.",
+          "resolved_arxiv": {
+            "arxiv_id": "2210.00293",
+            "title": "Deep Intrinsically Motivated Exploration in Continuous Control",
+            "abstract": "In continuous control, exploration is often performed through undirected strategies in which parameters of the networks or selected actions are perturbed by random noise. Although the deep setting of undirected exploration has been shown to improve the performance of on-policy methods, they introduce an excessive computational complexity and are known to fail in the off-policy setting. The intrinsically motivated exploration is an effective alternative to the undirected strategies, but they are usually studied for discrete action domains. In this paper, we investigate how intrinsic motivation can effectively be combined with deep reinforcement learning in the control of continuous systems to obtain a directed exploratory behavior. We adapt the existing theories on animal motivational systems into the reinforcement learning paradigm and introduce a novel and scalable directed exploration strategy. The introduced approach, motivated by the maximization of the value function's error, can benefit from a collected set of experiences by extracting useful information and unify the intrinsic exploration motivations in the literature under a single exploration objective. An extensive set of empirical studies demonstrate that our framework extends to larger and more diverse state spaces, dramatically improves the baselines, and outperforms the undirected strategies significantly.",
+            "published": "2022-10-01T14:52:16Z",
+            "source_url": "https://arxiv.org/abs/2210.00293"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Bayesian and distributional approaches offer a more principled resolution to the exploration–exploitation dilemma. Tang and Agrawal [arxiv_1805.01907] propose a distributional RL framework that conceptually unifies several prior exploration methods, while Osband et al. [arxiv_1703.07608] demonstrate that randomized value functions can guide deep exploration in a statistically efficient manner.",
+      "citation_markers": [
+        "[arxiv_1805.01907]",
+        "[arxiv_1703.07608]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1805.01907",
+          "doc_id": "arxiv_1805.01907",
+          "title": "Exploration by Distributional Reinforcement Learning",
+          "year": 2018,
+          "venue": "cs.LG",
+          "abstract": "We propose a framework based on distributional reinforcement learning and recent attempts to combine Bayesian parameter updates with deep reinforcement learning. We show that our proposed framework conceptually unifies multiple previous methods in exploration. We also derive a practical algorithm that achieves efficient exploration on challenging control tasks.",
+          "resolved_arxiv": {
+            "arxiv_id": "1805.01907",
+            "title": "Exploration by Distributional Reinforcement Learning",
+            "abstract": "We propose a framework based on distributional reinforcement learning and recent attempts to combine Bayesian parameter updates with deep reinforcement learning. We show that our proposed framework conceptually unifies multiple previous methods in exploration. We also derive a practical algorithm that achieves efficient exploration on challenging control tasks.",
+            "published": "2018-05-04T18:07:21Z",
+            "source_url": "https://arxiv.org/abs/1805.01907"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_1703.07608",
+          "doc_id": "arxiv_1703.07608",
+          "title": "Deep Exploration via Randomized Value Functions",
+          "year": 2019,
+          "venue": "stat.ML",
+          "abstract": "We study the use of randomized value functions to guide deep exploration in reinforcement learning. This offers an elegant means for synthesizing statistically and computationally efficient exploration with common practical approaches to value function learning. We present several reinforcement learning algorithms that leverage randomized value functions and demonstrate their efficacy through computational studies. We also prove a regret bound that establishes statistical efficiency with a tabular representation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1703.07608",
+            "title": "Deep Exploration via Randomized Value Functions",
+            "abstract": "We study the use of randomized value functions to guide deep exploration in reinforcement learning. This offers an elegant means for synthesizing statistically and computationally efficient exploration with common practical approaches to value function learning. We present several reinforcement learning algorithms that leverage randomized value functions and demonstrate their efficacy through computational studies. We also prove a regret bound that establishes statistical efficiency with a tabular representation.",
+            "published": "2017-03-22T11:53:53Z",
+            "source_url": "https://arxiv.org/abs/1703.07608"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Mnih et al. [arxiv_1602.01783] propose asynchronous gradient descent as a lightweight yet effective training framework, demonstrating that parallel actor-learners exert a stabilizing effect on training across multiple standard RL algorithms.",
+      "citation_markers": [
+        "[arxiv_1602.01783]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1602.01783",
+          "doc_id": "arxiv_1602.01783",
+          "title": "Asynchronous Methods for Deep Reinforcement Learning",
+          "year": 2016,
+          "venue": "cs.LG",
+          "abstract": "We propose a conceptually simple and lightweight framework for deep reinforcement learning that uses asynchronous gradient descent for optimization of deep neural network controllers. We present asynchronous variants of four standard reinforcement learning algorithms and show that parallel actor-learners have a stabilizing effect on training allowing all four methods to successfully train neural network controllers. The best performing method, an asynchronous variant of actor-critic, surpasses the current state-of-the-art on the Atari domain while training for half the time on a single multi-core CPU instead of a GPU. Furthermore, we show that asynchronous actor-critic succeeds on a wide variety of continuous motor control problems as well as on a new task of navigating random 3D mazes using a visual input.",
+          "resolved_arxiv": {
+            "arxiv_id": "1602.01783",
+            "title": "Asynchronous Methods for Deep Reinforcement Learning",
+            "abstract": "We propose a conceptually simple and lightweight framework for deep reinforcement learning that uses asynchronous gradient descent for optimization of deep neural network controllers. We present asynchronous variants of four standard reinforcement learning algorithms and show that parallel actor-learners have a stabilizing effect on training allowing all four methods to successfully train neural network controllers. The best performing method, an asynchronous variant of actor-critic, surpasses the current state-of-the-art on the Atari domain while training for half the time on a single multi-core CPU instead of a GPU. Furthermore, we show that asynchronous actor-critic succeeds on a wide variety of continuous motor control problems as well as on a new task of navigating random 3D mazes using a visual input.",
+            "published": "2016-02-04T18:38:41Z",
+            "source_url": "https://arxiv.org/abs/1602.01783"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Miao et al. [arxiv_2106.02229] demonstrate that differentiable architecture search techniques, specifically adaptations of DARTS, can be applied to RL and yield architectures achieving up to 250% of the performance of manually designed counterparts across both discrete and continuous action spaces.",
+      "citation_markers": [
+        "[arxiv_2106.02229]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2106.02229",
+          "doc_id": "arxiv_2106.02229",
+          "title": "Differentiable Architecture Search for Reinforcement Learning",
+          "year": 2022,
+          "venue": "cs.LG",
+          "abstract": "In this paper, we investigate the fundamental question: To what extent are gradient-based neural architecture search (NAS) techniques applicable to RL? Using the original DARTS as a convenient baseline, we discover that the discrete architectures found can achieve up to 250% performance compared to manual architecture designs on both discrete and continuous action space environments across off-policy and on-policy RL algorithms, at only 3x more computation time. Furthermore, through numerous ablation studies, we systematically verify that not only does DARTS correctly upweight operations during its supernet phrase, but also gradually improves resulting discrete cells up to 30x more efficiently than random search, suggesting DARTS is surprisingly an effective tool for improving architectures in RL.",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.02229",
+            "title": "Differentiable Architecture Search for Reinforcement Learning",
+            "abstract": "In this paper, we investigate the fundamental question: To what extent are gradient-based neural architecture search (NAS) techniques applicable to RL? Using the original DARTS as a convenient baseline, we discover that the discrete architectures found can achieve up to 250% performance compared to manual architecture designs on both discrete and continuous action space environments across off-policy and on-policy RL algorithms, at only 3x more computation time. Furthermore, through numerous ablation studies, we systematically verify that not only does DARTS correctly upweight operations during its supernet phrase, but also gradually improves resulting discrete cells up to 30x more efficiently than random search, suggesting DARTS is surprisingly an effective tool for improving architectures in RL.",
+            "published": "2021-06-04T03:08:43Z",
+            "source_url": "https://arxiv.org/abs/2106.02229"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

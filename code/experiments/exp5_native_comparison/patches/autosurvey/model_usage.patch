@@ -1,0 +1,100 @@
+diff --git a/src/model.py b/src/model.py
+index b6ffd1d..d840f1a 100644
+--- a/src/model.py
++++ b/src/model.py
+@@ -1,6 +1,8 @@
+ import time
+ import requests
+ import json
++import os
++from pathlib import Path
+ from tqdm import tqdm
+ import threading
+ 
+@@ -10,32 +12,57 @@ class APIModel:
+         self.__api_key = api_key
+         self.__api_url = api_url
+         self.model = model
++        self.timeout = int(os.environ.get("S3_API_TIMEOUT", "300"))
++        self.usage_log = os.environ.get("S3_USAGE_LOG", "")
++        self._usage_lock = threading.Lock()
++
++    def __record_usage(self, body):
++        if not self.usage_log:
++            return
++        row = {
++            "model": self.model,
++            "usage": body.get("usage", {}),
++            "cost_usd": body.get("cost_usd", 0.0),
++            "created": body.get("created"),
++        }
++        path = Path(self.usage_log)
++        path.parent.mkdir(parents=True, exist_ok=True)
++        with self._usage_lock:
++            with path.open("a", encoding="utf-8") as handle:
++                handle.write(json.dumps(row, ensure_ascii=False) + "\n")
+         
+     def __req(self, text, temperature, max_try = 5):
+         url = f"{self.__api_url}"
+-        pay_load_dict = {"model": f"{self.model}","messages": [{
+-                "role": "user",
+-                "temperature":temperature,
+-                "content": f"{text}"}]}
++        pay_load_dict = {
++            "model": f"{self.model}",
++            "messages": [{"role": "user", "content": f"{text}"}],
++            "temperature": temperature,
++        }
+         payload = json.dumps(pay_load_dict)
+         headers = {
+-        'Accept': 'application/json',
+-        'Authorization': f'Bearer {self.__api_key}',
+-        'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
+-        'Content-Type': 'application/json'
++            'Accept': 'application/json',
++            'Authorization': f'Bearer {self.__api_key}',
++            'User-Agent': 'AutoSurvey-S3-native',
++            'Content-Type': 'application/json'
+         }
+-        try:
+-            response = requests.request("POST", url, headers=headers, data=payload)
+-            return json.loads(response.text)['choices'][0]['message']['content']
+-        except:
+-            for _ in range(max_try):
+-                try:
+-                    response = requests.request("POST", url, headers=headers, data=payload)
+-                    return json.loads(response.text)['choices'][0]['message']['content']
+-                except:
+-                    pass
+-                time.sleep(0.2)
+-            return None
++        last_error = None
++        for attempt in range(max_try + 1):
++            try:
++                response = requests.post(
++                    url,
++                    headers=headers,
++                    data=payload,
++                    timeout=self.timeout,
++                )
++                response.raise_for_status()
++                body = response.json()
++                self.__record_usage(body)
++                return body['choices'][0]['message']['content']
++            except (requests.RequestException, KeyError, ValueError) as exc:
++                last_error = exc
++                if attempt < max_try:
++                    time.sleep(min(30, 2 ** (attempt + 1)))
++        raise RuntimeError(f"AutoSurvey API request failed: {last_error!r}")
+     
+     def chat(self, text, temperature=1):
+         response = self.__req(text, temperature=temperature, max_try=5)
+@@ -48,7 +75,7 @@ class APIModel:
+         return response
+         
+     def batch_chat(self, text_batch, temperature=0):
+-        max_threads=15 # limit max concurrent threads using model API
++        max_threads=int(os.environ.get("S3_API_MAX_THREADS", "3"))
+         res_l = ['No response'] * len(text_batch)
+         thread_l = []
+         for i, text in zip(range(len(text_batch)), text_batch):

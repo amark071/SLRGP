@@ -1,0 +1,25 @@
+{
+  "system_id": "autosurvey",
+  "upstream_revision": "5e8f389f3d51b29bad16dc6ae75db3e8a45a3b65",
+  "policy": "Only infrastructure instrumentation and the pre-registered publication cutoff are modified; prompts, retrieval similarity, outline logic, writing logic, and refinement logic remain native.",
+  "patches": [
+    {
+      "path": "model_usage.patch",
+      "sha256": "9ab4ea1f2a43c955ee2288bfdf2eae3e0f4c14d1bd9e3a204c190c2fcaf5c15c",
+      "purpose": [
+        "correct OpenAI-compatible temperature placement",
+        "add bounded retries and timeout",
+        "record provider token usage and cost",
+        "cap API concurrency"
+      ]
+    },
+    {
+      "path": "database_cutoff.patch",
+      "sha256": "b7e6387e9b5a379455cc59cdbda88cdf6bbc4800814aa5639f69c2ae7c37f5ad",
+      "purpose": [
+        "enforce the frozen publication cutoff",
+        "permit explicit embedding device selection"
+      ]
+    }
+  ]
+}

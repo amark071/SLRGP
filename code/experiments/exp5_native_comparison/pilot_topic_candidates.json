@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "status": "retrieval_preflight_candidates_not_generation_frozen",
+  "publication_cutoff": "2023-12-31",
+  "selection_rule": "Both candidates are outside the previous controlled-eight set and remain eligible only if every mandatory system returns at least 30 pre-cutoff candidates.",
+  "topics": [
+    {
+      "topic_id": "pilot_neural_algorithmic_reasoning",
+      "title": "Neural Algorithmic Reasoning",
+      "scope": "Methods that train neural models to execute, imitate, or generalize classical algorithms, including graph-based execution, latent algorithm induction, out-of-distribution size generalization, and neural-symbolic interfaces. The survey should distinguish algorithmic supervision from generic reasoning benchmarks and should cover architectures, training objectives, generalization evidence, limitations, and evaluation practice.",
+      "target_audience": "machine-learning researchers",
+      "language": "English",
+      "publication_cutoff": "2023-12-31",
+      "target_words": 4000,
+      "min_words": 3200,
+      "max_words": 4800,
+      "target_references_min": 40,
+      "target_references_max": 60,
+      "seed": 1701,
+      "analysis_role": "pilot_only"
+    },
+    {
+      "topic_id": "pilot_machine_unlearning",
+      "title": "Machine Unlearning",
+      "scope": "Methods for removing the influence of designated training data from learned models, including exact and approximate unlearning, certified guarantees, efficient updates, privacy and security motivations, evaluation protocols, and applications to deep networks and foundation models. The survey should separate unlearning from ordinary fine-tuning, model editing, and data deletion without model-level verification.",
+      "target_audience": "machine-learning and privacy researchers",
+      "language": "English",
+      "publication_cutoff": "2023-12-31",
+      "target_words": 4000,
+      "min_words": 3200,
+      "max_words": 4800,
+      "target_references_min": 40,
+      "target_references_max": 60,
+      "seed": 2903,
+      "analysis_role": "pilot_only"
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "topic_id": "mature_deep_reinforcement_learning",
+  "system": "surveygen",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The Markov Decision Process (MDP) provides the formal mathematical framework underpinning reinforcement learning ref [1].",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Reinforcement Learning: An Introduction",
+          "doi": "https://doi.org/10.1109/tnn.2004.842673",
+          "abstract": "An account of key ideas and algorithms in reinforcement learning. The discussion ranges from the history of the field's intellectual foundations to recent developments and applications. Areas studied include reinforcement learning problems in terms of Markov decision problems and solution methods.",
+          "cited_by_count": "25794",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "266.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.8320257663726807",
+          "composite_score": "0.7932310066195679",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The objective is to find an optimal policy π* maximizing the expected cumulative discounted return ref [32].",
+      "citation_markers": [
+        "[32]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "An Introduction to Deep Reinforcement Learning",
+          "doi": "10.1561/2200000071",
+          "abstract": "Deep reinforcement learning is the combination of reinforcement learning (RL) and deep learning. This field of research has been able to solve a wide range of complex decision making tasks that were previously out of reach for a machine. Thus, deep RL opens up many new applications in domains such as healthcare, robotics, smart grids, finance, and many more. This manuscript provides an introduction to deep reinforcement learning models, algorithms and techniques. Particular focus is on the aspects related to generalization and how deep RL can be used for practical applications. We assume the reader is familiar with basic machine learning concepts.",
+          "cited_by_count": "1265",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "12.0",
+          "last_author_hindex": "67.0",
+          "author_hindex_avg": "39.5",
+          "author_h_bin": "Q3",
+          "journal_hindex": "45.0",
+          "journal_h_bin": "Q4",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.8952545523643494",
+          "composite_score": "0.567285792031322",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Dynamic programming methods, including policy iteration and value iteration, solve MDPs exactly when the environment model is known, leveraging the Bellman equations to compute optimal value functions ref [1].",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Reinforcement Learning: An Introduction",
+          "doi": "https://doi.org/10.1109/tnn.2004.842673",
+          "abstract": "An account of key ideas and algorithms in reinforcement learning. The discussion ranges from the history of the field's intellectual foundations to recent developments and applications. Areas studied include reinforcement learning problems in terms of Markov decision problems and solution methods.",
+          "cited_by_count": "25794",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "266.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.8320257663726807",
+          "composite_score": "0.7932310066195679",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Q-learning, a seminal off-policy TD algorithm, directly approximates the optimal action-value function by updating estimates using the maximum future reward, converging to optimal policies in tabular settings ref [1].",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Reinforcement Learning: An Introduction",
+          "doi": "https://doi.org/10.1109/tnn.2004.842673",
+          "abstract": "An account of key ideas and algorithms in reinforcement learning. The discussion ranges from the history of the field's intellectual foundations to recent developments and applications. Areas studied include reinforcement learning problems in terms of Markov decision problems and solution methods.",
+          "cited_by_count": "25794",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "266.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.8320257663726807",
+          "composite_score": "0.7932310066195679",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The dueling network architecture introduced a structural decomposition of the Q-function into separate state-value and advantage streams, enabling more efficient policy evaluation across actions with similar values ref [13].",
+      "citation_markers": [
+        "[13]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Dueling Network Architectures for Deep Reinforcement Learning",
+          "doi": "https://doi.org/10.48550/arxiv.1511.06581",
+          "abstract": "In recent years there have been many successes of using deep representations in reinforcement learning. Still, many of these applications use conventional architectures, such as convolutional networks, LSTMs, or auto-encoders. In this paper, we present a new neural network architecture for model-free reinforcement learning. Our dueling network represents two separate estimators: one for the state value function and one for the state-dependent action advantage function. The main benefit of this factoring is to generalize learning across actions without imposing any change to the underlying reinforcement learning algorithm. Our results show that this architecture leads to better policy evaluation in the presence of many similar-valued actions. Moreover, the dueling architecture enables our RL agent to outperform the state-of-the-art on the Atari 2600 domain.",
+          "cited_by_count": "1816",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "20.0",
+          "last_author_hindex": "59.0",
+          "author_hindex_avg": "39.5",
+          "author_h_bin": "Q3",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q1",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.8964669704437256",
+          "composite_score": "0.6635177103945957",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "1511.06581",
+            "title": "Dueling Network Architectures for Deep Reinforcement Learning",
+            "abstract": "In recent years there have been many successes of using deep representations in reinforcement learning. Still, many of these applications use conventional architectures, such as convolutional networks, LSTMs, or auto-encoders. In this paper, we present a new neural network architecture for model-free reinforcement learning. Our dueling network represents two separate estimators: one for the state value function and one for the state-dependent action advantage function. The main benefit of this factoring is to generalize learning across actions without imposing any change to the underlying reinforcement learning algorithm. Our results show that this architecture leads to better policy evaluation in the presence of many similar-valued actions. Moreover, the dueling architecture enables our RL agent to outperform the state-of-the-art on the Atari 2600 domain.",
+            "published": "2015-11-20T13:07:54Z",
+            "source_url": "https://arxiv.org/abs/1511.06581"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The policy gradient theorem formally establishes that policies can themselves be represented by differentiable function approximators and updated via gradient ascent on expected return, providing theoretical grounding for this paradigm ref [12].",
+      "citation_markers": [
+        "[12]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Policy Gradient Methods for Reinforcement Learning with Function Approximation",
+          "doi": "",
+          "abstract": "Function approximation is essential to reinforcement learning, but the standard approach of approximating a value function and determining a policy from it has so far proven theoretically intractable. In this paper we explore an alternative approach in which the policy is explicitly represented by its own function approximator, independent of the value function, and is updated according to the gradient of expected reward with respect to the policy parameters. Williams&amp;apos;s REINFORCE method and actor--critic methods are examples of this approach. Our main new result is to show that the gradient can be written in a form suitable for estimation from experience aided by an approximate action-value or advantage function. Using this result, we prove for the first time that a version of policy iteration with arbitrary di#erentiable function approximation is convergent to a locally optimal policy. Large applications of reinforcement learning (RL) require the use of generalizing function approxima...",
+          "cited_by_count": "4983",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "67.0",
+          "last_author_hindex": "67.0",
+          "author_hindex_avg": "67.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.8952819108963013",
+          "composite_score": "0.6808427944209647",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Trust Region Policy Optimization (TRPO) addresses a fundamental instability in policy gradient methods: excessively large policy updates can catastrophically degrade performance. TRPO formulates policy optimization as a constrained problem, enforcing a Kullback-Leibler divergence constraint between successive policies to guarantee monotonic improvement ref [3].",
+      "citation_markers": [
+        "[3]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Trust Region Policy Optimization",
+          "doi": "https://doi.org/10.48550/arxiv.1502.05477",
+          "abstract": "We describe an iterative procedure for optimizing policies, with guaranteed monotonic improvement. By making several approximations to the theoretically-justified procedure, we develop a practical algorithm, called Trust Region Policy Optimization (TRPO). This algorithm is similar to natural policy gradient methods and is effective for optimizing large nonlinear policies such as neural networks. Our experiments demonstrate its robust performance on a wide variety of tasks: learning simulated robotic swimming, hopping, and walking gaits; and playing Atari games using images of the screen as input. Despite its approximations that deviate from the theory, TRPO tends to give monotonic improvement, with little tuning of hyperparameters.",
+          "cited_by_count": "3142",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "39.0",
+          "last_author_hindex": "125.0",
+          "author_hindex_avg": "82.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q1",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.885037362575531",
+          "composite_score": "0.7516692552264359",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "1502.05477",
+            "title": "Trust Region Policy Optimization",
+            "abstract": "We describe an iterative procedure for optimizing policies, with guaranteed monotonic improvement. By making several approximations to the theoretically-justified procedure, we develop a practical algorithm, called Trust Region Policy Optimization (TRPO). This algorithm is similar to natural policy gradient methods and is effective for optimizing large nonlinear policies such as neural networks. Our experiments demonstrate its robust performance on a wide variety of tasks: learning simulated robotic swimming, hopping, and walking gaits; and playing Atari games using images of the screen as input. Despite its approximations that deviate from the theory, TRPO tends to give monotonic improvement, with little tuning of hyperparameters.",
+            "published": "2015-02-19T06:44:25Z",
+            "source_url": "https://arxiv.org/abs/1502.05477"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "PPO achieves comparable stability and performance to TRPO with significantly reduced complexity, making it widely adopted across robotics, continuous control, and game-playing applications ref [50].",
+      "citation_markers": [
+        "[50]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "A Brief Survey of Deep Reinforcement Learning",
+          "doi": "10.1109/MSP.2017.2743240",
+          "abstract": "Deep reinforcement learning (DRL) is poised to revolutionize the field of artificial intelligence (AI) and represents a step toward building autonomous systems with a higher-level understanding of the visual world. Currently, deep learning is enabling reinforcement learning (RL) to scale to problems that were previously intractable, such as learning to play video games directly from pixels. DRL algorithms are also applied to robotics, allowing control policies for robots to be learned directly from camera inputs in the real world. In this survey, we begin with an introduction to the general field of RL, then progress to the main streams of value-based and policy-based methods. Our survey will cover central algorithms in deep RL, including the deep Q-network (DQN), trust region policy optimization (TRPO), and asynchronous advantage actor critic. In parallel, we highlight the unique advantages of deep neural networks, focusing on visual understanding via RL. To conclude, we describe several current areas of research within the field.",
+          "cited_by_count": "4329",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "13.0",
+          "last_author_hindex": "29.0",
+          "author_hindex_avg": "21.0",
+          "author_h_bin": "Q4",
+          "journal_hindex": "256.0",
+          "journal_h_bin": "Q3",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9073880314826965",
+          "composite_score": "0.5325940860215054",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The seminal Deep Q-Network demonstrated that convolutional neural networks trained with Q-learning could achieve human-level performance on Atari 2600 games directly from raw pixel inputs ref [5].",
+      "citation_markers": [
+        "[5]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Playing Atari with Deep Reinforcement Learning",
+          "doi": "https://doi.org/10.48550/arxiv.1312.5602",
+          "abstract": "We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.",
+          "cited_by_count": "5123",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "32.0",
+          "last_author_hindex": "48.0",
+          "author_hindex_avg": "40.0",
+          "author_h_bin": "Q2",
+          "journal_hindex": "693.0",
+          "journal_h_bin": "Q1",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.8861606121063232",
+          "composite_score": "0.7249177199220309",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "1312.5602",
+            "title": "Playing Atari with Deep Reinforcement Learning",
+            "abstract": "We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.",
+            "published": "2013-12-19T16:00:08Z",
+            "source_url": "https://arxiv.org/abs/1312.5602"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "A prominent application is network planning, traditionally formulated as Integer Linear Programming (ILP), where DRL-based approaches have been shown to surpass hand-tuned heuristics in scalability and solution quality ref [27].",
+      "citation_markers": [
+        "[27]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Network planning with deep reinforcement learning",
+          "doi": "10.1145/3452296.3472902",
+          "abstract": "Network planning is critical to the performance, reliability and cost of web services. This problem is typically formulated as an Integer Linear Programming (ILP) problem. Today's practice relies on hand-tuned heuristics from human experts to address the scalability challenge of ILP solvers.",
+          "cited_by_count": "103",
+          "cited_by_bin": "Q4",
+          "first_author_hindex": "14.0",
+          "last_author_hindex": "20.0",
+          "author_hindex_avg": "17.0",
+          "author_h_bin": "Q4",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.82395339012146",
+          "composite_score": "0.596733139854804",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "A landmark contribution is the application of DRL to dialogue generation, where policy gradient methods are employed to reward conversational properties such as informativity, coherence, and forward-looking engagement, enabling agents to optimize long-term dialogue quality rather than single-turn responses ref [41].",
+      "citation_markers": [
+        "[41]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Deep Reinforcement Learning for Dialogue Generation",
+          "doi": "10.18653/v1/D16-1127",
+          "abstract": "Recent neural models of dialogue generation offer great promise for generating responses for conversational agents, but tend to be shortsighted, predicting utterances one at a time while ignoring their influence on future outcomes.Modeling the future direction of a dialogue is crucial to generating coherent, interesting dialogues, a need which led traditional NLP models of dialogue to draw on reinforcement learning.In this paper, we show how to integrate these goals, applying deep reinforcement learning to model future reward in chatbot dialogue.The model simulates dialogues between two virtual agents, using policy gradient methods to reward sequences that display three useful conversational properties: informativity, coherence, and ease of answering (related to forward-looking function).We evaluate our model on diversity, length as well as with human judges, showing that the proposed algorithm generates more interactive responses and manages to foster a more sustained conversation in dialogue simulation.This work marks a first step towards learning a neural conversational model based on the long-term success of dialogues.",
+          "cited_by_count": "1061",
+          "cited_by_bin": "Q2",
+          "first_author_hindex": "45.0",
+          "last_author_hindex": "91.0",
+          "author_hindex_avg": "68.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.8846954703330994",
+          "composite_score": "0.5402865059113505",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The combination of bootstrapping, off-policy learning, and nonlinear function approximation—the so-called deadly triad—introduces instabilities whose theoretical characterization is incomplete ref [32].",
+      "citation_markers": [
+        "[32]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "An Introduction to Deep Reinforcement Learning",
+          "doi": "10.1561/2200000071",
+          "abstract": "Deep reinforcement learning is the combination of reinforcement learning (RL) and deep learning. This field of research has been able to solve a wide range of complex decision making tasks that were previously out of reach for a machine. Thus, deep RL opens up many new applications in domains such as healthcare, robotics, smart grids, finance, and many more. This manuscript provides an introduction to deep reinforcement learning models, algorithms and techniques. Particular focus is on the aspects related to generalization and how deep RL can be used for practical applications. We assume the reader is familiar with basic machine learning concepts.",
+          "cited_by_count": "1265",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "12.0",
+          "last_author_hindex": "67.0",
+          "author_hindex_avg": "39.5",
+          "author_h_bin": "Q3",
+          "journal_hindex": "45.0",
+          "journal_h_bin": "Q4",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.8952545523643494",
+          "composite_score": "0.567285792031322",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

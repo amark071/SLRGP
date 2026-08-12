@@ -1,0 +1,122 @@
+{
+  "topic_id": "fast_text_to_image_diffusion",
+  "system": "slrgp",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Gallego [arxiv_2209.12330] proposes aesthetic gradients, a method that guides a CLIP-conditioned diffusion model toward custom visual aesthetics derived from a user-supplied set of images.",
+      "citation_markers": [
+        "[arxiv_2209.12330]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Avrahami et al. [arxiv_2211.14305] observe that despite the impressive quality of text-to-image diffusion models, fine-grained control over the shapes and layout of individual regions remains elusive, particularly because prior approaches relied on fixed label sets.",
+      "citation_markers": [
+        "[arxiv_2211.14305]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Zhong et al. [arxiv_2305.05189] address a different bottleneck—semantic understanding—by augmenting pre-trained diffusion models with large language models via a SUR-adapter, improving commonsense reasoning when input prompts are concise or narrative in nature.",
+      "citation_markers": [
+        "[arxiv_2305.05189]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Concept ablation techniques [arxiv_2303.13516] extend controllability in the opposite direction, enabling selective removal of specific styles or memorized identities from pre-trained models without full retraining—an important capability for responsible deployment.",
+      "citation_markers": [
+        "[arxiv_2303.13516]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Early text-to-image diffusion models established strong baselines for photorealistic synthesis by leveraging web-scale paired datasets, yet persistent challenges remained in achieving reliable text-image correspondence, particularly in domain-specific settings [arxiv_2308.08157].",
+      "citation_markers": [
+        "[arxiv_2308.08157]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The challenge of multi-prompt spatial guidance has also been addressed through differentiable optimal transport, enabling simultaneous conditioning on multiple textual cues to steer generation toward compositionally complex targets [arxiv_2204.08472].",
+      "citation_markers": [
+        "[arxiv_2204.08472]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "InstructPix2Pix demonstrated that combining a large language model with a text-to-image model to synthesize paired training data allows a single network to follow free-form human editing instructions at inference time [arxiv_2211.09800].",
+      "citation_markers": [
+        "[arxiv_2211.09800]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "X-IQE proposes an explainable quality assessment framework using visual large language models and hierarchical chain-of-thought reasoning to produce human-aligned textual judgements of generated images [arxiv_2305.10843], offering a more interpretable alternative to scalar metrics for benchmarking both generation and editing systems.",
+      "citation_markers": [
+        "[arxiv_2305.10843]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "One foundational approach involves learning efficient noise schedules rather than relying on fixed, hand-crafted ones. Watson et al. [arxiv_2106.03802] demonstrated that the discrete-time step sequence used during sampling can be optimized directly, enabling high-quality generation with far fewer denoising steps.",
+      "citation_markers": [
+        "[arxiv_2106.03802]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "At the systems level, ReDi [arxiv_2302.02285] introduces a learning-free retrieval-based framework that shortens diffusion trajectories by retrieving precomputed intermediate states, while post-training quantization [arxiv_2305.10657] reduces model size and latency without retraining.",
+      "citation_markers": [
+        "[arxiv_2302.02285]",
+        "[arxiv_2305.10657]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "FateZero [arxiv_2303.09535] achieves zero-shot text-based video editing by fusing cross-frame attentions without per-prompt training, demonstrating that inversion-based editing principles transfer beyond static images.",
+      "citation_markers": [
+        "[arxiv_2303.09535]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The tendency of diffusion models to memorise training data [arxiv_2305.20086] raises additional concerns about replication of copyrighted content, motivating concept ablation techniques [arxiv_2303.13516] that selectively remove specific styles or identities from pre-trained models without full retraining.",
+      "citation_markers": [
+        "[arxiv_2305.20086]",
+        "[arxiv_2303.13516]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7118,
+    "completion_tokens": 1087,
+    "total_tokens": 8205
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "topic_id": "method_continual_learning",
+  "system": "surveygen",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Continual learning (CL) is the paradigm whereby machine learning models incrementally acquire knowledge from non-stationary data streams without catastrophically forgetting previously learned information ref [40].",
+      "citation_markers": [
+        "[40]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Task-incremental learning (TIL) provides explicit task identifiers during testing, reducing the problem to within-task prediction ref [49]. Class-incremental learning (CIL) requires the model to discriminate among all classes encountered without task identity, demanding both within-task prediction and task-identity inference ref [49].",
+      "citation_markers": [
+        "[49]",
+        "[49]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Catastrophic forgetting denotes the abrupt degradation of previously acquired knowledge when neural networks are trained sequentially on new tasks, arising from gradient interference and parameter overwriting that disrupt earlier learned representations ref [40].",
+      "citation_markers": [
+        "[40]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "A pivotal contribution decomposes class-incremental learning (CIL) into two sub-problems: within-task prediction (WP) and task-identity prediction (TP), proving that good WP and good TP—equivalent to closed-world out-of-distribution (OOD) detection—are necessary and sufficient conditions for strong CIL performance ref [49].",
+      "citation_markers": [
+        "[49]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Elastic Weight Consolidation (EWC) and Synaptic Intelligence penalize modifications to parameters deemed important for prior tasks, while Learning without Forgetting (LwF) employs knowledge distillation on current data to retain old task outputs ref [40].",
+      "citation_markers": [
+        "[40]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Proxy-based contrastive replay (PCR) addresses class imbalance in online class-incremental settings by replacing contrastive samples with class proxies, improving convergence stability ref [21]. Second-order influence regularization identifies and corrects bias amplification across successive selection rounds ref [18].",
+      "citation_markers": [
+        "[21]",
+        "[18]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Brain-Inspired Replay (BIR) advances this paradigm by replaying internal hidden representations generated through context-modulated feedback connections, achieving state-of-the-art performance on challenging benchmarks such as class-incremental learning on CIFAR-100 without storing any raw data ref [42].",
+      "citation_markers": [
+        "[42]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "The LAE (Learning-Accumulation-Ensemble) framework ref [33] generalizes beyond prompting to encompass adapters, LoRA, and prefix tuning, incorporating three key mechanisms: adaptation speed calibration to align heterogeneous PET modules, momentum-based accumulation of task-specific knowledge into an offline PET module, and ensemble inference combining online and offline experts.",
+      "citation_markers": [
+        "[33]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "A critical challenge in continual fine-tuning of vision-language models such as CLIP is the degradation of zero-shot transfer capabilities due to catastrophic forgetting of pre-trained knowledge. Since the original pre-training dataset is typically private and inaccessible, conventional replay methods cannot directly mitigate this degradation. To address this, ref [27] proposes Zero-Shot Continual Learning (ZSCL), which introduces a semantically diverse reference dataset for feature-space distillation between the current and initial model, alongside weight averaging in parameter space to prevent large parameter shifts.",
+      "citation_markers": [
+        "[27]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "FeCAM ref [47] demonstrates that prototype-based classification using frozen features can achieve state-of-the-art continual learning performance by leveraging the anisotropic Mahalanobis distance to account for heterogeneous class feature distributions, outperforming methods that update backbone parameters. RanPAC ref [30] further advances this direction by injecting a frozen random projection layer with nonlinear activation between pre-trained features and the output head, capturing higher-order feature interactions and enabling class-prototype accumulation with decorrelation to reduce distribution disparity.",
+      "citation_markers": [
+        "[47]",
+        "[30]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "SIESTA ref [6] advances compute-efficient continual learning through a wake/sleep framework that employs backpropagation-free online updates during the wake phase and compute-restricted rehearsal during sleep, enabling ImageNet-1K training in under two hours on a single GPU while matching offline learner performance. SparCL ref [11] addresses edge deployment constraints by synergizing weight sparsity, dynamic data removal, and gradient sparsity, achieving up to 23× reduction in training FLOPs while simultaneously improving accuracy.",
+      "citation_markers": [
+        "[6]",
+        "[11]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "In federated class-continual learning (FCCL), clients possess statistically heterogeneous local datasets, and TARGET demonstrates that non-IID data directly exacerbates catastrophic forgetting by amplifying gradient interference during global model consolidation ref [3]. When local distributions diverge substantially, aggregated model updates become misaligned with any individual client's task distribution, undermining knowledge retention.",
+      "citation_markers": [
+        "[3]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9644,
+    "completion_tokens": 1166,
+    "total_tokens": 10810
+  }
+}

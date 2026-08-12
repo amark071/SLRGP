@@ -1,0 +1,58 @@
+{
+  "arm": "v_guarded_stress",
+  "bundle_hash": "e449b24178822726ea5ce33fca8a3c86161d3b20622b424445771c40b4150eb3",
+  "descend_events": [],
+  "solve_events": [],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "Multimodal Large Language Models — Surveys and Overviews of Multimodal LLMs",
+      "candidate_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "written_citation_ids": [
+        "arxiv_2210.09263",
+        "arxiv_2309.10020",
+        "arxiv_2402.12451",
+        "arxiv_2410.05608"
+      ],
+      "word_count": 453
+    },
+    {
+      "node_path": "root/1",
+      "seed": "Multimodal Large Language Models — Model Architectures and Pretraining for Vision-Language",
+      "candidate_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "written_citation_ids": [
+        "arxiv_2403.08773",
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472"
+      ],
+      "word_count": 407
+    }
+  ],
+  "validation_events": [
+    {
+      "stage": "injected_stress",
+      "kappa": {
+        "min_total": true,
+        "min_groups": false,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "stage": "guarded_repair",
+      "action": "restore_frozen_semantic_groups"
+    }
+  ]
+}

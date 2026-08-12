@@ -1,0 +1,278 @@
+{
+  "title": "Retrieval-Augmented Generation for Large Language Models",
+  "depth": 0,
+  "doc_ids": [
+    "arxiv_2410.20598",
+    "arxiv_2407.13193",
+    "arxiv_2309.01431",
+    "arxiv_2405.06211",
+    "arxiv_2405.13008",
+    "arxiv_2406.13249",
+    "arxiv_2502.20245",
+    "arxiv_2404.10981",
+    "arxiv_2312.10997",
+    "arxiv_2005.11401",
+    "arxiv_2406.07348",
+    "arxiv_2412.15605",
+    "arxiv_2502.06864",
+    "arxiv_2402.11129",
+    "arxiv_2404.19543",
+    "arxiv_2407.12101",
+    "arxiv_2503.10677",
+    "arxiv_2410.12837",
+    "arxiv_2407.12325",
+    "arxiv_2509.10467",
+    "arxiv_2405.06683",
+    "arxiv_2505.11180",
+    "arxiv_2505.03075",
+    "arxiv_2508.06056",
+    "arxiv_2506.02279",
+    "arxiv_2507.05714",
+    "arxiv_2407.09394",
+    "arxiv_2405.07437",
+    "arxiv_2402.01176",
+    "arxiv_2305.15294",
+    "arxiv_2504.14891",
+    "arxiv_2504.19436"
+  ],
+  "facet": "topic",
+  "relation": "foundational-to-applied",
+  "children": [
+    {
+      "title": "Foundations, Surveys, and Taxonomies of RAG",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2005.11401",
+        "arxiv_2312.10997",
+        "arxiv_2405.06211",
+        "arxiv_2404.10981",
+        "arxiv_2407.13193",
+        "arxiv_2404.19543",
+        "arxiv_2410.12837",
+        "arxiv_2503.10677",
+        "arxiv_2410.20598"
+      ],
+      "facet": "topic",
+      "relation": "chronological",
+      "children": [
+        {
+          "title": "Foundational RAG Proposal and Seminal Architecture",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2005.11401"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [],
+          "rationale": "This paper introduces the original RAG framework as a differentiable retrieval-augmented model for knowledge-intensive NLP, serving as the conceptual anchor for all subsequent survey and taxonomy work."
+        },
+        {
+          "title": "Comprehensive Surveys and Broad Taxonomies of RAG for LLMs",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2312.10997",
+            "arxiv_2405.06211",
+            "arxiv_2404.10981",
+            "arxiv_2410.12837"
+          ],
+          "facet": "topic",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers provide wide-scope reviews of RAG in the LLM era, covering overall paradigms, evolution, architecture components, limitations (hallucination, staleness), and general taxonomies across retrieval and generation stages."
+        },
+        {
+          "title": "Specialized Taxonomies and Extended Perspectives on RAG",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2407.13193",
+            "arxiv_2404.19543",
+            "arxiv_2503.10677",
+            "arxiv_2410.20598"
+          ],
+          "facet": "topic",
+          "relation": "enumerative",
+          "children": [],
+          "rationale": "These works extend or refine RAG taxonomies along specific axes—retrieval fusion techniques, knowledge-oriented retrieval, retrieval-augmented understanding (RAU) alongside RAG, and workshop-driven identification of open problems—offering more targeted or alternative classificatory lenses."
+        }
+      ],
+      "rationale": "These papers establish the RAG paradigm, provide comprehensive surveys, and define taxonomies that frame the entire field."
+    },
+    {
+      "title": "Core RAG Methods: Retrieval, Fusion, and Generation Techniques",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2405.13008",
+        "arxiv_2406.13249",
+        "arxiv_2406.07348",
+        "arxiv_2402.11129",
+        "arxiv_2407.12101",
+        "arxiv_2407.12325",
+        "arxiv_2305.15294",
+        "arxiv_2502.06864",
+        "arxiv_2504.19436",
+        "arxiv_2506.02279",
+        "arxiv_2505.03075",
+        "arxiv_2402.01176",
+        "arxiv_2507.05714",
+        "arxiv_2508.06056"
+      ],
+      "facet": "method",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Query Formulation and Document Retrieval Strategies",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2405.13008",
+            "arxiv_2407.12325",
+            "arxiv_2402.11129",
+            "arxiv_2407.12101",
+            "arxiv_2406.07348"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [
+            {
+              "title": "Document Retrieval Mechanisms: Dense Retrieval, Relevance, and Diversity",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2405.13008",
+                "arxiv_2407.12101",
+                "arxiv_2406.07348"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers address how documents are retrieved and ranked—enhancing DPR with control tokens, ensuring diversity via information gain, and dynamically expanding retrieval through multi-hop document relevance—focusing on the retrieval model and scoring side of the pipeline."
+            },
+            {
+              "title": "Query Formulation and Optimization Strategies for RAG",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2407.12325",
+                "arxiv_2402.11129"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers focus on how queries are constructed, refined, or blended—using LLM-based query generation with alignment scoring and combining internal/external knowledge augmentation—to improve the quality of the query signal sent to the retriever."
+            }
+          ],
+          "rationale": "These papers all focus on the upstream retrieval stage: how queries are constructed, refined, or optimized, and how documents are selected or re-ranked to improve recall and precision before any generation occurs."
+        },
+        {
+          "title": "Retrieval–Generation Fusion: Bridging the Semantic Gap and Iterative Synergy",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2406.13249",
+            "arxiv_2305.15294",
+            "arxiv_2502.06864",
+            "arxiv_2504.19436",
+            "arxiv_2506.02279"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [
+            {
+              "title": "Bridging the Semantic Gap: Architectural and Structural Alignment Between Retrievers and Generators",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2406.13249",
+                "arxiv_2502.06864",
+                "arxiv_2504.19436"
+              ],
+              "facet": "method",
+              "relation": "general-to-specific",
+              "children": [],
+              "rationale": "These papers diagnose and remedy the structural mismatch between retrieval and generation components—R²AG injects retrieval signals into the LLM, KG²RAG uses knowledge graphs to supply relational context, and context-guided dynamic retrieval builds differentiable joint-training pathways—all targeting the static alignment problem."
+            },
+            {
+              "title": "Iterative and Unified Retrieval-Generation Synergy: Dynamic Coupling and Query-Free Integration",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2305.15294",
+                "arxiv_2506.02279"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers move beyond one-shot retrieval by having generation actively drive retrieval across multiple rounds (iterative synergy) or by collapsing the retrieval-generation boundary entirely into a single model with implicit queries (ImpRAG), representing the frontier of tight retrieval-generation coupling."
+            }
+          ],
+          "rationale": "These papers address the interface between retrieval and generation—how retrieval signals, knowledge-graph structure, or implicit queries are incorporated into the generation process, and how iterative or dynamic feedback loops tighten the coupling between the two modules."
+        },
+        {
+          "title": "End-to-End Training, Unified Architectures, and Generation-Side Optimization",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2402.01176",
+            "arxiv_2505.03075",
+            "arxiv_2507.05714",
+            "arxiv_2508.06056"
+          ],
+          "facet": "method",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers move beyond pipeline-level fixes to propose jointly trained or unified models—generative retrieval, direct retrieval-augmented optimization, hierarchical instruction tuning, and interpretability tooling—that optimize the full RAG system at the generation or system level."
+        }
+      ],
+      "rationale": "These papers propose or analyze specific technical mechanisms for improving retrieval quality, query formulation, document relevance, and retrieval-generation integration."
+    },
+    {
+      "title": "Evaluation, Benchmarking, and Comparative Analysis of RAG Systems",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2309.01431",
+        "arxiv_2405.07437",
+        "arxiv_2504.14891",
+        "arxiv_2502.20245",
+        "arxiv_2505.11180"
+      ],
+      "facet": "dataset-task",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Survey and Frameworks for RAG Evaluation Methodology",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2405.07437",
+            "arxiv_2504.14891"
+          ],
+          "facet": "method",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers take a meta-level view, surveying evaluation processes, metrics, and frameworks across RAG systems rather than running a single focused experiment."
+        },
+        {
+          "title": "Empirical Benchmarking and Comparative Experiments on RAG Systems",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2309.01431",
+            "arxiv_2502.20245",
+            "arxiv_2505.11180"
+          ],
+          "facet": "dataset-task",
+          "relation": "simple-to-complex",
+          "children": [],
+          "rationale": "These papers conduct hands-on empirical evaluations—comparing retrieval vs. generation approaches on ODQA, probing LLM-specific RAG abilities, and introducing modular multi-modal benchmarks—grounding evaluation in concrete experimental results."
+        }
+      ],
+      "rationale": "These papers focus on how to measure, benchmark, and compare RAG systems, including metrics, evaluation frameworks, and systematic empirical comparisons."
+    },
+    {
+      "title": "Specialized RAG Extensions: Personalization, Domain Adaptation, and Alternative Paradigms",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2407.09394",
+        "arxiv_2405.06683",
+        "arxiv_2412.15605",
+        "arxiv_2509.10467"
+      ],
+      "facet": "application",
+      "relation": "general-to-specific",
+      "children": [],
+      "rationale": "These papers extend RAG beyond the standard paradigm toward user-centric personalization, domain-specific knowledge graphs, enhanced agent architectures, and alternative augmentation strategies such as cache-augmented generation."
+    }
+  ],
+  "rationale": "The RAG literature naturally partitions into four progressive layers: foundational concepts and surveys, core technical methods (retrieval, fusion, generation), evaluation and benchmarking, and specialized applications/extensions."
+}

@@ -1,0 +1,143 @@
+diff --git a/Code/paper_retrieval.py b/Code/paper_retrieval.py
+index 42c1704..9755c94 100644
+--- a/Code/paper_retrieval.py
++++ b/Code/paper_retrieval.py
+@@ -7,12 +7,13 @@ import csv
+ import random
+ from collections import Counter
+ 
+-INPUT_FILE = "./example/topic.csv"
+-OUTPUT_DIR = "./"
++INPUT_FILE = os.environ.get("S3_TOPIC_CSV", "./example/topic.csv")
++OUTPUT_DIR = os.environ.get("S3_OUTPUT_DIR", "./")
+ 
+ LIMIT = 100  # Semantic Scholar max
+-MAX_RESULTS_PER_QUERY = 300
++MAX_RESULTS_PER_QUERY = int(os.environ.get("S3_MAX_CANDIDATES", "300"))
+ WAIT_SECONDS = 5
++PUBLICATION_CUTOFF = os.environ.get("S3_PUBLICATION_CUTOFF", "9999-12-31")
+ 
+ BASE_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
+ FIELDS = "corpusId,externalIds,title,abstract,citationCount,referenceCount,influentialCitationCount,publicationDate,journal,authors,references"
+@@ -28,7 +29,13 @@ def safe_get(d, *keys, default=None):
+ def is_valid_paper(paper):
+     doi = safe_get(paper, "externalIds", "DOI", default="")
+     abstract = paper.get("abstract", "")
+-    return bool(doi and abstract)
++    publication_date = paper.get("publicationDate") or ""
++    return bool(
++        doi
++        and abstract
++        and publication_date
++        and publication_date <= PUBLICATION_CUTOFF
++    )
+ 
+ def extract_data(paper):
+     # authors = paper.get("authors") or []
+@@ -43,6 +50,7 @@ def extract_data(paper):
+         "doi": safe_get(paper, "externalIds", "DOI", default=""),
+         "title": paper.get("title", ""),
+         "abstract": paper.get("abstract", ""),
++        "publicationDate": paper.get("publicationDate", ""),
+         # "citationCount": paper.get("citationCount", 0),
+         # "referenceCount": paper.get("referenceCount", 0),
+         # "influentialCitationCount": paper.get("influentialCitationCount", 0),
+diff --git a/Code/quality_signal_augmentation.py b/Code/quality_signal_augmentation.py
+index 48f87d6..bd98f97 100644
+--- a/Code/quality_signal_augmentation.py
++++ b/Code/quality_signal_augmentation.py
+@@ -1,13 +1,24 @@
+ import json
+ import requests
+ import time
++import os
+ from collections import Counter
+ 
+ # 配置参数
+ BATCH_SIZE = 10  # OpenAlex allows up to 50 OR conditions per batch
+-API_MAILTO = "your email address"  # Replace with your email
++API_MAILTO = os.environ.get("OPENALEX_MAILTO", "")
++OPENALEX_API_KEY = os.environ.get("OPENALEX_API_KEY", "")
++PUBLICATION_CUTOFF = os.environ.get("S3_PUBLICATION_CUTOFF", "9999-12-31")
+ RATE_LIMIT = 1  # Seconds per request (complies with free API limits)
+ 
++def api_suffix():
++    parts = []
++    if API_MAILTO:
++        parts.append("mailto=" + API_MAILTO)
++    if OPENALEX_API_KEY:
++        parts.append("api_key=" + OPENALEX_API_KEY)
++    return ("&" + "&".join(parts)) if parts else ""
++
+ def normalize_doi(doi):
+     """Normalize DOI"""
+     if doi:
+@@ -26,9 +37,9 @@ def invert_abstract(inverted_index):
+ # -------------------- 批处理 works --------------------
+ def process_doi_batch(batch_dois, original_data):
+     """Query OpenAlex works in batches via DOI"""
+-    base_url = f"https://api.openalex.org/works?mailto={API_MAILTO}&filter=doi:"
++    base_url = "https://api.openalex.org/works?filter=doi:"
+     query_filter = "|".join(["https://doi.org/" + normalize_doi(doi) for doi in batch_dois])
+-    url = base_url + query_filter
++    url = base_url + query_filter + api_suffix()
+ 
+     try:
+         response = requests.get(url)
+@@ -113,6 +124,8 @@ def enhance_batch_data(original_batch, api_results):
+     for orig_item in original_batch:
+         orig_doi = normalize_doi(orig_item.get('doi'))
+         match = doi_map.get(orig_doi)
++        if match and (match.get("publication_date") or "9999-12-31") > PUBLICATION_CUTOFF:
++            match = None
+ 
+         if match:
+             try:
+@@ -143,7 +156,7 @@ def fetch_author_hindex_batch(ids):
+     """Batch query author h-index (<=50 per batch)"""
+     if not ids:
+         return {}
+-    url = f"https://api.openalex.org/authors?mailto={API_MAILTO}&filter=ids.openalex:" + "|".join(ids)
++    url = "https://api.openalex.org/authors?filter=ids.openalex:" + "|".join(ids) + api_suffix()
+     resp = requests.get(url)
+     print(url)
+     if resp.status_code != 200:
+@@ -157,7 +170,7 @@ def fetch_journal_hindex_batch(ids):
+     """Batch query journal h-index (<=50 per batch)"""
+     if not ids:
+         return {}
+-    url = f"https://api.openalex.org/sources?mailto={API_MAILTO}&filter=ids.openalex:" + "|".join(ids)
++    url = "https://api.openalex.org/sources?filter=ids.openalex:" + "|".join(ids) + api_suffix()
+     resp = requests.get(url)
+     if resp.status_code != 200:
+         print(f"❌ Journal error: {resp.status_code}")
+@@ -166,8 +179,8 @@ def fetch_journal_hindex_batch(ids):
+     return {r["id"]: r.get("summary_stats", {}).get("h_index", 0) for r in results}
+ 
+ if __name__ == "__main__":
+-    input_file = "./Gold_Standard_Deep Learning Applications in Computer Vision.json"
+-    output_file = "./final_ref_set.json"
++    input_file = os.environ.get("S3_RETRIEVED_JSON", "./Gold_Standard_Deep Learning Applications in Computer Vision.json")
++    output_file = os.environ.get("S3_AUGMENTED_JSON", "./final_ref_set.json")
+ 
+     with open(input_file, "r", encoding="utf-8") as fin:
+         data = json.load(fin)
+@@ -251,12 +264,16 @@ if __name__ == "__main__":
+     co_cited_results = []
+     for i in range(0, len(top_refs), BATCH_SIZE):
+         batch_ids = [rid for rid, _ in top_refs[i:i + BATCH_SIZE]]
+-        url = f"https://api.openalex.org/works?mailto={API_MAILTO}&filter=ids.openalex:" + "|".join(batch_ids)
++        url = "https://api.openalex.org/works?filter=ids.openalex:" + "|".join(batch_ids) + api_suffix()
+         resp = requests.get(url)
+         if resp.status_code != 200:
+             print(f"❌ co-cited error: {resp.status_code}")
+             continue
+-        results = resp.json().get("results", [])
++        results = [
++            item
++            for item in resp.json().get("results", [])
++            if (item.get("publication_date") or "9999-12-31") <= PUBLICATION_CUTOFF
++        ]
+         co_cited_results.extend(results)
+         time.sleep(RATE_LIMIT)
+ 

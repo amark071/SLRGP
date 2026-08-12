@@ -1,0 +1,298 @@
+{
+  "topic_id": "cross_medical_image_analysis",
+  "system": "autosurvey",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The landscape shifted dramatically following the landmark success of convolutional neural networks (CNNs) in the 2012 ImageNet Large Scale Visual Recognition Challenge, where AlexNet demonstrated the power of deep architectures trained on large-scale labeled data [1; 2",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2202.08546v1",
+          "source_key": "1",
+          "title": "An overview of deep learning in medical imaging",
+          "abstract": "Machine learning (ML) has seen enormous consideration during the most recent decade. This success started in 2012 when an ML model accomplished a remarkable triumph in the ImageNet Classification, the world's most famous competition for computer vision. This model was a kind of convolutional neural system (CNN) called deep learning (DL). Since then, researchers have started to participate efficiently in DL's fastest developing area of research. These days, DL systems are cutting-edge ML systems spanning a broad range of disciplines, from human language processing to video analysis, and commonly used in the scholarly world and enterprise sector. Recent advances can bring tremendous improvement to the medical field. Improved and innovative methods for data processing, image analysis and can significantly improve the diagnostic technologies and medicinal services gradually. A quick review of current developments with relevant problems in the field of DL used for medical imaging has been provided. The primary purposes of the review are four: (i) provide a brief prolog to DL by discussing different DL models, (ii) review of the DL usage for medical image analysis (classification, detection, segmentation, and registration), (iii) review seven main application fields of DL in medical imaging, (iv) give an initial stage to those keen on adding to the research area about DL in clinical imaging by providing links of some useful informative assets, such as freely available DL codes, public datasets Table 7, and medical imaging competition sources Table 8 and end our survey by outlining distinct continuous difficulties, lessons learned and future of DL in the field of medical science.",
+          "resolved_arxiv": {
+            "arxiv_id": "2202.08546",
+            "title": "An overview of deep learning in medical imaging",
+            "abstract": "Machine learning (ML) has seen enormous consideration during the most recent decade. This success started in 2012 when an ML model accomplished a remarkable triumph in the ImageNet Classification, the world's most famous competition for computer vision. This model was a kind of convolutional neural system (CNN) called deep learning (DL). Since then, researchers have started to participate efficiently in DL's fastest developing area of research. These days, DL systems are cutting-edge ML systems spanning a broad range of disciplines, from human language processing to video analysis, and commonly used in the scholarly world and enterprise sector. Recent advances can bring tremendous improvement to the medical field. Improved and innovative methods for data processing, image analysis and can significantly improve the diagnostic technologies and medicinal services gradually. A quick review of current developments with relevant problems in the field of DL used for medical imaging has been provided. The primary purposes of the review are four: (i) provide a brief prolog to DL by discussing different DL models, (ii) review of the DL usage for medical image analysis (classification, detection, segmentation, and registration), (iii) review seven main application fields of DL in medical imaging, (iv) give an initial stage to those keen on adding to the research area about DL in clinical imaging by providing links of some useful informative assets, such as freely available DL codes, public datasets Table 7, and medical imaging competition sources Table 8 and end our survey by outlining distinct continuous difficulties, lessons learned and future of DL in the field of medical science.",
+            "published": "2022-02-17T09:44:57Z",
+            "source_url": "https://arxiv.org/abs/2202.08546"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2004.00218v4",
+          "source_key": "2",
+          "title": "3D Deep Learning on Medical Images: A Review",
+          "abstract": "The rapid advancements in machine learning, graphics processing technologies and the availability of medical imaging data have led to a rapid increase in the use of deep learning models in the medical domain. This was exacerbated by the rapid advancements in convolutional neural network (CNN) based architectures, which were adopted by the medical imaging community to assist clinicians in disease diagnosis. Since the grand success of AlexNet in 2012, CNNs have been increasingly used in medical image analysis to improve the efficiency of human clinicians. In recent years, three-dimensional (3D) CNNs have been employed for the analysis of medical images. In this paper, we trace the history of how the 3D CNN was developed from its machine learning roots, we provide a brief mathematical description of 3D CNN and provide the preprocessing steps required for medical images before feeding them to 3D CNNs. We review the significant research in the field of 3D medical imaging analysis using 3D CNNs (and its variants) in different medical areas such as classification, segmentation, detection and localization. We conclude by discussing the challenges associated with the use of 3D CNNs in the medical imaging domain (and the use of deep learning models in general) and possible future trends in the field.",
+          "resolved_arxiv": {
+            "arxiv_id": "2004.00218",
+            "title": "3D Deep Learning on Medical Images: A Review",
+            "abstract": "The rapid advancements in machine learning, graphics processing technologies and the availability of medical imaging data have led to a rapid increase in the use of deep learning models in the medical domain. This was exacerbated by the rapid advancements in convolutional neural network (CNN) based architectures, which were adopted by the medical imaging community to assist clinicians in disease diagnosis. Since the grand success of AlexNet in 2012, CNNs have been increasingly used in medical image analysis to improve the efficiency of human clinicians. In recent years, three-dimensional (3D) CNNs have been employed for the analysis of medical images. In this paper, we trace the history of how the 3D CNN was developed from its machine learning roots, we provide a brief mathematical description of 3D CNN and provide the preprocessing steps required for medical images before feeding them to 3D CNNs. We review the significant research in the field of 3D medical imaging analysis using 3D CNNs (and its variants) in different medical areas such as classification, segmentation, detection and localization. We conclude by discussing the challenges associated with the use of 3D CNNs in the medical imaging domain (and the use of deep learning models in general) and possible future trends in the field.",
+            "published": "2020-04-01T03:56:48Z",
+            "source_url": "https://arxiv.org/abs/2004.00218"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The impact on medical imaging was swift and far-reaching. Deep learning methods rapidly achieved state-of-the-art performance across a broad range of tasks, including classification of diabetic retinopathy, detection of pulmonary nodules in CT, segmentation of brain tumors in MRI, and analysis of histopathological slides [4",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2103.14969v2",
+          "source_key": "4",
+          "title": "Catalyzing Clinical Diagnostic Pipelines Through Volumetric Medical Image Segmentation Using Deep Neural Networks: Past, Present, & Future",
+          "abstract": "Deep learning has made a remarkable impact in the field of natural image processing over the past decade. Consequently, there is a great deal of interest in replicating this success across unsolved tasks in related domains, such as medical image analysis. Core to medical image analysis is the task of semantic segmentation which enables various clinical workflows. Due to the challenges inherent in manual segmentation, many decades of research have been devoted to discovering extensible, automated, expert-level segmentation techniques. Given the groundbreaking performance demonstrated by recent neural network-based techniques, deep learning seems poised to achieve what classic methods have historically been unable. This paper will briefly overview some of the state-of-the-art (SoTA) neural network-based segmentation algorithms with a particular emphasis on the most recent architectures, comparing and contrasting the contributions and characteristics of each network topology. Using ultrasonography as a motivating example, it will also demonstrate important clinical implications of effective deep learning-based solutions, articulate challenges unique to the modality, and discuss novel approaches developed in response to those challenges, concluding with the proposal of future directions in the field. Given the generally observed ephemerality of the best deep learning approaches (i.e. the extremely quick succession of the SoTA), the main contributions of the paper are its contextualization of modern deep learning architectures with historical background and the elucidation of the current trajectory of volumetric medical image segmentation research.",
+          "resolved_arxiv": {
+            "arxiv_id": "2103.14969",
+            "title": "Catalyzing Clinical Diagnostic Pipelines Through Volumetric Medical Image Segmentation Using Deep Neural Networks: Past, Present, & Future",
+            "abstract": "Deep learning has made a remarkable impact in the field of natural image processing over the past decade. Consequently, there is a great deal of interest in replicating this success across unsolved tasks in related domains, such as medical image analysis. Core to medical image analysis is the task of semantic segmentation which enables various clinical workflows. Due to the challenges inherent in manual segmentation, many decades of research have been devoted to discovering extensible, automated, expert-level segmentation techniques. Given the groundbreaking performance demonstrated by recent neural network-based techniques, deep learning seems poised to achieve what classic methods have historically been unable. This paper will briefly overview some of the state-of-the-art (SoTA) neural network-based segmentation algorithms with a particular emphasis on the most recent architectures, comparing and contrasting the contributions and characteristics of each network topology. Using ultrasonography as a motivating example, it will also demonstrate important clinical implications of effective deep learning-based solutions, articulate challenges unique to the modality, and discuss novel approaches developed in response to those challenges, concluding with the proposal of future directions in the field. Given the generally observed ephemerality of the best deep learning approaches (i.e. the extremely quick succession of the SoTA), the main contributions of the paper are its contextualization of modern deep learning architectures with historical background and the elucidation of the current trajectory of volumetric medical image segmentation research.",
+            "published": "2021-03-27T19:05:11Z",
+            "source_url": "https://arxiv.org/abs/2103.14969"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "More recently, self-supervised and contrastive pretraining approaches have demonstrated that powerful representations can be learned from large collections of unlabeled medical images, substantially reducing dependence on expert annotations [7; 8",
+      "citation_markers": [
+        "[7; 8]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "1910.09420v3",
+          "source_key": "7",
+          "title": "Modeling Disease Progression In Retinal OCTs With Longitudinal Self-Supervised Learning",
+          "abstract": "Longitudinal imaging is capable of capturing the static ana\\-to\\-mi\\-cal structures and the dynamic changes of the morphology resulting from aging or disease progression. Self-supervised learning allows to learn new representation from available large unlabelled data without any expert knowledge. We propose a deep learning self-supervised approach to model disease progression from longitudinal retinal optical coherence tomography (OCT). Our self-supervised model takes benefit from a generic time-related task, by learning to estimate the time interval between pairs of scans acquired from the same patient. This task is (i) easy to implement, (ii) allows to use irregularly sampled data, (iii) is tolerant to poor registration, and (iv) does not rely on additional annotations. This novel method learns a representation that focuses on progression specific information only, which can be transferred to other types of longitudinal problems. We transfer the learnt representation to a clinically highly relevant task of predicting the onset of an advanced stage of age-related macular degeneration within a given time interval based on a single OCT scan. The boost in prediction accuracy, in comparison to a network learned from scratch or transferred from traditional tasks, demonstrates that our pretrained self-supervised representation learns a clinically meaningful information.",
+          "resolved_arxiv": {
+            "arxiv_id": "1910.09420",
+            "title": "Modeling Disease Progression In Retinal OCTs With Longitudinal Self-Supervised Learning",
+            "abstract": "Longitudinal imaging is capable of capturing the static ana\\-to\\-mi\\-cal structures and the dynamic changes of the morphology resulting from aging or disease progression. Self-supervised learning allows to learn new representation from available large unlabelled data without any expert knowledge. We propose a deep learning self-supervised approach to model disease progression from longitudinal retinal optical coherence tomography (OCT). Our self-supervised model takes benefit from a generic time-related task, by learning to estimate the time interval between pairs of scans acquired from the same patient. This task is (i) easy to implement, (ii) allows to use irregularly sampled data, (iii) is tolerant to poor registration, and (iv) does not rely on additional annotations. This novel method learns a representation that focuses on progression specific information only, which can be transferred to other types of longitudinal problems. We transfer the learnt representation to a clinically highly relevant task of predicting the onset of an advanced stage of age-related macular degeneration within a given time interval based on a single OCT scan. The boost in prediction accuracy, in comparison to a network learned from scratch or transferred from traditional tasks, demonstrates that our pretrained self-supervised representation learns a clinically meaningful information.",
+            "published": "2019-10-21T14:53:37Z",
+            "source_url": "https://arxiv.org/abs/1910.09420"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2208.02529v2",
+          "source_key": "8",
+          "title": "Metadata-enhanced contrastive learning from retinal optical coherence tomography images",
+          "abstract": "Deep learning has potential to automate screening, monitoring and grading of disease in medical images. Pretraining with contrastive learning enables models to extract robust and generalisable features from natural image datasets, facilitating label-efficient downstream image analysis. However, the direct application of conventional contrastive methods to medical datasets introduces two domain-specific issues. Firstly, several image transformations which have been shown to be crucial for effective contrastive learning do not translate from the natural image to the medical image domain. Secondly, the assumption made by conventional methods, that any two images are dissimilar, is systematically misleading in medical datasets depicting the same anatomy and disease. This is exacerbated in longitudinal image datasets that repeatedly image the same patient cohort to monitor their disease progression over time. In this paper we tackle these issues by extending conventional contrastive frameworks with a novel metadata-enhanced strategy. Our approach employs widely available patient metadata to approximate the true set of inter-image contrastive relationships. To this end we employ records for patient identity, eye position (i.e. left or right) and time series information. In experiments using two large longitudinal datasets containing 170,427 retinal OCT images of 7,912 patients with age-related macular degeneration (AMD), we evaluate the utility of using metadata to incorporate the temporal dynamics of disease progression into pretraining. Our metadata-enhanced approach outperforms both standard contrastive methods and a retinal image foundation model in five out of six image-level downstream tasks related to AMD. Due to its modularity, our method can be quickly and cost-effectively tested to establish the potential benefits of including available metadata in contrastive pretraining.",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.02529",
+            "title": "Metadata-enhanced contrastive learning from retinal optical coherence tomography images",
+            "abstract": "Deep learning has potential to automate screening, monitoring and grading of disease in medical images. Pretraining with contrastive learning enables models to extract robust and generalisable features from natural image datasets, facilitating label-efficient downstream image analysis. However, the direct application of conventional contrastive methods to medical datasets introduces two domain-specific issues. Firstly, several image transformations which have been shown to be crucial for effective contrastive learning do not translate from the natural image to the medical image domain. Secondly, the assumption made by conventional methods, that any two images are dissimilar, is systematically misleading in medical datasets depicting the same anatomy and disease. This is exacerbated in longitudinal image datasets that repeatedly image the same patient cohort to monitor their disease progression over time. In this paper we tackle these issues by extending conventional contrastive frameworks with a novel metadata-enhanced strategy. Our approach employs widely available patient metadata to approximate the true set of inter-image contrastive relationships. To this end we employ records for patient identity, eye position (i.e. left or right) and time series information. In experiments using two large longitudinal datasets containing 170,427 retinal OCT images of 7,912 patients with age-related macular degeneration (AMD), we evaluate the utility of using metadata to incorporate the temporal dynamics of disease progression into pretraining. Our metadata-enhanced approach outperforms both standard contrastive methods and a retinal image foundation model in five out of six image-level downstream tasks related to AMD. Due to its modularity, our method can be quickly and cost-effectively tested to establish the potential benefits of including available metadata in contrastive pretraining.",
+            "published": "2022-08-04T08:53:15Z",
+            "source_url": "https://arxiv.org/abs/2208.02529"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Cross-validation strategies—particularly five-fold or leave-one-out cross-validation—are used on smaller datasets to ensure stable performance estimates. For large-scale challenges like MSD and BraTS, held-out test sets are evaluated through online submission portals to prevent overfitting to the test data",
+      "citation_markers": [
+        ""
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [],
+      "unresolved_citation_keys": [],
+      "source_accessible": false
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Deep learning models applied to X-ray images must therefore contend with low contrast, subtle lesion appearance, and high inter-reader variability. The availability of large public chest X-ray datasets has made this modality a popular benchmark for classification and detection algorithms, though class imbalance and label noise from automated report mining introduce additional methodological challenges",
+      "citation_markers": [
+        ""
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [],
+      "unresolved_citation_keys": [],
+      "source_accessible": false
+    },
+    {
+      "claim_id": "C06",
+      "quote": "This annotation bottleneck is pervasive across virtually all imaging modalities. In histopathology, for instance, pixel-level annotation of tissue sections requires substantial pathologist effort [6]. Similarly, volumetric segmentation of anatomical structures in CT or MRI scans demands that clinicians contour three-dimensional regions slice by slice, multiplying the time cost compared to two-dimensional annotation tasks [4",
+      "citation_markers": [
+        "[6]",
+        "[4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "1903.11210v2",
+          "source_key": "6",
+          "title": "Colorectal cancer diagnosis from histology images: A comparative study",
+          "abstract": "Computer-aided diagnosis (CAD) based on histopathological imaging has progressed rapidly in recent years with the rise of machine learning based methodologies. Traditional approaches consist of training a classification model using features extracted from the images, based on textures or morphological properties. Recently, deep-learning based methods have been applied directly to the raw (unprocessed) data. However, their usability is impacted by the paucity of annotated data in the biomedical sector. In order to leverage the learning capabilities of deep Convolutional Neural Nets (CNNs) within the confines of limited labelled data, in this study we shall investigate the transfer learning approaches that aim to apply the knowledge gained from solving a source (e.g., non-medical) problem, to learn better predictive models for the target (e.g., biomedical) task. As an alternative, we shall further propose a new adaptive and compact CNN based architecture that can be trained from scratch even on scarce and low-resolution data. Moreover, we conduct quantitative comparative evaluations among the traditional methods, transfer learning-based methods and the proposed adaptive approach for the particular task of cancer detection and identification from scarce and low-resolution histology images. Over the largest benchmark dataset formed for this purpose, the proposed adaptive approach achieved a higher cancer detection accuracy with a significant gap, whereas the deep CNNs with transfer learning achieved a superior cancer identification.",
+          "resolved_arxiv": {
+            "arxiv_id": "1903.11210",
+            "title": "Colorectal cancer diagnosis from histology images: A comparative study",
+            "abstract": "Computer-aided diagnosis (CAD) based on histopathological imaging has progressed rapidly in recent years with the rise of machine learning based methodologies. Traditional approaches consist of training a classification model using features extracted from the images, based on textures or morphological properties. Recently, deep-learning based methods have been applied directly to the raw (unprocessed) data. However, their usability is impacted by the paucity of annotated data in the biomedical sector. In order to leverage the learning capabilities of deep Convolutional Neural Nets (CNNs) within the confines of limited labelled data, in this study we shall investigate the transfer learning approaches that aim to apply the knowledge gained from solving a source (e.g., non-medical) problem, to learn better predictive models for the target (e.g., biomedical) task. As an alternative, we shall further propose a new adaptive and compact CNN based architecture that can be trained from scratch even on scarce and low-resolution data. Moreover, we conduct quantitative comparative evaluations among the traditional methods, transfer learning-based methods and the proposed adaptive approach for the particular task of cancer detection and identification from scarce and low-resolution histology images. Over the largest benchmark dataset formed for this purpose, the proposed adaptive approach achieved a higher cancer detection accuracy with a significant gap, whereas the deep CNNs with transfer learning achieved a superior cancer identification.",
+            "published": "2019-03-27T01:02:44Z",
+            "source_url": "https://arxiv.org/abs/1903.11210"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2103.14969v2",
+          "source_key": "4",
+          "title": "Catalyzing Clinical Diagnostic Pipelines Through Volumetric Medical Image Segmentation Using Deep Neural Networks: Past, Present, & Future",
+          "abstract": "Deep learning has made a remarkable impact in the field of natural image processing over the past decade. Consequently, there is a great deal of interest in replicating this success across unsolved tasks in related domains, such as medical image analysis. Core to medical image analysis is the task of semantic segmentation which enables various clinical workflows. Due to the challenges inherent in manual segmentation, many decades of research have been devoted to discovering extensible, automated, expert-level segmentation techniques. Given the groundbreaking performance demonstrated by recent neural network-based techniques, deep learning seems poised to achieve what classic methods have historically been unable. This paper will briefly overview some of the state-of-the-art (SoTA) neural network-based segmentation algorithms with a particular emphasis on the most recent architectures, comparing and contrasting the contributions and characteristics of each network topology. Using ultrasonography as a motivating example, it will also demonstrate important clinical implications of effective deep learning-based solutions, articulate challenges unique to the modality, and discuss novel approaches developed in response to those challenges, concluding with the proposal of future directions in the field. Given the generally observed ephemerality of the best deep learning approaches (i.e. the extremely quick succession of the SoTA), the main contributions of the paper are its contextualization of modern deep learning architectures with historical background and the elucidation of the current trajectory of volumetric medical image segmentation research.",
+          "resolved_arxiv": {
+            "arxiv_id": "2103.14969",
+            "title": "Catalyzing Clinical Diagnostic Pipelines Through Volumetric Medical Image Segmentation Using Deep Neural Networks: Past, Present, & Future",
+            "abstract": "Deep learning has made a remarkable impact in the field of natural image processing over the past decade. Consequently, there is a great deal of interest in replicating this success across unsolved tasks in related domains, such as medical image analysis. Core to medical image analysis is the task of semantic segmentation which enables various clinical workflows. Due to the challenges inherent in manual segmentation, many decades of research have been devoted to discovering extensible, automated, expert-level segmentation techniques. Given the groundbreaking performance demonstrated by recent neural network-based techniques, deep learning seems poised to achieve what classic methods have historically been unable. This paper will briefly overview some of the state-of-the-art (SoTA) neural network-based segmentation algorithms with a particular emphasis on the most recent architectures, comparing and contrasting the contributions and characteristics of each network topology. Using ultrasonography as a motivating example, it will also demonstrate important clinical implications of effective deep learning-based solutions, articulate challenges unique to the modality, and discuss novel approaches developed in response to those challenges, concluding with the proposal of future directions in the field. Given the generally observed ephemerality of the best deep learning approaches (i.e. the extremely quick succession of the SoTA), the main contributions of the paper are its contextualization of modern deep learning architectures with historical background and the elucidation of the current trajectory of volumetric medical image segmentation research.",
+            "published": "2021-03-27T19:05:11Z",
+            "source_url": "https://arxiv.org/abs/2103.14969"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "A distinctive feature of the original U-Net design was its ability to operate on relatively small annotated datasets through the use of extensive data augmentation—a critical advantage given the annotation scarcity that characterizes medical imaging [4]. Elastic deformations, in particular, were found to be highly effective for training on biomedical images where realistic deformations are common",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2103.14969v2",
+          "source_key": "4",
+          "title": "Catalyzing Clinical Diagnostic Pipelines Through Volumetric Medical Image Segmentation Using Deep Neural Networks: Past, Present, & Future",
+          "abstract": "Deep learning has made a remarkable impact in the field of natural image processing over the past decade. Consequently, there is a great deal of interest in replicating this success across unsolved tasks in related domains, such as medical image analysis. Core to medical image analysis is the task of semantic segmentation which enables various clinical workflows. Due to the challenges inherent in manual segmentation, many decades of research have been devoted to discovering extensible, automated, expert-level segmentation techniques. Given the groundbreaking performance demonstrated by recent neural network-based techniques, deep learning seems poised to achieve what classic methods have historically been unable. This paper will briefly overview some of the state-of-the-art (SoTA) neural network-based segmentation algorithms with a particular emphasis on the most recent architectures, comparing and contrasting the contributions and characteristics of each network topology. Using ultrasonography as a motivating example, it will also demonstrate important clinical implications of effective deep learning-based solutions, articulate challenges unique to the modality, and discuss novel approaches developed in response to those challenges, concluding with the proposal of future directions in the field. Given the generally observed ephemerality of the best deep learning approaches (i.e. the extremely quick succession of the SoTA), the main contributions of the paper are its contextualization of modern deep learning architectures with historical background and the elucidation of the current trajectory of volumetric medical image segmentation research.",
+          "resolved_arxiv": {
+            "arxiv_id": "2103.14969",
+            "title": "Catalyzing Clinical Diagnostic Pipelines Through Volumetric Medical Image Segmentation Using Deep Neural Networks: Past, Present, & Future",
+            "abstract": "Deep learning has made a remarkable impact in the field of natural image processing over the past decade. Consequently, there is a great deal of interest in replicating this success across unsolved tasks in related domains, such as medical image analysis. Core to medical image analysis is the task of semantic segmentation which enables various clinical workflows. Due to the challenges inherent in manual segmentation, many decades of research have been devoted to discovering extensible, automated, expert-level segmentation techniques. Given the groundbreaking performance demonstrated by recent neural network-based techniques, deep learning seems poised to achieve what classic methods have historically been unable. This paper will briefly overview some of the state-of-the-art (SoTA) neural network-based segmentation algorithms with a particular emphasis on the most recent architectures, comparing and contrasting the contributions and characteristics of each network topology. Using ultrasonography as a motivating example, it will also demonstrate important clinical implications of effective deep learning-based solutions, articulate challenges unique to the modality, and discuss novel approaches developed in response to those challenges, concluding with the proposal of future directions in the field. Given the generally observed ephemerality of the best deep learning approaches (i.e. the extremely quick succession of the SoTA), the main contributions of the paper are its contextualization of modern deep learning architectures with historical background and the elucidation of the current trajectory of volumetric medical image segmentation research.",
+            "published": "2021-03-27T19:05:11Z",
+            "source_url": "https://arxiv.org/abs/2103.14969"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "The application of deep learning registration extends across numerous clinical domains. In neuroimaging, atlas-based registration enables population-level brain morphometry and structural comparison across subjects, supporting studies of neurodegenerative diseases such as Alzheimer's disease",
+      "citation_markers": [
+        ""
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [],
+      "unresolved_citation_keys": [],
+      "source_accessible": false
+    },
+    {
+      "claim_id": "C09",
+      "quote": "A representative example is multimodal medical image fusion, which seeks to combine complementary information from different imaging sources to produce richer representations for downstream tasks [104]. This work demonstrates how integrating Laplacian-Gaussian spatial decompositions with channel attention mechanisms enables the preservation of diagnostically critical edge details and tissue contrast that might otherwise be lost during conventional down-sampling operations",
+      "citation_markers": [
+        "[104]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2310.11896v1",
+          "source_key": "104",
+          "title": "A New Multimodal Medical Image Fusion based on Laplacian Autoencoder with Channel Attention",
+          "abstract": "Medical image fusion combines the complementary information of multimodal medical images to assist medical professionals in the clinical diagnosis of patients' disorders and provide guidance during preoperative and intra-operative procedures. Deep learning (DL) models have achieved end-to-end image fusion with highly robust and accurate fusion performance. However, most DL-based fusion models perform down-sampling on the input images to minimize the number of learnable parameters and computations. During this process, salient features of the source images become irretrievable leading to the loss of crucial diagnostic edge details and contrast of various brain tissues. In this paper, we propose a new multimodal medical image fusion model is proposed that is based on integrated Laplacian-Gaussian concatenation with attention pooling (LGCA). We prove that our model preserves effectively complementary information and important tissue structures.",
+          "resolved_arxiv": {
+            "arxiv_id": "2310.11896",
+            "title": "A New Multimodal Medical Image Fusion based on Laplacian Autoencoder with Channel Attention",
+            "abstract": "Medical image fusion combines the complementary information of multimodal medical images to assist medical professionals in the clinical diagnosis of patients' disorders and provide guidance during preoperative and intra-operative procedures. Deep learning (DL) models have achieved end-to-end image fusion with highly robust and accurate fusion performance. However, most DL-based fusion models perform down-sampling on the input images to minimize the number of learnable parameters and computations. During this process, salient features of the source images become irretrievable leading to the loss of crucial diagnostic edge details and contrast of various brain tissues. In this paper, we propose a new multimodal medical image fusion model is proposed that is based on integrated Laplacian-Gaussian concatenation with attention pooling (LGCA). We prove that our model preserves effectively complementary information and important tissue structures.",
+            "published": "2023-10-18T11:29:53Z",
+            "source_url": "https://arxiv.org/abs/2310.11896"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "By pretraining on massive and diverse medical imaging corpora, such models can develop rich hierarchical representations that generalize effectively to rare conditions with minimal fine-tuning. Multimodal foundation models that jointly encode imaging and clinical text may be particularly powerful, enabling zero-shot or few-shot diagnosis by aligning visual features with clinical descriptions of rare diseases [118",
+      "citation_markers": [
+        "[118]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2304.02649v4",
+          "source_key": "118",
+          "title": "Specialty-Oriented Generalist Medical AI for Chest CT Screening",
+          "abstract": "Modern medical records include a vast amount of multimodal free text clinical data and imaging data from radiology, cardiology, and digital pathology. Fully mining such big data requires multitasking; otherwise, occult but important aspects may be overlooked, adversely affecting clinical management and population healthcare. Despite remarkable successes of AI in individual tasks with single-modal data, the progress in developing generalist medical AI remains relatively slow to combine multimodal data for multitasks because of the dual challenges of data curation and model architecture. The data challenge involves querying and curating multimodal structured and unstructured text, alphanumeric, and especially 3D tomographic scans on an individual patient level for real-time decisions and on a scale to estimate population health statistics. The model challenge demands a scalable and adaptable network architecture to integrate multimodal datasets for diverse clinical tasks. Here we propose the first-of-its-kind medical multimodal-multitask foundation model (M3FM) with application in lung cancer screening and related tasks. After we curated a comprehensive multimodal multitask dataset consisting of 49 clinical data types including 163,725 chest CT series and 17 medical tasks involved in LCS, we develop a multimodal question-answering framework as a unified training and inference strategy to synergize multimodal information and perform multiple tasks via free-text prompting. M3FM consistently outperforms the state-of-the-art single-modal task-specific models, identifies multimodal data elements informative for clinical tasks and flexibly adapts to new tasks with a small out-of-distribution dataset. As a specialty-oriented generalist medical AI model, M3FM paves the way for similar breakthroughs in other areas of medicine, closing the gap between specialists and the generalist.",
+          "resolved_arxiv": {
+            "arxiv_id": "2304.02649",
+            "title": "Specialty-Oriented Generalist Medical AI for Chest CT Screening",
+            "abstract": "Modern medical records include a vast amount of multimodal free text clinical data and imaging data from radiology, cardiology, and digital pathology. Fully mining such big data requires multitasking; otherwise, occult but important aspects may be overlooked, adversely affecting clinical management and population healthcare. Despite remarkable successes of AI in individual tasks with single-modal data, the progress in developing generalist medical AI remains relatively slow to combine multimodal data for multitasks because of the dual challenges of data curation and model architecture. The data challenge involves querying and curating multimodal structured and unstructured text, alphanumeric, and especially 3D tomographic scans on an individual patient level for real-time decisions and on a scale to estimate population health statistics. The model challenge demands a scalable and adaptable network architecture to integrate multimodal datasets for diverse clinical tasks. Here we propose the first-of-its-kind medical multimodal-multitask foundation model (M3FM) with application in lung cancer screening and related tasks. After we curated a comprehensive multimodal multitask dataset consisting of 49 clinical data types including 163,725 chest CT series and 17 medical tasks involved in LCS, we develop a multimodal question-answering framework as a unified training and inference strategy to synergize multimodal information and perform multiple tasks via free-text prompting. M3FM consistently outperforms the state-of-the-art single-modal task-specific models, identifies multimodal data elements informative for clinical tasks and flexibly adapts to new tasks with a small out-of-distribution dataset. As a specialty-oriented generalist medical AI model, M3FM paves the way for similar breakthroughs in other areas of medicine, closing the gap between specialists and the generalist.",
+            "published": "2023-04-03T20:19:56Z",
+            "source_url": "https://arxiv.org/abs/2304.02649"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "A core regulatory requirement across jurisdictions is the demonstration of clinical validity and analytical validity. Analytical validity concerns the technical accuracy of the model—its ability to correctly identify the intended biomarker or feature—while clinical validity demands evidence that the model's output correlates with meaningful clinical outcomes",
+      "citation_markers": [
+        ""
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [],
+      "unresolved_citation_keys": [],
+      "source_accessible": false
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The consequences of training on long-tailed distributions are well-documented: models tend to be biased toward majority classes, resulting in poor sensitivity for rare but clinically critical conditions. This is particularly problematic in oncology, where uncommon tumor subtypes or rare histopathological variants may be missed entirely by a classifier optimized for aggregate performance metrics",
+      "citation_markers": [
+        ""
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [],
+      "unresolved_citation_keys": [],
+      "source_accessible": false
+    }
+  ]
+}

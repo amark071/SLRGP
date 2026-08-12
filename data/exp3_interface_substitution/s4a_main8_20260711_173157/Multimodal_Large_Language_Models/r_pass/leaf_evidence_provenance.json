@@ -1,0 +1,58 @@
+{
+  "arxiv_2208.10442": {
+    "doc_id": "arxiv_2208.10442",
+    "title": "Image as a Foreign Language: BEiT Pretraining for All Vision and\n  Vision-Language Tasks",
+    "year": 2022,
+    "venue": "cs.CV",
+    "abstract": "A big convergence of language, vision, and multimodal pretraining is emerging. In this work, we introduce a general-purpose multimodal foundation model BEiT-3, which achieves state-of-the-art transfer performance on both vision and vision-language tasks. Specifically, we advance the big convergence from three aspects: backbone architecture, pretraining task, and model scaling up. We introduce Multiway Transformers for general-purpose modeling, where the modular architecture enables both deep fusion and modality-specific encoding. Based on the shared backbone, we perform masked \"language\" modeling on images (Imglish), texts (English), and image-text pairs (\"parallel sentences\") in a unified manner. Experimental results show that BEiT-3 obtains state-of-the-art performance on object detection (COCO), semantic segmentation (ADE20K), image classification (ImageNet), visual reasoning (NLVR2), visual question answering (VQAv2), image captioning (COCO), and cross-modal retrieval (Flickr30K, COCO)."
+  },
+  "arxiv_2209.06794": {
+    "doc_id": "arxiv_2209.06794",
+    "title": "PaLI: A Jointly-Scaled Multilingual Language-Image Model",
+    "year": 2023,
+    "venue": "cs.CV",
+    "abstract": "Effective scaling and a flexible task interface enable large language models to excel at many tasks. We present PaLI (Pathways Language and Image model), a model that extends this approach to the joint modeling of language and vision. PaLI generates text based on visual and textual inputs, and with this interface performs many vision, language, and multimodal tasks, in many languages. To train PaLI, we make use of large pre-trained encoder-decoder language models and Vision Transformers (ViTs). This allows us to capitalize on their existing capabilities and leverage the substantial cost of training them. We find that joint scaling of the vision and language components is important. Since existing Transformers for language are much larger than their vision counterparts, we train a large, 4-billion parameter ViT (ViT-e) to quantify the benefits from even larger-capacity vision models. To train PaLI, we create a large multilingual mix of pretraining tasks, based on a new image-text training set containing 10B images and texts in over 100 languages. PaLI achieves state-of-the-art in multiple vision and language tasks (such as captioning, visual question-answering, scene-text understand"
+  },
+  "arxiv_2306.07198": {
+    "doc_id": "arxiv_2306.07198",
+    "title": "A Survey of Vision-Language Pre-training from the Lens of Multimodal\n  Machine Translation",
+    "year": 2023,
+    "venue": "cs.CL",
+    "abstract": "Large language models such as BERT and the GPT series started a paradigm shift that calls for building general-purpose models via pre-training on large datasets, followed by fine-tuning on task-specific datasets. There is now a plethora of large pre-trained models for Natural Language Processing and Computer Vision. Recently, we have seen rapid developments in the joint Vision-Language space as well, where pre-trained models such as CLIP (Radford et al., 2021) have demonstrated improvements in downstream tasks like image captioning and visual question answering. However, surprisingly there is comparatively little work on exploring these models for the task of multimodal machine translation, where the goal is to leverage image/video modality in text-to-text translation. To fill this gap, this paper surveys the landscape of language-and-vision pre-training from the lens of multimodal machine translation. We summarize the common architectures, pre-training objectives, and datasets from literature and conjecture what further is needed to make progress on multimodal machine translation."
+  },
+  "arxiv_2308.13437": {
+    "doc_id": "arxiv_2308.13437",
+    "title": "Position-Enhanced Visual Instruction Tuning for Multimodal Large\n  Language Models",
+    "year": 2023,
+    "venue": "cs.CV",
+    "abstract": "Recently, Multimodal Large Language Models (MLLMs) that enable Large Language Models (LLMs) to interpret images through visual instruction tuning have achieved significant success. However, existing visual instruction tuning methods only utilize image-language instruction data to align the language and image modalities, lacking a more fine-grained cross-modal alignment. In this paper, we propose Position-enhanced Visual Instruction Tuning (PVIT), which extends the functionality of MLLMs by integrating an additional region-level vision encoder. This integration promotes a more detailed comprehension of images for the MLLM. In addition, to efficiently achieve a fine-grained alignment between the vision modules and the LLM, we design multiple data generation strategies to construct an image-region-language instruction dataset. Finally, we present both quantitative experiments and qualitative analysis that demonstrate the superiority of the proposed model. Code and data will be released at https://github.com/PVIT-official/PVIT."
+  },
+  "arxiv_2309.10020": {
+    "doc_id": "arxiv_2309.10020",
+    "title": "Multimodal Foundation Models: From Specialists to General-Purpose\n  Assistants",
+    "year": 2023,
+    "venue": "cs.CV",
+    "abstract": "This paper presents a comprehensive survey of the taxonomy and evolution of multimodal foundation models that demonstrate vision and vision-language capabilities, focusing on the transition from specialist models to general-purpose assistants. The research landscape encompasses five core topics, categorized into two classes. (i) We start with a survey of well-established research areas: multimodal foundation models pre-trained for specific purposes, including two topics -- methods of learning vision backbones for visual understanding and text-to-image generation. (ii) Then, we present recent advances in exploratory, open research areas: multimodal foundation models that aim to play the role of general-purpose assistants, including three topics -- unified vision models inspired by large language models (LLMs), end-to-end training of multimodal LLMs, and chaining multimodal tools with LLMs. The target audiences of the paper are researchers, graduate students, and professionals in computer vision and vision-language multimodal communities who are eager to learn the basics and recent advances in multimodal foundation models."
+  },
+  "arxiv_2402.08360": {
+    "doc_id": "arxiv_2402.08360",
+    "title": "Visual Question Answering Instruction: Unlocking Multimodal Large\n  Language Model To Domain-Specific Visual Multitasks",
+    "year": 2024,
+    "venue": "cs.CV",
+    "abstract": "Having revolutionized natural language processing (NLP) applications, large language models (LLMs) are expanding into the realm of multimodal inputs. Owing to their ability to interpret images, multimodal LLMs (MLLMs) have been primarily used for vision-language tasks. Currently, MLLMs have not yet been extended for domain-specific visual tasks, which require a more explicit understanding of visual information. We developed a method to transform domain-specific visual and vision-language datasets into a unified question answering format called Visual Question Answering Instruction (VQA-IN), thereby extending MLLM to domain-specific tasks. The VQA-IN was applied to train multiple MLLM architectures using smaller versions of LLMs (sLLMs). The experimental results indicated that the proposed method achieved a high score metric on domainspecific visual tasks while also maintaining its performance on vision-language tasks in a multitask manner."
+  },
+  "arxiv_2403.08773": {
+    "doc_id": "arxiv_2403.08773",
+    "title": "Veagle: Advancements in Multimodal Representation Learning",
+    "year": 2024,
+    "venue": "cs.CV",
+    "abstract": "Lately, researchers in artificial intelligence have been really interested in how language and vision come together, giving rise to the development of multimodal models that aim to seamlessly integrate textual and visual information. Multimodal models, an extension of Large Language Models (LLMs), have exhibited remarkable capabilities in addressing a diverse array of tasks, ranging from image captioning and visual question answering (VQA) to visual grounding. While these models have showcased significant advancements, challenges persist in accurately interpreting images and answering the question, a common occurrence in real-world scenarios. This paper introduces a novel approach to enhance the multimodal capabilities of existing models. In response to the limitations observed in current Vision Language Models (VLMs) and Multimodal Large Language Models (MLLMs), our proposed model Veagle, incorporates a unique mechanism inspired by the successes and insights of previous works. Veagle leverages a dynamic mechanism to project encoded visual information directly into the language model. This dynamic approach allows for a more nuanced understanding of intricate details present in visu"
+  },
+  "arxiv_2408.06610": {
+    "doc_id": "arxiv_2408.06610",
+    "title": "CROME: Cross-Modal Adapters for Efficient Multimodal LLM",
+    "year": 2024,
+    "venue": "cs.CV",
+    "abstract": "Multimodal Large Language Models (MLLMs) demonstrate remarkable image-language capabilities, but their widespread use faces challenges in cost-effective training and adaptation. Existing approaches often necessitate expensive language model retraining and limited adaptability. Additionally, the current focus on zero-shot performance improvements offers insufficient guidance for task-specific tuning. We propose CROME, an efficient vision-language instruction tuning framework. It features a novel gated cross-modal adapter that effectively combines visual and textual representations prior to input into a frozen LLM. This lightweight adapter, trained with minimal parameters, enables efficient cross-modal understanding. Notably, CROME demonstrates superior zero-shot performance on standard visual question answering and instruction-following benchmarks. Moreover, it yields fine-tuning with exceptional parameter efficiency, competing with task-specific specialist state-of-the-art methods. CROME demonstrates the potential of pre-LM alignment for building scalable, adaptable, and parameter-efficient multimodal models."
+  }
+}

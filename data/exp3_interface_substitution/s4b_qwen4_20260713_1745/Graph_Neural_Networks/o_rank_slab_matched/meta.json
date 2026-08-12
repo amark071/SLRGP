@@ -1,0 +1,58 @@
+{
+  "topic": "Graph Neural Networks",
+  "arm": "o_rank_slab_matched",
+  "ok": true,
+  "model_g": "qwen3-32b",
+  "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+  "started_at": "2026-07-13 17:48:19",
+  "target_total_words": 1000,
+  "groups": [
+    {
+      "name": "Rank slab 1: positions 1-4",
+      "n": 4
+    },
+    {
+      "name": "Rank slab 2: positions 5-8",
+      "n": 4
+    }
+  ],
+  "group_size_vector": [
+    4,
+    4
+  ],
+  "refs": [
+    "arxiv_1903.02541",
+    "arxiv_1904.13107",
+    "arxiv_2002.05287",
+    "arxiv_2004.03519",
+    "arxiv_2102.02026",
+    "ss_477785"
+  ],
+  "n_refs": 6,
+  "word_count": 781,
+  "written_citation_ids": [
+    "arxiv_2004.03519",
+    "ss_477785",
+    "arxiv_2002.05287",
+    "arxiv_1903.02541",
+    "arxiv_2102.02026",
+    "arxiv_1904.13107"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_1901.00596",
+    "arxiv_1903.02541",
+    "arxiv_1904.13107",
+    "arxiv_2002.05287",
+    "arxiv_2004.03519",
+    "arxiv_2007.10467",
+    "arxiv_2102.02026",
+    "ss_477785"
+  ],
+  "primary_length_eligible": false,
+  "elapsed_sec": 132.4,
+  "llm_usage_delta": {
+    "n_calls": 8,
+    "prompt_tokens": 4508,
+    "completion_tokens": 1568
+  }
+}

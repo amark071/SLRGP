@@ -1,0 +1,388 @@
+{
+  "topic_id": "method_self_supervised_learning",
+  "system": "slrgp",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "One of the earliest and most comprehensive taxonomic efforts is provided by [arxiv_2006.08218], which organizes SSL approaches into generative and contrastive paradigms, motivating the shift away from supervised learning by highlighting its dependence on manual labels and susceptibility to adversarial attacks",
+      "citation_markers": [
+        "[arxiv_2006.08218]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2006.08218",
+          "doc_id": "arxiv_2006.08218",
+          "title": "Self-supervised Learning: Generative or Contrastive",
+          "year": 2021,
+          "venue": "cs.LG",
+          "abstract": "Deep supervised learning has achieved great success in the last decade. However, its deficiencies of dependence on manual labels and vulnerability to attacks have driven people to explore a better solution. As an alternative, self-supervised learning attracts many researchers for its soaring performance on representation learning in the last several years. Self-supervised representation learning leverages input data itself as supervision and benefits almost all types of downstream tasks. In this survey, we take a look into new self-supervised learning methods for representation in computer vision, natural language processing, and graph learning. We comprehensively review the existing empirical methods and summarize them into three main categories according to their objectives: generative, contrastive, and generative-contrastive (adversarial). We further investigate related theoretical analysis work to provide deeper thoughts on how self-supervised learning works. Finally, we briefly discuss open problems and future directions for self-supervised learning. An outline slide for the survey is provided.",
+          "resolved_arxiv": {
+            "arxiv_id": "2006.08218",
+            "title": "Self-supervised Learning: Generative or Contrastive",
+            "abstract": "Deep supervised learning has achieved great success in the last decade. However, its deficiencies of dependence on manual labels and vulnerability to attacks have driven people to explore a better solution. As an alternative, self-supervised learning attracts many researchers for its soaring performance on representation learning in the last several years. Self-supervised representation learning leverages input data itself as supervision and benefits almost all types of downstream tasks. In this survey, we take a look into new self-supervised learning methods for representation in computer vision, natural language processing, and graph learning. We comprehensively review the existing empirical methods and summarize them into three main categories according to their objectives: generative, contrastive, and generative-contrastive (adversarial). We further investigate related theoretical analysis work to provide deeper thoughts on how self-supervised learning works. Finally, we briefly discuss open problems and future directions for self-supervised learning. An outline slide for the survey is provided.",
+            "published": "2020-06-15T08:40:03Z",
+            "source_url": "https://arxiv.org/abs/2006.08218"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "arxiv_2110.09327] offers a more pedagogically structured introduction to SSL representation learning, emphasizing that these methods have advanced rapidly to the point where their performance approaches or even surpasses fully supervised counterparts on several benchmarks, while simultaneously alleviating the annotation bottleneck that constrains practical deployment of deep learning systems",
+      "citation_markers": [
+        "[arxiv_2110.09327]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2110.09327",
+          "doc_id": "arxiv_2110.09327",
+          "title": "Self-Supervised Representation Learning: Introduction, Advances and\n  Challenges",
+          "year": 2022,
+          "venue": "cs.LG",
+          "abstract": "Self-supervised representation learning methods aim to provide powerful deep feature learning without the requirement of large annotated datasets, thus alleviating the annotation bottleneck that is one of the main barriers to practical deployment of deep learning today. These methods have advanced rapidly in recent years, with their efficacy approaching and sometimes surpassing fully supervised pre-training alternatives across a variety of data modalities including image, video, sound, text and graphs. This article introduces this vibrant area including key concepts, the four main families of approach and associated state of the art, and how self-supervised methods are applied to diverse modalities of data. We further discuss practical considerations including workflows, representation transferability, and compute cost. Finally, we survey the major open challenges in the field that provide fertile ground for future work.",
+          "resolved_arxiv": {
+            "arxiv_id": "2110.09327",
+            "title": "Self-Supervised Representation Learning: Introduction, Advances and Challenges",
+            "abstract": "Self-supervised representation learning methods aim to provide powerful deep feature learning without the requirement of large annotated datasets, thus alleviating the annotation bottleneck that is one of the main barriers to practical deployment of deep learning today. These methods have advanced rapidly in recent years, with their efficacy approaching and sometimes surpassing fully supervised pre-training alternatives across a variety of data modalities including image, video, sound, text and graphs. This article introduces this vibrant area including key concepts, the four main families of approach and associated state of the art, and how self-supervised methods are applied to diverse modalities of data. We further discuss practical considerations including workflows, representation transferability, and compute cost. Finally, we survey the major open challenges in the field that provide fertile ground for future work.",
+            "published": "2021-10-18T13:51:22Z",
+            "source_url": "https://arxiv.org/abs/2110.09327"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Early systematic efforts, such as [arxiv_1901.09005], revisited a broad range of pretext tasks for visual representation learning, demonstrating that architectural choices and training protocols exert substantial influence on downstream performance—often as much as the choice of pretext task itself",
+      "citation_markers": [
+        "[arxiv_1901.09005]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1901.09005",
+          "doc_id": "arxiv_1901.09005",
+          "title": "Revisiting Self-Supervised Visual Representation Learning",
+          "year": 2019,
+          "venue": "cs.CV",
+          "abstract": "Unsupervised visual representation learning remains a largely unsolved problem in computer vision research. Among a big body of recently proposed approaches for unsupervised learning of visual representations, a class of self-supervised techniques achieves superior performance on many challenging benchmarks. A large number of the pretext tasks for self-supervised learning have been studied, but other important aspects, such as the choice of convolutional neural networks (CNN), has not received equal attention. Therefore, we revisit numerous previously proposed self-supervised models, conduct a thorough large scale study and, as a result, uncover multiple crucial insights. We challenge a number of common practices in selfsupervised visual representation learning and observe that standard recipes for CNN design do not always translate to self-supervised representation learning. As part of our study, we drastically boost the performance of previously proposed techniques and outperform previously published state-of-the-art results by a large margin.",
+          "resolved_arxiv": {
+            "arxiv_id": "1901.09005",
+            "title": "Revisiting Self-Supervised Visual Representation Learning",
+            "abstract": "Unsupervised visual representation learning remains a largely unsolved problem in computer vision research. Among a big body of recently proposed approaches for unsupervised learning of visual representations, a class of self-supervised techniques achieves superior performance on many challenging benchmarks. A large number of the pretext tasks for self-supervised learning have been studied, but other important aspects, such as the choice of convolutional neural networks (CNN), has not received equal attention. Therefore, we revisit numerous previously proposed self-supervised models, conduct a thorough large scale study and, as a result, uncover multiple crucial insights. We challenge a number of common practices in selfsupervised visual representation learning and observe that standard recipes for CNN design do not always translate to self-supervised representation learning. As part of our study, we drastically boost the performance of previously proposed techniques and outperform previously published state-of-the-art results by a large margin.",
+            "published": "2019-01-25T18:08:31Z",
+            "source_url": "https://arxiv.org/abs/1901.09005"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Subsequent research turned toward contrastive methods, which had emerged as particularly powerful. [arxiv_2103.14005] conducted a detailed analysis of contrastive self-supervised pipelines, examining how different training procedures and dataset characteristics interact to shape the quality of learned representations, while [arxiv_2012.00868] sought to uncover why contrastive instance learning performs so well, isolating factors that contribute to strong empirical results",
+      "citation_markers": [
+        "[arxiv_2103.14005]",
+        "[arxiv_2012.00868]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2103.14005",
+          "doc_id": "arxiv_2103.14005",
+          "title": "Contrasting Contrastive Self-Supervised Representation Learning\n  Pipelines",
+          "year": 2021,
+          "venue": "cs.CV",
+          "abstract": "In the past few years, we have witnessed remarkable breakthroughs in self-supervised representation learning. Despite the success and adoption of representations learned through this paradigm, much is yet to be understood about how different training methods and datasets influence performance on downstream tasks. In this paper, we analyze contrastive approaches as one of the most successful and popular variants of self-supervised representation learning. We perform this analysis from the perspective of the training algorithms, pre-training datasets and end tasks. We examine over 700 training experiments including 30 encoders, 4 pre-training datasets and 20 diverse downstream tasks. Our experiments address various questions regarding the performance of self-supervised models compared to their supervised counterparts, current benchmarks used for evaluation, and the effect of the pre-training data on end task performance. Our Visual Representation Benchmark (ViRB) is available at: https://github.com/allenai/virb.",
+          "resolved_arxiv": {
+            "arxiv_id": "2103.14005",
+            "title": "Contrasting Contrastive Self-Supervised Representation Learning Pipelines",
+            "abstract": "In the past few years, we have witnessed remarkable breakthroughs in self-supervised representation learning. Despite the success and adoption of representations learned through this paradigm, much is yet to be understood about how different training methods and datasets influence performance on downstream tasks. In this paper, we analyze contrastive approaches as one of the most successful and popular variants of self-supervised representation learning. We perform this analysis from the perspective of the training algorithms, pre-training datasets and end tasks. We examine over 700 training experiments including 30 encoders, 4 pre-training datasets and 20 diverse downstream tasks. Our experiments address various questions regarding the performance of self-supervised models compared to their supervised counterparts, current benchmarks used for evaluation, and the effect of the pre-training data on end task performance. Our Visual Representation Benchmark (ViRB) is available at: https://github.com/allenai/virb.",
+            "published": "2021-03-25T17:40:38Z",
+            "source_url": "https://arxiv.org/abs/2103.14005"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2012.00868",
+          "doc_id": "arxiv_2012.00868",
+          "title": "Towards Good Practices in Self-supervised Representation Learning",
+          "year": 2020,
+          "venue": "cs.CV",
+          "abstract": "Self-supervised representation learning has seen remarkable progress in the last few years. More recently, contrastive instance learning has shown impressive results compared to its supervised learning counterparts. However, even with the ever increased interest in contrastive instance learning, it is still largely unclear why these methods work so well. In this paper, we aim to unravel some of the mysteries behind their success, which are the good practices. Through an extensive empirical analysis, we hope to not only provide insights but also lay out a set of best practices that led to the success of recent work in self-supervised representation learning.",
+          "resolved_arxiv": {
+            "arxiv_id": "2012.00868",
+            "title": "Towards Good Practices in Self-supervised Representation Learning",
+            "abstract": "Self-supervised representation learning has seen remarkable progress in the last few years. More recently, contrastive instance learning has shown impressive results compared to its supervised learning counterparts. However, even with the ever increased interest in contrastive instance learning, it is still largely unclear why these methods work so well. In this paper, we aim to unravel some of the mysteries behind their success, which are the good practices. Through an extensive empirical analysis, we hope to not only provide insights but also lay out a set of best practices that led to the success of recent work in self-supervised representation learning.",
+            "published": "2020-12-01T22:13:43Z",
+            "source_url": "https://arxiv.org/abs/2012.00868"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Momentum Contrast (MoCo) [arxiv_1911.05722] reformulates contrastive learning as dictionary look-up, maintaining a large, consistent queue of negative samples updated via a momentum encoder, while SimCLR [arxiv_2002.05709] demonstrates that a simplified pipeline—relying on strong data augmentation and a projection head—can achieve competitive performance without a memory bank or specialized architecture",
+      "citation_markers": [
+        "[arxiv_1911.05722]",
+        "[arxiv_2002.05709]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1911.05722",
+          "doc_id": "arxiv_1911.05722",
+          "title": "Momentum Contrast for Unsupervised Visual Representation Learning",
+          "year": 2020,
+          "venue": "cs.CV",
+          "abstract": "We present Momentum Contrast (MoCo) for unsupervised visual representation learning. From a perspective on contrastive learning as dictionary look-up, we build a dynamic dictionary with a queue and a moving-averaged encoder. This enables building a large and consistent dictionary on-the-fly that facilitates contrastive unsupervised learning. MoCo provides competitive results under the common linear protocol on ImageNet classification. More importantly, the representations learned by MoCo transfer well to downstream tasks. MoCo can outperform its supervised pre-training counterpart in 7 detection/segmentation tasks on PASCAL VOC, COCO, and other datasets, sometimes surpassing it by large margins. This suggests that the gap between unsupervised and supervised representation learning has been largely closed in many vision tasks.",
+          "resolved_arxiv": {
+            "arxiv_id": "1911.05722",
+            "title": "Momentum Contrast for Unsupervised Visual Representation Learning",
+            "abstract": "We present Momentum Contrast (MoCo) for unsupervised visual representation learning. From a perspective on contrastive learning as dictionary look-up, we build a dynamic dictionary with a queue and a moving-averaged encoder. This enables building a large and consistent dictionary on-the-fly that facilitates contrastive unsupervised learning. MoCo provides competitive results under the common linear protocol on ImageNet classification. More importantly, the representations learned by MoCo transfer well to downstream tasks. MoCo can outperform its supervised pre-training counterpart in 7 detection/segmentation tasks on PASCAL VOC, COCO, and other datasets, sometimes surpassing it by large margins. This suggests that the gap between unsupervised and supervised representation learning has been largely closed in many vision tasks.",
+            "published": "2019-11-13T18:53:26Z",
+            "source_url": "https://arxiv.org/abs/1911.05722"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2002.05709",
+          "doc_id": "arxiv_2002.05709",
+          "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+          "year": 2020,
+          "venue": "cs.LG",
+          "abstract": "This paper presents SimCLR: a simple framework for contrastive learning of visual representations. We simplify recently proposed contrastive self-supervised learning algorithms without requiring specialized architectures or a memory bank. In order to understand what enables the contrastive prediction tasks to learn useful representations, we systematically study the major components of our framework. We show that (1) composition of data augmentations plays a critical role in defining effective predictive tasks, (2) introducing a learnable nonlinear transformation between the representation and the contrastive loss substantially improves the quality of the learned representations, and (3) contrastive learning benefits from larger batch sizes and more training steps compared to supervised learning. By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100X fewer labels.",
+          "resolved_arxiv": {
+            "arxiv_id": "2002.05709",
+            "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+            "abstract": "This paper presents SimCLR: a simple framework for contrastive learning of visual representations. We simplify recently proposed contrastive self-supervised learning algorithms without requiring specialized architectures or a memory bank. In order to understand what enables the contrastive prediction tasks to learn useful representations, we systematically study the major components of our framework. We show that (1) composition of data augmentations plays a critical role in defining effective predictive tasks, (2) introducing a learnable nonlinear transformation between the representation and the contrastive loss substantially improves the quality of the learned representations, and (3) contrastive learning benefits from larger batch sizes and more training steps compared to supervised learning. By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100X fewer labels.",
+            "published": "2020-02-13T18:50:45Z",
+            "source_url": "https://arxiv.org/abs/2002.05709"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "arxiv_2110.02473] provides a formal account of contrastive learning's superiority, demonstrating under linear representation settings that contrastive objectives provably outperform standard autoencoders, offering a principled explanation for the empirical gains widely observed in the literature",
+      "citation_markers": [
+        "[arxiv_2110.02473]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2110.02473",
+          "doc_id": "arxiv_2110.02473",
+          "title": "The Power of Contrast for Feature Learning: A Theoretical Analysis",
+          "year": 2023,
+          "venue": "cs.LG",
+          "abstract": "Contrastive learning has achieved state-of-the-art performance in various self-supervised learning tasks and even outperforms its supervised counterpart. Despite its empirical success, theoretical understanding of the superiority of contrastive learning is still limited. In this paper, under linear representation settings, (i) we provably show that contrastive learning outperforms the standard autoencoders and generative adversarial networks, two classical generative unsupervised learning methods, for both feature recovery and in-domain downstream tasks; (ii) we also illustrate the impact of labeled data in supervised contrastive learning. This provides theoretical support for recent findings that contrastive learning with labels improves the performance of learned representations in the in-domain downstream task, but it can harm the performance in transfer learning. We verify our theory with numerical experiments.",
+          "resolved_arxiv": {
+            "arxiv_id": "2110.02473",
+            "title": "The Power of Contrast for Feature Learning: A Theoretical Analysis",
+            "abstract": "Contrastive learning has achieved state-of-the-art performance in various self-supervised learning tasks and even outperforms its supervised counterpart. Despite its empirical success, theoretical understanding of the superiority of contrastive learning is still limited. In this paper, under linear representation settings, (i) we provably show that contrastive learning outperforms the standard autoencoders and generative adversarial networks, two classical generative unsupervised learning methods, for both feature recovery and in-domain downstream tasks; (ii) we also illustrate the impact of labeled data in supervised contrastive learning. This provides theoretical support for recent findings that contrastive learning with labels improves the performance of learned representations in the in-domain downstream task, but it can harm the performance in transfer learning. We verify our theory with numerical experiments.",
+            "published": "2021-10-06T03:10:28Z",
+            "source_url": "https://arxiv.org/abs/2110.02473"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "arxiv_2209.06235] further proves necessary and sufficient conditions for SSL representations to support accurate probing on any task invariant to the chosen data augmentations, thereby grounding empirical design choices in formal guarantees",
+      "citation_markers": [
+        "[arxiv_2209.06235]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2209.06235",
+          "doc_id": "arxiv_2209.06235",
+          "title": "Improving Self-Supervised Learning by Characterizing Idealized\n  Representations",
+          "year": 2022,
+          "venue": "cs.LG",
+          "abstract": "Despite the empirical successes of self-supervised learning (SSL) methods, it is unclear what characteristics of their representations lead to high downstream accuracies. In this work, we characterize properties that SSL representations should ideally satisfy. Specifically, we prove necessary and sufficient conditions such that for any task invariant to given data augmentations, desired probes (e.g., linear or MLP) trained on that representation attain perfect accuracy. These requirements lead to a unifying conceptual framework for improving existing SSL methods and deriving new ones. For contrastive learning, our framework prescribes simple but significant improvements to previous methods such as using asymmetric projection heads. For non-contrastive learning, we use our framework to derive a simple and novel objective. Our resulting SSL algorithms outperform baselines on standard benchmarks, including SwAV+multicrops on linear probing of ImageNet.",
+          "resolved_arxiv": {
+            "arxiv_id": "2209.06235",
+            "title": "Improving Self-Supervised Learning by Characterizing Idealized Representations",
+            "abstract": "Despite the empirical successes of self-supervised learning (SSL) methods, it is unclear what characteristics of their representations lead to high downstream accuracies. In this work, we characterize properties that SSL representations should ideally satisfy. Specifically, we prove necessary and sufficient conditions such that for any task invariant to given data augmentations, desired probes (e.g., linear or MLP) trained on that representation attain perfect accuracy. These requirements lead to a unifying conceptual framework for improving existing SSL methods and deriving new ones. For contrastive learning, our framework prescribes simple but significant improvements to previous methods such as using asymmetric projection heads. For non-contrastive learning, we use our framework to derive a simple and novel objective. Our resulting SSL algorithms outperform baselines on standard benchmarks, including SwAV+multicrops on linear probing of ImageNet.",
+            "published": "2022-09-13T18:01:03Z",
+            "source_url": "https://arxiv.org/abs/2209.06235"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "arxiv_2203.07004] argues that contrastive learning between different views approximately recovers the minimal sufficient representation—the shared information across views—and examines the implications of this approximation for downstream utility",
+      "citation_markers": [
+        "[arxiv_2203.07004]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2203.07004",
+          "doc_id": "arxiv_2203.07004",
+          "title": "Rethinking Minimal Sufficient Representation in Contrastive Learning",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "Contrastive learning between different views of the data achieves outstanding success in the field of self-supervised representation learning and the learned representations are useful in broad downstream tasks. Since all supervision information for one view comes from the other view, contrastive learning approximately obtains the minimal sufficient representation which contains the shared information and eliminates the non-shared information between views. Considering the diversity of the downstream tasks, it cannot be guaranteed that all task-relevant information is shared between views. Therefore, we assume the non-shared task-relevant information cannot be ignored and theoretically prove that the minimal sufficient representation in contrastive learning is not sufficient for the downstream tasks, which causes performance degradation. This reveals a new problem that the contrastive learning models have the risk of over-fitting to the shared information between views. To alleviate this problem, we propose to increase the mutual information between the representation and input as regularization to approximately introduce more task-relevant information, since we cannot utilize any downstream task information during training. Extensive experiments verify the rationality of our analysis and the effectiveness of our method. It significantly improves the performance of several classic contrastive learning models in downstream tasks. Our code is available at https://github.com/Haoqing-Wang/InfoCL.",
+          "resolved_arxiv": {
+            "arxiv_id": "2203.07004",
+            "title": "Rethinking Minimal Sufficient Representation in Contrastive Learning",
+            "abstract": "Contrastive learning between different views of the data achieves outstanding success in the field of self-supervised representation learning and the learned representations are useful in broad downstream tasks. Since all supervision information for one view comes from the other view, contrastive learning approximately obtains the minimal sufficient representation which contains the shared information and eliminates the non-shared information between views. Considering the diversity of the downstream tasks, it cannot be guaranteed that all task-relevant information is shared between views. Therefore, we assume the non-shared task-relevant information cannot be ignored and theoretically prove that the minimal sufficient representation in contrastive learning is not sufficient for the downstream tasks, which causes performance degradation. This reveals a new problem that the contrastive learning models have the risk of over-fitting to the shared information between views. To alleviate this problem, we propose to increase the mutual information between the representation and input as regularization to approximately introduce more task-relevant information, since we cannot utilize any downstream task information during training. Extensive experiments verify the rationality of our analysis and the effectiveness of our method. It significantly improves the performance of several classic contrastive learning models in downstream tasks. Our code is available at https://github.com/Haoqing-Wang/InfoCL.",
+            "published": "2022-03-14T11:17:48Z",
+            "source_url": "https://arxiv.org/abs/2203.07004"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "As [arxiv_2208.00449] observes, BeiT requires a computationally expensive pre-pretraining stage to construct discrete codebooks for representing masked patches, whereas MAE avoids this requirement by reconstructing raw pixel values directly",
+      "citation_markers": [
+        "[arxiv_2208.00449]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2208.00449",
+          "doc_id": "arxiv_2208.00449",
+          "title": "SdAE: Self-distillated Masked Autoencoder",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "With the development of generative-based self-supervised learning (SSL) approaches like BeiT and MAE, how to learn good representations by masking random patches of the input image and reconstructing the missing information has grown in concern. However, BeiT and PeCo need a \"pre-pretraining\" stage to produce discrete codebooks for masked patches representing. MAE does not require a pre-training codebook process, but setting pixels as reconstruction targets may introduce an optimization gap between pre-training and downstream tasks that good reconstruction quality may not always lead to the high descriptive capability for the model. Considering the above issues, in this paper, we propose a simple Self-distillated masked AutoEncoder network, namely SdAE. SdAE consists of a student branch using an encoder-decoder structure to reconstruct the missing information, and a teacher branch producing latent representation of masked tokens. We also analyze how to build good views for the teacher branch to produce latent representation from the perspective of information bottleneck. After that, we propose a multi-fold masking strategy to provide multiple masked views with balanced information for boosting the performance, which can also reduce the computational complexity. Our approach generalizes well: with only 300 epochs pre-training, a vanilla ViT-Base model achieves an 84.1% fine-tuning accuracy on ImageNet-1k classification, 48.6 mIOU on ADE20K segmentation, and 48.9 mAP on COCO detection, which surpasses other methods by a considerable margin. Code is available at https://github.com/AbrahamYabo/SdAE.",
+          "resolved_arxiv": {
+            "arxiv_id": "2208.00449",
+            "title": "SdAE: Self-distillated Masked Autoencoder",
+            "abstract": "With the development of generative-based self-supervised learning (SSL) approaches like BeiT and MAE, how to learn good representations by masking random patches of the input image and reconstructing the missing information has grown in concern. However, BeiT and PeCo need a \"pre-pretraining\" stage to produce discrete codebooks for masked patches representing. MAE does not require a pre-training codebook process, but setting pixels as reconstruction targets may introduce an optimization gap between pre-training and downstream tasks that good reconstruction quality may not always lead to the high descriptive capability for the model. Considering the above issues, in this paper, we propose a simple Self-distillated masked AutoEncoder network, namely SdAE. SdAE consists of a student branch using an encoder-decoder structure to reconstruct the missing information, and a teacher branch producing latent representation of masked tokens. We also analyze how to build good views for the teacher branch to produce latent representation from the perspective of information bottleneck. After that, we propose a multi-fold masking strategy to provide multiple masked views with balanced information for boosting the performance, which can also reduce the computational complexity. Our approach generalizes well: with only 300 epochs pre-training, a vanilla ViT-Base model achieves an 84.1% fine-tuning accuracy on ImageNet-1k classification, 48.6 mIOU on ADE20K segmentation, and 48.9 mAP on COCO detection, which surpasses other methods by a considerable margin. Code is available at https://github.com/AbrahamYabo/SdAE.",
+            "published": "2022-07-31T15:07:25Z",
+            "source_url": "https://arxiv.org/abs/2208.00449"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "arxiv_2212.08277] proposes sequential adversarial masking, which progressively selects harder regions to occlude, yielding stronger learned representations than ad hoc strategies",
+      "citation_markers": [
+        "[arxiv_2212.08277]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2212.08277",
+          "doc_id": "arxiv_2212.08277",
+          "title": "Improving self-supervised representation learning via sequential\n  adversarial masking",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "Recent methods in self-supervised learning have demonstrated that masking-based pretext tasks extend beyond NLP, serving as useful pretraining objectives in computer vision. However, existing approaches apply random or ad hoc masking strategies that limit the difficulty of the reconstruction task and, consequently, the strength of the learnt representations. We improve upon current state-of-the-art work in learning adversarial masks by proposing a new framework that generates masks in a sequential fashion with different constraints on the adversary. This leads to improvements in performance on various downstream tasks, such as classification on ImageNet100, STL10, and CIFAR10/100 and segmentation on Pascal VOC. Our results further demonstrate the promising capabilities of masking-based approaches for SSL in computer vision.",
+          "resolved_arxiv": {
+            "arxiv_id": "2212.08277",
+            "title": "Improving self-supervised representation learning via sequential adversarial masking",
+            "abstract": "Recent methods in self-supervised learning have demonstrated that masking-based pretext tasks extend beyond NLP, serving as useful pretraining objectives in computer vision. However, existing approaches apply random or ad hoc masking strategies that limit the difficulty of the reconstruction task and, consequently, the strength of the learnt representations. We improve upon current state-of-the-art work in learning adversarial masks by proposing a new framework that generates masks in a sequential fashion with different constraints on the adversary. This leads to improvements in performance on various downstream tasks, such as classification on ImageNet100, STL10, and CIFAR10/100 and segmentation on Pascal VOC. Our results further demonstrate the promising capabilities of masking-based approaches for SSL in computer vision.",
+            "published": "2022-12-16T04:25:43Z",
+            "source_url": "https://arxiv.org/abs/2212.08277"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "self-supervised ViTs demonstrated that standard convolutional network training protocols do not transfer directly to ViT architectures and that careful tuning of hyperparameters, batch sizes, and augmentation strategies is essential for stable and performant self-supervised pretraining [arxiv_2104.02057",
+      "citation_markers": [
+        "[arxiv_2104.02057]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2104.02057",
+          "doc_id": "arxiv_2104.02057",
+          "title": "An Empirical Study of Training Self-Supervised Vision Transformers",
+          "year": 2021,
+          "venue": "cs.CV",
+          "abstract": "This paper does not describe a novel method. Instead, it studies a straightforward, incremental, yet must-know baseline given the recent progress in computer vision: self-supervised learning for Vision Transformers (ViT). While the training recipes for standard convolutional networks have been highly mature and robust, the recipes for ViT are yet to be built, especially in the self-supervised scenarios where training becomes more challenging. In this work, we go back to basics and investigate the effects of several fundamental components for training self-supervised ViT. We observe that instability is a major issue that degrades accuracy, and it can be hidden by apparently good results. We reveal that these results are indeed partial failure, and they can be improved when training is made more stable. We benchmark ViT results in MoCo v3 and several other self-supervised frameworks, with ablations in various aspects. We discuss the currently positive evidence as well as challenges and open questions. We hope that this work will provide useful data points and experience for future research.",
+          "resolved_arxiv": {
+            "arxiv_id": "2104.02057",
+            "title": "An Empirical Study of Training Self-Supervised Vision Transformers",
+            "abstract": "This paper does not describe a novel method. Instead, it studies a straightforward, incremental, yet must-know baseline given the recent progress in computer vision: self-supervised learning for Vision Transformers (ViT). While the training recipes for standard convolutional networks have been highly mature and robust, the recipes for ViT are yet to be built, especially in the self-supervised scenarios where training becomes more challenging. In this work, we go back to basics and investigate the effects of several fundamental components for training self-supervised ViT. We observe that instability is a major issue that degrades accuracy, and it can be hidden by apparently good results. We reveal that these results are indeed partial failure, and they can be improved when training is made more stable. We benchmark ViT results in MoCo v3 and several other self-supervised frameworks, with ablations in various aspects. We discuss the currently positive evidence as well as challenges and open questions. We hope that this work will provide useful data points and experience for future research.",
+            "published": "2021-04-05T17:59:40Z",
+            "source_url": "https://arxiv.org/abs/2104.02057"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "arxiv_2010.15464] highlights that while numerous pretext-task-based and contrastive methods have been proposed for video representation learning, inconsistent experimental settings make direct comparison difficult, motivating a systematic evaluation of good practices",
+      "citation_markers": [
+        "[arxiv_2010.15464]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2010.15464",
+          "doc_id": "arxiv_2010.15464",
+          "title": "Pretext-Contrastive Learning: Toward Good Practices in Self-supervised\n  Video Representation Leaning",
+          "year": 2021,
+          "venue": "cs.CV",
+          "abstract": "Recently, pretext-task based methods are proposed one after another in self-supervised video feature learning. Meanwhile, contrastive learning methods also yield good performance. Usually, new methods can beat previous ones as claimed that they could capture \"better\" temporal information. However, there exist setting differences among them and it is hard to conclude which is better. It would be much more convincing in comparison if these methods have reached as closer to their performance limits as possible. In this paper, we start from one pretext-task baseline, exploring how far it can go by combining it with contrastive learning, data pre-processing, and data augmentation. A proper setting has been found from extensive experiments, with which huge improvements over the baselines can be achieved, indicating a joint optimization framework can boost both pretext task and contrastive learning. We denote the joint optimization framework as Pretext-Contrastive Learning (PCL). The other two pretext task baselines are used to validate the effectiveness of PCL. And we can easily outperform current state-of-the-art methods in the same training manner, showing the effectiveness and the generality of our proposal. It is convenient to treat PCL as a standard training strategy and apply it to many other works in self-supervised video feature learning.",
+          "resolved_arxiv": {
+            "arxiv_id": "2010.15464",
+            "title": "Pretext-Contrastive Learning: Toward Good Practices in Self-supervised Video Representation Leaning",
+            "abstract": "Recently, pretext-task based methods are proposed one after another in self-supervised video feature learning. Meanwhile, contrastive learning methods also yield good performance. Usually, new methods can beat previous ones as claimed that they could capture \"better\" temporal information. However, there exist setting differences among them and it is hard to conclude which is better. It would be much more convincing in comparison if these methods have reached as closer to their performance limits as possible. In this paper, we start from one pretext-task baseline, exploring how far it can go by combining it with contrastive learning, data pre-processing, and data augmentation. A proper setting has been found from extensive experiments, with which huge improvements over the baselines can be achieved, indicating a joint optimization framework can boost both pretext task and contrastive learning. We denote the joint optimization framework as Pretext-Contrastive Learning (PCL). The other two pretext task baselines are used to validate the effectiveness of PCL. And we can easily outperform current state-of-the-art methods in the same training manner, showing the effectiveness and the generality of our proposal. It is convenient to treat PCL as a standard training strategy and apply it to many other works in self-supervised video feature learning.",
+            "published": "2020-10-29T10:20:35Z",
+            "source_url": "https://arxiv.org/abs/2010.15464"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

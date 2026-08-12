@@ -1,0 +1,900 @@
+[S5a] run_id=s5a_length_20260713_full root=results/s5/s5a_length_20260713_full
+[S5a] topics=code/experiments/exp4_structural_recursion/topics_s5a.txt tiers=short,medium,long arms=recursive_slrgp,fixed_outline_no_reentry,flat_single_pass model=anthropic/claude-sonnet-4.6 limit=6
+[S5a] RUN 3D Gaussian Splatting | short | recursive_slrgp
+    [llm] call #1 chars=4431 max_tokens=1500 attempt=0
+    [llm] done 18.7s usage={'prompt_tokens': 1074, 'completion_tokens': 871, 'total_tokens': 1945}
+    [llm] call #2 chars=4437 max_tokens=1500 attempt=0
+    [llm] done 20.2s usage={'prompt_tokens': 1067, 'completion_tokens': 895, 'total_tokens': 1962}
+[S5a] 3D Gaussian Splatting | short | recursive_slrgp ok=True words=1162 refs=8
+[S5a] RUN 3D Gaussian Splatting | short | fixed_outline_no_reentry
+    [llm] call #3 chars=4431 max_tokens=1500 attempt=0
+    [llm] done 22.9s usage={'prompt_tokens': 1074, 'completion_tokens': 891, 'total_tokens': 1965}
+    [llm] call #4 chars=4437 max_tokens=1500 attempt=0
+    [llm] done 19.1s usage={'prompt_tokens': 1067, 'completion_tokens': 899, 'total_tokens': 1966}
+[S5a] 3D Gaussian Splatting | short | fixed_outline_no_reentry ok=True words=1178 refs=8
+[S5a] RUN 3D Gaussian Splatting | short | flat_single_pass
+    [llm] call #5 chars=8453 max_tokens=3000 attempt=0
+    [llm] done 33.8s usage={'prompt_tokens': 2020, 'completion_tokens': 1564, 'total_tokens': 3584}
+[S5a] 3D Gaussian Splatting | short | flat_single_pass ok=True words=1014 refs=8
+[S5a] RUN 3D Gaussian Splatting | medium | recursive_slrgp
+    [llm] call #6 chars=3397 max_tokens=2250 attempt=0
+    [llm] done 28.1s usage={'prompt_tokens': 816, 'completion_tokens': 1261, 'total_tokens': 2077}
+    [llm] call #7 chars=3452 max_tokens=2250 attempt=0
+    [llm] done 24.9s usage={'prompt_tokens': 855, 'completion_tokens': 1148, 'total_tokens': 2003}
+    [llm] call #8 chars=2442 max_tokens=2250 attempt=0
+    [llm] done 26.6s usage={'prompt_tokens': 596, 'completion_tokens': 1116, 'total_tokens': 1712}
+    [llm] call #9 chars=420 max_tokens=2250 attempt=0
+    [llm] done 31.2s usage={'prompt_tokens': 122, 'completion_tokens': 1217, 'total_tokens': 1339}
+[S5a] 3D Gaussian Splatting | medium | recursive_slrgp ok=True words=3261 refs=8
+[S5a] RUN 3D Gaussian Splatting | medium | fixed_outline_no_reentry
+    [llm] call #10 chars=6427 max_tokens=3000 attempt=0
+    [llm] done 39.0s usage={'prompt_tokens': 1546, 'completion_tokens': 1685, 'total_tokens': 3231}
+    [llm] call #11 chars=2443 max_tokens=3000 attempt=0
+    [llm] done 32.4s usage={'prompt_tokens': 597, 'completion_tokens': 1480, 'total_tokens': 2077}
+    [llm] call #12 chars=421 max_tokens=3000 attempt=0
+    [llm] done 43.8s usage={'prompt_tokens': 123, 'completion_tokens': 1663, 'total_tokens': 1786}
+[S5a] 3D Gaussian Splatting | medium | fixed_outline_no_reentry ok=True words=3314 refs=8
+[S5a] RUN 3D Gaussian Splatting | medium | flat_single_pass
+    [llm] call #13 chars=8453 max_tokens=9000 attempt=0
+[S5a] 3D Gaussian Splatting | medium | flat_single_pass ok=False words=None refs=None
+[S5a] RUN 3D Gaussian Splatting | long | recursive_slrgp
+    [llm] call #13 chars=4434 max_tokens=4500 attempt=0
+    [llm] done 42.6s usage={'prompt_tokens': 1077, 'completion_tokens': 2062, 'total_tokens': 3139}
+    [llm] call #14 chars=4440 max_tokens=4500 attempt=0
+    [llm] done 42.2s usage={'prompt_tokens': 1070, 'completion_tokens': 1964, 'total_tokens': 3034}
+    [llm] call #15 chars=421 max_tokens=4500 attempt=0
+[S5a] 3D Gaussian Splatting | long | recursive_slrgp ok=False words=None refs=None
+[S5a] RUN 3D Gaussian Splatting | long | fixed_outline_no_reentry
+    [llm] call #15 chars=8450 max_tokens=5625 attempt=0
+    [llm] done 50.2s usage={'prompt_tokens': 2020, 'completion_tokens': 2303, 'total_tokens': 4323}
+    [llm] call #16 chars=421 max_tokens=5625 attempt=0
+    [llm] done 62.8s usage={'prompt_tokens': 123, 'completion_tokens': 2675, 'total_tokens': 2798}
+    [llm] call #17 chars=421 max_tokens=5625 attempt=0
+    [llm] done 51.7s usage={'prompt_tokens': 123, 'completion_tokens': 2227, 'total_tokens': 2350}
+    [llm] call #18 chars=421 max_tokens=5625 attempt=0
+    [llm] done 55.5s usage={'prompt_tokens': 123, 'completion_tokens': 2241, 'total_tokens': 2364}
+[S5a] 3D Gaussian Splatting | long | fixed_outline_no_reentry ok=True words=6796 refs=8
+[S5a] RUN 3D Gaussian Splatting | long | flat_single_pass
+    [llm] call #19 chars=8453 max_tokens=22500 attempt=0
+[S5a] run_id=s5a_length_20260713_full root=results/s5/s5a_length_20260713_full
+[S5a] topics=code/experiments/exp4_structural_recursion/topics_s5a.txt tiers=short,medium,long arms=recursive_slrgp,fixed_outline_no_reentry,flat_single_pass model=anthropic/claude-sonnet-4.6 limit=6
+[S5a] SKIP 3D Gaussian Splatting | short | recursive_slrgp
+[S5a] SKIP 3D Gaussian Splatting | short | fixed_outline_no_reentry
+[S5a] SKIP 3D Gaussian Splatting | short | flat_single_pass
+[S5a] SKIP 3D Gaussian Splatting | medium | recursive_slrgp
+[S5a] SKIP 3D Gaussian Splatting | medium | fixed_outline_no_reentry
+[S5a] RUN 3D Gaussian Splatting | medium | flat_single_pass
+    [llm] call #1 chars=18575 max_tokens=9000 attempt=0
+    [llm] done 76.8s usage={'prompt_tokens': 4402, 'completion_tokens': 3454, 'total_tokens': 7856}
+    [llm] call #2 chars=17461 max_tokens=3420 attempt=0
+    [llm] done 77.8s usage={'prompt_tokens': 4090, 'completion_tokens': 3420, 'total_tokens': 7510}
+[S5a] 3D Gaussian Splatting | medium | flat_single_pass ok=True words=2285 refs=15
+[S5a] RUN 3D Gaussian Splatting | long | recursive_slrgp
+    [llm] call #3 chars=4434 max_tokens=2812 attempt=0
+    [llm] done 28.1s usage={'prompt_tokens': 1077, 'completion_tokens': 1408, 'total_tokens': 2485}
+    [llm] call #4 chars=4447 max_tokens=2812 attempt=0
+    [llm] done 30.5s usage={'prompt_tokens': 1067, 'completion_tokens': 1504, 'total_tokens': 2571}
+    [llm] call #5 chars=4476 max_tokens=2812 attempt=0
+    [llm] done 30.0s usage={'prompt_tokens': 1077, 'completion_tokens': 1395, 'total_tokens': 2472}
+    [llm] call #6 chars=4459 max_tokens=2812 attempt=0
+    [llm] done 33.1s usage={'prompt_tokens': 1076, 'completion_tokens': 1436, 'total_tokens': 2512}
+    [llm] call #7 chars=4433 max_tokens=2812 attempt=0
+    [llm] done 30.6s usage={'prompt_tokens': 1088, 'completion_tokens': 1367, 'total_tokens': 2455}
+    [llm] call #8 chars=4433 max_tokens=2812 attempt=0
+    [llm] done 33.1s usage={'prompt_tokens': 1098, 'completion_tokens': 1312, 'total_tokens': 2410}
+    [llm] call #9 chars=4405 max_tokens=2812 attempt=0
+    [llm] done 32.7s usage={'prompt_tokens': 1029, 'completion_tokens': 1357, 'total_tokens': 2386}
+    [llm] call #10 chars=4070 max_tokens=2812 attempt=0
+    [llm] done 31.5s usage={'prompt_tokens': 994, 'completion_tokens': 1370, 'total_tokens': 2364}
+    [llm] call #11 chars=55573 max_tokens=4025 attempt=0
+    [llm] done 93.6s usage={'prompt_tokens': 11885, 'completion_tokens': 4025, 'total_tokens': 15910}
+[S5a] 3D Gaussian Splatting | long | recursive_slrgp ok=True words=7390 refs=32
+[S5a] RUN 3D Gaussian Splatting | long | fixed_outline_no_reentry
+    [llm] call #12 chars=8457 max_tokens=5625 attempt=0
+    [llm] done 44.9s usage={'prompt_tokens': 2017, 'completion_tokens': 2190, 'total_tokens': 4207}
+    [llm] call #13 chars=8511 max_tokens=5625 attempt=0
+    [llm] done 55.8s usage={'prompt_tokens': 2026, 'completion_tokens': 2399, 'total_tokens': 4425}
+    [llm] call #14 chars=8442 max_tokens=5625 attempt=0
+    [llm] done 44.6s usage={'prompt_tokens': 2059, 'completion_tokens': 2076, 'total_tokens': 4135}
+    [llm] call #15 chars=8051 max_tokens=5625 attempt=0
+    [llm] done 47.9s usage={'prompt_tokens': 1896, 'completion_tokens': 2290, 'total_tokens': 4186}
+    [llm] call #16 chars=44644 max_tokens=7660 attempt=0
+[S5a] run_id=s5a_length_20260713_full root=results/s5/s5a_length_20260713_full
+[S5a] topics=code/experiments/exp4_structural_recursion/topics_s5a.txt tiers=short,medium,long arms=recursive_slrgp,fixed_outline_no_reentry,flat_single_pass model=anthropic/claude-sonnet-4.6 limit=6
+[S5a] SKIP 3D Gaussian Splatting | short | recursive_slrgp
+[S5a] SKIP 3D Gaussian Splatting | short | fixed_outline_no_reentry
+[S5a] SKIP 3D Gaussian Splatting | short | flat_single_pass
+[S5a] SKIP 3D Gaussian Splatting | medium | recursive_slrgp
+[S5a] SKIP 3D Gaussian Splatting | medium | fixed_outline_no_reentry
+[S5a] RUN 3D Gaussian Splatting | medium | flat_single_pass
+    [llm] call #1 chars=18575 max_tokens=9000 attempt=0
+    [llm] done 93.6s usage={'prompt_tokens': 4402, 'completion_tokens': 3689, 'total_tokens': 8091}
+    [llm] call #2 chars=19080 max_tokens=3796 attempt=0
+    [llm] done 86.0s usage={'prompt_tokens': 4350, 'completion_tokens': 3796, 'total_tokens': 8146}
+    [llm] call #3 chars=20172 max_tokens=3376 attempt=0
+    [llm] done 74.2s usage={'prompt_tokens': 4460, 'completion_tokens': 3376, 'total_tokens': 7836}
+[S5a] 3D Gaussian Splatting | medium | flat_single_pass ok=True words=2594 refs=14
+[S5a] RUN 3D Gaussian Splatting | long | recursive_slrgp
+    [llm] call #4 chars=4434 max_tokens=2812 attempt=0
+    [llm] done 31.3s usage={'prompt_tokens': 1077, 'completion_tokens': 1435, 'total_tokens': 2512}
+    [llm] call #5 chars=4447 max_tokens=2812 attempt=0
+    [llm] done 28.5s usage={'prompt_tokens': 1067, 'completion_tokens': 1310, 'total_tokens': 2377}
+    [llm] call #6 chars=4476 max_tokens=2812 attempt=0
+    [llm] done 30.4s usage={'prompt_tokens': 1077, 'completion_tokens': 1362, 'total_tokens': 2439}
+    [llm] call #7 chars=4459 max_tokens=2812 attempt=0
+    [llm] done 28.4s usage={'prompt_tokens': 1076, 'completion_tokens': 1365, 'total_tokens': 2441}
+    [llm] call #8 chars=4433 max_tokens=2812 attempt=0
+    [llm] done 33.3s usage={'prompt_tokens': 1088, 'completion_tokens': 1341, 'total_tokens': 2429}
+    [llm] call #9 chars=4433 max_tokens=2812 attempt=0
+    [llm] done 33.1s usage={'prompt_tokens': 1098, 'completion_tokens': 1384, 'total_tokens': 2482}
+    [llm] call #10 chars=4405 max_tokens=2812 attempt=0
+    [llm] done 31.3s usage={'prompt_tokens': 1029, 'completion_tokens': 1356, 'total_tokens': 2385}
+    [llm] call #11 chars=4070 max_tokens=2812 attempt=0
+    [llm] done 33.6s usage={'prompt_tokens': 994, 'completion_tokens': 1442, 'total_tokens': 2436}
+    [llm] call #12 chars=55357 max_tokens=4639 attempt=0
+    [llm] done 105.4s usage={'prompt_tokens': 11756, 'completion_tokens': 4639, 'total_tokens': 16395}
+[S5a] 3D Gaussian Splatting | long | recursive_slrgp ok=True words=7343 refs=32
+[S5a] RUN 3D Gaussian Splatting | long | fixed_outline_no_reentry
+    [llm] call #13 chars=8457 max_tokens=5625 attempt=0
+    [llm] done 55.1s usage={'prompt_tokens': 2017, 'completion_tokens': 2487, 'total_tokens': 4504}
+    [llm] call #14 chars=8511 max_tokens=5625 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #14 chars=8511 max_tokens=5625 attempt=1
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #14 chars=8511 max_tokens=5625 attempt=2
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #14 chars=8511 max_tokens=5625 attempt=3
+    [llm] done 72.7s usage={'prompt_tokens': 2026, 'completion_tokens': 2267, 'total_tokens': 4293}
+    [llm] call #15 chars=8442 max_tokens=5625 attempt=0
+    [llm] done 47.8s usage={'prompt_tokens': 2059, 'completion_tokens': 2158, 'total_tokens': 4217}
+    [llm] call #16 chars=8051 max_tokens=5625 attempt=0
+    [llm] done 52.3s usage={'prompt_tokens': 1896, 'completion_tokens': 2279, 'total_tokens': 4175}
+    [llm] call #17 chars=46228 max_tokens=7960 attempt=0
+    [llm] done 174.6s usage={'prompt_tokens': 9885, 'completion_tokens': 7960, 'total_tokens': 17845}
+[S5a] 3D Gaussian Splatting | long | fixed_outline_no_reentry ok=True words=6157 refs=32
+[S5a] RUN 3D Gaussian Splatting | long | flat_single_pass
+    [llm] call #18 chars=32204 max_tokens=22500 attempt=0
+    [llm] done 139.0s usage={'prompt_tokens': 7629, 'completion_tokens': 6646, 'total_tokens': 14275}
+    [llm] call #19 chars=31637 max_tokens=13468 attempt=0
+    [llm] done 270.4s usage={'prompt_tokens': 7307, 'completion_tokens': 13468, 'total_tokens': 20775}
+[S5a] 3D Gaussian Splatting | long | flat_single_pass ok=True words=9070 refs=41
+[S5a] RUN Graph Neural Networks | short | recursive_slrgp
+    [llm] call #20 chars=3918 max_tokens=1500 attempt=0
+    [llm] done 22.0s usage={'prompt_tokens': 876, 'completion_tokens': 873, 'total_tokens': 1749}
+    [llm] call #21 chars=4119 max_tokens=1500 attempt=0
+    [llm] done 19.4s usage={'prompt_tokens': 862, 'completion_tokens': 800, 'total_tokens': 1662}
+[S5a] Graph Neural Networks | short | recursive_slrgp ok=True words=1092 refs=8
+[S5a] RUN Graph Neural Networks | short | fixed_outline_no_reentry
+    [llm] call #22 chars=3918 max_tokens=1500 attempt=0
+    [llm] done 19.3s usage={'prompt_tokens': 876, 'completion_tokens': 832, 'total_tokens': 1708}
+    [llm] call #23 chars=4119 max_tokens=1500 attempt=0
+    [llm] done 20.9s usage={'prompt_tokens': 862, 'completion_tokens': 877, 'total_tokens': 1739}
+[S5a] Graph Neural Networks | short | fixed_outline_no_reentry ok=True words=1121 refs=8
+[S5a] RUN Graph Neural Networks | short | flat_single_pass
+    [llm] call #24 chars=7622 max_tokens=3000 attempt=0
+    [llm] done 34.4s usage={'prompt_tokens': 1623, 'completion_tokens': 1422, 'total_tokens': 3045}
+[S5a] Graph Neural Networks | short | flat_single_pass ok=True words=1018 refs=8
+[S5a] RUN Graph Neural Networks | medium | recursive_slrgp
+    [llm] call #25 chars=3066 max_tokens=1500 attempt=0
+    [llm] done 18.6s usage={'prompt_tokens': 675, 'completion_tokens': 760, 'total_tokens': 1435}
+    [llm] call #26 chars=3229 max_tokens=1500 attempt=0
+    [llm] done 20.0s usage={'prompt_tokens': 704, 'completion_tokens': 826, 'total_tokens': 1530}
+    [llm] call #27 chars=3151 max_tokens=1500 attempt=0
+    [llm] done 22.1s usage={'prompt_tokens': 665, 'completion_tokens': 816, 'total_tokens': 1481}
+    [llm] call #28 chars=3352 max_tokens=1500 attempt=0
+    [llm] done 20.0s usage={'prompt_tokens': 694, 'completion_tokens': 798, 'total_tokens': 1492}
+    [llm] call #29 chars=3372 max_tokens=1500 attempt=0
+    [llm] done 20.4s usage={'prompt_tokens': 720, 'completion_tokens': 890, 'total_tokens': 1610}
+    [llm] call #30 chars=3337 max_tokens=1500 attempt=0
+    [llm] done 20.5s usage={'prompt_tokens': 720, 'completion_tokens': 822, 'total_tokens': 1542}
+[S5a] Graph Neural Networks | medium | recursive_slrgp ok=True words=3434 refs=18
+[S5a] RUN Graph Neural Networks | medium | fixed_outline_no_reentry
+    [llm] call #31 chars=5873 max_tokens=3000 attempt=0
+    [llm] done 33.2s usage={'prompt_tokens': 1260, 'completion_tokens': 1509, 'total_tokens': 2769}
+    [llm] call #32 chars=6081 max_tokens=3000 attempt=0
+    [llm] done 33.0s usage={'prompt_tokens': 1240, 'completion_tokens': 1517, 'total_tokens': 2757}
+    [llm] call #33 chars=6287 max_tokens=3000 attempt=0
+    [llm] done 31.3s usage={'prompt_tokens': 1321, 'completion_tokens': 1420, 'total_tokens': 2741}
+[S5a] Graph Neural Networks | medium | fixed_outline_no_reentry ok=True words=3018 refs=18
+[S5a] RUN Graph Neural Networks | medium | flat_single_pass
+    [llm] call #34 chars=17404 max_tokens=9000 attempt=0
+    [llm] done 70.4s usage={'prompt_tokens': 3587, 'completion_tokens': 3142, 'total_tokens': 6729}
+    [llm] call #35 chars=17490 max_tokens=4572 attempt=0
+    [llm] done 102.1s usage={'prompt_tokens': 3789, 'completion_tokens': 4572, 'total_tokens': 8361}
+[S5a] Graph Neural Networks | medium | flat_single_pass ok=True words=3190 refs=23
+[S5a] RUN Graph Neural Networks | long | recursive_slrgp
+    [llm] call #36 chars=3921 max_tokens=2812 attempt=0
+    [llm] done 30.7s usage={'prompt_tokens': 879, 'completion_tokens': 1323, 'total_tokens': 2202}
+    [llm] call #37 chars=4345 max_tokens=2812 attempt=0
+    [llm] done 30.0s usage={'prompt_tokens': 877, 'completion_tokens': 1210, 'total_tokens': 2087}
+    [llm] call #38 chars=4114 max_tokens=2812 attempt=0
+    [llm] done 31.0s usage={'prompt_tokens': 867, 'completion_tokens': 1302, 'total_tokens': 2169}
+    [llm] call #39 chars=4394 max_tokens=2812 attempt=0
+    [llm] done 33.6s usage={'prompt_tokens': 942, 'completion_tokens': 1348, 'total_tokens': 2290}
+    [llm] call #40 chars=4274 max_tokens=2812 attempt=0
+    [llm] done 28.6s usage={'prompt_tokens': 901, 'completion_tokens': 1216, 'total_tokens': 2117}
+    [llm] call #41 chars=4048 max_tokens=2812 attempt=0
+    [llm] done 29.8s usage={'prompt_tokens': 943, 'completion_tokens': 1246, 'total_tokens': 2189}
+    [llm] call #42 chars=4404 max_tokens=2812 attempt=0
+    [llm] done 32.3s usage={'prompt_tokens': 941, 'completion_tokens': 1326, 'total_tokens': 2267}
+    [llm] call #43 chars=4299 max_tokens=2812 attempt=0
+    [llm] done 30.1s usage={'prompt_tokens': 951, 'completion_tokens': 1378, 'total_tokens': 2329}
+    [llm] call #44 chars=55031 max_tokens=4807 attempt=0
+    [llm] done 111.2s usage={'prompt_tokens': 11078, 'completion_tokens': 4807, 'total_tokens': 15885}
+[S5a] Graph Neural Networks | long | recursive_slrgp ok=True words=7283 refs=32
+[S5a] RUN Graph Neural Networks | long | fixed_outline_no_reentry
+    [llm] call #45 chars=7842 max_tokens=5625 attempt=0
+    [llm] done 55.0s usage={'prompt_tokens': 1635, 'completion_tokens': 2212, 'total_tokens': 3847}
+    [llm] call #46 chars=8084 max_tokens=5625 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #46 chars=8084 max_tokens=5625 attempt=1
+    [llm] done 49.9s usage={'prompt_tokens': 1688, 'completion_tokens': 2202, 'total_tokens': 3890}
+    [llm] call #47 chars=7898 max_tokens=5625 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #47 chars=7898 max_tokens=5625 attempt=1
+    [llm] done 49.3s usage={'prompt_tokens': 1723, 'completion_tokens': 2267, 'total_tokens': 3990}
+    [llm] call #48 chars=8279 max_tokens=5625 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #48 chars=8279 max_tokens=5625 attempt=1
+    [llm] done 79.7s usage={'prompt_tokens': 1771, 'completion_tokens': 2354, 'total_tokens': 4125}
+    [llm] call #49 chars=48100 max_tokens=7285 attempt=0
+[S5a] run_id=s5a_length_20260713_full root=results/s5/s5a_length_20260713_full
+[S5a] topics=code/experiments/exp4_structural_recursion/topics_s5a.txt tiers=short,medium,long arms=recursive_slrgp,fixed_outline_no_reentry,flat_single_pass model=anthropic/claude-sonnet-4.6 limit=6
+[S5a] SKIP 3D Gaussian Splatting | short | recursive_slrgp
+[S5a] SKIP 3D Gaussian Splatting | short | fixed_outline_no_reentry
+[S5a] SKIP 3D Gaussian Splatting | short | flat_single_pass
+[S5a] SKIP 3D Gaussian Splatting | medium | recursive_slrgp
+[S5a] SKIP 3D Gaussian Splatting | medium | fixed_outline_no_reentry
+[S5a] RUN 3D Gaussian Splatting | medium | flat_single_pass
+    [llm] call #1 chars=18575 max_tokens=9000 attempt=0
+    [llm] done 82.4s usage={'prompt_tokens': 4402, 'completion_tokens': 3622, 'total_tokens': 8024}
+    [llm] call #2 chars=31845 max_tokens=3177 attempt=0
+    [llm] done 45.9s usage={'prompt_tokens': 8185, 'completion_tokens': 1886, 'total_tokens': 10071}
+[S5a] 3D Gaussian Splatting | medium | flat_single_pass ok=True words=3450 refs=35
+[S5a] RUN 3D Gaussian Splatting | long | recursive_slrgp
+    [llm] call #3 chars=4434 max_tokens=2812 attempt=0
+    [llm] done 30.2s usage={'prompt_tokens': 1077, 'completion_tokens': 1400, 'total_tokens': 2477}
+    [llm] call #4 chars=4447 max_tokens=2812 attempt=0
+    [llm] done 31.3s usage={'prompt_tokens': 1067, 'completion_tokens': 1478, 'total_tokens': 2545}
+    [llm] call #5 chars=4476 max_tokens=2812 attempt=0
+    [llm] done 29.7s usage={'prompt_tokens': 1077, 'completion_tokens': 1352, 'total_tokens': 2429}
+    [llm] call #6 chars=4459 max_tokens=2812 attempt=0
+    [llm] done 35.5s usage={'prompt_tokens': 1076, 'completion_tokens': 1395, 'total_tokens': 2471}
+    [llm] call #7 chars=4433 max_tokens=2812 attempt=0
+    [llm] done 32.9s usage={'prompt_tokens': 1088, 'completion_tokens': 1440, 'total_tokens': 2528}
+    [llm] call #8 chars=4433 max_tokens=2812 attempt=0
+    [llm] done 30.0s usage={'prompt_tokens': 1098, 'completion_tokens': 1319, 'total_tokens': 2417}
+    [llm] call #9 chars=4405 max_tokens=2812 attempt=0
+    [llm] done 32.9s usage={'prompt_tokens': 1029, 'completion_tokens': 1370, 'total_tokens': 2399}
+    [llm] call #10 chars=4070 max_tokens=2812 attempt=0
+    [llm] done 37.5s usage={'prompt_tokens': 994, 'completion_tokens': 1361, 'total_tokens': 2355}
+    [llm] call #11 chars=31844 max_tokens=1800 attempt=0
+    [llm] done 42.8s usage={'prompt_tokens': 7981, 'completion_tokens': 1624, 'total_tokens': 9605}
+[S5a] 3D Gaussian Splatting | long | recursive_slrgp ok=True words=8646 refs=35
+[S5a] RUN 3D Gaussian Splatting | long | fixed_outline_no_reentry
+    [llm] call #12 chars=8457 max_tokens=5625 attempt=0
+    [llm] done 49.5s usage={'prompt_tokens': 2017, 'completion_tokens': 2250, 'total_tokens': 4267}
+    [llm] call #13 chars=8511 max_tokens=5625 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #13 chars=8511 max_tokens=5625 attempt=1
+    [llm] done 52.0s usage={'prompt_tokens': 2026, 'completion_tokens': 2248, 'total_tokens': 4274}
+    [llm] call #14 chars=8442 max_tokens=5625 attempt=0
+    [llm] done 46.5s usage={'prompt_tokens': 2059, 'completion_tokens': 2096, 'total_tokens': 4155}
+    [llm] call #15 chars=8051 max_tokens=5625 attempt=0
+    [llm] done 48.6s usage={'prompt_tokens': 1896, 'completion_tokens': 2365, 'total_tokens': 4261}
+    [llm] call #16 chars=31845 max_tokens=5361 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #16 chars=31845 max_tokens=5361 attempt=1
+    [llm] done 68.9s usage={'prompt_tokens': 8057, 'completion_tokens': 3077, 'total_tokens': 11134}
+[S5a] 3D Gaussian Splatting | long | fixed_outline_no_reentry ok=True words=8045 refs=39
+[S5a] SKIP 3D Gaussian Splatting | long | flat_single_pass
+[S5a] SKIP Graph Neural Networks | short | recursive_slrgp
+[S5a] SKIP Graph Neural Networks | short | fixed_outline_no_reentry
+[S5a] SKIP Graph Neural Networks | short | flat_single_pass
+[S5a] SKIP Graph Neural Networks | medium | recursive_slrgp
+[S5a] SKIP Graph Neural Networks | medium | fixed_outline_no_reentry
+[S5a] SKIP Graph Neural Networks | medium | flat_single_pass
+[S5a] RUN Graph Neural Networks | long | recursive_slrgp
+    [llm] call #17 chars=3921 max_tokens=2812 attempt=0
+    [llm] done 30.1s usage={'prompt_tokens': 879, 'completion_tokens': 1338, 'total_tokens': 2217}
+    [llm] call #18 chars=4345 max_tokens=2812 attempt=0
+    [llm] done 42.3s usage={'prompt_tokens': 877, 'completion_tokens': 1315, 'total_tokens': 2192}
+    [llm] call #19 chars=4114 max_tokens=2812 attempt=0
+    [llm] done 34.0s usage={'prompt_tokens': 867, 'completion_tokens': 1236, 'total_tokens': 2103}
+    [llm] call #20 chars=4394 max_tokens=2812 attempt=0
+    [llm] done 29.0s usage={'prompt_tokens': 942, 'completion_tokens': 1351, 'total_tokens': 2293}
+    [llm] call #21 chars=4274 max_tokens=2812 attempt=0
+    [llm] done 28.5s usage={'prompt_tokens': 901, 'completion_tokens': 1194, 'total_tokens': 2095}
+    [llm] call #22 chars=4048 max_tokens=2812 attempt=0
+    [llm] done 29.5s usage={'prompt_tokens': 943, 'completion_tokens': 1355, 'total_tokens': 2298}
+    [llm] call #23 chars=4404 max_tokens=2812 attempt=0
+    [llm] done 34.0s usage={'prompt_tokens': 941, 'completion_tokens': 1473, 'total_tokens': 2414}
+    [llm] call #24 chars=4299 max_tokens=2812 attempt=0
+    [llm] done 55.3s usage={'prompt_tokens': 951, 'completion_tokens': 1379, 'total_tokens': 2330}
+    [llm] call #25 chars=31418 max_tokens=1800 attempt=0
+    [llm] done 38.8s usage={'prompt_tokens': 7031, 'completion_tokens': 1396, 'total_tokens': 8427}
+[S5a] Graph Neural Networks | long | recursive_slrgp ok=True words=8401 refs=36
+[S5a] RUN Graph Neural Networks | long | fixed_outline_no_reentry
+    [llm] call #26 chars=7842 max_tokens=5625 attempt=0
+    [llm] done 40.3s usage={'prompt_tokens': 1635, 'completion_tokens': 1969, 'total_tokens': 3604}
+    [llm] call #27 chars=8084 max_tokens=5625 attempt=0
+    [llm] done 41.6s usage={'prompt_tokens': 1688, 'completion_tokens': 2089, 'total_tokens': 3777}
+    [llm] call #28 chars=7898 max_tokens=5625 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #28 chars=7898 max_tokens=5625 attempt=1
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #28 chars=7898 max_tokens=5625 attempt=2
+    [llm] done 51.5s usage={'prompt_tokens': 1723, 'completion_tokens': 2360, 'total_tokens': 4083}
+    [llm] call #29 chars=8279 max_tokens=5625 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #29 chars=8279 max_tokens=5625 attempt=1
+    [llm] done 49.3s usage={'prompt_tokens': 1771, 'completion_tokens': 2277, 'total_tokens': 4048}
+    [llm] call #30 chars=31419 max_tokens=5364 attempt=0
+    [llm] done 59.2s usage={'prompt_tokens': 7099, 'completion_tokens': 2430, 'total_tokens': 9529}
+[S5a] Graph Neural Networks | long | fixed_outline_no_reentry ok=True words=7662 refs=37
+[S5a] RUN Graph Neural Networks | long | flat_single_pass
+    [llm] call #31 chars=30846 max_tokens=22500 attempt=0
+    [llm] done 146.8s usage={'prompt_tokens': 6466, 'completion_tokens': 6854, 'total_tokens': 13320}
+    [llm] call #32 chars=31419 max_tokens=7692 attempt=0
+    [llm] done 84.1s usage={'prompt_tokens': 7054, 'completion_tokens': 3841, 'total_tokens': 10895}
+[S5a] Graph Neural Networks | long | flat_single_pass ok=True words=7849 refs=39
+[S5a] RUN Multimodal Large Language Models | short | recursive_slrgp
+    [llm] call #33 chars=4484 max_tokens=1500 attempt=0
+    [llm] done 19.9s usage={'prompt_tokens': 991, 'completion_tokens': 903, 'total_tokens': 1894}
+    [llm] call #34 chars=4426 max_tokens=1500 attempt=0
+    [llm] done 21.0s usage={'prompt_tokens': 1015, 'completion_tokens': 912, 'total_tokens': 1927}
+[S5a] Multimodal Large Language Models | short | recursive_slrgp ok=True words=1217 refs=8
+[S5a] RUN Multimodal Large Language Models | short | fixed_outline_no_reentry
+    [llm] call #35 chars=4484 max_tokens=1500 attempt=0
+    [llm] done 20.9s usage={'prompt_tokens': 991, 'completion_tokens': 903, 'total_tokens': 1894}
+    [llm] call #36 chars=4426 max_tokens=1500 attempt=0
+    [llm] done 21.2s usage={'prompt_tokens': 1015, 'completion_tokens': 875, 'total_tokens': 1890}
+[S5a] Multimodal Large Language Models | short | fixed_outline_no_reentry ok=True words=1218 refs=8
+[S5a] RUN Multimodal Large Language Models | short | flat_single_pass
+    [llm] call #37 chars=8484 max_tokens=3000 attempt=0
+    [llm] done 33.2s usage={'prompt_tokens': 1887, 'completion_tokens': 1567, 'total_tokens': 3454}
+[S5a] Multimodal Large Language Models | short | flat_single_pass ok=True words=1069 refs=8
+[S5a] RUN Multimodal Large Language Models | medium | recursive_slrgp
+    [llm] call #38 chars=3476 max_tokens=1500 attempt=0
+    [llm] done 20.9s usage={'prompt_tokens': 757, 'completion_tokens': 783, 'total_tokens': 1540}
+    [llm] call #39 chars=3534 max_tokens=1500 attempt=0
+    [llm] done 18.6s usage={'prompt_tokens': 810, 'completion_tokens': 821, 'total_tokens': 1631}
+    [llm] call #40 chars=3432 max_tokens=1500 attempt=0
+    [llm] done 24.7s usage={'prompt_tokens': 804, 'completion_tokens': 975, 'total_tokens': 1779}
+    [llm] call #41 chars=3466 max_tokens=1500 attempt=0
+    [llm] done 19.6s usage={'prompt_tokens': 831, 'completion_tokens': 821, 'total_tokens': 1652}
+    [llm] call #42 chars=3454 max_tokens=1500 attempt=0
+    [llm] done 20.7s usage={'prompt_tokens': 798, 'completion_tokens': 850, 'total_tokens': 1648}
+    [llm] call #43 chars=3431 max_tokens=1500 attempt=0
+    [llm] done 18.0s usage={'prompt_tokens': 761, 'completion_tokens': 773, 'total_tokens': 1534}
+[S5a] Multimodal Large Language Models | medium | recursive_slrgp ok=True words=3461 refs=18
+[S5a] RUN Multimodal Large Language Models | medium | fixed_outline_no_reentry
+    [llm] call #44 chars=6577 max_tokens=3000 attempt=0
+    [llm] done 35.7s usage={'prompt_tokens': 1444, 'completion_tokens': 1657, 'total_tokens': 3101}
+    [llm] call #45 chars=6465 max_tokens=3000 attempt=0
+    [llm] done 31.4s usage={'prompt_tokens': 1512, 'completion_tokens': 1515, 'total_tokens': 3027}
+    [llm] call #46 chars=6452 max_tokens=3000 attempt=0
+    [llm] done 34.6s usage={'prompt_tokens': 1436, 'completion_tokens': 1568, 'total_tokens': 3004}
+[S5a] Multimodal Large Language Models | medium | fixed_outline_no_reentry ok=True words=3254 refs=18
+[S5a] RUN Multimodal Large Language Models | medium | flat_single_pass
+    [llm] call #47 chars=18635 max_tokens=9000 attempt=0
+    [llm] done 72.1s usage={'prompt_tokens': 4150, 'completion_tokens': 3352, 'total_tokens': 7502}
+    [llm] call #48 chars=32148 max_tokens=2827 attempt=0
+    [llm] done 55.4s usage={'prompt_tokens': 7569, 'completion_tokens': 2199, 'total_tokens': 9768}
+[S5a] Multimodal Large Language Models | medium | flat_single_pass ok=True words=3948 refs=30
+[S5a] RUN Multimodal Large Language Models | long | recursive_slrgp
+    [llm] call #49 chars=4487 max_tokens=2812 attempt=0
+    [llm] done 28.7s usage={'prompt_tokens': 994, 'completion_tokens': 1281, 'total_tokens': 2275}
+    [llm] call #50 chars=4537 max_tokens=2812 attempt=0
+    [llm] done 30.5s usage={'prompt_tokens': 1025, 'completion_tokens': 1316, 'total_tokens': 2341}
+    [llm] call #51 chars=4455 max_tokens=2812 attempt=0
+    [llm] done 31.0s usage={'prompt_tokens': 1064, 'completion_tokens': 1413, 'total_tokens': 2477}
+    [llm] call #52 chars=4441 max_tokens=2812 attempt=0
+    [llm] done 29.1s usage={'prompt_tokens': 999, 'completion_tokens': 1312, 'total_tokens': 2311}
+    [llm] call #53 chars=4435 max_tokens=2812 attempt=0
+    [llm] done 32.2s usage={'prompt_tokens': 1014, 'completion_tokens': 1415, 'total_tokens': 2429}
+    [llm] call #54 chars=4536 max_tokens=2812 attempt=0
+    [llm] done 28.7s usage={'prompt_tokens': 1070, 'completion_tokens': 1334, 'total_tokens': 2404}
+    [llm] call #55 chars=4480 max_tokens=2812 attempt=0
+    [llm] done 26.8s usage={'prompt_tokens': 1037, 'completion_tokens': 1362, 'total_tokens': 2399}
+    [llm] call #56 chars=4310 max_tokens=2812 attempt=0
+    [llm] done 34.7s usage={'prompt_tokens': 994, 'completion_tokens': 1389, 'total_tokens': 2383}
+    [llm] call #57 chars=32147 max_tokens=1800 attempt=0
+    [llm] done 46.9s usage={'prompt_tokens': 7601, 'completion_tokens': 1800, 'total_tokens': 9401}
+[S5a] Multimodal Large Language Models | long | recursive_slrgp ok=True words=8835 refs=34
+[S5a] RUN Multimodal Large Language Models | long | fixed_outline_no_reentry
+    [llm] call #58 chars=8589 max_tokens=5625 attempt=0
+    [llm] done 45.6s usage={'prompt_tokens': 1894, 'completion_tokens': 2182, 'total_tokens': 4076}
+    [llm] call #59 chars=8461 max_tokens=5625 attempt=0
+    [llm] done 48.1s usage={'prompt_tokens': 1938, 'completion_tokens': 2308, 'total_tokens': 4246}
+    [llm] call #60 chars=8536 max_tokens=5625 attempt=0
+    [llm] done 46.4s usage={'prompt_tokens': 1959, 'completion_tokens': 2285, 'total_tokens': 4244}
+    [llm] call #61 chars=8355 max_tokens=5625 attempt=0
+    [llm] done 44.1s usage={'prompt_tokens': 1906, 'completion_tokens': 2321, 'total_tokens': 4227}
+    [llm] call #62 chars=32148 max_tokens=4615 attempt=0
+    [llm] done 50.7s usage={'prompt_tokens': 7642, 'completion_tokens': 2078, 'total_tokens': 9720}
+[S5a] Multimodal Large Language Models | long | fixed_outline_no_reentry ok=True words=7739 refs=35
+[S5a] RUN Multimodal Large Language Models | long | flat_single_pass
+    [llm] call #63 chars=32651 max_tokens=22500 attempt=0
+    [llm] done 133.8s usage={'prompt_tokens': 7334, 'completion_tokens': 6273, 'total_tokens': 13607}
+    [llm] call #64 chars=32148 max_tokens=8786 attempt=0
+    [llm] done 110.5s usage={'prompt_tokens': 7558, 'completion_tokens': 5589, 'total_tokens': 13147}
+[S5a] Multimodal Large Language Models | long | flat_single_pass ok=True words=8656 refs=39
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | short | recursive_slrgp
+    [llm] call #65 chars=4498 max_tokens=1500 attempt=0
+    [llm] done 21.4s usage={'prompt_tokens': 1010, 'completion_tokens': 907, 'total_tokens': 1917}
+    [llm] call #66 chars=4561 max_tokens=1500 attempt=0
+    [llm] done 23.4s usage={'prompt_tokens': 1043, 'completion_tokens': 839, 'total_tokens': 1882}
+[S5a] Retrieval-Augmented Generation for Large Language Models | short | recursive_slrgp ok=True words=1221 refs=8
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | short | fixed_outline_no_reentry
+    [llm] call #67 chars=4498 max_tokens=1500 attempt=0
+    [llm] done 21.8s usage={'prompt_tokens': 1010, 'completion_tokens': 897, 'total_tokens': 1907}
+    [llm] call #68 chars=4561 max_tokens=1500 attempt=0
+    [llm] done 24.8s usage={'prompt_tokens': 1043, 'completion_tokens': 896, 'total_tokens': 1939}
+[S5a] Retrieval-Augmented Generation for Large Language Models | short | fixed_outline_no_reentry ok=True words=1240 refs=8
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | short | flat_single_pass
+    [llm] call #69 chars=8609 max_tokens=3000 attempt=0
+    [llm] done 39.9s usage={'prompt_tokens': 1929, 'completion_tokens': 1696, 'total_tokens': 3625}
+[S5a] Retrieval-Augmented Generation for Large Language Models | short | flat_single_pass ok=True words=1185 refs=8
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | medium | recursive_slrgp
+    [llm] call #70 chars=3496 max_tokens=1500 attempt=0
+    [llm] done 20.0s usage={'prompt_tokens': 795, 'completion_tokens': 846, 'total_tokens': 1641}
+    [llm] call #71 chars=3482 max_tokens=1500 attempt=0
+    [llm] done 19.8s usage={'prompt_tokens': 788, 'completion_tokens': 818, 'total_tokens': 1606}
+    [llm] call #72 chars=3505 max_tokens=1500 attempt=0
+    [llm] done 23.6s usage={'prompt_tokens': 832, 'completion_tokens': 895, 'total_tokens': 1727}
+    [llm] call #73 chars=3359 max_tokens=1500 attempt=0
+    [llm] done 24.0s usage={'prompt_tokens': 801, 'completion_tokens': 852, 'total_tokens': 1653}
+    [llm] call #74 chars=3507 max_tokens=1500 attempt=0
+    [llm] done 22.8s usage={'prompt_tokens': 792, 'completion_tokens': 857, 'total_tokens': 1649}
+    [llm] call #75 chars=3489 max_tokens=1500 attempt=0
+    [llm] done 26.6s usage={'prompt_tokens': 750, 'completion_tokens': 835, 'total_tokens': 1585}
+[S5a] Retrieval-Augmented Generation for Large Language Models | medium | recursive_slrgp ok=True words=3573 refs=18
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | medium | fixed_outline_no_reentry
+    [llm] call #76 chars=6521 max_tokens=3000 attempt=0
+    [llm] done 33.2s usage={'prompt_tokens': 1455, 'completion_tokens': 1564, 'total_tokens': 3019}
+    [llm] call #77 chars=6407 max_tokens=3000 attempt=0
+    [llm] done 36.5s usage={'prompt_tokens': 1505, 'completion_tokens': 1579, 'total_tokens': 3084}
+    [llm] call #78 chars=6539 max_tokens=3000 attempt=0
+    [llm] done 35.8s usage={'prompt_tokens': 1414, 'completion_tokens': 1524, 'total_tokens': 2938}
+[S5a] Retrieval-Augmented Generation for Large Language Models | medium | fixed_outline_no_reentry ok=True words=3224 refs=18
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | medium | flat_single_pass
+    [llm] call #79 chars=18560 max_tokens=9000 attempt=0
+    [llm] done 76.3s usage={'prompt_tokens': 4122, 'completion_tokens': 3381, 'total_tokens': 7503}
+    [llm] call #80 chars=32293 max_tokens=3076 attempt=0
+    [llm] done 54.8s usage={'prompt_tokens': 7524, 'completion_tokens': 2271, 'total_tokens': 9795}
+[S5a] Retrieval-Augmented Generation for Large Language Models | medium | flat_single_pass ok=True words=3883 refs=38
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | long | recursive_slrgp
+    [llm] call #81 chars=4501 max_tokens=2812 attempt=0
+    [llm] done 32.7s usage={'prompt_tokens': 1013, 'completion_tokens': 1451, 'total_tokens': 2464}
+    [llm] call #82 chars=4344 max_tokens=2812 attempt=0
+    [llm] done 31.9s usage={'prompt_tokens': 1024, 'completion_tokens': 1356, 'total_tokens': 2380}
+    [llm] call #83 chars=4544 max_tokens=2812 attempt=0
+    [llm] done 31.8s usage={'prompt_tokens': 1055, 'completion_tokens': 1428, 'total_tokens': 2483}
+    [llm] call #84 chars=4488 max_tokens=2812 attempt=0
+    [llm] done 32.7s usage={'prompt_tokens': 1000, 'completion_tokens': 1292, 'total_tokens': 2292}
+    [llm] call #85 chars=4274 max_tokens=2812 attempt=0
+    [llm] done 32.1s usage={'prompt_tokens': 921, 'completion_tokens': 1360, 'total_tokens': 2281}
+    [llm] call #86 chars=4616 max_tokens=2812 attempt=0
+    [llm] done 31.4s usage={'prompt_tokens': 1021, 'completion_tokens': 1366, 'total_tokens': 2387}
+    [llm] call #87 chars=4264 max_tokens=2812 attempt=0
+    [llm] done 33.7s usage={'prompt_tokens': 971, 'completion_tokens': 1423, 'total_tokens': 2394}
+    [llm] call #88 chars=4574 max_tokens=2812 attempt=0
+    [llm] done 30.7s usage={'prompt_tokens': 1002, 'completion_tokens': 1429, 'total_tokens': 2431}
+[S5a] Retrieval-Augmented Generation for Large Language Models | long | recursive_slrgp ok=True words=7909 refs=31
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | long | fixed_outline_no_reentry
+    [llm] call #89 chars=8386 max_tokens=5625 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #89 chars=8386 max_tokens=5625 attempt=1
+    [llm] done 54.7s usage={'prompt_tokens': 1907, 'completion_tokens': 2351, 'total_tokens': 4258}
+    [llm] call #90 chars=8573 max_tokens=5625 attempt=0
+    [llm] done 46.0s usage={'prompt_tokens': 1925, 'completion_tokens': 2040, 'total_tokens': 3965}
+    [llm] call #91 chars=8431 max_tokens=5625 attempt=0
+    [llm] done 49.1s usage={'prompt_tokens': 1812, 'completion_tokens': 2223, 'total_tokens': 4035}
+    [llm] call #92 chars=8379 max_tokens=5625 attempt=0
+    [llm] done 51.6s usage={'prompt_tokens': 1843, 'completion_tokens': 2368, 'total_tokens': 4211}
+    [llm] call #93 chars=32293 max_tokens=4382 attempt=0
+    [llm] done 64.3s usage={'prompt_tokens': 7534, 'completion_tokens': 2518, 'total_tokens': 10052}
+[S5a] Retrieval-Augmented Generation for Large Language Models | long | fixed_outline_no_reentry ok=True words=8190 refs=37
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | long | flat_single_pass
+    [llm] call #94 chars=32407 max_tokens=22500 attempt=0
+[S5a] run_id=s5a_length_20260713_full root=results/s5/s5a_length_20260713_full
+[S5a] topics=code/experiments/exp4_structural_recursion/topics_s5a.txt tiers=short,medium,long arms=recursive_slrgp,fixed_outline_no_reentry,flat_single_pass model=anthropic/claude-sonnet-4.6 limit=6
+[S5a] SKIP 3D Gaussian Splatting | short | recursive_slrgp
+[S5a] SKIP 3D Gaussian Splatting | short | fixed_outline_no_reentry
+[S5a] SKIP 3D Gaussian Splatting | short | flat_single_pass
+[S5a] SKIP 3D Gaussian Splatting | medium | recursive_slrgp
+[S5a] SKIP 3D Gaussian Splatting | medium | fixed_outline_no_reentry
+[S5a] SKIP 3D Gaussian Splatting | medium | flat_single_pass
+[S5a] SKIP 3D Gaussian Splatting | long | recursive_slrgp
+[S5a] SKIP 3D Gaussian Splatting | long | fixed_outline_no_reentry
+[S5a] SKIP 3D Gaussian Splatting | long | flat_single_pass
+[S5a] SKIP Graph Neural Networks | short | recursive_slrgp
+[S5a] SKIP Graph Neural Networks | short | fixed_outline_no_reentry
+[S5a] SKIP Graph Neural Networks | short | flat_single_pass
+[S5a] SKIP Graph Neural Networks | medium | recursive_slrgp
+[S5a] SKIP Graph Neural Networks | medium | fixed_outline_no_reentry
+[S5a] SKIP Graph Neural Networks | medium | flat_single_pass
+[S5a] SKIP Graph Neural Networks | long | recursive_slrgp
+[S5a] SKIP Graph Neural Networks | long | fixed_outline_no_reentry
+[S5a] SKIP Graph Neural Networks | long | flat_single_pass
+[S5a] SKIP Multimodal Large Language Models | short | recursive_slrgp
+[S5a] SKIP Multimodal Large Language Models | short | fixed_outline_no_reentry
+[S5a] SKIP Multimodal Large Language Models | short | flat_single_pass
+[S5a] SKIP Multimodal Large Language Models | medium | recursive_slrgp
+[S5a] SKIP Multimodal Large Language Models | medium | fixed_outline_no_reentry
+[S5a] SKIP Multimodal Large Language Models | medium | flat_single_pass
+[S5a] SKIP Multimodal Large Language Models | long | recursive_slrgp
+[S5a] SKIP Multimodal Large Language Models | long | fixed_outline_no_reentry
+[S5a] SKIP Multimodal Large Language Models | long | flat_single_pass
+[S5a] SKIP Retrieval-Augmented Generation for Large Language Models | short | recursive_slrgp
+[S5a] SKIP Retrieval-Augmented Generation for Large Language Models | short | fixed_outline_no_reentry
+[S5a] SKIP Retrieval-Augmented Generation for Large Language Models | short | flat_single_pass
+[S5a] SKIP Retrieval-Augmented Generation for Large Language Models | medium | recursive_slrgp
+[S5a] SKIP Retrieval-Augmented Generation for Large Language Models | medium | fixed_outline_no_reentry
+[S5a] SKIP Retrieval-Augmented Generation for Large Language Models | medium | flat_single_pass
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | long | recursive_slrgp
+    [llm] call #1 chars=4501 max_tokens=2812 attempt=0
+    [llm] done 31.1s usage={'prompt_tokens': 1013, 'completion_tokens': 1297, 'total_tokens': 2310}
+    [llm] call #2 chars=4344 max_tokens=2812 attempt=0
+    [llm] done 33.9s usage={'prompt_tokens': 1024, 'completion_tokens': 1435, 'total_tokens': 2459}
+    [llm] call #3 chars=4544 max_tokens=2812 attempt=0
+    [llm] done 35.5s usage={'prompt_tokens': 1055, 'completion_tokens': 1470, 'total_tokens': 2525}
+    [llm] call #4 chars=4488 max_tokens=2812 attempt=0
+    [llm] done 29.8s usage={'prompt_tokens': 1000, 'completion_tokens': 1366, 'total_tokens': 2366}
+    [llm] call #5 chars=4274 max_tokens=2812 attempt=0
+    [llm] done 31.4s usage={'prompt_tokens': 921, 'completion_tokens': 1311, 'total_tokens': 2232}
+    [llm] call #6 chars=4616 max_tokens=2812 attempt=0
+    [llm] done 32.5s usage={'prompt_tokens': 1021, 'completion_tokens': 1384, 'total_tokens': 2405}
+    [llm] call #7 chars=4264 max_tokens=2812 attempt=0
+    [llm] done 32.3s usage={'prompt_tokens': 971, 'completion_tokens': 1444, 'total_tokens': 2415}
+    [llm] call #8 chars=4574 max_tokens=2812 attempt=0
+    [llm] done 29.6s usage={'prompt_tokens': 1002, 'completion_tokens': 1351, 'total_tokens': 2353}
+[S5a] Retrieval-Augmented Generation for Large Language Models | long | recursive_slrgp ok=True words=7799 refs=31
+[S5a] SKIP Retrieval-Augmented Generation for Large Language Models | long | fixed_outline_no_reentry
+[S5a] RUN Retrieval-Augmented Generation for Large Language Models | long | flat_single_pass
+    [llm] call #9 chars=32407 max_tokens=22500 attempt=0
+    [llm] done 155.1s usage={'prompt_tokens': 7109, 'completion_tokens': 7429, 'total_tokens': 14538}
+    [llm] call #10 chars=32293 max_tokens=7212 attempt=0
+    [llm] done 82.8s usage={'prompt_tokens': 7664, 'completion_tokens': 3996, 'total_tokens': 11660}
+[S5a] Retrieval-Augmented Generation for Large Language Models | long | flat_single_pass ok=True words=8063 refs=40
+[S5a] RUN Federated Learning | short | recursive_slrgp
+    [llm] call #11 chars=4328 max_tokens=1500 attempt=0
+    [llm] done 21.0s usage={'prompt_tokens': 876, 'completion_tokens': 787, 'total_tokens': 1663}
+    [llm] call #12 chars=4496 max_tokens=1500 attempt=0
+    [llm] done 19.7s usage={'prompt_tokens': 942, 'completion_tokens': 828, 'total_tokens': 1770}
+[S5a] Federated Learning | short | recursive_slrgp ok=True words=1167 refs=8
+[S5a] RUN Federated Learning | short | fixed_outline_no_reentry
+    [llm] call #13 chars=4328 max_tokens=1500 attempt=0
+    [llm] done 21.1s usage={'prompt_tokens': 876, 'completion_tokens': 844, 'total_tokens': 1720}
+    [llm] call #14 chars=4496 max_tokens=1500 attempt=0
+    [llm] done 20.1s usage={'prompt_tokens': 942, 'completion_tokens': 843, 'total_tokens': 1785}
+[S5a] Federated Learning | short | fixed_outline_no_reentry ok=True words=1199 refs=8
+[S5a] RUN Federated Learning | short | flat_single_pass
+    [llm] call #15 chars=8412 max_tokens=3000 attempt=0
+    [llm] done 38.8s usage={'prompt_tokens': 1702, 'completion_tokens': 1640, 'total_tokens': 3342}
+[S5a] Federated Learning | short | flat_single_pass ok=True words=1177 refs=8
+[S5a] RUN Federated Learning | medium | recursive_slrgp
+    [llm] call #16 chars=3313 max_tokens=1500 attempt=0
+    [llm] done 18.3s usage={'prompt_tokens': 694, 'completion_tokens': 770, 'total_tokens': 1464}
+    [llm] call #17 chars=3457 max_tokens=1500 attempt=0
+    [llm] done 19.8s usage={'prompt_tokens': 711, 'completion_tokens': 797, 'total_tokens': 1508}
+    [llm] call #18 chars=3505 max_tokens=1500 attempt=0
+    [llm] done 20.1s usage={'prompt_tokens': 748, 'completion_tokens': 849, 'total_tokens': 1597}
+    [llm] call #19 chars=3282 max_tokens=1500 attempt=0
+    [llm] done 20.1s usage={'prompt_tokens': 702, 'completion_tokens': 803, 'total_tokens': 1505}
+    [llm] call #20 chars=3405 max_tokens=1500 attempt=0
+    [llm] done 20.6s usage={'prompt_tokens': 715, 'completion_tokens': 764, 'total_tokens': 1479}
+    [llm] call #21 chars=3485 max_tokens=1500 attempt=0
+    [llm] done 20.7s usage={'prompt_tokens': 739, 'completion_tokens': 827, 'total_tokens': 1566}
+[S5a] Federated Learning | medium | recursive_slrgp ok=True words=3523 refs=18
+[S5a] RUN Federated Learning | medium | fixed_outline_no_reentry
+    [llm] call #22 chars=6351 max_tokens=3000 attempt=0
+    [llm] done 30.5s usage={'prompt_tokens': 1285, 'completion_tokens': 1289, 'total_tokens': 2574}
+    [llm] call #23 chars=6368 max_tokens=3000 attempt=0
+    [llm] done 36.5s usage={'prompt_tokens': 1330, 'completion_tokens': 1495, 'total_tokens': 2825}
+    [llm] call #24 chars=6471 max_tokens=3000 attempt=0
+    [llm] done 38.2s usage={'prompt_tokens': 1334, 'completion_tokens': 1567, 'total_tokens': 2901}
+[S5a] Federated Learning | medium | fixed_outline_no_reentry ok=True words=3206 refs=18
+[S5a] RUN Federated Learning | medium | flat_single_pass
+    [llm] call #25 chars=18359 max_tokens=9000 attempt=0
+    [llm] done 65.6s usage={'prompt_tokens': 3713, 'completion_tokens': 3030, 'total_tokens': 6743}
+    [llm] call #26 chars=32233 max_tokens=3516 attempt=0
+    [llm] done 76.9s usage={'prompt_tokens': 7068, 'completion_tokens': 2215, 'total_tokens': 9283}
+[S5a] Federated Learning | medium | flat_single_pass ok=True words=3709 refs=37
+[S5a] RUN Federated Learning | long | recursive_slrgp
+    [llm] call #27 chars=4331 max_tokens=2812 attempt=0
+    [llm] done 30.0s usage={'prompt_tokens': 879, 'completion_tokens': 1274, 'total_tokens': 2153}
+    [llm] call #28 chars=4409 max_tokens=2812 attempt=0
+    [llm] done 32.8s usage={'prompt_tokens': 936, 'completion_tokens': 1370, 'total_tokens': 2306}
+    [llm] call #29 chars=4402 max_tokens=2812 attempt=0
+    [llm] done 30.0s usage={'prompt_tokens': 924, 'completion_tokens': 1321, 'total_tokens': 2245}
+    [llm] call #30 chars=4456 max_tokens=2812 attempt=0
+    [llm] done 30.7s usage={'prompt_tokens': 927, 'completion_tokens': 1339, 'total_tokens': 2266}
+    [llm] call #31 chars=4429 max_tokens=2812 attempt=0
+    [llm] done 29.4s usage={'prompt_tokens': 960, 'completion_tokens': 1280, 'total_tokens': 2240}
+    [llm] call #32 chars=4545 max_tokens=2812 attempt=0
+    [llm] done 29.3s usage={'prompt_tokens': 943, 'completion_tokens': 1312, 'total_tokens': 2255}
+    [llm] call #33 chars=4452 max_tokens=2812 attempt=0
+    [llm] done 30.8s usage={'prompt_tokens': 953, 'completion_tokens': 1341, 'total_tokens': 2294}
+    [llm] call #34 chars=4472 max_tokens=2812 attempt=0
+    [llm] done 33.7s usage={'prompt_tokens': 920, 'completion_tokens': 1314, 'total_tokens': 2234}
+[S5a] Federated Learning | long | recursive_slrgp ok=True words=7672 refs=32
+[S5a] RUN Federated Learning | long | fixed_outline_no_reentry
+    [llm] call #35 chars=8319 max_tokens=5625 attempt=0
+    [llm] done 44.5s usage={'prompt_tokens': 1693, 'completion_tokens': 2206, 'total_tokens': 3899}
+    [llm] call #36 chars=8437 max_tokens=5625 attempt=0
+    [llm] done 53.0s usage={'prompt_tokens': 1729, 'completion_tokens': 2293, 'total_tokens': 4022}
+    [llm] call #37 chars=8553 max_tokens=5625 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #37 chars=8553 max_tokens=5625 attempt=1
+    [llm] done 46.5s usage={'prompt_tokens': 1781, 'completion_tokens': 2219, 'total_tokens': 4000}
+    [llm] call #38 chars=8503 max_tokens=5625 attempt=0
+    [llm] done 50.2s usage={'prompt_tokens': 1751, 'completion_tokens': 2191, 'total_tokens': 3942}
+    [llm] call #39 chars=32233 max_tokens=4195 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #39 chars=32233 max_tokens=4195 attempt=1
+    [llm] done 47.7s usage={'prompt_tokens': 7019, 'completion_tokens': 2074, 'total_tokens': 9093}
+[S5a] Federated Learning | long | fixed_outline_no_reentry ok=True words=7970 refs=36
+[S5a] RUN Federated Learning | long | flat_single_pass
+    [llm] call #40 chars=32564 max_tokens=22500 attempt=0
+    [llm] done 156.5s usage={'prompt_tokens': 6600, 'completion_tokens': 7238, 'total_tokens': 13838}
+    [llm] call #41 chars=32233 max_tokens=7084 attempt=0
+    [llm] done 90.8s usage={'prompt_tokens': 7071, 'completion_tokens': 4406, 'total_tokens': 11477}
+[S5a] Federated Learning | long | flat_single_pass ok=True words=8604 refs=40
+[S5a] RUN Efficient Inference for Large Language Models | short | recursive_slrgp
+    [llm] call #42 chars=4435 max_tokens=1500 attempt=0
+    [llm] done 20.6s usage={'prompt_tokens': 889, 'completion_tokens': 802, 'total_tokens': 1691}
+    [llm] call #43 chars=4445 max_tokens=1500 attempt=0
+    [llm] done 22.5s usage={'prompt_tokens': 931, 'completion_tokens': 934, 'total_tokens': 1865}
+[S5a] Efficient Inference for Large Language Models | short | recursive_slrgp ok=True words=1257 refs=8
+[S5a] RUN Efficient Inference for Large Language Models | short | fixed_outline_no_reentry
+    [llm] call #44 chars=4435 max_tokens=1500 attempt=0
+    [llm] done 19.9s usage={'prompt_tokens': 889, 'completion_tokens': 836, 'total_tokens': 1725}
+    [llm] call #45 chars=4445 max_tokens=1500 attempt=0
+    [llm] done 21.4s usage={'prompt_tokens': 931, 'completion_tokens': 858, 'total_tokens': 1789}
+[S5a] Efficient Inference for Large Language Models | short | fixed_outline_no_reentry ok=True words=1179 refs=8
+[S5a] RUN Efficient Inference for Large Language Models | short | flat_single_pass
+    [llm] call #46 chars=8441 max_tokens=3000 attempt=0
+    [llm] done 36.2s usage={'prompt_tokens': 1700, 'completion_tokens': 1520, 'total_tokens': 3220}
+[S5a] Efficient Inference for Large Language Models | short | flat_single_pass ok=True words=1053 refs=8
+[S5a] RUN Efficient Inference for Large Language Models | medium | recursive_slrgp
+    [llm] call #47 chars=3460 max_tokens=1500 attempt=0
+    [llm] done 19.8s usage={'prompt_tokens': 710, 'completion_tokens': 814, 'total_tokens': 1524}
+    [llm] call #48 chars=3363 max_tokens=1500 attempt=0
+    [llm] done 19.1s usage={'prompt_tokens': 688, 'completion_tokens': 770, 'total_tokens': 1458}
+    [llm] call #49 chars=3507 max_tokens=1500 attempt=0
+    [llm] done 20.3s usage={'prompt_tokens': 750, 'completion_tokens': 797, 'total_tokens': 1547}
+    [llm] call #50 chars=3525 max_tokens=1500 attempt=0
+    [llm] done 19.8s usage={'prompt_tokens': 734, 'completion_tokens': 823, 'total_tokens': 1557}
+    [llm] call #51 chars=3511 max_tokens=1500 attempt=0
+    [llm] done 21.6s usage={'prompt_tokens': 789, 'completion_tokens': 864, 'total_tokens': 1653}
+    [llm] call #52 chars=3395 max_tokens=1500 attempt=0
+    [llm] done 21.3s usage={'prompt_tokens': 776, 'completion_tokens': 850, 'total_tokens': 1626}
+[S5a] Efficient Inference for Large Language Models | medium | recursive_slrgp ok=True words=3530 refs=18
+[S5a] RUN Efficient Inference for Large Language Models | medium | fixed_outline_no_reentry
+    [llm] call #53 chars=6377 max_tokens=3000 attempt=0
+    [llm] done 32.5s usage={'prompt_tokens': 1274, 'completion_tokens': 1457, 'total_tokens': 2731}
+    [llm] call #54 chars=6586 max_tokens=3000 attempt=0
+    [llm] done 36.0s usage={'prompt_tokens': 1360, 'completion_tokens': 1653, 'total_tokens': 3013}
+    [llm] call #55 chars=6460 max_tokens=3000 attempt=0
+    [llm] done 35.7s usage={'prompt_tokens': 1441, 'completion_tokens': 1436, 'total_tokens': 2877}
+[S5a] Efficient Inference for Large Language Models | medium | fixed_outline_no_reentry ok=True words=3255 refs=18
+[S5a] RUN Efficient Inference for Large Language Models | medium | flat_single_pass
+    [llm] call #56 chars=18538 max_tokens=9000 attempt=0
+    [llm] done 80.9s usage={'prompt_tokens': 3831, 'completion_tokens': 3561, 'total_tokens': 7392}
+    [llm] call #57 chars=32532 max_tokens=2688 attempt=0
+    [llm] done 40.0s usage={'prompt_tokens': 7451, 'completion_tokens': 1534, 'total_tokens': 8985}
+[S5a] Efficient Inference for Large Language Models | medium | flat_single_pass ok=True words=3565 refs=29
+[S5a] RUN Efficient Inference for Large Language Models | long | recursive_slrgp
+    [llm] call #58 chars=4438 max_tokens=2812 attempt=0
+    [llm] done 31.0s usage={'prompt_tokens': 892, 'completion_tokens': 1456, 'total_tokens': 2348}
+    [llm] call #59 chars=4395 max_tokens=2812 attempt=0
+    [llm] done 33.4s usage={'prompt_tokens': 918, 'completion_tokens': 1469, 'total_tokens': 2387}
+    [llm] call #60 chars=4580 max_tokens=2812 attempt=0
+    [llm] done 31.0s usage={'prompt_tokens': 952, 'completion_tokens': 1325, 'total_tokens': 2277}
+    [llm] call #61 chars=4551 max_tokens=2812 attempt=0
+    [llm] done 31.2s usage={'prompt_tokens': 1019, 'completion_tokens': 1402, 'total_tokens': 2421}
+    [llm] call #62 chars=4406 max_tokens=2812 attempt=0
+    [llm] done 31.6s usage={'prompt_tokens': 1018, 'completion_tokens': 1382, 'total_tokens': 2400}
+    [llm] call #63 chars=4430 max_tokens=2812 attempt=0
+    [llm] done 34.2s usage={'prompt_tokens': 1012, 'completion_tokens': 1468, 'total_tokens': 2480}
+    [llm] call #64 chars=4497 max_tokens=2812 attempt=0
+    [llm] done 32.8s usage={'prompt_tokens': 1032, 'completion_tokens': 1439, 'total_tokens': 2471}
+    [llm] call #65 chars=4468 max_tokens=2812 attempt=0
+    [llm] done 27.5s usage={'prompt_tokens': 980, 'completion_tokens': 1250, 'total_tokens': 2230}
+[S5a] Efficient Inference for Large Language Models | long | recursive_slrgp ok=True words=7907 refs=32
+[S5a] RUN Efficient Inference for Large Language Models | long | fixed_outline_no_reentry
+    [llm] call #66 chars=8385 max_tokens=5625 attempt=0
+    [llm] done 47.4s usage={'prompt_tokens': 1684, 'completion_tokens': 2158, 'total_tokens': 3842}
+    [llm] call #67 chars=8683 max_tokens=5625 attempt=0
+    [llm] done 49.5s usage={'prompt_tokens': 1845, 'completion_tokens': 2382, 'total_tokens': 4227}
+    [llm] call #68 chars=8388 max_tokens=5625 attempt=0
+    [llm] error RemoteDisconnected: Remote end closed connection without response
+    [llm] call #68 chars=8388 max_tokens=5625 attempt=1
+    [llm] done 44.0s usage={'prompt_tokens': 1904, 'completion_tokens': 2085, 'total_tokens': 3989}
+    [llm] call #69 chars=8517 max_tokens=5625 attempt=0
+    [llm] done 49.7s usage={'prompt_tokens': 1886, 'completion_tokens': 2373, 'total_tokens': 4259}
+    [llm] call #70 chars=32532 max_tokens=4413 attempt=0
+    [llm] done 56.1s usage={'prompt_tokens': 7404, 'completion_tokens': 2384, 'total_tokens': 9788}
+[S5a] Efficient Inference for Large Language Models | long | fixed_outline_no_reentry ok=True words=8050 refs=37
+[S5a] RUN Efficient Inference for Large Language Models | long | flat_single_pass
+    [llm] call #71 chars=32644 max_tokens=22500 attempt=0
+    [llm] done 152.3s usage={'prompt_tokens': 6953, 'completion_tokens': 6648, 'total_tokens': 13601}
+    [llm] call #72 chars=32532 max_tokens=7975 attempt=0
+    [llm] done 107.1s usage={'prompt_tokens': 7337, 'completion_tokens': 4953, 'total_tokens': 12290}
+[S5a] Efficient Inference for Large Language Models | long | flat_single_pass ok=True words=8634 refs=40
+[S5a] summary n_ok=54/54 usage={'n_calls': 72, 'prompt_tokens': 144223, 'completion_tokens': 128692}
+wrote results/s5/s5a_length_20260713_full/s5a_design_audit.json; eligible=53/54; issues=1
+S5a blind scoring: 162 calls remaining
+review_001 gpt55 error=False
+review_001 gemini31pro error=False
+review_001 sonnet5 error=False
+review_002 gpt55 error=False
+review_002 gemini31pro error=False
+review_002 sonnet5 error=False
+review_003 gpt55 error=False
+review_003 gemini31pro error=False
+review_003 sonnet5 error=False
+review_004 gpt55 error=False
+review_004 gemini31pro error=False
+review_004 sonnet5 error=False
+review_005 gpt55 error=False
+review_005 gemini31pro error=False
+review_005 sonnet5 error=False
+review_006 gpt55 error=False
+review_006 gemini31pro error=False
+review_006 sonnet5 error=False
+review_007 gpt55 error=False
+review_007 gemini31pro error=False
+review_007 sonnet5 error=False
+review_008 gpt55 error=False
+review_008 gemini31pro error=False
+review_008 sonnet5 error=False
+review_009 gpt55 error=False
+review_009 gemini31pro error=False
+review_009 sonnet5 error=False
+review_010 gpt55 error=False
+review_010 gemini31pro error=False
+review_010 sonnet5 error=False
+review_011 gpt55 error=False
+review_011 gemini31pro error=False
+review_011 sonnet5 error=False
+review_012 gpt55 error=False
+review_012 gemini31pro error=False
+review_012 sonnet5 error=False
+review_013 gpt55 error=False
+review_013 gemini31pro error=False
+review_013 sonnet5 error=False
+review_014 gpt55 error=False
+review_014 gemini31pro error=False
+review_014 sonnet5 error=False
+review_015 gpt55 error=False
+review_015 gemini31pro error=False
+review_015 sonnet5 error=False
+review_016 gpt55 error=False
+review_016 gemini31pro error=False
+review_016 sonnet5 error=False
+review_017 gpt55 error=False
+review_017 gemini31pro error=False
+review_017 sonnet5 error=False
+review_018 gpt55 error=False
+S5a blind scoring: 110 calls remaining
+review_018 gemini31pro error=False
+review_018 sonnet5 error=False
+review_019 gpt55 error=False
+review_019 gemini31pro error=False
+review_019 sonnet5 error=False
+review_020 gpt55 error=False
+review_020 gemini31pro error=False
+review_020 sonnet5 error=False
+review_021 gpt55 error=False
+review_021 gemini31pro error=False
+review_021 sonnet5 error=False
+review_022 gpt55 error=False
+review_022 gemini31pro error=False
+review_022 sonnet5 error=False
+review_023 gpt55 error=False
+review_023 gemini31pro error=False
+review_023 sonnet5 error=False
+review_024 gpt55 error=False
+review_024 gemini31pro error=False
+review_024 sonnet5 error=False
+review_025 gpt55 error=False
+review_025 gemini31pro error=False
+review_025 sonnet5 error=False
+review_026 gpt55 error=False
+review_026 gemini31pro error=False
+review_026 sonnet5 error=False
+review_027 gpt55 error=False
+review_027 gemini31pro error=False
+review_027 sonnet5 error=False
+review_028 gpt55 error=False
+review_028 gemini31pro error=False
+review_028 sonnet5 error=False
+review_029 gpt55 error=False
+review_029 gemini31pro error=False
+review_029 sonnet5 error=False
+review_030 gpt55 error=False
+review_030 gemini31pro error=False
+review_030 sonnet5 error=False
+review_031 gpt55 error=False
+review_031 gemini31pro error=False
+review_031 sonnet5 error=False
+review_032 gpt55 error=False
+review_032 gemini31pro error=False
+review_032 sonnet5 error=False
+review_033 gpt55 error=False
+review_033 gemini31pro error=False
+review_033 sonnet5 error=False
+review_034 gpt55 error=False
+review_034 gemini31pro error=False
+review_034 sonnet5 error=False
+review_035 gpt55 error=False
+review_035 gemini31pro error=False
+review_035 sonnet5 error=False
+review_036 gpt55 error=False
+review_036 gemini31pro error=False
+review_036 sonnet5 error=False
+review_037 gpt55 error=False
+review_037 gemini31pro error=False
+review_037 sonnet5 error=False
+review_038 gpt55 error=False
+review_038 gemini31pro error=True
+review_038 sonnet5 error=True
+review_039 gpt55 error=True
+review_039 gemini31pro error=True
+review_039 sonnet5 error=True
+review_040 gpt55 error=True
+S5a blind scoring: 50 calls remaining
+review_038 gemini31pro error=False
+review_038 sonnet5 error=False
+review_039 gpt55 error=False
+review_039 gemini31pro error=False
+review_039 sonnet5 error=False
+review_040 gpt55 error=False
+review_040 gemini31pro error=False
+review_040 sonnet5 error=False
+review_041 gpt55 error=False
+review_041 gemini31pro error=False
+review_041 sonnet5 error=False
+review_042 gpt55 error=False
+review_042 gemini31pro error=False
+review_042 sonnet5 error=False
+review_043 gpt55 error=False
+review_043 gemini31pro error=False
+review_043 sonnet5 error=False
+review_044 gpt55 error=False
+review_044 gemini31pro error=False
+review_044 sonnet5 error=False
+review_045 gpt55 error=False
+review_045 gemini31pro error=False
+review_045 sonnet5 error=False
+review_046 gpt55 error=False
+review_046 gemini31pro error=False
+review_046 sonnet5 error=False
+review_047 gpt55 error=False
+review_047 gemini31pro error=False
+review_047 sonnet5 error=False
+review_048 gpt55 error=False
+review_048 gemini31pro error=False
+review_048 sonnet5 error=False
+review_049 gpt55 error=False
+review_049 gemini31pro error=False
+review_049 sonnet5 error=False
+review_050 gpt55 error=False
+review_050 gemini31pro error=False
+review_050 sonnet5 error=False
+review_051 gpt55 error=False
+review_051 gemini31pro error=False
+review_051 sonnet5 error=False
+review_052 gpt55 error=False
+review_052 gemini31pro error=False
+review_052 sonnet5 error=False
+review_053 gpt55 error=False
+review_053 gemini31pro error=False
+review_053 sonnet5 error=False
+review_054 gpt55 error=False
+review_054 gemini31pro error=False
+review_054 sonnet5 error=False
+wrote results/s5/s5a_length_20260713_full/S5A_LENGTH_STATS.json and results/s5/s5a_length_20260713_full/S5A_LENGTH_STATS.md

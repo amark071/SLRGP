@@ -1,0 +1,70 @@
+diff --git a/code/src/database.py b/code/src/database.py
+index 67c9be8..6a809ab 100644
+--- a/code/src/database.py
++++ b/code/src/database.py
+@@ -23,10 +23,13 @@ class database():
+         
+         self.embedding_model = SentenceTransformer(embedding_model, trust_remote_code=True)
+ 
+-        self.embedding_model.to(torch.device('cuda'))
++        requested_device = os.environ.get("S3_EMBEDDING_DEVICE")
++        device = requested_device or ("cuda" if torch.cuda.is_available() else "cpu")
++        self.embedding_model.to(torch.device(device))
+ 
+         self.db = TinyDB(f'{db_path}/arxiv_paper_db_with_cc.json')
+         self.table = self.db.table('cs_paper_info')
++        self.publication_cutoff = os.environ.get("S3_PUBLICATION_CUTOFF")
+ 
+         self.User = Query()
+         self.token_counter = tokenCounter()
+@@ -75,7 +78,16 @@ class database():
+ 
+     def get_ids_from_query(self, query, num,  shuffle = False):
+         q = self.get_embeddings([query])[0]
+-        return self.search(q, top_k=num)
++        ids = self.search(q, top_k=max(num * 3, num))
++        if self.publication_cutoff:
++            records = self.get_paper_info_from_ids(ids)
++            allowed = {
++                record["id"]
++                for record in records
++                if (record.get("date") or "9999-12-31")[:10] <= self.publication_cutoff
++            }
++            ids = [doc_id for doc_id in ids if doc_id in allowed]
++        return ids[:num]
+ 
+     def get_paper_info_from_ids(self, ids):
+         result = self.table.search(self.User.id.one_of(ids))
+@@ -88,10 +100,13 @@ class database_survey():
+         
+         self.embedding_model = SentenceTransformer(embedding_model, trust_remote_code=True)
+ 
+-        self.embedding_model.to(torch.device('cuda'))
++        requested_device = os.environ.get("S3_EMBEDDING_DEVICE")
++        device = requested_device or ("cuda" if torch.cuda.is_available() else "cpu")
++        self.embedding_model.to(torch.device(device))
+ 
+         self.db = TinyDB(f'{db_path}/surveys_arxiv_paper_db.json')
+         self.table = self.db.table('survey_paper_info')
++        self.publication_cutoff = os.environ.get("S3_PUBLICATION_CUTOFF")
+ 
+         self.User = Query()
+         self.token_counter = tokenCounter()
+@@ -140,7 +155,16 @@ class database_survey():
+ 
+     def get_ids_from_query(self, query, num,  shuffle = False):
+         q = self.get_embeddings([query])[0]
+-        return self.search(q, top_k=num)
++        ids = self.search(q, top_k=max(num * 3, num))
++        if self.publication_cutoff:
++            records = self.get_paper_info_from_ids(ids)
++            allowed = {
++                record["id"]
++                for record in records
++                if (record.get("date") or "9999-12-31")[:10] <= self.publication_cutoff
++            }
++            ids = [doc_id for doc_id in ids if doc_id in allowed]
++        return ids[:num]
+     
+     def get_paper_info_from_ids(self, ids):
+         result = self.table.search(self.User.id.one_of(ids))

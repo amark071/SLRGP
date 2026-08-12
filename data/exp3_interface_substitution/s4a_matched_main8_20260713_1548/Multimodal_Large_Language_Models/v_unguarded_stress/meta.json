@@ -1,0 +1,57 @@
+{
+  "topic": "Multimodal Large Language Models",
+  "arm": "v_unguarded_stress",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "bundle_hash": "d041b2b7578411c9b04ff5e30fd184d20f2454aad4d90cd0e5cf142295bb0e41",
+  "started_at": "2026-07-13 16:08:46",
+  "target_total_words": 1000,
+  "groups": [
+    {
+      "name": "Injected invalid unbalanced organization",
+      "n": 8
+    }
+  ],
+  "group_size_vector": [
+    8
+  ],
+  "refs": [
+    "arxiv_2209.06794",
+    "arxiv_2210.09263",
+    "arxiv_2309.10020",
+    "arxiv_2402.12451",
+    "arxiv_2403.08773",
+    "arxiv_2408.06610",
+    "arxiv_2410.05608",
+    "ss_478472"
+  ],
+  "n_refs": 8,
+  "word_count": 890,
+  "written_citation_ids": [
+    "arxiv_2309.10020",
+    "arxiv_2210.09263",
+    "arxiv_2209.06794",
+    "arxiv_2402.12451",
+    "arxiv_2410.05608",
+    "ss_478472",
+    "arxiv_2408.06610",
+    "arxiv_2403.08773"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2209.06794",
+    "arxiv_2210.09263",
+    "arxiv_2309.10020",
+    "arxiv_2402.12451",
+    "arxiv_2403.08773",
+    "arxiv_2408.06610",
+    "arxiv_2410.05608",
+    "ss_478472"
+  ],
+  "primary_length_eligible": true,
+  "elapsed_sec": 28.4,
+  "llm_usage_delta": {
+    "n_calls": 1,
+    "prompt_tokens": 1588,
+    "completion_tokens": 1358
+  }
+}

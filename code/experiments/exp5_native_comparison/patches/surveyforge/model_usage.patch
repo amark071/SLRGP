@@ -1,0 +1,80 @@
+diff --git a/code/src/model.py b/code/src/model.py
+index 66def7a..b634bbb 100644
+--- a/code/src/model.py
++++ b/code/src/model.py
+@@ -9,6 +9,7 @@ import transformers
+ import concurrent.futures
+ from openai import OpenAI
+ import time
++import os
+ 
+ class APIModel:
+ 
+@@ -16,6 +17,20 @@ class APIModel:
+         self.__api_key = api_key
+         self.__api_url = api_url
+         self.model = model
++        self.timeout = float(os.environ.get("S3_API_TIMEOUT_SECONDS", "180"))
++        self.usage_log = os.environ.get("S3_USAGE_LOG")
++
++    def __record_usage(self, response_body):
++        if not self.usage_log:
++            return
++        event = {
++            "model": self.model,
++            "usage": response_body.get("usage") or {},
++            "system": os.environ.get("S3_SYSTEM_ID", "surveyforge"),
++            "topic_id": os.environ.get("S3_TOPIC_ID"),
++        }
++        with open(self.usage_log, "a", encoding="utf-8") as handle:
++            handle.write(json.dumps(event, ensure_ascii=False) + "\n")
+         
+     def __req(self, text, temperature, max_try = 10):
+         if "deepseek" in self.model:
+@@ -40,8 +55,8 @@ class APIModel:
+             url = f"{self.__api_url}"
+             pay_load_dict = {"model": f"{self.model}","messages": [{
+                     "role": "user",
+-                    "temperature":temperature,
+-                    "content": f"{text}"}]}
++                    "content": f"{text}"}],
++                    "temperature": temperature}
+ 
+             payload = json.dumps(pay_load_dict)
+             headers = {
+@@ -51,16 +66,21 @@ class APIModel:
+             'Content-Type': 'application/json'
+             }
+             try:
+-                response = requests.request("POST", url, headers=headers, data=payload)
+-                return json.loads(response.text)['choices'][0]['message']['content']
++                response = requests.request("POST", url, headers=headers, data=payload, timeout=self.timeout)
++                response.raise_for_status()
++                body = response.json()
++                self.__record_usage(body)
++                return body['choices'][0]['message']['content']
+             except Exception as e:
+                 print(e)
+                 time.sleep(5)
+                 for _ in range(max_try):
+                     try:
+-                        response = requests.request("POST", url, headers=headers, data=payload)
+-                        print(json.loads(response.text))
+-                        return json.loads(response.text)['choices'][0]['message']['content']
++                        response = requests.request("POST", url, headers=headers, data=payload, timeout=self.timeout)
++                        response.raise_for_status()
++                        body = response.json()
++                        self.__record_usage(body)
++                        return body['choices'][0]['message']['content']
+                     except Exception as e:
+                         print(e)
+                         pass
+@@ -94,7 +114,7 @@ class APIModel:
+         return response
+ 
+     def batch_chat(self, text_batch, temperature=0):
+-        max_threads = 100  # limit max concurrent threads using model API
++        max_threads = int(os.environ.get("S3_API_MAX_THREADS", "3"))
+         res_l = ['No response'] * len(text_batch)
+ 
+         def chat_wrapper(text, temp, res_list, idx):

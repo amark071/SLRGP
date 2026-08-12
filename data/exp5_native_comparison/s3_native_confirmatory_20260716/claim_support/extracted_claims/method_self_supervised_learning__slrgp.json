@@ -1,0 +1,125 @@
+{
+  "topic_id": "method_self_supervised_learning",
+  "system": "slrgp",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "One of the earliest and most comprehensive taxonomic efforts is provided by [arxiv_2006.08218], which organizes SSL approaches into generative and contrastive paradigms, motivating the shift away from supervised learning by highlighting its dependence on manual labels and susceptibility to adversarial attacks",
+      "citation_markers": [
+        "[arxiv_2006.08218]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "arxiv_2110.09327] offers a more pedagogically structured introduction to SSL representation learning, emphasizing that these methods have advanced rapidly to the point where their performance approaches or even surpasses fully supervised counterparts on several benchmarks, while simultaneously alleviating the annotation bottleneck that constrains practical deployment of deep learning systems",
+      "citation_markers": [
+        "[arxiv_2110.09327]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Early systematic efforts, such as [arxiv_1901.09005], revisited a broad range of pretext tasks for visual representation learning, demonstrating that architectural choices and training protocols exert substantial influence on downstream performance—often as much as the choice of pretext task itself",
+      "citation_markers": [
+        "[arxiv_1901.09005]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Subsequent research turned toward contrastive methods, which had emerged as particularly powerful. [arxiv_2103.14005] conducted a detailed analysis of contrastive self-supervised pipelines, examining how different training procedures and dataset characteristics interact to shape the quality of learned representations, while [arxiv_2012.00868] sought to uncover why contrastive instance learning performs so well, isolating factors that contribute to strong empirical results",
+      "citation_markers": [
+        "[arxiv_2103.14005]",
+        "[arxiv_2012.00868]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Momentum Contrast (MoCo) [arxiv_1911.05722] reformulates contrastive learning as dictionary look-up, maintaining a large, consistent queue of negative samples updated via a momentum encoder, while SimCLR [arxiv_2002.05709] demonstrates that a simplified pipeline—relying on strong data augmentation and a projection head—can achieve competitive performance without a memory bank or specialized architecture",
+      "citation_markers": [
+        "[arxiv_1911.05722]",
+        "[arxiv_2002.05709]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "arxiv_2110.02473] provides a formal account of contrastive learning's superiority, demonstrating under linear representation settings that contrastive objectives provably outperform standard autoencoders, offering a principled explanation for the empirical gains widely observed in the literature",
+      "citation_markers": [
+        "[arxiv_2110.02473]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "arxiv_2209.06235] further proves necessary and sufficient conditions for SSL representations to support accurate probing on any task invariant to the chosen data augmentations, thereby grounding empirical design choices in formal guarantees",
+      "citation_markers": [
+        "[arxiv_2209.06235]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "arxiv_2203.07004] argues that contrastive learning between different views approximately recovers the minimal sufficient representation—the shared information across views—and examines the implications of this approximation for downstream utility",
+      "citation_markers": [
+        "[arxiv_2203.07004]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "As [arxiv_2208.00449] observes, BeiT requires a computationally expensive pre-pretraining stage to construct discrete codebooks for representing masked patches, whereas MAE avoids this requirement by reconstructing raw pixel values directly",
+      "citation_markers": [
+        "[arxiv_2208.00449]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "arxiv_2212.08277] proposes sequential adversarial masking, which progressively selects harder regions to occlude, yielding stronger learned representations than ad hoc strategies",
+      "citation_markers": [
+        "[arxiv_2212.08277]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "self-supervised ViTs demonstrated that standard convolutional network training protocols do not transfer directly to ViT architectures and that careful tuning of hyperparameters, batch sizes, and augmentation strategies is essential for stable and performant self-supervised pretraining [arxiv_2104.02057",
+      "citation_markers": [
+        "[arxiv_2104.02057]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "arxiv_2010.15464] highlights that while numerous pretext-task-based and contrastive methods have been proposed for video representation learning, inconsistent experimental settings make direct comparison difficult, motivating a systematic evaluation of good practices",
+      "citation_markers": [
+        "[arxiv_2010.15464]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6039,
+    "completion_tokens": 1121,
+    "total_tokens": 7160,
+    "prompt_tokens_details": {
+      "cached_tokens": 5888
+    }
+  }
+}

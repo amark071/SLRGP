@@ -1,0 +1,127 @@
+{
+  "topic_id": "method_self_supervised_learning",
+  "system": "autosurvey",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The remarkable success of deep learning over the past decade has been fundamentally underpinned by the availability of large-scale, carefully annotated datasets",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "For natural images, annotating millions of samples with class labels, bounding boxes, or pixel-wise segmentation masks demands enormous investments of time and expert labor [2]. The challenge is magnified considerably for video data, where an annotator must watch entire recordings end-to-end before providing a single label, making large-scale annotation economically infeasible for many organizations [3; 4",
+      "citation_markers": [
+        "[2]",
+        "[3; 4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Self-supervised learning (SSL) has emerged as a compelling paradigm that exploits this wealth of unlabeled data by constructing supervisory signals directly from the intrinsic structure of the data itself, without requiring any human annotation [14; 15",
+      "citation_markers": [
+        "[14; 15]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Self-supervised pre-trained representations have been shown to dramatically reduce the need for labeled examples in downstream tasks [16; 17], to improve annotation efficiency when human labeling is still required [2], and to serve as strong initializations for fine-tuning on specialized domains where only small labeled datasets exist [18; 19",
+      "citation_markers": [
+        "[16; 17]",
+        "[2]",
+        "[18; 19]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The introduction of word embedding methods such as Word2Vec and GloVe established that rich semantic relationships between words could be captured by training shallow neural networks on prediction tasks derived from raw text—predicting surrounding context words from a target word (skip-gram) or predicting a word from its context (continuous bag-of-words",
+      "citation_markers": [
+        ""
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "BERT in particular popularized the masked language modeling (MLM) objective, in which a fraction of input tokens are masked at random and the network is trained to predict them from surrounding context",
+      "citation_markers": [
+        "[24]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "These methods dramatically narrowed the gap between self-supervised and fully supervised pretraining on ImageNet, and demonstrated strong transfer to a wide range of downstream tasks [25",
+      "citation_markers": [
+        "[25]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "In speech processing, a series of increasingly powerful self-supervised models—from contrastive predictive coding approaches to wav2vec and HuBERT—demonstrated that speech representations learned without transcription labels could achieve competitive performance on automatic speech recognition and other downstream tasks [27",
+      "citation_markers": [
+        "[27]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The most recent phase in the evolution of self-supervised learning is characterized by scale and unification. Large-scale pretraining on hundreds of millions to billions of unlabeled examples, combined with increasingly powerful architectures such as vision transformers, has produced models whose learned representations generalize remarkably well across diverse tasks and domains [15",
+      "citation_markers": [
+        "[15]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "such as self-supervised multimodal versatile networks learn joint representations across visual, audio, and language streams by leveraging unlabeled video data [72]. Large-scale multi-modal pretraining datasets such as M5Product, spanning image, text, table, video, and audio modalities, push the boundaries of what cross-modal self-supervised learning can achieve at scale [73",
+      "citation_markers": [
+        "[72]",
+        "[73]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "The standard self-supervised learning (SSL) pipeline follows a two-stage paradigm that has become the dominant framework for leveraging unlabeled data to learn transferable representations",
+      "citation_markers": [
+        ""
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The standard evaluation paradigm involves two complementary protocols: linear evaluation, where a linear classifier is trained on top of frozen self-supervised features, and full fine-tuning, where the entire network is updated on the labeled downstream dataset",
+      "citation_markers": [
+        ""
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 67345,
+    "completion_tokens": 983,
+    "total_tokens": 68328,
+    "prompt_tokens_details": {
+      "cached_tokens": 66816
+    }
+  }
+}

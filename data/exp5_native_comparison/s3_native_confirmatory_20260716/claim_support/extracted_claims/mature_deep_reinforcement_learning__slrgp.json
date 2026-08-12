@@ -1,0 +1,125 @@
+{
+  "topic_id": "mature_deep_reinforcement_learning",
+  "system": "slrgp",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Arulkumaran et al. offer an accessible entry point by situating deep RL as a transformative development within artificial intelligence, arguing that deep learning is enabling reinforcement learning to scale to previously intractable problems, such as learning control policies directly from raw pixel inputs [arxiv_1708.05866].",
+      "citation_markers": [
+        "[arxiv_1708.05866]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Li produces two extensive overview treatments that share a common organizational framework built around six core elements, six important mechanisms, and twelve applications [arxiv_1701.07274; arxiv_1810.06339].",
+      "citation_markers": [
+        "[arxiv_1701.07274; arxiv_1810.06339]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Mousavi et al. survey the intersection of deep learning and reinforcement learning, highlighting how deep representations have enabled agents to learn useful features for decision-making [arxiv_1806.08894].",
+      "citation_markers": [
+        "[arxiv_1806.08894]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "The extension of deep RL to multiagent environments introduces substantial additional complexity, as the future rewards of any agent depend on the joint actions of all participants [arxiv_2106.15691].",
+      "citation_markers": [
+        "[arxiv_2106.15691]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Agent modeling [arxiv_1907.09597] and communication mechanisms such as message-dropout [arxiv_1902.06527] represent complementary strategies for improving coordination in multiagent systems.",
+      "citation_markers": [
+        "[arxiv_1907.09597]",
+        "[arxiv_1902.06527]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "A dominant design paradigm in cooperative settings is centralized training with decentralized execution (CTDE), which permits agents to share global information during training while acting on local observations at deployment.",
+      "citation_markers": [
+        "[arxiv_1907.09597]",
+        "[arxiv_1902.06527]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Training agents from scratch in each new environment remains computationally prohibitive [arxiv_1811.12560; arxiv_1708.05866], and transfer learning offers a principled solution by leveraging knowledge acquired in source tasks to accelerate learning in related target tasks [ss_475943; arxiv_2009.07888].",
+      "citation_markers": [
+        "[arxiv_1811.12560; arxiv_1708.05866]",
+        "[ss_475943; arxiv_2009.07888]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Policy distillation constitutes a further mechanism for knowledge transfer, compressing larger teacher networks into smaller student networks while preserving performance.",
+      "citation_markers": [
+        "[ss_475943; arxiv_2009.07888]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Undirected approaches, such as ε-greedy policies or Gaussian noise injection, are widely used in practice [arxiv_1812.05551], yet they are known to fail in off-policy continuous control settings [arxiv_2210.00293].",
+      "citation_markers": [
+        "[arxiv_1812.05551]",
+        "[arxiv_2210.00293]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Bayesian and distributional approaches offer a more principled resolution to the exploration–exploitation dilemma. Tang and Agrawal [arxiv_1805.01907] propose a distributional RL framework that conceptually unifies several prior exploration methods, while Osband et al. [arxiv_1703.07608] demonstrate that randomized value functions can guide deep exploration in a statistically efficient manner.",
+      "citation_markers": [
+        "[arxiv_1805.01907]",
+        "[arxiv_1703.07608]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Mnih et al. [arxiv_1602.01783] propose asynchronous gradient descent as a lightweight yet effective training framework, demonstrating that parallel actor-learners exert a stabilizing effect on training across multiple standard RL algorithms.",
+      "citation_markers": [
+        "[arxiv_1602.01783]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Miao et al. [arxiv_2106.02229] demonstrate that differentiable architecture search techniques, specifically adaptations of DARTS, can be applied to RL and yield architectures achieving up to 250% of the performance of manually designed counterparts across both discrete and continuous action spaces.",
+      "citation_markers": [
+        "[arxiv_2106.02229]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5605,
+    "completion_tokens": 1106,
+    "total_tokens": 6711
+  }
+}

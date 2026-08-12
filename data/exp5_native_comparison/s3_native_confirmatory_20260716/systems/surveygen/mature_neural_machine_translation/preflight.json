@@ -1,0 +1,31 @@
+{
+  "system_id": "surveygen",
+  "checked_at": "2026-07-16T03:18:12Z",
+  "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+  "source_clean": true,
+  "entrypoint_present": true,
+  "dependencies_present": true,
+  "native_topic_to_survey": true,
+  "common_cutoff_supported": true,
+  "usage_logging_supported": true,
+  "eligible": true,
+  "issues": [],
+  "details": {
+    "missing_scripts": [],
+    "driver_path": "<package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py",
+    "bge_model": "<package-root>/work/s3_native/assets/surveygen/models/bge-large-en",
+    "chat_base_url": "http://127.0.0.1:18080/v1",
+    "retrieval_services": [
+      "Semantic Scholar",
+      "OpenAlex"
+    ],
+    "git_status_lines": [
+      " M Code/outline_generation.py",
+      " M Code/paper_reranking.py",
+      " M Code/paper_retrieval.py",
+      " M Code/quality_signal_augmentation.py",
+      " M Code/survey_generation.py",
+      "?? Code/__pycache__/"
+    ]
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "arxiv_2305.13144": {
+    "doc_id": "arxiv_2305.13144",
+    "title": "Response Length Perception and Sequence Scheduling: An LLM-Empowered LLM\n  Inference Pipeline",
+    "year": 2023,
+    "venue": "cs.CL",
+    "abstract": "Large language models (LLMs) have revolutionized the field of AI, demonstrating unprecedented capacity across various tasks. However, the inference process for LLMs comes with significant computational costs. In this paper, we propose an efficient LLM inference pipeline that harnesses the power of LLMs. Our approach begins by tapping into the potential of LLMs to accurately perceive and predict the response length with minimal overhead. By leveraging this information, we introduce an efficient sequence scheduling technique that groups queries with similar response lengths into micro-batches. We evaluate our approach on real-world instruction datasets using the LLaMA-based model, and our results demonstrate an impressive 86% improvement in inference throughput without compromising effectiveness. Notably, our method is orthogonal to other inference acceleration techniques, making it a valuable addition to many existing toolkits (e.g., FlashAttention, Quantization) for LLM inference."
+  },
+  "arxiv_2309.08168": {
+    "doc_id": "arxiv_2309.08168",
+    "title": "Draft & Verify: Lossless Large Language Model Acceleration via\n  Self-Speculative Decoding",
+    "year": 2025,
+    "venue": "cs.CL",
+    "abstract": "We present a novel inference scheme, self-speculative decoding, for accelerating Large Language Models (LLMs) without the need for an auxiliary model. This approach is characterized by a two-stage process: drafting and verification. The drafting stage generates draft tokens at a slightly lower quality but more quickly, which is achieved by selectively skipping certain intermediate layers during drafting. Subsequently, the verification stage employs the original LLM to validate those draft output tokens in one forward pass. This process ensures the final output remains identical to that produced by the unaltered LLM. Moreover, the proposed method requires no additional neural network training and no extra memory footprint, making it a plug-and-play and cost-effective solution for inference acceleration. Benchmarks with LLaMA-2 and its variants demonstrated a speedup up to 1.99$\\times$."
+  },
+  "arxiv_2310.12072": {
+    "doc_id": "arxiv_2310.12072",
+    "title": "SPEED: Speculative Pipelined Execution for Efficient Decoding",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Generative Large Language Models (LLMs) based on the Transformer architecture have recently emerged as a dominant foundation model for a wide range of Natural Language Processing tasks. Nevertheless, their application in real-time scenarios has been highly restricted due to the significant inference latency associated with these models. This is particularly pronounced due to the autoregressive nature of generative LLM inference, where tokens are generated sequentially since each token depends on all previous output tokens. It is therefore challenging to achieve any token-level parallelism, making inference extremely memory-bound. In this work, we propose SPEED, which improves inference efficiency by speculatively executing multiple future tokens in parallel with the current token using predicted values based on early-layer hidden states. For Transformer decoders that employ parameter sharing, the memory operations for the tokens executing in parallel can be amortized, which allows us to accelerate generative LLM inference. We demonstrate the efficiency of our method in terms of latency reduction relative to model accuracy and demonstrate how speculation allows for training deeper d"
+  },
+  "arxiv_2311.00502": {
+    "doc_id": "arxiv_2311.00502",
+    "title": "Efficient LLM Inference on CPUs",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Large language models (LLMs) have demonstrated remarkable performance and tremendous potential across a wide range of tasks. However, deploying these models has been challenging due to the astronomical amount of model parameters, which requires a demand for large memory capacity and high memory bandwidth. In this paper, we propose an effective approach that can make the deployment of LLMs more efficiently. We support an automatic INT4 weight-only quantization flow and design a special LLM runtime with highly-optimized kernels to accelerate the LLM inference on CPUs. We demonstrate the general applicability of our approach on popular LLMs including Llama2, Llama, GPT-NeoX, and showcase the extreme inference efficiency on CPUs. The code is publicly available at: https://github.com/intel/intel-extension-for-transformers."
+  },
+  "arxiv_2312.04916": {
+    "doc_id": "arxiv_2312.04916",
+    "title": "EE-LLM: Large-Scale Training and Inference of Early-Exit Large Language\n  Models with 3D Parallelism",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "We present EE-LLM, a framework for large-scale training and inference of early-exit large language models (LLMs). While recent works have shown preliminary evidence for the efficacy of early exiting in accelerating LLM inference, EE-LLM makes a foundational step towards scaling up early-exit LLMs by supporting their training and inference with massive 3D parallelism. Built upon Megatron-LM, EE-LLM implements a variety of algorithmic innovations and performance optimizations tailored to early exiting, including a lightweight method that facilitates backpropagation for the early-exit training objective with pipeline parallelism, techniques of leveraging idle resources in the original pipeline schedule for computation related to early-exit layers, and two approaches of early-exit inference that are compatible with KV caching for autoregressive generation. Our analytical and empirical study shows that EE-LLM achieves great training efficiency with negligible computational overhead compared to standard LLM training, as well as outstanding inference speedup without compromising output quality. To facilitate further research and adoption, we release EE-LLM at https://github.com/pan-x-c/EE"
+  },
+  "arxiv_2312.11462": {
+    "doc_id": "arxiv_2312.11462",
+    "title": "Cascade Speculative Drafting for Even Faster LLM Inference",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Introduced to enhance the efficiency of large language model (LLM) inference, speculative decoding operates by having a smaller model generate a draft. A larger target model then reviews this draft to align with its output, and any acceptance by the target model results in a reduction of the number of the target model runs, ultimately improving efficiency. However, the drafting process in speculative decoding includes slow autoregressive generation and allocates equal time to generating tokens, irrespective of their importance. These inefficiencies collectively contribute to the suboptimal performance of speculative decoding. To further improve LLM inference, we introduce Cascade Speculative Drafting (CS Drafting), a speculative execution algorithm that incorporates two types of cascades. The Vertical Cascade eliminates autoregressive generation from neural models, while the Horizontal Cascade optimizes time allocation in drafting for improved efficiency. Combining both cascades, CS Drafting achieves greater speedup compared to the baselines in our experiments, while preserving the same output distribution as the target model."
+  },
+  "arxiv_2401.02038": {
+    "doc_id": "arxiv_2401.02038",
+    "title": "Understanding LLMs: A Comprehensive Overview from Training to Inference",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "The introduction of ChatGPT has led to a significant increase in the utilization of Large Language Models (LLMs) for addressing downstream tasks. There's an increasing focus on cost-efficient training and deployment within this context. Low-cost training and deployment of LLMs represent the future development trend. This paper reviews the evolution of large language model training techniques and inference deployment technologies aligned with this emerging trend. The discussion on training includes various aspects, including data preprocessing, training architecture, pre-training tasks, parallel training, and relevant content related to model fine-tuning. On the inference side, the paper covers topics such as model compression, parallel computation, memory scheduling, and structural optimization. It also explores LLMs' utilization and provides insights into their future development."
+  },
+  "arxiv_2401.07851": {
+    "doc_id": "arxiv_2401.07851",
+    "title": "Unlocking Efficiency in Large Language Model Inference: A Comprehensive\n  Survey of Speculative Decoding",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "To mitigate the high inference latency stemming from autoregressive decoding in Large Language Models (LLMs), Speculative Decoding has emerged as a novel decoding paradigm for LLM inference. In each decoding step, this method first drafts several future tokens efficiently and then verifies them in parallel. Unlike autoregressive decoding, Speculative Decoding facilitates the simultaneous decoding of multiple tokens per step, thereby accelerating inference. This paper presents a comprehensive overview and analysis of this promising decoding paradigm. We begin by providing a formal definition and formulation of Speculative Decoding. Then, we organize in-depth discussions on its key facets, such as drafter selection and verification strategies. Furthermore, we present a comparative analysis of leading methods under third-party testing environments. We aim for this work to serve as a catalyst for further research on Speculative Decoding, ultimately contributing to more efficient LLM inference."
+  },
+  "arxiv_2401.08294": {
+    "doc_id": "arxiv_2401.08294",
+    "title": "Inferflow: an Efficient and Highly Configurable Inference Engine for\n  Large Language Models",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "We present Inferflow, an efficient and highly configurable inference engine for large language models (LLMs). With Inferflow, users can serve most of the common transformer models by simply modifying some lines in corresponding configuration files, without writing a single line of source code. Compared with most existing inference engines, Inferflow has some key features. First, by implementing a modular framework of atomic build-blocks and technologies, Inferflow is compositionally generalizable to new models. Second, 3.5-bit quantization is introduced in Inferflow as a tradeoff between 3-bit and 4-bit quantization. Third, hybrid model partitioning for multi-GPU inference is introduced in Inferflow to better balance inference speed and throughput than the existing partition-by-layer and partition-by-tensor strategies."
+  },
+  "arxiv_2401.10774": {
+    "doc_id": "arxiv_2401.10774",
+    "title": "Medusa: Simple LLM Inference Acceleration Framework with Multiple\n  Decoding Heads",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Large Language Models (LLMs) employ auto-regressive decoding that requires sequential computation, with each step reliant on the previous one's output. This creates a bottleneck as each step necessitates moving the full model parameters from High-Bandwidth Memory (HBM) to the accelerator's cache. While methods such as speculative decoding have been suggested to address this issue, their implementation is impeded by the challenges associated with acquiring and maintaining a separate draft model. In this paper, we present Medusa, an efficient method that augments LLM inference by adding extra decoding heads to predict multiple subsequent tokens in parallel. Using a tree-based attention mechanism, Medusa constructs multiple candidate continuations and verifies them simultaneously in each decoding step. By leveraging parallel processing, Medusa substantially reduces the number of decoding steps required. We present two levels of fine-tuning procedures for Medusa to meet the needs of different use cases: Medusa-1: Medusa is directly fine-tuned on top of a frozen backbone LLM, enabling lossless inference acceleration. Medusa-2: Medusa is fine-tuned together with the backbone LLM, enablin"
+  },
+  "arxiv_2402.09025": {
+    "doc_id": "arxiv_2402.09025",
+    "title": "SLEB: Streamlining LLMs through Redundancy Verification and Elimination\n  of Transformer Blocks",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Large language models (LLMs) have proven to be highly effective across various natural language processing tasks. However, their large number of parameters poses significant challenges for practical deployment. Pruning, a technique aimed at reducing the size and complexity of LLMs, offers a potential solution by removing redundant components from the network. Despite the promise of pruning, existing methods often struggle to achieve substantial end-to-end LLM inference speedup. In this paper, we introduce SLEB, a novel approach designed to streamline LLMs by eliminating redundant transformer blocks. We choose the transformer block as the fundamental unit for pruning, because LLMs exhibit block-level redundancy with high similarity between the outputs of neighboring blocks. This choice allows us to effectively enhance the processing speed of LLMs. Our experimental results demonstrate that SLEB outperforms previous LLM pruning methods in accelerating LLM inference while also maintaining superior perplexity and accuracy, making SLEB as a promising technique for enhancing the efficiency of LLMs. The code is available at: https://github.com/jiwonsong-dev/SLEB."
+  },
+  "arxiv_2402.09748": {
+    "doc_id": "arxiv_2402.09748",
+    "title": "Model Compression and Efficient Inference for Large Language Models: A\n  Survey",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Transformer based large language models have achieved tremendous success. However, the significant memory and computational costs incurred during the inference process make it challenging to deploy large models on resource-constrained devices. In this paper, we investigate compression and efficient inference methods for large language models from an algorithmic perspective. Regarding taxonomy, similar to smaller models, compression and acceleration algorithms for large language models can still be categorized into quantization, pruning, distillation, compact architecture design, dynamic networks. However, Large language models have two prominent characteristics compared to smaller models: (1) Most of compression algorithms require finetuning or even retraining the model after compression. The most notable aspect of large models is the very high cost associated with model finetuning or training. Therefore, many algorithms for large models, such as quantization and pruning, start to explore tuning-free algorithms. (2) Large models emphasize versatility and generalization rather than performance on a single task. Hence, many algorithms, such as knowledge distillation, focus on how to "
+  },
+  "arxiv_2402.11809": {
+    "doc_id": "arxiv_2402.11809",
+    "title": "Generation Meets Verification: Accelerating Large Language Model\n  Inference with Smart Parallel Auto-Correct Decoding",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "This research aims to accelerate the inference speed of large language models (LLMs) with billions of parameters. We propose \\textbf{S}mart \\textbf{P}arallel \\textbf{A}uto-\\textbf{C}orrect d\\textbf{E}coding (SPACE), an innovative approach designed for achieving lossless acceleration of LLMs. By integrating semi-autoregressive inference and speculative decoding capabilities, SPACE uniquely enables autoregressive LLMs to parallelize token generation and verification. This is realized through a specialized semi-autoregressive supervised fine-tuning process that equips existing LLMs with the ability to simultaneously predict multiple tokens. Additionally, an auto-correct decoding algorithm facilitates the simultaneous generation and verification of token sequences within a single model invocation. Through extensive experiments on a range of LLMs, SPACE has demonstrated inference speedup ranging from 2.7x-4.0x on HumanEval-X while maintaining output quality."
+  },
+  "arxiv_2402.15678": {
+    "doc_id": "arxiv_2402.15678",
+    "title": "Minions: Accelerating Large Language Model Inference with Aggregated\n  Speculative Execution",
+    "year": 2024,
+    "venue": "cs.DC",
+    "abstract": "Large language models (LLM) have recently attracted surging interest due to their outstanding capabilities across various domains. However, enabling efficient LLM inference is challenging due to its autoregressive decoding that generates tokens only one at a time. Although research works apply pruning or quantization to speed up LLM inference, they typically require fine-tuning the LLM, incurring significant time and economic costs. Meanwhile, speculative decoding has been proposed to use small speculative models (SSMs) to accelerate the inference of LLM. However, the low acceptance rate of SSM and the high verification cost of LLM prohibit further performance improvement of inference. In this paper, we propose Minions, an LLM inference system that accelerates LLM inference with a collective and adaptive speculative generation. Specifically, Minions proposes a majority-voted mechanism to leverage multiple SSMs to jointly speculate the outputs of LLM, which improves the inference performance without introducing prohibitive computation costs for LLM. To better trade off the number of tokens speculated from SSM and the verification cost of LLM, Minions proposes an adaptive mechanism t"
+  },
+  "arxiv_2402.16363": {
+    "doc_id": "arxiv_2402.16363",
+    "title": "LLM Inference Unveiled: Survey and Roofline Model Insights",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "The field of efficient Large Language Model (LLM) inference is rapidly evolving, presenting a unique blend of opportunities and challenges. Although the field has expanded and is vibrant, there hasn't been a concise framework that analyzes the various methods of LLM Inference to provide a clear understanding of this domain. Our survey stands out from traditional literature reviews by not only summarizing the current state of research but also by introducing a framework based on roofline model for systematic analysis of LLM inference techniques. This framework identifies the bottlenecks when deploying LLMs on hardware devices and provides a clear understanding of practical problems, such as why LLMs are memory-bound, how much memory and computation they need, and how to choose the right hardware. We systematically collate the latest advancements in efficient LLM inference, covering crucial areas such as model compression (e.g., Knowledge Distillation and Quantization), algorithm improvements (e.g., Early Exit and Mixture-of-Expert), and both hardware and system-level enhancements. Our survey stands out by analyzing these methods with roofline model, helping us understand their impac"
+  },
+  "arxiv_2403.17312": {
+    "doc_id": "arxiv_2403.17312",
+    "title": "ALISA: Accelerating Large Language Model Inference via Sparsity-Aware KV\n  Caching",
+    "year": 2024,
+    "venue": "cs.AI",
+    "abstract": "The Transformer architecture has significantly advanced natural language processing (NLP) and has been foundational in developing large language models (LLMs) such as LLaMA and OPT, which have come to dominate a broad range of NLP tasks. Despite their superior accuracy, LLMs present unique challenges in practical inference, concerning the compute and memory-intensive nature. Thanks to the autoregressive characteristic of LLM inference, KV caching for the attention layers in Transformers can effectively accelerate LLM inference by substituting quadratic-complexity computation with linear-complexity memory accesses. Yet, this approach requires increasing memory as demand grows for processing longer sequences. The overhead leads to reduced throughput due to I/O bottlenecks and even out-of-memory errors, particularly on resource-constrained systems like a single commodity GPU. In this paper, we propose ALISA, a novel algorithm-system co-design solution to address the challenges imposed by KV caching. On the algorithm level, ALISA prioritizes tokens that are most important in generating a new token via a Sparse Window Attention (SWA) algorithm. SWA introduces high sparsity in attention "
+  },
+  "arxiv_2403.20041": {
+    "doc_id": "arxiv_2403.20041",
+    "title": "Transformer-Lite: High-efficiency Deployment of Large Language Models on\n  Mobile Phone GPUs",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "The Large Language Model (LLM) is widely employed for tasks such as intelligent assistants, text summarization, translation, and multi-modality on mobile phones. However, the current methods for on-device LLM deployment maintain slow inference speed, which causes poor user experience. To facilitate high-efficiency LLM deployment on device GPUs, we propose four optimization techniques: (a) a symbolic expression-based approach to support dynamic shape model inference; (b) operator optimizations and execution priority setting to enhance inference speed and reduce phone lagging; (c) an FP4 quantization method termed M0E4 to reduce dequantization overhead; (d) a sub-tensor-based technique to eliminate the need for copying KV cache after LLM inference. Furthermore, we implement these methods in our mobile inference engine, Transformer-Lite, which is compatible with both Qualcomm and MTK processors. We evaluated Transformer-Lite's performance using LLMs with varied architectures and parameters ranging from 2B to 14B. Specifically, we achieved prefill and decoding speeds of 121 token/s and 14 token/s for ChatGLM2 6B, and 330 token/s and 30 token/s for smaller Gemma 2B, respectively. Compar"
+  },
+  "arxiv_2404.05741": {
+    "doc_id": "arxiv_2404.05741",
+    "title": "Enhancing Inference Efficiency of Large Language Models: Investigating\n  Optimization Strategies and Architectural Innovations",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Large Language Models are growing in size, and we expect them to continue to do so, as larger models train quicker. However, this increase in size will severely impact inference costs. Therefore model compression is important, to retain the performance of larger models, but with a reduced cost of running them. In this thesis we explore the methods of model compression, and we empirically demonstrate that the simple method of skipping latter attention sublayers in Transformer LLMs is an effective method of model compression, as these layers prove to be redundant, whilst also being incredibly computationally expensive. We observed a 21% speed increase in one-token generation for Llama 2 7B, whilst surprisingly and unexpectedly improving performance over several common benchmarks."
+  },
+  "arxiv_2404.06709": {
+    "doc_id": "arxiv_2404.06709",
+    "title": "CQIL: Inference Latency Optimization with Concurrent Computation of\n  Quasi-Independent Layers",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "The fast-growing large scale language models are delivering unprecedented performance on almost all natural language processing tasks. However, the effectiveness of large language models are reliant on an exponentially increasing number of parameters. The overwhelming computation complexity incurs a high inference latency that negatively affects user experience. Existing methods to improve inference efficiency, such as tensor parallelism and quantization, target to reduce per-layer computing latency, yet overlook the cumulative latency due to the number of layers. Recent works on reducing the cumulative latency through layer removing, however, lead to significant performance drop. Motivated by the similarity of inputs among adjacent layers, we propose to identify quasi-independent layers, which can be concurrently computed to significantly decrease inference latency. We also introduce a bypassing technique to mitigate the effect of information loss. Empirical experiments of the proposed approach on the LLaMA models confirm that Concurrent Computation of Quasi-Independent Layers (CQIL) can reduce latency by up to 48.3% on LLaMA-33B, while maintaining a close level of performance."
+  },
+  "arxiv_2404.14294": {
+    "doc_id": "arxiv_2404.14294",
+    "title": "A Survey on Efficient Inference for Large Language Models",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Large Language Models (LLMs) have attracted extensive attention due to their remarkable performance across various tasks. However, the substantial computational and memory requirements of LLM inference pose challenges for deployment in resource-constrained scenarios. Efforts within the field have been directed towards developing techniques aimed at enhancing the efficiency of LLM inference. This paper presents a comprehensive survey of the existing literature on efficient LLM inference. We start by analyzing the primary causes of the inefficient LLM inference, i.e., the large model size, the quadratic-complexity attention operation, and the auto-regressive decoding approach. Then, we introduce a comprehensive taxonomy that organizes the current literature into data-level, model-level, and system-level optimization. Moreover, the paper includes comparative experiments on representative methods within critical sub-fields to provide quantitative insights. Last but not least, we provide some knowledge summary and discuss future research directions."
+  },
+  "arxiv_2404.15949": {
+    "doc_id": "arxiv_2404.15949",
+    "title": "CORM: Cache Optimization with Recent Message for Large Language Model\n  Inference",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Large Language Models (LLMs), despite their remarkable performance across a wide range of tasks, necessitate substantial GPU memory and consume significant computational resources. Beyond the memory taken up by model weights, the memory used by the KV cache rises linearly with sequence length, becoming a primary bottleneck for inference. In this paper, we introduce an innovative method for optimizing the KV cache, which considerably minimizes its memory footprint. Upon thorough investigation, we discover that in most Transformer models, (i) there is a striking similarity between adjacent tokens' query vectors, and (ii) the attention calculation of the current query can rely exclusively on the attention information of a small fraction of preceding queries. Based on these observations, we present CORM, a KV cache eviction policy that dynamically retains essential key-value pairs for inference without the need for model fine-tuning. Our validation shows that CORM reduces the inference memory usage of KV cache by up to 70\\% with negligible performance degradation across six tasks in LongBench. Furthermore, we demonstrate that CORM is compatible with GQA for further compression rate."
+  },
+  "arxiv_2405.10637": {
+    "doc_id": "arxiv_2405.10637",
+    "title": "Layer-Condensed KV Cache for Efficient Inference of Large Language\n  Models",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Huge memory consumption has been a major bottleneck for deploying high-throughput large language models in real-world applications. In addition to the large number of parameters, the key-value (KV) cache for the attention mechanism in the transformer architecture consumes a significant amount of memory, especially when the number of layers is large for deep language models. In this paper, we propose a novel method that only computes and caches the KVs of a small number of layers, thus significantly saving memory consumption and improving inference throughput. Our experiments on large language models show that our method achieves up to 26$\\times$ higher throughput than standard transformers and competitive performance in language modeling and downstream tasks. In addition, our method is orthogonal to existing transformer memory-saving techniques, so it is straightforward to integrate them with our model, achieving further improvement in inference efficiency. Our code is available at https://github.com/whyNLP/LCKV."
+  },
+  "arxiv_2405.11704": {
+    "doc_id": "arxiv_2405.11704",
+    "title": "Efficiency optimization of large-scale language models based on deep\n  learning in natural language processing tasks",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "The internal structure and operation mechanism of large-scale language models are analyzed theoretically, especially how Transformer and its derivative architectures can restrict computing efficiency while capturing long-term dependencies. Further, we dig deep into the efficiency bottleneck of the training phase, and evaluate in detail the contribution of adaptive optimization algorithms (such as AdamW), massively parallel computing techniques, and mixed precision training strategies to accelerate convergence and reduce memory footprint. By analyzing the mathematical principles and implementation details of these algorithms, we reveal how they effectively improve training efficiency in practice. In terms of model deployment and inference optimization, this paper systematically reviews the latest advances in model compression techniques, focusing on strategies such as quantification, pruning, and knowledge distillation. By comparing the theoretical frameworks of these techniques and their effects in different application scenarios, we demonstrate their ability to significantly reduce model size and inference delay while maintaining model prediction accuracy. In addition, this paper "
+  },
+  "arxiv_2406.01698": {
+    "doc_id": "arxiv_2406.01698",
+    "title": "Demystifying AI Platform Design for Distributed Inference of Next-Generation LLM models",
+    "year": 2025,
+    "venue": "cs.AR",
+    "abstract": "Large language models (LLMs) have shown remarkable performance across a wide range of applications, often outperforming human experts. However, deploying these gigantic models efficiently for diverse inference use cases requires carefully designed hardware platforms with ample computing, memory, and network resources. With constant innovation in LLM serving optimizations and model architecture evolving at breakneck speed, the hardware requirements to meet Service Level Objectives (SLOs) remain an open research question.   To answer the question, we present an analytical tool, GenZ, to efficiently navigate the relationship between diverse LLM model architectures(Dense, GQA, MoE, Mamba), LLM serving optimizations(Chunking, Speculative decoding, quanitization), and AI platform design parameters. Our tool estimates LLM inference performance metrics for the given scenario. We have validated against real hardware platforms running various different LLM models, achieving a max geomean error of 5.82.We use GenZ to identify compute, memory capacity, memory bandwidth, network latency, and network bandwidth requirements across diverse LLM inference use cases. We also study diverse architectur"
+  },
+  "arxiv_2406.12930": {
+    "doc_id": "arxiv_2406.12930",
+    "title": "Tender: Accelerating Large Language Models via Tensor Decomposition and\n  Runtime Requantization",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Large language models (LLMs) demonstrate outstanding performance in various tasks in machine learning and have thus become one of the most important workloads in today's computing landscape. However, deploying LLM inference poses challenges due to the high compute and memory requirements stemming from the enormous model size and the difficulty of running it in the integer pipelines. In this paper, we present Tender, an algorithm-hardware co-design solution that enables efficient deployment of LLM inference at low precision. Based on our analysis of outlier values in LLMs, we propose a decomposed quantization technique in which the scale factors of decomposed matrices are powers of two apart. The proposed scheme allows us to avoid explicit requantization (i.e., dequantization/quantization) when accumulating the partial sums from the decomposed matrices, with a minimal extension to the commodity tensor compute hardware. Our evaluation shows that Tender achieves higher accuracy and inference performance compared to the state-of-the-art methods while also being significantly less intrusive to the existing accelerators."
+  },
+  "arxiv_2406.16758": {
+    "doc_id": "arxiv_2406.16758",
+    "title": "Towards Fast Multilingual LLM Inference: Speculative Decoding and\n  Specialized Drafters",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Large language models (LLMs) have revolutionized natural language processing and broadened their applicability across diverse commercial applications. However, the deployment of these models is constrained by high inference time in multilingual settings. To mitigate this challenge, this paper explores a training recipe of an assistant model in speculative decoding, which is leveraged to draft and-then its future tokens are verified by the target LLM. We show that language-specific draft models, optimized through a targeted pretrain-and-finetune strategy, substantially brings a speedup in inference time compared to the previous methods. We validate these models across various languages in inference time, out-of-domain speedup, and GPT-4o evaluation."
+  },
+  "arxiv_2407.20272": {
+    "doc_id": "arxiv_2407.20272",
+    "title": "An Efficient Inference Framework for Early-exit Large Language Models",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Building efficient inference framework has gained increasing interests for research community. Early-exit models, a variant of LLMs, improves the inference efficiency of LLMs by skipping rest layers and directly generate output tokens when they are confident enough. However, there is no work of LLM inference framework that takes early-exit models into consideration. This is non-trivial as prior art on LLM inference cannot be directly applied to early-exit models. In this work, we solves two key challenges in building efficient inference framework for early-exit models: (1) batch inference at iteration-level granularity; and (2) KV cache management. For the former, we propose to process the batch until all sequences surpass the early-exit confidence threshold. For the latter, we propose to fill the KV cache of rest layers before the iteration terminates. Our evaluation shows that, compared with the original vLLM operating at full layers, our solution achieves up to 1.25x speed up."
+  },
+  "arxiv_2408.03130": {
+    "doc_id": "arxiv_2408.03130",
+    "title": "Inference Optimizations for Large Language Models: Effects, Challenges,\n  and Practical Considerations",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Large language models are ubiquitous in natural language processing because they can adapt to new tasks without retraining. However, their sheer scale and complexity present unique challenges and opportunities, prompting researchers and practitioners to explore novel model training, optimization, and deployment methods. This literature review focuses on various techniques for reducing resource requirements and compressing large language models, including quantization, pruning, knowledge distillation, and architectural optimizations. The primary objective is to explore each method in-depth and highlight its unique challenges and practical applications. The discussed methods are categorized into a taxonomy that presents an overview of the optimization landscape and helps navigate it to understand the research trajectory better."
+  },
+  "arxiv_2408.07802": {
+    "doc_id": "arxiv_2408.07802",
+    "title": "Kraken: Inherently Parallel Transformers For Efficient Multi-Device\n  Inference",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Large Transformer networks are increasingly used in settings where low inference latency can improve the end-user experience and enable new applications. However, autoregressive inference is resource intensive and requires parallelism for efficiency. Parallelism introduces collective communication that is both expensive and represents a phase when hardware resources are underutilized. Towards mitigating this, Kraken is an evolution of the standard Transformer architecture that is designed to complement existing tensor parallelism schemes for efficient inference on multi-device systems. By introducing a fixed degree of intra-layer model parallelism, the architecture allows collective operations to be overlapped with compute, decreasing latency and increasing hardware utilization. When trained on OpenWebText, Kraken models reach a similar perplexity as standard Transformers while also preserving their language modeling capabilities when evaluated on the SuperGLUE benchmark. Importantly, when tested on multi-GPU systems using TensorRT-LLM engines, Kraken speeds up Time To First Token by a mean of 35.6% across a range of model sizes, context lengths, and degrees of tensor parallelism."
+  },
+  "arxiv_2408.08554": {
+    "doc_id": "arxiv_2408.08554",
+    "title": "ABQ-LLM: Arbitrary-Bit Quantized Inference Acceleration for Large Language Models",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Large Language Models (LLMs) have revolutionized natural language processing tasks. However, their practical application is constrained by substantial memory and computational demands. Post-training quantization (PTQ) is considered an effective method to accelerate LLM inference. Despite its growing popularity in LLM model compression, PTQ deployment faces two major challenges. First, low-bit quantization leads to performance degradation. Second, restricted by the limited integer computing unit type on GPUs, quantized matrix operations with different precisions cannot be effectively accelerated. To address these issues, we introduce a novel arbitrary-bit quantization algorithm and inference framework, ABQ-LLM. It achieves superior performance across various quantization settings and enables efficient arbitrary-precision quantized inference on the GPU. ABQ-LLM introduces several key innovations: (1) a distribution correction method for transformer blocks to mitigate distribution differences caused by full quantization of weights and activations, improving performance at low bit-widths. (2) the bit balance strategy to counteract performance degradation from asymmetric distribution is"
+  },
+  "arxiv_2408.11743": {
+    "doc_id": "arxiv_2408.11743",
+    "title": "MARLIN: Mixed-Precision Auto-Regressive Parallel Inference on Large\n  Language Models",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "As inference on Large Language Models (LLMs) emerges as an important workload in machine learning applications, weight quantization has become a standard technique for efficient GPU deployment. Quantization not only reduces model size, but has also been shown to yield substantial speedups for single-user inference, due to reduced memory movement, with low accuracy impact. Yet, it remains open whether speedups are achievable also in \\emph{batched} settings with multiple parallel clients, which are highly relevant for practical serving. It is unclear whether GPU kernels can be designed to remain practically memory-bound, while supporting the substantially increased compute requirements of batched workloads.   This paper resolves this question positively by describing the design of Mixed-precision Auto-Regressive LINear kernels, called MARLIN. Concretely, given a model whose weights are compressed via quantization to, e.g., 4 bits per element, MARLIN shows that batchsizes up to 16-32 can be supported with close to maximum ($4\\times$) quantization speedup, and larger batchsizes up to 64-128 with gradually decreasing, but still significant, acceleration. MARLIN accomplishes this via a c"
+  },
+  "arxiv_2409.17372": {
+    "doc_id": "arxiv_2409.17372",
+    "title": "Search for Efficient Large Language Models",
+    "year": 2024,
+    "venue": "cs.AI",
+    "abstract": "Large Language Models (LLMs) have long held sway in the realms of artificial intelligence research. Numerous efficient techniques, including weight pruning, quantization, and distillation, have been embraced to compress LLMs, targeting memory reduction and inference acceleration, which underscore the redundancy in LLMs. However, most model compression techniques concentrate on weight optimization, overlooking the exploration of optimal architectures. Besides, traditional architecture search methods, limited by the elevated complexity with extensive parameters, struggle to demonstrate their effectiveness on LLMs. In this paper, we propose a training-free architecture search framework to identify optimal subnets that preserve the fundamental strengths of the original LLMs while achieving inference acceleration. Furthermore, after generating subnets that inherit specific weights from the original LLMs, we introduce a reformation algorithm that utilizes the omitted weights to rectify the inherited weights with a small amount of calibration data. Compared with SOTA training-free structured pruning works that can generate smaller networks, our method demonstrates superior performance acr"
+  },
+  "arxiv_2410.04466": {
+    "doc_id": "arxiv_2410.04466",
+    "title": "Large Language Model Inference Acceleration: A Comprehensive Hardware Perspective",
+    "year": 2025,
+    "venue": "cs.AR",
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities across various fields, from natural language understanding to text generation. Compared to non-generative LLMs like BERT and DeBERTa, generative LLMs like GPT series and Llama series are currently the main focus due to their superior algorithmic performance. The advancements in generative LLMs are closely intertwined with the development of hardware capabilities. Various hardware platforms exhibit distinct hardware characteristics, which can help improve LLM inference performance. Therefore, this paper comprehensively surveys efficient generative LLM inference on different hardware platforms. First, we provide an overview of the algorithm architecture of mainstream generative LLMs and delve into the inference process. Then, we summarize different optimization methods for different platforms such as CPU, GPU, FPGA, ASIC, and PIM/NDP, and provide inference results for generative LLMs. Furthermore, we perform a qualitative and quantitative comparison of inference performance with batch sizes 1 and 8 on different hardware platforms by considering hardware power consumption, absolute inference speed (tokens/s), and e"
+  },
+  "arxiv_2411.07942": {
+    "doc_id": "arxiv_2411.07942",
+    "title": "Towards Low-bit Communication for Tensor Parallel LLM Inference",
+    "year": 2024,
+    "venue": "cs.AI",
+    "abstract": "Tensor parallelism provides an effective way to increase server large language model (LLM) inference efficiency despite adding an additional communication cost. However, as server LLMs continue to scale in size, they will need to be distributed across more devices, magnifying the communication cost. One way to approach this problem is with quantization, but current methods for LLMs tend to avoid quantizing the features that tensor parallelism needs to communicate. Taking advantage of consistent outliers in communicated features, we introduce a quantization method that reduces communicated values on average from 16 bits to 4.2 bits while preserving nearly all of the original performance. For instance, our method maintains around 98.0% and 99.5% of Gemma 2 27B's and Llama 2 13B's original performance, respectively, averaged across all tasks we evaluated on."
+  },
+  "arxiv_2411.13157": {
+    "doc_id": "arxiv_2411.13157",
+    "title": "Closer Look at Efficient Inference Methods: A Survey of Speculative\n  Decoding",
+    "year": 2024,
+    "venue": "cs.CL",
+    "abstract": "Efficient inference in large language models (LLMs) has become a critical focus as their scale and complexity grow. Traditional autoregressive decoding, while effective, suffers from computational inefficiencies due to its sequential token generation process. Speculative decoding addresses this bottleneck by introducing a two-stage framework: drafting and verification. A smaller, efficient model generates a preliminary draft, which is then refined by a larger, more sophisticated model. This paper provides a comprehensive survey of speculative decoding methods, categorizing them into draft-centric and model-centric approaches. We discuss key ideas associated with each method, highlighting their potential for scaling LLM inference. This survey aims to guide future research in optimizing speculative decoding and its integration into real-world LLM applications."
+  },
+  "arxiv_2412.11242": {
+    "doc_id": "arxiv_2412.11242",
+    "title": "TrimLLM: Progressive Layer Dropping for Domain-Specific LLMs",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Specializing large language models (LLMs) for local deployment in domain-specific use cases is necessary for strong performance while meeting latency and privacy constraints. However, conventional task-specific adaptation approaches do not show simultaneous memory saving and inference speedup at deployment time. Practical compression techniques like quantization and pruning require dedicated hardware or kernel support to achieve measured inference speedup. We develop TrimLLM based on the layer-wise specialization phenomenon we empirically observed and verified on contemporary LLMs. TrimLLM reduces the depth of LLMs via progressive layer dropping. We show it retains LLMs' capacity in specific domains and achieves inference speedup irrespective of hardware and deep learning frameworks. We evaluated TrimLLM on LLMs of various sizes for inference; models adapted on medical, legal, and financial datasets all demonstrate $2.1-5.7\\times$ inference speedup on consumer GPUs and up to $3.1\\times$ speedup on A100 when compared to state-of-the-art model compression algorithms, with no loss in accuracy at 50$\\sim$60\\% model compression ratio."
+  },
+  "arxiv_2502.07578": {
+    "doc_id": "arxiv_2502.07578",
+    "title": "PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language\n  Model Inference",
+    "year": 2025,
+    "venue": "cs.AR",
+    "abstract": "Large Language Model (LLM) inference uses an autoregressive manner to generate one token at a time, which exhibits notably lower operational intensity compared to earlier Machine Learning (ML) models such as encoder-only transformers and Convolutional Neural Networks. At the same time, LLMs possess large parameter sizes and use key-value caches to store context information. Modern LLMs support context windows with up to 1 million tokens to generate versatile text, audio, and video content. A large key-value cache unique to each prompt requires a large memory capacity, limiting the inference batch size. Both low operational intensity and limited batch size necessitate a high memory bandwidth. However, contemporary hardware systems for ML model deployment, such as GPUs and TPUs, are primarily optimized for compute throughput. This mismatch challenges the efficient deployment of advanced LLMs and makes users pay for expensive compute resources that are poorly utilized for the memory-bound LLM inference tasks.   We propose CENT, a CXL-ENabled GPU-Free sysTem for LLM inference, which harnesses CXL memory expansion capabilities to accommodate substantial LLM sizes, and utilizes near-bank"
+  },
+  "arxiv_2502.14008": {
+    "doc_id": "arxiv_2502.14008",
+    "title": "MaskPrune: Mask-based LLM Pruning for Layer-wise Uniform Structures",
+    "year": 2025,
+    "venue": "cs.CL",
+    "abstract": "The remarkable performance of large language models (LLMs) in various language tasks has attracted considerable attention. However, the ever-increasing size of these models presents growing challenges for deployment and inference. Structured pruning, an effective model compression technique, is gaining increasing attention due to its ability to enhance inference efficiency. Nevertheless, most previous optimization-based structured pruning methods sacrifice the uniform structure across layers for greater flexibility to maintain performance. The heterogeneous structure hinders the effective utilization of off-the-shelf inference acceleration techniques and impedes efficient configuration for continued training. To address this issue, we propose a novel masking learning paradigm based on minimax optimization to obtain the uniform pruned structure by optimizing the masks under sparsity regularization. Extensive experimental results demonstrate that our method can maintain high performance while ensuring the uniformity of the pruned model structure, thereby outperforming existing SOTA methods."
+  },
+  "arxiv_2502.20727": {
+    "doc_id": "arxiv_2502.20727",
+    "title": "SPD: Sync-Point Drop for Efficient Tensor Parallelism of Large Language Models",
+    "year": 2025,
+    "venue": "cs.DC",
+    "abstract": "With the rapid expansion in the scale of large language models (LLMs), enabling efficient distributed inference across multiple computing units has become increasingly critical. However, communication overheads from popular distributed inference techniques such as Tensor Parallelism pose a significant challenge to achieve scalability and low latency. Therefore, we introduce a novel optimization technique, Sync-Point Drop (SPD), to reduce communication overheads in tensor parallelism by selectively dropping synchronization on attention outputs. In detail, we first propose a block design that allows execution to proceed without communication through SPD. Second, we apply different SPD strategies to attention blocks based on their sensitivity to the model accuracy. The proposed methods effectively alleviate communication bottlenecks while minimizing accuracy degradation during LLM inference, offering a scalable solution for diverse distributed environments: SPD offered about 20% overall inference latency reduction with < 1% accuracy regression for LLaMA2-70B inference over 8 GPUs."
+  },
+  "arxiv_2503.05096": {
+    "doc_id": "arxiv_2503.05096",
+    "title": "AdaSpec: Adaptive Speculative Decoding for Fast, SLO-Aware Large Language Model Serving",
+    "year": 2026,
+    "venue": "cs.CL",
+    "abstract": "Cloud-based Large Language Model (LLM) services often face challenges in achieving low inference latency and meeting Service Level Objectives (SLOs) under dynamic request patterns. Speculative decoding, which exploits lightweight models for drafting and LLMs for verification, has emerged as a compelling technique to accelerate LLM inference. However, existing speculative decoding solutions often fail to adapt to fluctuating workloads and dynamic system environments, resulting in impaired performance and SLO violations. In this paper, we introduce AdaSpec, an efficient LLM inference system that dynamically adjusts speculative strategies according to real-time request loads and system configurations. AdaSpec proposes a theoretical model to analyze and predict the efficiency of speculative strategies across diverse scenarios. Additionally, it implements intelligent drafting and verification algorithms to maximize performance while ensuring high SLO attainment. Experimental results on real-world LLM service traces demonstrate that AdaSpec consistently meets SLOs and achieves substantial performance improvements, delivering up to 66% speedup compared to state-of-the-art speculative infe"
+  },
+  "arxiv_2503.06433": {
+    "doc_id": "arxiv_2503.06433",
+    "title": "Seesaw: High-throughput LLM Inference via Model Re-sharding",
+    "year": 2025,
+    "venue": "cs.DC",
+    "abstract": "To improve the efficiency of distributed large language model (LLM) inference, various parallelization strategies, such as tensor and pipeline parallelism, have been proposed. However, the distinct computational characteristics inherent in the two stages of LLM inference-prefilling and decoding-render a single static parallelization strategy insufficient for the effective optimization of both stages. In this work, we present Seesaw, an LLM inference engine optimized for throughput-oriented tasks. The key idea behind Seesaw is dynamic model re-sharding, a technique that facilitates the dynamic reconfiguration of parallelization strategies across stages, thereby maximizing throughput at both phases. To mitigate re-sharding overhead and optimize computational efficiency, we employ tiered KV cache buffering and transition-minimizing scheduling. These approaches work synergistically to reduce the overhead caused by frequent stage transitions while ensuring maximum batching efficiency. Our evaluation demonstrates that Seesaw achieves a throughput increase of up to 1.78x (1.36x on average) compared to vLLM, the most widely used state-of-the-art LLM inference engine."
+  },
+  "arxiv_2503.08415": {
+    "doc_id": "arxiv_2503.08415",
+    "title": "TokenSim: Enabling Hardware and Software Exploration for Large Language\n  Model Inference Systems",
+    "year": 2025,
+    "venue": "cs.DC",
+    "abstract": "The increasing demand for large language model (LLM) serving has necessitated significant advancements in the optimization and profiling of LLM inference systems. As these models become integral to a wide range of applications, the need for efficient and scalable serving solutions has grown exponentially. This work introduces TokenSim, a comprehensive hardware and software exploration system designed specifically for LLM inference. TokenSim is characterized by its support for extensible system optimizations including scheduling and memory management. We validate the results with systems running with realworld datasets, achieving an error rate of less than 1%. Furthermore, TokenSim facilitates various insightful explorations into the performance and optimization of LLM serving systems."
+  },
+  "arxiv_2503.13427": {
+    "doc_id": "arxiv_2503.13427",
+    "title": "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Recent breakthroughs in solving reasoning, math and coding problems with Large Language Models (LLMs) have been enabled by investing substantial computation budgets at inference time. Therefore, inference speed is one of the most critical properties of LLM architectures, and there is a growing need for LLMs that are efficient and fast at inference. Recently, LLMs built on the xLSTM architecture have emerged as a powerful alternative to Transformers, offering linear compute scaling with sequence length and constant memory usage, both highly desirable properties for efficient inference. However, such xLSTM-based LLMs have yet to be scaled to larger models and assessed and compared with respect to inference speed and efficiency. In this work, we introduce xLSTM 7B, a 7-billion-parameter LLM that combines xLSTM's architectural benefits with targeted optimizations for fast and efficient inference. Our experiments demonstrate that xLSTM 7B achieves performance on downstream tasks comparable to other similar-sized LLMs, while providing significantly faster inference speeds and greater efficiency compared to Llama- and Mamba-based LLMs. These results establish xLSTM 7B as the fastest and m"
+  },
+  "arxiv_2503.15921": {
+    "doc_id": "arxiv_2503.15921",
+    "title": "SPIN: Accelerating Large Language Model Inference with Heterogeneous\n  Speculative Models",
+    "year": 2025,
+    "venue": "cs.DC",
+    "abstract": "Speculative decoding has been shown as an effective way to accelerate Large Language Model (LLM) inference by using a Small Speculative Model (SSM) to generate candidate tokens in a so-called speculation phase, which are subsequently verified by the LLM in a verification phase. However, current state-of-the-art speculative decoding approaches have three key limitations: handling requests with varying difficulty using homogeneous SSMs, lack of robust support for batch processing, and insufficient holistic optimization for both speculation and verification phases. In this paper, we introduce SPIN, an efficient LLM inference serving system based on speculative decoding, designed to address these challenges through three main innovations. First, SPIN improves token speculation by using multiple heterogeneous SSMs, with a learning-based algorithm for SSM selection that operates without prior knowledge of request difficulty. Second, SPIN employs a request decomposition method to minimize batching overhead during LLM verification. Finally, SPIN orchestrates speculation and verification phases by pipelining their executions on GPUs to achieve further acceleration. Experimental results demo"
+  },
+  "arxiv_2503.18869": {
+    "doc_id": "arxiv_2503.18869",
+    "title": "Reimagining Memory Access for LLM Inference: Compression-Aware Memory\n  Controller Design",
+    "year": 2025,
+    "venue": "cs.AR",
+    "abstract": "The efficiency of Large Language Model~(LLM) inference is often constrained by substantial memory bandwidth and capacity demands. Existing techniques, such as pruning, quantization, and mixture of experts/depth, reduce memory capacity and/or bandwidth consumption at the cost of slight degradation in inference quality. This paper introduces a design solution that further alleviates memory bottlenecks by enhancing the on-chip memory controller in AI accelerators to achieve two main objectives: (1) significantly reducing memory capacity and bandwidth usage through lossless block compression~(e.g., LZ4 and ZSTD) of model weights and key-value (KV) cache without compromising inference quality, and (2) enabling memory bandwidth and energy consumption to scale proportionally with context-dependent dynamic quantization. These goals are accomplished by equipping the on-chip memory controller with mechanisms to improve fine-grained bit-level accessibility and compressibility of weights and KV cache through LLM-aware configuration of in-memory placement and representation. Experimental results on publicly available LLMs demonstrate the effectiveness of this approach, showing memory footprint "
+  },
+  "arxiv_2505.01658": {
+    "doc_id": "arxiv_2505.01658",
+    "title": "A Survey on Inference Engines for Large Language Models: Perspectives on Optimization and Efficiency",
+    "year": 2025,
+    "venue": "cs.CL",
+    "abstract": "Large language models (LLMs) are widely applied in chatbots, code generators, and search engines. Workload such as chain-of-throught, complex reasoning, agent services significantly increase the inference cost by invoke the model repeatedly. Optimization methods such as parallelism, compression, and caching have been adopted to reduce costs, but the diverse service requirements make it hard to select the right method. Recently, specialized LLM inference engines have emerged as a key component for integrating the optimization methods into service-oriented infrastructures. However, a systematic study on inference engines is still lacking.This paper provides a comprehensive evaluation of 25 open-source and commercial inference engines. We examine each inference engine in terms of ease-of-use, ease-of-deployment, general-purpose support, scalability, and suitability for throughput- and latency-aware computation. Furthermore, we explore the design goals of each inference engine by investigating the optimization techniques it supports. In addition, we assess the ecosystem maturity of open source inference engines and handle the performance and cost policy of commercial solutions.We outli"
+  },
+  "arxiv_2505.21077": {
+    "doc_id": "arxiv_2505.21077",
+    "title": "Efficient Large Language Model Inference with Neural Block Linearization",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "The high inference demands of transformer-based Large Language Models (LLMs) pose substantial challenges in their deployment. To this end, we introduce Neural Block Linearization (NBL), a novel framework for accelerating transformer model inference by replacing self-attention layers with linear approximations derived from Linear Minimum Mean Squared Error estimators. NBL leverages Canonical Correlation Analysis to compute a theoretical upper bound on the approximation error. Then, we use this bound as a criterion for substitution, selecting the LLM layers with the lowest linearization error. NBL can be efficiently applied to pre-trained LLMs without the need for fine-tuning. In experiments, NBL achieves notable computational speed-ups while preserving competitive accuracy on multiple reasoning benchmarks. For instance, applying NBL to 12 self-attention layers in DeepSeek-R1-Distill-Llama-8B increases the inference speed by 32% with less than 1% accuracy trade-off, making it a flexible and promising solution to improve the inference efficiency of LLMs. The implementation is available at: https://github.com/LIONS-EPFL/NBL."
+  },
+  "arxiv_2505.22758": {
+    "doc_id": "arxiv_2505.22758",
+    "title": "FlashFormer: Whole-Model Kernels for Efficient Low-Batch Inference",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "The size and compute characteristics of modern large language models have led to an increased interest in developing specialized kernels tailored for particular training and inference workloads. Existing kernels primarily optimize for compute utilization, targeting the large-batch training and inference settings. However, low-batch inference, where memory bandwidth and kernel launch overheads are significant factors, remains important for many applications of interest such as in edge deployment and latency-sensitive applications. This paper describes FlashFormer, which fuses the entire transformer forward pass into a single kernel for accelerating low-batch inference of large language models. Across various model sizes and quantizations settings, FlashFormer achieves nontrivial speedups compared to existing inference kernels."
+  },
+  "arxiv_2506.21901": {
+    "doc_id": "arxiv_2506.21901",
+    "title": "A Survey of LLM Inference Systems",
+    "year": 2025,
+    "venue": "cs.DB",
+    "abstract": "The past few years has witnessed specialized large language model (LLM) inference systems, such as vLLM, SGLang, Mooncake, and DeepFlow, alongside rapid LLM adoption via services like ChatGPT. Driving these system design efforts is the unique autoregressive nature of LLM request processing, motivating new techniques for achieving high performance while preserving high inference quality over high-volume and high-velocity workloads. While many of these techniques are discussed across the literature, they have not been analyzed under the framework of a complete inference system, nor have the systems themselves been analyzed and compared.   In this survey, we review these techniques, starting from operators and algorithms for request processing, then moving on to techniques for model optimization and execution, including kernel design, batching, and scheduling, before ending with techniques for memory management, including paged memory, eviction and offloading techniques, quantization, and cache persistence. Through these discussions, we show that these techniques fundamentally rely on load prediction, adaptive mechanisms, and cost reduction in order to overcome the challenges introduc"
+  },
+  "arxiv_2506.22396": {
+    "doc_id": "arxiv_2506.22396",
+    "title": "QuickSilver -- Speeding up LLM Inference through Dynamic Token Halting, KV Skipping, Contextual Token Fusion, and Adaptive Matryoshka Quantization",
+    "year": 2025,
+    "venue": "cs.CL",
+    "abstract": "Inference accounts for the majority of latency and energy consumption in large language model (LLM) deployments, often exceeding 90% of total cost. While training-time efficiency has seen extensive progress, runtime optimization remains a key bottleneck, particularly under autoregressive decoding. Existing approaches -- such as pruning, quantization, early exits, and speculative decoding -- often require retraining, architectural changes, or disrupt decoding compatibility. We introduce QuickSilver, a modular, token-level framework that enables semantic adaptivity at inference time without altering model weights or structure. QuickSilver integrates four synergistic mechanisms:   (i) Dynamic Token Halting, which halts computation for tokens with converged representations; (ii) KV Cache Skipping, which selectively suppresses memory writes to reduce attention overhead; and (iii) Contextual Token Fusion, which collapses redundant tokens into shared paths to shrink sequence length.   Unlike speculative decoding or MoE routing, QuickSilver operates entirely on frozen, dense models and requires no auxiliary networks. Applied to GPT-2 and Llama-2 across WikiText-103 and C4, QuickSilver achi"
+  },
+  "arxiv_2508.03726": {
+    "doc_id": "arxiv_2508.03726",
+    "title": "Hierarchical Verification of Speculative Beams for Accelerating LLM Inference",
+    "year": 2026,
+    "venue": "cs.CL",
+    "abstract": "Large language models (LLMs) have achieved remarkable success across diverse natural language processing tasks but face persistent challenges in inference efficiency due to their autoregressive nature. While speculative decoding and beam sampling offer notable improvements, traditional methods verify draft sequences sequentially without prioritization, leading to unnecessary computational overhead. This work proposes the Hierarchical Verification Tree (HVT), a novel framework that restructures speculative beam decoding by prioritizing high-likelihood drafts and enabling early pruning of suboptimal candidates. Theoretical foundations and a formal verification-pruning algorithm are developed to ensure correctness and efficiency. Integration with standard LLM inference pipelines is achieved without requiring retraining or architecture modification. Experimental evaluations across multiple datasets and models demonstrate that HVT consistently outperforms existing speculative decoding schemes, achieving substantial reductions in inference time and energy consumption while maintaining or enhancing output quality. The findings highlight the potential of hierarchical verification strategie"
+  },
+  "arxiv_2508.06297": {
+    "doc_id": "arxiv_2508.06297",
+    "title": "KV Cache Compression for Inference Efficiency in LLMs: A Review",
+    "year": 2025,
+    "venue": "cs.DC",
+    "abstract": "Withtherapid advancement of large language models (LLMs), the context length for inference has been continuously increasing, leading to an exponential growth in the demand for Key-Value (KV) caching. This has resulted in a significant memory bottleneck, limiting the inference efficiency and scalability of the models. Therefore, optimizing the KV cache during inference is crucial for enhancing performance and efficiency. This review systematically examines current KV cache optimization techniques, including compression strategies such as selective token strategies, quantization, and attention compression. We evaluate the effectiveness, trade-offs, and application scenarios of these methods, providing a comprehensive analysis of their impact on memory usage and inference speed. We focus on identifying the limitations and challenges of existing methods, such as compatibility issues with different models and tasks. Additionally, this review highlights future research directions, including hybrid optimization techniques, adaptive dynamic strategies, and software-hardware co-design. These approaches aim to improve inference efficiency and promote the practical application of large langua"
+  },
+  "arxiv_2508.09072": {
+    "doc_id": "arxiv_2508.09072",
+    "title": "READER: Retrieval-Assisted Drafter for Efficient LLM Inference",
+    "year": 2025,
+    "venue": "cs.CL",
+    "abstract": "Autoregressive Language Models instantiate a factorized likelihood over token sequences, yet their strictly sequential decoding process imposes an intrinsic lower bound on inference latency. This bottleneck has emerged as a central obstacle to the scalable deployment of large-scale generative models. Existing acceleration techniques partially mitigate token-level latency by relying on auxiliary draft models or introducing an additional training phase, but fail to address the dominant memory and communication costs. We present READER, a provably lossless speculative decoding framework that bypasses the training of the auxiliary draft model. READER formalizes speculative decoding as a stochastic tree construction problem and exploits the empirical redundancy structure of natural language to generate high-probability candidate continuations. Our method revisits the problem of constructing draft trees, establishing substantial statistical improvements over stochastic draft-tree methods and providing a complexity-theoretic analysis that characterizes the optimality frontier of speculative decoding under bounded computation and memory resources. Beyond the single-sequence regime traditio"
+  },
+  "arxiv_2509.18362": {
+    "doc_id": "arxiv_2509.18362",
+    "title": "FastMTP: Accelerating LLM Inference with Enhanced Multi-Token Prediction",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "As large language models (LLMs) become increasingly powerful, the sequential nature of autoregressive generation creates a fundamental throughput bottleneck that limits the practical deployment. While Multi-Token Prediction (MTP) has demonstrated remarkable benefits for model training efficiency and performance, its inherent potential for inference acceleration remains largely unexplored. This paper introduces FastMTP, a simple yet effective method that improves multi-step draft quality by aligning MTP training with its inference pattern, significantly enhancing speculative decoding performance. Our approach fine-tunes a single MTP head with position-shared weights on self-distilled data, enabling it to capture dependencies among consecutive future tokens and maintain high acceptance rates across multiple recursive draft steps. By integrating language-aware dynamic vocabulary compression into the MTP head, we further reduce computational overhead in the drafting process. Experimental results across seven diverse benchmarks demonstrate that FastMTP achieves an average of 2.03x speedup compared to standard next token prediction with lossless output quality, outperforming vanilla MTP "
+  },
+  "arxiv_2510.11331": {
+    "doc_id": "arxiv_2510.11331",
+    "title": "Efficient LLM Inference over Heterogeneous Edge Networks with Speculative Decoding",
+    "year": 2025,
+    "venue": "eess.SY",
+    "abstract": "Large language model (LLM) inference at the network edge is a promising serving paradigm that leverages distributed edge resources to run inference near users and enhance privacy. Existing edge-based LLM inference systems typically adopt autoregressive decoding (AD), which only generates one token per forward pass. This iterative process, compounded by the limited computational resources of edge nodes, results in high serving latency and constrains the system's ability to support multiple users under growing demands.To address these challenges, we propose a speculative decoding (SD)-based LLM serving framework that deploys small and large models across heterogeneous edge nodes to collaboratively deliver inference services. Specifically, the small model rapidly generates draft tokens that the large model verifies in parallel, enabling multi-token generation per forward pass and thus reducing serving latency. To improve resource utilization of edge nodes, we incorporate pipeline parallelism to overlap drafting and verification across multiple inference tasks. Based on this framework, we analyze and derive a comprehensive latency model incorporating both communication and inference la"
+  },
+  "arxiv_2510.25977": {
+    "doc_id": "arxiv_2510.25977",
+    "title": "NeuronMLP: Efficient LLM Inference via Singular Value Decomposition Compression and Tiling on AWS Trainium",
+    "year": 2026,
+    "venue": "cs.CL",
+    "abstract": "Emerging AI accelerators have started to gain attention and offer new opportunities for efficient inference of large language models (LLMs). Trainium, an AI accelerator recently developed by Amazon Web Services (AWS), provides an attractive option for LLM inference through its heterogeneous architecture. However, leveraging Trainium architecture for high performance can be challenging because of its systolic array architecture and special requirement on data layout. In this paper, we propose NeuronMLP, an efficient LLM inference method based on Singular Value Decomposition (SVD) compression and tiling on AWS Trainium. We introduce a series of techniques customized to Trainium based on kernel fusion and novel caching strategies to reduce data movement across the software-managed memory hierarchy, maximize SRAM bandwidth, and avoid expensive matrix transpose. The proposed method is specifically optimized for multi-layer perceptron (MLP) layers in LLMs, which serve as a critical computational kernel for inference on Trainium. Evaluating on nine datasets and six recent LLMs, we show that NeuronMLP significantly outperforms the state-of-the-art Neuron Kernel Interface (NKI)-based matrix"
+  },
+  "arxiv_2512.01953": {
+    "doc_id": "arxiv_2512.01953",
+    "title": "KV Pareto: Systems-Level Optimization of KV Cache and Model Compression for Long Context Inference",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Long-context Large Language Models (LLMs) face significant memory bottlenecks during inference due to the linear growth of key-value (KV) cache with sequence length. While individual optimization techniques like KV cache quantization, chunked prefill, and model weight quantization have shown promise, their joint effects and optimal configurations for edge deployment remain underexplored. We introduce KV Pareto, a systems-level framework that systematically maps the trade-off frontier between total memory consumption and task accuracy across these three complementary optimization techniques. Our framework evaluates multiple LLM architectures (Qwen, Llama, Mistral) with varying KV quantization schemes (int2/4/8, mixed-precision), granularities (per-token, per-tensor, per-block), and 4-bit weight quantization via AWQ. Our framework identifies model-specific Pareto-optimal configurations that achieve 68-78% total memory reduction with minimal (1-3%) accuracy degradation on long-context tasks. We additionally verify the selected frontiers on additional benchmarks of Needle-in-a-Haystack, GSM8k and MMLU as well as extended context lengths of up to 128k to demonstrate the practical need o"
+  },
+  "arxiv_2601.09865": {
+    "doc_id": "arxiv_2601.09865",
+    "title": "Advancing Model Refinement: Muon-Optimized Distillation and Quantization for LLM Deployment",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Large Language Models (LLMs) enable advanced natural language processing but face deployment challenges on resource-constrained edge devices due to high computational, memory, and energy demands. Optimizing these models requires addressing three key challenges: acquiring task-specific data, fine-tuning for performance, and compressing models to accelerate inference while reducing resource demands. We propose an integrated framework combining GPTQ-based quantization, low-rank adaptation (LoRA), and a specialized data distillation process to significantly reduce model size and complexity while preserving or enhancing task-specific performance. By leveraging data distillation, knowledge distillation via Kullback-Leibler divergence, Bayesian hyperparameter optimization, and the Muon optimizer, our pipeline achieves up to 2x memory compression (e.g., reducing a 6GB model to 3GB) and enables efficient inference for specialized tasks. Empirical results demonstrate superior performance on standard LLM benchmarks compared to GPTQ quantization alone, with the Muon optimizer notably enhancing fine-tuned models' resistance to accuracy decay during quantization."
+  },
+  "arxiv_2603.17435": {
+    "doc_id": "arxiv_2603.17435",
+    "title": "ZipServ: Fast and Memory-Efficient LLM Inference with Hardware-Aware Lossless Compression",
+    "year": 2026,
+    "venue": "cs.DC",
+    "abstract": "Lossless model compression holds tremendous promise for alleviating the memory and bandwidth bottlenecks in bit-exact Large Language Model (LLM) serving. However, existing approaches often result in substantial inference slowdowns due to fundamental design mismatches with GPU architectures: at the kernel level, variable-length bitstreams produced by traditional entropy codecs break SIMT parallelism; at the system level, decoupled pipelines lead to redundant memory traffic. We present ZipServ, a lossless compression framework co-designed for efficient LLM inference. ZipServ introduces Tensor-Core-Aware Triple Bitmap Encoding (TCA-TBE), a novel fixed-length format that enables constant-time, parallel decoding, together with a fused decompression-GEMM (ZipGEMM) kernel that decompresses weights on-the-fly directly into Tensor Core registers. This \"load-compressed, compute-decompressed\" design eliminates intermediate buffers and maximizes compute intensity. Experiments show that ZipServ reduces the model size by up to 30%, achieves up to 2.21x kernel-level speedup over NVIDIA's cuBLAS, and expedites end-to-end inference by an average of 1.22x over vLLM. ZipServ is the first lossless com"
+  },
+  "arxiv_2604.13556": {
+    "doc_id": "arxiv_2604.13556",
+    "title": "YOCO++: Enhancing YOCO with KV Residual Connections for Efficient LLM Inference",
+    "year": 2026,
+    "venue": "cs.CL",
+    "abstract": "Cross-layer key-value (KV) compression has been found to be effective in efficient inference of large language models (LLMs). Although they reduce the memory consumption of the KV cache, such methods usually introduce non-negligible performance degradation. In this work, we aim to enhance the performance of YOCO, a cross-layer KV compression method that shares the KVs of the middle layer with the top-half layers. We propose YOCO++, an enhanced YOCO that incorporates a weighted residual connection between the KVs of each bottom-half layer and the bottom layer. Compared to YOCO, YOCO++ increases model capacity while maintaining the same training and inference efficiency. Our experiments show that YOCO++ achieves state-of-the-art performance among the cross-layer KV compression methods at a 50% KV cache compression rate, outperforming the standard Transformer."
+  },
+  "arxiv_2604.17709": {
+    "doc_id": "arxiv_2604.17709",
+    "title": "DeInfer: Efficient Parallel Inferencing for Decomposed Large Language Models",
+    "year": 2026,
+    "venue": "cs.CL",
+    "abstract": "Existing works on large language model (LLM) decomposition mainly focus on improving performance on downstream tasks, but they ignore the poor parallel inference performance when trying to scale up the model size. To mitigate this important performance issue, this paper introduces DeInfer, a high-performance inference system dedicated to parallel inference of decomposed LLMs. It consists of multiple optimizations to maximize performance and be compatible with state-of-the-art optimization techniques. Extensive experiments are carried out to evaluate DeInfer's performance, where the results demonstrate its superiority, suggesting it can greatly facilitate the parallel inference of decomposed LLMs."
+  },
+  "arxiv_2605.29639": {
+    "doc_id": "arxiv_2605.29639",
+    "title": "RTP-LLM: High-Performance Alibaba LLM Inference Engine",
+    "year": 2026,
+    "venue": "cs.OS",
+    "abstract": "Large Language Models (LLMs) have revolutionized AI applications, but deploying them at scale presents significant challenges. We present RTP-LLM, a high-performance inference engine for industrial-scale LLM deployment, successfully deployed across Alibaba Group serving over 100 million users. RTP-LLM addresses fundamental bottlenecks through integrated design. It optimizes model loading via file-order-driven I/O and parallel I/O-communication overlapping. The Prefill-Decode Disaggregation architecture decouples compute-intensive prefill from memory-bound decode phases, combined with hierarchical multi-tiered KV cache management enabling efficient cache reuse. In addition, RTP-LLM incorporates modular speculative decoding supporting multiple algorithms, adaptive KV cache quantization, and decoupled multimodal processing, with support for multi-level parallelism.   Comprehensive evaluations across diverse model architectures (8B-235B parameters) have been conducted, where both controlled benchmarks and real production workloads are used. The results demonstrate RTP-LLM's superior performance against vLLM and SGLang: 4.7x-6.3x model loading speedup, 35-37% TTFT P95 latency reduction "
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "topic_id": "fast_vision_language_pretraining",
+  "system": "slrgp",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "[arxiv_2204.04588] argue, the standard contrastive objective employed by models such as CLIP does not adequately account for such noise, contributing to data and compute inefficiency; their proposed remedy introduces progressive self-distillation with soft image-caption similarity targets to produce more robust cross-modal representations.",
+      "citation_markers": [
+        "[arxiv_2204.04588]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "[arxiv_2305.20088] observes that standard CLIP training applies data augmentations exclusively to images while leaving textual inputs unmodified, thereby limiting the diversity of supervision signals; systematic text rewrites on the language side yield meaningful improvements in downstream transfer performance.",
+      "citation_markers": [
+        "[arxiv_2305.20088]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "[arxiv_2305.15483] observe that existing weakly supervised VLP methods rely solely on local image descriptors such as object tags as cross-modal anchors, constraining the richness of learned alignments; they instead propose relative representations to capture broader structural correspondences between modalities while preserving the efficiency advantages of weak supervision.",
+      "citation_markers": [
+        "[arxiv_2305.15483]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "[arxiv_2306.07915] challenges this assumption through a careful empirical comparison, finding that image captioners can serve as scalable vision learners competitive with contrastive counterparts, thereby reopening the question of which pretraining objective is preferable for vision backbone learning. This finding is complemented by large-scale generative models such as PaLI [arxiv_2209.06794], which jointly scales vision and language components within a unified text-generation interface, supporting a broad range of vision, language, and multimodal tasks across many languages.",
+      "citation_markers": [
+        "[arxiv_2306.07915]",
+        "[arxiv_2209.06794]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "[arxiv_2303.04998] proposes rethinking visual prompt learning through the lens of masked visual token modeling, aligning the downstream adaptation mechanism more closely with the pretraining objective. This stands in contrast to additive input-space approaches such as convolutional visual prompts, which focus on robustness to out-of-distribution samples: [arxiv_2303.00198] introduces convolutional visual prompts specifically to overcome the overfitting that arises when high-dimensional additive prompt vectors are used in self-supervised, test-time adaptation settings without labeled data, highlighting a practical limitation of standard visual prompting under label scarcity.",
+      "citation_markers": [
+        "[arxiv_2303.04998]",
+        "[arxiv_2303.00198]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Conditional Prompt Learning addressed this limitation by generating instance-conditioned prompts, enabling more flexible adaptation [arxiv_2203.05557]. However, a persistent overfitting problem remains in existing soft prompt methods, where accuracy on unseen classes degrades substantially; LASP responds with a text-to-text optimization framework that improves generalization across classes [arxiv_2210.01115].",
+      "citation_markers": [
+        "[arxiv_2203.05557]",
+        "[arxiv_2210.01115]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "VL-PET addresses this challenge by integrating modular modifications such as Adapter and LoRA into encoder-decoder architectures with granularity control, demonstrating that competitive performance can be achieved while updating far fewer parameters than full fine-tuning [arxiv_2308.09804].",
+      "citation_markers": [
+        "[arxiv_2308.09804]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "I-Tuning freezes a pretrained language model and inserts a small set of trainable parameters to bridge visual inputs, substantially reducing training cost for image captioning [arxiv_2202.06574]. Similarly, PILL introduces adapter experts and attention gating mechanisms to plug visual information into large language models, enabling diverse instruction following with minimal parameter overhead [arxiv_2311.02126].",
+      "citation_markers": [
+        "[arxiv_2202.06574]",
+        "[arxiv_2311.02126]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "[arxiv_2210.04183] observed that most existing multimodal pretraining methods excel at global-level image-text alignment while lacking effective fine-grained interaction, proposing jointly masked multimodal modeling to address this gap. Similarly, [arxiv_2303.02995] noted that contrastive models like CLIP do not explicitly encode hierarchical structure in visual or linguistic representations, limiting their capacity for localized understanding.",
+      "citation_markers": [
+        "[arxiv_2210.04183]",
+        "[arxiv_2303.02995]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "[arxiv_2312.11967] addresses the challenge of distinguishing a target object from semantically similar distractors through context disentangling and prototype inheriting, arguing that discriminative contextual information is systematically underutilized by prior methods, particularly when multiple objects share the same category. Complementarily, [arxiv_2112.15324] identifies a confounding bias between language and location in grounding pipelines, showing that models often rely on spurious language-location associations rather than genuine visual reasoning.",
+      "citation_markers": [
+        "[arxiv_2312.11967]",
+        "[arxiv_2112.15324]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "[arxiv_1903.11649] proposed an end-to-end model that uses caption-to-image retrieval as a downstream task to guide phrase localization, inferring latent correspondences between regions-of-interest and phrases. Similarly, [arxiv_1803.03879] addressed the same weakly supervised setting by incorporating knowledge-aided consistency to improve region-language mapping when explicit supervision is unavailable.",
+      "citation_markers": [
+        "[arxiv_1903.11649]",
+        "[arxiv_1803.03879]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "LXMERT [arxiv_1908.07490] introduced a large-scale Transformer architecture with dedicated cross-modality encoders and object-level visual features, enabling strong performance on tasks requiring spatial reasoning and object-level alignment. Complementing this, [arxiv_2008.08012] argued that existing attention mechanisms lack sufficient linguistic understanding, proposing linguistically-aware attention to reduce the semantic gap between modalities in tasks such as visual grounding.",
+      "citation_markers": [
+        "[arxiv_1908.07490]",
+        "[arxiv_2008.08012]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6715,
+    "completion_tokens": 1483,
+    "total_tokens": 8198
+  }
+}

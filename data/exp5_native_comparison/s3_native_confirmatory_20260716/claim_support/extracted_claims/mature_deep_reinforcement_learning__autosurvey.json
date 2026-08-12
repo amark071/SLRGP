@@ -1,0 +1,121 @@
+{
+  "topic_id": "mature_deep_reinforcement_learning",
+  "system": "autosurvey",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The **Markov property** is the cornerstone of this framework, stipulating that the future state distribution depends only on the current state and action, and not on the history of preceding states and actions",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "POMDPs are notoriously difficult to solve due to the continuous and high-dimensional nature of the belief space, rendering exact computation intractable in general [13",
+      "citation_markers": [
+        "[13]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The options framework, grounded in Semi-MDP theory, allows agents to compose primitive actions into macro-actions and reason over extended time horizons, significantly reducing the effective planning depth and improving computational efficiency [21; 22",
+      "citation_markers": [
+        "[21; 22]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "In deep reinforcement learning, partial observability is often addressed by equipping agents with memory mechanisms such as recurrent neural networks or LSTM-based architectures that maintain a compressed history of past observations as a proxy for the belief state [17",
+      "citation_markers": [
+        "[17]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "These nonlinear equations encode the **principle of optimality**: an optimal policy must act optimally from every state it visits, regardless of how that state was reached",
+      "citation_markers": [
+        "[33; 30]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "This contraction property is the foundation upon which the convergence guarantees for value-based reinforcement learning algorithms in Section 1.3 ultimately rest. Formal Coq proofs of this convergence using metric coinduction have been developed, mechanizing Bellman's optimality principle and establishing a rigorous basis for certified RL implementations [33",
+      "citation_markers": [
+        "[33]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "TD learning has been extensively analyzed theoretically, with finite-time convergence bounds established under linear function approximation [52], and its global convergence to the optimal value function has been proven even with overparameterized two-layer neural networks [53; 54",
+      "citation_markers": [
+        "[52]",
+        "[53; 54]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Unlike SARSA, Q-learning uses the greedy action at the next state in its update target, regardless of the action actually taken by the behavioral policy",
+      "citation_markers": [
+        "[62]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The policy gradient theorem establishes that",
+      "citation_markers": [
+        "[75; 76]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "deep learning instantiation is **Proximal Policy Optimization (PPO)**, which belongs to a broader family of algorithms including Trust Region Policy Optimization (TRPO) and Asynchronous Advantage Actor-Critic (A3C/A2C), all of which constrain or regularize the magnitude of policy updates to maintain stability. These algorithms are discussed in greater depth in later sections, but their connection to the policy gradient theorem is direct: they all instantiate the gradient ascent idea while adding safeguards against destructively large parameter updates [75; 84",
+      "citation_markers": [
+        "[75; 84]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "The choice of neural architecture also has profound implications for computational efficiency and deployability. Asymmetric architectures that switch between computationally expensive and lightweight policies have been proposed to reduce inference costs without sacrificing performance, addressing the practical constraint that mobile and embedded platforms cannot sustain high-energy DNN inference [136",
+      "citation_markers": [
+        "[136]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "58].\n\n### SARSA\n\nSARSA (State-Action-Reward-State-Action) is an on-policy TD control algorithm that learns the action-value function $Q(s,a)$ for the policy being followed by the agent",
+      "citation_markers": [
+        "[59; 60]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 103222,
+    "completion_tokens": 902,
+    "total_tokens": 104124
+  }
+}

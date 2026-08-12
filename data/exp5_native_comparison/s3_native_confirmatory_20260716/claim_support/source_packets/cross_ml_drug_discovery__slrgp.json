@@ -1,0 +1,422 @@
+{
+  "topic_id": "cross_ml_drug_discovery",
+  "system": "slrgp",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Early frameworks demonstrated that sequence-based generative models could be steered toward desirable chemical properties through reinforcement learning; Olivecrona and colleagues showed that augmented episodic likelihood enables a recurrent model to produce analogues of query structures and to generate compounds predicted to be active against specific biological targets [arxiv_1704.07555].",
+      "citation_markers": [
+        "[arxiv_1704.07555]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1704.07555",
+          "doc_id": "arxiv_1704.07555",
+          "title": "Molecular De Novo Design through Deep Reinforcement Learning",
+          "year": 2017,
+          "venue": "cs.AI",
+          "abstract": "This work introduces a method to tune a sequence-based generative model for molecular de novo design that through augmented episodic likelihood can learn to generate structures with certain specified desirable properties. We demonstrate how this model can execute a range of tasks such as generating analogues to a query structure and generating compounds predicted to be active against a biological target. As a proof of principle, the model is first trained to generate molecules that do not contain sulphur. As a second example, the model is trained to generate analogues to the drug Celecoxib, a technique that could be used for scaffold hopping or library expansion starting from a single molecule. Finally, when tuning the model towards generating compounds predicted to be active against the dopamine receptor type 2, the model generates structures of which more than 95% are predicted to be active, including experimentally confirmed actives that have not been included in either the generative model nor the activity prediction model.",
+          "resolved_arxiv": {
+            "arxiv_id": "1704.07555",
+            "title": "Molecular De Novo Design through Deep Reinforcement Learning",
+            "abstract": "This work introduces a method to tune a sequence-based generative model for molecular de novo design that through augmented episodic likelihood can learn to generate structures with certain specified desirable properties. We demonstrate how this model can execute a range of tasks such as generating analogues to a query structure and generating compounds predicted to be active against a biological target. As a proof of principle, the model is first trained to generate molecules that do not contain sulphur. As a second example, the model is trained to generate analogues to the drug Celecoxib, a technique that could be used for scaffold hopping or library expansion starting from a single molecule. Finally, when tuning the model towards generating compounds predicted to be active against the dopamine receptor type 2, the model generates structures of which more than 95% are predicted to be active, including experimentally confirmed actives that have not been included in either the generative model nor the activity prediction model.",
+            "published": "2017-04-25T06:41:21Z",
+            "source_url": "https://arxiv.org/abs/1704.07555"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Gao and Coley systematically evaluated this limitation, demonstrating that a substantial fraction of molecules proposed by leading generative frameworks cannot be readily accessed through known synthetic routes, thereby undermining their translational value [arxiv_2002.07007].",
+      "citation_markers": [
+        "[arxiv_2002.07007]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2002.07007",
+          "doc_id": "arxiv_2002.07007",
+          "title": "The Synthesizability of Molecules Proposed by Generative Models",
+          "year": 2020,
+          "venue": "q-bio.QM",
+          "abstract": "The discovery of functional molecules is an expensive and time-consuming process, exemplified by the rising costs of small molecule therapeutic discovery. One class of techniques of growing interest for early-stage drug discovery is de novo molecular generation and optimization, catalyzed by the development of new deep learning approaches. These techniques can suggest novel molecular structures intended to maximize a multi-objective function, e.g., suitability as a therapeutic against a particular target, without relying on brute-force exploration of a chemical space. However, the utility of these approaches is stymied by ignorance of synthesizability. To highlight the severity of this issue, we use a data-driven computer-aided synthesis planning program to quantify how often molecules proposed by state-of-the-art generative models cannot be readily synthesized. Our analysis demonstrates that there are several tasks for which these models generate unrealistic molecular structures despite performing well on popular quantitative benchmarks. Synthetic complexity heuristics can successfully bias generation toward synthetically-tractable chemical space, although doing so necessarily detracts from the primary objective. This analysis suggests that to improve the utility of these models in real discovery workflows, new algorithm development is warranted.",
+          "resolved_arxiv": {
+            "arxiv_id": "2002.07007",
+            "title": "The Synthesizability of Molecules Proposed by Generative Models",
+            "abstract": "The discovery of functional molecules is an expensive and time-consuming process, exemplified by the rising costs of small molecule therapeutic discovery. One class of techniques of growing interest for early-stage drug discovery is de novo molecular generation and optimization, catalyzed by the development of new deep learning approaches. These techniques can suggest novel molecular structures intended to maximize a multi-objective function, e.g., suitability as a therapeutic against a particular target, without relying on brute-force exploration of a chemical space. However, the utility of these approaches is stymied by ignorance of synthesizability. To highlight the severity of this issue, we use a data-driven computer-aided synthesis planning program to quantify how often molecules proposed by state-of-the-art generative models cannot be readily synthesized. Our analysis demonstrates that there are several tasks for which these models generate unrealistic molecular structures despite performing well on popular quantitative benchmarks. Synthetic complexity heuristics can successfully bias generation toward synthetically-tractable chemical space, although doing so necessarily detracts from the primary objective. This analysis suggests that to improve the utility of these models in real discovery workflows, new algorithm development is warranted.",
+            "published": "2020-02-17T15:41:28Z",
+            "source_url": "https://arxiv.org/abs/2002.07007"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The GuacaMol benchmarking framework was introduced specifically to address the related problem of inconsistent evaluation protocols, providing standardized tasks against which neural generative models can be systematically profiled and compared to established computational chemistry baselines [arxiv_1811.09621].",
+      "citation_markers": [
+        "[arxiv_1811.09621]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1811.09621",
+          "doc_id": "arxiv_1811.09621",
+          "title": "GuacaMol: Benchmarking Models for De Novo Molecular Design",
+          "year": 2021,
+          "venue": "q-bio.QM",
+          "abstract": "De novo design seeks to generate molecules with required property profiles by virtual design-make-test cycles. With the emergence of deep learning and neural generative models in many application areas, models for molecular design based on neural networks appeared recently and show promising results. However, the new models have not been profiled on consistent tasks, and comparative studies to well-established algorithms have only seldom been performed. To standardize the assessment of both classical and neural models for de novo molecular design, we propose an evaluation framework, GuacaMol, based on a suite of standardized benchmarks. The benchmark tasks encompass measuring the fidelity of the models to reproduce the property distribution of the training sets, the ability to generate novel molecules, the exploration and exploitation of chemical space, and a variety of single and multi-objective optimization tasks. The benchmarking open-source Python code, and a leaderboard can be found on https://benevolent.ai/guacamol",
+          "resolved_arxiv": {
+            "arxiv_id": "1811.09621",
+            "title": "GuacaMol: Benchmarking Models for De Novo Molecular Design",
+            "abstract": "De novo design seeks to generate molecules with required property profiles by virtual design-make-test cycles. With the emergence of deep learning and neural generative models in many application areas, models for molecular design based on neural networks appeared recently and show promising results. However, the new models have not been profiled on consistent tasks, and comparative studies to well-established algorithms have only seldom been performed. To standardize the assessment of both classical and neural models for de novo molecular design, we propose an evaluation framework, GuacaMol, based on a suite of standardized benchmarks. The benchmark tasks encompass measuring the fidelity of the models to reproduce the property distribution of the training sets, the ability to generate novel molecules, the exploration and exploitation of chemical space, and a variety of single and multi-objective optimization tasks. The benchmarking open-source Python code, and a leaderboard can be found on https://benevolent.ai/guacamol",
+            "published": "2018-11-22T18:08:13Z",
+            "source_url": "https://arxiv.org/abs/1811.09621"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Flow-based autoregressive models operating directly on molecular graphs address the dual challenge of producing chemically valid structures while simultaneously optimizing chemical properties [arxiv_2001.09382]. More recently, transformer architectures have been adapted for de novo design, with joint transformer frameworks combining decoder, encoder, and predictor components in a shared-weight generative model that formulates molecular generation as a probabilistic black-box optimization problem, explicitly targeting the difficulty of generating novel molecules outside the training distribution [arxiv_2310.02066].",
+      "citation_markers": [
+        "[arxiv_2001.09382]",
+        "[arxiv_2310.02066]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2001.09382",
+          "doc_id": "arxiv_2001.09382",
+          "title": "GraphAF: a Flow-based Autoregressive Model for Molecular Graph\n  Generation",
+          "year": 2020,
+          "venue": "cs.LG",
+          "abstract": "Molecular graph generation is a fundamental problem for drug discovery and has been attracting growing attention. The problem is challenging since it requires not only generating chemically valid molecular structures but also optimizing their chemical properties in the meantime. Inspired by the recent progress in deep generative models, in this paper we propose a flow-based autoregressive model for graph generation called GraphAF. GraphAF combines the advantages of both autoregressive and flow-based approaches and enjoys: (1) high model flexibility for data density estimation; (2) efficient parallel computation for training; (3) an iterative sampling process, which allows leveraging chemical domain knowledge for valency checking. Experimental results show that GraphAF is able to generate 68% chemically valid molecules even without chemical knowledge rules and 100% valid molecules with chemical rules. The training process of GraphAF is two times faster than the existing state-of-the-art approach GCPN. After fine-tuning the model for goal-directed property optimization with reinforcement learning, GraphAF achieves state-of-the-art performance on both chemical property optimization and constrained property optimization.",
+          "resolved_arxiv": {
+            "arxiv_id": "2001.09382",
+            "title": "GraphAF: a Flow-based Autoregressive Model for Molecular Graph Generation",
+            "abstract": "Molecular graph generation is a fundamental problem for drug discovery and has been attracting growing attention. The problem is challenging since it requires not only generating chemically valid molecular structures but also optimizing their chemical properties in the meantime. Inspired by the recent progress in deep generative models, in this paper we propose a flow-based autoregressive model for graph generation called GraphAF. GraphAF combines the advantages of both autoregressive and flow-based approaches and enjoys: (1) high model flexibility for data density estimation; (2) efficient parallel computation for training; (3) an iterative sampling process, which allows leveraging chemical domain knowledge for valency checking. Experimental results show that GraphAF is able to generate 68% chemically valid molecules even without chemical knowledge rules and 100% valid molecules with chemical rules. The training process of GraphAF is two times faster than the existing state-of-the-art approach GCPN. After fine-tuning the model for goal-directed property optimization with reinforcement learning, GraphAF achieves state-of-the-art performance on both chemical property optimization and constrained property optimization.",
+            "published": "2020-01-26T01:12:40Z",
+            "source_url": "https://arxiv.org/abs/2001.09382"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2310.02066",
+          "doc_id": "arxiv_2310.02066",
+          "title": "De Novo Drug Design with Joint Transformers",
+          "year": 2023,
+          "venue": "cs.LG",
+          "abstract": "De novo drug design requires simultaneously generating novel molecules outside of training data and predicting their target properties, making it a hard task for generative models. To address this, we propose Joint Transformer that combines a Transformer decoder, Transformer encoder, and a predictor in a joint generative model with shared weights. We formulate a probabilistic black-box optimization algorithm that employs Joint Transformer to generate novel molecules with improved target properties and outperforms other SMILES-based optimization methods in de novo drug design.",
+          "resolved_arxiv": {
+            "arxiv_id": "2310.02066",
+            "title": "De Novo Drug Design with Joint Transformers",
+            "abstract": "De novo drug design requires simultaneously generating novel molecules outside of training data and predicting their target properties, making it a hard task for generative models. To address this, we propose Joint Transformer that combines a Transformer decoder, Transformer encoder, and a predictor in a joint generative model with shared weights. We formulate a probabilistic black-box optimization algorithm that employs Joint Transformer to generate novel molecules with improved target properties and outperforms other SMILES-based optimization methods in de novo drug design.",
+            "published": "2023-10-03T14:09:15Z",
+            "source_url": "https://arxiv.org/abs/2310.02066"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Traditional QSAR methods rely on handcrafted molecular descriptors, as exemplified by [arxiv_1904.05052], which employs protein star graph descriptors combined with classical ML classifiers to categorize signaling proteins relevant to drug targets.",
+      "citation_markers": [
+        "[arxiv_1904.05052]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1904.05052",
+          "doc_id": "arxiv_1904.05052",
+          "title": "Classification of signaling proteins based on molecular star graph\n  descriptors using Machine Learning models",
+          "year": 2019,
+          "venue": "q-bio.QM",
+          "abstract": "Signaling proteins are an important topic in drug development due to the increased importance of finding fast, accurate and cheap methods to evaluate new molecular targets involved in specific diseases. The complexity of the protein structure hinders the direct association of the signaling activity with the molecular structure. Therefore, the proposed solution involves the use of protein star graphs for the peptide sequence information encoding into specific topological indices calculated with S2SNet tool. The Quantitative Structure-Activity Relationship classification model obtained with Machine Learning techniques is able to predict new signaling peptides. The best classification model is the first signaling prediction model, which is based on eleven descriptors and it was obtained using the Support Vector Machines - Recursive Feature Elimination (SVM-RFE) technique with the Laplacian kernel (RFE-LAP) and an AUROC of 0.961. Testing a set of 3114 proteins of unknown function from the PDB database assessed the prediction performance of the model. Important signaling pathways are presented for three UniprotIDs (34 PDBs) with a signaling prediction greater than 98.0%.",
+          "resolved_arxiv": {
+            "arxiv_id": "1904.05052",
+            "title": "Classification of signaling proteins based on molecular star graph descriptors using Machine Learning models",
+            "abstract": "Signaling proteins are an important topic in drug development due to the increased importance of finding fast, accurate and cheap methods to evaluate new molecular targets involved in specific diseases. The complexity of the protein structure hinders the direct association of the signaling activity with the molecular structure. Therefore, the proposed solution involves the use of protein star graphs for the peptide sequence information encoding into specific topological indices calculated with S2SNet tool. The Quantitative Structure-Activity Relationship classification model obtained with Machine Learning techniques is able to predict new signaling peptides. The best classification model is the first signaling prediction model, which is based on eleven descriptors and it was obtained using the Support Vector Machines - Recursive Feature Elimination (SVM-RFE) technique with the Laplacian kernel (RFE-LAP) and an AUROC of 0.961. Testing a set of 3114 proteins of unknown function from the PDB database assessed the prediction performance of the model. Important signaling pathways are presented for three UniprotIDs (34 PDBs) with a signaling prediction greater than 98.0%.",
+            "published": "2019-04-10T08:22:35Z",
+            "source_url": "https://arxiv.org/abs/1904.05052"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "In contrast, deep neural networks that perform feature learning directly from molecular structure promise to outperform both traditional physics-based and knowledge-based approaches by circumventing the limitations of manual feature engineering [arxiv_1803.04465]. PotentialNet, introduced in that work, is specifically designed to capture molecular properties across multiple length scales, from solubility to protein–ligand binding, using staged graph convolutional networks that encode both covalent and non-covalent interactions.",
+      "citation_markers": [
+        "[arxiv_1803.04465]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1803.04465",
+          "doc_id": "arxiv_1803.04465",
+          "title": "PotentialNet for Molecular Property Prediction",
+          "year": 2018,
+          "venue": "cs.LG",
+          "abstract": "The arc of drug discovery entails a multiparameter optimization problem spanning vast length scales. They key parameters range from solubility (angstroms) to protein-ligand binding (nanometers) to in vivo toxicity (meters). Through feature learning---instead of feature engineering---deep neural networks promise to outperform both traditional physics-based and knowledge-based machine learning models for predicting molecular properties pertinent to drug discovery. To this end, we present the PotentialNet family of graph convolutions. These models are specifically designed for and achieve state-of-the-art performance for protein-ligand binding affinity. We further validate these deep neural networks by setting new standards of performance in several ligand-based tasks. In parallel, we introduce a new metric, the Regression Enrichment Factor $EF_χ^{(R)}$, to measure the early enrichment of computational models for chemical data. Finally, we introduce a cross-validation strategy based on structural homology clustering that can more accurately measure model generalizability, which crucially distinguishes the aims of machine learning for drug discovery from standard machine learning tasks.",
+          "resolved_arxiv": {
+            "arxiv_id": "1803.04465",
+            "title": "PotentialNet for Molecular Property Prediction",
+            "abstract": "The arc of drug discovery entails a multiparameter optimization problem spanning vast length scales. They key parameters range from solubility (angstroms) to protein-ligand binding (nanometers) to in vivo toxicity (meters). Through feature learning---instead of feature engineering---deep neural networks promise to outperform both traditional physics-based and knowledge-based machine learning models for predicting molecular properties pertinent to drug discovery. To this end, we present the PotentialNet family of graph convolutions. These models are specifically designed for and achieve state-of-the-art performance for protein-ligand binding affinity. We further validate these deep neural networks by setting new standards of performance in several ligand-based tasks. In parallel, we introduce a new metric, the Regression Enrichment Factor $EF_χ^{(R)}$, to measure the early enrichment of computational models for chemical data. Finally, we introduce a cross-validation strategy based on structural homology clustering that can more accurately measure model generalizability, which crucially distinguishes the aims of machine learning for drug discovery from standard machine learning tasks.",
+            "published": "2018-03-12T19:06:03Z",
+            "source_url": "https://arxiv.org/abs/1803.04465"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Directed message-passing neural networks have been shown to construct expressive learned molecular representations that compare favorably to models relying on pre-computed fingerprints or expert-crafted descriptors [arxiv_1904.01561]. Subsequent architectural refinements sought to balance expressiveness with computational efficiency; multiplex graph formulations incorporated molecular mechanics information to improve predictive accuracy [arxiv_2011.07457], while attention-based directed message passing further refined how structural information is aggregated across molecular graphs [arxiv_2305.14819].",
+      "citation_markers": [
+        "[arxiv_1904.01561]",
+        "[arxiv_2011.07457]",
+        "[arxiv_2305.14819]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1904.01561",
+          "doc_id": "arxiv_1904.01561",
+          "title": "Analyzing Learned Molecular Representations for Property Prediction",
+          "year": 2019,
+          "venue": "cs.LG",
+          "abstract": "Advancements in neural machinery have led to a wide range of algorithmic solutions for molecular property prediction. Two classes of models in particular have yielded promising results: neural networks applied to computed molecular fingerprints or expert-crafted descriptors, and graph convolutional neural networks that construct a learned molecular representation by operating on the graph structure of the molecule. However, recent literature has yet to clearly determine which of these two methods is superior when generalizing to new chemical space. Furthermore, prior research has rarely examined these new models in industry research settings in comparison to existing employed models. In this paper, we benchmark models extensively on 19 public and 16 proprietary industrial datasets spanning a wide variety of chemical endpoints. In addition, we introduce a graph convolutional model that consistently matches or outperforms models using fixed molecular descriptors as well as previous graph neural architectures on both public and proprietary datasets. Our empirical findings indicate that while approaches based on these representations have yet to reach the level of experimental reproducibility, our proposed model nevertheless offers significant improvements over models currently used in industrial workflows.",
+          "resolved_arxiv": {
+            "arxiv_id": "1904.01561",
+            "title": "Analyzing Learned Molecular Representations for Property Prediction",
+            "abstract": "Advancements in neural machinery have led to a wide range of algorithmic solutions for molecular property prediction. Two classes of models in particular have yielded promising results: neural networks applied to computed molecular fingerprints or expert-crafted descriptors, and graph convolutional neural networks that construct a learned molecular representation by operating on the graph structure of the molecule. However, recent literature has yet to clearly determine which of these two methods is superior when generalizing to new chemical space. Furthermore, prior research has rarely examined these new models in industry research settings in comparison to existing employed models. In this paper, we benchmark models extensively on 19 public and 16 proprietary industrial datasets spanning a wide variety of chemical endpoints. In addition, we introduce a graph convolutional model that consistently matches or outperforms models using fixed molecular descriptors as well as previous graph neural architectures on both public and proprietary datasets. Our empirical findings indicate that while approaches based on these representations have yet to reach the level of experimental reproducibility, our proposed model nevertheless offers significant improvements over models currently used in industrial workflows.",
+            "published": "2019-04-02T17:35:27Z",
+            "source_url": "https://arxiv.org/abs/1904.01561"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2011.07457",
+          "doc_id": "arxiv_2011.07457",
+          "title": "Molecular Mechanics-Driven Graph Neural Network with Multiplex Graph for\n  Molecular Structures",
+          "year": 2020,
+          "venue": "cs.LG",
+          "abstract": "The prediction of physicochemical properties from molecular structures is a crucial task for artificial intelligence aided molecular design. A growing number of Graph Neural Networks (GNNs) have been proposed to address this challenge. These models improve their expressive power by incorporating auxiliary information in molecules while inevitably increase their computational complexity. In this work, we aim to design a GNN which is both powerful and efficient for molecule structures. To achieve such goal, we propose a molecular mechanics-driven approach by first representing each molecule as a two-layer multiplex graph, where one layer contains only local connections that mainly capture the covalent interactions and another layer contains global connections that can simulate non-covalent interactions. Then for each layer, a corresponding message passing module is proposed to balance the trade-off of expression power and computational complexity. Based on these two modules, we build Multiplex Molecular Graph Neural Network (MXMNet). When validated by the QM9 dataset for small molecules and PDBBind dataset for large protein-ligand complexes, MXMNet achieves superior results to the existing state-of-the-art models under restricted resources.",
+          "resolved_arxiv": {
+            "arxiv_id": "2011.07457",
+            "title": "Molecular Mechanics-Driven Graph Neural Network with Multiplex Graph for Molecular Structures",
+            "abstract": "The prediction of physicochemical properties from molecular structures is a crucial task for artificial intelligence aided molecular design. A growing number of Graph Neural Networks (GNNs) have been proposed to address this challenge. These models improve their expressive power by incorporating auxiliary information in molecules while inevitably increase their computational complexity. In this work, we aim to design a GNN which is both powerful and efficient for molecule structures. To achieve such goal, we propose a molecular mechanics-driven approach by first representing each molecule as a two-layer multiplex graph, where one layer contains only local connections that mainly capture the covalent interactions and another layer contains global connections that can simulate non-covalent interactions. Then for each layer, a corresponding message passing module is proposed to balance the trade-off of expression power and computational complexity. Based on these two modules, we build Multiplex Molecular Graph Neural Network (MXMNet). When validated by the QM9 dataset for small molecules and PDBBind dataset for large protein-ligand complexes, MXMNet achieves superior results to the existing state-of-the-art models under restricted resources.",
+            "published": "2020-11-15T05:55:15Z",
+            "source_url": "https://arxiv.org/abs/2011.07457"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2305.14819",
+          "doc_id": "arxiv_2305.14819",
+          "title": "Directed Message Passing Based on Attention for Prediction of Molecular\n  Properties",
+          "year": 2023,
+          "venue": "cs.IT",
+          "abstract": "Molecular representation learning (MRL) has long been crucial in the fields of drug discovery and materials science, and it has made significant progress due to the development of natural language processing (NLP) and graph neural networks (GNNs). NLP treats the molecules as one dimensional sequential tokens while GNNs treat them as two dimensional topology graphs. Based on different message passing algorithms, GNNs have various performance on detecting chemical environments and predicting molecular properties. Herein, we propose Directed Graph Attention Networks (D-GATs): the expressive GNNs with directed bonds. The key to the success of our strategy is to treat the molecular graph as directed graph and update the bond states and atom states by scaled dot-product attention mechanism. This allows the model to better capture the sub-structure of molecular graph, i.e., functional groups. Compared to other GNNs or Message Passing Neural Networks (MPNNs), D-GATs outperform the state-of-the-art on 13 out of 15 important molecular property prediction benchmarks.",
+          "resolved_arxiv": {
+            "arxiv_id": "2305.14819",
+            "title": "Directed Message Passing Based on Attention for Prediction of Molecular Properties",
+            "abstract": "Molecular representation learning (MRL) has long been crucial in the fields of drug discovery and materials science, and it has made significant progress due to the development of natural language processing (NLP) and graph neural networks (GNNs). NLP treats the molecules as one dimensional sequential tokens while GNNs treat them as two dimensional topology graphs. Based on different message passing algorithms, GNNs have various performance on detecting chemical environments and predicting molecular properties. Herein, we propose Directed Graph Attention Networks (D-GATs): the expressive GNNs with directed bonds. The key to the success of our strategy is to treat the molecular graph as directed graph and update the bond states and atom states by scaled dot-product attention mechanism. This allows the model to better capture the sub-structure of molecular graph, i.e., functional groups. Compared to other GNNs or Message Passing Neural Networks (MPNNs), D-GATs outperform the state-of-the-art on 13 out of 15 important molecular property prediction benchmarks.",
+            "published": "2023-05-24T07:13:30Z",
+            "source_url": "https://arxiv.org/abs/2305.14819"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "A meta-learning perspective on QSAR, wherein knowledge accumulated across many target-specific datasets is leveraged to improve predictions on new, data-scarce targets, has been advanced by Meta-QSAR [arxiv_1709.03854] and meta-learning GNN initializations [arxiv_2003.05996], the latter specifically targeting low-resource molecular property prediction.",
+      "citation_markers": [
+        "[arxiv_1709.03854]",
+        "[arxiv_2003.05996]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1709.03854",
+          "doc_id": "arxiv_1709.03854",
+          "title": "Meta-QSAR: a large-scale application of meta-learning to drug design and\n  discovery",
+          "year": 2017,
+          "venue": "cs.AI",
+          "abstract": "We investigate the learning of quantitative structure activity relationships (QSARs) as a case-study of meta-learning. This application area is of the highest societal importance, as it is a key step in the development of new medicines. The standard QSAR learning problem is: given a target (usually a protein) and a set of chemical compounds (small molecules) with associated bioactivities (e.g. inhibition of the target), learn a predictive mapping from molecular representation to activity. Although almost every type of machine learning method has been applied to QSAR learning there is no agreed single best way of learning QSARs, and therefore the problem area is well-suited to meta-learning. We first carried out the most comprehensive ever comparison of machine learning methods for QSAR learning: 18 regression methods, 6 molecular representations, applied to more than 2,700 QSAR problems. (These results have been made publicly available on OpenML and represent a valuable resource for testing novel meta-learning methods.) We then investigated the utility of algorithm selection for QSAR problems. We found that this meta-learning approach outperformed the best individual QSAR learning method (random forests using a molecular fingerprint representation) by up to 13%, on average. We conclude that meta-learning outperforms base-learning methods for QSAR learning, and as this investigation is one of the most extensive ever comparisons of base and meta-learning methods ever made, it provides evidence for the general effectiveness of meta-learning over base-learning.",
+          "resolved_arxiv": {
+            "arxiv_id": "1709.03854",
+            "title": "Meta-QSAR: a large-scale application of meta-learning to drug design and discovery",
+            "abstract": "We investigate the learning of quantitative structure activity relationships (QSARs) as a case-study of meta-learning. This application area is of the highest societal importance, as it is a key step in the development of new medicines. The standard QSAR learning problem is: given a target (usually a protein) and a set of chemical compounds (small molecules) with associated bioactivities (e.g. inhibition of the target), learn a predictive mapping from molecular representation to activity. Although almost every type of machine learning method has been applied to QSAR learning there is no agreed single best way of learning QSARs, and therefore the problem area is well-suited to meta-learning. We first carried out the most comprehensive ever comparison of machine learning methods for QSAR learning: 18 regression methods, 6 molecular representations, applied to more than 2,700 QSAR problems. (These results have been made publicly available on OpenML and represent a valuable resource for testing novel meta-learning methods.) We then investigated the utility of algorithm selection for QSAR problems. We found that this meta-learning approach outperformed the best individual QSAR learning method (random forests using a molecular fingerprint representation) by up to 13%, on average. We conclude that meta-learning outperforms base-learning methods for QSAR learning, and as this investigation is one of the most extensive ever comparisons of base and meta-learning methods ever made, it provides evidence for the general effectiveness of meta-learning over base-learning.",
+            "published": "2017-09-12T14:07:13Z",
+            "source_url": "https://arxiv.org/abs/1709.03854"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2003.05996",
+          "doc_id": "arxiv_2003.05996",
+          "title": "Meta-Learning GNN Initializations for Low-Resource Molecular Property\n  Prediction",
+          "year": 2020,
+          "venue": "cs.LG",
+          "abstract": "Building in silico models to predict chemical properties and activities is a crucial step in drug discovery. However, limited labeled data often hinders the application of deep learning in this setting. Meanwhile advances in meta-learning have enabled state-of-the-art performances in few-shot learning benchmarks, naturally prompting the question: Can meta-learning improve deep learning performance in low-resource drug discovery projects? In this work, we assess the transferability of graph neural networks initializations learned by the Model-Agnostic Meta-Learning (MAML) algorithm - and its variants FO-MAML and ANIL - for chemical properties and activities tasks. Using the ChEMBL20 dataset to emulate low-resource settings, our benchmark shows that meta-initializations perform comparably to or outperform multi-task pre-training baselines on 16 out of 20 in-distribution tasks and on all out-of-distribution tasks, providing an average improvement in AUPRC of 11.2% and 26.9% respectively. Finally, we observe that meta-initializations consistently result in the best performing models across fine-tuning sets with $k \\in \\{16, 32, 64, 128, 256\\}$ instances.",
+          "resolved_arxiv": {
+            "arxiv_id": "2003.05996",
+            "title": "Meta-Learning GNN Initializations for Low-Resource Molecular Property Prediction",
+            "abstract": "Building in silico models to predict chemical properties and activities is a crucial step in drug discovery. However, limited labeled data often hinders the application of deep learning in this setting. Meanwhile advances in meta-learning have enabled state-of-the-art performances in few-shot learning benchmarks, naturally prompting the question: Can meta-learning improve deep learning performance in low-resource drug discovery projects? In this work, we assess the transferability of graph neural networks initializations learned by the Model-Agnostic Meta-Learning (MAML) algorithm - and its variants FO-MAML and ANIL - for chemical properties and activities tasks. Using the ChEMBL20 dataset to emulate low-resource settings, our benchmark shows that meta-initializations perform comparably to or outperform multi-task pre-training baselines on 16 out of 20 in-distribution tasks and on all out-of-distribution tasks, providing an average improvement in AUPRC of 11.2% and 26.9% respectively. Finally, we observe that meta-initializations consistently result in the best performing models across fine-tuning sets with $k \\in \\{16, 32, 64, 128, 256\\}$ instances.",
+            "published": "2020-03-12T19:49:57Z",
+            "source_url": "https://arxiv.org/abs/2003.05996"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Convolutional neural networks (CNNs) applied directly to three-dimensional representations of protein–ligand complexes can learn scoring functions capable of ranking binding affinities and poses, leveraging the growing availability of structural and binding data to outperform several classical scoring approaches [arxiv_1612.02751].",
+      "citation_markers": [
+        "[arxiv_1612.02751]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1612.02751",
+          "doc_id": "arxiv_1612.02751",
+          "title": "Protein-Ligand Scoring with Convolutional Neural Networks",
+          "year": 2020,
+          "venue": "stat.ML",
+          "abstract": "Computational approaches to drug discovery can reduce the time and cost associated with experimental assays and enable the screening of novel chemotypes. Structure-based drug design methods rely on scoring functions to rank and predict binding affinities and poses. The ever-expanding amount of protein-ligand binding and structural data enables the use of deep machine learning techniques for protein-ligand scoring. We describe convolutional neural network (CNN) scoring functions that take as input a comprehensive 3D representation of a protein-ligand interaction. A CNN scoring function automatically learns the key features of protein-ligand interactions that correlate with binding. We train and optimize our CNN scoring functions to discriminate between correct and incorrect binding poses and known binders and non-binders. We find that our CNN scoring function outperforms the AutoDock Vina scoring function when ranking poses both for pose prediction and virtual screening.",
+          "resolved_arxiv": {
+            "arxiv_id": "1612.02751",
+            "title": "Protein-Ligand Scoring with Convolutional Neural Networks",
+            "abstract": "Computational approaches to drug discovery can reduce the time and cost associated with experimental assays and enable the screening of novel chemotypes. Structure-based drug design methods rely on scoring functions to rank and predict binding affinities and poses. The ever-expanding amount of protein-ligand binding and structural data enables the use of deep machine learning techniques for protein-ligand scoring. We describe convolutional neural network (CNN) scoring functions that take as input a comprehensive 3D representation of a protein-ligand interaction. A CNN scoring function automatically learns the key features of protein-ligand interactions that correlate with binding. We train and optimize our CNN scoring functions to discriminate between correct and incorrect binding poses and known binders and non-binders. We find that our CNN scoring function outperforms the AutoDock Vina scoring function when ranking poses both for pose prediction and virtual screening.",
+            "published": "2016-12-08T18:18:29Z",
+            "source_url": "https://arxiv.org/abs/1612.02751"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "A dual-graph convolutional network that separately encodes ligand bonded topology and ligand–protein contacts derived from docking poses demonstrates that combining structural rank information with deep learning improves binding mode prediction [arxiv_1910.02845].",
+      "citation_markers": [
+        "[arxiv_1910.02845]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1910.02845",
+          "doc_id": "arxiv_1910.02845",
+          "title": "Combining docking pose rank and structure with deep learning improves\n  protein-ligand binding mode prediction",
+          "year": 2020,
+          "venue": "q-bio.BM",
+          "abstract": "We present a simple, modular graph-based convolutional neural network that takes structural information from protein-ligand complexes as input to generate models for activity and binding mode prediction. Complex structures are generated by a standard docking procedure and fed into a dual-graph architecture that includes separate sub-networks for the ligand bonded topology and the ligand-protein contact map. This network division allows contributions from ligand identity to be distinguished from effects of protein-ligand interactions on classification. We show, in agreement with recent literature, that dataset bias drives many of the promising results on virtual screening that have previously been reported. However, we also show that our neural network is capable of learning from protein structural information when, as in the case of binding mode prediction, an unbiased dataset is constructed. We develop a deep learning model for binding mode prediction that uses docking ranking as input in combination with docking structures. This strategy mirrors past consensus models and outperforms the baseline docking program in a variety of tests, including on cross-docking datasets that mimic real-world docking use cases. Furthermore, the magnitudes of network predictions serve as reliable measures of model confidence",
+          "resolved_arxiv": {
+            "arxiv_id": "1910.02845",
+            "title": "Combining docking pose rank and structure with deep learning improves protein-ligand binding mode prediction",
+            "abstract": "We present a simple, modular graph-based convolutional neural network that takes structural information from protein-ligand complexes as input to generate models for activity and binding mode prediction. Complex structures are generated by a standard docking procedure and fed into a dual-graph architecture that includes separate sub-networks for the ligand bonded topology and the ligand-protein contact map. This network division allows contributions from ligand identity to be distinguished from effects of protein-ligand interactions on classification. We show, in agreement with recent literature, that dataset bias drives many of the promising results on virtual screening that have previously been reported. However, we also show that our neural network is capable of learning from protein structural information when, as in the case of binding mode prediction, an unbiased dataset is constructed. We develop a deep learning model for binding mode prediction that uses docking ranking as input in combination with docking structures. This strategy mirrors past consensus models and outperforms the baseline docking program in a variety of tests, including on cross-docking datasets that mimic real-world docking use cases. Furthermore, the magnitudes of network predictions serve as reliable measures of model confidence",
+            "published": "2019-10-07T15:12:32Z",
+            "source_url": "https://arxiv.org/abs/1910.02845"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "MolCLR [arxiv_2102.10056] exemplifies this direction by applying contrastive learning over molecular graphs via graph neural networks, leveraging augmentation strategies to learn transferable representations without requiring extensive labeled datasets.",
+      "citation_markers": [
+        "[arxiv_2102.10056]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2102.10056",
+          "doc_id": "arxiv_2102.10056",
+          "title": "Molecular Contrastive Learning of Representations via Graph Neural\n  Networks",
+          "year": 2022,
+          "venue": "cs.LG",
+          "abstract": "Molecular Machine Learning (ML) bears promise for efficient molecule property prediction and drug discovery. However, labeled molecule data can be expensive and time-consuming to acquire. Due to the limited labeled data, it is a great challenge for supervised-learning ML models to generalize to the giant chemical space. In this work, we present MolCLR: Molecular Contrastive Learning of Representations via Graph Neural Networks (GNNs), a self-supervised learning framework that leverages large unlabeled data (~10M unique molecules). In MolCLR pre-training, we build molecule graphs and develop GNN encoders to learn differentiable representations. Three molecule graph augmentations are proposed: atom masking, bond deletion, and subgraph removal. A contrastive estimator maximizes the agreement of augmentations from the same molecule while minimizing the agreement of different molecules. Experiments show that our contrastive learning framework significantly improves the performance of GNNs on various molecular property benchmarks including both classification and regression tasks. Benefiting from pre-training on the large unlabeled database, MolCLR even achieves state-of-the-art on several challenging benchmarks after fine-tuning. Additionally, further investigations demonstrate that MolCLR learns to embed molecules into representations that can distinguish chemically reasonable molecular similarities.",
+          "resolved_arxiv": {
+            "arxiv_id": "2102.10056",
+            "title": "Molecular Contrastive Learning of Representations via Graph Neural Networks",
+            "abstract": "Molecular Machine Learning (ML) bears promise for efficient molecule property prediction and drug discovery. However, labeled molecule data can be expensive and time-consuming to acquire. Due to the limited labeled data, it is a great challenge for supervised-learning ML models to generalize to the giant chemical space. In this work, we present MolCLR: Molecular Contrastive Learning of Representations via Graph Neural Networks (GNNs), a self-supervised learning framework that leverages large unlabeled data (~10M unique molecules). In MolCLR pre-training, we build molecule graphs and develop GNN encoders to learn differentiable representations. Three molecule graph augmentations are proposed: atom masking, bond deletion, and subgraph removal. A contrastive estimator maximizes the agreement of augmentations from the same molecule while minimizing the agreement of different molecules. Experiments show that our contrastive learning framework significantly improves the performance of GNNs on various molecular property benchmarks including both classification and regression tasks. Benefiting from pre-training on the large unlabeled database, MolCLR even achieves state-of-the-art on several challenging benchmarks after fine-tuning. Additionally, further investigations demonstrate that MolCLR learns to embed molecules into representations that can distinguish chemically reasonable molecular similarities.",
+            "published": "2021-02-19T17:35:18Z",
+            "source_url": "https://arxiv.org/abs/2102.10056"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Graph Self-Supervised Learning (GSSL) addresses the labeled-data bottleneck by acquiring molecular embeddings without expert labeling, with its primary strength lying in transferability across domains [arxiv_2206.08005].",
+      "citation_markers": [
+        "[arxiv_2206.08005]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2206.08005",
+          "doc_id": "arxiv_2206.08005",
+          "title": "Evaluating Self-Supervised Learning for Molecular Graph Embeddings",
+          "year": 2023,
+          "venue": "cs.LG",
+          "abstract": "Graph Self-Supervised Learning (GSSL) provides a robust pathway for acquiring embeddings without expert labelling, a capability that carries profound implications for molecular graphs due to the staggering number of potential molecules and the high cost of obtaining labels. However, GSSL methods are designed not for optimisation within a specific domain but rather for transferability across a variety of downstream tasks. This broad applicability complicates their evaluation. Addressing this challenge, we present \"Molecular Graph Representation Evaluation\" (MOLGRAPHEVAL), generating detailed profiles of molecular graph embeddings with interpretable and diversified attributes. MOLGRAPHEVAL offers a suite of probing tasks grouped into three categories: (i) generic graph, (ii) molecular substructure, and (iii) embedding space properties. By leveraging MOLGRAPHEVAL to benchmark existing GSSL methods against both current downstream datasets and our suite of tasks, we uncover significant inconsistencies between inferences drawn solely from existing datasets and those derived from more nuanced probing. These findings suggest that current evaluation methodologies fail to capture the entirety of the landscape.",
+          "resolved_arxiv": {
+            "arxiv_id": "2206.08005",
+            "title": "Evaluating Self-Supervised Learning for Molecular Graph Embeddings",
+            "abstract": "Graph Self-Supervised Learning (GSSL) provides a robust pathway for acquiring embeddings without expert labelling, a capability that carries profound implications for molecular graphs due to the staggering number of potential molecules and the high cost of obtaining labels. However, GSSL methods are designed not for optimisation within a specific domain but rather for transferability across a variety of downstream tasks. This broad applicability complicates their evaluation. Addressing this challenge, we present \"Molecular Graph Representation Evaluation\" (MOLGRAPHEVAL), generating detailed profiles of molecular graph embeddings with interpretable and diversified attributes. MOLGRAPHEVAL offers a suite of probing tasks grouped into three categories: (i) generic graph, (ii) molecular substructure, and (iii) embedding space properties. By leveraging MOLGRAPHEVAL to benchmark existing GSSL methods against both current downstream datasets and our suite of tasks, we uncover significant inconsistencies between inferences drawn solely from existing datasets and those derived from more nuanced probing. These findings suggest that current evaluation methodologies fail to capture the entirety of the landscape.",
+            "published": "2022-06-16T09:01:53Z",
+            "source_url": "https://arxiv.org/abs/2206.08005"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

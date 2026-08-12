@@ -1,0 +1,296 @@
+{
+  "arm": "o_rank_slab_matched",
+  "bundle_hash": "d041b2b7578411c9b04ff5e30fd184d20f2454aad4d90cd0e5cf142295bb0e41",
+  "descend_events": [
+    {
+      "node_path": "root/0",
+      "parent_seed": "Multimodal Large Language Models",
+      "group_name": "Rank slab 1: positions 1-4",
+      "child_seed": "Multimodal Large Language Models — Rank slab 1: positions 1-4",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ]
+    },
+    {
+      "node_path": "root/1",
+      "parent_seed": "Multimodal Large Language Models",
+      "group_name": "Rank slab 2: positions 5-8",
+      "child_seed": "Multimodal Large Language Models — Rank slab 2: positions 5-8",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ]
+    }
+  ],
+  "solve_events": [
+    {
+      "node_path": "root/0",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ],
+      "filtered_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ],
+      "ranked_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ],
+      "group_names": [
+        "Surveys and Overviews of Multimodal LLMs",
+        "Evaluation and Benchmarking of Vision-Language Models",
+        "Interpretability and Visualization of Vision-Language Transformers",
+        "Domain-Specific Applications of Multimodal LLMs"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ],
+      "filtered_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ],
+      "ranked_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ],
+      "group_names": [
+        "Surveys and Overviews of Multimodal LLMs",
+        "Evaluation and Benchmarking of Vision-Language Models",
+        "Interpretability and Visualization of Vision-Language Transformers",
+        "Domain-Specific Applications of Multimodal LLMs"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ],
+      "filtered_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ],
+      "ranked_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ],
+      "group_names": [
+        "Surveys and Overviews of Multimodal LLMs",
+        "Evaluation and Benchmarking of Vision-Language Models",
+        "Interpretability and Visualization of Vision-Language Transformers",
+        "Domain-Specific Applications of Multimodal LLMs"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ],
+      "filtered_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ],
+      "ranked_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ],
+      "group_names": [
+        "Efficient Training and Adaptation of MLLMs",
+        "Survey and Taxonomy of Multimodal Foundation Models",
+        "Joint Vision-Language Model Architectures",
+        "Evaluation Benchmarks for Vision-Language Models"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ],
+      "filtered_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ],
+      "ranked_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ],
+      "group_names": [
+        "Efficient Training and Adaptation of MLLMs",
+        "Survey and Taxonomy of Multimodal Foundation Models",
+        "Joint Vision-Language Model Architectures",
+        "Evaluation Benchmarks for Vision-Language Models"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ],
+      "filtered_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ],
+      "ranked_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ],
+      "group_names": [
+        "Efficient Adaptation and Training of MLLMs",
+        "Survey and Taxonomy of Multimodal Foundation Models",
+        "Large-Scale Vision-Language Model Architectures",
+        "Evaluation Benchmarks for Vision-Language Models"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    }
+  ],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "Multimodal Large Language Models — Rank slab 1: positions 1-4",
+      "candidate_ids": [
+        "arxiv_2203.17247",
+        "arxiv_2409.07463",
+        "arxiv_2402.12451",
+        "ss_478371"
+      ],
+      "written_citation_ids": [
+        "arxiv_2402.12451",
+        "ss_478371",
+        "arxiv_2203.17247",
+        "arxiv_2409.07463"
+      ],
+      "word_count": 486
+    },
+    {
+      "node_path": "root/1",
+      "seed": "Multimodal Large Language Models — Rank slab 2: positions 5-8",
+      "candidate_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2309.10020",
+        "arxiv_2209.06794",
+        "arxiv_2306.09265"
+      ],
+      "written_citation_ids": [
+        "arxiv_2209.06794",
+        "arxiv_2309.10020",
+        "arxiv_2306.09265",
+        "arxiv_2408.06610"
+      ],
+      "word_count": 497
+    }
+  ],
+  "validation_events": []
+}

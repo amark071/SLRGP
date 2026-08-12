@@ -1,0 +1,99 @@
+{
+  "topic": "Causal Representation Learning",
+  "arm": "intact",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 22:10:56",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "causal representation learning",
+    "disentangled representation learning",
+    "causal discovery",
+    "causal inference",
+    "identifiable latent variable models",
+    "structural causal models",
+    "independent component analysis",
+    "causal generative models",
+    "interventional distribution learning",
+    "causal disentanglement",
+    "out-of-distribution generalization",
+    "causal feature learning"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "theme",
+  "groups": [
+    {
+      "name": "Disentangled Causal Representation Learning",
+      "n": 5
+    },
+    {
+      "name": "Identifiability Theory for Causal Representations",
+      "n": 4
+    },
+    {
+      "name": "Temporal and Sequential Causal Representation Learning",
+      "n": 2
+    },
+    {
+      "name": "Interventional and Implicit Causal Representation Learning",
+      "n": 2
+    },
+    {
+      "name": "Causality for Domain Generalization and Robustness",
+      "n": 1
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_2010.02637",
+    "arxiv_2112.05746",
+    "arxiv_2304.09010",
+    "arxiv_2305.17225",
+    "arxiv_2306.00542",
+    "arxiv_2310.15450",
+    "arxiv_2310.18471",
+    "arxiv_2402.05052",
+    "arxiv_2504.11609"
+  ],
+  "n_refs": 9,
+  "word_count": 827,
+  "written_citation_ids": [
+    "arxiv_2010.02637",
+    "arxiv_2112.05746",
+    "arxiv_2304.09010",
+    "arxiv_2504.11609",
+    "arxiv_2310.18471",
+    "arxiv_2306.00542",
+    "arxiv_2310.15450",
+    "arxiv_2402.05052",
+    "arxiv_2305.17225"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2010.02637",
+    "arxiv_2112.05746",
+    "arxiv_2304.09010",
+    "arxiv_2305.17225",
+    "arxiv_2306.00542",
+    "arxiv_2310.15450",
+    "arxiv_2310.18471",
+    "arxiv_2402.05052",
+    "arxiv_2504.11609"
+  ],
+  "elapsed_sec": 72.7,
+  "llm_usage_delta": {
+    "n_calls": 10,
+    "prompt_tokens": 7296,
+    "completion_tokens": 2075
+  },
+  "llm_usage_so_far": {
+    "n_calls": 227,
+    "prompt_tokens": 196335,
+    "completion_tokens": 54597
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "arxiv_2003.13761": {
+    "doc_id": "arxiv_2003.13761",
+    "title": "Concentrated Differentially Private and Utility Preserving Federated\n  Learning",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Federated learning is a machine learning setting where a set of edge devices collaboratively train a model under the orchestration of a central server without sharing their local data. At each communication round of federated learning, edge devices perform multiple steps of stochastic gradient descent with their local data and then upload the computation results to the server for model update. During this process, the challenge of privacy leakage arises due to the information exchange between edge devices and the server when the server is not fully trusted. While some previous privacy-preserving mechanisms could readily be used for federated learning, they usually come at a high cost on convergence of the algorithm and utility of the learned model. In this paper, we develop a federated learning approach that addresses the privacy challenge without much degradation on model utility through a combination of local gradient perturbation, secure aggregation, and zero-concentrated differential privacy (zCDP). We provide a tight end-to-end privacy guarantee of our approach and analyze its theoretical convergence rates. Through extensive numerical experiments on real-world datasets, we dem"
+  },
+  "arxiv_2101.12240": {
+    "doc_id": "arxiv_2101.12240",
+    "title": "Differential Privacy Meets Federated Learning under Communication\n  Constraints",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "The performance of federated learning systems is bottlenecked by communication costs and training variance. The communication overhead problem is usually addressed by three communication-reduction techniques, namely, model compression, partial device participation, and periodic aggregation, at the cost of increased training variance. Different from traditional distributed learning systems, federated learning suffers from data heterogeneity (since the devices sample their data from possibly different distributions), which induces additional variance among devices during training. Various variance-reduced training algorithms have been introduced to combat the effects of data heterogeneity, while they usually cost additional communication resources to deliver necessary control information. Additionally, data privacy remains a critical issue in FL, and thus there have been attempts at bringing Differential Privacy to this framework as a mediator between utility and privacy requirements. This paper investigates the trade-offs between communication costs and training variance under a resource-constrained federated system theoretically and experimentally, and how communication reduction t"
+  },
+  "arxiv_2102.04737": {
+    "doc_id": "arxiv_2102.04737",
+    "title": "Federated Learning with Local Differential Privacy: Trade-offs between\n  Privacy, Utility, and Communication",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Federated learning (FL) allows to train a massive amount of data privately due to its decentralized structure. Stochastic gradient descent (SGD) is commonly used for FL due to its good empirical performance, but sensitive user information can still be inferred from weight updates shared during FL iterations. We consider Gaussian mechanisms to preserve local differential privacy (LDP) of user data in the FL model with SGD. The trade-offs between user privacy, global utility, and transmission rate are proved by defining appropriate metrics for FL with LDP. Compared to existing results, the query sensitivity used in LDP is defined as a variable and a tighter privacy accounting method is applied. The proposed utility bound allows heterogeneous parameters over all users. Our bounds characterize how much utility decreases and transmission rate increases if a stronger privacy regime is targeted. Furthermore, given a target privacy level, our results guarantee a significantly larger utility and a smaller transmission rate as compared to existing privacy accounting methods."
+  },
+  "arxiv_2104.14362": {
+    "doc_id": "arxiv_2104.14362",
+    "title": "From Distributed Machine Learning to Federated Learning: A Survey",
+    "year": 2022,
+    "venue": "cs.DC",
+    "abstract": "In recent years, data and computing resources are typically distributed in the devices of end users, various regions or organizations. Because of laws or regulations, the distributed data and computing resources cannot be directly shared among different regions or organizations for machine learning tasks. Federated learning emerges as an efficient approach to exploit distributed data and computing resources, so as to collaboratively train machine learning models, while obeying the laws and regulations and ensuring data security and data privacy. In this paper, we provide a comprehensive survey of existing works for federated learning. We propose a functional architecture of federated learning systems and a taxonomy of related techniques. Furthermore, we present the distributed training, data communication, and security of FL systems. Finally, we analyze their limitations and propose future research directions."
+  },
+  "arxiv_2106.06843": {
+    "doc_id": "arxiv_2106.06843",
+    "title": "Federated Learning on Non-IID Data: A Survey",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Federated learning is an emerging distributed machine learning framework for privacy preservation. However, models trained in federated learning usually have worse performance than those trained in the standard centralized learning mode, especially when the training data are not independent and identically distributed (Non-IID) on the local devices. In this survey, we pro-vide a detailed analysis of the influence of Non-IID data on both parametric and non-parametric machine learning models in both horizontal and vertical federated learning. In addition, cur-rent research work on handling challenges of Non-IID data in federated learning are reviewed, and both advantages and disadvantages of these approaches are discussed. Finally, we suggest several future research directions before concluding the paper."
+  },
+  "arxiv_2202.05318": {
+    "doc_id": "arxiv_2202.05318",
+    "title": "Personalization Improves Privacy-Accuracy Tradeoffs in Federated\n  Learning",
+    "year": 2022,
+    "venue": "stat.ML",
+    "abstract": "Large-scale machine learning systems often involve data distributed across a collection of users. Federated learning algorithms leverage this structure by communicating model updates to a central server, rather than entire datasets. In this paper, we study stochastic optimization algorithms for a personalized federated learning setting involving local and global models subject to user-level (joint) differential privacy. While learning a private global model induces a cost of privacy, local learning is perfectly private. We provide generalization guarantees showing that coordinating local learning with private centralized learning yields a generically useful and improved tradeoff between accuracy and privacy. We illustrate our theoretical results with experiments on synthetic and real-world datasets."
+  },
+  "arxiv_2203.03106": {
+    "doc_id": "arxiv_2203.03106",
+    "title": "Differentially Private Federated Learning with Local Regularization and\n  Sparsification",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "User-level differential privacy (DP) provides certifiable privacy guarantees to the information that is specific to any user's data in federated learning. Existing methods that ensure user-level DP come at the cost of severe accuracy decrease. In this paper, we study the cause of model performance degradation in federated learning under user-level DP guarantee. We find the key to solving this issue is to naturally restrict the norm of local updates before executing operations that guarantee DP. To this end, we propose two techniques, Bounded Local Update Regularization and Local Update Sparsification, to increase model quality without sacrificing privacy. We provide theoretical analysis on the convergence of our framework and give rigorous privacy guarantees. Extensive experiments show that our framework significantly improves the privacy-utility trade-off over the state-of-the-arts for federated learning with user-level DP guarantee."
+  },
+  "arxiv_2208.01200": {
+    "doc_id": "arxiv_2208.01200",
+    "title": "Towards Efficient Communications in Federated Learning: A Contemporary\n  Survey",
+    "year": 2022,
+    "venue": "cs.DC",
+    "abstract": "In the traditional distributed machine learning scenario, the user's private data is transmitted between clients and a central server, which results in significant potential privacy risks. In order to balance the issues of data privacy and joint training of models, federated learning (FL) is proposed as a particular distributed machine learning procedure with privacy protection mechanisms, which can achieve multi-party collaborative computing without revealing the original data. However, in practice, FL faces a variety of challenging communication problems. This review seeks to elucidate the relationship between these communication issues by methodically assessing the development of FL communication research from three perspectives: communication efficiency, communication environment, and communication resource allocation. Firstly, we sort out the current challenges existing in the communications of FL. Second, we have collated FL communications-related papers and described the overall development trend of the field based on their logical relationship. Ultimately, we discuss the future directions of research for communications in FL."
+  },
+  "arxiv_2301.01299": {
+    "doc_id": "arxiv_2301.01299",
+    "title": "Recent Advances on Federated Learning: A Systematic Survey",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Federated learning has emerged as an effective paradigm to achieve privacy-preserving collaborative learning among different parties. Compared to traditional centralized learning that requires collecting data from each party, in federated learning, only the locally trained models or computed gradients are exchanged, without exposing any data information. As a result, it is able to protect privacy to some extent. In recent years, federated learning has become more and more prevalent and there have been many surveys for summarizing related methods in this hot research topic. However, most of them focus on a specific perspective or lack the latest research progress. In this paper, we provide a systematic survey on federated learning, aiming to review the recent advanced federated methods and applications from different aspects. Specifically, this paper includes four major contributions. First, we present a new taxonomy of federated learning in terms of the pipeline and challenges in federated scenarios. Second, we summarize federated learning methods into several categories and briefly introduce the state-of-the-art methods under these categories. Third, we overview some prevalent fed"
+  },
+  "arxiv_2302.11152": {
+    "doc_id": "arxiv_2302.11152",
+    "title": "Multi-Message Shuffled Privacy in Federated Learning",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "We study differentially private distributed optimization under communication constraints. A server using SGD for optimization aggregates the client-side local gradients for model updates using distributed mean estimation (DME). We develop a communication-efficient private DME, using the recently developed multi-message shuffled (MMS) privacy framework. We analyze our proposed DME scheme to show that it achieves the order-optimal privacy-communication-performance tradeoff resolving an open question in [1], whether the shuffled models can improve the tradeoff obtained in Secure Aggregation. This also resolves an open question on the optimal trade-off for private vector sum in the MMS model. We achieve it through a novel privacy mechanism that non-uniformly allocates privacy at different resolutions of the local gradient vectors. These results are directly applied to give guarantees on private distributed learning algorithms using this for private gradient aggregation iteratively. We also numerically evaluate the private DME algorithms."
+  },
+  "arxiv_2304.05127": {
+    "doc_id": "arxiv_2304.05127",
+    "title": "Balancing Privacy and Performance for Private Federated Learning\n  Algorithms",
+    "year": 2023,
+    "venue": "cs.CR",
+    "abstract": "Federated learning (FL) is a distributed machine learning (ML) framework where multiple clients collaborate to train a model without exposing their private data. FL involves cycles of local computations and bi-directional communications between the clients and server. To bolster data security during this process, FL algorithms frequently employ a differential privacy (DP) mechanism that introduces noise into each client's model updates before sharing. However, while enhancing privacy, the DP mechanism often hampers convergence performance. In this paper, we posit that an optimal balance exists between the number of local steps and communication rounds, one that maximizes the convergence performance within a given privacy budget. Specifically, we present a proof for the optimal number of local steps and communication rounds that enhance the convergence bounds of the DP version of the ScaffNew algorithm. Our findings reveal a direct correlation between the optimal number of local steps, communication rounds, and a set of variables, e.g the DP privacy budget and other problem parameters, specifically in the context of strongly convex optimization. We furthermore provide empirical evid"
+  },
+  "arxiv_2408.08642": {
+    "doc_id": "arxiv_2408.08642",
+    "title": "The Power of Bias: Optimizing Client Selection in Federated Learning\n  with Heterogeneous Differential Privacy",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "To preserve the data privacy, the federated learning (FL) paradigm emerges in which clients only expose model gradients rather than original data for conducting model training. To enhance the protection of model gradients in FL, differentially private federated learning (DPFL) is proposed which incorporates differentially private (DP) noises to obfuscate gradients before they are exposed. Yet, an essential but largely overlooked problem in DPFL is the heterogeneity of clients' privacy requirement, which can vary significantly between clients and extremely complicates the client selection problem in DPFL. In other words, both the data quality and the influence of DP noises should be taken into account when selecting clients. To address this problem, we conduct convergence analysis of DPFL under heterogeneous privacy, a generic client selection strategy, popular DP mechanisms and convex loss. Based on convergence analysis, we formulate the client selection problem to minimize the value of loss function in DPFL with heterogeneous privacy, which is a convex optimization problem and can be solved efficiently. Accordingly, we propose the DPFL-BCS (biased client selection) algorithm. The "
+  },
+  "arxiv_2409.13133": {
+    "doc_id": "arxiv_2409.13133",
+    "title": "CorBin-FL: A Differentially Private Federated Learning Mechanism using\n  Common Randomness",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Federated learning (FL) has emerged as a promising framework for distributed machine learning. It enables collaborative learning among multiple clients, utilizing distributed data and computing resources. However, FL faces challenges in balancing privacy guarantees, communication efficiency, and overall model accuracy. In this work, we introduce CorBin-FL, a privacy mechanism that uses correlated binary stochastic quantization to achieve differential privacy while maintaining overall model accuracy. The approach uses secure multi-party computation techniques to enable clients to perform correlated quantization of their local model updates without compromising individual privacy. We provide theoretical analysis showing that CorBin-FL achieves parameter-level local differential privacy (PLDP), and that it asymptotically optimizes the privacy-utility trade-off between the mean square error utility measure and the PLDP privacy measure. We further propose AugCorBin-FL, an extension that, in addition to PLDP, achieves user-level and sample-level central differential privacy guarantees. For both mechanisms, we derive bounds on privacy parameters and mean squared error performance measures"
+  }
+}

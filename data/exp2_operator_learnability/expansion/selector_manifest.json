@@ -1,0 +1,11 @@
+{
+  "training_split": "train",
+  "n_examples": 1319652,
+  "features": [
+    "prf_document_fraction",
+    "discipline_citation_salience",
+    "in_initial_query",
+    "token_length"
+  ],
+  "input_policy": "title+abstract+discipline+BM25-PRF only"
+}

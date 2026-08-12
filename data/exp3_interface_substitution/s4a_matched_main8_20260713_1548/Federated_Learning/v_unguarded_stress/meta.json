@@ -1,0 +1,57 @@
+{
+  "topic": "Federated Learning",
+  "arm": "v_unguarded_stress",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "bundle_hash": "b946b0e6deea5d421f35f43c61048a6549b924204566f423b863d956a4c4b25e",
+  "started_at": "2026-07-13 16:18:42",
+  "target_total_words": 1000,
+  "groups": [
+    {
+      "name": "Injected invalid unbalanced organization",
+      "n": 8
+    }
+  ],
+  "group_size_vector": [
+    8
+  ],
+  "refs": [
+    "arxiv_2003.13761",
+    "arxiv_2012.07183",
+    "arxiv_2104.14362",
+    "arxiv_2106.06843",
+    "arxiv_2208.01200",
+    "arxiv_2301.01299",
+    "arxiv_2311.16008",
+    "arxiv_2407.19286"
+  ],
+  "n_refs": 8,
+  "word_count": 905,
+  "written_citation_ids": [
+    "arxiv_2104.14362",
+    "arxiv_2301.01299",
+    "arxiv_2106.06843",
+    "arxiv_2208.01200",
+    "arxiv_2003.13761",
+    "arxiv_2407.19286",
+    "arxiv_2012.07183",
+    "arxiv_2311.16008"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2003.13761",
+    "arxiv_2012.07183",
+    "arxiv_2104.14362",
+    "arxiv_2106.06843",
+    "arxiv_2208.01200",
+    "arxiv_2301.01299",
+    "arxiv_2311.16008",
+    "arxiv_2407.19286"
+  ],
+  "primary_length_eligible": true,
+  "elapsed_sec": 30.0,
+  "llm_usage_delta": {
+    "n_calls": 1,
+    "prompt_tokens": 1234,
+    "completion_tokens": 1337
+  }
+}

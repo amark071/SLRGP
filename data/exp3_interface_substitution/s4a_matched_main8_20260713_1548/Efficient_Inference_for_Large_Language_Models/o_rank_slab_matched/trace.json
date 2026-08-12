@@ -1,0 +1,290 @@
+{
+  "arm": "o_rank_slab_matched",
+  "bundle_hash": "3e96394844ae826ab254d03163d5a0f58778d9f7804d18ace057cddde723348f",
+  "descend_events": [
+    {
+      "node_path": "root/0",
+      "parent_seed": "Efficient Inference for Large Language Models",
+      "group_name": "Rank slab 1: positions 1-4",
+      "child_seed": "Efficient Inference for Large Language Models — Rank slab 1: positions 1-4",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ]
+    },
+    {
+      "node_path": "root/1",
+      "parent_seed": "Efficient Inference for Large Language Models",
+      "group_name": "Rank slab 2: positions 5-8",
+      "child_seed": "Efficient Inference for Large Language Models — Rank slab 2: positions 5-8",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ]
+    }
+  ],
+  "solve_events": [
+    {
+      "node_path": "root/0",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Efficient Inference for Large Language Models — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ],
+      "filtered_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ],
+      "ranked_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ],
+      "group_names": [
+        "Surveys and Broad Reviews of LLM Compression and Efficient Inference",
+        "KV Cache Compression and Memory Optimization",
+        "Hardware-Aware Inference Optimization for Transformer Models"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Efficient Inference for Large Language Models — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ],
+      "filtered_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ],
+      "ranked_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ],
+      "group_names": [
+        "Surveys and Broad Reviews of LLM Compression and Efficient Inference",
+        "KV Cache Optimization for LLM Inference",
+        "Practical Inference Acceleration for Transformer Models"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Efficient Inference for Large Language Models — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ],
+      "filtered_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ],
+      "ranked_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ],
+      "group_names": [
+        "Surveys and Broad Reviews of LLM Compression and Efficient Inference",
+        "KV Cache Compression and Memory Optimization",
+        "Practical Inference Optimization for Transformer Models"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Efficient Inference for Large Language Models — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ],
+      "filtered_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ],
+      "ranked_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ],
+      "group_names": [
+        "KV Cache Optimization for Inference Efficiency",
+        "Model Compression and Parameter Efficiency",
+        "Surveys and Overviews of LLM Training and Inference"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Efficient Inference for Large Language Models — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ],
+      "filtered_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ],
+      "ranked_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ],
+      "group_names": [
+        "KV Cache Optimization for Inference Efficiency",
+        "Model Compression and Parameter-Efficient Methods",
+        "Surveys and Overviews of LLM Training and Inference"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Efficient Inference for Large Language Models — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ],
+      "filtered_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ],
+      "ranked_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ],
+      "group_names": [
+        "KV Cache Optimization for Inference Efficiency",
+        "Model Compression and Parameter Efficiency",
+        "Comprehensive Overviews of LLM Training and Inference"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    }
+  ],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "Efficient Inference for Large Language Models — Rank slab 1: positions 1-4",
+      "candidate_ids": [
+        "arxiv_2409.17372",
+        "arxiv_2402.09748",
+        "arxiv_2211.07715",
+        "arxiv_2508.06297"
+      ],
+      "written_citation_ids": [
+        "arxiv_2402.09748",
+        "arxiv_2409.17372",
+        "arxiv_2508.06297",
+        "arxiv_2211.07715"
+      ],
+      "word_count": 495
+    },
+    {
+      "node_path": "root/1",
+      "seed": "Efficient Inference for Large Language Models — Rank slab 2: positions 5-8",
+      "candidate_ids": [
+        "arxiv_2401.02038",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2002.11794"
+      ],
+      "written_citation_ids": [
+        "arxiv_2002.11794",
+        "arxiv_2501.16372",
+        "arxiv_2404.15949",
+        "arxiv_2401.02038"
+      ],
+      "word_count": 491
+    }
+  ],
+  "validation_events": []
+}

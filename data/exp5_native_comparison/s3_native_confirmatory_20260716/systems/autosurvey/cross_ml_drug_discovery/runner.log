@@ -1,0 +1,96 @@
+[2026-07-16T04:27:44Z] command=<package-root>/work/s3_native/envs/autosurvey/bin/python main.py --topic Machine Learning for Drug Discovery --gpu 0 --saving_path <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/autosurvey/cross_ml_drug_discovery/raw --model s3-common-backbone --section_num 6 --subsection_len 55 --rag_num 40 --outline_reference_num 120 --db_path <package-root>/work/s3_native/assets/autosurvey/database --embedding_model <package-root>/work/s3_native/assets/autosurvey/models/nomic-embed-text-v1 --api_url http://127.0.0.1:18080/v1/chat/completions --api_key <REDACTED>
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<package-root>/work/s3_native/baselines/autosurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here https://python.langchain.com/v0.2/docs/versions/v0_2/ 
+  from langchain.document_loaders import PyPDFLoader
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<All keys matched successfully>
+Hello! How are you doing? Is there something I can help you with today? 😊
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1603.94it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:18<00:00, 18.35s/it]100%|██████████| 1/1 [00:18<00:00, 18.35s/it]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:00<00:00,  1.11it/s]100%|██████████| 2/2 [00:14<00:00,  8.64s/it]100%|██████████| 2/2 [00:14<00:00,  7.48s/it]
+  0%|          | 0/2 [00:00<?, ?it/s]
+  0%|          | 0/2 [00:00<?, ?it/s][A 50%|█████     | 1/2 [00:19<00:19, 19.35s/it]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A
+ 50%|█████     | 1/2 [00:06<00:06,  6.08s/it][A
+
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A[A
+
+
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A[A[A
+
+
+
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A[A[A[A
+
+
+
+ 50%|█████     | 1/2 [00:03<00:03,  3.28s/it][A[A[A[A
+
+
+
+
+ 50%|█████     | 1/2 [00:02<00:02,  2.21s/it][A[A[A[A[A
+
+
+ 50%|█████     | 1/2 [00:09<00:09,  9.53s/it][A[A[A
+
+
+
+
+100%|██████████| 2/2 [00:13<00:00,  7.45s/it][A[A[A[A[A100%|██████████| 2/2 [00:13<00:00,  6.66s/it]
+
+
+
+100%|██████████| 2/2 [00:22<00:00, 11.38s/it][A[A[A100%|██████████| 2/2 [00:22<00:00, 11.10s/it]
+
+100%|██████████| 2/2 [00:40<00:00, 23.03s/it][A100%|██████████| 2/2 [00:40<00:00, 20.49s/it]
+
+
+
+
+100%|██████████| 2/2 [00:34<00:00, 19.79s/it][A[A[A[A100%|██████████| 2/2 [00:34<00:00, 17.31s/it]
+100%|██████████| 2/2 [01:13<00:00, 39.95s/it]100%|██████████| 2/2 [01:13<00:00, 36.86s/it]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:02<00:02,  2.74s/it]
+  0%|          | 0/2 [00:00<?, ?it/s][A100%|██████████| 2/2 [00:44<00:00, 25.92s/it]100%|██████████| 2/2 [00:44<00:00, 22.44s/it]
+
+ 50%|█████     | 1/2 [00:38<00:38, 38.53s/it][A100%|██████████| 2/2 [00:38<00:00, 19.26s/it]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:01<00:01,  1.34s/it]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.39it/s][A
+
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A[A
+100%|██████████| 2/2 [00:10<00:00,  6.10s/it][A100%|██████████| 2/2 [00:10<00:00,  5.25s/it]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+
+
+ 50%|█████     | 1/2 [00:11<00:11, 11.18s/it][A[A[A100%|██████████| 2/2 [00:11<00:00,  5.59s/it]
+100%|██████████| 2/2 [00:17<00:00, 10.02s/it]100%|██████████| 2/2 [00:17<00:00,  8.72s/it]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:19<00:19, 19.50s/it]100%|██████████| 2/2 [00:29<00:00, 14.01s/it]100%|██████████| 2/2 [00:29<00:00, 14.83s/it]
+
+ 50%|█████     | 1/2 [01:28<01:28, 88.59s/it][A100%|██████████| 2/2 [01:28<00:00, 44.30s/it]
+
+
+ 50%|█████     | 1/2 [03:52<03:52, 232.62s/it][A[A100%|██████████| 2/2 [03:52<00:00, 116.31s/it]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:05<00:05,  5.16s/it]100%|██████████| 2/2 [00:15<00:00,  8.17s/it]100%|██████████| 2/2 [00:15<00:00,  7.72s/it]
+0it [00:00, ?it/s]197it [00:00, 187705.11it/s]
+  0%|          | 0/197 [00:00<?, ?it/s]100%|██████████| 197/197 [00:00<00:00, 3141741.02it/s]
+0it [00:00, ?it/s]192it [00:00, 317299.59it/s]
+  0%|          | 0/192 [00:00<?, ?it/s]100%|██████████| 192/192 [00:00<00:00, 2739137.31it/s]
+[2026-07-16T04:42:23Z] returncode=0 elapsed_seconds=878.189 timed_out=False

@@ -1,0 +1,67 @@
+{
+  "n_input": 30,
+  "n_ok": 26,
+  "by_discipline_status": [
+    {
+      "discipline": "economics_social",
+      "parse_status": "failed",
+      "reason": "tei_missing",
+      "n": 1
+    },
+    {
+      "discipline": "economics_social",
+      "parse_status": "ok",
+      "reason": "ok",
+      "n": 6
+    },
+    {
+      "discipline": "education",
+      "parse_status": "failed",
+      "reason": "tei_missing",
+      "n": 1
+    },
+    {
+      "discipline": "education",
+      "parse_status": "ok",
+      "reason": "ok",
+      "n": 4
+    },
+    {
+      "discipline": "law",
+      "parse_status": "ok",
+      "reason": "ok",
+      "n": 4
+    },
+    {
+      "discipline": "management",
+      "parse_status": "ok",
+      "reason": "ok",
+      "n": 4
+    },
+    {
+      "discipline": "political_science",
+      "parse_status": "ok",
+      "reason": "ok",
+      "n": 4
+    },
+    {
+      "discipline": "psychology",
+      "parse_status": "failed",
+      "reason": "tei_missing",
+      "n": 1
+    },
+    {
+      "discipline": "sociology",
+      "parse_status": "failed",
+      "reason": "too_few_sections",
+      "n": 1
+    },
+    {
+      "discipline": "sociology",
+      "parse_status": "ok",
+      "reason": "ok",
+      "n": 4
+    }
+  ],
+  "contract": "E1-compatible parsed-review JSON for S2e/S1a; PDF parser failures are recorded separately."
+}

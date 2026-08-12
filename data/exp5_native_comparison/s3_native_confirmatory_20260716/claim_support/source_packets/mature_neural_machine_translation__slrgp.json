@@ -1,0 +1,405 @@
+{
+  "topic_id": "mature_neural_machine_translation",
+  "system": "slrgp",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "An early and influential contribution is the textbook-style overview by Koehn [arxiv_1709.07809], which provides a foundational introduction to NMT as part of a broader treatment of machine translation.",
+      "citation_markers": [
+        "[arxiv_1709.07809]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1709.07809",
+          "doc_id": "arxiv_1709.07809",
+          "title": "Neural Machine Translation",
+          "year": 2017,
+          "venue": "cs.CL",
+          "abstract": "Draft of textbook chapter on neural machine translation. a comprehensive treatment of the topic, ranging from introduction to neural networks, computation graphs, description of the currently dominant attentional sequence-to-sequence model, recent refinements, alternative architectures and challenges. Written as chapter for the textbook Statistical Machine Translation. Used in the JHU Fall 2017 class on machine translation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1709.07809",
+            "title": "Neural Machine Translation",
+            "abstract": "Draft of textbook chapter on neural machine translation. a comprehensive treatment of the topic, ranging from introduction to neural networks, computation graphs, description of the currently dominant attentional sequence-to-sequence model, recent refinements, alternative architectures and challenges. Written as chapter for the textbook Statistical Machine Translation. Used in the JHU Fall 2017 class on machine translation.",
+            "published": "2017-09-22T15:28:24Z",
+            "source_url": "https://arxiv.org/abs/1709.07809"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Complementing these works, Tan et al. [arxiv_2012.15515] provide a broad survey extending coverage beyond methods to encompass resources and tools, reflecting the maturation of NMT into a practical engineering discipline with substantial infrastructure requirements.",
+      "citation_markers": [
+        "[arxiv_2012.15515]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2012.15515",
+          "doc_id": "arxiv_2012.15515",
+          "title": "Neural Machine Translation: A Review of Methods, Resources, and Tools",
+          "year": 2021,
+          "venue": "cs.CL",
+          "abstract": "Machine translation (MT) is an important sub-field of natural language processing that aims to translate natural languages using computers. In recent years, end-to-end neural machine translation (NMT) has achieved great success and has become the new mainstream method in practical MT systems. In this article, we first provide a broad review of the methods for NMT and focus on methods relating to architectures, decoding, and data augmentation. Then we summarize the resources and tools that are useful for researchers. Finally, we conclude with a discussion of possible future research directions.",
+          "resolved_arxiv": {
+            "arxiv_id": "2012.15515",
+            "title": "Neural Machine Translation: A Review of Methods, Resources, and Tools",
+            "abstract": "Machine translation (MT) is an important sub-field of natural language processing that aims to translate natural languages using computers. In recent years, end-to-end neural machine translation (NMT) has achieved great success and has become the new mainstream method in practical MT systems. In this article, we first provide a broad review of the methods for NMT and focus on methods relating to architectures, decoding, and data augmentation. Then we summarize the resources and tools that are useful for researchers. Finally, we conclude with a discussion of possible future research directions.",
+            "published": "2020-12-31T09:35:27Z",
+            "source_url": "https://arxiv.org/abs/2012.15515"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Ranathunga et al. [arxiv_2106.15115] offer a broad survey of techniques specifically targeting low-resource language pairs, observing that despite rapid maturation of the field, performance on such pairs remains sub-optimal relative to high-resource settings, primarily due to parallel data scarcity.",
+      "citation_markers": [
+        "[arxiv_2106.15115]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2106.15115",
+          "doc_id": "arxiv_2106.15115",
+          "title": "Neural Machine Translation for Low-Resource Languages: A Survey",
+          "year": 2021,
+          "venue": "cs.CL",
+          "abstract": "Neural Machine Translation (NMT) has seen a tremendous spurt of growth in less than ten years, and has already entered a mature phase. While considered as the most widely used solution for Machine Translation, its performance on low-resource language pairs still remains sub-optimal compared to the high-resource counterparts, due to the unavailability of large parallel corpora. Therefore, the implementation of NMT techniques for low-resource language pairs has been receiving the spotlight in the recent NMT research arena, thus leading to a substantial amount of research reported on this topic. This paper presents a detailed survey of research advancements in low-resource language NMT (LRL-NMT), along with a quantitative analysis aimed at identifying the most popular solutions. Based on our findings from reviewing previous work, this survey paper provides a set of guidelines to select the possible NMT technique for a given LRL data setting. It also presents a holistic view of the LRL-NMT research landscape and provides a list of recommendations to further enhance the research efforts on LRL-NMT.",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.15115",
+            "title": "Neural Machine Translation for Low-Resource Languages: A Survey",
+            "abstract": "Neural Machine Translation (NMT) has seen a tremendous spurt of growth in less than ten years, and has already entered a mature phase. While considered as the most widely used solution for Machine Translation, its performance on low-resource language pairs still remains sub-optimal compared to the high-resource counterparts, due to the unavailability of large parallel corpora. Therefore, the implementation of NMT techniques for low-resource language pairs has been receiving the spotlight in the recent NMT research arena, thus leading to a substantial amount of research reported on this topic. This paper presents a detailed survey of research advancements in low-resource language NMT (LRL-NMT), along with a quantitative analysis aimed at identifying the most popular solutions. Based on our findings from reviewing previous work, this survey paper provides a set of guidelines to select the possible NMT technique for a given LRL data setting. It also presents a holistic view of the LRL-NMT research landscape and provides a list of recommendations to further enhance the research efforts on LRL-NMT.",
+            "published": "2021-06-29T06:31:58Z",
+            "source_url": "https://arxiv.org/abs/2106.15115"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Lakew et al. [arxiv_2003.14402] contribute an empirical benchmark targeting five African low-resource languages—Swahili, Amharic, Tigrigna, Oromo, and Somali—highlighting the importance of language-specific evaluation, since aggregate findings may obscure difficulties posed by morphologically complex or typologically distant languages.",
+      "citation_markers": [
+        "[arxiv_2003.14402]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2003.14402",
+          "doc_id": "arxiv_2003.14402",
+          "title": "Low Resource Neural Machine Translation: A Benchmark for Five African\n  Languages",
+          "year": 2020,
+          "venue": "cs.CL",
+          "abstract": "Recent advents in Neural Machine Translation (NMT) have shown improvements in low-resource language (LRL) translation tasks. In this work, we benchmark NMT between English and five African LRL pairs (Swahili, Amharic, Tigrigna, Oromo, Somali [SATOS]). We collected the available resources on the SATOS languages to evaluate the current state of NMT for LRLs. Our evaluation, comparing a baseline single language pair NMT model against semi-supervised learning, transfer learning, and multilingual modeling, shows significant performance improvements both in the En-LRL and LRL-En directions. In terms of averaged BLEU score, the multilingual approach shows the largest gains, up to +5 points, in six out of ten translation directions. To demonstrate the generalization capability of each model, we also report results on multi-domain test sets. We release the standardized experimental data and the test sets for future works addressing the challenges of NMT in under-resourced settings, in particular for the SATOS languages.",
+          "resolved_arxiv": {
+            "arxiv_id": "2003.14402",
+            "title": "Low Resource Neural Machine Translation: A Benchmark for Five African Languages",
+            "abstract": "Recent advents in Neural Machine Translation (NMT) have shown improvements in low-resource language (LRL) translation tasks. In this work, we benchmark NMT between English and five African LRL pairs (Swahili, Amharic, Tigrigna, Oromo, Somali [SATOS]). We collected the available resources on the SATOS languages to evaluate the current state of NMT for LRLs. Our evaluation, comparing a baseline single language pair NMT model against semi-supervised learning, transfer learning, and multilingual modeling, shows significant performance improvements both in the En-LRL and LRL-En directions. In terms of averaged BLEU score, the multilingual approach shows the largest gains, up to +5 points, in six out of ten translation directions. To demonstrate the generalization capability of each model, we also report results on multi-domain test sets. We release the standardized experimental data and the test sets for future works addressing the challenges of NMT in under-resourced settings, in particular for the SATOS languages.",
+            "published": "2020-03-31T17:50:07Z",
+            "source_url": "https://arxiv.org/abs/2003.14402"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Despite NMT's general superiority in fluency, surveys and empirical studies converge on a well-documented complementarity: NMT tends to produce fluent but inadequate translations, whereas statistical MT yields adequate but less fluent output [arxiv_1610.05150].",
+      "citation_markers": [
+        "[arxiv_1610.05150]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1610.05150",
+          "doc_id": "arxiv_1610.05150",
+          "title": "Neural Machine Translation Advised by Statistical Machine Translation",
+          "year": 2017,
+          "venue": "cs.CL",
+          "abstract": "Neural Machine Translation (NMT) is a new approach to machine translation that has made great progress in recent years. However, recent studies show that NMT generally produces fluent but inadequate translations (Tu et al. 2016b; Tu et al. 2016a; He et al. 2016; Tu et al. 2017). This is in contrast to conventional Statistical Machine Translation (SMT), which usually yields adequate but non-fluent translations. It is natural, therefore, to leverage the advantages of both models for better translations, and in this work we propose to incorporate SMT model into NMT framework. More specifically, at each decoding step, SMT offers additional recommendations of generated words based on the decoding information from NMT (e.g., the generated partial translation and attention history). Then we employ an auxiliary classifier to score the SMT recommendations and a gating function to combine the SMT recommendations with NMT generations, both of which are jointly trained within the NMT architecture in an end-to-end manner. Experimental results on Chinese-English translation show that the proposed approach achieves significant and consistent improvements over state-of-the-art NMT and SMT systems on multiple NIST test sets.",
+          "resolved_arxiv": {
+            "arxiv_id": "1610.05150",
+            "title": "Neural Machine Translation Advised by Statistical Machine Translation",
+            "abstract": "Neural Machine Translation (NMT) is a new approach to machine translation that has made great progress in recent years. However, recent studies show that NMT generally produces fluent but inadequate translations (Tu et al. 2016b; Tu et al. 2016a; He et al. 2016; Tu et al. 2017). This is in contrast to conventional Statistical Machine Translation (SMT), which usually yields adequate but non-fluent translations. It is natural, therefore, to leverage the advantages of both models for better translations, and in this work we propose to incorporate SMT model into NMT framework. More specifically, at each decoding step, SMT offers additional recommendations of generated words based on the decoding information from NMT (e.g., the generated partial translation and attention history). Then we employ an auxiliary classifier to score the SMT recommendations and a gating function to combine the SMT recommendations with NMT generations, both of which are jointly trained within the NMT architecture in an end-to-end manner. Experimental results on Chinese-English translation show that the proposed approach achieves significant and consistent improvements over state-of-the-art NMT and SMT systems on multiple NIST test sets.",
+            "published": "2016-10-17T14:50:58Z",
+            "source_url": "https://arxiv.org/abs/1610.05150"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Wang et al. [arxiv_1610.05150] propose advising NMT decoding with SMT recommendations to recover translation adequacy, while Stahlberg et al. [arxiv_1605.04569] demonstrate that SMT lattices derived from hierarchical phrase-based models can syntactically guide NMT beam search, yielding measurable quality gains.",
+      "citation_markers": [
+        "[arxiv_1610.05150]",
+        "[arxiv_1605.04569]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1610.05150",
+          "doc_id": "arxiv_1610.05150",
+          "title": "Neural Machine Translation Advised by Statistical Machine Translation",
+          "year": 2017,
+          "venue": "cs.CL",
+          "abstract": "Neural Machine Translation (NMT) is a new approach to machine translation that has made great progress in recent years. However, recent studies show that NMT generally produces fluent but inadequate translations (Tu et al. 2016b; Tu et al. 2016a; He et al. 2016; Tu et al. 2017). This is in contrast to conventional Statistical Machine Translation (SMT), which usually yields adequate but non-fluent translations. It is natural, therefore, to leverage the advantages of both models for better translations, and in this work we propose to incorporate SMT model into NMT framework. More specifically, at each decoding step, SMT offers additional recommendations of generated words based on the decoding information from NMT (e.g., the generated partial translation and attention history). Then we employ an auxiliary classifier to score the SMT recommendations and a gating function to combine the SMT recommendations with NMT generations, both of which are jointly trained within the NMT architecture in an end-to-end manner. Experimental results on Chinese-English translation show that the proposed approach achieves significant and consistent improvements over state-of-the-art NMT and SMT systems on multiple NIST test sets.",
+          "resolved_arxiv": {
+            "arxiv_id": "1610.05150",
+            "title": "Neural Machine Translation Advised by Statistical Machine Translation",
+            "abstract": "Neural Machine Translation (NMT) is a new approach to machine translation that has made great progress in recent years. However, recent studies show that NMT generally produces fluent but inadequate translations (Tu et al. 2016b; Tu et al. 2016a; He et al. 2016; Tu et al. 2017). This is in contrast to conventional Statistical Machine Translation (SMT), which usually yields adequate but non-fluent translations. It is natural, therefore, to leverage the advantages of both models for better translations, and in this work we propose to incorporate SMT model into NMT framework. More specifically, at each decoding step, SMT offers additional recommendations of generated words based on the decoding information from NMT (e.g., the generated partial translation and attention history). Then we employ an auxiliary classifier to score the SMT recommendations and a gating function to combine the SMT recommendations with NMT generations, both of which are jointly trained within the NMT architecture in an end-to-end manner. Experimental results on Chinese-English translation show that the proposed approach achieves significant and consistent improvements over state-of-the-art NMT and SMT systems on multiple NIST test sets.",
+            "published": "2016-10-17T14:50:58Z",
+            "source_url": "https://arxiv.org/abs/1610.05150"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_1605.04569",
+          "doc_id": "arxiv_1605.04569",
+          "title": "Syntactically Guided Neural Machine Translation",
+          "year": 2017,
+          "venue": "cs.CL",
+          "abstract": "We investigate the use of hierarchical phrase-based SMT lattices in end-to-end neural machine translation (NMT). Weight pushing transforms the Hiero scores for complete translation hypotheses, with the full translation grammar score and full n-gram language model score, into posteriors compatible with NMT predictive probabilities. With a slightly modified NMT beam-search decoder we find gains over both Hiero and NMT decoding alone, with practical advantages in extending NMT to very large input and output vocabularies.",
+          "resolved_arxiv": {
+            "arxiv_id": "1605.04569",
+            "title": "Syntactically Guided Neural Machine Translation",
+            "abstract": "We investigate the use of hierarchical phrase-based SMT lattices in end-to-end neural machine translation (NMT). Weight pushing transforms the Hiero scores for complete translation hypotheses, with the full translation grammar score and full n-gram language model score, into posteriors compatible with NMT predictive probabilities. With a slightly modified NMT beam-search decoder we find gains over both Hiero and NMT decoding alone, with practical advantages in extending NMT to very large input and output vocabularies.",
+            "published": "2016-05-15T15:53:02Z",
+            "source_url": "https://arxiv.org/abs/1605.04569"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "A central challenge is the conditional independence assumption made during decoding, whereby each token is generated without regard to other output tokens [arxiv_1910.11555]. This limitation contributes to the multi-modality problem: because multiple valid translations may exist for a single source sentence, the training reference may be misaligned with the model's output distribution, degrading learning signal quality [arxiv_2211.16863].",
+      "citation_markers": [
+        "[arxiv_1910.11555]",
+        "[arxiv_2211.16863]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1910.11555",
+          "doc_id": "arxiv_1910.11555",
+          "title": "Fast Structured Decoding for Sequence Models",
+          "year": 2020,
+          "venue": "cs.LG",
+          "abstract": "Autoregressive sequence models achieve state-of-the-art performance in domains like machine translation. However, due to the autoregressive factorization nature, these models suffer from heavy latency during inference. Recently, non-autoregressive sequence models were proposed to reduce the inference time. However, these models assume that the decoding process of each token is conditionally independent of others. Such a generation process sometimes makes the output sentence inconsistent, and thus the learned non-autoregressive models could only achieve inferior accuracy compared to their autoregressive counterparts. To improve then decoding consistency and reduce the inference cost at the same time, we propose to incorporate a structured inference module into the non-autoregressive models. Specifically, we design an efficient approximation for Conditional Random Fields (CRF) for non-autoregressive sequence models, and further propose a dynamic transition technique to model positional contexts in the CRF. Experiments in machine translation show that while increasing little latency (8~14ms), our model could achieve significantly better translation performance than previous non-autoregressive models on different translation datasets. In particular, for the WMT14 En-De dataset, our model obtains a BLEU score of 26.80, which largely outperforms the previous non-autoregressive baselines and is only 0.61 lower in BLEU than purely autoregressive models.",
+          "resolved_arxiv": {
+            "arxiv_id": "1910.11555",
+            "title": "Fast Structured Decoding for Sequence Models",
+            "abstract": "Autoregressive sequence models achieve state-of-the-art performance in domains like machine translation. However, due to the autoregressive factorization nature, these models suffer from heavy latency during inference. Recently, non-autoregressive sequence models were proposed to reduce the inference time. However, these models assume that the decoding process of each token is conditionally independent of others. Such a generation process sometimes makes the output sentence inconsistent, and thus the learned non-autoregressive models could only achieve inferior accuracy compared to their autoregressive counterparts. To improve then decoding consistency and reduce the inference cost at the same time, we propose to incorporate a structured inference module into the non-autoregressive models. Specifically, we design an efficient approximation for Conditional Random Fields (CRF) for non-autoregressive sequence models, and further propose a dynamic transition technique to model positional contexts in the CRF. Experiments in machine translation show that while increasing little latency (8~14ms), our model could achieve significantly better translation performance than previous non-autoregressive models on different translation datasets. In particular, for the WMT14 En-De dataset, our model obtains a BLEU score of 26.80, which largely outperforms the previous non-autoregressive baselines and is only 0.61 lower in BLEU than purely autoregressive models.",
+            "published": "2019-10-25T07:32:52Z",
+            "source_url": "https://arxiv.org/abs/1910.11555"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2211.16863",
+          "doc_id": "arxiv_2211.16863",
+          "title": "Rephrasing the Reference for Non-Autoregressive Machine Translation",
+          "year": 2022,
+          "venue": "cs.CL",
+          "abstract": "Non-autoregressive neural machine translation (NAT) models suffer from the multi-modality problem that there may exist multiple possible translations of a source sentence, so the reference sentence may be inappropriate for the training when the NAT output is closer to other translations. In response to this problem, we introduce a rephraser to provide a better training target for NAT by rephrasing the reference sentence according to the NAT output. As we train NAT based on the rephraser output rather than the reference sentence, the rephraser output should fit well with the NAT output and not deviate too far from the reference, which can be quantified as reward functions and optimized by reinforcement learning. Experiments on major WMT benchmarks and NAT baselines show that our approach consistently improves the translation quality of NAT. Specifically, our best variant achieves comparable performance to the autoregressive Transformer, while being 14.7 times more efficient in inference.",
+          "resolved_arxiv": {
+            "arxiv_id": "2211.16863",
+            "title": "Rephrasing the Reference for Non-Autoregressive Machine Translation",
+            "abstract": "Non-autoregressive neural machine translation (NAT) models suffer from the multi-modality problem that there may exist multiple possible translations of a source sentence, so the reference sentence may be inappropriate for the training when the NAT output is closer to other translations. In response to this problem, we introduce a rephraser to provide a better training target for NAT by rephrasing the reference sentence according to the NAT output. As we train NAT based on the rephraser output rather than the reference sentence, the rephraser output should fit well with the NAT output and not deviate too far from the reference, which can be quantified as reward functions and optimized by reinforcement learning. Experiments on major WMT benchmarks and NAT baselines show that our approach consistently improves the translation quality of NAT. Specifically, our best variant achieves comparable performance to the autoregressive Transformer, while being 14.7 times more efficient in inference.",
+            "published": "2022-11-30T10:05:03Z",
+            "source_url": "https://arxiv.org/abs/2211.16863"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Stahlberg and Byrne [arxiv_1704.03169] address the problem that beam search can degrade in quality when a model becomes over-confident about a suboptimal prediction, proposing Minimum Bayes Risk (MBR) decoding to move beyond purely mode-seeking inference toward risk-minimising inference.",
+      "citation_markers": [
+        "[arxiv_1704.03169]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1704.03169",
+          "doc_id": "arxiv_1704.03169",
+          "title": "Later-stage Minimum Bayes-Risk Decoding for Neural Machine Translation",
+          "year": 2017,
+          "venue": "cs.CL",
+          "abstract": "For extended periods of time, sequence generation models rely on beam search algorithm to generate output sequence. However, the correctness of beam search degrades when the a model is over-confident about a suboptimal prediction. In this paper, we propose to perform minimum Bayes-risk (MBR) decoding for some extra steps at a later stage. In order to speed up MBR decoding, we compute the Bayes risks on GPU in batch mode. In our experiments, we found that MBR reranking works with a large beam size. Later-stage MBR decoding is shown to outperform simple MBR reranking in machine translation tasks.",
+          "resolved_arxiv": {
+            "arxiv_id": "1704.03169",
+            "title": "Later-stage Minimum Bayes-Risk Decoding for Neural Machine Translation",
+            "abstract": "For extended periods of time, sequence generation models rely on beam search algorithm to generate output sequence. However, the correctness of beam search degrades when the a model is over-confident about a suboptimal prediction. In this paper, we propose to perform minimum Bayes-risk (MBR) decoding for some extra steps at a later stage. In order to speed up MBR decoding, we compute the Bayes risks on GPU in batch mode. In our experiments, we found that MBR reranking works with a large beam size. Later-stage MBR decoding is shown to outperform simple MBR reranking in machine translation tasks.",
+            "published": "2017-04-11T06:48:45Z",
+            "source_url": "https://arxiv.org/abs/1704.03169"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The seminal parent–child framework introduced by Zoph et al. [arxiv_1604.02201] demonstrated that parameters learned from a high-resource language pair could be transferred to a low-resource child model, yielding substantial BLEU improvements across multiple language pairs.",
+      "citation_markers": [
+        "[arxiv_1604.02201]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1604.02201",
+          "doc_id": "arxiv_1604.02201",
+          "title": "Transfer Learning for Low-Resource Neural Machine Translation",
+          "year": 2016,
+          "venue": "cs.CL",
+          "abstract": "The encoder-decoder framework for neural machine translation (NMT) has been shown effective in large data scenarios, but is much less effective for low-resource languages. We present a transfer learning method that significantly improves Bleu scores across a range of low-resource languages. Our key idea is to first train a high-resource language pair (the parent model), then transfer some of the learned parameters to the low-resource pair (the child model) to initialize and constrain training. Using our transfer learning method we improve baseline NMT models by an average of 5.6 Bleu on four low-resource language pairs. Ensembling and unknown word replacement add another 2 Bleu which brings the NMT performance on low-resource machine translation close to a strong syntax based machine translation (SBMT) system, exceeding its performance on one language pair. Additionally, using the transfer learning model for re-scoring, we can improve the SBMT system by an average of 1.3 Bleu, improving the state-of-the-art on low-resource machine translation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1604.02201",
+            "title": "Transfer Learning for Low-Resource Neural Machine Translation",
+            "abstract": "The encoder-decoder framework for neural machine translation (NMT) has been shown effective in large data scenarios, but is much less effective for low-resource languages. We present a transfer learning method that significantly improves Bleu scores across a range of low-resource languages. Our key idea is to first train a high-resource language pair (the parent model), then transfer some of the learned parameters to the low-resource pair (the child model) to initialize and constrain training. Using our transfer learning method we improve baseline NMT models by an average of 5.6 Bleu on four low-resource language pairs. Ensembling and unknown word replacement add another 2 Bleu which brings the NMT performance on low-resource machine translation close to a strong syntax based machine translation (SBMT) system, exceeding its performance on one language pair. Additionally, using the transfer learning model for re-scoring, we can improve the SBMT system by an average of 1.3 Bleu, improving the state-of-the-art on low-resource machine translation.",
+            "published": "2016-04-08T00:16:35Z",
+            "source_url": "https://arxiv.org/abs/1604.02201"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Meta-learning has emerged as a principled framework for addressing data scarcity by enabling models to rapidly adapt to new low-resource languages from limited examples. The foundational contribution is the application of model-agnostic meta-learning (MAML) to NMT by Gu et al. [arxiv_1808.08437], who reframe low-resource translation as a meta-learning problem.",
+      "citation_markers": [
+        "[arxiv_1808.08437]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1808.08437",
+          "doc_id": "arxiv_1808.08437",
+          "title": "Meta-Learning for Low-Resource Neural Machine Translation",
+          "year": 2018,
+          "venue": "cs.CL",
+          "abstract": "In this paper, we propose to extend the recently introduced model-agnostic meta-learning algorithm (MAML) for low-resource neural machine translation (NMT). We frame low-resource translation as a meta-learning problem, and we learn to adapt to low-resource languages based on multilingual high-resource language tasks. We use the universal lexical representation~\\citep{gu2018universal} to overcome the input-output mismatch across different languages. We evaluate the proposed meta-learning strategy using eighteen European languages (Bg, Cs, Da, De, El, Es, Et, Fr, Hu, It, Lt, Nl, Pl, Pt, Sk, Sl, Sv and Ru) as source tasks and five diverse languages (Ro, Lv, Fi, Tr and Ko) as target tasks. We show that the proposed approach significantly outperforms the multilingual, transfer learning based approach~\\citep{zoph2016transfer} and enables us to train a competitive NMT system with only a fraction of training examples. For instance, the proposed approach can achieve as high as 22.04 BLEU on Romanian-English WMT'16 by seeing only 16,000 translated words (~600 parallel sentences).",
+          "resolved_arxiv": {
+            "arxiv_id": "1808.08437",
+            "title": "Meta-Learning for Low-Resource Neural Machine Translation",
+            "abstract": "In this paper, we propose to extend the recently introduced model-agnostic meta-learning algorithm (MAML) for low-resource neural machine translation (NMT). We frame low-resource translation as a meta-learning problem, and we learn to adapt to low-resource languages based on multilingual high-resource language tasks. We use the universal lexical representation~\\citep{gu2018universal} to overcome the input-output mismatch across different languages. We evaluate the proposed meta-learning strategy using eighteen European languages (Bg, Cs, Da, De, El, Es, Et, Fr, Hu, It, Lt, Nl, Pl, Pt, Sk, Sl, Sv and Ru) as source tasks and five diverse languages (Ro, Lv, Fi, Tr and Ko) as target tasks. We show that the proposed approach significantly outperforms the multilingual, transfer learning based approach~\\citep{zoph2016transfer} and enables us to train a competitive NMT system with only a fraction of training examples. For instance, the proposed approach can achieve as high as 22.04 BLEU on Romanian-English WMT'16 by seeing only 16,000 translated words (~600 parallel sentences).",
+            "published": "2018-08-25T15:10:59Z",
+            "source_url": "https://arxiv.org/abs/1808.08437"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Joint training of source-to-target and target-to-source models, iteratively refining both translation directions using monolingual data from each side, has been shown to be more effective than pipeline-style back-translation [arxiv_1803.00353].",
+      "citation_markers": [
+        "[arxiv_1803.00353]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_1803.00353",
+          "doc_id": "arxiv_1803.00353",
+          "title": "Joint Training for Neural Machine Translation Models with Monolingual\n  Data",
+          "year": 2018,
+          "venue": "cs.CL",
+          "abstract": "Monolingual data have been demonstrated to be helpful in improving translation quality of both statistical machine translation (SMT) systems and neural machine translation (NMT) systems, especially in resource-poor or domain adaptation tasks where parallel data are not rich enough. In this paper, we propose a novel approach to better leveraging monolingual data for neural machine translation by jointly learning source-to-target and target-to-source NMT models for a language pair with a joint EM optimization method. The training process starts with two initial NMT models pre-trained on parallel data for each direction, and these two models are iteratively updated by incrementally decreasing translation losses on training data. In each iteration step, both NMT models are first used to translate monolingual data from one language to the other, forming pseudo-training data of the other NMT model. Then two new NMT models are learnt from parallel data together with the pseudo training data. Both NMT models are expected to be improved and better pseudo-training data can be generated in next step. Experiment results on Chinese-English and English-German translation tasks show that our approach can simultaneously improve translation quality of source-to-target and target-to-source models, significantly outperforming strong baseline systems which are enhanced with monolingual data for model training including back-translation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1803.00353",
+            "title": "Joint Training for Neural Machine Translation Models with Monolingual Data",
+            "abstract": "Monolingual data have been demonstrated to be helpful in improving translation quality of both statistical machine translation (SMT) systems and neural machine translation (NMT) systems, especially in resource-poor or domain adaptation tasks where parallel data are not rich enough. In this paper, we propose a novel approach to better leveraging monolingual data for neural machine translation by jointly learning source-to-target and target-to-source NMT models for a language pair with a joint EM optimization method. The training process starts with two initial NMT models pre-trained on parallel data for each direction, and these two models are iteratively updated by incrementally decreasing translation losses on training data. In each iteration step, both NMT models are first used to translate monolingual data from one language to the other, forming pseudo-training data of the other NMT model. Then two new NMT models are learnt from parallel data together with the pseudo training data. Both NMT models are expected to be improved and better pseudo-training data can be generated in next step. Experiment results on Chinese-English and English-German translation tasks show that our approach can simultaneously improve translation quality of source-to-target and target-to-source models, significantly outperforming strong baseline systems which are enhanced with monolingual data for model training including back-translation.",
+            "published": "2018-03-01T13:14:35Z",
+            "source_url": "https://arxiv.org/abs/1803.00353"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "A foundational step was Google's multilingual NMT system [arxiv_1611.04558], which introduced a simple yet powerful mechanism—prepending a target-language token to the input—enabling a single model to translate across multiple language pairs and to perform zero-shot translation between language pairs never seen together during training. Building on this principle, Aharoni et al. [arxiv_1903.00089] demonstrated that massively multilingual NMT models could handle up to 102 languages within a single architecture, reporting gains for low-resource languages as a direct consequence of positive transfer from higher-resource pairs.",
+      "citation_markers": [
+        "[arxiv_1611.04558]",
+        "[arxiv_1903.00089]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1611.04558",
+          "doc_id": "arxiv_1611.04558",
+          "title": "Google's Multilingual Neural Machine Translation System: Enabling\n  Zero-Shot Translation",
+          "year": 2017,
+          "venue": "cs.CL",
+          "abstract": "We propose a simple solution to use a single Neural Machine Translation (NMT) model to translate between multiple languages. Our solution requires no change in the model architecture from our base system but instead introduces an artificial token at the beginning of the input sentence to specify the required target language. The rest of the model, which includes encoder, decoder and attention, remains unchanged and is shared across all languages. Using a shared wordpiece vocabulary, our approach enables Multilingual NMT using a single model without any increase in parameters, which is significantly simpler than previous proposals for Multilingual NMT. Our method often improves the translation quality of all involved language pairs, even while keeping the total number of model parameters constant. On the WMT'14 benchmarks, a single multilingual model achieves comparable performance for English$\\rightarrow$French and surpasses state-of-the-art results for English$\\rightarrow$German. Similarly, a single multilingual model surpasses state-of-the-art results for French$\\rightarrow$English and German$\\rightarrow$English on WMT'14 and WMT'15 benchmarks respectively. On production corpora, multilingual models of up to twelve language pairs allow for better translation of many individual pairs. In addition to improving the translation quality of language pairs that the model was trained with, our models can also learn to perform implicit bridging between language pairs never seen explicitly during training, showing that transfer learning and zero-shot translation is possible for neural translation. Finally, we show analyses that hints at a universal interlingua representation in our models and show some interesting examples when mixing languages.",
+          "resolved_arxiv": {
+            "arxiv_id": "1611.04558",
+            "title": "Google's Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation",
+            "abstract": "We propose a simple solution to use a single Neural Machine Translation (NMT) model to translate between multiple languages. Our solution requires no change in the model architecture from our base system but instead introduces an artificial token at the beginning of the input sentence to specify the required target language. The rest of the model, which includes encoder, decoder and attention, remains unchanged and is shared across all languages. Using a shared wordpiece vocabulary, our approach enables Multilingual NMT using a single model without any increase in parameters, which is significantly simpler than previous proposals for Multilingual NMT. Our method often improves the translation quality of all involved language pairs, even while keeping the total number of model parameters constant. On the WMT'14 benchmarks, a single multilingual model achieves comparable performance for English$\\rightarrow$French and surpasses state-of-the-art results for English$\\rightarrow$German. Similarly, a single multilingual model surpasses state-of-the-art results for French$\\rightarrow$English and German$\\rightarrow$English on WMT'14 and WMT'15 benchmarks respectively. On production corpora, multilingual models of up to twelve language pairs allow for better translation of many individual pairs. In addition to improving the translation quality of language pairs that the model was trained with, our models can also learn to perform implicit bridging between language pairs never seen explicitly during training, showing that transfer learning and zero-shot translation is possible for neural translation. Finally, we show analyses that hints at a universal interlingua representation in our models and show some interesting examples when mixing languages.",
+            "published": "2016-11-14T20:24:39Z",
+            "source_url": "https://arxiv.org/abs/1611.04558"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_1903.00089",
+          "doc_id": "arxiv_1903.00089",
+          "title": "Massively Multilingual Neural Machine Translation",
+          "year": 2019,
+          "venue": "cs.CL",
+          "abstract": "Multilingual neural machine translation (NMT) enables training a single model that supports translation from multiple source languages into multiple target languages. In this paper, we push the limits of multilingual NMT in terms of number of languages being used. We perform extensive experiments in training massively multilingual NMT models, translating up to 102 languages to and from English within a single model. We explore different setups for training such models and analyze the trade-offs between translation quality and various modeling decisions. We report results on the publicly available TED talks multilingual corpus where we show that massively multilingual many-to-many models are effective in low resource settings, outperforming the previous state-of-the-art while supporting up to 59 languages. Our experiments on a large-scale dataset with 102 languages to and from English and up to one million examples per direction also show promising results, surpassing strong bilingual baselines and encouraging future work on massively multilingual NMT.",
+          "resolved_arxiv": {
+            "arxiv_id": "1903.00089",
+            "title": "Massively Multilingual Neural Machine Translation",
+            "abstract": "Multilingual neural machine translation (NMT) enables training a single model that supports translation from multiple source languages into multiple target languages. In this paper, we push the limits of multilingual NMT in terms of number of languages being used. We perform extensive experiments in training massively multilingual NMT models, translating up to 102 languages to and from English within a single model. We explore different setups for training such models and analyze the trade-offs between translation quality and various modeling decisions. We report results on the publicly available TED talks multilingual corpus where we show that massively multilingual many-to-many models are effective in low resource settings, outperforming the previous state-of-the-art while supporting up to 59 languages. Our experiments on a large-scale dataset with 102 languages to and from English and up to one million examples per direction also show promising results, surpassing strong bilingual baselines and encouraging future work on massively multilingual NMT.",
+            "published": "2019-02-28T22:26:12Z",
+            "source_url": "https://arxiv.org/abs/1903.00089"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "topic": "3D Gaussian Splatting",
+  "arm": "o_rank_slab",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 18:57:47",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "3D Gaussian Splatting",
+    "neural radiance fields",
+    "NeRF",
+    "point-based rendering",
+    "volumetric rendering",
+    "radiance field reconstruction",
+    "real-time novel view synthesis",
+    "differentiable rasterization",
+    "scene representation learning",
+    "Gaussian primitives",
+    "explicit scene representation",
+    "photorealistic 3D reconstruction"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "rank_slab_order",
+  "groups": [
+    {
+      "name": "Rank slab 1: positions 1-8",
+      "n": 8
+    },
+    {
+      "name": "Rank slab 2: positions 9-15",
+      "n": 7
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_2308.04079",
+    "arxiv_2312.04564",
+    "arxiv_2401.00834",
+    "arxiv_2401.03890",
+    "arxiv_2403.11134",
+    "arxiv_2403.11831",
+    "arxiv_2404.06270",
+    "arxiv_2405.17811",
+    "arxiv_2408.03822",
+    "arxiv_2411.01853",
+    "arxiv_2502.19318",
+    "arxiv_2502.19457",
+    "arxiv_2509.17083"
+  ],
+  "n_refs": 13,
+  "word_count": 827,
+  "written_citation_ids": [
+    "arxiv_2308.04079",
+    "arxiv_2403.11134",
+    "arxiv_2509.17083",
+    "arxiv_2312.04564",
+    "arxiv_2502.19318",
+    "arxiv_2401.00834",
+    "arxiv_2403.11831",
+    "arxiv_2411.01853",
+    "arxiv_2408.03822",
+    "arxiv_2502.19457",
+    "arxiv_2404.06270",
+    "arxiv_2405.17811",
+    "arxiv_2401.03890"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2308.04079",
+    "arxiv_2312.04564",
+    "arxiv_2401.00834",
+    "arxiv_2401.03890",
+    "arxiv_2403.11134",
+    "arxiv_2403.11831",
+    "arxiv_2404.06270",
+    "arxiv_2405.17811",
+    "arxiv_2408.03822",
+    "arxiv_2411.01853",
+    "arxiv_2411.03637",
+    "arxiv_2411.14974",
+    "arxiv_2502.19318",
+    "arxiv_2502.19457",
+    "arxiv_2509.17083"
+  ],
+  "elapsed_sec": 39.9,
+  "llm_usage_delta": {
+    "n_calls": 3,
+    "prompt_tokens": 2860,
+    "completion_tokens": 1452
+  },
+  "llm_usage_so_far": {
+    "n_calls": 44,
+    "prompt_tokens": 41415,
+    "completion_tokens": 11325
+  }
+}

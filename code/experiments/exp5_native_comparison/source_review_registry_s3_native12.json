@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "status": "manually_verified_before_confirmatory_generation",
+  "publication_cutoff": "2023-12-31",
+  "selection_rule": "Three independent, topic-direct reviews or authoritative tutorials per topic; identifiers and first-publication dates manually verified.",
+  "fallback_reference_arxiv_ids": {
+    "fast_large_language_model_agents": [
+      "1509.02971", "1707.06347", "2303.08774", "2302.13971",
+      "2307.09288", "2307.16789", "2305.17144", "2306.00924",
+      "2307.07924", "2306.02552", "2307.02485", "2308.00352",
+      "2304.07590", "2307.00184", "2304.05335", "2305.12647",
+      "2302.01560", "2308.04026", "2304.13343", "2308.03983",
+      "2305.16291", "2305.10250", "2306.03901", "2305.14322",
+      "2301.04589", "2308.10144", "2305.18323", "2203.11171",
+      "2308.14296", "2308.09687", "2308.10379", "2305.14992",
+      "2304.11477", "2308.06391", "2207.05608", "2308.01552",
+      "2305.14323", "2112.09332", "2308.03427", "2305.15334",
+      "2304.08244", "2306.06624", "2205.00445", "2303.08128",
+      "2304.05376", "2303.11381", "2307.14984", "2204.01691",
+      "2303.17760", "2305.16960"
+    ]
+  },
+  "topics": {
+    "mature_neural_machine_translation": [
+      {"title": "Neural Machine Translation and Sequence-to-sequence Models: A Tutorial", "year": 2017, "arxiv_id": "1703.01619"},
+      {"title": "Neural Machine Translation: A Review", "year": 2020, "doi": "10.1613/JAIR.1.12007", "arxiv_id": "1912.02047"},
+      {"title": "A Survey of Deep Learning Techniques for Neural Machine Translation", "year": 2020, "arxiv_id": "2002.07526"}
+    ],
+    "mature_deep_reinforcement_learning": [
+      {"title": "Deep Reinforcement Learning: An Overview", "year": 2017, "arxiv_id": "1701.07274"},
+      {"title": "Deep Reinforcement Learning: A Brief Survey", "year": 2017, "doi": "10.1109/MSP.2017.2743240", "arxiv_id": "1708.05866"},
+      {"title": "An Introduction to Deep Reinforcement Learning", "year": 2018, "doi": "10.1561/2200000071", "arxiv_id": "1811.12560"}
+    ],
+    "mature_adversarial_robustness": [
+      {"title": "Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey", "year": 2018, "doi": "10.1109/ACCESS.2018.2807385", "arxiv_id": "1801.00553"},
+      {"title": "Adversarial Examples: Attacks and Defenses for Deep Learning", "year": 2019, "doi": "10.1109/TNNLS.2018.2886017", "arxiv_id": "1712.07107"},
+      {"title": "Adversarial Attacks and Defenses in Deep Learning: From a Perspective of Cybersecurity", "year": 2022, "doi": "10.1145/3547330"}
+    ],
+    "fast_text_to_image_diffusion": [
+      {"title": "Text-to-image Diffusion Models in Generative AI: A Survey", "year": 2023, "arxiv_id": "2303.07909"},
+      {"title": "RenAIssance: A Survey into AI Text-to-Image Generation in the Era of Large Model", "year": 2023, "arxiv_id": "2309.00810"},
+      {"title": "Diffusion Models in Vision: A Survey", "year": 2023, "doi": "10.1109/TPAMI.2023.3261988", "arxiv_id": "2209.04747"}
+    ],
+    "fast_vision_language_pretraining": [
+      {"title": "VLP: A Survey on Vision-language Pre-training", "year": 2023, "doi": "10.1007/s11633-022-1369-5", "arxiv_id": "2202.09061"},
+      {"title": "A Survey of Vision-Language Pre-Trained Models", "year": 2022, "doi": "10.24963/ijcai.2022/762"},
+      {"title": "Vision-Language Pre-Training: Basics, Recent Advances, and Future Trends", "year": 2022, "doi": "10.1561/0600000105"}
+    ],
+    "fast_large_language_model_agents": [
+      {"title": "A Survey on Large Language Model based Autonomous Agents", "year": 2023, "arxiv_id": "2308.11432"},
+      {"title": "The Rise and Potential of Large Language Model Based Agents: A Survey", "year": 2023, "arxiv_id": "2309.07864"},
+      {"title": "Large Language Models Empowered Agent-based Modeling and Simulation: A Survey and Perspectives", "year": 2023, "arxiv_id": "2312.11970"}
+    ],
+    "method_self_supervised_learning": [
+      {"title": "Self-Supervised Visual Feature Learning With Deep Neural Networks: A Survey", "year": 2021, "doi": "10.1109/TPAMI.2020.2992393"},
+      {"title": "Self-Supervised Representation Learning: Introduction, Advances and Challenges", "year": 2022, "doi": "10.1109/MSP.2021.3134634", "arxiv_id": "2110.09327"},
+      {"title": "Self-Supervised Learning: Generative or Contrastive", "year": 2023, "doi": "10.1109/TKDE.2021.3090866", "arxiv_id": "2006.08218"}
+    ],
+    "method_continual_learning": [
+      {"title": "Continual Lifelong Learning with Neural Networks: A Review", "year": 2019, "doi": "10.1016/j.neunet.2019.01.012"},
+      {"title": "Embracing Change: Continual Learning in Deep Neural Networks", "year": 2020, "doi": "10.1016/j.tics.2020.09.004"},
+      {"title": "A Continual Learning Survey: Defying Forgetting in Classification Tasks", "year": 2022, "doi": "10.1109/TPAMI.2021.3057446", "arxiv_id": "1909.08383"}
+    ],
+    "method_uncertainty_quantification": [
+      {"title": "A Review of Uncertainty Quantification in Deep Learning: Techniques, Applications and Challenges", "year": 2021, "doi": "10.1016/j.inffus.2021.05.008", "arxiv_id": "2011.06225"},
+      {"title": "A Survey on Uncertainty Estimation in Deep Learning Classification Systems from a Bayesian Perspective", "year": 2021, "doi": "10.1145/3477140"},
+      {"title": "A Survey of Uncertainty in Deep Neural Networks", "year": 2023, "doi": "10.1007/s10462-023-10562-9"}
+    ],
+    "cross_medical_image_analysis": [
+      {"title": "A Survey on Deep Learning in Medical Image Analysis", "year": 2017, "doi": "10.1016/j.media.2017.07.005"},
+      {"title": "Deep Learning in Medical Image Analysis", "year": 2017, "doi": "10.1146/annurev-bioeng-071516-044442"},
+      {"title": "A Review of Deep Learning in Medical Imaging: Imaging Traits, Technology Trends, Case Studies With Progress Highlights, and Future Promises", "year": 2021, "doi": "10.1109/JPROC.2021.3054390"}
+    ],
+    "cross_ml_drug_discovery": [
+      {"title": "The Rise of Deep Learning in Drug Discovery", "year": 2018, "doi": "10.1016/j.drudis.2018.01.039"},
+      {"title": "Applications of Machine Learning in Drug Discovery and Development", "year": 2019, "doi": "10.1038/s41573-019-0024-5"},
+      {"title": "Comprehensive Survey of Recent Drug Discovery Using Deep Learning", "year": 2021, "doi": "10.3390/ijms22189983"}
+    ],
+    "cross_efficient_deep_learning": [
+      {"title": "Efficient Processing of Deep Neural Networks: A Tutorial and Survey", "year": 2017, "doi": "10.1109/JPROC.2017.2761740", "arxiv_id": "1703.09039"},
+      {"title": "Model Compression and Acceleration for Deep Neural Networks: The Principles, Progress, and Challenges", "year": 2018, "doi": "10.1109/MSP.2017.2765695"},
+      {"title": "Efficient Deep Learning: A Survey on Making Deep Learning Models Smaller, Faster, and Better", "year": 2023, "doi": "10.1145/3578938", "arxiv_id": "2106.08962"}
+    ]
+  }
+}

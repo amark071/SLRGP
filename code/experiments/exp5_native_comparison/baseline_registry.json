@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "search_freeze_date": "2026-07-15",
+  "protocol": "S3_NATIVE_END_TO_END_PROTOCOL.md",
+  "eligibility": {
+    "required": [
+      "official or author-linked implementation",
+      "topic-to-survey execution path",
+      "native retrieval, organization, and generation stages",
+      "auditable cited-reference manifest",
+      "dependencies and source revision can be frozen",
+      "common publication cutoff can be enforced before writing"
+    ],
+    "disallowed_substitutions": [
+      "inspired reconstruction from a paper description",
+      "retrieval borrowed from another system while retaining the native-system label",
+      "shared outline-to-section adapter replacing the released workflow",
+      "post-hoc text or citation repair"
+    ]
+  },
+  "systems": [
+    {
+      "id": "slrgp",
+      "display_name": "SLRGP",
+      "role": "treatment",
+      "status": "mandatory",
+      "source": "local",
+      "native_scope": "E_default -> L_validated -> F_default -> R_learned -> O_learned -> V/P/W/C with structural recursion",
+      "preflight_blockers": [
+        "repair child full-reentry parent-topic loss",
+        "freeze global merge and editorial reconciliation",
+        "persist node-level provenance and cost events"
+      ]
+    },
+    {
+      "id": "autosurvey",
+      "display_name": "AutoSurvey",
+      "role": "baseline",
+      "status": "mandatory",
+      "official_repository": "https://github.com/AutoSurveys/AutoSurvey",
+      "source_revision": "5e8f389f3d51b29bad16dc6ae75db3e8a45a3b65",
+      "source_revision_pending": false,
+      "native_scope": "retrieval, outline generation, section drafting, refinement",
+      "preflight_blockers": [
+        "build or acquire a full official-compatible database",
+        "discard the previous 9682-record topic-reduced database",
+        "apply only allowlisted API and logging patches"
+      ]
+    },
+    {
+      "id": "surveyforge",
+      "display_name": "SURVEYFORGE",
+      "role": "baseline",
+      "status": "mandatory",
+      "official_repository": "https://github.com/InternScience/SurveyForge",
+      "source_revision": "9114a0b7895a0f7eb614938d9bc0c956cf25245b",
+      "source_revision_pending": false,
+      "native_scope": "outline heuristics, SANA retrieval, memory-driven writing and refinement",
+      "preflight_blockers": [
+        "create a clean checkout",
+        "audit database and outline assets at the common cutoff",
+        "apply only allowlisted API and logging patches"
+      ]
+    },
+    {
+      "id": "itersurvey",
+      "display_name": "IterSurvey",
+      "role": "baseline",
+      "status": "excluded_preflight",
+      "official_repository": "https://github.com/HancCui/IterSurvey_Autosurveyv2",
+      "source_revision": "9b49b73cedd41ea1ab9a2dbf92931c5ab84a7799",
+      "source_revision_pending": false,
+      "native_scope": "recurrent outline generation, paper cards, section drafting, global reviewer-refiner loop",
+      "preflight_blockers": [
+        "the documented approximately 680K-paper retrieval database is not released and the frozen repository contains no builder for the required JSON plus FAISS contract",
+        "audit whether an author-compatible database can be obtained without borrowing another system's retrieval corpus",
+        "start and health-check the native MinerU PDF parsing service",
+        "freeze iteration and refinement stop rules",
+        "verify OpenAI-compatible model configuration"
+      ],
+      "exclusion_reason": "The required native database and builder were not released; borrowing AutoSurvey's corpus is disallowed."
+    },
+    {
+      "id": "surveygen",
+      "display_name": "QUAL-SG / SurveyGen",
+      "role": "baseline",
+      "status": "mandatory",
+      "official_repository": "https://github.com/tongbao96/SurveyGen",
+      "source_revision": "7c8fd1e7325730f858a0a42acc9884ce5d5de55f",
+      "source_revision_pending": false,
+      "native_scope": "Semantic Scholar retrieval, co-citation expansion, quality augmentation, reranking, outline and survey generation",
+      "preflight_blockers": [
+        "verify Semantic Scholar and OpenAlex access",
+        "repair the released five-stage file wiring and outline path typo without changing retrieval or reranking semantics",
+        "freeze quality-signal snapshot",
+        "enforce the common publication cutoff before reranking"
+      ]
+    },
+    {
+      "id": "surveyg",
+      "display_name": "SurveyG",
+      "role": "baseline",
+      "status": "excluded_preflight",
+      "official_repository": "https://github.com/akBear23/SurveyG",
+      "source_revision": "089a05ba0fd870cc4c2285e762e1db3bd489884c",
+      "source_revision_pending": false,
+      "native_scope": "hierarchical citation graph, horizontal and vertical traversal, writing and evaluation agents",
+      "preflight_blockers": [
+        "repair the released run-order and traversal-artifact bugs without changing native graph semantics",
+        "enforce the common cutoff in live Semantic Scholar retrieval and graph construction",
+        "freeze graph-construction parameters",
+        "verify model endpoint and usage logging"
+      ],
+      "exclusion_reason": "Common-backbone and cutoff compliance would require replacing core direct-Gemini and date-relative retrieval paths."
+    },
+    {
+      "id": "arise",
+      "display_name": "ARISE",
+      "role": "baseline",
+      "status": "excluded_preflight",
+      "official_repository": "https://github.com/ziwang11112/ARISE",
+      "source_revision": "5db26bbd64bb9e865dd64b17c75dc2cb26e0e150",
+      "source_revision_pending": false,
+      "native_scope": "citation curation, drafting, rubric reviewers, meta-review and iterative refinement",
+      "preflight_blockers": [
+        "obtain a Serper API credential for the native topic-driven retrieval stage",
+        "inject non-interactive topic input before the official seven-stage runner",
+        "freeze reviewer topology and stop rule",
+        "adapt common backbone without changing role communication",
+        "enforce common cost and runtime caps"
+      ],
+      "exclusion_reason": "Repeated native retrieval preflights stalled and the released parser collapsed multiple citations; a direct-Serper rewrite would alter the treatment."
+    },
+    {
+      "id": "lira",
+      "display_name": "LiRA",
+      "role": "candidate",
+      "status": "conditional",
+      "official_repository": "https://github.com/lira-workflow/auto-review-writing",
+      "source_revision": "2bc77a6e7b30586343119bd104cc07ebaec380a1",
+      "native_scope": "multi-agent outline, subsection writing, editing and review",
+      "eligibility_question": "Does the released implementation provide a native topic-to-retrieval path rather than only dataset-conditioned writing?"
+    },
+    {
+      "id": "hireview",
+      "display_name": "HiReview",
+      "role": "candidate",
+      "status": "conditional",
+      "official_repository": "https://anonymous.4open.science/r/HiReivew-767D",
+      "native_scope": "citation-network retrieval, hierarchical taxonomy and generation",
+      "eligibility_question": "Is the author-linked repository still accessible and executable with an auditable citation-network snapshot?"
+    },
+    {
+      "id": "surveyx",
+      "display_name": "SurveyX",
+      "role": "candidate",
+      "status": "secondary_generation_only",
+      "official_repository": "https://github.com/IAAR-Shanghai/SurveyX",
+      "native_scope": "offline AttributeTree-based preparation and generation from user-provided references",
+      "exclusion_reason": "The public edition omits the native online paper database, crawler, query expansion and semantic filtering, so it is not topic-to-survey end-to-end."
+    },
+    {
+      "id": "deepsurvey_2026",
+      "display_name": "DeepSurvey (arXiv:2605.29522)",
+      "role": "frontier_reference",
+      "status": "ecological_only",
+      "official_repository": null,
+      "native_scope": "full-text keynotes, graph retrieval, cross-paper analysis, code analysis and multi-granularity refinement",
+      "exclusion_reason": "No verifiable author-linked implementation was identified at the search freeze; similarly named repositories are not treated as the paper implementation."
+    },
+    {
+      "id": "autosurvey2",
+      "display_name": "AutoSurvey2",
+      "role": "candidate",
+      "status": "conditional",
+      "official_repository": "https://github.com/annihi1ation/auto_research",
+      "source_revision": "998291e5d08822a9cda0b509ec3076c3706c9e70",
+      "eligibility_question": "Is the repository an executable author-linked implementation of the reported topic-to-survey system with a citable frozen release?"
+    },
+    {
+      "id": "agentic_autosurvey",
+      "display_name": "Agentic AutoSurvey",
+      "role": "candidate",
+      "status": "excluded_pending_release",
+      "official_repository": null,
+      "exclusion_reason": "No public official implementation was identified at the search freeze."
+    },
+    {
+      "id": "openscholar",
+      "display_name": "OpenScholar",
+      "role": "neighboring_task",
+      "status": "excluded_task_mismatch",
+      "exclusion_reason": "Scientific multi-paper question answering and synthesis, not a 4000-word survey-paper generation contract."
+    },
+    {
+      "id": "paperqa2",
+      "display_name": "PaperQA2",
+      "role": "neighboring_task",
+      "status": "excluded_task_mismatch",
+      "official_repository": "https://github.com/Future-House/paper-qa",
+      "exclusion_reason": "Agentic scientific QA over supplied documents, not native long-form survey-paper generation."
+    }
+  ]
+}

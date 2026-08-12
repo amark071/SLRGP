@@ -1,0 +1,170 @@
+{
+  "n_train_nodes": 11451,
+  "n_heldout_nodes": 2881,
+  "n_train_reviews": 1779,
+  "n_heldout_reviews": 442,
+  "axes": {
+    "facet": {
+      "label_distribution_train": {
+        "topic": 4176,
+        "object": 1921,
+        "method": 2666,
+        "application_task": 1510,
+        "level": 209,
+        "theory": 307,
+        "other": 571,
+        "controversy": 91
+      },
+      "label_distribution_heldout": {
+        "topic": 1036,
+        "object": 506,
+        "application_task": 412,
+        "method": 623,
+        "theory": 87,
+        "level": 36,
+        "other": 151,
+        "controversy": 30
+      },
+      "metrics": {
+        "global_majority": {
+          "accuracy": 0.35959736202707393,
+          "macro_f1": 0.06612203216747511,
+          "balanced_accuracy": 0.125
+        },
+        "depth_majority": {
+          "accuracy": 0.395001735508504,
+          "macro_f1": 0.11536345868787502,
+          "balanced_accuracy": 0.1577032992061082
+        },
+        "depth_length_majority": {
+          "accuracy": 0.395001735508504,
+          "macro_f1": 0.11536345868787502,
+          "balanced_accuracy": 0.1577032992061082
+        },
+        "tfidf_logreg": {
+          "accuracy": 0.5182228392919125,
+          "macro_f1": 0.3829201278758024,
+          "balanced_accuracy": 0.4038986202134466
+        }
+      },
+      "best_baseline_by_accuracy": "depth_majority",
+      "tfidf_logreg_minus_best_baseline_accuracy_ci": {
+        "n_reviews": 442,
+        "mean_diff": 0.10984910821472961,
+        "ci_low": 0.07849628707377747,
+        "ci_high": 0.14073175486117512
+      }
+    },
+    "relation": {
+      "label_distribution_train": {
+        "enumerative_none": 4461,
+        "general_to_specific": 3995,
+        "foundational_to_applied": 1309,
+        "simple_to_complex": 684,
+        "consensus_to_controversy": 96,
+        "other": 602,
+        "chronological": 304
+      },
+      "label_distribution_heldout": {
+        "enumerative_none": 1048,
+        "general_to_specific": 1050,
+        "simple_to_complex": 197,
+        "foundational_to_applied": 352,
+        "chronological": 65,
+        "consensus_to_controversy": 27,
+        "other": 142
+      },
+      "metrics": {
+        "global_majority": {
+          "accuracy": 0.36376258243665394,
+          "macro_f1": 0.07620986801439843,
+          "balanced_accuracy": 0.14285714285714285
+        },
+        "depth_majority": {
+          "accuracy": 0.387712599791739,
+          "macro_f1": 0.11584605379481945,
+          "balanced_accuracy": 0.15220517214519397
+        },
+        "depth_length_majority": {
+          "accuracy": 0.387712599791739,
+          "macro_f1": 0.11584605379481945,
+          "balanced_accuracy": 0.15220517214519397
+        },
+        "tfidf_logreg": {
+          "accuracy": 0.43110031239153074,
+          "macro_f1": 0.2778905961573945,
+          "balanced_accuracy": 0.2941477756645871
+        }
+      },
+      "best_baseline_by_accuracy": "depth_majority",
+      "tfidf_logreg_minus_best_baseline_accuracy_ci": {
+        "n_reviews": 442,
+        "mean_diff": 0.037731930784850994,
+        "ci_low": 0.0069353346920801185,
+        "ci_high": 0.06909294996093936
+      }
+    }
+  },
+  "stratified_tfidf_logreg_accuracy": {
+    "facet": {
+      "by_depth": {
+        "0": {
+          "n_nodes": 442,
+          "accuracy": 0.6515837104072398
+        },
+        "1": {
+          "n_nodes": 1606,
+          "accuracy": 0.47820672478206727
+        },
+        "2": {
+          "n_nodes": 833,
+          "accuracy": 0.524609843937575
+        }
+      },
+      "by_review_length_bucket": {
+        "long": {
+          "n_nodes": 1644,
+          "accuracy": 0.5145985401459854
+        },
+        "medium": {
+          "n_nodes": 746,
+          "accuracy": 0.5281501340482574
+        },
+        "short": {
+          "n_nodes": 491,
+          "accuracy": 0.515274949083503
+        }
+      }
+    },
+    "relation": {
+      "by_depth": {
+        "0": {
+          "n_nodes": 442,
+          "accuracy": 0.4819004524886878
+        },
+        "1": {
+          "n_nodes": 1606,
+          "accuracy": 0.43337484433374845
+        },
+        "2": {
+          "n_nodes": 833,
+          "accuracy": 0.3997599039615846
+        }
+      },
+      "by_review_length_bucket": {
+        "long": {
+          "n_nodes": 1644,
+          "accuracy": 0.43856447688564476
+        },
+        "medium": {
+          "n_nodes": 746,
+          "accuracy": 0.41420911528150134
+        },
+        "short": {
+          "n_nodes": 491,
+          "accuracy": 0.4317718940936864
+        }
+      }
+    }
+  }
+}

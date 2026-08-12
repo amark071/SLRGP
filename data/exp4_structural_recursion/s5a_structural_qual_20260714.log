@@ -1,0 +1,75 @@
+[S5a-structural] RUN Retrieval-Augmented Generation for Large Language Models | structural_lotcf_recursive
+    [llm] call #1 chars=25624 max_tokens=3500 attempt=0
+    [llm] done 23.7s usage={'prompt_tokens': 5738, 'completion_tokens': 1800, 'total_tokens': 7538}
+    [llm] call #2 chars=8008 max_tokens=3500 attempt=0
+    [llm] done 11.5s usage={'prompt_tokens': 1820, 'completion_tokens': 543, 'total_tokens': 2363}
+    [llm] call #3 chars=11839 max_tokens=3500 attempt=0
+    [llm] done 13.6s usage={'prompt_tokens': 2718, 'completion_tokens': 644, 'total_tokens': 3362}
+    [llm] call #4 chars=4973 max_tokens=3500 attempt=0
+    [llm] done 9.5s usage={'prompt_tokens': 1191, 'completion_tokens': 395, 'total_tokens': 1586}
+    [llm] call #5 chars=5022 max_tokens=3500 attempt=0
+    [llm] done 9.7s usage={'prompt_tokens': 1189, 'completion_tokens': 430, 'total_tokens': 1619}
+    [llm] call #6 chars=4963 max_tokens=3500 attempt=0
+    [llm] done 8.2s usage={'prompt_tokens': 1181, 'completion_tokens': 363, 'total_tokens': 1544}
+    [llm] call #7 chars=1754 max_tokens=1625 attempt=0
+    [llm] done 22.4s usage={'prompt_tokens': 399, 'completion_tokens': 893, 'total_tokens': 1292}
+    [llm] call #8 chars=4877 max_tokens=1625 attempt=0
+    [llm] done 22.5s usage={'prompt_tokens': 1082, 'completion_tokens': 906, 'total_tokens': 1988}
+    [llm] call #9 chars=4892 max_tokens=1625 attempt=0
+    [llm] done 23.5s usage={'prompt_tokens': 1063, 'completion_tokens': 982, 'total_tokens': 2045}
+    [llm] call #10 chars=3714 max_tokens=1625 attempt=0
+    [llm] done 23.4s usage={'prompt_tokens': 856, 'completion_tokens': 962, 'total_tokens': 1818}
+    [llm] call #11 chars=2588 max_tokens=1625 attempt=0
+    [llm] done 22.3s usage={'prompt_tokens': 574, 'completion_tokens': 871, 'total_tokens': 1445}
+    [llm] call #12 chars=3961 max_tokens=1625 attempt=0
+    [llm] done 23.1s usage={'prompt_tokens': 902, 'completion_tokens': 950, 'total_tokens': 1852}
+    [llm] call #13 chars=2939 max_tokens=1625 attempt=0
+    [llm] done 21.2s usage={'prompt_tokens': 656, 'completion_tokens': 885, 'total_tokens': 1541}
+    [llm] call #14 chars=4974 max_tokens=1625 attempt=0
+    [llm] done 23.9s usage={'prompt_tokens': 1114, 'completion_tokens': 1017, 'total_tokens': 2131}
+    [llm] call #15 chars=2752 max_tokens=1625 attempt=0
+    [llm] done 22.4s usage={'prompt_tokens': 602, 'completion_tokens': 896, 'total_tokens': 1498}
+    [llm] call #16 chars=3859 max_tokens=1625 attempt=0
+    [llm] done 22.7s usage={'prompt_tokens': 909, 'completion_tokens': 1012, 'total_tokens': 1921}
+    [llm] call #17 chars=4734 max_tokens=1625 attempt=0
+    [llm] done 21.2s usage={'prompt_tokens': 1029, 'completion_tokens': 903, 'total_tokens': 1932}
+    [llm] call #18 chars=2452 max_tokens=900 attempt=0
+    [llm] done 12.7s usage={'prompt_tokens': 500, 'completion_tokens': 327, 'total_tokens': 827}
+    [llm] call #19 chars=1963 max_tokens=900 attempt=0
+    [llm] done 11.6s usage={'prompt_tokens': 414, 'completion_tokens': 343, 'total_tokens': 757}
+    [llm] call #20 chars=2117 max_tokens=900 attempt=0
+    [llm] done 10.8s usage={'prompt_tokens': 440, 'completion_tokens': 331, 'total_tokens': 771}
+    [llm] call #21 chars=2565 max_tokens=900 attempt=0
+    [llm] done 11.3s usage={'prompt_tokens': 541, 'completion_tokens': 345, 'total_tokens': 886}
+    [llm] call #22 chars=1915 max_tokens=900 attempt=0
+    [llm] done 11.6s usage={'prompt_tokens': 402, 'completion_tokens': 325, 'total_tokens': 727}
+    [llm] call #23 chars=3234 max_tokens=900 attempt=0
+    [llm] done 10.9s usage={'prompt_tokens': 655, 'completion_tokens': 336, 'total_tokens': 991}
+    [llm] call #24 chars=1335 max_tokens=2200 attempt=0
+    [llm] done 24.9s usage={'prompt_tokens': 370, 'completion_tokens': 1030, 'total_tokens': 1400}
+[S5a-structural] structural_lotcf_recursive ok=True words=9607 refs=32 invalid=0 o_calls=6 merges=7
+[S5a-structural] RUN Retrieval-Augmented Generation for Large Language Models | naive_recursive_chunking
+    [llm] call #25 chars=4501 max_tokens=2812 attempt=0
+    [llm] done 30.0s usage={'prompt_tokens': 1013, 'completion_tokens': 1419, 'total_tokens': 2432}
+    [llm] call #26 chars=4344 max_tokens=2812 attempt=0
+    [llm] done 31.7s usage={'prompt_tokens': 1024, 'completion_tokens': 1426, 'total_tokens': 2450}
+    [llm] call #27 chars=4544 max_tokens=2812 attempt=0
+    [llm] done 30.8s usage={'prompt_tokens': 1055, 'completion_tokens': 1375, 'total_tokens': 2430}
+    [llm] call #28 chars=4488 max_tokens=2812 attempt=0
+    [llm] done 30.8s usage={'prompt_tokens': 1000, 'completion_tokens': 1337, 'total_tokens': 2337}
+    [llm] call #29 chars=4274 max_tokens=2812 attempt=0
+    [llm] done 30.0s usage={'prompt_tokens': 921, 'completion_tokens': 1344, 'total_tokens': 2265}
+    [llm] call #30 chars=4616 max_tokens=2812 attempt=0
+    [llm] done 26.0s usage={'prompt_tokens': 1021, 'completion_tokens': 1307, 'total_tokens': 2328}
+    [llm] call #31 chars=4264 max_tokens=2812 attempt=0
+    [llm] done 30.7s usage={'prompt_tokens': 971, 'completion_tokens': 1325, 'total_tokens': 2296}
+    [llm] call #32 chars=4574 max_tokens=2812 attempt=0
+    [llm] done 29.9s usage={'prompt_tokens': 1002, 'completion_tokens': 1450, 'total_tokens': 2452}
+[S5a-structural] naive_recursive_chunking ok=True words=7748 refs=32 invalid=0 o_calls=0 merges=0
+[S5a-structural] RUN Retrieval-Augmented Generation for Large Language Models | flat_single_pass
+    [llm] call #33 chars=32407 max_tokens=22500 attempt=0
+    [llm] done 160.9s usage={'prompt_tokens': 7109, 'completion_tokens': 8367, 'total_tokens': 15476}
+    [llm] call #34 chars=32293 max_tokens=5059 attempt=0
+    [llm] done 66.8s usage={'prompt_tokens': 7541, 'completion_tokens': 2873, 'total_tokens': 10414}
+[S5a-structural] flat_single_pass ok=True words=8220 refs=39 invalid=0 o_calls=0 merges=0
+[S5a-structural] summary n_ok=3/3 usage={'n_calls': 34, 'prompt_tokens': 49002, 'completion_tokens': 39712}

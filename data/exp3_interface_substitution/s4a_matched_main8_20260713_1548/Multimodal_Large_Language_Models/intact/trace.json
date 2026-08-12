@@ -1,0 +1,293 @@
+{
+  "arm": "intact",
+  "bundle_hash": "d041b2b7578411c9b04ff5e30fd184d20f2454aad4d90cd0e5cf142295bb0e41",
+  "descend_events": [
+    {
+      "node_path": "root/0",
+      "parent_seed": "Multimodal Large Language Models",
+      "group_name": "Surveys and Overviews of Multimodal LLMs",
+      "child_seed": "Multimodal Large Language Models — Surveys and Overviews of Multimodal LLMs",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ]
+    },
+    {
+      "node_path": "root/1",
+      "parent_seed": "Multimodal Large Language Models",
+      "group_name": "Model Architectures and Pretraining for Vision-Language",
+      "child_seed": "Multimodal Large Language Models — Model Architectures and Pretraining for Vision-Language",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ]
+    }
+  ],
+  "solve_events": [
+    {
+      "node_path": "root/0",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Surveys and Overviews of Multimodal LLMs",
+      "retrieved_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "filtered_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "ranked_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "group_names": [
+        "Foundational Vision-Language Pre-training Methods",
+        "Transition from Specialist to General-Purpose Multimodal Models",
+        "Comprehensive Surveys of Multimodal LLMs",
+        "Multimodal LLMs Across Diverse Modalities (Vision, Audio, Sensors, and Beyond)"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Surveys and Overviews of Multimodal LLMs",
+      "retrieved_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "filtered_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "ranked_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "group_names": [
+        "Foundational Vision-Language Pre-training Methods",
+        "Transition from Specialist to General-Purpose Multimodal Models",
+        "Comprehensive Surveys of Multimodal LLMs",
+        "Multimodal LLMs Across Diverse Modalities (Vision, Audio, Sensors, and Beyond)"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Surveys and Overviews of Multimodal LLMs",
+      "retrieved_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "filtered_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "ranked_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "group_names": [
+        "Foundational Vision-Language Pre-training Methods",
+        "Transition from Specialist to General-Purpose Multimodal Models",
+        "Comprehensive Surveys of Multimodal LLMs",
+        "Multimodal LLMs Across Diverse Modalities (Vision, Audio, Sensors, and Beyond)"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Model Architectures and Pretraining for Vision-Language",
+      "retrieved_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "filtered_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "ranked_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "group_names": [
+        "Vision-Language Pretraining and Joint Modeling",
+        "Efficient Adaptation and Cross-Modal Architectures",
+        "Omni-Modal Pretraining Beyond Vision-Language"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Model Architectures and Pretraining for Vision-Language",
+      "retrieved_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "filtered_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "ranked_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "group_names": [
+        "Vision-Language Pretraining and Joint Modeling",
+        "Efficient Adaptation and Cross-Modal Architectures",
+        "Omni-Modal Pretraining Beyond Vision-Language"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Multimodal Large Language Models — Model Architectures and Pretraining for Vision-Language",
+      "retrieved_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "filtered_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "ranked_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "group_names": [
+        "Vision-Language Pretraining and Joint Modeling",
+        "Efficient Adaptation and Cross-Modal Architectures for MLLMs",
+        "Omni-Modal Pretraining Beyond Vision-Language"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    }
+  ],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "Multimodal Large Language Models — Surveys and Overviews of Multimodal LLMs",
+      "candidate_ids": [
+        "arxiv_2402.12451",
+        "arxiv_2309.10020",
+        "arxiv_2410.05608",
+        "arxiv_2210.09263"
+      ],
+      "written_citation_ids": [
+        "arxiv_2210.09263",
+        "arxiv_2309.10020",
+        "arxiv_2402.12451",
+        "arxiv_2410.05608"
+      ],
+      "word_count": 494
+    },
+    {
+      "node_path": "root/1",
+      "seed": "Multimodal Large Language Models — Model Architectures and Pretraining for Vision-Language",
+      "candidate_ids": [
+        "arxiv_2408.06610",
+        "arxiv_2209.06794",
+        "ss_478472",
+        "arxiv_2403.08773"
+      ],
+      "written_citation_ids": [
+        "arxiv_2209.06794",
+        "arxiv_2403.08773",
+        "arxiv_2408.06610",
+        "ss_478472"
+      ],
+      "word_count": 485
+    }
+  ],
+  "validation_events": []
+}

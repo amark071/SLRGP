@@ -1,0 +1,126 @@
+{
+  "topic_id": "fast_vision_language_pretraining",
+  "system": "surveyforge",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Vision-language pretraining (VLP) emerged as the paradigm bridging this divide, enabling models pretrained on large-scale image-text corpora to transfer rich multimodal knowledge to diverse downstream tasks [3; 4; 5",
+      "citation_markers": [
+        "[3; 4; 5]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The dramatic scaling of noisy web-collected supervision [6] catalyzed contrastive pretraining paradigms, while generative objectives enabled flexible understanding and generation within unified frameworks [7; 8; 9",
+      "citation_markers": [
+        "[6]",
+        "[7; 8; 9]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Large-scale web-crawled corpora constitute the indispensable data foundation upon which modern vision-language pretraining rests",
+      "citation_markers": [
+        ""
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "CLIP-score-based filtering has emerged as the dominant quality gate [16], providing a scalable mechanism for retaining only those image-text pairs whose cross-modal similarity exceeds a learned threshold",
+      "citation_markers": [
+        "[16]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The community subsequently shifted toward grid-based convolutional encoders and patch-based Vision Transformers to eliminate detector dependencies; [7] and [31] demonstrated that ViT-based encoders trained end-to-end with language models capture long-range visual dependencies more effectively, while [32] scaled visual encoding to 4B parameters, revealing that joint vision-language scaling yields disproportionate gains",
+      "citation_markers": [
+        "[7; 31]",
+        "[32]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Dual-encoder architectures project independently encoded visual and textual representations into a shared embedding space through contrastive alignment, exemplified most prominently by [6], which demonstrated that billion-scale noisy image-text pairs suffice to learn discriminative cross-modal representations without expensive curation",
+      "citation_markers": [
+        "[6]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Fusion encoder architectures address the core limitation of dual-encoder models by jointly processing visual and textual tokens within shared transformer layers, achieving deep cross-modal interaction at the cost of the inference efficiency that contrastive designs prioritize",
+      "citation_markers": [
+        ""
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Autoregressive frameworks that treat visual and textual content as interleaved token sequences—exemplified by [33] and [48]—enable simultaneous image-to-text and text-to-image generation, with the latter demonstrating that retrieval-augmented pretraining combined with multitask supervised fine-tuning substantially improves controllability",
+      "citation_markers": [
+        "[33]",
+        "[48]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Cross-modal retrieval and zero-shot recognition represent the most direct evaluation paradigms for contrastively pretrained vision-language models, with MSCOCO and Flickr30k serving as canonical retrieval benchmarks measured via Recall@K metrics [6",
+      "citation_markers": [
+        "[6]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Models such as CLIP demonstrate remarkable zero-shot image classification by matching image embeddings against textual class-name descriptors, with prompt engineering and ensemble strategies yielding substantial gains across ImageNet and distribution-shifted variants [61; 62",
+      "citation_markers": [
+        "[61; 62]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "As large vision-language models [67; 51; 68] have grown increasingly capable across diverse tasks, single-task benchmarks prove insufficient for holistic assessment",
+      "citation_markers": [
+        "[67; 51; 68]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Frameworks such as [84] demonstrate that jointly modeling vision, audio, and language through unified alignment and captioning objectives yields strong generalization across retrieval and generation tasks",
+      "citation_markers": [
+        "[84]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13560,
+    "completion_tokens": 897,
+    "total_tokens": 14457,
+    "prompt_tokens_details": {
+      "cached_tokens": 13056
+    }
+  }
+}

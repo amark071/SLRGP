@@ -1,0 +1,65 @@
+{
+  "topic": "3D Gaussian Splatting",
+  "tier": "short",
+  "arm": "flat_single_pass",
+  "ok": true,
+  "target_words": 1200,
+  "d_max": 1,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-13 20:18:59",
+  "word_count": 1014,
+  "groups": [
+    {
+      "name": "Foundational Methods and Surveys of 3DGS",
+      "n": 4
+    },
+    {
+      "name": "Compression, Efficiency, and Memory Optimization",
+      "n": 4
+    }
+  ],
+  "group_size_vector": [
+    4,
+    4
+  ],
+  "refs": [
+    "arxiv_2308.04079",
+    "arxiv_2403.11134",
+    "arxiv_2210.00379",
+    "arxiv_2502.19318",
+    "arxiv_2312.04564",
+    "arxiv_2405.17083",
+    "arxiv_2509.17083",
+    "arxiv_2401.00834"
+  ],
+  "n_refs": 8,
+  "invalid_citations": [],
+  "n_invalid_citations": 0,
+  "leaf_evidence_ids": [
+    "arxiv_2210.00379",
+    "arxiv_2308.04079",
+    "arxiv_2312.04564",
+    "arxiv_2401.00834",
+    "arxiv_2403.11134",
+    "arxiv_2405.17083",
+    "arxiv_2502.19318",
+    "arxiv_2509.17083"
+  ],
+  "evidence_pool_ids": [
+    "arxiv_2403.11134",
+    "arxiv_2509.17083",
+    "arxiv_2308.04079",
+    "arxiv_2401.00834",
+    "arxiv_2502.19318",
+    "arxiv_2312.04564",
+    "arxiv_2210.00379",
+    "arxiv_2405.17083"
+  ],
+  "evidence_pool_hash": "24e9cbda11c0078cfd33318d2ad7c89a1267e7d56b0cd42a2b44e769bfe40183",
+  "elapsed_sec": 33.8,
+  "llm_usage_delta": {
+    "n_calls": 1,
+    "prompt_tokens": 2020,
+    "completion_tokens": 1564
+  }
+}

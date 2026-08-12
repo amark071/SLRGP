@@ -1,0 +1,108 @@
+{
+  "topic": "Causal Representation Learning",
+  "arm": "r_pass",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 22:13:57",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "causal representation learning",
+    "disentangled representation learning",
+    "causal discovery",
+    "causal inference",
+    "identifiable latent variable models",
+    "structural causal models",
+    "independent component analysis",
+    "causal generative models",
+    "interventional distribution learning",
+    "causal disentanglement",
+    "out-of-distribution generalization",
+    "causal abstraction"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "theme",
+  "groups": [
+    {
+      "name": "Identifiability and Theoretical Foundations of Causal Representations",
+      "n": 3
+    },
+    {
+      "name": "Disentangled Causal Representation Learning",
+      "n": 4
+    },
+    {
+      "name": "Causal Generative Models and Latent Variable Frameworks",
+      "n": 4
+    },
+    {
+      "name": "Multimodal, Discrete, and Structured Causal Representations",
+      "n": 3
+    },
+    {
+      "name": "Causal Representations for Inference and Deconfounding",
+      "n": 1
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_2010.02637",
+    "arxiv_2112.05746",
+    "arxiv_2208.14153",
+    "arxiv_2210.13647",
+    "arxiv_2211.16467",
+    "arxiv_2306.00542",
+    "arxiv_2306.01213",
+    "arxiv_2310.15450",
+    "arxiv_2310.15580",
+    "arxiv_2311.02695",
+    "arxiv_2311.12267",
+    "arxiv_2402.00849"
+  ],
+  "n_refs": 12,
+  "word_count": 1168,
+  "written_citation_ids": [
+    "arxiv_2306.00542",
+    "arxiv_2310.15450",
+    "arxiv_2402.00849",
+    "arxiv_2311.12267",
+    "arxiv_2211.16467",
+    "arxiv_2311.02695",
+    "arxiv_2208.14153",
+    "arxiv_2310.15580",
+    "arxiv_2010.02637",
+    "arxiv_2112.05746",
+    "arxiv_2306.01213",
+    "arxiv_2210.13647"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2010.02637",
+    "arxiv_2112.05746",
+    "arxiv_2208.14153",
+    "arxiv_2210.13647",
+    "arxiv_2211.16467",
+    "arxiv_2306.00542",
+    "arxiv_2306.01213",
+    "arxiv_2310.15450",
+    "arxiv_2310.15580",
+    "arxiv_2311.02695",
+    "arxiv_2311.12267",
+    "arxiv_2402.00849"
+  ],
+  "elapsed_sec": 115.0,
+  "llm_usage_delta": {
+    "n_calls": 16,
+    "prompt_tokens": 11665,
+    "completion_tokens": 3162
+  },
+  "llm_usage_so_far": {
+    "n_calls": 256,
+    "prompt_tokens": 219694,
+    "completion_tokens": 61149
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "pilot_run_id": "s3_native_pilot_calibrated_20260716",
+  "autosurvey_usage_recovery_run_id": "s3_native_pilot_usagefix_20260716",
+  "status": "completed_before_confirmatory_generation",
+  "primary_systems": [
+    "slrgp",
+    "autosurvey",
+    "surveyforge",
+    "surveygen"
+  ],
+  "preflight_exclusions": [
+    "itersurvey",
+    "surveyg",
+    "arise"
+  ],
+  "common_backbone": "anthropic/claude-sonnet-4.6",
+  "publication_cutoff": "2023-12-31",
+  "observations": {
+    "slrgp": {
+      "word_count_range": [3587, 3851],
+      "reference_count_range": [58, 60],
+      "total_token_range": [89800, 100550],
+      "elapsed_seconds_range": [716.0, 793.1]
+    },
+    "autosurvey": {
+      "word_count_range": [55697, 70569],
+      "reference_count_range": [102, 122],
+      "total_token_range": [2601497, 2960530],
+      "elapsed_seconds_range": [754.2, 881.4],
+      "note": "Usage ranges come from the pre-generation instrumentation-recovery rerun; native text and reference envelopes remained strongly noncompliant."
+    },
+    "surveyforge": {
+      "word_count_range": [12659, 13097],
+      "reference_count_range": [60, 63],
+      "total_token_range": [2240582, 2321983],
+      "elapsed_seconds_range": [1066.2, 1215.9]
+    },
+    "surveygen": {
+      "word_count_range": [5454, 5682],
+      "reference_count_range": [60, 60],
+      "total_token_range": [1071079, 1090844],
+      "elapsed_seconds_range": [495.5, 2027.8]
+    }
+  },
+  "frozen_limits": {
+    "per_system_topic_timeout_seconds": 14400,
+    "per_system_topic_budget_usd": 16.0,
+    "token_observation_ceiling_for_alerting": 3600000,
+    "target_words": 4000,
+    "registered_word_window": [3200, 4800],
+    "target_reference_window": [40, 60]
+  },
+  "confirmatory_primary_projection": {
+    "topics": 12,
+    "outputs": 48,
+    "approximate_total_generation_tokens": 74900000,
+    "reference_price_assumption_usd_per_million_tokens": {
+      "input": 3.0,
+      "output": 15.0
+    },
+    "approximate_generation_cost_usd": 284,
+    "caveat": "Token accounting is primary. Dollar conversion is a preregistered reference-price estimate because the relay response did not expose billed cost; actual OFOX charges may differ."
+  },
+  "analysis_policy": {
+    "length_noncompliance": "retain in primary intent-to-treat quality analysis",
+    "reference_noncompliance": "retain and report as a separate outcome",
+    "post_generation_repair": false,
+    "common_window_excerpt": "supplementary sensitivity only"
+  }
+}

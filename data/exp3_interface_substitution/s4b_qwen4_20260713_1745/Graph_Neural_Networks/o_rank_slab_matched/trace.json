@@ -1,0 +1,283 @@
+{
+  "arm": "o_rank_slab_matched",
+  "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+  "descend_events": [
+    {
+      "node_path": "root/0",
+      "parent_seed": "Graph Neural Networks",
+      "group_name": "Rank slab 1: positions 1-4",
+      "child_seed": "Graph Neural Networks — Rank slab 1: positions 1-4",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ]
+    },
+    {
+      "node_path": "root/1",
+      "parent_seed": "Graph Neural Networks",
+      "group_name": "Rank slab 2: positions 5-8",
+      "child_seed": "Graph Neural Networks — Rank slab 2: positions 5-8",
+      "mode": "partial",
+      "n_seed_docs": 4,
+      "seed_doc_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ]
+    }
+  ],
+  "solve_events": [
+    {
+      "node_path": "root/0",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Graph Neural Networks — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "filtered_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "ranked_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "group_names": [
+        "Graph Pooling Techniques",
+        "Architectural Improvements in Graph Neural Networks"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Graph Neural Networks — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "filtered_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "ranked_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "group_names": [
+        "Graph Pooling Techniques",
+        "Geometric and Structural Improvements in GNNs"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/0",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Graph Neural Networks — Rank slab 1: positions 1-4",
+      "retrieved_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "filtered_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "ranked_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "group_names": [
+        "Graph Pooling Methods",
+        "Architectural Improvements and Limitations"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 1,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Graph Neural Networks — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ],
+      "filtered_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ],
+      "ranked_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ],
+      "group_names": [
+        "Graph Representation Learning and Pooling",
+        "Graph Neural Network Surveys and Foundations",
+        "Graph-Based Knowledge Representation"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 2,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Graph Neural Networks — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ],
+      "filtered_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ],
+      "ranked_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ],
+      "group_names": [
+        "Graph Representation Learning",
+        "Survey and Overview"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "node_path": "root/1",
+      "round": 3,
+      "mode": "partial",
+      "arm": "intact",
+      "query": "Graph Neural Networks — Rank slab 2: positions 5-8",
+      "retrieved_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ],
+      "filtered_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ],
+      "ranked_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ],
+      "group_names": [
+        "Graph Representation Learning",
+        "Survey and Overview"
+      ],
+      "kappa": {
+        "min_total": false,
+        "min_groups": true,
+        "balance": true
+      },
+      "valid": false
+    }
+  ],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "Graph Neural Networks — Rank slab 1: positions 1-4",
+      "candidate_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2002.05287",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "written_citation_ids": [
+        "arxiv_2004.03519",
+        "ss_477785",
+        "arxiv_2002.05287"
+      ],
+      "word_count": 362
+    },
+    {
+      "node_path": "root/1",
+      "seed": "Graph Neural Networks — Rank slab 2: positions 5-8",
+      "candidate_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107",
+        "arxiv_1901.00596"
+      ],
+      "written_citation_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2102.02026",
+        "arxiv_1904.13107"
+      ],
+      "word_count": 409
+    }
+  ],
+  "validation_events": []
+}

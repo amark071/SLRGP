@@ -1,0 +1,58 @@
+{
+  "arm": "v_guarded_stress",
+  "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+  "descend_events": [],
+  "solve_events": [],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "3D Gaussian Splatting — Foundational Methods and Surveys of 3DGS",
+      "candidate_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2308.04079",
+        "arxiv_2502.19318",
+        "arxiv_2210.00379"
+      ],
+      "written_citation_ids": [
+        "arxiv_2403.11134",
+        "arxiv_2308.04079",
+        "arxiv_2210.00379",
+        "arxiv_2502.19318"
+      ],
+      "word_count": 419
+    },
+    {
+      "node_path": "root/1",
+      "seed": "3D Gaussian Splatting — Compression, Efficiency, and Memory Optimization",
+      "candidate_ids": [
+        "arxiv_2509.17083",
+        "arxiv_2312.04564",
+        "arxiv_2405.17083",
+        "arxiv_2401.00834"
+      ],
+      "written_citation_ids": [
+        "arxiv_2312.04564",
+        "arxiv_2509.17083",
+        "arxiv_2405.17083",
+        "arxiv_2401.00834"
+      ],
+      "word_count": 432
+    }
+  ],
+  "validation_events": [
+    {
+      "stage": "injected_stress",
+      "kappa": {
+        "min_total": true,
+        "min_groups": false,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "stage": "guarded_repair",
+      "action": "restore_frozen_semantic_groups"
+    }
+  ]
+}

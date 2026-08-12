@@ -1,0 +1,147 @@
+{
+  "topic": "Graph Neural Networks",
+  "tier": "medium",
+  "arm": "recursive_slrgp",
+  "descend_events": [
+    {
+      "node_path": "root/0",
+      "depth": 1,
+      "group_name": "Graph Pooling Methods",
+      "n_docs": 6
+    },
+    {
+      "node_path": "root/0/0",
+      "depth": 2,
+      "group_name": "Graph Pooling Methods — evidence cluster A",
+      "n_docs": 3
+    },
+    {
+      "node_path": "root/0/1",
+      "depth": 2,
+      "group_name": "Graph Pooling Methods — evidence cluster B",
+      "n_docs": 3
+    },
+    {
+      "node_path": "root/1",
+      "depth": 1,
+      "group_name": "Graph Convolutional Network Architectures",
+      "n_docs": 6
+    },
+    {
+      "node_path": "root/1/0",
+      "depth": 2,
+      "group_name": "Graph Convolutional Network Architectures — evidence cluster A",
+      "n_docs": 3
+    },
+    {
+      "node_path": "root/1/1",
+      "depth": 2,
+      "group_name": "Graph Convolutional Network Architectures — evidence cluster B",
+      "n_docs": 3
+    },
+    {
+      "node_path": "root/2",
+      "depth": 1,
+      "group_name": "Evidence theme 3",
+      "n_docs": 6
+    },
+    {
+      "node_path": "root/2/0",
+      "depth": 2,
+      "group_name": "Evidence theme 3 — evidence cluster A",
+      "n_docs": 3
+    },
+    {
+      "node_path": "root/2/1",
+      "depth": 2,
+      "group_name": "Evidence theme 3 — evidence cluster B",
+      "n_docs": 3
+    }
+  ],
+  "leaf_writes": [
+    {
+      "node_path": "root/0/0",
+      "candidate_ids": [
+        "arxiv_2004.03519",
+        "ss_477785",
+        "arxiv_2007.10467"
+      ],
+      "written_citation_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2007.10467",
+        "ss_477785"
+      ],
+      "word_count": 525
+    },
+    {
+      "node_path": "root/0/1",
+      "candidate_ids": [
+        "arxiv_1903.02541",
+        "arxiv_2002.05287",
+        "arxiv_2102.02026"
+      ],
+      "written_citation_ids": [
+        "arxiv_2002.05287",
+        "arxiv_1903.02541",
+        "arxiv_2102.02026"
+      ],
+      "word_count": 561
+    },
+    {
+      "node_path": "root/1/0",
+      "candidate_ids": [
+        "arxiv_1906.02174",
+        "arxiv_1605.05273",
+        "arxiv_1904.13107"
+      ],
+      "written_citation_ids": [
+        "arxiv_1605.05273",
+        "arxiv_1906.02174",
+        "arxiv_1904.13107"
+      ],
+      "word_count": 560
+    },
+    {
+      "node_path": "root/1/1",
+      "candidate_ids": [
+        "arxiv_1901.00596",
+        "ss_477653",
+        "arxiv_2307.00865"
+      ],
+      "written_citation_ids": [
+        "arxiv_1901.00596",
+        "arxiv_2307.00865",
+        "ss_477653"
+      ],
+      "word_count": 564
+    },
+    {
+      "node_path": "root/2/0",
+      "candidate_ids": [
+        "arxiv_2010.13242",
+        "arxiv_1905.06259",
+        "arxiv_2302.13399"
+      ],
+      "written_citation_ids": [
+        "arxiv_2010.13242",
+        "arxiv_1905.06259",
+        "arxiv_2302.13399"
+      ],
+      "word_count": 615
+    },
+    {
+      "node_path": "root/2/1",
+      "candidate_ids": [
+        "arxiv_1906.02319",
+        "ss_476188",
+        "arxiv_1811.00052"
+      ],
+      "written_citation_ids": [
+        "arxiv_1811.00052",
+        "ss_476188",
+        "arxiv_1906.02319"
+      ],
+      "word_count": 571
+    }
+  ]
+}

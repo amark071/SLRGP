@@ -1,0 +1,471 @@
+{
+  "arxiv_2006.10833": {
+    "doc_id": "arxiv_2006.10833",
+    "title": "Amortized Causal Discovery: Learning to Infer Causal Graphs from\n  Time-Series Data",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "On time-series data, most causal discovery methods fit a new model whenever they encounter samples from a new underlying causal graph. However, these samples often share relevant information which is lost when following this approach. Specifically, different samples may share the dynamics which describe the effects of their causal relations. We propose Amortized Causal Discovery, a novel framework that leverages such shared dynamics to learn to infer causal relations from time-series data. This enables us to train a single, amortized model that infers causal relations across samples with different underlying causal graphs, and thus leverages the shared dynamics information. We demonstrate experimentally that this approach, implemented as a variational model, leads to significant improvements in causal discovery performance, and show how it can be extended to perform well under added noise and hidden confounding."
+  },
+  "arxiv_2010.02637": {
+    "doc_id": "arxiv_2010.02637",
+    "title": "Weakly Supervised Disentangled Generative Causal Representation Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "This paper proposes a Disentangled gEnerative cAusal Representation (DEAR) learning method under appropriate supervised information. Unlike existing disentanglement methods that enforce independence of the latent variables, we consider the general case where the underlying factors of interests can be causally related. We show that previous methods with independent priors fail to disentangle causally related factors even under supervision. Motivated by this finding, we propose a new disentangled learning method called DEAR that enables causal controllable generation and causal representation learning. The key ingredient of this new formulation is to use a structural causal model (SCM) as the prior distribution for a bidirectional generative model. The prior is then trained jointly with a generator and an encoder using a suitable GAN algorithm incorporated with supervised information on the ground-truth factors and their underlying causal structure. We provide theoretical justification on the identifiability and asymptotic convergence of the proposed method. We conduct extensive experiments on both synthesized and real data sets to demonstrate the effectiveness of DEAR in causal cont"
+  },
+  "arxiv_2010.09429": {
+    "doc_id": "arxiv_2010.09429",
+    "title": "Neural Additive Vector Autoregression Models for Causal Discovery in\n  Time Series",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Causal structure discovery in complex dynamical systems is an important challenge for many scientific domains. Although data from (interventional) experiments is usually limited, large amounts of observational time series data sets are usually available. Current methods that learn causal structure from time series often assume linear relationships. Hence, they may fail in realistic settings that contain nonlinear relations between the variables. We propose Neural Additive Vector Autoregression (NAVAR) models, a neural approach to causal structure learning that can discover nonlinear relationships. We train deep neural networks that extract the (additive) Granger causal influences from the time evolution in multi-variate time series. The method achieves state-of-the-art results on various benchmark data sets for causal discovery, while providing clear interpretations of the mapped causal relations."
+  },
+  "arxiv_2102.11107": {
+    "doc_id": "arxiv_2102.11107",
+    "title": "Towards Causal Representation Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "The two fields of machine learning and graphical causality arose and developed separately. However, there is now cross-pollination and increasing interest in both fields to benefit from the advances of the other. In the present paper, we review fundamental concepts of causal inference and relate them to crucial open problems of machine learning, including transfer and generalization, thereby assaying how causality can contribute to modern machine learning research. This also applies in the opposite direction: we note that most work in causality starts from the premise that the causal variables are given. A central problem for AI and causality is, thus, causal representation learning, the discovery of high-level causal variables from low-level observations. Finally, we delineate some implications of causality for machine learning and propose key research areas at the intersection of both communities."
+  },
+  "arxiv_2107.00848": {
+    "doc_id": "arxiv_2107.00848",
+    "title": "Systematic Evaluation of Causal Discovery in Visual Model Based\n  Reinforcement Learning",
+    "year": 2021,
+    "venue": "stat.ML",
+    "abstract": "Inducing causal relationships from observations is a classic problem in machine learning. Most work in causality starts from the premise that the causal variables themselves are observed. However, for AI agents such as robots trying to make sense of their environment, the only observables are low-level variables like pixels in images. To generalize well, an agent must induce high-level variables, particularly those which are causal or are affected by causal variables. A central goal for AI and causality is thus the joint discovery of abstract representations and causal structure. However, we note that existing environments for studying causal induction are poorly suited for this objective because they have complicated task-specific causal graphs which are impossible to manipulate parametrically (e.g., number of nodes, sparsity, causal chain length, etc.). In this work, our goal is to facilitate research in learning representations of high-level variables as well as causal structures among them. In order to systematically probe the ability of methods to identify these variables and structures, we design a suite of benchmarking RL environments. We evaluate various representation lear"
+  },
+  "arxiv_2110.06257": {
+    "doc_id": "arxiv_2110.06257",
+    "title": "Causal Discovery from Conditionally Stationary Time Series",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Causal discovery, i.e., inferring underlying causal relationships from observational data, is highly challenging for AI systems. In a time series modeling context, traditional causal discovery methods mainly consider constrained scenarios with fully observed variables and/or data from stationary time-series. We develop a causal discovery approach to handle a wide class of nonstationary time series that are conditionally stationary, where the nonstationary behaviour is modeled as stationarity conditioned on a set of latent state variables. Named State-Dependent Causal Inference (SDCI), our approach is able to recover the underlying causal dependencies, with provable identifiablity for the state-dependent causal structures. Empirical experiments on nonlinear particle interaction data and gene regulatory networks demonstrate SDCI's superior performance over baseline causal discovery methods. Improved results over non-causal RNNs on modeling NBA player movements demonstrate the potential of our method and motivate the use of causality-driven methods for forecasting."
+  },
+  "arxiv_2112.03085": {
+    "doc_id": "arxiv_2112.03085",
+    "title": "Learning Generalized Causal Structure in Time-series",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "The science of causality explains/determines 'cause-effect' relationship between the entities of a system by providing mathematical tools for the purpose. In spite of all the success and widespread applications of machine-learning (ML) algorithms, these algorithms are based on statistical learning alone. Currently, they are nowhere close to 'human-like' intelligence as they fail to answer and learn based on the important \"Why?\" questions. Hence, researchers are attempting to integrate ML with the science of causality. Among the many causal learning issues encountered by ML, one is that these algorithms are dumb to the temporal order or structure in data. In this work we develop a machine learning pipeline based on a recently proposed 'neurochaos' feature learning technique (ChaosFEX feature extractor), that helps us to learn generalized causal-structure in given time-series data."
+  },
+  "arxiv_2112.05746": {
+    "doc_id": "arxiv_2112.05746",
+    "title": "On Causally Disentangled Representations",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Representation learners that disentangle factors of variation have already proven to be important in addressing various real world concerns such as fairness and interpretability. Initially consisting of unsupervised models with independence assumptions, more recently, weak supervision and correlated features have been explored, but without a causal view of the generative process. In contrast, we work under the regime of a causal generative process where generative factors are either independent or can be potentially confounded by a set of observed or unobserved confounders. We present an analysis of disentangled representations through the notion of disentangled causal process. We motivate the need for new metrics and datasets to study causal disentanglement and propose two evaluation metrics and a dataset. We show that our metrics capture the desiderata of disentangled causal process. Finally, we perform an empirical study on state of the art disentangled representation learners using our metrics and dataset to evaluate them from causal perspective."
+  },
+  "arxiv_2206.06169": {
+    "doc_id": "arxiv_2206.06169",
+    "title": "Causal Representation Learning for Instantaneous and Temporal Effects in\n  Interactive Systems",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning is the task of identifying the underlying causal variables and their relations from high-dimensional observations, such as images. Recent work has shown that one can reconstruct the causal variables from temporal sequences of observations under the assumption that there are no instantaneous causal relations between them. In practical applications, however, our measurement or frame rate might be slower than many of the causal effects. This effectively creates \"instantaneous\" effects and invalidates previous identifiability results. To address this issue, we propose iCITRIS, a causal representation learning method that allows for instantaneous effects in intervened temporal sequences when intervention targets can be observed, e.g., as actions of an agent. iCITRIS identifies the potentially multidimensional causal variables from temporal observations, while simultaneously using a differentiable causal discovery method to learn their causal graph. In experiments on three datasets of interactive systems, iCITRIS accurately identifies the causal variables and their causal graph."
+  },
+  "arxiv_2207.05723": {
+    "doc_id": "arxiv_2207.05723",
+    "title": "Latent Variable Models for Bayesian Causal Discovery",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Learning predictors that do not rely on spurious correlations involves building causal representations. However, learning such a representation is very challenging. We, therefore, formulate the problem of learning a causal representation from high dimensional data and study causal recovery with synthetic data. This work introduces a latent variable decoder model, Decoder BCD, for Bayesian causal discovery and performs experiments in mildly supervised and unsupervised settings. We present a series of synthetic experiments to characterize important factors for causal discovery and show that using known intervention targets as labels helps in unsupervised Bayesian inference over structure and parameters of linear Gaussian additive noise latent structural causal models."
+  },
+  "arxiv_2209.05598": {
+    "doc_id": "arxiv_2209.05598",
+    "title": "Learning domain-specific causal discovery from time series",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Causal discovery (CD) from time-varying data is important in neuroscience, medicine, and machine learning. Techniques for CD encompass randomized experiments, which are generally unbiased but expensive, and algorithms such as Granger causality, conditional-independence-based, structural-equation-based, and score-based methods that are only accurate under strong assumptions made by human designers. However, as demonstrated in other areas of machine learning, human expertise is often not entirely accurate and tends to be outperformed in domains with abundant data. In this study, we examine whether we can enhance domain-specific causal discovery for time series using a data-driven approach. Our findings indicate that this procedure significantly outperforms human-designed, domain-agnostic causal discovery methods, such as Mutual Information, VAR-LiNGAM, and Granger Causality on the MOS 6502 microprocessor, the NetSim fMRI dataset, and the Dream3 gene dataset. We argue that, when feasible, the causality field should consider a supervised approach in which domain-specific CD procedures are learned from extensive datasets with known causal relationships, rather than being designed by hum"
+  },
+  "arxiv_2209.06367": {
+    "doc_id": "arxiv_2209.06367",
+    "title": "A Review and Roadmap of Deep Learning Causal Discovery in Different\n  Variable Paradigms",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Understanding causality helps to structure interventions to achieve specific goals and enables predictions under interventions. With the growing importance of learning causal relationships, causal discovery tasks have transitioned from using traditional methods to infer potential causal structures from observational data to the field of pattern recognition involved in deep learning. The rapid accumulation of massive data promotes the emergence of causal search methods with brilliant scalability. Existing summaries of causal discovery methods mainly focus on traditional methods based on constraints, scores and FCMs, there is a lack of perfect sorting and elaboration for deep learning-based methods, also lacking some considers and exploration of causal discovery methods from the perspective of variable paradigms. Therefore, we divide the possible causal discovery tasks into three types according to the variable paradigm and give the definitions of the three tasks respectively, define and instantiate the relevant datasets for each task and the final causal model constructed at the same time, then reviews the main existing causal discovery methods for different tasks. Finally, we propo"
+  },
+  "arxiv_2210.13647": {
+    "doc_id": "arxiv_2210.13647",
+    "title": "Temporally Disentangled Representation Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Recently in the field of unsupervised representation learning, strong identifiability results for disentanglement of causally-related latent variables have been established by exploiting certain side information, such as class labels, in addition to independence. However, most existing work is constrained by functional form assumptions such as independent sources or further with linear transitions, and distribution assumptions such as stationary, exponential family distribution. It is unknown whether the underlying latent variables and their causal relations are identifiable if they have arbitrary, nonparametric causal influences in between. In this work, we establish the identifiability theories of nonparametric latent causal processes from their nonlinear mixtures under fixed temporal causal influences and analyze how distribution changes can further benefit the disentanglement. We propose \\textbf{\\texttt{TDRL}}, a principled framework to recover time-delayed latent causal variables and identify their relations from measured sequential data under stationary environments and under different distribution shifts. Specifically, the framework can factorize unknown distribution shifts "
+  },
+  "arxiv_2211.03374": {
+    "doc_id": "arxiv_2211.03374",
+    "title": "Deep Causal Learning: Representation, Discovery and Inference",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Causal learning has garnered significant attention in recent years because it reveals the essential relationships that underpin phenomena and delineates the mechanisms by which the world evolves. Nevertheless, traditional causal learning methods face numerous challenges and limitations, including high-dimensional, unstructured variables, combinatorial optimization problems, unobserved confounders, selection biases, and estimation inaccuracies. Deep causal learning, which leverages deep neural networks, offers innovative insights and solutions for addressing these challenges. Although numerous deep learning-based methods for causal discovery and inference have been proposed, there remains a dearth of reviews examining the underlying mechanisms by which deep learning can enhance causal learning. In this article, we comprehensively review how deep learning can contribute to causal learning by tackling traditional challenges across three key dimensions: representation, discovery, and inference. We emphasize that deep causal learning is pivotal for advancing the theoretical frontiers and broadening the practical applications of causal science. We conclude by summarizing open issues and "
+  },
+  "arxiv_2302.03246": {
+    "doc_id": "arxiv_2302.03246",
+    "title": "CDANs: Temporal Causal Discovery from Autocorrelated and Non-Stationary\n  Time Series Data",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Time series data are found in many areas of healthcare such as medical time series, electronic health records (EHR), measurements of vitals, and wearable devices. Causal discovery, which involves estimating causal relationships from observational data, holds the potential to play a significant role in extracting actionable insights about human health. In this study, we present a novel constraint-based causal discovery approach for autocorrelated and non-stationary time series data (CDANs). Our proposed method addresses several limitations of existing causal discovery methods for autocorrelated and non-stationary time series data, such as high dimensionality, the inability to identify lagged causal relationships, and overlooking changing modules. Our approach identifies lagged and instantaneous/contemporaneous causal relationships along with changing modules that vary over time. The method optimizes the conditioning sets in a constraint-based search by considering lagged parents instead of conditioning on the entire past that addresses high dimensionality. The changing modules are detected by considering both contemporaneous and lagged parents. The approach first detects the lagged "
+  },
+  "arxiv_2302.07458": {
+    "doc_id": "arxiv_2302.07458",
+    "title": "CUTS: Neural Causal Discovery from Irregular Time-Series Data",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Causal discovery from time-series data has been a central task in machine learning. Recently, Granger causality inference is gaining momentum due to its good explainability and high compatibility with emerging deep neural networks. However, most existing methods assume structured input data and degenerate greatly when encountering data with randomly missing entries or non-uniform sampling frequencies, which hampers their applications in real scenarios. To address this issue, here we present CUTS, a neural Granger causal discovery algorithm to jointly impute unobserved data points and build causal graphs, via plugging in two mutually boosting modules in an iterative framework: (i) Latent data prediction stage: designs a Delayed Supervision Graph Neural Network (DSGNN) to hallucinate and register unstructured data which might be of high dimension and with complex distribution; (ii) Causal graph fitting stage: builds a causal adjacency matrix with imputed data under sparse penalty. Experiments show that CUTS effectively infers causal graphs from unstructured time-series data, with significantly superior performance to existing methods. Our approach constitutes a promising step towards"
+  },
+  "arxiv_2303.00128": {
+    "doc_id": "arxiv_2303.00128",
+    "title": "Representation Disentaglement via Regularization by Causal\n  Identification",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "In this work, we propose the use of a causal collider structured model to describe the underlying data generative process assumptions in disentangled representation learning. This extends the conventional i.i.d. factorization assumption model $p(\\mathbf{y}) = \\prod_{i} p(\\mathbf{y}_i )$, inadequate to handle learning from biased datasets (e.g., with sampling selection bias). The collider structure, explains that conditional dependencies between the underlying generating variables may be exist, even when these are in reality unrelated, complicating disentanglement. Under the rubric of causal inference, we show this issue can be reconciled under the condition of causal identification; attainable from data and a combination of constraints, aimed at controlling the dependencies characteristic of the \\textit{collider} model. For this, we propose regularization by identification (ReI), a modular regularization engine designed to align the behavior of large scale generative models with the disentanglement constraints imposed by causal identification. Empirical evidence on standard benchmarks demonstrates the superiority of ReI in learning disentangled representations in a variational fram"
+  },
+  "arxiv_2303.10112": {
+    "doc_id": "arxiv_2303.10112",
+    "title": "Causal Discovery from Temporal Data: An Overview and New Perspectives",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Temporal data, representing chronological observations of complex systems, has always been a typical data structure that can be widely generated by many domains, such as industry, medicine and finance. Analyzing this type of data is extremely valuable for various applications. Thus, different temporal data analysis tasks, eg, classification, clustering and prediction, have been proposed in the past decades. Among them, causal discovery, learning the causal relations from temporal data, is considered an interesting yet critical task and has attracted much research attention. Existing causal discovery works can be divided into two highly correlated categories according to whether the temporal data is calibrated, ie, multivariate time series causal discovery, and event sequence causal discovery. However, most previous surveys are only focused on the time series causal discovery and ignore the second category. In this paper, we specify the correlation between the two categories and provide a systematical overview of existing solutions. Furthermore, we provide public datasets, evaluation metrics and new perspectives for temporal data causal discovery."
+  },
+  "arxiv_2303.15027": {
+    "doc_id": "arxiv_2303.15027",
+    "title": "A Survey on Causal Discovery Methods for I.I.D. and Time Series Data",
+    "year": 2024,
+    "venue": "cs.AI",
+    "abstract": "The ability to understand causality from data is one of the major milestones of human-level intelligence. Causal Discovery (CD) algorithms can identify the cause-effect relationships among the variables of a system from related observational data with certain assumptions. Over the years, several methods have been developed primarily based on the statistical properties of data to uncover the underlying causal mechanism. In this study, we present an extensive discussion on the methods designed to perform causal discovery from both independent and identically distributed (I.I.D.) data and time series data. For this purpose, we first introduce the common terminologies used in causal discovery literature and then provide a comprehensive discussion of the algorithms designed to identify causal relations in different settings. We further discuss some of the benchmark datasets available for evaluating the algorithmic performance, off-the-shelf tools or software packages to perform causal discovery readily, and the common metrics used to evaluate these methods. We also evaluate some widely used causal discovery algorithms on multiple benchmark datasets and compare their performances. Finall"
+  },
+  "arxiv_2304.09010": {
+    "doc_id": "arxiv_2304.09010",
+    "title": "Causal Flow-based Variational Auto-Encoder for Disentangled Causal\n  Representation Learning",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Disentangled representation learning aims to learn low-dimensional representations where each dimension corresponds to an underlying generative factor. While the Variational Auto-Encoder (VAE) is widely used for this purpose, most existing methods assume independence among factors, a simplification that does not hold in many real-world scenarios where factors are often interdependent and exhibit causal relationships. To overcome this limitation, we propose the Disentangled Causal Variational Auto-Encoder (DCVAE), a novel supervised VAE framework that integrates causal flows into the representation learning process, enabling the learning of more meaningful and interpretable disentangled representations. We evaluate DCVAE on both synthetic and real-world datasets, demonstrating its superior ability in causal disentanglement and intervention experiments. Furthermore, DCVAE outperforms state-of-the-art methods in various downstream tasks, highlighting its potential for learning true causal structures among factors."
+  },
+  "arxiv_2305.02640": {
+    "doc_id": "arxiv_2305.02640",
+    "title": "Towards Causal Representation Learning and Deconfounding from Indefinite\n  Data",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Owing to the cross-pollination between causal discovery and deep learning, non-statistical data (e.g., images, text, etc.) encounters significant conflicts in terms of properties and methods with traditional causal data. To unify these data types of varying forms, we redefine causal data from two novel perspectives and then propose three data paradigms. Among them, the indefinite data (like dialogues or video sources) induce low sample utilization and incapability of the distribution assumption, both leading to the fact that learning causal representation from indefinite data is, as of yet, largely unexplored. We design the causal strength variational model to settle down these two problems. Specifically, we leverage the causal strength instead of independent noise as the latent variable to construct evidence lower bound. By this design ethos, The causal strengths of different structures are regarded as a distribution and can be expressed as a 2D matrix. Moreover, considering the latent confounders, we disentangle the causal graph G into two relation subgraphs O and C. O contains pure relations between observed variables, while C represents the relations from latent variables to ob"
+  },
+  "arxiv_2305.05890": {
+    "doc_id": "arxiv_2305.05890",
+    "title": "CUTS+: High-dimensional Causal Discovery from Irregular Time-series",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Causal discovery in time-series is a fundamental problem in the machine learning community, enabling causal reasoning and decision-making in complex scenarios. Recently, researchers successfully discover causality by combining neural networks with Granger causality, but their performances degrade largely when encountering high-dimensional data because of the highly redundant network design and huge causal graphs. Moreover, the missing entries in the observations further hamper the causal structural learning. To overcome these limitations, We propose CUTS+, which is built on the Granger-causality-based causal discovery method CUTS and raises the scalability by introducing a technique called Coarse-to-fine-discovery (C2FD) and leveraging a message-passing-based graph neural network (MPGNN). Compared to previous methods on simulated, quasi-real, and real datasets, we show that CUTS+ largely improves the causal discovery performance on high-dimensional data with different types of irregular sampling."
+  },
+  "arxiv_2305.19695": {
+    "doc_id": "arxiv_2305.19695",
+    "title": "Causal discovery for time series with constraint-based model and PMIME\n  measure",
+    "year": 2023,
+    "venue": "stat.ME",
+    "abstract": "Causality defines the relationship between cause and effect. In multivariate time series field, this notion allows to characterize the links between several time series considering temporal lags. These phenomena are particularly important in medicine to analyze the effect of a drug for example, in manufacturing to detect the causes of an anomaly in a complex system or in social sciences... Most of the time, studying these complex systems is made through correlation only. But correlation can lead to spurious relationships. To circumvent this problem, we present in this paper a novel approach for discovering causality in time series data that combines a causal discovery algorithm with an information theoretic-based measure. Hence the proposed method allows inferring both linear and non-linear relationships and building the underlying causal graph. We evaluate the performance of our approach on several simulated data sets, showing promising results."
+  },
+  "arxiv_2306.00624": {
+    "doc_id": "arxiv_2306.00624",
+    "title": "From Temporal to Contemporaneous Iterative Causal Discovery in the\n  Presence of Latent Confounders",
+    "year": 2023,
+    "venue": "cs.AI",
+    "abstract": "We present a constraint-based algorithm for learning causal structures from observational time-series data, in the presence of latent confounders. We assume a discrete-time, stationary structural vector autoregressive process, with both temporal and contemporaneous causal relations. One may ask if temporal and contemporaneous relations should be treated differently. The presented algorithm gradually refines a causal graph by learning long-term temporal relations before short-term ones, where contemporaneous relations are learned last. This ordering of causal relations to be learnt leads to a reduction in the required number of statistical tests. We validate this reduction empirically and demonstrate that it leads to higher accuracy for synthetic data and more plausible causal graphs for real-world data compared to state-of-the-art algorithms."
+  },
+  "arxiv_2306.01213": {
+    "doc_id": "arxiv_2306.01213",
+    "title": "Learning Causally Disentangled Representations via the Principle of\n  Independent Causal Mechanisms",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Learning disentangled causal representations is a challenging problem that has gained significant attention recently due to its implications for extracting meaningful information for downstream tasks. In this work, we define a new notion of causal disentanglement from the perspective of independent causal mechanisms. We propose ICM-VAE, a framework for learning causally disentangled representations supervised by causally related observed labels. We model causal mechanisms using nonlinear learnable flow-based diffeomorphic functions to map noise variables to latent causal variables. Further, to promote the disentanglement of causal factors, we propose a causal disentanglement prior learned from auxiliary labels and the latent causal structure. We theoretically show the identifiability of causal factors and mechanisms up to permutation and elementwise reparameterization. We empirically demonstrate that our framework induces highly disentangled causal factors, improves interventional robustness, and is compatible with counterfactual generation."
+  },
+  "arxiv_2306.12896": {
+    "doc_id": "arxiv_2306.12896",
+    "title": "Causal discovery for time series from multiple datasets with latent\n  contexts",
+    "year": 2023,
+    "venue": "stat.ME",
+    "abstract": "Causal discovery from time series data is a typical problem setting across the sciences. Often, multiple datasets of the same system variables are available, for instance, time series of river runoff from different catchments. The local catchment systems then share certain causal parents, such as time-dependent large-scale weather over all catchments, but differ in other catchment-specific drivers, such as the altitude of the catchment. These drivers can be called temporal and spatial contexts, respectively, and are often partially unobserved. Pooling the datasets and considering the joint causal graph among system, context, and certain auxiliary variables enables us to overcome such latent confounding of system variables. In this work, we present a non-parametric time series causal discovery method, J(oint)-PCMCI+, that efficiently learns such joint causal time series graphs when both observed and latent contexts are present, including time lags. We present asymptotic consistency results and numerical experiments demonstrating the utility and limitations of the method."
+  },
+  "arxiv_2310.06312": {
+    "doc_id": "arxiv_2310.06312",
+    "title": "Discovering Mixtures of Structural Causal Models from Time Series Data",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Discovering causal relationships from time series data is significant in fields such as finance, climate science, and neuroscience. However, contemporary techniques rely on the simplifying assumption that data originates from the same causal model, while in practice, data is heterogeneous and can stem from different causal models. In this work, we relax this assumption and perform causal discovery from time series data originating from a mixture of causal models. We propose a general variational inference-based framework called MCD to infer the underlying causal models as well as the mixing probability of each sample. Our approach employs an end-to-end training process that maximizes an evidence-lower bound for the data likelihood. We present two variants: MCD-Linear for linear relationships and independent noise, and MCD-Nonlinear for nonlinear causal relationships and history-dependent noise. We demonstrate that our method surpasses state-of-the-art benchmarks in causal discovery tasks through extensive experimentation on synthetic and real-world datasets, particularly when the data emanates from diverse underlying causal graphs. Theoretically, we prove the identifiability of suc"
+  },
+  "arxiv_2310.15709": {
+    "doc_id": "arxiv_2310.15709",
+    "title": "Causal Representation Learning Made Identifiable by Grouping of\n  Observational Variables",
+    "year": 2024,
+    "venue": "stat.ML",
+    "abstract": "A topic of great current interest is Causal Representation Learning (CRL), whose goal is to learn a causal model for hidden features in a data-driven manner. Unfortunately, CRL is severely ill-posed since it is a combination of the two notoriously ill-posed problems of representation learning and causal discovery. Yet, finding practical identifiability conditions that guarantee a unique solution is crucial for its practical applicability. Most approaches so far have been based on assumptions on the latent causal mechanisms, such as temporal causality, or existence of supervision or interventions; these can be too restrictive in actual applications. Here, we show identifiability based on novel, weak constraints, which requires no temporal structure, intervention, nor weak supervision. The approach is based on assuming the observational mixing exhibits a suitable grouping of the observational variables. We also propose a novel self-supervised estimation framework consistent with the model, prove its statistical consistency, and experimentally show its superior CRL performances compared to the state-of-the-art baselines. We further demonstrate its robustness against latent confounders"
+  },
+  "arxiv_2310.18471": {
+    "doc_id": "arxiv_2310.18471",
+    "title": "Causal disentanglement of multimodal data",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Causal representation learning algorithms discover lower-dimensional representations of data that admit a decipherable interpretation of cause and effect; as achieving such interpretable representations is challenging, many causal learning algorithms utilize elements indicating prior information, such as (linear) structural causal models, interventional data, or weak supervision. Unfortunately, in exploratory causal representation learning, such elements and prior information may not be available or warranted. Alternatively, scientific datasets often have multiple modalities or physics-based constraints, and the use of such scientific, multimodal data has been shown to improve disentanglement in fully unsupervised settings. Consequently, we introduce a causal representation learning algorithm (causalPIMA) that can use multimodal data and known physics to discover important features with causal relationships. Our innovative algorithm utilizes a new differentiable parametrization to learn a directed acyclic graph (DAG) together with a latent space of a variational autoencoder in an end-to-end differentiable framework via a single, tractable evidence lower bound loss function. We plac"
+  },
+  "arxiv_2310.18615": {
+    "doc_id": "arxiv_2310.18615",
+    "title": "Temporally Disentangled Representation Learning under Unknown\n  Nonstationarity",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "In unsupervised causal representation learning for sequential data with time-delayed latent causal influences, strong identifiability results for the disentanglement of causally-related latent variables have been established in stationary settings by leveraging temporal structure. However, in nonstationary setting, existing work only partially addressed the problem by either utilizing observed auxiliary variables (e.g., class labels and/or domain indexes) as side information or assuming simplified latent causal dynamics. Both constrain the method to a limited range of scenarios. In this study, we further explored the Markov Assumption under time-delayed causally related process in nonstationary setting and showed that under mild conditions, the independent latent components can be recovered from their nonlinear mixture up to a permutation and a component-wise transformation, without the observation of auxiliary variables. We then introduce NCTRL, a principled estimation framework, to reconstruct time-delayed latent causal variables and identify their relations from measured sequential data only. Empirical evaluations demonstrated the reliable identification of time-delayed latent c"
+  },
+  "arxiv_2311.01412": {
+    "doc_id": "arxiv_2311.01412",
+    "title": "Causal Temporal Regime Structure Learning",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Understanding causal relationships in multivariate time series is essential for predicting and controlling dynamic systems in fields like economics, neuroscience, and climate science. However, existing causal discovery methods often assume stationarity, limiting their effectiveness when time series consist of sequential regimes, consecutive temporal segments with unknown boundaries and changing causal structures. In this work, we firstly introduce a framework to describe and model such time series. Then, we present CASTOR, a novel method that concurrently learns the Directed Acyclic Graph (DAG) for each regime while determining the number of regimes and their sequential arrangement. CASTOR optimizes the data log-likelihood using an expectation-maximization algorithm, alternating between assigning regime indices (expectation step) and inferring causal relationships in each regime (maximization step). We establish the identifiability of the regimes and DAGs within our framework. Extensive experiments show that CASTOR consistently outperforms existing causal discovery models in detecting different regimes and learning their DAGs across various settings, including linear and nonlinear "
+  },
+  "arxiv_2401.07231": {
+    "doc_id": "arxiv_2401.07231",
+    "title": "Use of Prior Knowledge to Discover Causal Additive Models with\n  Unobserved Variables and its Application to Time Series Data",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "This paper proposes two methods for causal additive models with unobserved variables (CAM-UV). CAM-UV assumes that the causal functions take the form of generalized additive models and that latent confounders are present. First, we propose a method that leverages prior knowledge for efficient causal discovery. Then, we propose an extension of this method for inferring causality in time series data. The original CAM-UV algorithm differs from other existing causal function models in that it does not seek the causal order between observed variables, but rather aims to identify the causes for each observed variable. Therefore, the first proposed method in this paper utilizes prior knowledge, such as understanding that certain variables cannot be causes of specific others. Moreover, by incorporating the prior knowledge that causes precedes their effects in time, we extend the first algorithm to the second method for causal discovery in time series data. We validate the first proposed method by using simulated data to demonstrate that the accuracy of causal discovery increases as more prior knowledge is accumulated. Additionally, we test the second proposed method by comparing it with ex"
+  },
+  "arxiv_2401.14535": {
+    "doc_id": "arxiv_2401.14535",
+    "title": "CaRiNG: Learning Temporal Causal Representation under Non-Invertible\n  Generation Process",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Identifying the underlying time-delayed latent causal processes in sequential data is vital for grasping temporal dynamics and making downstream reasoning. While some recent methods can robustly identify these latent causal variables, they rely on strict assumptions about the invertible generation process from latent variables to observed data. However, these assumptions are often hard to satisfy in real-world applications containing information loss. For instance, the visual perception process translates a 3D space into 2D images, or the phenomenon of persistence of vision incorporates historical data into current perceptions. To address this challenge, we establish an identifiability theory that allows for the recovery of independent latent components even when they come from a nonlinear and non-invertible mix. Using this theory as a foundation, we propose a principled approach, CaRiNG, to learn the CAusal RepresentatIon of Non-invertible Generative temporal data with identifiability guarantees. Specifically, we utilize temporal context to recover lost latent information and apply the conditions in our theory to guide the training process. Through experiments conducted on synthet"
+  },
+  "arxiv_2402.05052": {
+    "doc_id": "arxiv_2402.05052",
+    "title": "Causal Representation Learning from Multiple Distributions: A General\n  Setting",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "In many problems, the measured variables (e.g., image pixels) are just mathematical functions of the latent causal variables (e.g., the underlying concepts or objects). For the purpose of making predictions in changing environments or making proper changes to the system, it is helpful to recover the latent causal variables $Z_i$ and their causal relations represented by graph $\\mathcal{G}_Z$. This problem has recently been known as causal representation learning. This paper is concerned with a general, completely nonparametric setting of causal representation learning from multiple distributions (arising from heterogeneous data or nonstationary time series), without assuming hard interventions behind distribution changes. We aim to develop general solutions in this fundamental case; as a by product, this helps see the unique benefit offered by other assumptions such as parametric causal models or hard interventions. We show that under the sparsity constraint on the recovered graph over the latent variables and suitable sufficient change conditions on the causal influences, interestingly, one can recover the moralized graph of the underlying directed acyclic graph, and the recovered"
+  },
+  "arxiv_2402.09305": {
+    "doc_id": "arxiv_2402.09305",
+    "title": "Embracing the black box: Heading towards foundation models for causal\n  discovery from time series data",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Causal discovery from time series data encompasses many existing solutions, including those based on deep learning techniques. However, these methods typically do not endorse one of the most prevalent paradigms in deep learning: End-to-end learning. To address this gap, we explore what we call Causal Pretraining. A methodology that aims to learn a direct mapping from multivariate time series to the underlying causal graphs in a supervised manner. Our empirical findings suggest that causal discovery in a supervised manner is possible, assuming that the training and test time series samples share most of their dynamics. More importantly, we found evidence that the performance of Causal Pretraining can increase with data and model size, even if the additional data do not share the same dynamics. Further, we provide examples where causal discovery for real-world data with causally pretrained neural networks is possible within limits. We argue that this hints at the possibility of a foundation model for causal discovery."
+  },
+  "arxiv_2404.01466": {
+    "doc_id": "arxiv_2404.01466",
+    "title": "TS-CausalNN: Learning Temporal Causal Relations from Non-linear\n  Non-stationary Time Series Data",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "The growing availability and importance of time series data across various domains, including environmental science, epidemiology, and economics, has led to an increasing need for time-series causal discovery methods that can identify the intricate relationships in the non-stationary, non-linear, and often noisy real world data. However, the majority of current time series causal discovery methods assume stationarity and linear relations in data, making them infeasible for the task. Further, the recent deep learning-based methods rely on the traditional causal structure learning approaches making them computationally expensive. In this paper, we propose a Time-Series Causal Neural Network (TS-CausalNN) - a deep learning technique to discover contemporaneous and lagged causal relations simultaneously. Our proposed architecture comprises (i) convolutional blocks comprising parallel custom causal layers, (ii) acyclicity constraint, and (iii) optimization techniques using the augmented Lagrangian approach. In addition to the simple parallel design, an advantage of the proposed model is that it naturally handles the non-stationarity and non-linearity of the data. Through experiments on "
+  },
+  "arxiv_2405.15325": {
+    "doc_id": "arxiv_2405.15325",
+    "title": "On the Identification of Temporally Causal Representation with Instantaneous Dependence",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Temporally causal representation learning aims to identify the latent causal process from time series observations, but most methods require the assumption that the latent causal processes do not have instantaneous relations. Although some recent methods achieve identifiability in the instantaneous causality case, they require either interventions on the latent variables or grouping of the observations, which are in general difficult to obtain in real-world scenarios. To fill this gap, we propose an \\textbf{ID}entification framework for instantane\\textbf{O}us \\textbf{L}atent dynamics (\\textbf{IDOL}) by imposing a sparse influence constraint that the latent causal processes have sparse time-delayed and instantaneous relations. Specifically, we establish identifiability results of the latent causal process based on sufficient variability and the sparse influence constraint by employing contextual information of time series data. Based on these theories, we incorporate a temporally variational inference architecture to estimate the latent variables and a gradient-based sparsity regularization to identify the latent causal process. Experimental results on simulation datasets illustrate"
+  },
+  "arxiv_2406.16708": {
+    "doc_id": "arxiv_2406.16708",
+    "title": "CausalFormer: An Interpretable Transformer for Temporal Causal Discovery",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Temporal causal discovery is a crucial task aimed at uncovering the causal relations within time series data. The latest temporal causal discovery methods usually train deep learning models on prediction tasks to uncover the causality between time series. They capture causal relations by analyzing the parameters of some components of the trained models, e.g., attention weights and convolution weights. However, this is an incomplete mapping process from the model parameters to the causality and fails to investigate the other components, e.g., fully connected layers and activation functions, that are also significant for causal discovery. To facilitate the utilization of the whole deep learning models in temporal causal discovery, we proposed an interpretable transformer-based causal discovery model termed CausalFormer, which consists of the causality-aware transformer and the decomposition-based causality detector. The causality-aware transformer learns the causal representation of time series data using a prediction task with the designed multi-kernel causal convolution which aggregates each input time series along the temporal dimension under the temporal priority constraint. Then"
+  },
+  "arxiv_2408.08023": {
+    "doc_id": "arxiv_2408.08023",
+    "title": "Causal Discovery from Time-Series Data with Short-Term Invariance-Based Convolutional Neural Networks",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Causal discovery from time-series data aims to capture both intra-slice (contemporaneous) and inter-slice (time-lagged) causality between variables within the temporal chain, which is crucial for various scientific disciplines. Compared to causal discovery from non-time-series data, causal discovery from time-series data necessitates more serialized samples with a larger amount of observed time steps. To address the challenges, we propose a novel gradient-based causal discovery approach STIC, which focuses on \\textbf{S}hort-\\textbf{T}erm \\textbf{I}nvariance using \\textbf{C}onvolutional neural networks to uncover the causal relationships from time-series data. Specifically, STIC leverages both the short-term time and mechanism invariance of causality within each window observation, which possesses the property of independence, to enhance sample efficiency. Furthermore, we construct two causal convolution kernels, which correspond to the short-term time and mechanism invariance respectively, to estimate the window causal graph. To demonstrate the necessity of convolutional neural networks for causal discovery from time-series data, we theoretically derive the equivalence between conv"
+  },
+  "arxiv_2410.07013": {
+    "doc_id": "arxiv_2410.07013",
+    "title": "Causal Representation Learning in Temporal Data via Single-Parent\n  Decoding",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Scientific research often seeks to understand the causal structure underlying high-level variables in a system. For example, climate scientists study how phenomena, such as El Ni\\~no, affect other climate processes at remote locations across the globe. However, scientists typically collect low-level measurements, such as geographically distributed temperature readings. From these, one needs to learn both a mapping to causally-relevant latent variables, such as a high-level representation of the El Ni\\~no phenomenon and other processes, as well as the causal model over them. The challenge is that this task, called causal representation learning, is highly underdetermined from observational data alone, requiring other constraints during learning to resolve the indeterminacies. In this work, we consider a temporal model with a sparsity assumption, namely single-parent decoding: each observed low-level variable is only affected by a single latent variable. Such an assumption is reasonable in many scientific applications that require finding groups of low-level variables, such as extracting regions from geographically gridded measurement data in climate research or capturing brain regio"
+  },
+  "arxiv_2410.09516": {
+    "doc_id": "arxiv_2410.09516",
+    "title": "Bridging the Gap Between Data-Driven And Theory-Driven Modelling - Leveraging Causal Machine Learning for Integrative Modelling of Dynamical Systems",
+    "year": 2025,
+    "venue": "cs.CE",
+    "abstract": "Classical machine learning techniques often struggle with overfitting and unreliable predictions when exposed to novel conditions. Introducing causality into the modelling process offers a promising way to mitigate these challenges by enhancing predictive robustness. However, constructing an initial causal graph manually using domain knowledge is time-consuming, particularly in complex time series with numerous variables. To address this, causal discovery algorithms can provide a preliminary causal structure that domain experts can refine. This study investigates causal feature selection with domain knowledge using a data center system as an example. We use simulated time-series data to compare different causal feature selection with traditional machine-learning feature selection methods. Our results show that predictions based on causal features are more robust compared to those derived from traditional methods. These findings underscore the potential of combining causal discovery algorithms with human expertise to improve machine learning applications."
+  },
+  "arxiv_2501.06534": {
+    "doc_id": "arxiv_2501.06534",
+    "title": "Dynamic Causal Structure Discovery and Causal Effect Estimation",
+    "year": 2025,
+    "venue": "stat.ML",
+    "abstract": "To represent the causal relationships between variables, a directed acyclic graph (DAG) is widely utilized in many areas, such as social sciences, epidemics, and genetics. Many causal structure learning approaches are developed to learn the hidden causal structure utilizing deep-learning approaches. However, these approaches have a hidden assumption that the causal relationship remains unchanged over time, which may not hold in real life. In this paper, we develop a new framework to model the dynamic causal graph where the causal relations are allowed to be time-varying. We incorporate the basis approximation method into the score-based causal discovery approach to capture the dynamic pattern of the causal graphs. Utilizing the autoregressive model structure, we could capture both contemporaneous and time-lagged causal relationships while allowing them to vary with time. We propose an algorithm that could provide both past-time estimates and future-time predictions on the causal graphs, and conduct simulations to demonstrate the usefulness of the proposed method. We also apply the proposed method for the covid-data analysis, and provide causal estimates on how policy restriction's "
+  },
+  "arxiv_2501.12500": {
+    "doc_id": "arxiv_2501.12500",
+    "title": "Learning General Causal Structures with Hidden Dynamic Process for Climate Analysis",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Understanding climate dynamics requires going beyond correlations in observational data to uncover the underlying causal process. Latent drivers such as atmospheric processes play a central role in temporal dynamics, while direct causal influences also exist among geographically proximate observed variables. Traditional Causal Representation Learning (CRL) typically focuses on latent factors but overlooks such observable-to-observable causal relations, which limits its applicability to climate analysis. In this paper, we introduce a unified framework that jointly uncovers (i) causal relations among observed variables and (ii) latent driving forces together with their interactions. We establish conditions under which both the hidden dynamic process and the causal structure among observed variables are simultaneously identifiable from time-series data, and our guarantees continue to hold in the nonparametric setting through contextual information that recovers latent variables and causal relations. Building on these insights, we propose CaDRe (Causal Discovery and Representation learning), a time-series generative model with structural constraints that integrates CRL and causal disco"
+  },
+  "arxiv_2504.11609": {
+    "doc_id": "arxiv_2504.11609",
+    "title": "Towards Interpretable Deep Generative Models via Causal Representation Learning",
+    "year": 2026,
+    "venue": "stat.ML",
+    "abstract": "Recent developments in generative artificial intelligence (AI) rely on machine learning techniques such as deep learning and generative modeling to achieve state-of-the-art performance across wide-ranging domains. These methods' surprising performance is due in part to their ability to learn implicit \"representations\" of complex, multi-modal data. Unfortunately, deep neural networks are notoriously black boxes that obscure these representations, making them difficult to interpret or analyze. To resolve these difficulties, one approach is to build new interpretable neural network models from the ground up. This is the goal of the emerging field of causal representation learning (CRL) that uses causality as a vector for building flexible, interpretable, and transferable generative AI. CRL can be seen as a synthesis of three intrinsically statistical ideas: (i) latent variable models such as factor analysis; (ii) causal graphical models with latent variables; and (iii) nonparametric statistics and deep learning. This paper introduces CRL from a statistical perspective, focusing on connections to classical models as well as statistical and causal identifiability results. We also highli"
+  },
+  "arxiv_2505.16308": {
+    "doc_id": "arxiv_2505.16308",
+    "title": "Beyond All-to-All: Causal-Aligned Transformer with Dynamic Structure Learning for Multivariate Time Series Forecasting",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Most existing multivariate time series forecasting methods adopt an all-to-all paradigm that feeds all variable histories into a unified model to predict their future values without distinguishing their individual roles. However, this undifferentiated paradigm makes it difficult to identify variable-specific causal influences and often entangles causally relevant information with spurious correlations. To address this limitation, we propose an all-to-one forecasting paradigm that predicts each target variable separately. Specifically, we first construct a Structural Causal Model from observational data and then, for each target variable, we partition the historical sequence into four subsegments according to the inferred causal structure: endogenous, direct causal, collider causal, and spurious correlation. Furthermore, we propose the Causal Decomposition Transformer (CDT), which integrates a dynamic causal adapter to learn causal structures initialized by the inferred graph, enabling correction of imperfect causal discovery during training. Furthermore, motivated by causal theory, we apply a projection-based output constraint to mitigate collider induced bias and improve robustnes"
+  },
+  "arxiv_2505.17708": {
+    "doc_id": "arxiv_2505.17708",
+    "title": "The Third Pillar of Causal Analysis? A Measurement Perspective on Causal Representations",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Causal reasoning and discovery, two fundamental tasks of causal analysis, often face challenges in applications due to the complexity, noisiness, and high-dimensionality of real-world data. Despite recent progress in identifying latent causal structures using causal representation learning (CRL), what makes learned representations useful for causal downstream tasks and how to evaluate them are still not well understood. In this paper, we reinterpret CRL using a measurement model framework, where the learned representations are viewed as proxy measurements of the latent causal variables. Our approach clarifies the conditions under which learned representations support downstream causal reasoning and provides a principled basis for quantitatively assessing the quality of representations using a new Test-based Measurement EXclusivity (T-MEX) score. We validate T-MEX across diverse causal inference scenarios, including numerical simulations and real-world ecological video analysis, demonstrating that the proposed framework and corresponding score effectively assess the identification of learned representations and their usefulness for causal downstream tasks."
+  },
+  "arxiv_2506.17065": {
+    "doc_id": "arxiv_2506.17065",
+    "title": "Flow based approach for Dynamic Temporal Causal models with non-Gaussian or Heteroscedastic Noises",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Understanding causal relationships in multivariate time series is crucial in many scenarios, such as those dealing with financial or neurological data. Many such time series exhibit multiple regimes, i.e., consecutive temporal segments with a priori unknown boundaries, with each regime having its own causal structure. Inferring causal dependencies and regime shifts is critical for analyzing the underlying processes. However, causal structure learning in this setting is challenging due to (1) non-stationarity, i.e., each regime can have its own causal graph and mixing function, and (2) complex noise distributions, which may be nonGaussian or heteroscedastic. Existing causal discovery approaches cannot address these challenges, since generally assume stationarity or Gaussian noise with constant variance. Hence, we introduce FANTOM, a unified framework for causal discovery that handles non-stationary processes along with non-Gaussian and heteroscedastic noises. FANTOM simultaneously infers the number of regimes and their corresponding indices and learns each regime's Directed Acyclic Graph. It uses a Bayesian Expectation Maximization algorithm that maximizes the evidence lower bound o"
+  },
+  "arxiv_2507.07898": {
+    "doc_id": "arxiv_2507.07898",
+    "title": "Efficient Causal Discovery for Autoregressive Time Series",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "In this study, we present a novel constraint-based algorithm for causal structure learning specifically designed for nonlinear autoregressive time series. Our algorithm significantly reduces computational complexity compared to existing methods, making it more efficient and scalable to larger problems. We rigorously evaluate its performance on synthetic datasets, demonstrating that our algorithm not only outperforms current techniques, but also excels in scenarios with limited data availability. These results highlight its potential for practical applications in fields requiring efficient and accurate causal inference from nonlinear time series data."
+  },
+  "arxiv_2507.09439": {
+    "doc_id": "arxiv_2507.09439",
+    "title": "Dynamic Sparse Causal-Attention Temporal Networks for Interpretable Causality Discovery in Multivariate Time Series",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Understanding causal relationships in multivariate time series (MTS) is essential for effective decision-making in fields such as finance and marketing, where complex dependencies and lagged effects challenge conventional analytical approaches. We introduce Dynamic Sparse Causal-Attention Temporal Networks for Interpretable Causality Discovery in MTS (DyCAST-Net), a novel architecture designed to enhance causal discovery by integrating dilated temporal convolutions and dynamic sparse attention mechanisms. DyCAST-Net effectively captures multiscale temporal dependencies through dilated convolutions while leveraging an adaptive thresholding strategy in its attention mechanism to eliminate spurious connections, ensuring both accuracy and interpretability. A statistical shuffle test validation further strengthens robustness by filtering false positives and improving causal inference reliability. Extensive evaluations on financial and marketing datasets demonstrate that DyCAST-Net consistently outperforms existing models such as TCDF, GCFormer, and CausalFormer. The model provides a more precise estimation of causal delays and significantly reduces false discoveries, particularly in noi"
+  },
+  "arxiv_2507.14126": {
+    "doc_id": "arxiv_2507.14126",
+    "title": "Toward Temporal Causal Representation Learning with Tensor Decomposition",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Temporal causal representation learning is a powerful tool for uncovering complex patterns in observational studies, which are often represented as low-dimensional time series. However, in many real-world applications, data are high-dimensional with varying input lengths and naturally take the form of irregular tensors. To analyze such data, irregular tensor decomposition is critical for extracting meaningful clusters that capture essential information. In this paper, we focus on modeling causal representation learning based on the transformed information. First, we present a novel causal formulation for a set of latent clusters. We then propose CaRTeD, a joint learning framework that integrates temporal causal representation learning with irregular tensor decomposition. Notably, our framework provides a blueprint for downstream tasks using the learned tensor factors, such as modeling latent structures and extracting causal information, and offers a more flexible regularization design to enhance tensor decomposition. Theoretically, we show that our algorithm converges to a stationary point. More importantly, our results fill the gap in theoretical guarantees for the convergence of "
+  },
+  "arxiv_2508.01848": {
+    "doc_id": "arxiv_2508.01848",
+    "title": "Causal Discovery in Multivariate Time Series through Mutual Information Featurization",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Discovering causal relationships in complex multivariate time series is a fundamental scientific challenge. Traditional methods often falter, either by relying on restrictive linear assumptions or on conditional independence tests that become uninformative in the presence of intricate, non-linear dynamics. This paper proposes a new paradigm, shifting from statistical testing to pattern recognition. We hypothesize that a causal link creates a persistent and learnable asymmetry in the flow of information through a system's temporal graph, even when clear conditional independencies are obscured. We introduce Temporal Dependency to Causality (TD2C), a supervised learning framework that operationalizes this hypothesis. TD2C learns to recognize these complex causal signatures from a rich set of information-theoretic and statistical descriptors. Trained exclusively on a diverse collection of synthetic time series, TD2C demonstrates remarkable zero-shot generalization to unseen dynamics and established, realistic benchmarks. Our results show that TD2C achieves state-of-the-art performance, consistently outperforming established methods, particularly in high-dimensional and non-linear setti"
+  },
+  "arxiv_2508.15928": {
+    "doc_id": "arxiv_2508.15928",
+    "title": "Transforming Causality: Transformer-Based Temporal Causal Discovery with Prior Knowledge Integration",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "We introduce a novel framework for temporal causal discovery and inference that addresses two key challenges: complex nonlinear dependencies and spurious correlations. Our approach employs a multi-layer Transformer-based time-series forecaster to capture long-range, nonlinear temporal relationships among variables. After training, we extract the underlying causal structure and associated time lags from the forecaster using gradient-based analysis, enabling the construction of a causal graph. To mitigate the impact of spurious causal relationships, we introduce a prior knowledge integration mechanism based on attention masking, which consistently enforces user-excluded causal links across multiple Transformer layers. Extensive experiments show that our method significantly outperforms other state-of-the-art approaches, achieving a 12.8% improvement in F1-score for causal discovery and 98.9% accuracy in estimating causal lags."
+  },
+  "arxiv_2508.21742": {
+    "doc_id": "arxiv_2508.21742",
+    "title": "Orientability of Causal Relations in Time Series using Summary Causal Graphs and Faithful Distributions",
+    "year": 2026,
+    "venue": "cs.AI",
+    "abstract": "Understanding causal relations between temporal variables is a central challenge in time series analysis, particularly when the full causal structure is unknown. Even when the full causal structure cannot be fully specified, experts often succeed in providing a high-level abstraction of the causal graph, known as a summary causal graph, which captures the main causal relations between different time series while abstracting away micro-level details. In this work, we present conditions that guarantee the orientability of micro-level edges between temporal variables given the background knowledge encoded in a summary causal graph and assuming having access to a faithful and causally sufficient distribution with respect to the true unknown graph. Our results provide theoretical guarantees for edge orientation at the micro-level, even in the presence of cycles or bidirected edges at the macro-level. These findings offer practical guidance for leveraging SCGs to inform causal discovery in complex temporal systems and highlight the value of incorporating expert knowledge to improve causal inference from observational time series data."
+  },
+  "arxiv_2510.11084": {
+    "doc_id": "arxiv_2510.11084",
+    "title": "Causal Disentanglement Learning for Accurate Anomaly Detection in Multivariate Time Series",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Disentangling complex causal relationships is important for accurate detection of anomalies. In multivariate time series analysis, dynamic interactions among data variables over time complicate the interpretation of causal relationships. Traditional approaches assume statistical independence between variables in unsupervised settings, whereas recent methods capture feature correlations through graph representation learning. However, their representations fail to explicitly infer the causal relationships over different time periods. To solve the problem, we propose Causally Disentangled Representation Learning for Anomaly Detection (CDRL4AD) to detect anomalies and identify their causal relationships in multivariate time series. First, we design the causal process as model input, the temporal heterogeneous graph, and causal relationships. Second, our representation identifies causal relationships over different time periods and disentangles latent variables to infer the corresponding causal factors. Third, our experiments on real-world datasets demonstrate that CDRL4AD outperforms state-of-the-art methods in terms of accuracy and root cause analysis. Fourth, our model analysis valid"
+  },
+  "arxiv_2510.24639": {
+    "doc_id": "arxiv_2510.24639",
+    "title": "Causal Ordering for Structure Learning from Time Series",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Predicting causal structure from time series data is crucial for understanding complex phenomena in physiology, brain connectivity, climate dynamics, and socio-economic behaviour. Causal discovery in time series is hindered by the combinatorial complexity of identifying true causal relationships, especially as the number of variables and time points grow. A common approach to simplify the task is the so-called ordering-based methods. Traditional ordering methods inherently limit the representational capacity of the resulting model. In this work, we fix this issue by leveraging multiple valid causal orderings, instead of a single one as standard practice. We propose DOTS (Diffusion Ordered Temporal Structure), using diffusion-based causal discovery for temporal data. By integrating multiple orderings, DOTS effectively recovers the transitive closure of the underlying directed acyclic graph, mitigating spurious artifacts inherent in single-ordering approaches. We formalise the problem under standard assumptions such as stationarity and the additive noise model, and leverage score matching with diffusion processes to enable efficient Hessian estimation. Extensive experiments validate "
+  },
+  "arxiv_2510.26485": {
+    "doc_id": "arxiv_2510.26485",
+    "title": "Discovering Causal Relationships Between Time Series With Spatial Structure",
+    "year": 2026,
+    "venue": "stat.ME",
+    "abstract": "Causal discovery is the subfield of causal inference concerned with estimating the structure of cause-and-effect relationships in a system of interrelated variables, as opposed to quantifying the strength or describing the form of causal effects. As interest in causal discovery builds in fields such as ecology, public health, and environmental sciences where data are regularly collected with spatial and temporal structures, approaches must evolve to manage autocorrelation and complex confounding. As it stands, the few proposed causal discovery algorithms for spatiotemporal data require summarizing across locations, ignore spatial autocorrelation, and/or scale poorly to high dimensions. Here, we introduce our developing framework that extends time-series causal discovery to systems with spatial structure, building upon work on causal discovery across contexts and methods for handling spatial confounding in causal effect estimation. We close by outlining remaining gaps in the literature and directions for future research."
+  },
+  "arxiv_2511.03168": {
+    "doc_id": "arxiv_2511.03168",
+    "title": "UnCLe: Towards Scalable Dynamic Causal Discovery in Non-linear Temporal Systems",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Uncovering cause-effect relationships from observational time series is fundamental to understanding complex systems. While many methods infer static causal graphs, real-world systems often exhibit dynamic causality-where relationships evolve over time. Accurately capturing these temporal dynamics requires time-resolved causal graphs. We propose UnCLe, a novel deep learning method for scalable dynamic causal discovery. UnCLe employs a pair of Uncoupler and Recoupler networks to disentangle input time series into semantic representations and learns inter-variable dependencies via auto-regressive Dependency Matrices. It estimates dynamic causal influences by analyzing datapoint-wise prediction errors induced by temporal perturbations. Extensive experiments demonstrate that UnCLe not only outperforms state-of-the-art baselines on static causal discovery benchmarks but, more importantly, exhibits a unique capability to accurately capture and represent evolving temporal causality in both synthetic and real-world dynamic systems (e.g., human motion). UnCLe offers a promising approach for revealing the underlying, time-varying mechanisms of complex phenomena."
+  },
+  "arxiv_2511.04790": {
+    "doc_id": "arxiv_2511.04790",
+    "title": "Causal Structure and Representation Learning with Biomedical Applications",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Massive data collection holds the promise of a better understanding of complex phenomena and, ultimately, better decisions. Representation learning has become a key driver of deep learning applications, as it allows learning latent spaces that capture important properties of the data without requiring any supervised annotations. Although representation learning has been hugely successful in predictive tasks, it can fail miserably in causal tasks including predicting the effect of a perturbation/intervention. This calls for a marriage between representation learning and causal inference. An exciting opportunity in this regard stems from the growing availability of multi-modal data (observational and perturbational, imaging-based and sequencing-based, at the single-cell level, tissue-level, and organism-level). We outline a statistical and computational framework for causal structure and representation learning motivated by fundamental biomedical questions: how to effectively use observational and perturbational data to perform causal discovery on observed causal variables; how to use multi-modal views of the system to learn causal variables; and how to design optimal perturbations."
+  },
+  "arxiv_2601.09579": {
+    "doc_id": "arxiv_2601.09579",
+    "title": "Constraint- and Score-Based Nonlinear Granger Causality Discovery with Kernels",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Kernel-based methods are used in the context of Granger Causality to enable the identification of nonlinear causal relationships between time series variables. In this paper, we show that two state of the art kernel-based Granger Causality (GC) approaches can be theoretically unified under the framework of Kernel Principal Component Regression (KPCR), and introduce a method based on this unification, demonstrating that this approach can improve causal identification. Additionally, we introduce a Gaussian Process score-based model with Smooth Information Criterion penalisation on the marginal likelihood, and demonstrate improved performance over existing state of the art time-series nonlinear causal discovery methods. Furthermore, we propose a contemporaneous causal identification algorithm, fully based on GC, using the proposed score-based $GP_{SIC}$ method, and compare its performance to a state of the art contemporaneous time series causal discovery algorithm."
+  },
+  "arxiv_2602.01433": {
+    "doc_id": "arxiv_2602.01433",
+    "title": "DCD: Decomposition-based Causal Discovery from Autocorrelated and Non-Stationary Temporal Data",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Multivariate time series in domains such as finance, climate science, and healthcare often exhibit long-term trends, seasonal patterns, and short-term fluctuations, complicating causal inference under non-stationarity and autocorrelation. Existing causal discovery methods typically operate on raw observations, making them vulnerable to spurious edges and misattributed temporal dependencies. We introduce a decomposition-based causal discovery framework that separates each time series into trend, seasonal, and residual components and performs component-specific causal analysis. Trend components are assessed using stationarity tests, seasonal components using kernel-based dependence measures, and residual components using constraint-based causal discovery. The resulting component-level graphs are integrated into a unified multi-scale causal structure. This approach isolates long- and short-range causal effects, reduces spurious associations, and improves interpretability. Across extensive synthetic benchmarks and real-world climate data, our framework more accurately recovers ground-truth causal structure than state-of-the-art baselines, particularly under strong non-stationarity and "
+  },
+  "arxiv_2602.18662": {
+    "doc_id": "arxiv_2602.18662",
+    "title": "Large Causal Models for Temporal Causal Discovery",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Causal discovery for both cross-sectional and temporal data has traditionally followed a dataset-specific paradigm, where a new model is fitted for each individual dataset. Such an approach limits the potential of multi-dataset pretraining. The concept of large causal models (LCMs) envisions a class of pre-trained neural architectures specifically designed for temporal causal discovery. Prior approaches are constrained to small variable counts, degrade with larger inputs, and rely heavily on synthetic data, limiting generalization. We propose a principled framework for LCMs, combining diverse synthetic generators with realistic time-series datasets, allowing learning at scale. Extensive experiments on synthetic, semi-synthetic and realistic benchmarks show that LCMs scale effectively to higher variable counts and deeper architectures while maintaining strong performance. Trained models achieve competitive or superior accuracy compared to classical and neural baselines, particularly in out-of-distribution settings, while enabling fast, single-pass inference. Results demonstrate LCMs as a promising foundation-model paradigm for temporal causal discovery. Experiments and model weights"
+  },
+  "arxiv_2603.00041": {
+    "doc_id": "arxiv_2603.00041",
+    "title": "Econometric vs. Causal Structure-Learning for Time-Series Policy Decisions: Evidence from the UK COVID-19 Policies",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Causal machine learning (ML) recovers graphical structures that inform us about potential cause-and-effect relationships. Most progress has focused on cross-sectional data with no explicit time order, whereas recovering causal structures from time series data remains the subject of ongoing research in causal ML. In addition to traditional causal ML, this study assesses econometric methods that some argue can recover causal structures from time series data. The use of these methods can be explained by the significant attention the field of econometrics has given to causality, and specifically to time series, over the years. This presents the possibility of comparing the causal discovery performance between econometric and traditional causal ML algorithms. We seek to understand if there are lessons to be incorporated into causal ML from econometrics, and provide code to translate the results of these econometric methods to the most widely used Bayesian Network R library, bnlearn. We investigate the benefits and challenges that these algorithms present in supporting policy decision-making, using the real-world case of COVID-19 in the UK as an example. Four econometric methods are eval"
+  },
+  "arxiv_2603.05370": {
+    "doc_id": "arxiv_2603.05370",
+    "title": "Learning Causal Structure of Time Series using Best Order Score Search",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Causal structure learning from observational data is central to many scientific and policy domains, but the time series setting common to many disciplines poses several challenges due to temporal dependence. In this paper we focus on score-based causal discovery for multivariate time series and introduce TS-BOSS, a time series extension of the recently proposed Best Order Score Search (BOSS) (Andrews et al. 2023). TS-BOSS performs a permutation-based search over dynamic Bayesian network structures while leveraging grow-shrink trees to cache intermediate score computations, preserving the scalability and strong empirical performance of BOSS in the static setting. We provide theoretical guarantees establishing the soundness of TS-BOSS under suitable assumptions, and we present an intermediate result that extends classical subgraph minimality results for permutation-based methods to the dynamic (time series) setting. Our experiments on synthetic data show that TS-BOSS is especially effective in high auto-correlation regimes, where it consistently achieves higher adjacency recall at comparable precision than standard constraint-based methods. Overall, TS-BOSS offers a high-performing, "
+  },
+  "arxiv_2603.20980": {
+    "doc_id": "arxiv_2603.20980",
+    "title": "From Causal Discovery to Dynamic Causal Inference in Neural Time Series",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Time-varying causal models provide a powerful framework for studying dynamic scientific systems, yet most existing approaches assume that the underlying causal network is known a priori - an assumption rarely satisfied in real-world domains where causal structure is uncertain, evolving, or only indirectly observable. This limits the applicability of dynamic causal inference in many scientific settings. We propose Dynamic Causal Network Autoregression (DCNAR), a two-stage neural causal modeling framework that integrates data-driven causal discovery with time-varying causal inference. In the first stage, a neural autoregressive causal discovery model learns a sparse directed causal network from multivariate time series. In the second stage, this learned structure is used as a structural prior for a time-varying neural network autoregression, enabling dynamic estimation of causal influence without requiring pre-specified network structure. We evaluate the scientific validity of DCNAR using behavioral diagnostics that assess causal necessity, temporal stability, and sensitivity to structural change, rather than predictive accuracy alone. Experiments on multi-country panel time-series d"
+  },
+  "arxiv_2603.25017": {
+    "doc_id": "arxiv_2603.25017",
+    "title": "Discrete Causal Representation Learning",
+    "year": 2026,
+    "venue": "stat.ME",
+    "abstract": "Causal representation learning seeks to uncover causal relationships among high-level latent variables from low-level, entangled, and noisy observations. Existing approaches often either rely on deep neural networks, which lack interpretability and formal guarantees, or impose restrictive assumptions like linearity, continuous-only observations, and strong structural priors. These limitations particularly challenge applications with a large number of discrete latent variables and mixed-type observations. To address these challenges, we propose discrete causal representation learning (DCRL), a generative framework that models a directed acyclic graph among discrete latent variables, along with a sparse bipartite graph linking latent and observed layers. This design accommodates continuous, count, and binary responses through flexible measurement models while maintaining interpretability. Under mild conditions, we prove that both the bipartite measurement graph and the latent causal graph are identifiable from the observed data distribution alone. We further propose a three-stage estimate-resample-discovery pipeline: penalized estimation of the generative model parameters, resampling"
+  },
+  "arxiv_2605.08111": {
+    "doc_id": "arxiv_2605.08111",
+    "title": "TTCD:Transformer Integrated Temporal Causal Discovery from Non-Stationary Time Series Data",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "The widespread availability of complex time series data in various domains such as environmental science, epidemiology, and economics demands robust causal discovery methods that can identify intricate contemporaneous and lagged relationships in non-stationary, nonlinear, and noisy settings. Existing constraint-based methods often rely heavily on conditional independence tests that degrade for limited data samples and complex distributions, while score-based methods impose strong statistical assumptions. Recent methods address special cases such as change point detection or distribution shifts, but struggle to provide a unified solution. We propose the Transformer Integrated Temporal Causal Discovery (TTCD) Framework, a novel end-to-end approach that learns contemporaneous and lagged causal relations from non-stationary time series. TTCD introduces a Non-Stationary Feature Learner integrating temporal and frequency-domain attention with dynamic non-stationarity profiling, and a custom Causal Structure Learner. A key innovation is reconstruction-guided causal signal distillation, to distill essential causal signals through the reconstruction process of the transformer decoder, which"
+  },
+  "arxiv_2605.26759": {
+    "doc_id": "arxiv_2605.26759",
+    "title": "Time Series Causal Discovery via Context-Conditioned and Causality-Augmented Pretraining",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Causal discovery from time series is critical for many real-world applications, such as tracing the root causes of anomalies. Existing approaches typically rely on dataset-specific optimization, making it difficult to transfer their causal discovery capabilities to new time series governed by diverse causal mechanisms. In this paper, we propose \\textbf{PTCD}, a novel \\textbf{P}retraining framework for \\textbf{T}ime-series \\textbf{C}ausal \\textbf{D}iscovery, which improves cross-task generalization through context-conditioned modeling and transferable causal augmentation. To model complex temporal causal dependencies, PTCD employs a dual-scale iterative attention mechanism to capture window-level causal relationships, and a Gaussian mixture with a context-level routing mechanism to handle heterogeneous exogenous distributions. To further address distribution shifts across causal graphs, PTCD adopts a pretraining paradigm on synthetic datasets that integrates intervention-based learning and a causal mixup strategy, promoting stable causal discovery and stronger generalization. Extensive experiments on multiple real-world out-of-distribution (OOD) datasets demonstrate that PTCD excels"
+  }
+}

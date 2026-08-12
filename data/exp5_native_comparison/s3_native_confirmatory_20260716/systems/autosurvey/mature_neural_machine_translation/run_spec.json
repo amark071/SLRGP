@@ -1,0 +1,25 @@
+{
+  "run_id": "s3_native_confirmatory_20260716",
+  "system_id": "autosurvey",
+  "source_revision": "5e8f389f3d51b29bad16dc6ae75db3e8a45a3b65",
+  "model_policy": "common_backbone:anthropic/claude-sonnet-4.6",
+  "topic": {
+    "topic_id": "mature_neural_machine_translation",
+    "title": "Neural Machine Translation",
+    "scope": "Neural methods for machine translation, from recurrent encoder-decoder and attention models through Transformer systems, multilingual and low-resource translation, training objectives, decoding, evaluation, robustness, and documented limitations. Exclude rule-based and statistical machine translation except as historical context.",
+    "target_audience": "natural-language-processing researchers",
+    "language": "English",
+    "publication_cutoff": "2023-12-31",
+    "target_words": 4000,
+    "min_words": 3200,
+    "max_words": 4800,
+    "target_references_min": 40,
+    "target_references_max": 60,
+    "seed": 3101,
+    "analysis_role": "confirmatory_primary"
+  },
+  "budget_usd": 16.0,
+  "timeout_seconds": 14400,
+  "protocol_hash": "296c390580ef0a11f0452948b3ba35431f710230487bfc3305ed61bc24164967",
+  "run_spec_hash": "eca12ef2565a8768f7ca6a67aecd7f2074aa00dbc51a5cd16d659f227a7e029d"
+}

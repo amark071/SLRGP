@@ -1,0 +1,124 @@
+{
+  "topic_id": "mature_neural_machine_translation",
+  "system": "surveygen",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Sutskever et al. ref [6] demonstrated that a multilayered LSTM sequence-to-sequence model could surpass a competitive phrase-based SMT baseline on WMT'14 English-French, while Cho et al. ref [3] introduced the RNN Encoder-Decoder framework that would become foundational to subsequent NMT research, collectively establishing the neural paradigm.",
+      "citation_markers": [
+        "[6]",
+        "[3]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Kalchbrenner and Blunsom's Recurrent Continuous Translation Models (RCTMs) ref [19] demonstrated that purely continuous, alignment-free representations could model translation probabilistically, achieving substantially lower perplexity than alignment-based systems while remaining sensitive to source word order and syntax.",
+      "citation_markers": [
+        "[19]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "A critical limitation of this paradigm—the information bottleneck imposed by the fixed-length vector—was subsequently identified ref [10], motivating the development of attention mechanisms. Empirical analysis further confirmed performance degradation on longer sentences ref [16], underscoring the necessity of architectural extensions beyond the basic encoder-decoder formulation.",
+      "citation_markers": [
+        "[10]",
+        "[16]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Sutskever et al. ref [6] demonstrated that a multilayered LSTM encoder-decoder achieved a BLEU score of 34.8 on WMT'14 English-French, surpassing phrase-based SMT baselines. Notably, reversing source sentence word order substantially improved performance by shortening temporal dependencies during optimization.",
+      "citation_markers": [
+        "[6]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The ConvS2S architecture ref [12] introduced an encoder-decoder framework built entirely on convolutional neural networks, enabling complete parallelization of computations over all input elements during training. This design yields substantially faster training compared to recurrent models, as the number of non-linearities remains fixed and independent of sequence length.",
+      "citation_markers": [
+        "[12]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Empirically, ConvS2S surpassed the deep LSTM system of Wu et al. on WMT'14 English-German and English-French benchmarks at an order of magnitude faster speed on both GPU and CPU ref [35].",
+      "citation_markers": [
+        "[35]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Bahdanau et al. introduced soft-alignment attention, enabling the decoder to dynamically attend to relevant source positions when generating each target word ref [10]. Luong et al. subsequently proposed global and local attention variants: the global approach attends to all source words, while local attention restricts focus to a subset, yielding a 5.0 BLEU improvement over non-attentional baselines ref [21].",
+      "citation_markers": [
+        "[10]",
+        "[21]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Google's GNMT system ref [17] further advanced RNN-based NMT through deep stacked LSTMs with residual connections and wordpiece segmentation.",
+      "citation_markers": [
+        "[17]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Sennrich et al. introduced the foundational approach of pairing monolingual target sentences with automatic back-translations to generate synthetic parallel data, yielding substantial BLEU improvements on WMT English-German and low-resource settings ref [57]. Subsequent work by Edunov et al. broadened understanding of back-translation at scale, demonstrating that synthetic source sentences generated via sampling or noised beam search provide stronger training signals than deterministic beam or greedy decoding ref [37].",
+      "citation_markers": [
+        "[57]",
+        "[37]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Lample et al. demonstrated that careful parameter initialization, language model denoising, and iterative back-translation yield competitive performance, achieving 28.1 BLEU on WMT'14 English-French without parallel sentences ref [31].",
+      "citation_markers": [
+        "[31]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Google's multilingual NMT system ref [32] demonstrated that a single model could translate between multiple language pairs by prepending an artificial language token to each source sentence, requiring no architectural modifications. Using a shared wordpiece vocabulary, this approach enables one-to-many, many-to-one, and many-to-many translation within a unified framework.",
+      "citation_markers": [
+        "[32]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Zoph et al. ref [45] introduced a parent-child framework wherein a parent model trained on a high-resource language pair transfers its learned parameters to initialize a child model for a low-resource pair, yielding average improvements of 5.6 BLEU points across four low-resource languages.",
+      "citation_markers": [
+        "[45]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8951,
+    "completion_tokens": 1106,
+    "total_tokens": 10057
+  }
+}

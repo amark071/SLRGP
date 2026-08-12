@@ -1,0 +1,429 @@
+{
+  "topic_id": "mature_deep_reinforcement_learning",
+  "system": "autosurvey",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The **Markov property** is the cornerstone of this framework, stipulating that the future state distribution depends only on the current state and action, and not on the history of preceding states and actions",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "1805.02785v3",
+          "source_key": "4",
+          "title": "Fast Online Exact Solutions for Deterministic MDPs with Sparse Rewards",
+          "abstract": "Markov Decision Processes (MDPs) are a mathematical framework for modeling sequential decision making under uncertainty. The classical approaches for solving MDPs are well known and have been widely studied, some of which rely on approximation techniques to solve MDPs with large state space and/or action space. However, most of these classical solution approaches and their approximation techniques still take much computation time to converge and usually must be re-computed if the reward function is changed. This paper introduces a novel alternative approach for exactly and efficiently solving deterministic, continuous MDPs with sparse reward sources. When the environment is such that the \"distance\" between states can be determined in constant time, e.g. grid world, our algorithm offers $O( |R|^2 \\times |A|^2 \\times |S|)$, where $|R|$ is the number of reward sources, $|A|$ is the number of actions, and $|S|$ is the number of states. Memory complexity for the algorithm is $O( |S| + |R| \\times |A|)$. This new approach opens new avenues for boosting computational performance for certain classes of MDPs and is of tremendous value for MDP applications such as robotics and unmanned systems. This paper describes the algorithm and presents numerical experiment results to demonstrate its powerful computational performance. We also provide rigorous mathematical description of the approach.",
+          "resolved_arxiv": {
+            "arxiv_id": "1805.02785",
+            "title": "Fast Online Exact Solutions for Deterministic MDPs with Sparse Rewards",
+            "abstract": "Markov Decision Processes (MDPs) are a mathematical framework for modeling sequential decision making under uncertainty. The classical approaches for solving MDPs are well known and have been widely studied, some of which rely on approximation techniques to solve MDPs with large state space and/or action space. However, most of these classical solution approaches and their approximation techniques still take much computation time to converge and usually must be re-computed if the reward function is changed. This paper introduces a novel alternative approach for exactly and efficiently solving deterministic, continuous MDPs with sparse reward sources. When the environment is such that the \"distance\" between states can be determined in constant time, e.g. grid world, our algorithm offers $O( |R|^2 \\times |A|^2 \\times |S|)$, where $|R|$ is the number of reward sources, $|A|$ is the number of actions, and $|S|$ is the number of states. Memory complexity for the algorithm is $O( |S| + |R| \\times |A|)$. This new approach opens new avenues for boosting computational performance for certain classes of MDPs and is of tremendous value for MDP applications such as robotics and unmanned systems. This paper describes the algorithm and presents numerical experiment results to demonstrate its powerful computational performance. We also provide rigorous mathematical description of the approach.",
+            "published": "2018-05-08T00:12:43Z",
+            "source_url": "https://arxiv.org/abs/1805.02785"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "POMDPs are notoriously difficult to solve due to the continuous and high-dimensional nature of the belief space, rendering exact computation intractable in general [13",
+      "citation_markers": [
+        "[13]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "1905.08095v1",
+          "source_key": "13",
+          "title": "Control Theory Meets POMDPs: A Hybrid Systems Approach",
+          "abstract": "Partially observable Markov decision processes (POMDPs) provide a modeling framework for a variety of sequential decision making under uncertainty scenarios in artificial intelligence (AI). Since the states are not directly observable in a POMDP, decision making has to be performed based on the output of a Bayesian filter (continuous beliefs). Hence, POMDPs are often computationally intractable to solve exactly and researchers resort to approximate methods often using discretizations of the continuous belief space. These approximate solutions are, however, prone to discretization errors, which has made POMDPs ineffective in applications, wherein guarantees for safety, optimality, or performance are required. To overcome the complexity challenge of POMDPs, we apply notions from control theory. The goal is to determine the reachable belief space of a POMDP, that is, the set of all possible evolutions given an initial belief distribution over the states and a set of actions and observations. We begin by casting the problem of analyzing a POMDP into analyzing the behavior of a discrete-time switched system. For estimating the reachable belief space, we find over-approximations in terms of sub-level sets of Lyapunov functions. Furthermore, in order to verify safety and optimality requirements of a given POMDP, we formulate a barrier certificate theorem, wherein we show that if there exists a barrier certificate satisfying a set of inequalities along with the belief update equation of the POMDP, the safety and optimality properties are guaranteed to hold. In both cases, we show how the calculations can be decomposed into smaller problems that can be solved in parallel. The conditions we formulate can be computationally implemented as a set of sum-of-squares programs. We illustrate the applicability of our method by addressing two problems in active ad scheduling and machine teaching.",
+          "resolved_arxiv": {
+            "arxiv_id": "1905.08095",
+            "title": "Control Theory Meets POMDPs: A Hybrid Systems Approach",
+            "abstract": "Partially observable Markov decision processes (POMDPs) provide a modeling framework for a variety of sequential decision making under uncertainty scenarios in artificial intelligence (AI). Since the states are not directly observable in a POMDP, decision making has to be performed based on the output of a Bayesian filter (continuous beliefs). Hence, POMDPs are often computationally intractable to solve exactly and researchers resort to approximate methods often using discretizations of the continuous belief space. These approximate solutions are, however, prone to discretization errors, which has made POMDPs ineffective in applications, wherein guarantees for safety, optimality, or performance are required. To overcome the complexity challenge of POMDPs, we apply notions from control theory. The goal is to determine the reachable belief space of a POMDP, that is, the set of all possible evolutions given an initial belief distribution over the states and a set of actions and observations. We begin by casting the problem of analyzing a POMDP into analyzing the behavior of a discrete-time switched system. For estimating the reachable belief space, we find over-approximations in terms of sub-level sets of Lyapunov functions. Furthermore, in order to verify safety and optimality requirements of a given POMDP, we formulate a barrier certificate theorem, wherein we show that if there exists a barrier certificate satisfying a set of inequalities along with the belief update equation of the POMDP, the safety and optimality properties are guaranteed to hold. In both cases, we show how the calculations can be decomposed into smaller problems that can be solved in parallel. The conditions we formulate can be computationally implemented as a set of sum-of-squares programs. We illustrate the applicability of our method by addressing two problems in active ad scheduling and machine teaching.",
+            "published": "2019-05-17T05:04:08Z",
+            "source_url": "https://arxiv.org/abs/1905.08095"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The options framework, grounded in Semi-MDP theory, allows agents to compose primitive actions into macro-actions and reason over extended time horizons, significantly reducing the effective planning depth and improving computational efficiency [21; 22",
+      "citation_markers": [
+        "[21; 22]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2011.03813v4",
+          "source_key": "21",
+          "title": "MAGIC: Learning Macro-Actions for Online POMDP Planning",
+          "abstract": "The partially observable Markov decision process (POMDP) is a principled general framework for robot decision making under uncertainty, but POMDP planning suffers from high computational complexity, when long-term planning is required. While temporally-extended macro-actions help to cut down the effective planning horizon and significantly improve computational efficiency, how do we acquire good macro-actions? This paper proposes Macro-Action Generator-Critic (MAGIC), which performs offline learning of macro-actions optimized for online POMDP planning. Specifically, MAGIC learns a macro-action generator end-to-end, using an online planner's performance as the feedback. During online planning, the generator generates on the fly situation-aware macro-actions conditioned on the robot's belief and the environment context. We evaluated MAGIC on several long-horizon planning tasks both in simulation and on a real robot. The experimental results show that the learned macro-actions offer significant benefits in online planning performance, compared with primitive actions and handcrafted macro-actions.",
+          "resolved_arxiv": {
+            "arxiv_id": "2011.03813",
+            "title": "MAGIC: Learning Macro-Actions for Online POMDP Planning",
+            "abstract": "The partially observable Markov decision process (POMDP) is a principled general framework for robot decision making under uncertainty, but POMDP planning suffers from high computational complexity, when long-term planning is required. While temporally-extended macro-actions help to cut down the effective planning horizon and significantly improve computational efficiency, how do we acquire good macro-actions? This paper proposes Macro-Action Generator-Critic (MAGIC), which performs offline learning of macro-actions optimized for online POMDP planning. Specifically, MAGIC learns a macro-action generator end-to-end, using an online planner's performance as the feedback. During online planning, the generator generates on the fly situation-aware macro-actions conditioned on the robot's belief and the environment context. We evaluated MAGIC on several long-horizon planning tasks both in simulation and on a real robot. The experimental results show that the learned macro-actions offer significant benefits in online planning performance, compared with primitive actions and handcrafted macro-actions.",
+            "published": "2020-11-07T17:18:45Z",
+            "source_url": "https://arxiv.org/abs/2011.03813"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2004.08646v2",
+          "source_key": "22",
+          "title": "Macro-Action-Based Deep Multi-Agent Reinforcement Learning",
+          "abstract": "In real-world multi-robot systems, performing high-quality, collaborative behaviors requires robots to asynchronously reason about high-level action selection at varying time durations. Macro-Action Decentralized Partially Observable Markov Decision Processes (MacDec-POMDPs) provide a general framework for asynchronous decision making under uncertainty in fully cooperative multi-agent tasks. However, multi-agent deep reinforcement learning methods have only been developed for (synchronous) primitive-action problems. This paper proposes two Deep Q-Network (DQN) based methods for learning decentralized and centralized macro-action-value functions with novel macro-action trajectory replay buffers introduced for each case. Evaluations on benchmark problems and a larger domain demonstrate the advantage of learning with macro-actions over primitive-actions and the scalability of our approaches.",
+          "resolved_arxiv": {
+            "arxiv_id": "2004.08646",
+            "title": "Macro-Action-Based Deep Multi-Agent Reinforcement Learning",
+            "abstract": "In real-world multi-robot systems, performing high-quality, collaborative behaviors requires robots to asynchronously reason about high-level action selection at varying time durations. Macro-Action Decentralized Partially Observable Markov Decision Processes (MacDec-POMDPs) provide a general framework for asynchronous decision making under uncertainty in fully cooperative multi-agent tasks. However, multi-agent deep reinforcement learning methods have only been developed for (synchronous) primitive-action problems. This paper proposes two Deep Q-Network (DQN) based methods for learning decentralized and centralized macro-action-value functions with novel macro-action trajectory replay buffers introduced for each case. Evaluations on benchmark problems and a larger domain demonstrate the advantage of learning with macro-actions over primitive-actions and the scalability of our approaches.",
+            "published": "2020-04-18T15:46:38Z",
+            "source_url": "https://arxiv.org/abs/2004.08646"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "In deep reinforcement learning, partial observability is often addressed by equipping agents with memory mechanisms such as recurrent neural networks or LSTM-based architectures that maintain a compressed history of past observations as a proxy for the belief state [17",
+      "citation_markers": [
+        "[17]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2102.12344v5",
+          "source_key": "17",
+          "title": "Memory-based Deep Reinforcement Learning for POMDPs",
+          "abstract": "A promising characteristic of Deep Reinforcement Learning (DRL) is its capability to learn optimal policy in an end-to-end manner without relying on feature engineering. However, most approaches assume a fully observable state space, i.e. fully observable Markov Decision Processes (MDPs). In real-world robotics, this assumption is unpractical, because of issues such as sensor sensitivity limitations and sensor noise, and the lack of knowledge about whether the observation design is complete or not. These scenarios lead to Partially Observable MDPs (POMDPs). In this paper, we propose Long-Short-Term-Memory-based Twin Delayed Deep Deterministic Policy Gradient (LSTM-TD3) by introducing a memory component to TD3, and compare its performance with other DRL algorithms in both MDPs and POMDPs. Our results demonstrate the significant advantages of the memory component in addressing POMDPs, including the ability to handle missing and noisy observation data.",
+          "resolved_arxiv": {
+            "arxiv_id": "2102.12344",
+            "title": "Memory-based Deep Reinforcement Learning for POMDPs",
+            "abstract": "A promising characteristic of Deep Reinforcement Learning (DRL) is its capability to learn optimal policy in an end-to-end manner without relying on feature engineering. However, most approaches assume a fully observable state space, i.e. fully observable Markov Decision Processes (MDPs). In real-world robotics, this assumption is unpractical, because of issues such as sensor sensitivity limitations and sensor noise, and the lack of knowledge about whether the observation design is complete or not. These scenarios lead to Partially Observable MDPs (POMDPs). In this paper, we propose Long-Short-Term-Memory-based Twin Delayed Deep Deterministic Policy Gradient (LSTM-TD3) by introducing a memory component to TD3, and compare its performance with other DRL algorithms in both MDPs and POMDPs. Our results demonstrate the significant advantages of the memory component in addressing POMDPs, including the ability to handle missing and noisy observation data.",
+            "published": "2021-02-24T15:25:13Z",
+            "source_url": "https://arxiv.org/abs/2102.12344"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "These nonlinear equations encode the **principle of optimality**: an optimal policy must act optimally from every state it visits, regardless of how that state was reached",
+      "citation_markers": [
+        "[33; 30]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2009.11403v2",
+          "source_key": "33",
+          "title": "CertRL: Formalizing Convergence Proofs for Value and Policy Iteration in Coq",
+          "abstract": "Reinforcement learning algorithms solve sequential decision-making problems in probabilistic environments by optimizing for long-term reward. The desire to use reinforcement learning in safety-critical settings inspires a recent line of work on formally constrained reinforcement learning; however, these methods place the implementation of the learning algorithm in their Trusted Computing Base. The crucial correctness property of these implementations is a guarantee that the learning algorithm converges to an optimal policy. This paper begins the work of closing this gap by developing a Coq formalization of two canonical reinforcement learning algorithms: value and policy iteration for finite state Markov decision processes. The central results are a formalization of Bellman's optimality principle and its proof, which uses a contraction property of Bellman optimality operator to establish that a sequence converges in the infinite horizon limit. The CertRL development exemplifies how the Giry monad and mechanized metric coinduction streamline optimality proofs for reinforcement learning algorithms. The CertRL library provides a general framework for proving properties about Markov decision processes and reinforcement learning algorithms, paving the way for further work on formalization of reinforcement learning algorithms.",
+          "resolved_arxiv": {
+            "arxiv_id": "2009.11403",
+            "title": "CertRL: Formalizing Convergence Proofs for Value and Policy Iteration in Coq",
+            "abstract": "Reinforcement learning algorithms solve sequential decision-making problems in probabilistic environments by optimizing for long-term reward. The desire to use reinforcement learning in safety-critical settings inspires a recent line of work on formally constrained reinforcement learning; however, these methods place the implementation of the learning algorithm in their Trusted Computing Base. The crucial correctness property of these implementations is a guarantee that the learning algorithm converges to an optimal policy. This paper begins the work of closing this gap by developing a Coq formalization of two canonical reinforcement learning algorithms: value and policy iteration for finite state Markov decision processes. The central results are a formalization of Bellman's optimality principle and its proof, which uses a contraction property of Bellman optimality operator to establish that a sequence converges in the infinite horizon limit. The CertRL development exemplifies how the Giry monad and mechanized metric coinduction streamline optimality proofs for reinforcement learning algorithms. The CertRL library provides a general framework for proving properties about Markov decision processes and reinforcement learning algorithms, paving the way for further work on formalization of reinforcement learning algorithms.",
+            "published": "2020-09-23T22:28:17Z",
+            "source_url": "https://arxiv.org/abs/2009.11403"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2112.05996v1",
+          "source_key": "30",
+          "title": "Formalising the Foundations of Discrete Reinforcement Learning in Isabelle/HOL",
+          "abstract": "We present a formalisation of finite Markov decision processes with rewards in the Isabelle theorem prover. We focus on the foundations required for dynamic programming and the use of reinforcement learning agents over such processes. In particular, we derive the Bellman equation from first principles (in both scalar and vector form), derive a vector calculation that produces the expected value of any policy p, and go on to prove the existence of a universally optimal policy where there is a discounting factor less than one. Lastly, we prove that the value iteration and the policy iteration algorithms work in finite time, producing an epsilon-optimal and a fully optimal policy respectively.",
+          "resolved_arxiv": {
+            "arxiv_id": "2112.05996",
+            "title": "Formalising the Foundations of Discrete Reinforcement Learning in Isabelle/HOL",
+            "abstract": "We present a formalisation of finite Markov decision processes with rewards in the Isabelle theorem prover. We focus on the foundations required for dynamic programming and the use of reinforcement learning agents over such processes. In particular, we derive the Bellman equation from first principles (in both scalar and vector form), derive a vector calculation that produces the expected value of any policy p, and go on to prove the existence of a universally optimal policy where there is a discounting factor less than one. Lastly, we prove that the value iteration and the policy iteration algorithms work in finite time, producing an epsilon-optimal and a fully optimal policy respectively.",
+            "published": "2021-12-11T14:38:36Z",
+            "source_url": "https://arxiv.org/abs/2112.05996"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "This contraction property is the foundation upon which the convergence guarantees for value-based reinforcement learning algorithms in Section 1.3 ultimately rest. Formal Coq proofs of this convergence using metric coinduction have been developed, mechanizing Bellman's optimality principle and establishing a rigorous basis for certified RL implementations [33",
+      "citation_markers": [
+        "[33]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2009.11403v2",
+          "source_key": "33",
+          "title": "CertRL: Formalizing Convergence Proofs for Value and Policy Iteration in Coq",
+          "abstract": "Reinforcement learning algorithms solve sequential decision-making problems in probabilistic environments by optimizing for long-term reward. The desire to use reinforcement learning in safety-critical settings inspires a recent line of work on formally constrained reinforcement learning; however, these methods place the implementation of the learning algorithm in their Trusted Computing Base. The crucial correctness property of these implementations is a guarantee that the learning algorithm converges to an optimal policy. This paper begins the work of closing this gap by developing a Coq formalization of two canonical reinforcement learning algorithms: value and policy iteration for finite state Markov decision processes. The central results are a formalization of Bellman's optimality principle and its proof, which uses a contraction property of Bellman optimality operator to establish that a sequence converges in the infinite horizon limit. The CertRL development exemplifies how the Giry monad and mechanized metric coinduction streamline optimality proofs for reinforcement learning algorithms. The CertRL library provides a general framework for proving properties about Markov decision processes and reinforcement learning algorithms, paving the way for further work on formalization of reinforcement learning algorithms.",
+          "resolved_arxiv": {
+            "arxiv_id": "2009.11403",
+            "title": "CertRL: Formalizing Convergence Proofs for Value and Policy Iteration in Coq",
+            "abstract": "Reinforcement learning algorithms solve sequential decision-making problems in probabilistic environments by optimizing for long-term reward. The desire to use reinforcement learning in safety-critical settings inspires a recent line of work on formally constrained reinforcement learning; however, these methods place the implementation of the learning algorithm in their Trusted Computing Base. The crucial correctness property of these implementations is a guarantee that the learning algorithm converges to an optimal policy. This paper begins the work of closing this gap by developing a Coq formalization of two canonical reinforcement learning algorithms: value and policy iteration for finite state Markov decision processes. The central results are a formalization of Bellman's optimality principle and its proof, which uses a contraction property of Bellman optimality operator to establish that a sequence converges in the infinite horizon limit. The CertRL development exemplifies how the Giry monad and mechanized metric coinduction streamline optimality proofs for reinforcement learning algorithms. The CertRL library provides a general framework for proving properties about Markov decision processes and reinforcement learning algorithms, paving the way for further work on formalization of reinforcement learning algorithms.",
+            "published": "2020-09-23T22:28:17Z",
+            "source_url": "https://arxiv.org/abs/2009.11403"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "TD learning has been extensively analyzed theoretically, with finite-time convergence bounds established under linear function approximation [52], and its global convergence to the optimal value function has been proven even with overparameterized two-layer neural networks [53; 54",
+      "citation_markers": [
+        "[52]",
+        "[53; 54]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "1806.02450v2",
+          "source_key": "52",
+          "title": "A Finite Time Analysis of Temporal Difference Learning With Linear Function Approximation",
+          "abstract": "Temporal difference learning (TD) is a simple iterative algorithm used to estimate the value function corresponding to a given policy in a Markov decision process. Although TD is one of the most widely used algorithms in reinforcement learning, its theoretical analysis has proved challenging and few guarantees on its statistical efficiency are available. In this work, we provide a simple and explicit finite time analysis of temporal difference learning with linear function approximation. Except for a few key insights, our analysis mirrors standard techniques for analyzing stochastic gradient descent algorithms, and therefore inherits the simplicity and elegance of that literature. Final sections of the paper show how all of our main results extend to the study of TD learning with eligibility traces, known as TD($λ$), and to Q-learning applied in high-dimensional optimal stopping problems.",
+          "resolved_arxiv": {
+            "arxiv_id": "1806.02450",
+            "title": "A Finite Time Analysis of Temporal Difference Learning With Linear Function Approximation",
+            "abstract": "Temporal difference learning (TD) is a simple iterative algorithm used to estimate the value function corresponding to a given policy in a Markov decision process. Although TD is one of the most widely used algorithms in reinforcement learning, its theoretical analysis has proved challenging and few guarantees on its statistical efficiency are available. In this work, we provide a simple and explicit finite time analysis of temporal difference learning with linear function approximation. Except for a few key insights, our analysis mirrors standard techniques for analyzing stochastic gradient descent algorithms, and therefore inherits the simplicity and elegance of that literature. Final sections of the paper show how all of our main results extend to the study of TD learning with eligibility traces, known as TD($λ$), and to Q-learning applied in high-dimensional optimal stopping problems.",
+            "published": "2018-06-06T22:57:08Z",
+            "source_url": "https://arxiv.org/abs/1806.02450"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "1905.10027v2",
+          "source_key": "53",
+          "title": "Neural Temporal-Difference and Q-Learning Provably Converge to Global Optima",
+          "abstract": "Temporal-difference learning (TD), coupled with neural networks, is among the most fundamental building blocks of deep reinforcement learning. However, due to the nonlinearity in value function approximation, such a coupling leads to nonconvexity and even divergence in optimization. As a result, the global convergence of neural TD remains unclear. In this paper, we prove for the first time that neural TD converges at a sublinear rate to the global optimum of the mean-squared projected Bellman error for policy evaluation. In particular, we show how such global convergence is enabled by the overparametrization of neural networks, which also plays a vital role in the empirical success of neural TD. Beyond policy evaluation, we establish the global convergence of neural (soft) Q-learning, which is further connected to that of policy gradient algorithms.",
+          "resolved_arxiv": {
+            "arxiv_id": "1905.10027",
+            "title": "Neural Temporal-Difference and Q-Learning Provably Converge to Global Optima",
+            "abstract": "Temporal-difference learning (TD), coupled with neural networks, is among the most fundamental building blocks of deep reinforcement learning. However, due to the nonlinearity in value function approximation, such a coupling leads to nonconvexity and even divergence in optimization. As a result, the global convergence of neural TD remains unclear. In this paper, we prove for the first time that neural TD converges at a sublinear rate to the global optimum of the mean-squared projected Bellman error for policy evaluation. In particular, we show how such global convergence is enabled by the overparametrization of neural networks, which also plays a vital role in the empirical success of neural TD. Beyond policy evaluation, we establish the global convergence of neural (soft) Q-learning, which is further connected to that of policy gradient algorithms.",
+            "published": "2019-05-24T04:36:42Z",
+            "source_url": "https://arxiv.org/abs/1905.10027"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2006.04761v2",
+          "source_key": "54",
+          "title": "Can Temporal-Difference and Q-Learning Learn Representation? A Mean-Field Theory",
+          "abstract": "Temporal-difference and Q-learning play a key role in deep reinforcement learning, where they are empowered by expressive nonlinear function approximators such as neural networks. At the core of their empirical successes is the learned feature representation, which embeds rich observations, e.g., images and texts, into the latent space that encodes semantic structures. Meanwhile, the evolution of such a feature representation is crucial to the convergence of temporal-difference and Q-learning. In particular, temporal-difference learning converges when the function approximator is linear in a feature representation, which is fixed throughout learning, and possibly diverges otherwise. We aim to answer the following questions: When the function approximator is a neural network, how does the associated feature representation evolve? If it converges, does it converge to the optimal one? We prove that, utilizing an overparameterized two-layer neural network, temporal-difference and Q-learning globally minimize the mean-squared projected Bellman error at a sublinear rate. Moreover, the associated feature representation converges to the optimal one, generalizing the previous analysis of Cai et al. (2019) in the neural tangent kernel regime, where the associated feature representation stabilizes at the initial one. The key to our analysis is a mean-field perspective, which connects the evolution of a finite-dimensional parameter to its limiting counterpart over an infinite-dimensional Wasserstein space. Our analysis generalizes to soft Q-learning, which is further connected to policy gradient.",
+          "resolved_arxiv": {
+            "arxiv_id": "2006.04761",
+            "title": "Can Temporal-Difference and Q-Learning Learn Representation? A Mean-Field Theory",
+            "abstract": "Temporal-difference and Q-learning play a key role in deep reinforcement learning, where they are empowered by expressive nonlinear function approximators such as neural networks. At the core of their empirical successes is the learned feature representation, which embeds rich observations, e.g., images and texts, into the latent space that encodes semantic structures. Meanwhile, the evolution of such a feature representation is crucial to the convergence of temporal-difference and Q-learning. In particular, temporal-difference learning converges when the function approximator is linear in a feature representation, which is fixed throughout learning, and possibly diverges otherwise. We aim to answer the following questions: When the function approximator is a neural network, how does the associated feature representation evolve? If it converges, does it converge to the optimal one? We prove that, utilizing an overparameterized two-layer neural network, temporal-difference and Q-learning globally minimize the mean-squared projected Bellman error at a sublinear rate. Moreover, the associated feature representation converges to the optimal one, generalizing the previous analysis of Cai et al. (2019) in the neural tangent kernel regime, where the associated feature representation stabilizes at the initial one. The key to our analysis is a mean-field perspective, which connects the evolution of a finite-dimensional parameter to its limiting counterpart over an infinite-dimensional Wasserstein space. Our analysis generalizes to soft Q-learning, which is further connected to policy gradient.",
+            "published": "2020-06-08T17:25:22Z",
+            "source_url": "https://arxiv.org/abs/2006.04761"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Unlike SARSA, Q-learning uses the greedy action at the next state in its update target, regardless of the action actually taken by the behavioral policy",
+      "citation_markers": [
+        "[62]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2112.04325v2",
+          "source_key": "62",
+          "title": "A PTAS for the Min-Max Euclidean Multiple TSP",
+          "abstract": "We present a polynomial-time approximation scheme (PTAS) for the min-max multiple TSP problem in Euclidean space, where multiple traveling salesmen are tasked with visiting a set of $n$ points and the objective is to minimize the maximum tour length. For an arbitrary $\\varepsilon > 0$, our PTAS achieves a $(1 + \\varepsilon)$-approximation in time $O \\big(n ((1/\\varepsilon) \\log (n/\\varepsilon))^{O(1/\\varepsilon)} \\big)$. Our approach extends Sanjeev Arora's dynamic-programming (DP) PTAS for the Euclidean TSP (https://doi.org/10.1145/290179.290180). Our algorithm introduces a rounding process to balance the allocation of path lengths among the multiple salesman. We analyze the accumulation of error in the DP to prove that the solution is a $(1 + \\varepsilon)$-approximation.",
+          "resolved_arxiv": {
+            "arxiv_id": "2112.04325",
+            "title": "A PTAS for the Min-Max Euclidean Multiple TSP",
+            "abstract": "We present a polynomial-time approximation scheme (PTAS) for the min-max multiple TSP problem in Euclidean space, where multiple traveling salesmen are tasked with visiting a set of $n$ points and the objective is to minimize the maximum tour length. For an arbitrary $\\varepsilon > 0$, our PTAS achieves a $(1 + \\varepsilon)$-approximation in time $O \\big(n ((1/\\varepsilon) \\log (n/\\varepsilon))^{O(1/\\varepsilon)} \\big)$. Our approach extends Sanjeev Arora's dynamic-programming (DP) PTAS for the Euclidean TSP (https://doi.org/10.1145/290179.290180). Our algorithm introduces a rounding process to balance the allocation of path lengths among the multiple salesman. We analyze the accumulation of error in the DP to prove that the solution is a $(1 + \\varepsilon)$-approximation.",
+            "published": "2021-12-08T15:11:09Z",
+            "source_url": "https://arxiv.org/abs/2112.04325"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The policy gradient theorem establishes that",
+      "citation_markers": [
+        "[75; 76]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2401.13662v2",
+          "source_key": "75",
+          "title": "The Definitive Guide to Policy Gradients in Deep Reinforcement Learning: Theory, Algorithms and Implementations",
+          "abstract": "In recent years, various powerful policy gradient algorithms have been proposed in deep reinforcement learning. While all these algorithms build on the Policy Gradient Theorem, the specific design choices differ significantly across algorithms. We provide a holistic overview of on-policy policy gradient algorithms to facilitate the understanding of both their theoretical foundations and their practical implementations. In this overview, we include a detailed proof of the continuous version of the Policy Gradient Theorem, convergence results and a comprehensive discussion of practical algorithms. We compare the most prominent algorithms on continuous control environments and provide insights on the benefits of regularization. All code is available at https://github.com/Matt00n/PolicyGradientsJax.",
+          "resolved_arxiv": {
+            "arxiv_id": "2401.13662",
+            "title": "The Definitive Guide to Policy Gradients in Deep Reinforcement Learning: Theory, Algorithms and Implementations",
+            "abstract": "In recent years, various powerful policy gradient algorithms have been proposed in deep reinforcement learning. While all these algorithms build on the Policy Gradient Theorem, the specific design choices differ significantly across algorithms. We provide a holistic overview of on-policy policy gradient algorithms to facilitate the understanding of both their theoretical foundations and their practical implementations. In this overview, we include a detailed proof of the continuous version of the Policy Gradient Theorem, convergence results and a comprehensive discussion of practical algorithms. We compare the most prominent algorithms on continuous control environments and provide insights on the benefits of regularization. All code is available at https://github.com/Matt00n/PolicyGradientsJax.",
+            "published": "2024-01-24T18:56:53Z",
+            "source_url": "https://arxiv.org/abs/2401.13662"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "1911.04817v1",
+          "source_key": "76",
+          "title": "On Policy Gradients",
+          "abstract": "The goal of policy gradient approaches is to find a policy in a given class of policies which maximizes the expected return. Given a differentiable model of the policy, we want to apply a gradient-ascent technique to reach a local optimum. We mainly use gradient ascent, because it is theoretically well researched. The main issue is that the policy gradient with respect to the expected return is not available, thus we need to estimate it. As policy gradient algorithms also tend to require on-policy data for the gradient estimate, their biggest weakness is sample efficiency. For this reason, most research is focused on finding algorithms with improved sample efficiency. This paper provides a formal introduction to policy gradient that shows the development of policy gradient approaches, and should enable the reader to follow current research on the topic.",
+          "resolved_arxiv": {
+            "arxiv_id": "1911.04817",
+            "title": "On Policy Gradients",
+            "abstract": "The goal of policy gradient approaches is to find a policy in a given class of policies which maximizes the expected return. Given a differentiable model of the policy, we want to apply a gradient-ascent technique to reach a local optimum. We mainly use gradient ascent, because it is theoretically well researched. The main issue is that the policy gradient with respect to the expected return is not available, thus we need to estimate it. As policy gradient algorithms also tend to require on-policy data for the gradient estimate, their biggest weakness is sample efficiency. For this reason, most research is focused on finding algorithms with improved sample efficiency. This paper provides a formal introduction to policy gradient that shows the development of policy gradient approaches, and should enable the reader to follow current research on the topic.",
+            "published": "2019-11-12T12:28:29Z",
+            "source_url": "https://arxiv.org/abs/1911.04817"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "deep learning instantiation is **Proximal Policy Optimization (PPO)**, which belongs to a broader family of algorithms including Trust Region Policy Optimization (TRPO) and Asynchronous Advantage Actor-Critic (A3C/A2C), all of which constrain or regularize the magnitude of policy updates to maintain stability. These algorithms are discussed in greater depth in later sections, but their connection to the policy gradient theorem is direct: they all instantiate the gradient ascent idea while adding safeguards against destructively large parameter updates [75; 84",
+      "citation_markers": [
+        "[75; 84]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2401.13662v2",
+          "source_key": "75",
+          "title": "The Definitive Guide to Policy Gradients in Deep Reinforcement Learning: Theory, Algorithms and Implementations",
+          "abstract": "In recent years, various powerful policy gradient algorithms have been proposed in deep reinforcement learning. While all these algorithms build on the Policy Gradient Theorem, the specific design choices differ significantly across algorithms. We provide a holistic overview of on-policy policy gradient algorithms to facilitate the understanding of both their theoretical foundations and their practical implementations. In this overview, we include a detailed proof of the continuous version of the Policy Gradient Theorem, convergence results and a comprehensive discussion of practical algorithms. We compare the most prominent algorithms on continuous control environments and provide insights on the benefits of regularization. All code is available at https://github.com/Matt00n/PolicyGradientsJax.",
+          "resolved_arxiv": {
+            "arxiv_id": "2401.13662",
+            "title": "The Definitive Guide to Policy Gradients in Deep Reinforcement Learning: Theory, Algorithms and Implementations",
+            "abstract": "In recent years, various powerful policy gradient algorithms have been proposed in deep reinforcement learning. While all these algorithms build on the Policy Gradient Theorem, the specific design choices differ significantly across algorithms. We provide a holistic overview of on-policy policy gradient algorithms to facilitate the understanding of both their theoretical foundations and their practical implementations. In this overview, we include a detailed proof of the continuous version of the Policy Gradient Theorem, convergence results and a comprehensive discussion of practical algorithms. We compare the most prominent algorithms on continuous control environments and provide insights on the benefits of regularization. All code is available at https://github.com/Matt00n/PolicyGradientsJax.",
+            "published": "2024-01-24T18:56:53Z",
+            "source_url": "https://arxiv.org/abs/2401.13662"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2206.08499v1",
+          "source_key": "84",
+          "title": "A Parametric Class of Approximate Gradient Updates for Policy Optimization",
+          "abstract": "Approaches to policy optimization have been motivated from diverse principles, based on how the parametric model is interpreted (e.g. value versus policy representation) or how the learning objective is formulated, yet they share a common goal of maximizing expected return. To better capture the commonalities and identify key differences between policy optimization methods, we develop a unified perspective that re-expresses the underlying updates in terms of a limited choice of gradient form and scaling function. In particular, we identify a parameterized space of approximate gradient updates for policy optimization that is highly structured, yet covers both classical and recent examples, including PPO. As a result, we obtain novel yet well motivated updates that generalize existing algorithms in a way that can deliver benefits both in terms of convergence speed and final result quality. An experimental investigation demonstrates that the additional degrees of freedom provided in the parameterized family of updates can be leveraged to obtain non-trivial improvements both in synthetic domains and on popular deep RL benchmarks.",
+          "resolved_arxiv": {
+            "arxiv_id": "2206.08499",
+            "title": "A Parametric Class of Approximate Gradient Updates for Policy Optimization",
+            "abstract": "Approaches to policy optimization have been motivated from diverse principles, based on how the parametric model is interpreted (e.g. value versus policy representation) or how the learning objective is formulated, yet they share a common goal of maximizing expected return. To better capture the commonalities and identify key differences between policy optimization methods, we develop a unified perspective that re-expresses the underlying updates in terms of a limited choice of gradient form and scaling function. In particular, we identify a parameterized space of approximate gradient updates for policy optimization that is highly structured, yet covers both classical and recent examples, including PPO. As a result, we obtain novel yet well motivated updates that generalize existing algorithms in a way that can deliver benefits both in terms of convergence speed and final result quality. An experimental investigation demonstrates that the additional degrees of freedom provided in the parameterized family of updates can be leveraged to obtain non-trivial improvements both in synthetic domains and on popular deep RL benchmarks.",
+            "published": "2022-06-17T01:28:38Z",
+            "source_url": "https://arxiv.org/abs/2206.08499"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "The choice of neural architecture also has profound implications for computational efficiency and deployability. Asymmetric architectures that switch between computationally expensive and lightweight policies have been proposed to reduce inference costs without sacrificing performance, addressing the practical constraint that mobile and embedded platforms cannot sustain high-energy DNN inference [136",
+      "citation_markers": [
+        "[136]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2105.14471v1",
+          "source_key": "136",
+          "title": "Reducing the Deployment-Time Inference Control Costs of Deep Reinforcement Learning Agents via an Asymmetric Architecture",
+          "abstract": "Deep reinforcement learning (DRL) has been demonstrated to provide promising results in several challenging decision making and control tasks. However, the required inference costs of deep neural networks (DNNs) could prevent DRL from being applied to mobile robots which cannot afford high energy-consuming computations. To enable DRL methods to be affordable in such energy-limited platforms, we propose an asymmetric architecture that reduces the overall inference costs via switching between a computationally expensive policy and an economic one. The experimental results evaluated on a number of representative benchmark suites for robotic control tasks demonstrate that our method is able to reduce the inference costs while retaining the agent's overall performance.",
+          "resolved_arxiv": {
+            "arxiv_id": "2105.14471",
+            "title": "Reducing the Deployment-Time Inference Control Costs of Deep Reinforcement Learning Agents via an Asymmetric Architecture",
+            "abstract": "Deep reinforcement learning (DRL) has been demonstrated to provide promising results in several challenging decision making and control tasks. However, the required inference costs of deep neural networks (DNNs) could prevent DRL from being applied to mobile robots which cannot afford high energy-consuming computations. To enable DRL methods to be affordable in such energy-limited platforms, we propose an asymmetric architecture that reduces the overall inference costs via switching between a computationally expensive policy and an economic one. The experimental results evaluated on a number of representative benchmark suites for robotic control tasks demonstrate that our method is able to reduce the inference costs while retaining the agent's overall performance.",
+            "published": "2021-05-30T09:14:39Z",
+            "source_url": "https://arxiv.org/abs/2105.14471"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "58].\n\n### SARSA\n\nSARSA (State-Action-Reward-State-Action) is an on-policy TD control algorithm that learns the action-value function $Q(s,a)$ for the policy being followed by the agent",
+      "citation_markers": [
+        "[59; 60]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "1711.01569v1",
+          "source_key": "59",
+          "title": "Double Q($σ$) and Q($σ, λ$): Unifying Reinforcement Learning Control Algorithms",
+          "abstract": "Temporal-difference (TD) learning is an important field in reinforcement learning. Sarsa and Q-Learning are among the most used TD algorithms. The Q($σ$) algorithm (Sutton and Barto (2017)) unifies both. This paper extends the Q($σ$) algorithm to an online multi-step algorithm Q($σ, λ$) using eligibility traces and introduces Double Q($σ$) as the extension of Q($σ$) to double learning. Experiments suggest that the new Q($σ, λ$) algorithm can outperform the classical TD control methods Sarsa($λ$), Q($λ$) and Q($σ$).",
+          "resolved_arxiv": {
+            "arxiv_id": "1711.01569",
+            "title": "Double Q($σ$) and Q($σ, λ$): Unifying Reinforcement Learning Control Algorithms",
+            "abstract": "Temporal-difference (TD) learning is an important field in reinforcement learning. Sarsa and Q-Learning are among the most used TD algorithms. The Q($σ$) algorithm (Sutton and Barto (2017)) unifies both. This paper extends the Q($σ$) algorithm to an online multi-step algorithm Q($σ, λ$) using eligibility traces and introduces Double Q($σ$) as the extension of Q($σ$) to double learning. Experiments suggest that the new Q($σ, λ$) algorithm can outperform the classical TD control methods Sarsa($λ$), Q($λ$) and Q($σ$).",
+            "published": "2017-11-05T12:05:31Z",
+            "source_url": "https://arxiv.org/abs/1711.01569"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "1909.02877v1",
+          "source_key": "60",
+          "title": "Gradient Q$(σ, λ)$: A Unified Algorithm with Function Approximation for Reinforcement Learning",
+          "abstract": "Full-sampling (e.g., Q-learning) and pure-expectation (e.g., Expected Sarsa) algorithms are efficient and frequently used techniques in reinforcement learning. Q$(σ,λ)$ is the first approach unifies them with eligibility trace through the sampling degree $σ$. However, it is limited to the tabular case, for large-scale learning, the Q$(σ,λ)$ is too expensive to require a huge volume of tables to accurately storage value functions. To address above problem, we propose a GQ$(σ,λ)$ that extends tabular Q$(σ,λ)$ with linear function approximation. We prove the convergence of GQ$(σ,λ)$. Empirical results on some standard domains show that GQ$(σ,λ)$ with a combination of full-sampling with pure-expectation reach a better performance than full-sampling and pure-expectation methods.",
+          "resolved_arxiv": {
+            "arxiv_id": "1909.02877",
+            "title": "Gradient Q$(σ, λ)$: A Unified Algorithm with Function Approximation for Reinforcement Learning",
+            "abstract": "Full-sampling (e.g., Q-learning) and pure-expectation (e.g., Expected Sarsa) algorithms are efficient and frequently used techniques in reinforcement learning. Q$(σ,λ)$ is the first approach unifies them with eligibility trace through the sampling degree $σ$. However, it is limited to the tabular case, for large-scale learning, the Q$(σ,λ)$ is too expensive to require a huge volume of tables to accurately storage value functions. To address above problem, we propose a GQ$(σ,λ)$ that extends tabular Q$(σ,λ)$ with linear function approximation. We prove the convergence of GQ$(σ,λ)$. Empirical results on some standard domains show that GQ$(σ,λ)$ with a combination of full-sampling with pure-expectation reach a better performance than full-sampling and pure-expectation methods.",
+            "published": "2019-09-06T12:54:03Z",
+            "source_url": "https://arxiv.org/abs/1909.02877"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "topic_id": "cross_medical_image_analysis",
+  "system": "surveygen",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Medical imaging is indispensable in modern clinical workflows, enabling non-invasive diagnosis, prognosis, and treatment planning across diverse specialties [ref 51].",
+      "citation_markers": [
+        "[ref 51]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Medical image analysis based on deep learning approach",
+          "doi": "10.1007/s11042-021-10707-4",
+          "abstract": "Medical imaging plays a significant role in different clinical applications such as medical procedures used for early detection, monitoring, diagnosis, and treatment evaluation of various medical conditions. Basicsof the principles and implementations of artificial neural networks and deep learning are essential for understanding medical image analysis in computer vision. Deep Learning Approach (DLA) in medical image analysis emerges as a fast-growing research field. DLA has been widely used in medical imaging to detect the presence or absence of the disease. This paper presents the development of artificial neural networks, comprehensive analysis of DLA, which delivers promising medical imaging applications. Most of the DLA implementations concentrate on the X-ray images, computerized tomography, mammography images, and digital histopathology images. It provides a systematic review of the articles for classification, detection, and segmentation of medical images based on DLA. This review guides the researchers to think of appropriate changes in medical image analysis based on DLA.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.909416675567627",
+          "composite_score": "0.5954216455081132",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The exponential growth of imaging data has created an urgent demand for automated analysis tools, as manual interpretation is time-consuming and subject to inter-observer variability [ref 17].",
+      "citation_markers": [
+        "[ref 17]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Deep Learning Attention Mechanism in Medical Image Analysis: Basics and Beyonds",
+          "doi": "10.53941/ijndi0201006",
+          "abstract": "Survey/review study\nDeep Learning Attention Mechanism in Medical Image Analysis: Basics and Beyonds\n\nXiang Li 1, Minglei Li 1, Pengfei Yan 1, Guanyi Li 1, Yuchen Jiang 1, Hao Luo 1,*, and Shen Yin 2\n\n\n1 Department of Control Science and Engineering, Harbin Institute of Technology, Harbin 150001, China\n2 Department of Mechanical and Industrial Engineering, Faculty of Engineering, Norwegian University of Science and Technology, Trondheim 7034, Norway\n* Correspondence: hao.luo@hit.edu.cn\n \n \nReceived: 16 October 2022\nAccepted: 25 November 2022\nPublished: \n \n\nAbstract: With the improvement of hardware computing power and the development of deep learning algorithms, a revolution of \"artificial intelligence (AI) + medical image\" is taking place. Benefiting from diversified modern medical measurement equipment, a large number of medical images will be produced in the clinical process. These images improve the diagnostic accuracy of doctors, but also increase the labor burden of doctors. Deep learning technology is expected to realize an auxiliary diagnosis and improve diagnostic efficiency. At present, the method of deep learning technology combined with attention mechanism is a research hotspot and has achieved state-of-the-art results in many medical image tasks. This paper reviews the deep learning attention methods in medical image analysis. A comprehensive literature survey is first conducted to analyze the keywords and literature. Then, we introduce the development and technical characteristics of the attention mechanism. For its application in medical image analysis, we summarize the related methods in medical image classification, segmentation, detection, and enhancement. The remaining challenges, potential solutions, and future research directions are also discussed.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8976152539253235",
+          "composite_score": "0.6557154671012213",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The advent of deep learning, particularly convolutional neural networks, fundamentally transformed this paradigm by enabling hierarchical, data-driven feature extraction directly from raw images ref [30].",
+      "citation_markers": [
+        "ref [30]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Medical Image Analysis using Deep Convolutional Neural Networks: CNN Architectures and Transfer Learning",
+          "doi": "10.1109/ICICT48043.2020.9112469",
+          "abstract": "Over the past two decades, computer-aided detection or diagnosis (CAD) has been a fruitful area of research. Medical imaging technology can provide the radiologists and physicians with a more efficient diagnosis and treatment process through the medical image analysis. However, data analysis has slowly become a challenging task with the manual advancement of science and technology in the modern CAD systems. This problem can be successfully solved with the assistance of Deep Learning Methods, particularly convolutional neural networks (CNNs) for procedures such as breast cancer treatment, lung nodule detection and prostate cancer localization.Important progress has been made in image recognition, mainly due to the availability of large-scale annotated datasets and the revival of deeply convolutional neural networks (CNNs). CNNs may help to enable highly representative, data-driven, layered hierarchical image features to be learned from sufficient training data. CNNs can help enable highly representative, data-driven, layered hierarchical image features to be learned with sufficient training data. The three main strategies that successfully employ CNNs for medical image classification are currently training the CNN from scratch, using pre-trained CNN features off - theshelf and undertaking unattended pre-training with supervised fine tuning.An effective way to do this is by transfer learning, i.e. fine-tuning (supervised) pre-trained CNN models from the natural image dataset to medical image tasks (although the domain between two medical image datasets can also be transferred). Training is difficult if we are to train from scratch a profoundly convolutional neural network (CNN), because it requires a lot of labeled training data and a lot of experience to ensure proper convergence. To do this better, we can fine-tune a pre-trained CNN using, for example, a large set of natural images marked out.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9023275375366211",
+          "composite_score": "0.6316402670136961",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "This transition was further accelerated by increased computational power and large annotated datasets, establishing deep learning as the dominant methodology in contemporary medical image analysis ref [7].",
+      "citation_markers": [
+        "ref [7]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Deep Learning in Medical Image Analysis",
+          "doi": "10.3390/jimaging7040074",
+          "abstract": "Over recent years, deep learning (DL) has established itself as a powerful tool across a broad spectrum of domains in imaging-e [...].",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.887376070022583",
+          "composite_score": "0.7080277686359677",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "High dimensionality of volumetric data imposes substantial computational demands ref [32]. Distribution shifts across scanners and institutions hinder generalizability ref [53].",
+      "citation_markers": [
+        "ref [32]",
+        "ref [53]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Deep medical image analysis with representation learning and neuromorphic computing",
+          "doi": "10.1098/rsfs.2019.0122",
+          "abstract": "Deep learning is increasingly used in medical imaging, improving many steps of the processing chain, from acquisition to segmentation and anomaly detection to outcome prediction. Yet significant challenges remain: (i) image-based diagnosis depends on the spatial relationships between local patterns, something convolution and pooling often do not capture adequately; (ii) data augmentation, the de facto method for learning three-dimensional pose invariance, requires exponentially many points to achieve robust improvement; (iii) labelled medical images are much less abundant than unlabelled ones, especially for heterogeneous pathological cases; and (iv) scanning technologies such as magnetic resonance imaging can be slow and costly, generally without online learning abilities to focus on regions of clinical interest. To address these challenges, novel algorithmic and hardware approaches are needed for deep learning to reach its full potential in medical imaging.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9049057364463806",
+          "composite_score": "0.6184681704809055",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Domain Generalization for Medical Image Analysis: A Review",
+          "doi": "10.1109/JPROC.2024.3507831",
+          "abstract": "Medical image analysis (MedIA) has become an essential tool in medicine and healthcare, aiding in disease diagnosis, prognosis, and treatment planning, and recent successes in deep learning (DL) have made significant contributions to its advances. However, deploying DL models for MedIA in real-world situations remains challenging due to their failure to generalize across the distributional gap between training and testing samples—a problem known as domain shift. Researchers have dedicated their efforts to developing various DL methods to adapt and perform robustly on unknown and out-of-distribution (OOD) data distributions. This article comprehensively reviews domain generalization (DG) studies specifically tailored for MedIA. We provide a holistic view of how DG techniques interact within the broader MedIA system, going beyond methodologies to consider the operational implications on the entire MedIA workflow. Specifically, we categorize DG methods into data-level, feature-level, model-level, and analysis-level methods. We show how those methods can be used in various stages of the MedIA workflow with DL equipped from data acquisition to model prediction and analysis. Furthermore, we critically analyze the strengths and weaknesses of various methods, unveiling future research opportunities.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9104864001274109",
+          "composite_score": "0.589956390243427",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The U-Net architecture, characterized by its symmetric encoder-decoder structure with skip connections, has become the dominant framework for medical image segmentation ref [22].",
+      "citation_markers": [
+        "ref [22]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Deep Learning for Medical Image Segmentation",
+          "doi": "10.4018/978-1-7998-5071-7.CH002",
+          "abstract": "Pixel accurate 2-D, 3-D medical image segmentation to identify abnormalities for further analysis is on high demand for computer-aided medical imaging applications. Various segmentation algorithms have been studied and applied in medical imaging for many years, but the problem remains challenging due to growing a large number of variety of applications starting from lung disease diagnosis based on x-ray images, nucleus detection, and segmentation based on microscopic pictures to kidney tumour segmentation. The recent innovation in deep learning brought revolutionary advances in computer vision. Image segmentation is one such area where deep learning shows its capacity and improves the performance by a larger margin than its successor. This chapter overviews the most popular deep learning-based image segmentation techniques and discusses their capabilities and basic advantages and limitations in the domain of medical imaging.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8991343379020691",
+          "composite_score": "0.6479544209277223",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Vision Transformers (ViT) address the locality limitations of CNNs by modeling long-range dependencies through self-attention mechanisms, proving advantageous for capturing global context in medical images ref [1].",
+      "citation_markers": [
+        "ref [1]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Deep Learning and Vision Transformer for Medical Image Analysis",
+          "doi": "10.3390/jimaging9070147",
+          "abstract": "Artificial intelligence (AI) refers to the field of computer science theory and technology [...].",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8677791357040405",
+          "composite_score": "0.8081491012505554",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Generative Adversarial Networks (GANs) have emerged as powerful tools in medical image analysis, enabling realistic image synthesis, data augmentation, and cross-modality translation to address data scarcity ref [31].",
+      "citation_markers": [
+        "ref [31]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Overview of Machine Learning: Part 2: Deep Learning for Medical Image Analysis.",
+          "doi": "10.1016/j.nic.2020.06.003",
+          "abstract": "Deep learning has contributed to solving complex problems in science and engineering. This article provides the fundamental background required to understand and develop deep learning models for medical imaging applications. The authors review the main deep learning architectures such as multilayer perceptron, convolutional neural networks, autoencoders, recurrent neural networks, and generative adversarial neural networks. They also discuss the strategies for training deep learning models when the available datasets are imbalanced or of limited size and conclude with a discussion of the obstacles and challenges hindering the deployment of deep learning solutions in clinical settings.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9026474356651306",
+          "composite_score": "0.6300058977594715",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Deep learning has substantially advanced medical image enhancement and reconstruction, addressing limitations inherent to acquisition hardware. Convolutional networks enable end-to-end perceptual enhancement encompassing contrast correction, luminance adjustment, denoising, and artifact removal, demonstrating improvements of 5–7 dB in PSNR over conventional methods ref [34].",
+      "citation_markers": [
+        "ref [34]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Deep Perceptual Enhancement for Medical Image Analysis",
+          "doi": "10.1109/JBHI.2022.3168604",
+          "abstract": "Due to numerous hardware shortcomings, medical image acquisition devices are susceptible to producing low-quality (i.e., low contrast, inappropriate brightness, noisy, etc.) images. Regrettably, perceptually degraded images directly impact the diagnosis process and make the decision-making manoeuvre of medical practitioners notably complicated. This study proposes to enhance such low-quality images by incorporating end-to-end learning strategies for accelerating medical image analysis tasks. To the best concern, this is the first work in medical imaging which comprehensively tackles perceptual enhancement, including contrast correction, luminance correction, denoising, etc., with a fully convolutional deep network. The proposed network leverages residual blocks and a residual gating mechanism for diminishing visual artefacts and is guided by a multi-term objective function to perceive the perceptually plausible enhanced images. The practicability of the deep medical image enhancement method has been extensively investigated with sophisticated experiments. The experimental outcomes illustrate that the proposed method could outperform the existing enhancement methods for different medical image modalities by 5.00 to 7.00 dB in peak signal-to-noise ratio (PSNR) metrics and 4.00 to 6.00 in DeltaE metrics. Additionally, the proposed method can drastically improve the medical image analysis tasks’ performance and reveal the potentiality of such an enhancement method in real-world applications.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9059603810310364",
+          "composite_score": "0.6130799592671452",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "A comprehensive review by ref [45] categorizes deep learning-based deformable registration methods into deep iterative, supervised, unsupervised, and weakly supervised approaches, demonstrating significant performance improvements over classical optimization methods.",
+      "citation_markers": [
+        "ref [45]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "A review of deep learning-based deformable medical image registration",
+          "doi": "10.3389/fonc.2022.1047215",
+          "abstract": "The alignment of images through deformable image registration is vital to clinical applications (e.g., atlas creation, image fusion, and tumor targeting in image-guided navigation systems) and is still a challenging problem. Recent progress in the field of deep learning has significantly advanced the performance of medical image registration. In this review, we present a comprehensive survey on deep learning-based deformable medical image registration methods. These methods are classified into five categories: Deep Iterative Methods, Supervised Methods, Unsupervised Methods, Weakly Supervised Methods, and Latest Methods. A detailed review of each category is provided with discussions about contributions, tasks, and inadequacies. We also provide statistical analysis for the selected papers from the point of view of image modality, the region of interest (ROI), evaluation metrics, and method categories. In addition, we summarize 33 publicly available datasets that are used for benchmarking the registration algorithms. Finally, the remaining challenges, future directions, and potential trends are discussed in our review.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9084877371788025",
+          "composite_score": "0.6001676199495314",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Medical imaging presents multiple uncertainty sources, including aleatoric uncertainty from measurement noise and epistemic uncertainty from limited training data ref [50]. Methods include Bayesian approaches, Monte Carlo dropout, and ensemble-based uncertainty estimation ref [50].",
+      "citation_markers": [
+        "ref [50]",
+        "ref [50]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Trustworthy clinical AI solutions: a unified review of uncertainty quantification in deep learning models for medical image analysis",
+          "doi": "10.48550/arXiv.2210.03736",
+          "abstract": "The full acceptance of Deep Learning (DL) models in the clinical field is rather low with respect to the quantity of high-performing solutions reported in the literature. End users are particularly reluctant to rely on the opaque predictions of DL models. Uncertainty quantification methods have been proposed in the literature as a potential solution, to reduce the black-box effect of DL models and increase the interpretability and the acceptability of the result by the final user. In this review, we propose an overview of the existing methods to quantify uncertainty associated with DL predictions. We focus on applications to medical image analysis, which present specific challenges due to the high dimensionality of images and their variable quality, as well as constraints associated with real-world clinical routine. Moreover, we discuss the concept of structural uncertainty, a corpus of methods to facilitate the alignment of segmentation uncertainty estimates with clinical attention. We then discuss the evaluation protocols to validate the relevance of uncertainty estimates. Finally, we highlight the open challenges for uncertainty quantification in the medical field.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9093049764633179",
+          "composite_score": "0.5959923196244569",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2210.03736",
+            "title": "Trustworthy clinical AI solutions: a unified review of uncertainty quantification in deep learning models for medical image analysis",
+            "abstract": "The full acceptance of Deep Learning (DL) models in the clinical field is rather low with respect to the quantity of high-performing solutions reported in the literature. Particularly, end users are reluctant to rely on the rough predictions of DL models. Uncertainty quantification methods have been proposed in the literature as a potential response to reduce the rough decision provided by the DL black box and thus increase the interpretability and the acceptability of the result by the final user. In this review, we propose an overview of the existing methods to quantify uncertainty associated to DL predictions. We focus on applications to medical image analysis, which present specific challenges due to the high dimensionality of images and their quality variability, as well as constraints associated to real-life clinical routine. We then discuss the evaluation protocols to validate the relevance of uncertainty estimates. Finally, we highlight the open challenges of uncertainty quantification in the medical field.",
+            "published": "2022-10-05T07:01:06Z",
+            "source_url": "https://arxiv.org/abs/2210.03736"
+          },
+          "source_accessible": true
+        },
+        {
+          "title": "Trustworthy clinical AI solutions: a unified review of uncertainty quantification in deep learning models for medical image analysis",
+          "doi": "10.48550/arXiv.2210.03736",
+          "abstract": "The full acceptance of Deep Learning (DL) models in the clinical field is rather low with respect to the quantity of high-performing solutions reported in the literature. End users are particularly reluctant to rely on the opaque predictions of DL models. Uncertainty quantification methods have been proposed in the literature as a potential solution, to reduce the black-box effect of DL models and increase the interpretability and the acceptability of the result by the final user. In this review, we propose an overview of the existing methods to quantify uncertainty associated with DL predictions. We focus on applications to medical image analysis, which present specific challenges due to the high dimensionality of images and their variable quality, as well as constraints associated with real-world clinical routine. Moreover, we discuss the concept of structural uncertainty, a corpus of methods to facilitate the alignment of segmentation uncertainty estimates with clinical attention. We then discuss the evaluation protocols to validate the relevance of uncertainty estimates. Finally, we highlight the open challenges for uncertainty quantification in the medical field.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9093049764633179",
+          "composite_score": "0.5959923196244569",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2210.03736",
+            "title": "Trustworthy clinical AI solutions: a unified review of uncertainty quantification in deep learning models for medical image analysis",
+            "abstract": "The full acceptance of Deep Learning (DL) models in the clinical field is rather low with respect to the quantity of high-performing solutions reported in the literature. Particularly, end users are reluctant to rely on the rough predictions of DL models. Uncertainty quantification methods have been proposed in the literature as a potential response to reduce the rough decision provided by the DL black box and thus increase the interpretability and the acceptability of the result by the final user. In this review, we propose an overview of the existing methods to quantify uncertainty associated to DL predictions. We focus on applications to medical image analysis, which present specific challenges due to the high dimensionality of images and their quality variability, as well as constraints associated to real-life clinical routine. We then discuss the evaluation protocols to validate the relevance of uncertainty estimates. Finally, we highlight the open challenges of uncertainty quantification in the medical field.",
+            "published": "2022-10-05T07:01:06Z",
+            "source_url": "https://arxiv.org/abs/2210.03736"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Clinical validation must demonstrate not only technical accuracy but also real-world utility, safety, and generalizability across diverse patient populations and institutional settings ref [18]. Human-AI collaboration frameworks are essential, wherein models augment rather than replace clinical judgment ref [59].",
+      "citation_markers": [
+        "ref [18]",
+        "ref [59]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Deep learning models in medical image analysis.",
+          "doi": "10.1016/j.job.2022.03.003",
+          "abstract": "BACKGROUND\nDeep learning is a state-of-the-art technology that has rapidly become the method of choice for medical image analysis. Its fast and robust object detection, segmentation, tracking, and classification of pathophysiological anatomical structures can support medical practitioners during routine clinical workflow. Thus, deep learning-based applications for diseases diagnosis will empower physicians and allow fast decision-making in clinical practice.\n\n\nHIGHLIGHT\nDeep learning can be more robust with various features for differentiating classes, provided the training set is large and diverse for analysis. However, sufficient medical images for training sets are not always available from medical institutions, which is one of the major limitations of deep learning in medical image analysis. This review article presents some solutions for this issue and discusses efforts needed to develop robust deep learning-based computer-aided diagnosis applications for better clinical workflow in endoscopy, radiology, pathology, and dentistry.\n\n\nCONCLUSION\nThe introduction of deep learning-based applications will enhance the traditional role of medical practitioners in ensuring accurate diagnoses and treatment in terms of precision, reproducibility, and scalability.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.897832989692688",
+          "composite_score": "0.6546030484528734",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Deep learning in medical image analysis: a third eye for doctors.",
+          "doi": "10.1016/j.jormas.2019.06.002",
+          "abstract": "Aim & Scope: Artificial intelligence (AI) in medicine is a fast-growing field. The rise of deep learning algorithms, such as convolutional neural networks (CNNs), offers fascinating perspectives for the automation of medical image analysis. In this systematic review article, we screened the current literature and investigated the following question: 'Can deep learning algorithms for image recognition improve visual diagnosis in medicine?'\n\n\nMATERIALS & METHODS\nWe provide a systematic review of the articles using CNNs for medical image analysis, published in the medical literature before May 2019. Articles were screened based on the following items: type of image analysis approach (detection or classification), algorithm architecture, dataset used, training phase, test, comparison method (with specialists or other), results (accuracy, sensibility and specificity) and conclusion.\n\n\nRESULTS\nWe identified 352 articles in the PubMed database and excluded 327 items for which performance was not assessed (review articles) or for which tasks other than detection or classification, such as segmentation, were assessed. The 25 papers included were published from 2013 to 2019 and were related to a vast array of medical specialties. Authors were mostly from North America and Asia. Large amounts of qualitative medical images were necessary to train the CNNs, often resulting from international collaboration. The most common CNNs such as as AlexNet and GoogleNet, designed for the analysis of natural images, proved their applicability to medical images.\n\n\nCONCLUSION\nCNNs are not replacement solutions for medical doctors, but will contribute to optimize routine tasks and thus have a potential positive impact on our practice. Specialties with a strong visual component such as radiology and pathology will be deeply transformed. Medical practitioners, including surgeons, have a key role to play in the development and implementation of such devices.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9120481014251709",
+          "composite_score": "0.5819776108825289",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

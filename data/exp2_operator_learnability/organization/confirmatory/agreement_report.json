@@ -1,0 +1,1573 @@
+{
+  "n_nodes": 14332,
+  "facet": {
+    "n": 14332,
+    "agreement": 0.718183086798772,
+    "cohen_kappa": 0.6328547840900113,
+    "pass1_distribution": {
+      "topic": 5175,
+      "object": 2444,
+      "method": 3253,
+      "application_task": 1956,
+      "theory": 391,
+      "level": 235,
+      "controversy": 124,
+      "other": 754
+    },
+    "pass2_distribution": {
+      "topic": 5143,
+      "object": 2348,
+      "method": 3258,
+      "theory": 391,
+      "application_task": 2019,
+      "level": 249,
+      "other": 812,
+      "controversy": 112
+    },
+    "top_disagreements": [
+      {
+        "pass1": "object",
+        "pass2": "topic",
+        "n": 449
+      },
+      {
+        "pass1": "topic",
+        "pass2": "object",
+        "n": 425
+      },
+      {
+        "pass1": "topic",
+        "pass2": "application_task",
+        "n": 296
+      },
+      {
+        "pass1": "application_task",
+        "pass2": "topic",
+        "n": 274
+      },
+      {
+        "pass1": "topic",
+        "pass2": "other",
+        "n": 251
+      },
+      {
+        "pass1": "other",
+        "pass2": "topic",
+        "n": 227
+      },
+      {
+        "pass1": "topic",
+        "pass2": "method",
+        "n": 197
+      },
+      {
+        "pass1": "method",
+        "pass2": "topic",
+        "n": 188
+      },
+      {
+        "pass1": "method",
+        "pass2": "application_task",
+        "n": 173
+      },
+      {
+        "pass1": "application_task",
+        "pass2": "method",
+        "n": 170
+      },
+      {
+        "pass1": "object",
+        "pass2": "application_task",
+        "n": 148
+      },
+      {
+        "pass1": "object",
+        "pass2": "method",
+        "n": 124
+      }
+    ]
+  },
+  "relation": {
+    "n": 14332,
+    "agreement": 0.6274769746022886,
+    "cohen_kappa": 0.48755593503090505,
+    "pass1_distribution": {
+      "enumerative_none": 4941,
+      "general_to_specific": 5263,
+      "simple_to_complex": 1084,
+      "foundational_to_applied": 1588,
+      "consensus_to_controversy": 175,
+      "other": 832,
+      "chronological": 449
+    },
+    "pass2_distribution": {
+      "enumerative_none": 4834,
+      "general_to_specific": 5203,
+      "simple_to_complex": 1080,
+      "foundational_to_applied": 1647,
+      "other": 962,
+      "chronological": 455,
+      "consensus_to_controversy": 151
+    },
+    "top_disagreements": [
+      {
+        "pass1": "general_to_specific",
+        "pass2": "enumerative_none",
+        "n": 834
+      },
+      {
+        "pass1": "enumerative_none",
+        "pass2": "general_to_specific",
+        "n": 828
+      },
+      {
+        "pass1": "foundational_to_applied",
+        "pass2": "general_to_specific",
+        "n": 392
+      },
+      {
+        "pass1": "general_to_specific",
+        "pass2": "foundational_to_applied",
+        "n": 391
+      },
+      {
+        "pass1": "enumerative_none",
+        "pass2": "other",
+        "n": 361
+      },
+      {
+        "pass1": "other",
+        "pass2": "enumerative_none",
+        "n": 273
+      },
+      {
+        "pass1": "general_to_specific",
+        "pass2": "other",
+        "n": 237
+      },
+      {
+        "pass1": "general_to_specific",
+        "pass2": "simple_to_complex",
+        "n": 223
+      },
+      {
+        "pass1": "simple_to_complex",
+        "pass2": "general_to_specific",
+        "n": 210
+      },
+      {
+        "pass1": "other",
+        "pass2": "general_to_specific",
+        "n": 196
+      },
+      {
+        "pass1": "simple_to_complex",
+        "pass2": "enumerative_none",
+        "n": 155
+      },
+      {
+        "pass1": "enumerative_none",
+        "pass2": "simple_to_complex",
+        "n": 136
+      }
+    ]
+  },
+  "by_depth": {
+    "0": {
+      "facet": {
+        "n": 2221,
+        "agreement": 0.7991895542548402,
+        "cohen_kappa": 0.5463182549736787,
+        "pass1_distribution": {
+          "topic": 1612,
+          "object": 47,
+          "method": 75,
+          "application_task": 119,
+          "theory": 21,
+          "level": 13,
+          "other": 330,
+          "controversy": 4
+        },
+        "pass2_distribution": {
+          "topic": 1627,
+          "method": 70,
+          "application_task": 112,
+          "object": 53,
+          "theory": 26,
+          "other": 318,
+          "level": 12,
+          "controversy": 3
+        },
+        "top_disagreements": [
+          {
+            "pass1": "other",
+            "pass2": "topic",
+            "n": 111
+          },
+          {
+            "pass1": "topic",
+            "pass2": "other",
+            "n": 99
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "topic",
+            "n": 51
+          },
+          {
+            "pass1": "topic",
+            "pass2": "application_task",
+            "n": 44
+          },
+          {
+            "pass1": "topic",
+            "pass2": "object",
+            "n": 20
+          },
+          {
+            "pass1": "object",
+            "pass2": "topic",
+            "n": 19
+          },
+          {
+            "pass1": "topic",
+            "pass2": "method",
+            "n": 13
+          },
+          {
+            "pass1": "method",
+            "pass2": "topic",
+            "n": 12
+          },
+          {
+            "pass1": "topic",
+            "pass2": "theory",
+            "n": 9
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "other",
+            "n": 8
+          },
+          {
+            "pass1": "other",
+            "pass2": "application_task",
+            "n": 8
+          },
+          {
+            "pass1": "theory",
+            "pass2": "topic",
+            "n": 7
+          }
+        ]
+      },
+      "relation": {
+        "n": 2221,
+        "agreement": 0.629896443043674,
+        "cohen_kappa": 0.4271421116890606,
+        "pass1_distribution": {
+          "enumerative_none": 690,
+          "general_to_specific": 1107,
+          "foundational_to_applied": 180,
+          "other": 144,
+          "chronological": 90,
+          "simple_to_complex": 6,
+          "consensus_to_controversy": 4
+        },
+        "pass2_distribution": {
+          "enumerative_none": 677,
+          "general_to_specific": 1096,
+          "foundational_to_applied": 176,
+          "other": 184,
+          "chronological": 81,
+          "simple_to_complex": 4,
+          "consensus_to_controversy": 3
+        },
+        "top_disagreements": [
+          {
+            "pass1": "enumerative_none",
+            "pass2": "general_to_specific",
+            "n": 164
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "enumerative_none",
+            "n": 163
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "foundational_to_applied",
+            "n": 67
+          },
+          {
+            "pass1": "foundational_to_applied",
+            "pass2": "general_to_specific",
+            "n": 66
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "other",
+            "n": 65
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "other",
+            "n": 64
+          },
+          {
+            "pass1": "other",
+            "pass2": "general_to_specific",
+            "n": 48
+          },
+          {
+            "pass1": "other",
+            "pass2": "enumerative_none",
+            "n": 47
+          },
+          {
+            "pass1": "foundational_to_applied",
+            "pass2": "enumerative_none",
+            "n": 19
+          },
+          {
+            "pass1": "chronological",
+            "pass2": "enumerative_none",
+            "n": 16
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "chronological",
+            "n": 15
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "foundational_to_applied",
+            "n": 13
+          }
+        ]
+      }
+    },
+    "1": {
+      "facet": {
+        "n": 7834,
+        "agreement": 0.7002808271636456,
+        "cohen_kappa": 0.6135190401979672,
+        "pass1_distribution": {
+          "object": 1358,
+          "method": 1852,
+          "topic": 2638,
+          "application_task": 1191,
+          "theory": 264,
+          "controversy": 74,
+          "other": 324,
+          "level": 133
+        },
+        "pass2_distribution": {
+          "object": 1302,
+          "method": 1871,
+          "topic": 2608,
+          "application_task": 1221,
+          "theory": 257,
+          "level": 143,
+          "other": 365,
+          "controversy": 67
+        },
+        "top_disagreements": [
+          {
+            "pass1": "object",
+            "pass2": "topic",
+            "n": 277
+          },
+          {
+            "pass1": "topic",
+            "pass2": "object",
+            "n": 258
+          },
+          {
+            "pass1": "topic",
+            "pass2": "application_task",
+            "n": 178
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "topic",
+            "n": 164
+          },
+          {
+            "pass1": "topic",
+            "pass2": "method",
+            "n": 130
+          },
+          {
+            "pass1": "method",
+            "pass2": "topic",
+            "n": 122
+          },
+          {
+            "pass1": "topic",
+            "pass2": "other",
+            "n": 117
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "method",
+            "n": 112
+          },
+          {
+            "pass1": "method",
+            "pass2": "application_task",
+            "n": 94
+          },
+          {
+            "pass1": "other",
+            "pass2": "topic",
+            "n": 94
+          },
+          {
+            "pass1": "object",
+            "pass2": "application_task",
+            "n": 92
+          },
+          {
+            "pass1": "method",
+            "pass2": "object",
+            "n": 72
+          }
+        ]
+      },
+      "relation": {
+        "n": 7834,
+        "agreement": 0.6312228746489661,
+        "cohen_kappa": 0.4955814281891037,
+        "pass1_distribution": {
+          "enumerative_none": 2646,
+          "general_to_specific": 2852,
+          "foundational_to_applied": 1007,
+          "simple_to_complex": 535,
+          "consensus_to_controversy": 100,
+          "other": 444,
+          "chronological": 250
+        },
+        "pass2_distribution": {
+          "enumerative_none": 2552,
+          "general_to_specific": 2845,
+          "foundational_to_applied": 1044,
+          "simple_to_complex": 532,
+          "other": 508,
+          "chronological": 266,
+          "consensus_to_controversy": 87
+        },
+        "top_disagreements": [
+          {
+            "pass1": "enumerative_none",
+            "pass2": "general_to_specific",
+            "n": 446
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "enumerative_none",
+            "n": 421
+          },
+          {
+            "pass1": "foundational_to_applied",
+            "pass2": "general_to_specific",
+            "n": 240
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "foundational_to_applied",
+            "n": 240
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "other",
+            "n": 193
+          },
+          {
+            "pass1": "other",
+            "pass2": "enumerative_none",
+            "n": 147
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "simple_to_complex",
+            "n": 129
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "other",
+            "n": 118
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "general_to_specific",
+            "n": 110
+          },
+          {
+            "pass1": "other",
+            "pass2": "general_to_specific",
+            "n": 105
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "foundational_to_applied",
+            "n": 73
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "enumerative_none",
+            "n": 70
+          }
+        ]
+      }
+    },
+    "2": {
+      "facet": {
+        "n": 4277,
+        "agreement": 0.7089081131634323,
+        "cohen_kappa": 0.6249291573589215,
+        "pass1_distribution": {
+          "object": 1039,
+          "topic": 925,
+          "application_task": 646,
+          "method": 1326,
+          "level": 89,
+          "theory": 106,
+          "controversy": 46,
+          "other": 100
+        },
+        "pass2_distribution": {
+          "object": 993,
+          "theory": 108,
+          "application_task": 686,
+          "topic": 908,
+          "method": 1317,
+          "other": 129,
+          "level": 94,
+          "controversy": 42
+        },
+        "top_disagreements": [
+          {
+            "pass1": "object",
+            "pass2": "topic",
+            "n": 153
+          },
+          {
+            "pass1": "topic",
+            "pass2": "object",
+            "n": 147
+          },
+          {
+            "pass1": "method",
+            "pass2": "application_task",
+            "n": 74
+          },
+          {
+            "pass1": "topic",
+            "pass2": "application_task",
+            "n": 74
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "topic",
+            "n": 59
+          },
+          {
+            "pass1": "object",
+            "pass2": "application_task",
+            "n": 56
+          },
+          {
+            "pass1": "object",
+            "pass2": "method",
+            "n": 55
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "method",
+            "n": 54
+          },
+          {
+            "pass1": "topic",
+            "pass2": "method",
+            "n": 54
+          },
+          {
+            "pass1": "method",
+            "pass2": "topic",
+            "n": 54
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "object",
+            "n": 46
+          },
+          {
+            "pass1": "method",
+            "pass2": "object",
+            "n": 44
+          }
+        ]
+      },
+      "relation": {
+        "n": 4277,
+        "agreement": 0.6193593640402151,
+        "cohen_kappa": 0.48508192373958153,
+        "pass1_distribution": {
+          "enumerative_none": 1605,
+          "simple_to_complex": 543,
+          "foundational_to_applied": 401,
+          "general_to_specific": 1304,
+          "consensus_to_controversy": 71,
+          "other": 244,
+          "chronological": 109
+        },
+        "pass2_distribution": {
+          "enumerative_none": 1605,
+          "simple_to_complex": 544,
+          "foundational_to_applied": 427,
+          "general_to_specific": 1262,
+          "other": 270,
+          "chronological": 108,
+          "consensus_to_controversy": 61
+        },
+        "top_disagreements": [
+          {
+            "pass1": "general_to_specific",
+            "pass2": "enumerative_none",
+            "n": 250
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "general_to_specific",
+            "n": 218
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "other",
+            "n": 104
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "general_to_specific",
+            "n": 97
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "simple_to_complex",
+            "n": 94
+          },
+          {
+            "pass1": "foundational_to_applied",
+            "pass2": "general_to_specific",
+            "n": 86
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "enumerative_none",
+            "n": 85
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "foundational_to_applied",
+            "n": 84
+          },
+          {
+            "pass1": "other",
+            "pass2": "enumerative_none",
+            "n": 79
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "simple_to_complex",
+            "n": 71
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "other",
+            "n": 54
+          },
+          {
+            "pass1": "foundational_to_applied",
+            "pass2": "simple_to_complex",
+            "n": 50
+          }
+        ]
+      }
+    }
+  },
+  "by_review_length_bucket": {
+    "long": {
+      "facet": {
+        "n": 7969,
+        "agreement": 0.7107541724181202,
+        "cohen_kappa": 0.6271399437381262,
+        "pass1_distribution": {
+          "topic": 2721,
+          "object": 1426,
+          "application_task": 1196,
+          "method": 1808,
+          "theory": 213,
+          "level": 160,
+          "other": 373,
+          "controversy": 72
+        },
+        "pass2_distribution": {
+          "topic": 2659,
+          "object": 1426,
+          "theory": 230,
+          "application_task": 1217,
+          "method": 1821,
+          "other": 392,
+          "level": 150,
+          "controversy": 74
+        },
+        "top_disagreements": [
+          {
+            "pass1": "topic",
+            "pass2": "object",
+            "n": 264
+          },
+          {
+            "pass1": "object",
+            "pass2": "topic",
+            "n": 250
+          },
+          {
+            "pass1": "topic",
+            "pass2": "application_task",
+            "n": 165
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "topic",
+            "n": 151
+          },
+          {
+            "pass1": "topic",
+            "pass2": "other",
+            "n": 128
+          },
+          {
+            "pass1": "other",
+            "pass2": "topic",
+            "n": 119
+          },
+          {
+            "pass1": "topic",
+            "pass2": "method",
+            "n": 114
+          },
+          {
+            "pass1": "method",
+            "pass2": "application_task",
+            "n": 109
+          },
+          {
+            "pass1": "method",
+            "pass2": "topic",
+            "n": 104
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "method",
+            "n": 104
+          },
+          {
+            "pass1": "object",
+            "pass2": "application_task",
+            "n": 83
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "object",
+            "n": 75
+          }
+        ]
+      },
+      "relation": {
+        "n": 7969,
+        "agreement": 0.6357133893838625,
+        "cohen_kappa": 0.4958604410324149,
+        "pass1_distribution": {
+          "enumerative_none": 2850,
+          "general_to_specific": 2880,
+          "simple_to_complex": 586,
+          "foundational_to_applied": 867,
+          "consensus_to_controversy": 97,
+          "other": 446,
+          "chronological": 243
+        },
+        "pass2_distribution": {
+          "enumerative_none": 2839,
+          "general_to_specific": 2822,
+          "simple_to_complex": 588,
+          "foundational_to_applied": 868,
+          "other": 528,
+          "chronological": 235,
+          "consensus_to_controversy": 89
+        },
+        "top_disagreements": [
+          {
+            "pass1": "general_to_specific",
+            "pass2": "enumerative_none",
+            "n": 486
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "general_to_specific",
+            "n": 438
+          },
+          {
+            "pass1": "foundational_to_applied",
+            "pass2": "general_to_specific",
+            "n": 216
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "other",
+            "n": 213
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "foundational_to_applied",
+            "n": 196
+          },
+          {
+            "pass1": "other",
+            "pass2": "enumerative_none",
+            "n": 153
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "other",
+            "n": 127
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "general_to_specific",
+            "n": 118
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "simple_to_complex",
+            "n": 115
+          },
+          {
+            "pass1": "other",
+            "pass2": "general_to_specific",
+            "n": 105
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "enumerative_none",
+            "n": 100
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "simple_to_complex",
+            "n": 78
+          }
+        ]
+      }
+    },
+    "medium": {
+      "facet": {
+        "n": 4158,
+        "agreement": 0.7260702260702261,
+        "cohen_kappa": 0.6386337774984086,
+        "pass1_distribution": {
+          "topic": 1546,
+          "object": 701,
+          "application_task": 493,
+          "method": 986,
+          "theory": 127,
+          "level": 51,
+          "other": 219,
+          "controversy": 35
+        },
+        "pass2_distribution": {
+          "topic": 1579,
+          "object": 639,
+          "method": 978,
+          "application_task": 524,
+          "theory": 102,
+          "other": 249,
+          "level": 63,
+          "controversy": 24
+        },
+        "top_disagreements": [
+          {
+            "pass1": "object",
+            "pass2": "topic",
+            "n": 129
+          },
+          {
+            "pass1": "topic",
+            "pass2": "object",
+            "n": 97
+          },
+          {
+            "pass1": "topic",
+            "pass2": "application_task",
+            "n": 81
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "topic",
+            "n": 78
+          },
+          {
+            "pass1": "topic",
+            "pass2": "other",
+            "n": 75
+          },
+          {
+            "pass1": "other",
+            "pass2": "topic",
+            "n": 64
+          },
+          {
+            "pass1": "topic",
+            "pass2": "method",
+            "n": 60
+          },
+          {
+            "pass1": "method",
+            "pass2": "topic",
+            "n": 56
+          },
+          {
+            "pass1": "object",
+            "pass2": "application_task",
+            "n": 49
+          },
+          {
+            "pass1": "method",
+            "pass2": "application_task",
+            "n": 46
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "method",
+            "n": 45
+          },
+          {
+            "pass1": "method",
+            "pass2": "object",
+            "n": 43
+          }
+        ]
+      },
+      "relation": {
+        "n": 4158,
+        "agreement": 0.6168831168831169,
+        "cohen_kappa": 0.47845828485319825,
+        "pass1_distribution": {
+          "general_to_specific": 1506,
+          "foundational_to_applied": 472,
+          "enumerative_none": 1401,
+          "simple_to_complex": 331,
+          "other": 269,
+          "chronological": 128,
+          "consensus_to_controversy": 51
+        },
+        "pass2_distribution": {
+          "foundational_to_applied": 521,
+          "general_to_specific": 1514,
+          "enumerative_none": 1326,
+          "simple_to_complex": 323,
+          "other": 289,
+          "chronological": 142,
+          "consensus_to_controversy": 43
+        },
+        "top_disagreements": [
+          {
+            "pass1": "enumerative_none",
+            "pass2": "general_to_specific",
+            "n": 273
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "enumerative_none",
+            "n": 223
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "foundational_to_applied",
+            "n": 133
+          },
+          {
+            "pass1": "foundational_to_applied",
+            "pass2": "general_to_specific",
+            "n": 111
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "other",
+            "n": 93
+          },
+          {
+            "pass1": "other",
+            "pass2": "enumerative_none",
+            "n": 85
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "simple_to_complex",
+            "n": 74
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "other",
+            "n": 68
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "general_to_specific",
+            "n": 59
+          },
+          {
+            "pass1": "other",
+            "pass2": "general_to_specific",
+            "n": 55
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "foundational_to_applied",
+            "n": 40
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "foundational_to_applied",
+            "n": 38
+          }
+        ]
+      }
+    },
+    "short": {
+      "facet": {
+        "n": 2205,
+        "agreement": 0.7301587301587301,
+        "cohen_kappa": 0.6389577016577991,
+        "pass1_distribution": {
+          "topic": 908,
+          "object": 317,
+          "method": 459,
+          "application_task": 267,
+          "controversy": 17,
+          "theory": 51,
+          "level": 24,
+          "other": 162
+        },
+        "pass2_distribution": {
+          "topic": 905,
+          "object": 283,
+          "method": 459,
+          "application_task": 278,
+          "level": 36,
+          "theory": 59,
+          "other": 171,
+          "controversy": 14
+        },
+        "top_disagreements": [
+          {
+            "pass1": "object",
+            "pass2": "topic",
+            "n": 70
+          },
+          {
+            "pass1": "topic",
+            "pass2": "object",
+            "n": 64
+          },
+          {
+            "pass1": "topic",
+            "pass2": "application_task",
+            "n": 50
+          },
+          {
+            "pass1": "topic",
+            "pass2": "other",
+            "n": 48
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "topic",
+            "n": 45
+          },
+          {
+            "pass1": "other",
+            "pass2": "topic",
+            "n": 44
+          },
+          {
+            "pass1": "method",
+            "pass2": "topic",
+            "n": 28
+          },
+          {
+            "pass1": "topic",
+            "pass2": "method",
+            "n": 23
+          },
+          {
+            "pass1": "object",
+            "pass2": "method",
+            "n": 23
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "method",
+            "n": 21
+          },
+          {
+            "pass1": "method",
+            "pass2": "application_task",
+            "n": 18
+          },
+          {
+            "pass1": "object",
+            "pass2": "application_task",
+            "n": 16
+          }
+        ]
+      },
+      "relation": {
+        "n": 2205,
+        "agreement": 0.617687074829932,
+        "cohen_kappa": 0.47253129869249094,
+        "pass1_distribution": {
+          "enumerative_none": 690,
+          "general_to_specific": 877,
+          "foundational_to_applied": 249,
+          "simple_to_complex": 167,
+          "other": 117,
+          "consensus_to_controversy": 27,
+          "chronological": 78
+        },
+        "pass2_distribution": {
+          "enumerative_none": 669,
+          "general_to_specific": 867,
+          "foundational_to_applied": 258,
+          "other": 145,
+          "consensus_to_controversy": 19,
+          "simple_to_complex": 169,
+          "chronological": 78
+        },
+        "top_disagreements": [
+          {
+            "pass1": "general_to_specific",
+            "pass2": "enumerative_none",
+            "n": 125
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "general_to_specific",
+            "n": 117
+          },
+          {
+            "pass1": "foundational_to_applied",
+            "pass2": "general_to_specific",
+            "n": 65
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "foundational_to_applied",
+            "n": 62
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "other",
+            "n": 55
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "other",
+            "n": 42
+          },
+          {
+            "pass1": "other",
+            "pass2": "general_to_specific",
+            "n": 36
+          },
+          {
+            "pass1": "other",
+            "pass2": "enumerative_none",
+            "n": 35
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "simple_to_complex",
+            "n": 34
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "general_to_specific",
+            "n": 33
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "simple_to_complex",
+            "n": 25
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "enumerative_none",
+            "n": 21
+          }
+        ]
+      }
+    }
+  },
+  "by_split": {
+    "heldout": {
+      "facet": {
+        "n": 2881,
+        "agreement": 0.7157237070461645,
+        "cohen_kappa": 0.6309833431496344,
+        "pass1_distribution": {
+          "topic": 1021,
+          "object": 510,
+          "application_task": 419,
+          "method": 613,
+          "theory": 92,
+          "level": 41,
+          "other": 156,
+          "controversy": 29
+        },
+        "pass2_distribution": {
+          "topic": 1048,
+          "object": 457,
+          "theory": 81,
+          "application_task": 431,
+          "method": 631,
+          "other": 164,
+          "level": 44,
+          "controversy": 25
+        },
+        "top_disagreements": [
+          {
+            "pass1": "object",
+            "pass2": "topic",
+            "n": 99
+          },
+          {
+            "pass1": "topic",
+            "pass2": "object",
+            "n": 69
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "topic",
+            "n": 60
+          },
+          {
+            "pass1": "topic",
+            "pass2": "application_task",
+            "n": 60
+          },
+          {
+            "pass1": "topic",
+            "pass2": "other",
+            "n": 58
+          },
+          {
+            "pass1": "other",
+            "pass2": "topic",
+            "n": 51
+          },
+          {
+            "pass1": "method",
+            "pass2": "topic",
+            "n": 40
+          },
+          {
+            "pass1": "topic",
+            "pass2": "method",
+            "n": 38
+          },
+          {
+            "pass1": "object",
+            "pass2": "application_task",
+            "n": 37
+          },
+          {
+            "pass1": "method",
+            "pass2": "application_task",
+            "n": 35
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "method",
+            "n": 34
+          },
+          {
+            "pass1": "topic",
+            "pass2": "theory",
+            "n": 26
+          }
+        ]
+      },
+      "relation": {
+        "n": 2881,
+        "agreement": 0.6469975702880945,
+        "cohen_kappa": 0.5149785885368843,
+        "pass1_distribution": {
+          "enumerative_none": 966,
+          "general_to_specific": 1072,
+          "simple_to_complex": 242,
+          "foundational_to_applied": 337,
+          "chronological": 74,
+          "consensus_to_controversy": 34,
+          "other": 156
+        },
+        "pass2_distribution": {
+          "enumerative_none": 911,
+          "general_to_specific": 1095,
+          "simple_to_complex": 217,
+          "foundational_to_applied": 342,
+          "chronological": 92,
+          "other": 190,
+          "consensus_to_controversy": 34
+        },
+        "top_disagreements": [
+          {
+            "pass1": "enumerative_none",
+            "pass2": "general_to_specific",
+            "n": 171
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "enumerative_none",
+            "n": 142
+          },
+          {
+            "pass1": "foundational_to_applied",
+            "pass2": "general_to_specific",
+            "n": 85
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "foundational_to_applied",
+            "n": 81
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "other",
+            "n": 76
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "simple_to_complex",
+            "n": 48
+          },
+          {
+            "pass1": "other",
+            "pass2": "enumerative_none",
+            "n": 47
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "general_to_specific",
+            "n": 45
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "other",
+            "n": 44
+          },
+          {
+            "pass1": "other",
+            "pass2": "general_to_specific",
+            "n": 38
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "enumerative_none",
+            "n": 33
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "foundational_to_applied",
+            "n": 20
+          }
+        ]
+      }
+    },
+    "train": {
+      "facet": {
+        "n": 11451,
+        "agreement": 0.7188018513666928,
+        "cohen_kappa": 0.6333067577127642,
+        "pass1_distribution": {
+          "topic": 4154,
+          "object": 1934,
+          "method": 2640,
+          "application_task": 1537,
+          "theory": 299,
+          "level": 194,
+          "controversy": 95,
+          "other": 598
+        },
+        "pass2_distribution": {
+          "topic": 4095,
+          "object": 1891,
+          "method": 2627,
+          "application_task": 1588,
+          "theory": 310,
+          "level": 205,
+          "other": 648,
+          "controversy": 87
+        },
+        "top_disagreements": [
+          {
+            "pass1": "topic",
+            "pass2": "object",
+            "n": 356
+          },
+          {
+            "pass1": "object",
+            "pass2": "topic",
+            "n": 350
+          },
+          {
+            "pass1": "topic",
+            "pass2": "application_task",
+            "n": 236
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "topic",
+            "n": 214
+          },
+          {
+            "pass1": "topic",
+            "pass2": "other",
+            "n": 193
+          },
+          {
+            "pass1": "other",
+            "pass2": "topic",
+            "n": 176
+          },
+          {
+            "pass1": "topic",
+            "pass2": "method",
+            "n": 159
+          },
+          {
+            "pass1": "method",
+            "pass2": "topic",
+            "n": 148
+          },
+          {
+            "pass1": "method",
+            "pass2": "application_task",
+            "n": 138
+          },
+          {
+            "pass1": "application_task",
+            "pass2": "method",
+            "n": 136
+          },
+          {
+            "pass1": "object",
+            "pass2": "application_task",
+            "n": 111
+          },
+          {
+            "pass1": "method",
+            "pass2": "object",
+            "n": 101
+          }
+        ]
+      },
+      "relation": {
+        "n": 11451,
+        "agreement": 0.622565714784735,
+        "cohen_kappa": 0.48057700351296134,
+        "pass1_distribution": {
+          "enumerative_none": 3975,
+          "general_to_specific": 4191,
+          "foundational_to_applied": 1251,
+          "simple_to_complex": 842,
+          "consensus_to_controversy": 141,
+          "other": 676,
+          "chronological": 375
+        },
+        "pass2_distribution": {
+          "enumerative_none": 3923,
+          "general_to_specific": 4108,
+          "foundational_to_applied": 1305,
+          "simple_to_complex": 863,
+          "other": 772,
+          "consensus_to_controversy": 117,
+          "chronological": 363
+        },
+        "top_disagreements": [
+          {
+            "pass1": "general_to_specific",
+            "pass2": "enumerative_none",
+            "n": 692
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "general_to_specific",
+            "n": 657
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "foundational_to_applied",
+            "n": 310
+          },
+          {
+            "pass1": "foundational_to_applied",
+            "pass2": "general_to_specific",
+            "n": 307
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "other",
+            "n": 285
+          },
+          {
+            "pass1": "other",
+            "pass2": "enumerative_none",
+            "n": 226
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "other",
+            "n": 193
+          },
+          {
+            "pass1": "general_to_specific",
+            "pass2": "simple_to_complex",
+            "n": 175
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "general_to_specific",
+            "n": 165
+          },
+          {
+            "pass1": "other",
+            "pass2": "general_to_specific",
+            "n": 158
+          },
+          {
+            "pass1": "simple_to_complex",
+            "pass2": "enumerative_none",
+            "n": 122
+          },
+          {
+            "pass1": "enumerative_none",
+            "pass2": "simple_to_complex",
+            "n": 117
+          }
+        ]
+      }
+    }
+  }
+}

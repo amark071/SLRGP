@@ -1,0 +1,48 @@
+{
+  "arm": "v_unguarded_stress",
+  "bundle_hash": "07d8da1cd903d6186eb3514014ce44604e49d94175edd7e6e1f47a5a74f1821f",
+  "descend_events": [],
+  "solve_events": [],
+  "backtrack_events": [],
+  "leaf_writes": [
+    {
+      "node_path": "root/0",
+      "seed": "Graph Neural Networks — Injected invalid unbalanced organization",
+      "candidate_ids": [
+        "arxiv_2004.03519",
+        "ss_477785",
+        "arxiv_2007.10467",
+        "arxiv_1903.02541",
+        "arxiv_2002.05287",
+        "arxiv_1906.02174",
+        "arxiv_1605.05273",
+        "arxiv_2102.02026"
+      ],
+      "written_citation_ids": [
+        "arxiv_2004.03519",
+        "arxiv_2007.10467",
+        "arxiv_1903.02541",
+        "arxiv_2002.05287",
+        "arxiv_1906.02174",
+        "arxiv_1605.05273",
+        "arxiv_2102.02026"
+      ],
+      "word_count": 791
+    }
+  ],
+  "validation_events": [
+    {
+      "stage": "injected_stress",
+      "kappa": {
+        "min_total": true,
+        "min_groups": false,
+        "balance": true
+      },
+      "valid": false
+    },
+    {
+      "stage": "unguarded_continue",
+      "action": "write_invalid_grouping"
+    }
+  ]
+}

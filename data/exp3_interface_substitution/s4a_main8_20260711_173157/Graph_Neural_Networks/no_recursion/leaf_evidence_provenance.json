@@ -1,0 +1,464 @@
+{
+  "arxiv_1605.05273": {
+    "doc_id": "arxiv_1605.05273",
+    "title": "Learning Convolutional Neural Networks for Graphs",
+    "year": 2016,
+    "venue": "cs.LG",
+    "abstract": "Numerous important problems can be framed as learning from graph data. We propose a framework for learning convolutional neural networks for arbitrary graphs. These graphs may be undirected, directed, and with both discrete and continuous node and edge attributes. Analogous to image-based convolutional networks that operate on locally connected regions of the input, we present a general approach to extracting locally connected regions from graphs. Using established benchmark data sets, we demonstrate that the learned feature representations are competitive with state of the art graph kernels and that their computation is highly efficient."
+  },
+  "arxiv_1609.02907": {
+    "doc_id": "arxiv_1609.02907",
+    "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+    "year": 2017,
+    "venue": "cs.LG",
+    "abstract": "We present a scalable approach for semi-supervised learning on graph-structured data that is based on an efficient variant of convolutional neural networks which operate directly on graphs. We motivate the choice of our convolutional architecture via a localized first-order approximation of spectral graph convolutions. Our model scales linearly in the number of graph edges and learns hidden layer representations that encode both local graph structure and features of nodes. In a number of experiments on citation networks and on a knowledge graph dataset we demonstrate that our approach outperforms related methods by a significant margin."
+  },
+  "arxiv_1708.02218": {
+    "doc_id": "arxiv_1708.02218",
+    "title": "Graph Classification with 2D Convolutional Neural Networks",
+    "year": 2019,
+    "venue": "cs.CV",
+    "abstract": "Graph learning is currently dominated by graph kernels, which, while powerful, suffer some significant limitations. Convolutional Neural Networks (CNNs) offer a very appealing alternative, but processing graphs with CNNs is not trivial. To address this challenge, many sophisticated extensions of CNNs have recently been introduced. In this paper, we reverse the problem: rather than proposing yet another graph CNN model, we introduce a novel way to represent graphs as multi-channel image-like structures that allows them to be handled by vanilla 2D CNNs. Experiments reveal that our method is more accurate than state-of-the-art graph kernels and graph CNNs on 4 out of 6 real-world datasets (with and without continuous node attributes), and close elsewhere. Our approach is also preferable to graph kernels in terms of time complexity. Code and data are publicly available."
+  },
+  "arxiv_1710.10370": {
+    "doc_id": "arxiv_1710.10370",
+    "title": "Topology Adaptive Graph Convolutional Networks",
+    "year": 2018,
+    "venue": "cs.LG",
+    "abstract": "Spectral graph convolutional neural networks (CNNs) require approximation to the convolution to alleviate the computational complexity, resulting in performance loss. This paper proposes the topology adaptive graph convolutional network (TAGCN), a novel graph convolutional network defined in the vertex domain. We provide a systematic way to design a set of fixed-size learnable filters to perform convolutions on graphs. The topologies of these filters are adaptive to the topology of the graph when they scan the graph to perform convolution. The TAGCN not only inherits the properties of convolutions in CNN for grid-structured data, but it is also consistent with convolution as defined in graph signal processing. Since no approximation to the convolution is needed, TAGCN exhibits better performance than existing spectral CNNs on a number of data sets and is also computationally simpler than other recent methods."
+  },
+  "arxiv_1712.03563": {
+    "doc_id": "arxiv_1712.03563",
+    "title": "DGCNN: Disordered Graph Convolutional Neural Network Based on the\n  Gaussian Mixture Model",
+    "year": 2017,
+    "venue": "cs.LG",
+    "abstract": "Convolutional neural networks (CNNs) can be applied to graph similarity matching, in which case they are called graph CNNs. Graph CNNs are attracting increasing attention due to their effectiveness and efficiency. However, the existing convolution approaches focus only on regular data forms and require the transfer of the graph or key node neighborhoods of the graph into the same fixed form. During this transfer process, structural information of the graph can be lost, and some redundant information can be incorporated. To overcome this problem, we propose the disordered graph convolutional neural network (DGCNN) based on the mixed Gaussian model, which extends the CNN by adding a preprocessing layer called the disordered graph convolutional layer (DGCL). The DGCL uses a mixed Gaussian function to realize the mapping between the convolution kernel and the nodes in the neighborhood of the graph. The output of the DGCL is the input of the CNN. We further implement a backward-propagation optimization process of the convolutional layer by which we incorporate the feature-learning model of the irregular node neighborhood structure into the network. Thereafter, the optimization of the co"
+  },
+  "arxiv_1802.07007": {
+    "doc_id": "arxiv_1802.07007",
+    "title": "Traffic Graph Convolutional Recurrent Neural Network: A Deep Learning\n  Framework for Network-Scale Traffic Learning and Forecasting",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Traffic forecasting is a particularly challenging application of spatiotemporal forecasting, due to the time-varying traffic patterns and the complicated spatial dependencies on road networks. To address this challenge, we learn the traffic network as a graph and propose a novel deep learning framework, Traffic Graph Convolutional Long Short-Term Memory Neural Network (TGC-LSTM), to learn the interactions between roadways in the traffic network and forecast the network-wide traffic state. We define the traffic graph convolution based on the physical network topology. The relationship between the proposed traffic graph convolution and the spectral graph convolution is also discussed. An L1-norm on graph convolution weights and an L2-norm on graph convolution features are added to the model's loss function to enhance the interpretability of the proposed model. Experimental results show that the proposed model outperforms baseline methods on two real-world traffic state datasets. The visualization of the graph convolution weights indicates that the proposed framework can recognize the most influential road segments in real-world traffic networks."
+  },
+  "arxiv_1802.08888": {
+    "doc_id": "arxiv_1802.08888",
+    "title": "N-GCN: Multi-scale Graph Convolution for Semi-supervised Node\n  Classification",
+    "year": 2018,
+    "venue": "cs.LG",
+    "abstract": "Graph Convolutional Networks (GCNs) have shown significant improvements in semi-supervised learning on graph-structured data. Concurrently, unsupervised learning of graph embeddings has benefited from the information contained in random walks. In this paper, we propose a model: Network of GCNs (N-GCN), which marries these two lines of work. At its core, N-GCN trains multiple instances of GCNs over node pairs discovered at different distances in random walks, and learns a combination of the instance outputs which optimizes the classification objective. Our experiments show that our proposed N-GCN model improves state-of-the-art baselines on all of the challenging node classification tasks we consider: Cora, Citeseer, Pubmed, and PPI. In addition, our proposed method has other desirable properties, including generalization to recently proposed semi-supervised learning methods such as GraphSAGE, allowing us to propose N-SAGE, and resilience to adversarial input perturbations."
+  },
+  "arxiv_1805.12528": {
+    "doc_id": "arxiv_1805.12528",
+    "title": "Fusion Graph Convolutional Networks",
+    "year": 2018,
+    "venue": "cs.LG",
+    "abstract": "Semi-supervised node classification in attributed graphs, i.e., graphs with node features, involves learning to classify unlabeled nodes given a partially labeled graph. Label predictions are made by jointly modeling the node and its' neighborhood features. State-of-the-art models for node classification on such attributed graphs use differentiable recursive functions that enable aggregation and filtering of neighborhood information from multiple hops. In this work, we analyze the representation capacity of these models to regulate information from multiple hops independently. From our analysis, we conclude that these models despite being powerful, have limited representation capacity to capture multi-hop neighborhood information effectively. Further, we also propose a mathematically motivated, yet simple extension to existing graph convolutional networks (GCNs) which has improved representation capacity. We extensively evaluate the proposed model, F-GCN on eight popular datasets from different domains. F-GCN outperforms the state-of-the-art models for semi-supervised learning on six datasets while being extremely competitive on the other two."
+  },
+  "arxiv_1807.02653": {
+    "doc_id": "arxiv_1807.02653",
+    "title": "When Work Matters: Transforming Classical Network Structures to Graph\n  CNN",
+    "year": 2018,
+    "venue": "cs.LG",
+    "abstract": "Numerous pattern recognition applications can be formed as learning from graph-structured data, including social network, protein-interaction network, the world wide web data, knowledge graph, etc. While convolutional neural network (CNN) facilitates great advances in gridded image/video understanding tasks, very limited attention has been devoted to transform these successful network structures (including Inception net, Residual net, Dense net, etc.) to establish convolutional networks on graph, due to its irregularity and complexity geometric topologies (unordered vertices, unfixed number of adjacent edges/vertices). In this paper, we aim to give a comprehensive analysis of when work matters by transforming different classical network structures to graph CNN, particularly in the basic graph recognition problem. Specifically, we firstly review the general graph CNN methods, especially in its spectral filtering operation on the irregular graph data. We then introduce the basic structures of ResNet, Inception and DenseNet into graph CNN and construct these network structures on graph, named as G_ResNet, G_Inception, G_DenseNet. In particular, it seeks to help graph CNNs by shedding "
+  },
+  "arxiv_1808.06099": {
+    "doc_id": "arxiv_1808.06099",
+    "title": "Multi-dimensional Graph Convolutional Networks",
+    "year": 2018,
+    "venue": "cs.SI",
+    "abstract": "Convolutional neural networks (CNNs) leverage the great power in representation learning on regular grid data such as image and video. Recently, increasing attention has been paid on generalizing CNNs to graph or network data which is highly irregular. Some focus on graph-level representation learning while others aim to learn node-level representations. These methods have been shown to boost the performance of many graph-level tasks such as graph classification and node-level tasks such as node classification. Most of these methods have been designed for single-dimensional graphs where a pair of nodes can only be connected by one type of relation. However, many real-world graphs have multiple types of relations and they can be naturally modeled as multi-dimensional graphs with each type of relation as a dimension. Multi-dimensional graphs bring about richer interactions between dimensions, which poses tremendous challenges to the graph convolutional neural networks designed for single-dimensional graphs. In this paper, we study the problem of graph convolutional networks for multi-dimensional graphs and propose a multi-dimensional convolutional neural network model mGCN aiming to "
+  },
+  "arxiv_1809.01090": {
+    "doc_id": "arxiv_1809.01090",
+    "title": "Graph Convolutional Neural Networks based on Quantum Vertex Saliency",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "This paper proposes a new Quantum Spatial Graph Convolutional Neural Network (QSGCNN) model that can directly learn a classification function for graphs of arbitrary sizes. Unlike state-of-the-art Graph Convolutional Neural Network (GCNN) models, the proposed QSGCNN model incorporates the process of identifying transitive aligned vertices between graphs, and transforms arbitrary sized graphs into fixed-sized aligned vertex grid structures. In order to learn representative graph characteristics, a new quantum spatial graph convolution is proposed and employed to extract multi-scale vertex features, in terms of quantum information propagation between grid vertices of each graph. Since the quantum spatial convolution preserves the grid structures of the input vertices (i.e., the convolution layer does not change the original spatial sequence of vertices), the proposed QSGCNN model allows to directly employ the traditional convolutional neural network architecture to further learn from the global graph topology, providing an end-to-end deep learning architecture that integrates the graph representation and learning in the quantum spatial graph convolution layer and the traditional conv"
+  },
+  "arxiv_1809.09839": {
+    "doc_id": "arxiv_1809.09839",
+    "title": "Graph Laplacian Regularized Graph Convolutional Networks for\n  Semi-supervised Learning",
+    "year": 2018,
+    "venue": "cs.CV",
+    "abstract": "Recently, graph convolutional network (GCN) has been widely used for semi-supervised classification and deep feature representation on graph-structured data. However, existing GCN generally fails to consider the local invariance constraint in learning and representation process. That is, if two data points Xi and Xj are close in the intrinsic geometry of the data distribution, then their labels/representations should also be close to each other. This is known as local invariance assumption which plays an essential role in the development of various kinds of traditional algorithms, such as dimensionality reduction and semi-supervised learning, in machine learning area. To overcome this limitation, we introduce a graph Laplacian GCN (gLGCN) approach for graph data representation and semi-supervised classification. The proposed gLGCN model is capable of encoding both graph structure and node features together while maintains the local invariance constraint naturally for robust data representation and semi-supervised classification. Experiments show the benefit of the benefits the proposed gLGCN network."
+  },
+  "arxiv_1810.00826": {
+    "doc_id": "arxiv_1810.00826",
+    "title": "How Powerful are Graph Neural Networks?",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Graph Neural Networks (GNNs) are an effective framework for representation learning of graphs. GNNs follow a neighborhood aggregation scheme, where the representation vector of a node is computed by recursively aggregating and transforming representation vectors of its neighboring nodes. Many GNN variants have been proposed and have achieved state-of-the-art results on both node and graph classification tasks. However, despite GNNs revolutionizing graph representation learning, there is limited understanding of their representational properties and limitations. Here, we present a theoretical framework for analyzing the expressive power of GNNs to capture different graph structures. Our results characterize the discriminative power of popular GNN variants, such as Graph Convolutional Networks and GraphSAGE, and show that they cannot learn to distinguish certain simple graph structures. We then develop a simple architecture that is provably the most expressive among the class of GNNs and is as powerful as the Weisfeiler-Lehman graph isomorphism test. We empirically validate our theoretical findings on a number of graph classification benchmarks, and demonstrate that our model achieve"
+  },
+  "arxiv_1811.01287": {
+    "doc_id": "arxiv_1811.01287",
+    "title": "Towards Sparse Hierarchical Graph Classifiers",
+    "year": 2018,
+    "venue": "stat.ML",
+    "abstract": "Recent advances in representation learning on graphs, mainly leveraging graph convolutional networks, have brought a substantial improvement on many graph-based benchmark tasks. While novel approaches to learning node embeddings are highly suitable for node classification and link prediction, their application to graph classification (predicting a single label for the entire graph) remains mostly rudimentary, typically using a single global pooling step to aggregate node features or a hand-designed, fixed heuristic for hierarchical coarsening of the graph structure. An important step towards ameliorating this is differentiable graph coarsening---the ability to reduce the size of the graph in an adaptive, data-dependent manner within a graph neural network pipeline, analogous to image downsampling within CNNs. However, the previous prominent approach to pooling has quadratic memory requirements during training and is therefore not scalable to large graphs. Here we combine several recent advances in graph neural network design to demonstrate that competitive hierarchical graph classification results are possible without sacrificing sparsity. Our results are verified on several establ"
+  },
+  "arxiv_1811.08270": {
+    "doc_id": "arxiv_1811.08270",
+    "title": "Graph Convolutional Neural Networks via Motif-based Attention",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Many real-world problems can be represented as graph-based learning problems. In this paper, we propose a novel framework for learning spatial and attentional convolution neural networks on arbitrary graphs. Different from previous convolutional neural networks on graphs, we first design a motif-matching guided subgraph normalization method to capture neighborhood information. Then we implement subgraph-level self-attentional layers to learn different importances from different subgraphs to solve graph classification problems. Analogous to image-based attentional convolution networks that operate on locally connected and weighted regions of the input, we also extend graph normalization from one-dimensional node sequence to two-dimensional node grid by leveraging motif-matching, and design self-attentional layers without requiring any kinds of cost depending on prior knowledge of the graph structure. Our results on both bioinformatics and social network datasets show that we can significantly improve graph classification benchmarks over traditional graph kernel and existing deep models."
+  },
+  "arxiv_1811.08800": {
+    "doc_id": "arxiv_1811.08800",
+    "title": "MGCN: Semi-supervised Classification in Multi-layer Graphs with Graph\n  Convolutional Networks",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Graph embedding is an important approach for graph analysis tasks such as node classification and link prediction. The goal of graph embedding is to find a low dimensional representation of graph nodes that preserves the graph information. Recent methods like Graph Convolutional Network (GCN) try to consider node attributes (if available) besides node relations and learn node embeddings for unsupervised and semi-supervised tasks on graphs. On the other hand, multi-layer graph analysis has been received attention recently. However, the existing methods for multi-layer graph embedding cannot incorporate all available information (like node attributes). Moreover, most of them consider either type of nodes or type of edges, and they do not treat within and between layer edges differently. In this paper, we propose a method called MGCN that utilizes the GCN for multi-layer graphs. MGCN embeds nodes of multi-layer graphs using both within and between layers relations and nodes attributes. We evaluate our method on the semi-supervised node classification task. Experimental results demonstrate the superiority of the proposed method to other multi-layer and single-layer competitors and also"
+  },
+  "arxiv_1811.09971": {
+    "doc_id": "arxiv_1811.09971",
+    "title": "Graph Learning-Convolutional Networks",
+    "year": 2018,
+    "venue": "cs.CV",
+    "abstract": "Recently, graph Convolutional Neural Networks (graph CNNs) have been widely used for graph data representation and semi-supervised learning tasks. However, existing graph CNNs generally use a fixed graph which may be not optimal for semi-supervised learning tasks. In this paper, we propose a novel Graph Learning-Convolutional Network (GLCN) for graph data representation and semi-supervised learning. The aim of GLCN is to learn an optimal graph structure that best serves graph CNNs for semi-supervised learning by integrating both graph learning and graph convolution together in a unified network architecture. The main advantage is that in GLCN, both given labels and the estimated labels are incorporated and thus can provide useful 'weakly' supervised information to refine (or learn) the graph construction and also to facilitate the graph convolution operation in GLCN for unknown label estimation. Experimental results on seven benchmarks demonstrate that GLCN significantly outperforms state-of-the-art traditional fixed structure based graph CNNs."
+  },
+  "arxiv_1812.00086": {
+    "doc_id": "arxiv_1812.00086",
+    "title": "Graph Node-Feature Convolution for Representation Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Graph convolutional network (GCN) is an emerging neural network approach. It learns new representation of a node by aggregating feature vectors of all neighbors in the aggregation process without considering whether the neighbors or features are useful or not. Recent methods have improved solutions by sampling a fixed size set of neighbors, or assigning different weights to different neighbors in the aggregation process, but features within a feature vector are still treated equally in the aggregation process. In this paper, we introduce a new convolution operation on regular size feature maps constructed from features of a fixed node bandwidth via sampling to get the first-level node representation, which is then passed to a standard GCN to learn the second-level node representation. Experiments show that our method outperforms competing methods in semi-supervised node classification tasks. Furthermore, our method opens new doors for exploring new GCN architectures, particularly deeper GCN models."
+  },
+  "arxiv_1812.03813": {
+    "doc_id": "arxiv_1812.03813",
+    "title": "Hierarchical Bipartite Graph Convolution Networks",
+    "year": 2018,
+    "venue": "cs.LG",
+    "abstract": "Recently, graph neural networks have been adopted in a wide variety of applications ranging from relational representations to modeling irregular data domains such as point clouds and social graphs. However, the space of graph neural network architectures remains highly fragmented impeding the development of optimized implementations similar to what is available for convolutional neural networks. In this work, we present BiGraphNet, a graph neural network architecture that generalizes many popular graph neural network models and enables new efficient operations similar to those supported by ConvNets. By explicitly separating the input and output nodes, BiGraphNet: (i) generalizes the graph convolution to support new efficient operations such as coarsened graph convolutions (similar to strided convolution in convnets), multiple input graphs convolution and graph expansions (unpooling) which can be used to implement various graph architectures such as graph autoencoders, and graph residual nets; and (ii) accelerates and scales the computations and memory requirements in hierarchical networks by performing computations only at specified output nodes."
+  },
+  "arxiv_1901.01343": {
+    "doc_id": "arxiv_1901.01343",
+    "title": "Graph Neural Networks with convolutional ARMA filters",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Popular graph neural networks implement convolution operations on graphs based on polynomial spectral filters. In this paper, we propose a novel graph convolutional layer inspired by the auto-regressive moving average (ARMA) filter that, compared to polynomial ones, provides a more flexible frequency response, is more robust to noise, and better captures the global graph structure. We propose a graph neural network implementation of the ARMA filter with a recursive and distributed formulation, obtaining a convolutional layer that is efficient to train, localized in the node space, and can be transferred to new graphs at test time. We perform a spectral analysis to study the filtering effect of the proposed ARMA layer and report experiments on four downstream tasks: semi-supervised node classification, graph signal classification, graph classification, and graph regression. Results show that the proposed ARMA layer brings significant improvements over graph neural networks based on polynomial filters."
+  },
+  "arxiv_1903.02541": {
+    "doc_id": "arxiv_1903.02541",
+    "title": "Relational Pooling for Graph Representations",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "This work generalizes graph neural networks (GNNs) beyond those based on the Weisfeiler-Lehman (WL) algorithm, graph Laplacians, and diffusions. Our approach, denoted Relational Pooling (RP), draws from the theory of finite partial exchangeability to provide a framework with maximal representation power for graphs. RP can work with existing graph representation models and, somewhat counterintuitively, can make them even more powerful than the original WL isomorphism test. Additionally, RP allows architectures like Recurrent Neural Networks and Convolutional Neural Networks to be used in a theoretically sound approach for graph classification. We demonstrate improved performance of RP-based graph representations over state-of-the-art methods on a number of tasks."
+  },
+  "arxiv_1904.04238": {
+    "doc_id": "arxiv_1904.04238",
+    "title": "Learning Backtrackless Aligned-Spatial Graph Convolutional Networks for\n  Graph Classification",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "In this paper, we develop a novel Backtrackless Aligned-Spatial Graph Convolutional Network (BASGCN) model to learn effective features for graph classification. Our idea is to transform arbitrary-sized graphs into fixed-sized backtrackless aligned grid structures and define a new spatial graph convolution operation associated with the grid structures. We show that the proposed BASGCN model not only reduces the problems of information loss and imprecise information representation arising in existing spatially-based Graph Convolutional Network (GCN) models, but also bridges the theoretical gap between traditional Convolutional Neural Network (CNN) models and spatially-based GCN models. Furthermore, the proposed BASGCN model can both adaptively discriminate the importance between specified vertices during the convolution process and reduce the notorious tottering problem of existing spatially-based GCNs related to the Weisfeiler-Lehman algorithm, explaining the effectiveness of the proposed model. Experiments on standard graph datasets demonstrate the effectiveness of the proposed model."
+  },
+  "arxiv_1904.07785": {
+    "doc_id": "arxiv_1904.07785",
+    "title": "Graph Wavelet Neural Network",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "We present graph wavelet neural network (GWNN), a novel graph convolutional neural network (CNN), leveraging graph wavelet transform to address the shortcomings of previous spectral graph CNN methods that depend on graph Fourier transform. Different from graph Fourier transform, graph wavelet transform can be obtained via a fast algorithm without requiring matrix eigendecomposition with high computational cost. Moreover, graph wavelets are sparse and localized in vertex domain, offering high efficiency and good interpretability for graph convolution. The proposed GWNN significantly outperforms previous spectral graph CNNs in the task of graph-based semi-supervised classification on three benchmark datasets: Cora, Citeseer and Pubmed."
+  },
+  "arxiv_1904.10146": {
+    "doc_id": "arxiv_1904.10146",
+    "title": "Exploring Structure-Adaptive Graph Learning for Robust Semi-Supervised\n  Classification",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Graph Convolutional Neural Networks (GCNNs) are generalizations of CNNs to graph-structured data, in which convolution is guided by the graph topology. In many cases where graphs are unavailable, existing methods manually construct graphs or learn task-driven adaptive graphs. In this paper, we propose Graph Learning Neural Networks (GLNNs), which exploit the optimization of graphs (the adjacency matrix in particular) from both data and tasks. Leveraging on spectral graph theory, we propose the objective of graph learning from a sparsity constraint, properties of a valid adjacency matrix as well as a graph Laplacian regularizer via maximum a posteriori estimation. The optimization objective is then integrated into the loss function of the GCNN, which adapts the graph topology to not only labels of a specific task but also the input data. Experimental results show that our proposed GLNN outperforms state-of-the-art approaches over widely adopted social network datasets and citation network datasets for semi-supervised classification."
+  },
+  "arxiv_1904.13107": {
+    "doc_id": "arxiv_1904.13107",
+    "title": "Graph Convolutional Networks with EigenPooling",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Graph neural networks, which generalize deep neural network models to graph structured data, have attracted increasing attention in recent years. They usually learn node representations by transforming, propagating and aggregating node features and have been proven to improve the performance of many graph related tasks such as node classification and link prediction. To apply graph neural networks for the graph classification task, approaches to generate the \\textit{graph representation} from node representations are demanded. A common way is to globally combine the node representations. However, rich structural information is overlooked. Thus a hierarchical pooling procedure is desired to preserve the graph structure during the graph representation learning. There are some recent works on hierarchically learning graph representation analogous to the pooling step in conventional convolutional neural (CNN) networks. However, the local structural information is still largely neglected during the pooling process. In this paper, we introduce a pooling operator $\\pooling$ based on graph Fourier transform, which can utilize the node features and local structures during the pooling proces"
+  },
+  "arxiv_1905.04579": {
+    "doc_id": "arxiv_1905.04579",
+    "title": "Are Powerful Graph Neural Nets Necessary? A Dissection on Graph\n  Classification",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Graph Neural Nets (GNNs) have received increasing attentions, partially due to their superior performance in many node and graph classification tasks. However, there is a lack of understanding on what they are learning and how sophisticated the learned graph functions are. In this work, we propose a dissection of GNNs on graph classification into two parts: 1) the graph filtering, where graph-based neighbor aggregations are performed, and 2) the set function, where a set of hidden node features are composed for prediction. To study the importance of both parts, we propose to linearize them separately. We first linearize the graph filtering function, resulting Graph Feature Network (GFN), which is a simple lightweight neural net defined on a \\textit{set} of graph augmented features. Further linearization of GFN's set function results in Graph Linear Network (GLN), which is a linear function. Empirically we perform evaluations on common graph classification benchmarks. To our surprise, we find that, despite the simplification, GFN could match or exceed the best accuracies produced by recently proposed GNNs (with a fraction of computation cost), while GLN underperforms significantly. "
+  },
+  "arxiv_1905.06259": {
+    "doc_id": "arxiv_1905.06259",
+    "title": "Function Space Pooling For Graph Convolutional Networks",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Convolutional layers in graph neural networks are a fundamental type of layer which output a representation or embedding of each graph vertex. The representation typically encodes information about the vertex in question and its neighbourhood. If one wishes to perform a graph centric task, such as graph classification, this set of vertex representations must be integrated or pooled to form a graph representation.   In this article we propose a novel pooling method which maps a set of vertex representations to a function space representation. This method is distinct from existing pooling methods which perform a mapping to either a vector or sequence space. Experimental graph classification results demonstrate that the proposed method generally outperforms most baseline pooling methods and in some cases achieves best performance."
+  },
+  "arxiv_1905.10224": {
+    "doc_id": "arxiv_1905.10224",
+    "title": "Semi-Supervised Classification on Non-Sparse Graphs Using Low-Rank Graph Convolutional Networks",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Graph Convolutional Networks (GCNs) have proven to be successful tools for semi-supervised learning on graph-based datasets. For sparse graphs, linear and polynomial filter functions have yielded impressive results. For large non-sparse graphs, however, network training and evaluation becomes prohibitively expensive. By introducing low-rank filters, we gain significant runtime acceleration and simultaneously improved accuracy. We further propose an architecture change mimicking techniques from Model Order Reduction in what we call a reduced-order GCN. Moreover, we present how our method can also be applied to hypergraph datasets and how hypergraph convolution can be implemented efficiently."
+  },
+  "arxiv_1906.02319": {
+    "doc_id": "arxiv_1906.02319",
+    "title": "DEMO-Net: Degree-specific Graph Neural Networks for Node and Graph\n  Classification",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Graph data widely exist in many high-impact applications. Inspired by the success of deep learning in grid-structured data, graph neural network models have been proposed to learn powerful node-level or graph-level representation. However, most of the existing graph neural networks suffer from the following limitations: (1) there is limited analysis regarding the graph convolution properties, such as seed-oriented, degree-aware and order-free; (2) the node's degree-specific graph structure is not explicitly expressed in graph convolution for distinguishing structure-aware node neighborhoods; (3) the theoretical explanation regarding the graph-level pooling schemes is unclear.   To address these problems, we propose a generic degree-specific graph neural network named DEMO-Net motivated by Weisfeiler-Lehman graph isomorphism test that recursively identifies 1-hop neighborhood structures. In order to explicitly capture the graph topology integrated with node attributes, we argue that graph convolution should have three properties: seed-oriented, degree-aware, order-free. To this end, we propose multi-task graph convolution where each task represents node representation learning for n"
+  },
+  "arxiv_1906.02989": {
+    "doc_id": "arxiv_1906.02989",
+    "title": "Learning Representations of Graph Data -- A Survey",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Deep Neural Networks have shown tremendous success in the area of object recognition, image classification and natural language processing. However, designing optimal Neural Network architectures that can learn and output arbitrary graphs is an ongoing research problem. The objective of this survey is to summarize and discuss the latest advances in methods to Learn Representations of Graph Data. We start by identifying commonly used types of graph data and review basics of graph theory. This is followed by a discussion of the relationships between graph kernel methods and neural networks. Next we identify the major approaches used for learning representations of graph data namely: Kernel approaches, Convolutional approaches, Graph neural networks approaches, Graph embedding approaches and Probabilistic approaches. A variety of methods under each of the approaches are discussed and the survey is concluded with a brief discussion of the future of learning representation of graph data."
+  },
+  "arxiv_1907.09495": {
+    "doc_id": "arxiv_1907.09495",
+    "title": "IsoNN: Isomorphic Neural Network for Graph Representation Learning and\n  Classification",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Deep learning models have achieved huge success in numerous fields, such as computer vision and natural language processing. However, unlike such fields, it is hard to apply traditional deep learning models on the graph data due to the 'node-orderless' property. Normally, adjacency matrices will cast an artificial and random node-order on the graphs, which renders the performance of deep models on graph classification tasks extremely erratic, and the representations learned by such models lack clear interpretability. To eliminate the unnecessary node-order constraint, we propose a novel model named Isomorphic Neural Network (IsoNN), which learns the graph representation by extracting its isomorphic features via the graph matching between input graph and templates. IsoNN has two main components: graph isomorphic feature extraction component and classification component. The graph isomorphic feature extraction component utilizes a set of subgraph templates as the kernel variables to learn the possible subgraph patterns existing in the input graph and then computes the isomorphic features. A set of permutation matrices is used in the component to break the node-order brought by the ma"
+  },
+  "arxiv_1908.00187": {
+    "doc_id": "arxiv_1908.00187",
+    "title": "Graph Neural Networks for Small Graph and Giant Network Representation\n  Learning: An Overview",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Graph neural networks denote a group of neural network models introduced for the representation learning tasks on graph data specifically. Graph neural networks have been demonstrated to be effective for capturing network structure information, and the learned representations can achieve the state-of-the-art performance on node and graph classification tasks. Besides the different application scenarios, the architectures of graph neural network models also depend on the studied graph types a lot. Graph data studied in research can be generally categorized into two main types, i.e., small graphs vs. giant networks, which differ from each other a lot in the size, instance number and label annotation. Several different types of graph neural network models have been introduced for learning the representations from such different types of graphs already. In this paper, for these two different types of graph data, we will introduce the graph neural networks introduced in recent years. To be more specific, the graph neural networks introduced in this paper include IsoNN, SDBN, LF&ER, GCN, GAT, DifNN, GNL, GraphSage and seGEN. Among these graph neural network models, IsoNN, SDBN and LF&ER "
+  },
+  "arxiv_1909.04931": {
+    "doc_id": "arxiv_1909.04931",
+    "title": "Joint Learning of Graph Representation and Node Features in Graph\n  Convolutional Neural Networks",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Graph Convolutional Neural Networks (GCNNs) extend classical CNNs to graph data domain, such as brain networks, social networks and 3D point clouds. It is critical to identify an appropriate graph for the subsequent graph convolution. Existing methods manually construct or learn one fixed graph for all the layers of a GCNN. In order to adapt to the underlying structure of node features in different layers, we propose dynamic learning of graphs and node features jointly in GCNNs. In particular, we cast the graph optimization problem as distance metric learning to capture pairwise similarities of features in each layer. We deploy the Mahalanobis distance metric and further decompose the metric matrix into a low-dimensional matrix, which converts graph learning to the optimization of a low-dimensional matrix for efficient implementation. Extensive experiments on point clouds and citation network datasets demonstrate the superiority of the proposed method in terms of both accuracies and robustness."
+  },
+  "arxiv_1909.11715": {
+    "doc_id": "arxiv_1909.11715",
+    "title": "GraphMix: Improved Training of GNNs for Semi-Supervised Learning",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "We present GraphMix, a regularization method for Graph Neural Network based semi-supervised object classification, whereby we propose to train a fully-connected network jointly with the graph neural network via parameter sharing and interpolation-based regularization. Further, we provide a theoretical analysis of how GraphMix improves the generalization bounds of the underlying graph neural network, without making any assumptions about the \"aggregation\" layer or the depth of the graph neural networks. We experimentally validate this analysis by applying GraphMix to various architectures such as Graph Convolutional Networks, Graph Attention Networks and Graph-U-Net. Despite its simplicity, we demonstrate that GraphMix can consistently improve or closely match state-of-the-art performance using even simpler architectures such as Graph Convolutional Networks, across three established graph benchmarks: Cora, Citeseer and Pubmed citation network datasets, as well as three newly proposed datasets: Cora-Full, Co-author-CS and Co-author-Physics."
+  },
+  "arxiv_1909.12264": {
+    "doc_id": "arxiv_1909.12264",
+    "title": "Quantum Graph Neural Networks",
+    "year": 2019,
+    "venue": "quant-ph",
+    "abstract": "We introduce Quantum Graph Neural Networks (QGNN), a new class of quantum neural network ansatze which are tailored to represent quantum processes which have a graph structure, and are particularly suitable to be executed on distributed quantum systems over a quantum network. Along with this general class of ansatze, we introduce further specialized architectures, namely, Quantum Graph Recurrent Neural Networks (QGRNN) and Quantum Graph Convolutional Neural Networks (QGCNN). We provide four example applications of QGNNs: learning Hamiltonian dynamics of quantum systems, learning how to create multipartite entanglement in a quantum network, unsupervised learning for spectral clustering, and supervised learning for graph isomorphism classification."
+  },
+  "arxiv_1911.05256": {
+    "doc_id": "arxiv_1911.05256",
+    "title": "A Hierarchy of Graph Neural Networks Based on Learnable Local Features",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Graph neural networks (GNNs) are a powerful tool to learn representations on graphs by iteratively aggregating features from node neighbourhoods. Many variant models have been proposed, but there is limited understanding on both how to compare different architectures and how to construct GNNs systematically. Here, we propose a hierarchy of GNNs based on their aggregation regions. We derive theoretical results about the discriminative power and feature representation capabilities of each class. Then, we show how this framework can be utilized to systematically construct arbitrarily powerful GNNs. As an example, we construct a simple architecture that exceeds the expressiveness of the Weisfeiler-Lehman graph isomorphism test. We empirically validate our theory on both synthetic and real-world benchmarks, and demonstrate our example's theoretical power translates to strong results on node classification, graph classification, and graph regression tasks."
+  },
+  "arxiv_1911.05384": {
+    "doc_id": "arxiv_1911.05384",
+    "title": "On the choice of graph neural network architectures",
+    "year": 2020,
+    "venue": "cs.SI",
+    "abstract": "Seminal works on graph neural networks have primarily targeted semi-supervised node classification problems with few observed labels and high-dimensional signals. With the development of graph networks, this setup has become a de facto benchmark for a significant body of research. Interestingly, several works have recently shown that in this particular setting, graph neural networks do not perform much better than predefined low-pass filters followed by a linear classifier. However, when learning from little data in a high-dimensional space, it is not surprising that simple and heavily regularized methods are near-optimal. In this paper, we show empirically that in settings with fewer features and more training data, more complex graph networks significantly outperform simple models, and propose a few insights towards the proper choice of graph network architectures. We finally outline the importance of using sufficiently diverse benchmarks (including lower dimensional signals as well) when designing and studying new types of graph neural networks."
+  },
+  "arxiv_2001.07922": {
+    "doc_id": "arxiv_2001.07922",
+    "title": "Get Rid of Suspended Animation Problem: Deep Diffusive Neural Network on\n  Graph Semi-Supervised Classification",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Existing graph neural networks may suffer from the \"suspended animation problem\" when the model architecture goes deep. Meanwhile, for some graph learning scenarios, e.g., nodes with text/image attributes or graphs with long-distance node correlations, deep graph neural networks will be necessary for effective graph representation learning. In this paper, we propose a new graph neural network, namely DIFNET (Graph Diffusive Neural Network), for graph representation learning and node classification. DIFNET utilizes both neural gates and graph residual learning for node hidden state modeling, and includes an attention mechanism for node neighborhood information diffusion. Extensive experiments will be done in this paper to compare DIFNET against several state-of-the-art graph neural network models. The experimental results can illustrate both the learning performance advantages and effectiveness of DIFNET, especially in addressing the \"suspended animation problem\"."
+  },
+  "arxiv_2002.03392": {
+    "doc_id": "arxiv_2002.03392",
+    "title": "Line Hypergraph Convolution Network: Applying Graph Convolution for\n  Hypergraphs",
+    "year": 2020,
+    "venue": "cs.SI",
+    "abstract": "Network representation learning and node classification in graphs got significant attention due to the invent of different types graph neural networks. Graph convolution network (GCN) is a popular semi-supervised technique which aggregates attributes within the neighborhood of each node. Conventional GCNs can be applied to simple graphs where each edge connects only two nodes. But many modern days applications need to model high order relationships in a graph. Hypergraphs are effective data types to handle such complex relationships. In this paper, we propose a novel technique to apply graph convolution on hypergraphs with variable hyperedge sizes. We use the classical concept of line graph of a hypergraph for the first time in the hypergraph learning literature. Then we propose to use graph convolution on the line graph of a hypergraph. Experimental analysis on multiple real world network datasets shows the merit of our approach compared to state-of-the-arts."
+  },
+  "arxiv_2002.05287": {
+    "doc_id": "arxiv_2002.05287",
+    "title": "Geom-GCN: Geometric Graph Convolutional Networks",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Message-passing neural networks (MPNNs) have been successfully applied to representation learning on graphs in a variety of real-world applications. However, two fundamental weaknesses of MPNNs' aggregators limit their ability to represent graph-structured data: losing the structural information of nodes in neighborhoods and lacking the ability to capture long-range dependencies in disassortative graphs. Few studies have noticed the weaknesses from different perspectives. From the observations on classical neural network and network geometry, we propose a novel geometric aggregation scheme for graph neural networks to overcome the two weaknesses. The behind basic idea is the aggregation on a graph can benefit from a continuous space underlying the graph. The proposed aggregation scheme is permutation-invariant and consists of three modules, node embedding, structural neighborhood, and bi-level aggregation. We also present an implementation of the scheme in graph convolutional networks, termed Geom-GCN (Geometric Graph Convolutional Networks), to perform transductive learning on graphs. Experimental results show the proposed Geom-GCN achieved state-of-the-art performance on a wide r"
+  },
+  "arxiv_2003.12277": {
+    "doc_id": "arxiv_2003.12277",
+    "title": "Progressive Graph Convolutional Networks for Semi-Supervised Node\n  Classification",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Graph convolutional networks have been successful in addressing graph-based tasks such as semi-supervised node classification. Existing methods use a network structure defined by the user based on experimentation with fixed number of layers and neurons per layer and employ a layer-wise propagation rule to obtain the node embeddings. Designing an automatic process to define a problem-dependant architecture for graph convolutional networks can greatly help to reduce the need for manual design of the structure of the model in the training process. In this paper, we propose a method to automatically build compact and task-specific graph convolutional networks. Experimental results on widely used publicly available datasets show that the proposed method outperforms related methods based on convolutional graph networks in terms of classification performance and network compactness."
+  },
+  "arxiv_2004.03519": {
+    "doc_id": "arxiv_2004.03519",
+    "title": "Pooling in Graph Convolutional Neural Networks",
+    "year": 2020,
+    "venue": "eess.SP",
+    "abstract": "Graph convolutional neural networks (GCNNs) are a powerful extension of deep learning techniques to graph-structured data problems. We empirically evaluate several pooling methods for GCNNs, and combinations of those graph pooling methods with three different architectures: GCN, TAGCN, and GraphSAGE. We confirm that graph pooling, especially DiffPool, improves classification accuracy on popular graph classification datasets and find that, on average, TAGCN achieves comparable or better accuracy than GCN and GraphSAGE, particularly for datasets with larger and sparser graph structures."
+  },
+  "arxiv_2005.03675": {
+    "doc_id": "arxiv_2005.03675",
+    "title": "Machine Learning on Graphs: A Model and Comprehensive Taxonomy",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "There has been a surge of recent interest in learning representations for graph-structured data. Graph representation learning methods have generally fallen into three main categories, based on the availability of labeled data. The first, network embedding (such as shallow graph embedding or graph auto-encoders), focuses on learning unsupervised representations of relational structure. The second, graph regularized neural networks, leverages graphs to augment neural network losses with a regularization objective for semi-supervised learning. The third, graph neural networks, aims to learn differentiable functions over discrete topologies with arbitrary structure. However, despite the popularity of these areas there has been surprisingly little work on unifying the three paradigms. Here, we aim to bridge the gap between graph neural networks, network embedding and graph regularization models. We propose a comprehensive taxonomy of representation learning methods for graph-structured data, aiming to unify several disparate bodies of work. Specifically, we propose a Graph Encoder Decoder Model (GRAPHEDM), which generalizes popular algorithms for semi-supervised learning on graphs (e.g"
+  },
+  "arxiv_2007.03424": {
+    "doc_id": "arxiv_2007.03424",
+    "title": "AEGCN: An Autoencoder-Constrained Graph Convolutional Network",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "We propose a novel neural network architecture, called autoencoder-constrained graph convolutional network, to solve node classification task on graph domains. As suggested by its name, the core of this model is a convolutional network operating directly on graphs, whose hidden layers are constrained by an autoencoder. Comparing with vanilla graph convolutional networks, the autoencoder step is added to reduce the information loss brought by Laplacian smoothing. We consider applying our model on both homogeneous graphs and heterogeneous graphs. For homogeneous graphs, the autoencoder approximates to the adjacency matrix of the input graph by taking hidden layer representations as encoder and another one-layer graph convolutional network as decoder. For heterogeneous graphs, since there are multiple adjacency matrices corresponding to different types of edges, the autoencoder approximates to the feature matrix of the input graph instead, and changes the encoder to a particularly designed multi-channel pre-processing network with two layers. In both cases, the error occurred in the autoencoder approximation goes to the penalty term in the loss function. In extensive experiments on ci"
+  },
+  "arxiv_2007.03513": {
+    "doc_id": "arxiv_2007.03513",
+    "title": "Distance-Geometric Graph Convolutional Network (DG-GCN) for\n  Three-Dimensional (3D) Graphs",
+    "year": 2021,
+    "venue": "cs.CV",
+    "abstract": "The distance-geometric graph representation adopts a unified scheme (distance) for representing the geometry of three-dimensional(3D) graphs. It is invariant to rotation and translation of the graph and it reflects pair-wise node interactions and their generally local nature. To facilitate the incorporation of geometry in deep learning on 3D graphs, we propose a message-passing graph convolutional network based on the distance-geometric graph representation: DG-GCN (distance-geometric graph convolution network). It utilizes continuous-filter convolutional layers, with filter-generating networks, that enable learning of filter weights from distances, thereby incorporating the geometry of 3D graphs in graph convolutions. Our results for the ESOL and FreeSolv datasets show major improvement over those of standard graph convolutions. They also show significant improvement over those of geometric graph convolutions employing edge weight / edge distance power laws. Our work demonstrates the utility and value of DG-GCN for end-to-end deep learning on 3D graphs, particularly molecular graphs."
+  },
+  "arxiv_2007.10467": {
+    "doc_id": "arxiv_2007.10467",
+    "title": "Second-Order Pooling for Graph Neural Networks",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Graph neural networks have achieved great success in learning node representations for graph tasks such as node classification and link prediction. Graph representation learning requires graph pooling to obtain graph representations from node representations. It is challenging to develop graph pooling methods due to the variable sizes and isomorphic structures of graphs. In this work, we propose to use second-order pooling as graph pooling, which naturally solves the above challenges. In addition, compared to existing graph pooling methods, second-order pooling is able to use information from all nodes and collect second-order statistics, making it more powerful. We show that direct use of second-order pooling with graph neural networks leads to practical problems. To overcome these problems, we propose two novel global graph pooling methods based on second-order pooling; namely, bilinear mapping and attentional second-order pooling. In addition, we extend attentional second-order pooling to hierarchical graph pooling for more flexible use in GNNs. We perform thorough experiments on graph classification tasks to demonstrate the effectiveness and superiority of our proposed methods."
+  },
+  "arxiv_2010.13242": {
+    "doc_id": "arxiv_2010.13242",
+    "title": "Co-embedding of Nodes and Edges with Graph Neural Networks",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Graph, as an important data representation, is ubiquitous in many real world applications ranging from social network analysis to biology. How to correctly and effectively learn and extract information from graph is essential for a large number of machine learning tasks. Graph embedding is a way to transform and encode the data structure in high dimensional and non-Euclidean feature space to a low dimensional and structural space, which is easily exploited by other machine learning algorithms. We have witnessed a huge surge of such embedding methods, from statistical approaches to recent deep learning methods such as the graph convolutional networks (GCN). Deep learning approaches usually outperform the traditional methods in most graph learning benchmarks by building an end-to-end learning framework to optimize the loss function directly. However, most of the existing GCN methods can only perform convolution operations with node features, while ignoring the handy information in edge features, such as relations in knowledge graphs. To address this problem, we present CensNet, Convolution with Edge-Node Switching graph neural network, for learning tasks in graph-structured data with"
+  },
+  "arxiv_2011.07267": {
+    "doc_id": "arxiv_2011.07267",
+    "title": "Graph-Based Neural Network Models with Multiple Self-Supervised\n  Auxiliary Tasks",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Self-supervised learning is currently gaining a lot of attention, as it allows neural networks to learn robust representations from large quantities of unlabeled data. Additionally, multi-task learning can further improve representation learning by training networks simultaneously on related tasks, leading to significant performance improvements. In this paper, we propose three novel self-supervised auxiliary tasks to train graph-based neural network models in a multi-task fashion. Since Graph Convolutional Networks are among the most promising approaches for capturing relationships among structured data points, we use them as a building block to achieve competitive results on standard semi-supervised graph classification tasks."
+  },
+  "arxiv_2102.09780": {
+    "doc_id": "arxiv_2102.09780",
+    "title": "A Deep Graph Wavelet Convolutional Neural Network for Semi-supervised\n  Node Classification",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Graph convolutional neural network provides good solutions for node classification and other tasks with non-Euclidean data. There are several graph convolutional models that attempt to develop deep networks but do not cause serious over-smoothing at the same time. Considering that the wavelet transform generally has a stronger ability to extract useful information than the Fourier transform, we propose a new deep graph wavelet convolutional network (DeepGWC) for semi-supervised node classification tasks. Based on the optimized static filtering matrix parameters of vanilla graph wavelet neural networks and the combination of Fourier bases and wavelet ones, DeepGWC is constructed together with the reuse of residual connection and identity mappings in network architectures. Extensive experiments on three benchmark datasets including Cora, Citeseer, and Pubmed are conducted. The experimental results demonstrate that our DeepGWC outperforms existing graph deep models with the help of additional wavelet bases and achieves new state-of-the-art performances eventually."
+  },
+  "arxiv_2106.06307": {
+    "doc_id": "arxiv_2106.06307",
+    "title": "Survey of Image Based Graph Neural Networks",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "In this survey paper, we analyze image based graph neural networks and propose a three-step classification approach. We first convert the image into superpixels using the Quickshift algorithm so as to reduce 30% of the input data. The superpixels are subsequently used to generate a region adjacency graph. Finally, the graph is passed through a state-of-art graph convolutional neural network to get classification scores. We also analyze the spatial and spectral convolution filtering techniques in graph neural networks. Spectral-based models perform better than spatial-based models and classical CNN with lesser compute cost."
+  },
+  "arxiv_2110.08128": {
+    "doc_id": "arxiv_2110.08128",
+    "title": "Label-Wise Graph Convolutional Network for Heterophilic Graphs",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Graph Neural Networks (GNNs) have achieved remarkable performance in modeling graphs for various applications. However, most existing GNNs assume the graphs exhibit strong homophily in node labels, i.e., nodes with similar labels are connected in the graphs. They fail to generalize to heterophilic graphs where linked nodes may have dissimilar labels and attributes. Therefore, in this paper, we investigate a novel framework that performs well on graphs with either homophily or heterophily. More specifically, we propose a label-wise message passing mechanism to avoid the negative effects caused by aggregating dissimilar node representations and preserve the heterophilic contexts for representation learning. We further propose a bi-level optimization method to automatically select the model for graphs with homophily/heterophily. Theoretical analysis and extensive experiments demonstrate the effectiveness of our proposed framework for node classification on both homophilic and heterophilic graphs."
+  },
+  "arxiv_2201.00491": {
+    "doc_id": "arxiv_2201.00491",
+    "title": "KerGNNs: Interpretable Graph Neural Networks with Graph Kernels",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Graph kernels are historically the most widely-used technique for graph classification tasks. However, these methods suffer from limited performance because of the hand-crafted combinatorial features of graphs. In recent years, graph neural networks (GNNs) have become the state-of-the-art method in downstream graph-related tasks due to their superior performance. Most GNNs are based on Message Passing Neural Network (MPNN) frameworks. However, recent studies show that MPNNs can not exceed the power of the Weisfeiler-Lehman (WL) algorithm in graph isomorphism test. To address the limitations of existing graph kernel and GNN methods, in this paper, we propose a novel GNN framework, termed \\textit{Kernel Graph Neural Networks} (KerGNNs), which integrates graph kernels into the message passing process of GNNs. Inspired by convolution filters in convolutional neural networks (CNNs), KerGNNs adopt trainable hidden graphs as graph filters which are combined with subgraphs to update node embeddings using graph kernels. In addition, we show that MPNNs can be viewed as special cases of KerGNNs. We apply KerGNNs to multiple graph-related tasks and use cross-validation to make fair comparisons"
+  },
+  "arxiv_2207.01839": {
+    "doc_id": "arxiv_2207.01839",
+    "title": "What Do Graph Convolutional Neural Networks Learn?",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Graph neural networks (GNNs) have gained traction over the past few years for their superior performance in numerous machine learning tasks. Graph Convolutional Neural Networks (GCN) are a common variant of GNNs that are known to have high performance in semi-supervised node classification (SSNC), and work well under the assumption of homophily. Recent literature has highlighted that GCNs can achieve strong performance on heterophilous graphs under certain \"special conditions\". These arguments motivate us to understand why, and how, GCNs learn to perform SSNC. We find a positive correlation between similarity of latent node embeddings of nodes within a class and the performance of a GCN. Our investigation on underlying graph structures of a dataset finds that a GCN's SSNC performance is significantly influenced by the consistency and uniqueness in neighborhood structure of nodes within a class."
+  },
+  "arxiv_2210.09809": {
+    "doc_id": "arxiv_2210.09809",
+    "title": "Analysis of Convolutions, Non-linearity and Depth in Graph Neural\n  Networks using Neural Tangent Kernel",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "The fundamental principle of Graph Neural Networks (GNNs) is to exploit the structural information of the data by aggregating the neighboring nodes using a `graph convolution' in conjunction with a suitable choice for the network architecture, such as depth and activation functions. Therefore, understanding the influence of each of the design choice on the network performance is crucial. Convolutions based on graph Laplacian have emerged as the dominant choice with the symmetric normalization of the adjacency matrix as the most widely adopted one. However, some empirical studies show that row normalization of the adjacency matrix outperforms it in node classification. Despite the widespread use of GNNs, there is no rigorous theoretical study on the representation power of these convolutions, that could explain this behavior. Similarly, the empirical observation of the linear GNNs performance being on par with non-linear ReLU GNNs lacks rigorous theory.   In this work, we theoretically analyze the influence of different aspects of the GNN architecture using the Graph Neural Tangent Kernel in a semi-supervised node classification setting. Under the population Degree Corrected Stochas"
+  },
+  "arxiv_2211.00565": {
+    "doc_id": "arxiv_2211.00565",
+    "title": "Revisiting Heterophily in Graph Convolution Networks by Learning\n  Representations Across Topological and Feature Spaces",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Graph convolution networks (GCNs) have been enormously successful in learning representations over several graph-based machine learning tasks. Specific to learning rich node representations, most of the methods have solely relied on the homophily assumption and have shown limited performance on the heterophilous graphs. While several methods have been developed with new architectures to address heterophily, we argue that by learning graph representations across two spaces i.e., topology and feature space GCNs can address heterophily. In this work, we experimentally demonstrate the performance of the proposed GCN framework over semi-supervised node classification task on both homophilous and heterophilous graph benchmarks by learning and combining representations across the topological and the feature spaces."
+  },
+  "arxiv_2211.07845": {
+    "doc_id": "arxiv_2211.07845",
+    "title": "Neighborhood Convolutional Network: A New Paradigm of Graph Neural\n  Networks for Node Classification",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "The decoupled Graph Convolutional Network (GCN), a recent development of GCN that decouples the neighborhood aggregation and feature transformation in each convolutional layer, has shown promising performance for graph representation learning. Existing decoupled GCNs first utilize a simple neural network (e.g., MLP) to learn the hidden features of the nodes, then propagate the learned features on the graph with fixed steps to aggregate the information of multi-hop neighborhoods. Despite effectiveness, the aggregation operation, which requires the whole adjacency matrix as the input, is involved in the model training, causing high training cost that hinders its potential on larger graphs. On the other hand, due to the independence of node attributes as the input, the neural networks used in decoupled GCNs are very simple, and advanced techniques cannot be applied to the modeling. To this end, we further liberate the aggregation operation from the decoupled GCN and propose a new paradigm of GCN, termed Neighborhood Convolutional Network (NCN), that utilizes the neighborhood aggregation result as the input, followed by a special convolutional neural network tailored for extracting exp"
+  },
+  "arxiv_2301.04381": {
+    "doc_id": "arxiv_2301.04381",
+    "title": "Determinate Node Selection for Semi-supervised Classification Oriented\n  Graph Convolutional Networks",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Graph Convolutional Networks (GCNs) have been proved successful in the field of semi-supervised node classification by extracting structural information from graph data. However, the random selection of labeled nodes used by GCNs may lead to unstable generalization performance of GCNs. In this paper, we propose an efficient method for the deterministic selection of labeled nodes: the Determinate Node Selection (DNS) algorithm. The DNS algorithm identifies two categories of representative nodes in the graph: typical nodes and divergent nodes. These labeled nodes are selected by exploring the structure of the graph and determining the ability of the nodes to represent the distribution of data within the graph. The DNS algorithm can be applied quite simply on a wide range of semi-supervised graph neural network models for node classification tasks. Through extensive experimentation, we have demonstrated that the incorporation of the DNS algorithm leads to a remarkable improvement in the average accuracy of the model and a significant decrease in the standard deviation, as compared to the original method."
+  },
+  "arxiv_2302.13399": {
+    "doc_id": "arxiv_2302.13399",
+    "title": "Path Integral Based Convolution and Pooling for Heterogeneous Graph\n  Neural Networks",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Graph neural networks (GNN) extends deep learning to graph-structure dataset. Similar to Convolutional Neural Networks (CNN) using on image prediction, convolutional and pooling layers are the foundation to success for GNN on graph prediction tasks. In the initial PAN paper, it uses a path integral based graph neural networks for graph prediction. Specifically, it uses a convolution operation that involves every path linking the message sender and receiver with learnable weights depending on the path length, which corresponds to the maximal entropy random walk. It further generalizes such convolution operation to a new transition matrix called maximal entropy transition (MET). Because the diagonal entries of the MET matrix is directly related to the subgraph centrality, it provide a trial mechanism for pooling based on centrality score. While the initial PAN paper only considers node features. We further extends its capability to handle complex heterogeneous graph including both node and edge features."
+  },
+  "arxiv_2307.00865": {
+    "doc_id": "arxiv_2307.00865",
+    "title": "A Survey on Graph Classification and Link Prediction based on GNN",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Traditional convolutional neural networks are limited to handling Euclidean space data, overlooking the vast realm of real-life scenarios represented as graph data, including transportation networks, social networks, and reference networks. The pivotal step in transferring convolutional neural networks to graph data analysis and processing lies in the construction of graph convolutional operators and graph pooling operators. This comprehensive review article delves into the world of graph convolutional neural networks. Firstly, it elaborates on the fundamentals of graph convolutional neural networks. Subsequently, it elucidates the graph neural network models based on attention mechanisms and autoencoders, summarizing their application in node classification, graph classification, and link prediction along with the associated datasets."
+  },
+  "arxiv_2401.00755": {
+    "doc_id": "arxiv_2401.00755",
+    "title": "Saliency-Aware Regularized Graph Neural Network",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "The crux of graph classification lies in the effective representation learning for the entire graph. Typical graph neural networks focus on modeling the local dependencies when aggregating features of neighboring nodes, and obtain the representation for the entire graph by aggregating node features. Such methods have two potential limitations: 1) the global node saliency w.r.t. graph classification is not explicitly modeled, which is crucial since different nodes may have different semantic relevance to graph classification; 2) the graph representation directly aggregated from node features may have limited effectiveness to reflect graph-level information. In this work, we propose the Saliency-Aware Regularized Graph Neural Network (SAR-GNN) for graph classification, which consists of two core modules: 1) a traditional graph neural network serving as the backbone for learning node features and 2) the Graph Neural Memory designed to distill a compact graph representation from node features of the backbone. We first estimate the global node saliency by measuring the semantic similarity between the compact graph representation and node features. Then the learned saliency distribution "
+  },
+  "arxiv_2404.12724": {
+    "doc_id": "arxiv_2404.12724",
+    "title": "Graph Convolutional Network For Semi-supervised Node Classification With\n  Subgraph Sketching",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "In this paper, we propose the Graph-Learning-Dual Graph Convolutional Neural Network called GLDGCN based on the classic Graph Convolutional Neural Network(GCN) by introducing dual convolutional layer and graph learning layer. We apply GLDGCN to the semi-supervised node classification task. Compared with the baseline methods, we achieve higher classification accuracy on three citation networks Citeseer, Cora and Pubmed, and we also analyze and discussabout selection of the hyperparameters and network depth. GLDGCN also perform well on the classic social network KarateClub and the new Wiki-CS dataset.   For the insufficient ability of our algorithm to process large graphs during the experiment, we also introduce subgraph clustering and stochastic gradient descent methods into GCN and design a semi-supervised node classification algorithm based on the CLustering Graph Convolutional neural Network, which enables GCN to process large graph and improves its application value. We complete semi-supervised node classification experiments on two classic large graph which are PPI dataset (more than 50,000 nodes) and Reddit dataset (more than 200,000 nodes), and also perform well."
+  },
+  "arxiv_2408.00165": {
+    "doc_id": "arxiv_2408.00165",
+    "title": "Non-convolutional Graph Neural Networks",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Rethink convolution-based graph neural networks (GNN) -- they characteristically suffer from limited expressiveness, over-smoothing, and over-squashing, and require specialized sparse kernels for efficient computation. Here, we design a simple graph learning module entirely free of convolution operators, coined random walk with unifying memory (RUM) neural network, where an RNN merges the topological and semantic graph features along the random walks terminating at each node. Relating the rich literature on RNN behavior and graph topology, we theoretically show and experimentally verify that RUM attenuates the aforementioned symptoms and is more expressive than the Weisfeiler-Lehman (WL) isomorphism test. On a variety of node- and graph-level classification and regression tasks, RUM not only achieves competitive performance, but is also robust, memory-efficient, scalable, and faster than the simplest convolutional GNNs."
+  },
+  "ss_476188": {
+    "doc_id": "ss_476188",
+    "title": "Graph Neural Networks with Convolutional ARMA Filters",
+    "year": 2021,
+    "venue": "INTELLIGENCE",
+    "abstract": "Popular graph neural networks implement convolution operations on graphs based on polynomial spectral filters. In this paper, we propose a novel graph convolutional layer inspired by the auto-regressive moving average (ARMA) filter that, compared to polynomial ones, provides a more flexible frequency response, is more robust to noise, and better captures the global graph structure. We propose a graph neural network implementation of the ARMA filter with a recursive and distributed formulation, obtaining a convolutional layer that is efficient to train, localized in the node space, and can be transferred to new graphs at test time. We perform a spectral analysis to study the filtering effect of the proposed ARMA layer and report experiments on four downstream tasks: semi-supervised node classification, graph signal classification, graph classification, and graph regression. Results show that the proposed ARMA layer brings significant improvements over graph neural networks based on polynomial filters."
+  },
+  "ss_477653": {
+    "doc_id": "ss_477653",
+    "title": "Co-Embedding of Nodes and Edges With Graph Neural Networks",
+    "year": 2020,
+    "venue": "INTELLIGENCE",
+    "abstract": "Graph, as an important data representation, is ubiquitous in many real world applications ranging from social network analysis to biology. How to correctly and effectively learn and extract information from graph is essential for a large number of machine learning tasks. Graph embedding is a way to transform and encode the data structure in high dimensional and non-euclidean feature space to a low dimensional and structural space, which is easily exploited by other machine learning algorithms. We have witnessed a huge surge of such embedding methods, from statistical approaches to recent deep learning methods such as the graph convolutional networks (GCN). Deep learning approaches usually outperform the traditional methods in most graph learning benchmarks by building an end-to-end learning framework to optimize the loss function directly. However, most of the existing GCN methods can only perform convolution operations with node features, while ignoring the handy information in edge features, such as relations in knowledge graphs. To address this problem, we present CensNet, Convolution with Edge-Node Switching graph neural network, for learning tasks in graph-structured data with"
+  },
+  "ss_477785": {
+    "doc_id": "ss_477785",
+    "title": "Second-Order Pooling for Graph Neural Networks",
+    "year": 2020,
+    "venue": "INTELLIGENCE",
+    "abstract": "Graph neural networks have achieved great success in learning node representations for graph tasks such as node classification and link prediction. Graph representation learning requires graph pooling to obtain graph representations from node representations. It is challenging to develop graph pooling methods due to the variable sizes and isomorphic structures of graphs. In this work, we propose to use second-order pooling as graph pooling, which naturally solves the above challenges. In addition, compared to existing graph pooling methods, second-order pooling is able to use information from all nodes and collect second-order statistics, making it more powerful. We show that direct use of second-order pooling with graph neural networks leads to practical problems. To overcome these problems, we propose two novel global graph pooling methods based on second-order pooling; namely, bilinear mapping and attentional second-order pooling. In addition, we extend attentional second-order pooling to hierarchical graph pooling for more flexible use in GNNs. We perform thorough experiments on graph classification tasks to demonstrate the effectiveness and superiority of our proposed methods."
+  },
+  "ss_477854": {
+    "doc_id": "ss_477854",
+    "title": "Learning Backtrackless Aligned-Spatial Graph Convolutional Networks for Graph Classification",
+    "year": 2020,
+    "venue": "INTELLIGENCE",
+    "abstract": "In this paper, we develop a novel backtrackless aligned-spatial graph convolutional network (BASGCN) model to learn effective features for graph classification. Our idea is to transform arbitrary-sized graphs into fixed-sized backtrackless aligned grid structures and define a new spatial graph convolution operation associated with the grid structures. We show that the proposed BASGCN model not only reduces the problems of information loss and imprecise information representation arising in existing spatially-based graph convolutional network (GCN) models, but also bridges the theoretical gap between traditional convolutional neural network (CNN) models and spatially-based GCN models. Furthermore, the proposed BASGCN model can both adaptively discriminate the importance between specified vertices during the convolution process and reduce the notorious tottering problem of existing spatially-based GCNs related to the Weisfeiler-Lehman algorithm, explaining the effectiveness of the proposed model. Experiments on standard graph datasets demonstrate the effectiveness of the proposed model."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "topic_id": "cross_ml_drug_discovery",
+  "system": "autosurvey",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Bringing a new therapeutic agent from initial concept to patient bedside typically spans more than a decade and demands billions of dollars in investment, with no guarantee of ultimate success [1; 2].",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Traditionally, this is accomplished through high-throughput screening (HTS) of large chemical libraries, which may contain millions of compounds, or through fragment-based drug discovery and virtual screening approaches [4].",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Phase I trials primarily assess safety and tolerability in a small number of healthy volunteers or patients, often including dose-escalation studies to determine the maximum tolerated dose [7].",
+      "citation_markers": [
+        "[7]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "The attrition of candidate compounds across these stages is dramatic; it has been estimated that only a tiny fraction of initially identified hits ultimately achieve regulatory approval. This sequential, resource-intensive architecture, combined with the biological complexity of human disease and the challenge of translating preclinical findings into clinical outcomes, defines the fundamental challenge that modern computational and machine learning approaches seek to address [1; 13].",
+      "citation_markers": [
+        "[1; 13]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The past decade has witnessed a remarkable emergence and rapid growth of machine learning (ML) and artificial intelligence (AI) technologies within pharmaceutical research and drug discovery, fundamentally reshaping how the field approaches the complex challenges of identifying and developing new therapeutics [27; 19].",
+      "citation_markers": [
+        "[27; 19]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Researchers now have access to databases containing billions of drug-like molecules alongside pre-computed molecular descriptors, fingerprints, and structural properties [37].",
+      "citation_markers": [
+        "[37]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Exascale computing resources have further expanded the scope of what is computationally feasible in AI-driven drug discovery, enabling large-scale virtual screening campaigns and the integration of physics-based molecular simulation with ML scoring functions at unprecedented throughput [13; 39].",
+      "citation_markers": [
+        "[13; 39]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Graph neural networks, in particular, have proven exceptionally well-suited to molecular data, as the natural graph-theoretic representation of molecular structures as atoms and bonds maps directly onto the node-and-edge formalism of these architectures [42].",
+      "citation_markers": [
+        "[42]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The release of AlphaFold2 by DeepMind in 2021 marked what many regard as the single most impactful event in computational structural biology in decades.",
+      "citation_markers": [
+        "[33]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Graph neural networks (GNNs) have emerged as a dominant paradigm for DDI prediction due to their natural ability to model molecular structures and relational biological networks.",
+      "citation_markers": [
+        "[27]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "The prediction of three-dimensional protein structures from amino acid sequences has long been considered one of the most fundamental and challenging problems in structural biology.",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The vision of fully autonomous, AI-driven closed-loop drug discovery represents one of the most transformative and ambitious frontiers in computational pharmaceutical research.",
+      "citation_markers": [
+        "[109; 105]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 90976,
+    "completion_tokens": 845,
+    "total_tokens": 91821,
+    "prompt_tokens_details": {
+      "cached_tokens": 90368
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "root": "results/s5/s5a_smoke_20260713_2009",
+  "n_rows": 3,
+  "n_ok": 3,
+  "n_primary_eligible": 3,
+  "issues": [],
+  "rows": [
+    {
+      "topic": "3D Gaussian Splatting",
+      "tier": "short",
+      "arm": "recursive_slrgp",
+      "ok": true,
+      "words": 1206,
+      "target_words": 1200,
+      "d_max": 1,
+      "n_refs": 8,
+      "n_invalid_citations": 0,
+      "n_leaf_writes": 2,
+      "n_descend_events": 2,
+      "evidence_pool_hash": "24e9cbda11c0078cfd33318d2ad7c89a1267e7d56b0cd42a2b44e769bfe40183",
+      "primary_eligible": true,
+      "issues": [],
+      "llm_calls": 2,
+      "prompt_tokens": 2141,
+      "completion_tokens": 1830
+    },
+    {
+      "topic": "3D Gaussian Splatting",
+      "tier": "short",
+      "arm": "fixed_outline_no_reentry",
+      "ok": true,
+      "words": 1184,
+      "target_words": 1200,
+      "d_max": 1,
+      "n_refs": 8,
+      "n_invalid_citations": 0,
+      "n_leaf_writes": 2,
+      "n_descend_events": 0,
+      "evidence_pool_hash": "24e9cbda11c0078cfd33318d2ad7c89a1267e7d56b0cd42a2b44e769bfe40183",
+      "primary_eligible": true,
+      "issues": [],
+      "llm_calls": 2,
+      "prompt_tokens": 2141,
+      "completion_tokens": 1823
+    },
+    {
+      "topic": "3D Gaussian Splatting",
+      "tier": "short",
+      "arm": "flat_single_pass",
+      "ok": true,
+      "words": 1060,
+      "target_words": 1200,
+      "d_max": 1,
+      "n_refs": 8,
+      "n_invalid_citations": 0,
+      "n_leaf_writes": 1,
+      "n_descend_events": 0,
+      "evidence_pool_hash": "24e9cbda11c0078cfd33318d2ad7c89a1267e7d56b0cd42a2b44e769bfe40183",
+      "primary_eligible": true,
+      "issues": [],
+      "llm_calls": 1,
+      "prompt_tokens": 2020,
+      "completion_tokens": 1619
+    }
+  ],
+  "summary": {
+    "topics": [
+      "3D Gaussian Splatting"
+    ],
+    "tiers": {
+      "short": {
+        "target_words": 1200,
+        "min_words": 950,
+        "max_words": 1550,
+        "d_max": 1,
+        "n_groups": 2,
+        "group_size": 4
+      }
+    },
+    "arms": [
+      "recursive_slrgp",
+      "fixed_outline_no_reentry",
+      "flat_single_pass"
+    ],
+    "pairability": [
+      {
+        "tier": "short",
+        "contrast": "recursive vs flat",
+        "arm_a": "recursive_slrgp",
+        "arm_b": "flat_single_pass",
+        "primary_n": 1,
+        "primary_topics": [
+          "3D Gaussian Splatting"
+        ],
+        "all_ok_n": 1
+      },
+      {
+        "tier": "short",
+        "contrast": "recursive vs fixed outline",
+        "arm_a": "recursive_slrgp",
+        "arm_b": "fixed_outline_no_reentry",
+        "primary_n": 1,
+        "primary_topics": [
+          "3D Gaussian Splatting"
+        ],
+        "all_ok_n": 1
+      }
+    ],
+    "by_tier": {
+      "short": {
+        "n": 3,
+        "n_primary_eligible": 3,
+        "mean_words": 1150.0
+      }
+    }
+  }
+}

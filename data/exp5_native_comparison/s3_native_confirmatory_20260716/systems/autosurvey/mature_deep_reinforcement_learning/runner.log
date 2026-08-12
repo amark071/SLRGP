@@ -1,0 +1,106 @@
+[2026-07-16T02:19:09Z] command=<package-root>/work/s3_native/envs/autosurvey/bin/python main.py --topic Deep Reinforcement Learning --gpu 0 --saving_path <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/autosurvey/mature_deep_reinforcement_learning/raw --model s3-common-backbone --section_num 6 --subsection_len 55 --rag_num 40 --outline_reference_num 120 --db_path <package-root>/work/s3_native/assets/autosurvey/database --embedding_model <package-root>/work/s3_native/assets/autosurvey/models/nomic-embed-text-v1 --api_url http://127.0.0.1:18080/v1/chat/completions --api_key <REDACTED>
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<package-root>/work/s3_native/baselines/autosurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here https://python.langchain.com/v0.2/docs/versions/v0_2/ 
+  from langchain.document_loaders import PyPDFLoader
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<All keys matched successfully>
+Hello! How are you doing? Is there something I can help you with today? 😊
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1811.01it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:18<00:00, 18.11s/it]100%|██████████| 1/1 [00:18<00:00, 18.11s/it]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:01<00:01,  1.02s/it]100%|██████████| 2/2 [00:21<00:00, 12.67s/it]100%|██████████| 2/2 [00:21<00:00, 10.92s/it]
+  0%|          | 0/2 [00:00<?, ?it/s]
+  0%|          | 0/2 [00:00<?, ?it/s][A 50%|█████     | 1/2 [00:03<00:03,  3.12s/it]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A
+
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A[A
+
+ 50%|█████     | 1/2 [00:02<00:02,  2.62s/it][A[A
+
+
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A[A[A
+
+
+
+ 50%|█████     | 1/2 [00:00<00:00,  1.01it/s][A[A[A[A100%|██████████| 2/2 [00:13<00:00,  7.49s/it]100%|██████████| 2/2 [00:13<00:00,  6.84s/it]
+
+
+
+ 50%|█████     | 1/2 [00:16<00:16, 16.10s/it][A[A[A
+ 50%|█████     | 1/2 [00:21<00:21, 21.24s/it][A100%|██████████| 2/2 [00:21<00:00, 10.62s/it]
+
+
+100%|██████████| 2/2 [00:19<00:00, 11.05s/it][A[A100%|██████████| 2/2 [00:19<00:00,  9.78s/it]
+  0%|          | 0/2 [00:00<?, ?it/s]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+
+
+
+100%|██████████| 2/2 [00:29<00:00, 17.33s/it][A[A[A[A100%|██████████| 2/2 [00:29<00:00, 14.88s/it]
+
+
+
+100%|██████████| 2/2 [00:39<00:00, 20.46s/it][A[A[A100%|██████████| 2/2 [00:39<00:00, 19.81s/it]
+
+ 50%|█████     | 1/2 [00:16<00:16, 16.24s/it][A
+100%|██████████| 2/2 [00:24<00:00, 11.70s/it][A100%|██████████| 2/2 [00:24<00:00, 12.38s/it]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:02<00:02,  2.01s/it][A
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A
+100%|██████████| 2/2 [00:03<00:00,  1.76s/it][A100%|██████████| 2/2 [00:03<00:00,  1.80s/it]
+
+
+ 50%|█████     | 1/2 [00:01<00:01,  1.22s/it][A[A
+  0%|          | 0/2 [00:00<?, ?it/s][A 50%|█████     | 1/2 [00:52<00:52, 52.95s/it]100%|██████████| 2/2 [00:52<00:00, 26.48s/it]
+  0%|          | 0/2 [00:00<?, ?it/s]
+
+100%|██████████| 2/2 [00:14<00:00,  8.35s/it][A[A100%|██████████| 2/2 [00:14<00:00,  7.28s/it]
+
+ 50%|█████     | 1/2 [00:16<00:16, 16.53s/it][A100%|██████████| 2/2 [00:16<00:00,  8.26s/it]
+ 50%|█████     | 1/2 [00:10<00:10, 10.74s/it]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:04<00:04,  4.21s/it][A100%|██████████| 2/2 [00:18<00:00,  8.79s/it]100%|██████████| 2/2 [00:18<00:00,  9.09s/it]
+
+100%|██████████| 2/2 [00:12<00:00,  6.64s/it][A100%|██████████| 2/2 [00:12<00:00,  6.27s/it]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:34<00:34, 34.83s/it]100%|██████████| 2/2 [00:34<00:00, 17.42s/it]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:21<00:21, 21.31s/it]100%|██████████| 2/2 [00:21<00:00, 10.65s/it]
+0it [00:00, ?it/s]272it [00:00, 182682.26it/s]
+  0%|          | 0/272 [00:00<?, ?it/s]100%|██████████| 272/272 [00:00<00:00, 3961287.11it/s]
+0it [00:00, ?it/s]264it [00:00, 188508.04it/s]
+  0%|          | 0/264 [00:00<?, ?it/s]100%|██████████| 264/264 [00:00<00:00, 3075822.93it/s]
+[2026-07-16T02:31:50Z] returncode=0 elapsed_seconds=761.047 timed_out=False
+[2026-07-16T03:15:00Z] command=<package-root>/work/s3_native/envs/autosurvey/bin/python main.py --topic Deep Reinforcement Learning --gpu 0 --saving_path <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/autosurvey/mature_deep_reinforcement_learning/raw --model s3-common-backbone --section_num 6 --subsection_len 55 --rag_num 40 --outline_reference_num 120 --db_path <package-root>/work/s3_native/assets/autosurvey/database --embedding_model <package-root>/work/s3_native/assets/autosurvey/models/nomic-embed-text-v1 --api_url http://127.0.0.1:18080/v1/chat/completions --api_key <REDACTED>
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<package-root>/work/s3_native/baselines/autosurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here https://python.langchain.com/v0.2/docs/versions/v0_2/ 
+  from langchain.document_loaders import PyPDFLoader
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<package-root>/work/s3_native/envs/autosurvey/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+<All keys matched successfully>
+Hello! How are you doing? Is there something I can help you with today? 😊
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1711.96it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:19<00:00, 19.57s/it]100%|██████████| 1/1 [00:19<00:00, 19.57s/it]

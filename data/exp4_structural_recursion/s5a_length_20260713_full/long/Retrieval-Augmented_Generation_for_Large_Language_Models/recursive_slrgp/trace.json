@@ -1,0 +1,209 @@
+{
+  "topic": "Retrieval-Augmented Generation for Large Language Models",
+  "tier": "long",
+  "arm": "recursive_slrgp",
+  "descend_events": [
+    {
+      "node_path": "root/0",
+      "depth": 1,
+      "group_name": "Surveys and Overviews of RAG",
+      "n_docs": 8
+    },
+    {
+      "node_path": "root/0/0",
+      "depth": 2,
+      "group_name": "Surveys and Overviews of RAG — evidence cluster A",
+      "n_docs": 4
+    },
+    {
+      "node_path": "root/0/1",
+      "depth": 2,
+      "group_name": "Surveys and Overviews of RAG — evidence cluster B",
+      "n_docs": 4
+    },
+    {
+      "node_path": "root/1",
+      "depth": 1,
+      "group_name": "RAG System Components and Architecture Improvements",
+      "n_docs": 8
+    },
+    {
+      "node_path": "root/1/0",
+      "depth": 2,
+      "group_name": "RAG System Components and Architecture Improvements — evidence cluster A",
+      "n_docs": 4
+    },
+    {
+      "node_path": "root/1/1",
+      "depth": 2,
+      "group_name": "RAG System Components and Architecture Improvements — evidence cluster B",
+      "n_docs": 4
+    },
+    {
+      "node_path": "root/2",
+      "depth": 1,
+      "group_name": "Evidence theme 3",
+      "n_docs": 8
+    },
+    {
+      "node_path": "root/2/0",
+      "depth": 2,
+      "group_name": "Evidence theme 3 — evidence cluster A",
+      "n_docs": 4
+    },
+    {
+      "node_path": "root/2/1",
+      "depth": 2,
+      "group_name": "Evidence theme 3 — evidence cluster B",
+      "n_docs": 4
+    },
+    {
+      "node_path": "root/3",
+      "depth": 1,
+      "group_name": "Evidence theme 4",
+      "n_docs": 8
+    },
+    {
+      "node_path": "root/3/0",
+      "depth": 2,
+      "group_name": "Evidence theme 4 — evidence cluster A",
+      "n_docs": 4
+    },
+    {
+      "node_path": "root/3/1",
+      "depth": 2,
+      "group_name": "Evidence theme 4 — evidence cluster B",
+      "n_docs": 4
+    }
+  ],
+  "leaf_writes": [
+    {
+      "node_path": "root/0/0",
+      "candidate_ids": [
+        "arxiv_2407.13193",
+        "arxiv_2405.06211",
+        "arxiv_2404.10981",
+        "arxiv_2312.10997"
+      ],
+      "written_citation_ids": [
+        "arxiv_2407.13193",
+        "arxiv_2405.06211",
+        "arxiv_2404.10981",
+        "arxiv_2312.10997"
+      ],
+      "word_count": 880
+    },
+    {
+      "node_path": "root/0/1",
+      "candidate_ids": [
+        "arxiv_2410.20598",
+        "arxiv_2309.01431",
+        "arxiv_2405.13008",
+        "arxiv_2406.13249"
+      ],
+      "written_citation_ids": [
+        "arxiv_2410.20598",
+        "arxiv_2309.01431",
+        "arxiv_2405.13008",
+        "arxiv_2406.13249"
+      ],
+      "word_count": 1044
+    },
+    {
+      "node_path": "root/1/0",
+      "candidate_ids": [
+        "arxiv_2406.07348",
+        "arxiv_2502.06864",
+        "arxiv_2402.11129",
+        "arxiv_2502.20245"
+      ],
+      "written_citation_ids": [
+        "arxiv_2502.20245",
+        "arxiv_2406.07348",
+        "arxiv_2402.11129",
+        "arxiv_2502.06864"
+      ],
+      "word_count": 992
+    },
+    {
+      "node_path": "root/1/1",
+      "candidate_ids": [
+        "arxiv_2005.11401",
+        "arxiv_2412.15605",
+        "arxiv_2404.19543",
+        "arxiv_2407.12101"
+      ],
+      "written_citation_ids": [
+        "arxiv_2005.11401",
+        "arxiv_2404.19543",
+        "arxiv_2412.15605",
+        "arxiv_2407.12101"
+      ],
+      "word_count": 934
+    },
+    {
+      "node_path": "root/2/0",
+      "candidate_ids": [
+        "arxiv_2503.10677",
+        "arxiv_2410.12837",
+        "arxiv_2407.12325",
+        "arxiv_2509.10467"
+      ],
+      "written_citation_ids": [
+        "arxiv_2410.12837",
+        "arxiv_2503.10677",
+        "arxiv_2407.12325",
+        "arxiv_2509.10467"
+      ],
+      "word_count": 953
+    },
+    {
+      "node_path": "root/2/1",
+      "candidate_ids": [
+        "arxiv_2405.06683",
+        "arxiv_2505.11180",
+        "arxiv_2505.03075",
+        "arxiv_2508.06056"
+      ],
+      "written_citation_ids": [
+        "arxiv_2405.06683",
+        "arxiv_2505.03075",
+        "arxiv_2505.11180",
+        "arxiv_2508.06056"
+      ],
+      "word_count": 1003
+    },
+    {
+      "node_path": "root/3/0",
+      "candidate_ids": [
+        "arxiv_2506.02279",
+        "arxiv_2507.05714",
+        "arxiv_2407.09394",
+        "arxiv_2405.07437"
+      ],
+      "written_citation_ids": [
+        "arxiv_2506.02279",
+        "arxiv_2507.05714",
+        "arxiv_2407.09394",
+        "arxiv_2405.07437"
+      ],
+      "word_count": 1008
+    },
+    {
+      "node_path": "root/3/1",
+      "candidate_ids": [
+        "arxiv_2402.01176",
+        "arxiv_2305.15294",
+        "arxiv_2504.14891",
+        "arxiv_2504.19436"
+      ],
+      "written_citation_ids": [
+        "arxiv_2402.01176",
+        "arxiv_2305.15294",
+        "arxiv_2504.19436",
+        "arxiv_2504.14891"
+      ],
+      "word_count": 927
+    }
+  ]
+}

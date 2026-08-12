@@ -1,0 +1,62 @@
+{
+  "topic": "Efficient Inference for Large Language Models",
+  "arm": "o_rank_slab_matched",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "bundle_hash": "3e96394844ae826ab254d03163d5a0f58778d9f7804d18ace057cddde723348f",
+  "started_at": "2026-07-13 16:23:30",
+  "target_total_words": 1000,
+  "groups": [
+    {
+      "name": "Rank slab 1: positions 1-4",
+      "n": 4
+    },
+    {
+      "name": "Rank slab 2: positions 5-8",
+      "n": 4
+    }
+  ],
+  "group_size_vector": [
+    4,
+    4
+  ],
+  "refs": [
+    "arxiv_2002.11794",
+    "arxiv_2211.07715",
+    "arxiv_2401.02038",
+    "arxiv_2402.09748",
+    "arxiv_2404.15949",
+    "arxiv_2409.17372",
+    "arxiv_2501.16372",
+    "arxiv_2508.06297"
+  ],
+  "n_refs": 8,
+  "word_count": 996,
+  "written_citation_ids": [
+    "arxiv_2402.09748",
+    "arxiv_2409.17372",
+    "arxiv_2508.06297",
+    "arxiv_2211.07715",
+    "arxiv_2002.11794",
+    "arxiv_2501.16372",
+    "arxiv_2404.15949",
+    "arxiv_2401.02038"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2002.11794",
+    "arxiv_2211.07715",
+    "arxiv_2401.02038",
+    "arxiv_2402.09748",
+    "arxiv_2404.15949",
+    "arxiv_2409.17372",
+    "arxiv_2501.16372",
+    "arxiv_2508.06297"
+  ],
+  "primary_length_eligible": true,
+  "elapsed_sec": 57.3,
+  "llm_usage_delta": {
+    "n_calls": 8,
+    "prompt_tokens": 5610,
+    "completion_tokens": 2083
+  }
+}

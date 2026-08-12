@@ -1,0 +1,121 @@
+{
+  "topic_id": "method_self_supervised_learning",
+  "system": "surveyforge",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Self-supervised representation learning has emerged as a transformative paradigm in modern machine learning, fundamentally addressing the annotation bottleneck that constrains supervised approaches [1; 2]",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "By constructing supervisory signals directly from the intrinsic structure of unlabeled data through pretext tasks and joint-embedding objectives, these methods bridge the gap between the data abundance of the web and the label scarcity of practical deployment [3; 4]",
+      "citation_markers": [
+        "[3; 4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Geometric and photometric transformation prediction constitutes the earliest and most conceptually transparent family of self-supervised pretext tasks, wherein a neural network is trained to recover the identity of a synthetically applied transformation from the transformed input alone, with the supervisory signal arising entirely from the data generation process itself [1; 2].",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Temporal and cross-modal predictive pretext tasks constitute a rich family of self-supervised objectives that transform the inherent structure of time and modality co-occurrence into freely available supervisory signals. Rather than relying on artificially constructed transformations, these approaches harvest supervision from the natural ordering of events in video and the synchronized correspondence between simultaneously recorded modalities, yielding representations that capture both dynamic and semantic structure.",
+      "citation_markers": [
+        "[36; 5]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The instance discrimination framework reformulates unsupervised representation learning as a classification problem over individual data instances, establishing that semantically equivalent views of the same image should occupy proximal positions on the embedding hypersphere while views of distinct instances are repelled [1; 5].",
+      "citation_markers": [
+        "[1; 5]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The InfoNCE loss operationalizing this principle lower-bounds the mutual information between augmented views [8; 41], with the temperature hyperparameter governing embedding concentration and the implicit uniformity-alignment decomposition providing a geometric diagnostic framework [42].",
+      "citation_markers": [
+        "[8; 41]",
+        "[42]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Non-contrastive self-distillation methods represent a paradigm shift in joint-embedding self-supervised learning, demonstrating that collapse-free representation learning is achievable without any explicit negative samples. Frameworks such as those built on stop-gradient operations and exponential moving average (EMA) target networks [46; 47] establish that architectural asymmetry alone suffices to prevent trivial constant solutions, provided the online encoder is equipped with a lightweight predictor head targeting a slowly evolving momentum encoder.",
+      "citation_markers": [
+        "[46; 47]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Clustering-based and prototype-driven methods represent a compelling evolution beyond pure instance-level discrimination, replacing per-sample contrastive signals with richer group-level categorical supervision derived from online or offline cluster assignments. The central insight is that semantically related instances should share consistent cluster memberships, providing a form of implicit class-level structure that instance discrimination cannot capture.",
+      "citation_markers": [
+        "[53; 54]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The choice of backbone architecture fundamentally determines how self-supervised objectives interact with raw data, shaping which invariances are learned and how readily representations transfer to downstream tasks. Convolutional architectures such as ResNet variants leverage local receptive fields and translation equivariance to build hierarchical feature representations, properties that interact productively with contrastive and clustering-based objectives [1; 59].",
+      "citation_markers": [
+        "[1; 59]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Self-supervised pre-trained representations have demonstrated remarkable versatility across core visual recognition and dense prediction tasks, with evaluation protocols playing a decisive role in revealing the distinct properties of learned features. Two principal evaluation paradigms dominate the literature: linear probing, which trains a frozen backbone's features with only a linear classifier, and full fine-tuning, which updates all network parameters end-to-end.",
+      "citation_markers": [
+        "[60]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Self-supervised representations exhibit distinctive generalization properties under distribution shift, largely because their training objective is decoupled from source-domain label structure. Studies on cross-domain transfer demonstrate that SSL models transferred from ImageNet to remote sensing, medical imaging, and fine-grained recognition domains retain richer invariances than their supervised counterparts, which tend to overfit category boundaries irrelevant to target tasks [23; 49].",
+      "citation_markers": [
+        "[23; 49]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The theoretical foundations of self-supervised learning rest on a convergence of information-theoretic, statistical learning-theoretic, and spectral perspectives that collectively explain why objectives constructed from unlabeled data yield representations generalizing to semantically meaningful downstream tasks. A central insight, formalized through the multi-view redundancy principle [41], establishes that contrastive representations learned from two views sharing redundant information about class labels yield linear predictors nearly optimal on downstream tasks, directly connecting the structure of the augmentation distribution to downstream separability.",
+      "citation_markers": [
+        "[41]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 22187,
+    "completion_tokens": 1181,
+    "total_tokens": 23368
+  }
+}

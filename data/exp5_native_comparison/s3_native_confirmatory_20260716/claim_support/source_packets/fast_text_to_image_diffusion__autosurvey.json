@@ -1,0 +1,373 @@
+{
+  "topic_id": "fast_text_to_image_diffusion",
+  "system": "autosurvey",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Training instability, mode collapse, and the tendency to produce blurry or artifact-laden images at high resolutions constrained their practical utility [4",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2102.08578v2",
+          "source_key": "4",
+          "title": "Evolving GAN Formulations for Higher Quality Image Synthesis",
+          "abstract": "Generative Adversarial Networks (GANs) have extended deep learning to complex generation and translation tasks across different data modalities. However, GANs are notoriously difficult to train: Mode collapse and other instabilities in the training process often degrade the quality of the generated results, such as images. This paper presents a new technique called TaylorGAN for improving GANs by discovering customized loss functions for each of its two networks. The loss functions are parameterized as Taylor expansions and optimized through multiobjective evolution. On an image-to-image translation benchmark task, this approach qualitatively improves generated image quality and quantitatively improves two independent GAN performance metrics. It therefore forms a promising approach for applying GANs to more challenging tasks in the future.",
+          "resolved_arxiv": {
+            "arxiv_id": "2102.08578",
+            "title": "Evolving GAN Formulations for Higher Quality Image Synthesis",
+            "abstract": "Generative Adversarial Networks (GANs) have extended deep learning to complex generation and translation tasks across different data modalities. However, GANs are notoriously difficult to train: Mode collapse and other instabilities in the training process often degrade the quality of the generated results, such as images. This paper presents a new technique called TaylorGAN for improving GANs by discovering customized loss functions for each of its two networks. The loss functions are parameterized as Taylor expansions and optimized through multiobjective evolution. On an image-to-image translation benchmark task, this approach qualitatively improves generated image quality and quantitatively improves two independent GAN performance metrics. It therefore forms a promising approach for applying GANs to more challenging tasks in the future.",
+            "published": "2021-02-17T05:11:21Z",
+            "source_url": "https://arxiv.org/abs/2102.08578"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The introduction of Denoising Diffusion Probabilistic Models (DDPMs) demonstrated that this framework could achieve image quality surpassing GANs on established benchmarks while avoiding training instabilities. The subsequent development of latent diffusion models, which perform the diffusion process in the compressed latent space of a pretrained autoencoder rather than in pixel space, dramatically improved computational efficiency without sacrificing visual quality [9",
+      "citation_markers": [
+        "[9]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2308.13142v1",
+          "source_key": "9",
+          "title": "A Survey of Diffusion Based Image Generation Models: Issues and Their Solutions",
+          "abstract": "Recently, there has been significant progress in the development of large models. Following the success of ChatGPT, numerous language models have been introduced, demonstrating remarkable performance. Similar advancements have also been observed in image generation models, such as Google's Imagen model, OpenAI's DALL-E 2, and stable diffusion models, which have exhibited impressive capabilities in generating images. However, similar to large language models, these models still encounter unresolved challenges. Fortunately, the availability of open-source stable diffusion models and their underlying mathematical principles has enabled the academic community to extensively analyze the performance of current image generation models and make improvements based on this stable diffusion framework. This survey aims to examine the existing issues and the current solutions pertaining to image generation models.",
+          "resolved_arxiv": {
+            "arxiv_id": "2308.13142",
+            "title": "A Survey of Diffusion Based Image Generation Models: Issues and Their Solutions",
+            "abstract": "Recently, there has been significant progress in the development of large models. Following the success of ChatGPT, numerous language models have been introduced, demonstrating remarkable performance. Similar advancements have also been observed in image generation models, such as Google's Imagen model, OpenAI's DALL-E 2, and stable diffusion models, which have exhibited impressive capabilities in generating images. However, similar to large language models, these models still encounter unresolved challenges. Fortunately, the availability of open-source stable diffusion models and their underlying mathematical principles has enabled the academic community to extensively analyze the performance of current image generation models and make improvements based on this stable diffusion framework. This survey aims to examine the existing issues and the current solutions pertaining to image generation models.",
+            "published": "2023-08-25T02:35:54Z",
+            "source_url": "https://arxiv.org/abs/2308.13142"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The noise-prediction objective in DDPMs is intimately connected to score matching: predicting $\\boldsymbol{\\epsilon}_\\theta$ is equivalent to estimating the score $\\nabla_{\\mathbf{x}_t} \\log q(\\mathbf{x}_t)$ of the perturbed data distribution [15",
+      "citation_markers": [
+        "[15]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2209.04747v5",
+          "source_key": "15",
+          "title": "Diffusion Models in Vision: A Survey",
+          "abstract": "Denoising diffusion models represent a recent emerging topic in computer vision, demonstrating remarkable results in the area of generative modeling. A diffusion model is a deep generative model that is based on two stages, a forward diffusion stage and a reverse diffusion stage. In the forward diffusion stage, the input data is gradually perturbed over several steps by adding Gaussian noise. In the reverse stage, a model is tasked at recovering the original input data by learning to gradually reverse the diffusion process, step by step. Diffusion models are widely appreciated for the quality and diversity of the generated samples, despite their known computational burdens, i.e. low speeds due to the high number of steps involved during sampling. In this survey, we provide a comprehensive review of articles on denoising diffusion models applied in vision, comprising both theoretical and practical contributions in the field. First, we identify and present three generic diffusion modeling frameworks, which are based on denoising diffusion probabilistic models, noise conditioned score networks, and stochastic differential equations. We further discuss the relations between diffusion models and other deep generative models, including variational auto-encoders, generative adversarial networks, energy-based models, autoregressive models and normalizing flows. Then, we introduce a multi-perspective categorization of diffusion models applied in computer vision. Finally, we illustrate the current limitations of diffusion models and envision some interesting directions for future research.",
+          "resolved_arxiv": {
+            "arxiv_id": "2209.04747",
+            "title": "Diffusion Models in Vision: A Survey",
+            "abstract": "Denoising diffusion models represent a recent emerging topic in computer vision, demonstrating remarkable results in the area of generative modeling. A diffusion model is a deep generative model that is based on two stages, a forward diffusion stage and a reverse diffusion stage. In the forward diffusion stage, the input data is gradually perturbed over several steps by adding Gaussian noise. In the reverse stage, a model is tasked at recovering the original input data by learning to gradually reverse the diffusion process, step by step. Diffusion models are widely appreciated for the quality and diversity of the generated samples, despite their known computational burdens, i.e. low speeds due to the high number of steps involved during sampling. In this survey, we provide a comprehensive review of articles on denoising diffusion models applied in vision, comprising both theoretical and practical contributions in the field. First, we identify and present three generic diffusion modeling frameworks, which are based on denoising diffusion probabilistic models, noise conditioned score networks, and stochastic differential equations. We further discuss the relations between diffusion models and other deep generative models, including variational auto-encoders, generative adversarial networks, energy-based models, autoregressive models and normalizing flows. Then, we introduce a multi-perspective categorization of diffusion models applied in computer vision. Finally, we illustrate the current limitations of diffusion models and envision some interesting directions for future research.",
+            "published": "2022-09-10T22:00:30Z",
+            "source_url": "https://arxiv.org/abs/2209.04747"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Convergence analyses have established polynomial-time guarantees for sampling from complex distributions given sufficiently accurate score estimates [27; 28; 29]. These results do not require strong assumptions such as log-concavity or smoothness, making them applicable to the highly multimodal distributions encountered in image generation",
+      "citation_markers": [
+        "[27; 28; 29]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2206.06227v2",
+          "source_key": "27",
+          "title": "Convergence for score-based generative modeling with polynomial complexity",
+          "abstract": "Score-based generative modeling (SGM) is a highly successful approach for learning a probability distribution from data and generating further samples. We prove the first polynomial convergence guarantees for the core mechanic behind SGM: drawing samples from a probability density $p$ given a score estimate (an estimate of $\\nabla \\ln p$) that is accurate in $L^2(p)$. Compared to previous works, we do not incur error that grows exponentially in time or that suffers from a curse of dimensionality. Our guarantee works for any smooth distribution and depends polynomially on its log-Sobolev constant. Using our guarantee, we give a theoretical analysis of score-based generative modeling, which transforms white-noise input into samples from a learned data distribution given score estimates at different noise scales. Our analysis gives theoretical grounding to the observation that an annealed procedure is required in practice to generate good samples, as our proof depends essentially on using annealing to obtain a warm start at each step. Moreover, we show that a predictor-corrector algorithm gives better convergence than using either portion alone.",
+          "resolved_arxiv": {
+            "arxiv_id": "2206.06227",
+            "title": "Convergence for score-based generative modeling with polynomial complexity",
+            "abstract": "Score-based generative modeling (SGM) is a highly successful approach for learning a probability distribution from data and generating further samples. We prove the first polynomial convergence guarantees for the core mechanic behind SGM: drawing samples from a probability density $p$ given a score estimate (an estimate of $\\nabla \\ln p$) that is accurate in $L^2(p)$. Compared to previous works, we do not incur error that grows exponentially in time or that suffers from a curse of dimensionality. Our guarantee works for any smooth distribution and depends polynomially on its log-Sobolev constant. Using our guarantee, we give a theoretical analysis of score-based generative modeling, which transforms white-noise input into samples from a learned data distribution given score estimates at different noise scales. Our analysis gives theoretical grounding to the observation that an annealed procedure is required in practice to generate good samples, as our proof depends essentially on using annealing to obtain a warm start at each step. Moreover, we show that a predictor-corrector algorithm gives better convergence than using either portion alone.",
+            "published": "2022-06-13T14:57:35Z",
+            "source_url": "https://arxiv.org/abs/2206.06227"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2209.11215v3",
+          "source_key": "28",
+          "title": "Sampling is as easy as learning the score: theory for diffusion models with minimal data assumptions",
+          "abstract": "We provide theoretical convergence guarantees for score-based generative models (SGMs) such as denoising diffusion probabilistic models (DDPMs), which constitute the backbone of large-scale real-world generative models such as DALL$\\cdot$E 2. Our main result is that, assuming accurate score estimates, such SGMs can efficiently sample from essentially any realistic data distribution. In contrast to prior works, our results (1) hold for an $L^2$-accurate score estimate (rather than $L^\\infty$-accurate); (2) do not require restrictive functional inequality conditions that preclude substantial non-log-concavity; (3) scale polynomially in all relevant problem parameters; and (4) match state-of-the-art complexity guarantees for discretization of the Langevin diffusion, provided that the score error is sufficiently small. We view this as strong theoretical justification for the empirical success of SGMs. We also examine SGMs based on the critically damped Langevin diffusion (CLD). Contrary to conventional wisdom, we provide evidence that the use of the CLD does not reduce the complexity of SGMs.",
+          "resolved_arxiv": {
+            "arxiv_id": "2209.11215",
+            "title": "Sampling is as easy as learning the score: theory for diffusion models with minimal data assumptions",
+            "abstract": "We provide theoretical convergence guarantees for score-based generative models (SGMs) such as denoising diffusion probabilistic models (DDPMs), which constitute the backbone of large-scale real-world generative models such as DALL$\\cdot$E 2. Our main result is that, assuming accurate score estimates, such SGMs can efficiently sample from essentially any realistic data distribution. In contrast to prior works, our results (1) hold for an $L^2$-accurate score estimate (rather than $L^\\infty$-accurate); (2) do not require restrictive functional inequality conditions that preclude substantial non-log-concavity; (3) scale polynomially in all relevant problem parameters; and (4) match state-of-the-art complexity guarantees for discretization of the Langevin diffusion, provided that the score error is sufficiently small. We view this as strong theoretical justification for the empirical success of SGMs. We also examine SGMs based on the critically damped Langevin diffusion (CLD). Contrary to conventional wisdom, we provide evidence that the use of the CLD does not reduce the complexity of SGMs.",
+            "published": "2022-09-22T17:55:01Z",
+            "source_url": "https://arxiv.org/abs/2209.11215"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2209.12381v2",
+          "source_key": "29",
+          "title": "Convergence of score-based generative modeling for general data distributions",
+          "abstract": "Score-based generative modeling (SGM) has grown to be a hugely successful method for learning to generate samples from complex data distributions such as that of images and audio. It is based on evolving an SDE that transforms white noise into a sample from the learned distribution, using estimates of the score function, or gradient log-pdf. Previous convergence analyses for these methods have suffered either from strong assumptions on the data distribution or exponential dependencies, and hence fail to give efficient guarantees for the multimodal and non-smooth distributions that arise in practice and for which good empirical performance is observed. We consider a popular kind of SGM -- denoising diffusion models -- and give polynomial convergence guarantees for general data distributions, with no assumptions related to functional inequalities or smoothness. Assuming $L^2$-accurate score estimates, we obtain Wasserstein distance guarantees for any distribution of bounded support or sufficiently decaying tails, as well as TV guarantees for distributions with further smoothness assumptions.",
+          "resolved_arxiv": {
+            "arxiv_id": "2209.12381",
+            "title": "Convergence of score-based generative modeling for general data distributions",
+            "abstract": "Score-based generative modeling (SGM) has grown to be a hugely successful method for learning to generate samples from complex data distributions such as that of images and audio. It is based on evolving an SDE that transforms white noise into a sample from the learned distribution, using estimates of the score function, or gradient log-pdf. Previous convergence analyses for these methods have suffered either from strong assumptions on the data distribution or exponential dependencies, and hence fail to give efficient guarantees for the multimodal and non-smooth distributions that arise in practice and for which good empirical performance is observed. We consider a popular kind of SGM -- denoising diffusion models -- and give polynomial convergence guarantees for general data distributions, with no assumptions related to functional inequalities or smoothness. Assuming $L^2$-accurate score estimates, we obtain Wasserstein distance guarantees for any distribution of bounded support or sufficiently decaying tails, as well as TV guarantees for distributions with further smoothness assumptions.",
+            "published": "2022-09-26T02:38:36Z",
+            "source_url": "https://arxiv.org/abs/2209.12381"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The quality of the autoencoder directly governs the upper bound on generative fidelity: any information lost during encoding cannot be recovered by the diffusion model, making autoencoder design a critical bottleneck for the overall system",
+      "citation_markers": [
+        "[35]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2112.10752v2",
+          "source_key": "35",
+          "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "abstract": "By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion models (DMs) achieve state-of-the-art synthesis results on image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU days and inference is expensive due to sequential evaluations. To enable DM training on limited computational resources while retaining their quality and flexibility, we apply them in the latent space of powerful pretrained autoencoders. In contrast to previous work, training diffusion models on such a representation allows for the first time to reach a near-optimal point between complexity reduction and detail preservation, greatly boosting visual fidelity. By introducing cross-attention layers into the model architecture, we turn diffusion models into powerful and flexible generators for general conditioning inputs such as text or bounding boxes and high-resolution synthesis becomes possible in a convolutional manner. Our latent diffusion models (LDMs) achieve a new state of the art for image inpainting and highly competitive performance on various tasks, including unconditional image generation, semantic scene synthesis, and super-resolution, while significantly reducing computational requirements compared to pixel-based DMs. Code is available at https://github.com/CompVis/latent-diffusion .",
+          "resolved_arxiv": {
+            "arxiv_id": "2112.10752",
+            "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+            "abstract": "By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion models (DMs) achieve state-of-the-art synthesis results on image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU days and inference is expensive due to sequential evaluations. To enable DM training on limited computational resources while retaining their quality and flexibility, we apply them in the latent space of powerful pretrained autoencoders. In contrast to previous work, training diffusion models on such a representation allows for the first time to reach a near-optimal point between complexity reduction and detail preservation, greatly boosting visual fidelity. By introducing cross-attention layers into the model architecture, we turn diffusion models into powerful and flexible generators for general conditioning inputs such as text or bounding boxes and high-resolution synthesis becomes possible in a convolutional manner. Our latent diffusion models (LDMs) achieve a new state of the art for image inpainting and highly competitive performance on various tasks, including unconditional image generation, semantic scene synthesis, and super-resolution, while significantly reducing computational requirements compared to pixel-based DMs. Code is available at https://github.com/CompVis/latent-diffusion .",
+            "published": "2021-12-20T18:55:25Z",
+            "source_url": "https://arxiv.org/abs/2112.10752"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The use of CLIP embeddings as conditioning signals in diffusion models has become a foundational design choice in modern text-to-image systems. In the DALL-E 2 framework, a two-stage architecture is employed wherein a prior model first generates a CLIP image embedding from a given text caption, after which a diffusion-based decoder synthesizes the final image conditioned on this embedding [41",
+      "citation_markers": [
+        "[41]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2204.06125v1",
+          "source_key": "41",
+          "title": "Hierarchical Text-Conditional Image Generation with CLIP Latents",
+          "abstract": "Contrastive models like CLIP have been shown to learn robust representations of images that capture both semantics and style. To leverage these representations for image generation, we propose a two-stage model: a prior that generates a CLIP image embedding given a text caption, and a decoder that generates an image conditioned on the image embedding. We show that explicitly generating image representations improves image diversity with minimal loss in photorealism and caption similarity. Our decoders conditioned on image representations can also produce variations of an image that preserve both its semantics and style, while varying the non-essential details absent from the image representation. Moreover, the joint embedding space of CLIP enables language-guided image manipulations in a zero-shot fashion. We use diffusion models for the decoder and experiment with both autoregressive and diffusion models for the prior, finding that the latter are computationally more efficient and produce higher-quality samples.",
+          "resolved_arxiv": {
+            "arxiv_id": "2204.06125",
+            "title": "Hierarchical Text-Conditional Image Generation with CLIP Latents",
+            "abstract": "Contrastive models like CLIP have been shown to learn robust representations of images that capture both semantics and style. To leverage these representations for image generation, we propose a two-stage model: a prior that generates a CLIP image embedding given a text caption, and a decoder that generates an image conditioned on the image embedding. We show that explicitly generating image representations improves image diversity with minimal loss in photorealism and caption similarity. Our decoders conditioned on image representations can also produce variations of an image that preserve both its semantics and style, while varying the non-essential details absent from the image representation. Moreover, the joint embedding space of CLIP enables language-guided image manipulations in a zero-shot fashion. We use diffusion models for the decoder and experiment with both autoregressive and diffusion models for the prior, finding that the latter are computationally more efficient and produce higher-quality samples.",
+            "published": "2022-04-13T01:10:33Z",
+            "source_url": "https://arxiv.org/abs/2204.06125"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "The use of classifier-free guidance [57] is central to controlling the fidelity-diversity tradeoff during inference",
+      "citation_markers": [
+        "[57]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2207.12598v1",
+          "source_key": "57",
+          "title": "Classifier-Free Diffusion Guidance",
+          "abstract": "Classifier guidance is a recently introduced method to trade off mode coverage and sample fidelity in conditional diffusion models post training, in the same spirit as low temperature sampling or truncation in other types of generative models. Classifier guidance combines the score estimate of a diffusion model with the gradient of an image classifier and thereby requires training an image classifier separate from the diffusion model. It also raises the question of whether guidance can be performed without a classifier. We show that guidance can be indeed performed by a pure generative model without such a classifier: in what we call classifier-free guidance, we jointly train a conditional and an unconditional diffusion model, and we combine the resulting conditional and unconditional score estimates to attain a trade-off between sample quality and diversity similar to that obtained using classifier guidance.",
+          "resolved_arxiv": {
+            "arxiv_id": "2207.12598",
+            "title": "Classifier-Free Diffusion Guidance",
+            "abstract": "Classifier guidance is a recently introduced method to trade off mode coverage and sample fidelity in conditional diffusion models post training, in the same spirit as low temperature sampling or truncation in other types of generative models. Classifier guidance combines the score estimate of a diffusion model with the gradient of an image classifier and thereby requires training an image classifier separate from the diffusion model. It also raises the question of whether guidance can be performed without a classifier. We show that guidance can be indeed performed by a pure generative model without such a classifier: in what we call classifier-free guidance, we jointly train a conditional and an unconditional diffusion model, and we combine the resulting conditional and unconditional score estimates to attain a trade-off between sample quality and diversity similar to that obtained using classifier guidance.",
+            "published": "2022-07-26T01:42:07Z",
+            "source_url": "https://arxiv.org/abs/2207.12598"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "jointly training a single model with and without conditioning signals and then linearly extrapolating between the two at inference time, CFG effectively amplifies the influence of the text prompt on the generated output",
+      "citation_markers": [
+        "[57]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2207.12598v1",
+          "source_key": "57",
+          "title": "Classifier-Free Diffusion Guidance",
+          "abstract": "Classifier guidance is a recently introduced method to trade off mode coverage and sample fidelity in conditional diffusion models post training, in the same spirit as low temperature sampling or truncation in other types of generative models. Classifier guidance combines the score estimate of a diffusion model with the gradient of an image classifier and thereby requires training an image classifier separate from the diffusion model. It also raises the question of whether guidance can be performed without a classifier. We show that guidance can be indeed performed by a pure generative model without such a classifier: in what we call classifier-free guidance, we jointly train a conditional and an unconditional diffusion model, and we combine the resulting conditional and unconditional score estimates to attain a trade-off between sample quality and diversity similar to that obtained using classifier guidance.",
+          "resolved_arxiv": {
+            "arxiv_id": "2207.12598",
+            "title": "Classifier-Free Diffusion Guidance",
+            "abstract": "Classifier guidance is a recently introduced method to trade off mode coverage and sample fidelity in conditional diffusion models post training, in the same spirit as low temperature sampling or truncation in other types of generative models. Classifier guidance combines the score estimate of a diffusion model with the gradient of an image classifier and thereby requires training an image classifier separate from the diffusion model. It also raises the question of whether guidance can be performed without a classifier. We show that guidance can be indeed performed by a pure generative model without such a classifier: in what we call classifier-free guidance, we jointly train a conditional and an unconditional diffusion model, and we combine the resulting conditional and unconditional score estimates to attain a trade-off between sample quality and diversity similar to that obtained using classifier guidance.",
+            "published": "2022-07-26T01:42:07Z",
+            "source_url": "https://arxiv.org/abs/2207.12598"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "92] demonstrates this approach explicitly, showing that diffusion models' cross-attention layers inherently provide annotation-free attention masks aligned with corresponding text inputs on generated images",
+      "citation_markers": [
+        "[92]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2308.06739v1",
+          "source_key": "92",
+          "title": "Free-ATM: Exploring Unsupervised Learning on Diffusion-Generated Images with Free Attention Masks",
+          "abstract": "Despite the rapid advancement of unsupervised learning in visual representation, it requires training on large-scale datasets that demand costly data collection, and pose additional challenges due to concerns regarding data privacy. Recently, synthetic images generated by text-to-image diffusion models, have shown great potential for benefiting image recognition. Although promising, there has been inadequate exploration dedicated to unsupervised learning on diffusion-generated images. To address this, we start by uncovering that diffusion models' cross-attention layers inherently provide annotation-free attention masks aligned with corresponding text inputs on generated images. We then investigate the problems of three prevalent unsupervised learning techniques ( i.e., contrastive learning, masked modeling, and vision-language pretraining) and introduce customized solutions by fully exploiting the aforementioned free attention masks. Our approach is validated through extensive experiments that show consistent improvements in baseline models across various downstream tasks, including image classification, detection, segmentation, and image-text retrieval. By utilizing our method, it is possible to close the performance gap between unsupervised pretraining on synthetic data and real-world scenarios.",
+          "resolved_arxiv": {
+            "arxiv_id": "2308.06739",
+            "title": "Free-ATM: Exploring Unsupervised Learning on Diffusion-Generated Images with Free Attention Masks",
+            "abstract": "Despite the rapid advancement of unsupervised learning in visual representation, it requires training on large-scale datasets that demand costly data collection, and pose additional challenges due to concerns regarding data privacy. Recently, synthetic images generated by text-to-image diffusion models, have shown great potential for benefiting image recognition. Although promising, there has been inadequate exploration dedicated to unsupervised learning on diffusion-generated images. To address this, we start by uncovering that diffusion models' cross-attention layers inherently provide annotation-free attention masks aligned with corresponding text inputs on generated images. We then investigate the problems of three prevalent unsupervised learning techniques ( i.e., contrastive learning, masked modeling, and vision-language pretraining) and introduce customized solutions by fully exploiting the aforementioned free attention masks. Our approach is validated through extensive experiments that show consistent improvements in baseline models across various downstream tasks, including image classification, detection, segmentation, and image-text retrieval. By utilizing our method, it is possible to close the performance gap between unsupervised pretraining on synthetic data and real-world scenarios.",
+            "published": "2023-08-13T10:07:46Z",
+            "source_url": "https://arxiv.org/abs/2308.06739"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Many landmark text-to-image models, including Imagen [10] and CogView [7], report FID scores on MS-COCO as a standard point of comparison, with Imagen achieving a state-of-the-art zero-shot FID of 7.27 on COCO",
+      "citation_markers": [
+        "[10]",
+        "[7]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "value": "2205.11487v1",
+          "source_key": "10",
+          "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+          "abstract": "We present Imagen, a text-to-image diffusion model with an unprecedented degree of photorealism and a deep level of language understanding. Imagen builds on the power of large transformer language models in understanding text and hinges on the strength of diffusion models in high-fidelity image generation. Our key discovery is that generic large language models (e.g. T5), pretrained on text-only corpora, are surprisingly effective at encoding text for image synthesis: increasing the size of the language model in Imagen boosts both sample fidelity and image-text alignment much more than increasing the size of the image diffusion model. Imagen achieves a new state-of-the-art FID score of 7.27 on the COCO dataset, without ever training on COCO, and human raters find Imagen samples to be on par with the COCO data itself in image-text alignment. To assess text-to-image models in greater depth, we introduce DrawBench, a comprehensive and challenging benchmark for text-to-image models. With DrawBench, we compare Imagen with recent methods including VQ-GAN+CLIP, Latent Diffusion Models, and DALL-E 2, and find that human raters prefer Imagen over other models in side-by-side comparisons, both in terms of sample quality and image-text alignment. See https://imagen.research.google/ for an overview of the results.",
+          "resolved_arxiv": {
+            "arxiv_id": "2205.11487",
+            "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+            "abstract": "We present Imagen, a text-to-image diffusion model with an unprecedented degree of photorealism and a deep level of language understanding. Imagen builds on the power of large transformer language models in understanding text and hinges on the strength of diffusion models in high-fidelity image generation. Our key discovery is that generic large language models (e.g. T5), pretrained on text-only corpora, are surprisingly effective at encoding text for image synthesis: increasing the size of the language model in Imagen boosts both sample fidelity and image-text alignment much more than increasing the size of the image diffusion model. Imagen achieves a new state-of-the-art FID score of 7.27 on the COCO dataset, without ever training on COCO, and human raters find Imagen samples to be on par with the COCO data itself in image-text alignment. To assess text-to-image models in greater depth, we introduce DrawBench, a comprehensive and challenging benchmark for text-to-image models. With DrawBench, we compare Imagen with recent methods including VQ-GAN+CLIP, Latent Diffusion Models, and DALL-E 2, and find that human raters prefer Imagen over other models in side-by-side comparisons, both in terms of sample quality and image-text alignment. See https://imagen.research.google/ for an overview of the results.",
+            "published": "2022-05-23T17:42:53Z",
+            "source_url": "https://arxiv.org/abs/2205.11487"
+          },
+          "source_accessible": true
+        },
+        {
+          "value": "2105.13290v3",
+          "source_key": "7",
+          "title": "CogView: Mastering Text-to-Image Generation via Transformers",
+          "abstract": "Text-to-Image generation in the general domain has long been an open problem, which requires both a powerful generative model and cross-modal understanding. We propose CogView, a 4-billion-parameter Transformer with VQ-VAE tokenizer to advance this problem. We also demonstrate the finetuning strategies for various downstream tasks, e.g. style learning, super-resolution, text-image ranking and fashion design, and methods to stabilize pretraining, e.g. eliminating NaN losses. CogView achieves the state-of-the-art FID on the blurred MS COCO dataset, outperforming previous GAN-based models and a recent similar work DALL-E.",
+          "resolved_arxiv": {
+            "arxiv_id": "2105.13290",
+            "title": "CogView: Mastering Text-to-Image Generation via Transformers",
+            "abstract": "Text-to-Image generation in the general domain has long been an open problem, which requires both a powerful generative model and cross-modal understanding. We propose CogView, a 4-billion-parameter Transformer with VQ-VAE tokenizer to advance this problem. We also demonstrate the finetuning strategies for various downstream tasks, e.g. style learning, super-resolution, text-image ranking and fashion design, and methods to stabilize pretraining, e.g. eliminating NaN losses. CogView achieves the state-of-the-art FID on the blurred MS COCO dataset, outperforming previous GAN-based models and a recent similar work DALL-E.",
+            "published": "2021-05-26T16:52:53Z",
+            "source_url": "https://arxiv.org/abs/2105.13290"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "This approach substantially lowers the barrier to image manipulation, enabling non-expert users to perform complex edits through conversational-style directives, and sits naturally alongside inversion-based and localized editing methods as part of the broader landscape of text-driven image manipulation",
+      "citation_markers": [
+        "[87]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2303.15649v2",
+          "source_key": "87",
+          "title": "StyleDiffusion: Prompt-Embedding Inversion for Text-Based Editing",
+          "abstract": "A significant research effort is focused on exploiting the amazing capacities of pretrained diffusion models for the editing of images.They either finetune the model, or invert the image in the latent space of the pretrained model. However, they suffer from two problems: (1) Unsatisfying results for selected regions and unexpected changes in non-selected regions.(2) They require careful text prompt editing where the prompt should include all visual objects in the input image.To address this, we propose two improvements: (1) Only optimizing the input of the value linear network in the cross-attention layers is sufficiently powerful to reconstruct a real image. (2) We propose attention regularization to preserve the object-like attention maps after reconstruction and editing, enabling us to obtain accurate style editing without invoking significant structural changes. We further improve the editing technique that is used for the unconditional branch of classifier-free guidance as used by P2P. Extensive experimental prompt-editing results on a variety of images demonstrate qualitatively and quantitatively that our method has superior editing capabilities compared to existing and concurrent works. See our accompanying code in Stylediffusion: \\url{https://github.com/sen-mao/StyleDiffusion}.",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.15649",
+            "title": "StyleDiffusion: Prompt-Embedding Inversion for Text-Based Editing",
+            "abstract": "A significant research effort is focused on exploiting the amazing capacities of pretrained diffusion models for the editing of images.They either finetune the model, or invert the image in the latent space of the pretrained model. However, they suffer from two problems: (1) Unsatisfying results for selected regions and unexpected changes in non-selected regions.(2) They require careful text prompt editing where the prompt should include all visual objects in the input image.To address this, we propose two improvements: (1) Only optimizing the input of the value linear network in the cross-attention layers is sufficiently powerful to reconstruct a real image. (2) We propose attention regularization to preserve the object-like attention maps after reconstruction and editing, enabling us to obtain accurate style editing without invoking significant structural changes. We further improve the editing technique that is used for the unconditional branch of classifier-free guidance as used by P2P. Extensive experimental prompt-editing results on a variety of images demonstrate qualitatively and quantitatively that our method has superior editing capabilities compared to existing and concurrent works. See our accompanying code in Stylediffusion: \\url{https://github.com/sen-mao/StyleDiffusion}.",
+            "published": "2023-03-28T00:16:45Z",
+            "source_url": "https://arxiv.org/abs/2303.15649"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "involves exploiting the internal representations of diffusion models—specifically their cross-attention maps—to construct annotation-free datasets",
+      "citation_markers": [
+        "[92]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "value": "2308.06739v1",
+          "source_key": "92",
+          "title": "Free-ATM: Exploring Unsupervised Learning on Diffusion-Generated Images with Free Attention Masks",
+          "abstract": "Despite the rapid advancement of unsupervised learning in visual representation, it requires training on large-scale datasets that demand costly data collection, and pose additional challenges due to concerns regarding data privacy. Recently, synthetic images generated by text-to-image diffusion models, have shown great potential for benefiting image recognition. Although promising, there has been inadequate exploration dedicated to unsupervised learning on diffusion-generated images. To address this, we start by uncovering that diffusion models' cross-attention layers inherently provide annotation-free attention masks aligned with corresponding text inputs on generated images. We then investigate the problems of three prevalent unsupervised learning techniques ( i.e., contrastive learning, masked modeling, and vision-language pretraining) and introduce customized solutions by fully exploiting the aforementioned free attention masks. Our approach is validated through extensive experiments that show consistent improvements in baseline models across various downstream tasks, including image classification, detection, segmentation, and image-text retrieval. By utilizing our method, it is possible to close the performance gap between unsupervised pretraining on synthetic data and real-world scenarios.",
+          "resolved_arxiv": {
+            "arxiv_id": "2308.06739",
+            "title": "Free-ATM: Exploring Unsupervised Learning on Diffusion-Generated Images with Free Attention Masks",
+            "abstract": "Despite the rapid advancement of unsupervised learning in visual representation, it requires training on large-scale datasets that demand costly data collection, and pose additional challenges due to concerns regarding data privacy. Recently, synthetic images generated by text-to-image diffusion models, have shown great potential for benefiting image recognition. Although promising, there has been inadequate exploration dedicated to unsupervised learning on diffusion-generated images. To address this, we start by uncovering that diffusion models' cross-attention layers inherently provide annotation-free attention masks aligned with corresponding text inputs on generated images. We then investigate the problems of three prevalent unsupervised learning techniques ( i.e., contrastive learning, masked modeling, and vision-language pretraining) and introduce customized solutions by fully exploiting the aforementioned free attention masks. Our approach is validated through extensive experiments that show consistent improvements in baseline models across various downstream tasks, including image classification, detection, segmentation, and image-text retrieval. By utilizing our method, it is possible to close the performance gap between unsupervised pretraining on synthetic data and real-world scenarios.",
+            "published": "2023-08-13T10:07:46Z",
+            "source_url": "https://arxiv.org/abs/2308.06739"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

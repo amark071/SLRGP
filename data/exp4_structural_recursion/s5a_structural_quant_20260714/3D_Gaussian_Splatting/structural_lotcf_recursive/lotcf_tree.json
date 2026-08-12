@@ -1,0 +1,281 @@
+{
+  "title": "3D Gaussian Splatting",
+  "depth": 0,
+  "doc_ids": [
+    "arxiv_2403.11134",
+    "arxiv_2509.17083",
+    "arxiv_2308.04079",
+    "arxiv_2401.00834",
+    "arxiv_2403.11831",
+    "arxiv_2411.01853",
+    "arxiv_2502.19318",
+    "arxiv_2411.03637",
+    "arxiv_2312.04564",
+    "arxiv_2412.09680",
+    "arxiv_2405.17811",
+    "arxiv_2210.00379",
+    "arxiv_2405.17083",
+    "arxiv_2411.14974",
+    "arxiv_2401.06003",
+    "arxiv_2405.17891",
+    "arxiv_2502.19457",
+    "ss_478166",
+    "arxiv_2311.13681",
+    "arxiv_2103.14645",
+    "arxiv_2404.06270",
+    "arxiv_2401.03890",
+    "arxiv_2409.14316",
+    "arxiv_2312.13299",
+    "arxiv_2410.11080",
+    "arxiv_2408.03822",
+    "arxiv_2506.06462",
+    "arxiv_2312.07504",
+    "arxiv_2403.16964",
+    "arxiv_2511.18873",
+    "arxiv_2406.02720",
+    "arxiv_2405.12110"
+  ],
+  "facet": "topic",
+  "relation": "foundational-to-applied",
+  "children": [
+    {
+      "title": "Foundations: 3DGS Core Method, Rendering Principles, and Surveys",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2308.04079",
+        "arxiv_2401.03890",
+        "arxiv_2403.11134",
+        "arxiv_2210.00379",
+        "arxiv_2502.19318",
+        "arxiv_2103.14645",
+        "ss_478166"
+      ],
+      "facet": "theory",
+      "relation": "foundational-to-applied",
+      "children": [
+        {
+          "title": "Core 3DGS Method, Rendering Principles, and Precursor Techniques",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2308.04079",
+            "arxiv_2502.19318",
+            "arxiv_2103.14645",
+            "ss_478166"
+          ],
+          "facet": "method",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers establish the original 3DGS algorithm, analyze the accuracy and approximations of its volumetric rendering pipeline, and provide the NeRF-baking precursor work that motivated real-time explicit representations."
+        },
+        {
+          "title": "Surveys and Comprehensive Reviews of 3DGS and Radiance Field Methods",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2401.03890",
+            "arxiv_2403.11134",
+            "arxiv_2210.00379"
+          ],
+          "facet": "other",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers provide systematic overviews and taxonomies of the broader 3DGS and NeRF research landscape, situating the core method within the wider field of novel-view synthesis."
+        }
+      ],
+      "rationale": "These papers establish the original 3DGS method, provide comprehensive surveys of the field, and examine the theoretical rendering principles underlying 3DGS (including comparisons with NeRF baselines)."
+    },
+    {
+      "title": "Efficiency, Compression, and Compact Representations",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2312.04564",
+        "arxiv_2311.13681",
+        "arxiv_2312.13299",
+        "arxiv_2405.17083",
+        "arxiv_2408.03822",
+        "arxiv_2502.19457",
+        "arxiv_2509.17083"
+      ],
+      "facet": "method",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Surveys and Overviews of 3DGS Compression and Compactness",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2502.19457"
+          ],
+          "facet": "topic",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "This paper provides a comprehensive survey of compression methods, trends, and future directions for 3DGS, serving as a broad reference framing the landscape of the field."
+        },
+        {
+          "title": "Specific Techniques for Compact and Efficient 3DGS Representations",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2312.04564",
+            "arxiv_2311.13681",
+            "arxiv_2312.13299",
+            "arxiv_2405.17083",
+            "arxiv_2408.03822",
+            "arxiv_2509.17083"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [
+            {
+              "title": "Quantization, Encoding, and Attribute Compression for Compact 3DGS",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2312.04564",
+                "arxiv_2311.13681",
+                "arxiv_2408.03822"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers focus on reducing the memory footprint of individual Gaussians through quantized embeddings, compact attribute representations, and learned encodings applied per-point or per-Gaussian."
+            },
+            {
+              "title": "Structured Spatial Representations: Grids, Factorization, and Hybrid Fields for 3DGS Compactness",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2312.13299",
+                "arxiv_2405.17083",
+                "arxiv_2509.17083"
+              ],
+              "facet": "method",
+              "relation": "foundational-to-applied",
+              "children": [],
+              "rationale": "These papers achieve compactness by reorganizing Gaussian parameters into structured spatial layouts—2D grids with local homogeneity, factorized coordinate representations, or hybrid neural-explicit fields—rather than compressing individual Gaussian attributes."
+            }
+          ],
+          "rationale": "These papers each propose concrete algorithmic approaches—quantized embeddings, self-organizing grids, factorized coordinates, compact Gaussian representations for static/dynamic scenes, and hybrid radiance fields—to reduce memory and storage overhead in 3DGS."
+        }
+      ],
+      "rationale": "These papers address the memory, storage, and computational overhead of 3DGS through quantization, factorization, grid-based organization, hybrid representations, and compression surveys."
+    },
+    {
+      "title": "Robustness, Quality, and Geometric Fidelity Improvements",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2401.00834",
+        "arxiv_2403.11831",
+        "arxiv_2411.03637",
+        "arxiv_2409.14316",
+        "arxiv_2410.11080",
+        "arxiv_2405.12110",
+        "arxiv_2312.07504",
+        "arxiv_2411.01853",
+        "arxiv_2403.16964",
+        "arxiv_2401.06003",
+        "arxiv_2411.14974",
+        "arxiv_2406.02720",
+        "arxiv_2412.09680",
+        "arxiv_2506.06462"
+      ],
+      "facet": "method",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Robustness to Degraded or Sparse Inputs (Blur, Few-Shot, Pose-Free)",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2401.00834",
+            "arxiv_2403.11831",
+            "arxiv_2411.03637",
+            "arxiv_2409.14316",
+            "arxiv_2410.11080",
+            "arxiv_2405.12110",
+            "arxiv_2312.07504"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [
+            {
+              "title": "Robustness to Blurry Inputs and Inaccurate/Unknown Camera Poses",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2401.00834",
+                "arxiv_2403.11831",
+                "arxiv_2312.07504"
+              ],
+              "facet": "method",
+              "relation": "foundational-to-applied",
+              "children": [],
+              "rationale": "These papers tackle degraded image quality from blur (defocus or motion) and the related challenge of unknown or inaccurate camera poses, proposing deblurring models and pose-free Gaussian splatting pipelines."
+            },
+            {
+              "title": "Robustness to Sparse/Few-Shot Input Views",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2411.03637",
+                "arxiv_2409.14316",
+                "arxiv_2410.11080",
+                "arxiv_2405.12110"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers address the challenge of reconstructing high-quality 3D Gaussian scenes from very few input images, employing strategies such as co-regularization, multi-view priors, depth supervision, and structural consistency to prevent overfitting."
+            }
+          ],
+          "rationale": "These papers all address the core challenge of reconstructing high-quality 3DGS scenes when input data is compromised—either by motion/defocus blur, insufficient view coverage, or missing camera poses."
+        },
+        {
+          "title": "Geometric Surface Fidelity and Reconstruction Quality",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2411.01853",
+            "arxiv_2403.16964"
+          ],
+          "facet": "method",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers tackle the geometric limitations of standard 3DGS—rough surfaces, poor SDF alignment, and sparse-area artifacts—by coupling Gaussian representations with continuous or implicit geometric constraints."
+        },
+        {
+          "title": "Alternative and Enhanced Primitive Representations",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2401.06003",
+            "arxiv_2411.14974",
+            "arxiv_2406.02720"
+          ],
+          "facet": "method",
+          "relation": "enumerative",
+          "children": [],
+          "rationale": "These papers propose replacing or augmenting the standard isotropic/anisotropic Gaussian primitive with richer shapes (half-Gaussians, convexes, trilinear splats) to better capture edges, flat surfaces, and fine detail."
+        },
+        {
+          "title": "Scene Decomposition for Material, Illumination, and Structural Fidelity",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2412.09680",
+            "arxiv_2506.06462"
+          ],
+          "facet": "topic",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers go beyond appearance fidelity to disentangle physically meaningful scene properties—materials, lighting, and repeated structural elements—enabling more faithful and generalizable reconstructions."
+        }
+      ],
+      "rationale": "These papers improve 3DGS reconstruction quality by addressing sparse-view overfitting, motion blur, surface geometry, alternative primitives, and pose-free reconstruction."
+    },
+    {
+      "title": "Dynamic Scenes, Editing, and Application Extensions",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2404.06270",
+        "arxiv_2405.17891",
+        "arxiv_2405.17811",
+        "arxiv_2511.18873"
+      ],
+      "facet": "application",
+      "relation": "general-to-specific",
+      "children": [],
+      "rationale": "These papers extend 3DGS to dynamic reconstruction, scene manipulation, physics-aware editing, and expressive representations for 4D and interactive applications."
+    }
+  ],
+  "rationale": "The 3DGS literature naturally partitions into: (1) foundational representations and rendering (the core method and its theoretical underpinnings), (2) efficiency, compression, and storage improvements, (3) robustness and quality enhancements (sparse views, deblurring, geometry), and (4) extensions to dynamic scenes and downstream applications."
+}

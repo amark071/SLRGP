@@ -1,0 +1,122 @@
+{
+  "topic_id": "fast_text_to_image_diffusion",
+  "system": "surveygen",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The forward process incrementally corrupts data by adding Gaussian noise over T timesteps, while the reverse process learns to denoise iteratively, recovering the original data distribution.",
+      "citation_markers": [
+        "ref [20]",
+        "ref [12]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Stable Diffusion, a prominent instantiation, performs the denoising process in a low-dimensional latent space, substantially reducing memory and computational requirements while preserving high image fidelity.",
+      "citation_markers": [
+        "ref [12]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Imagen ref [20] demonstrated that large pretrained text-only encoders such as T5 yield superior conditioning compared to CLIP-based encoders, with encoder scale proving more impactful than diffusion model scale.",
+      "citation_markers": [
+        "ref [20]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Cross-attention layers serve as the primary mechanism linking textual tokens to spatial image features in text-to-image diffusion models. In models such as Stable Diffusion and PixArt-α, cross-attention modules inject text conditions into the denoising network by computing attention between visual feature queries and text-derived keys and values ref [33].",
+      "citation_markers": [
+        "ref [33]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "eDiff-I exploits this observation by training an ensemble of specialized expert denoisers, each optimized for distinct stages of the iterative generation process, thereby improving text alignment without increasing inference cost ref [30].",
+      "citation_markers": [
+        "ref [30]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "ControlNet ref [4] introduces zero-initialized convolutional adapters that clone the encoder layers of Stable Diffusion, enabling conditioning on edges, depth maps, segmentation masks, and human poses without corrupting pretrained weights.",
+      "citation_markers": [
+        "ref [4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "GLIGEN ref [17] introduces trainable gated layers into frozen pretrained models, enabling open-world grounded generation conditioned on caption-bounding box pairs, achieving strong zero-shot performance on COCO and LVIS.",
+      "citation_markers": [
+        "ref [17]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "DreamBooth ref [8] fine-tunes the entire diffusion model to bind a unique identifier token to a specific subject, employing a class-specific prior preservation loss to maintain generative diversity.",
+      "citation_markers": [
+        "ref [8]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "This reflow procedure proves critical for enabling functional one-step generation, achieving an FID of 23.3 on MS-COCO 2017-5k—substantially surpassing progressive distillation baselines—while requiring only 199 A100 GPU days of training, demonstrating that trajectory straightening constitutes an effective and computationally tractable pathway toward ultra-fast text-to-image generation.",
+      "citation_markers": [
+        "ref [26]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "PixArt-α ref [33] exemplifies a principled approach to cost reduction through a decomposed three-stage training pipeline that separately optimizes pixel dependency, text-image alignment, and aesthetic quality, achieving competitive image quality at merely 10.8% of Stable Diffusion v1.5's training cost, reducing CO₂ emissions by approximately 90%.",
+      "citation_markers": [
+        "ref [33]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "ImageReward ref [3] introduced the first general-purpose human preference reward model, trained on 137k expert comparisons via systematic rating and ranking pipelines, and proposed Reward Feedback Learning (ReFL) to directly optimize diffusion models against the learned scorer. Complementarily, the Human Preference Score (HPS) ref [28] trained a preference classifier on community-sourced human choices, demonstrating superior correlation with human judgments over CLIP-based metrics and enabling preference-guided fine-tuning of Stable Diffusion.",
+      "citation_markers": [
+        "ref [3]",
+        "ref [28]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "SneakyPrompt ref [60] demonstrates that reinforcement learning-guided token perturbations can systematically jailbreak these filters, exposing critical limitations in current content moderation pipelines and underscoring the need for more robust safety mechanisms.",
+      "citation_markers": [
+        "ref [60]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9548,
+    "completion_tokens": 993,
+    "total_tokens": 10541
+  }
+}

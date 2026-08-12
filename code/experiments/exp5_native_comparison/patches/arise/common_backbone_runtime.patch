@@ -1,0 +1,257 @@
+diff --git a/ARISE_Source_Code/1_citation.py b/ARISE_Source_Code/1_citation.py
+index 11376f0..ff68391 100644
+--- a/ARISE_Source_Code/1_citation.py
++++ b/ARISE_Source_Code/1_citation.py
+@@ -14,11 +14,12 @@ load_dotenv()
+ GEMINI_API_KEY  = os.getenv("GEMINI_API_KEY")
+ SERPER_API_KEY  = os.getenv("SERPER_API_KEY")
+ OPENAI_API_KEY  = os.getenv("OPENAI_API_KEY")
+-#os.environ["MODEL"] = "gpt-4.1"
+-os.environ["MODEL"] = "gpt-4.1-mini"
++COMMON_MODEL = os.getenv("S3_COMMON_MODEL", "openai/s3-common-backbone")
++PUBLICATION_CUTOFF = os.getenv("S3_PUBLICATION_CUTOFF", "2024-09-26")
++os.environ["MODEL"] = COMMON_MODEL
+ 
+ # Initialize LLM
+-llm = LLM(model="gpt-4.1-mini", temperature=0, max_tokens=8192, truncate=True)
++llm = LLM(model=COMMON_MODEL, temperature=0, max_tokens=8192, truncate=True)
+ 
+ search_tool = SerperDevTool(api_key=SERPER_API_KEY)
+ scrape_tool = ScrapeWebsiteTool()
+@@ -70,7 +71,7 @@ journal_search_agent = Agent(
+     goal="Identify reputable journals suitable for the given research topic.",
+     verbose=False,
+     model=llm,
+-    tools=[search_tool, scrape_tool],
++    tools=[search_tool],
+     backstory=(
+         "You are an expert in academic publishing and literature review. Your role is to identify high-quality, "
+         "peer-reviewed journals with strong reputations, high impact factor and h-index scores."
+@@ -149,7 +150,7 @@ web_search_agent = Agent(
+     goal="Locate high-quality research papers from reputable journals with a high h-index related to a specific topic.",
+     verbose=False,
+     model=llm,
+-    tools=[search_tool,scrape_tool],
++    tools=[search_tool],
+     backstory=(
+         "As a Research Specialist, your role is to identify credible and authoritative journal articles. "
+         "You use online tools and databases to locate papers from provided journals. "
+@@ -182,7 +183,7 @@ def setup_logging(log_filename="find_paper_log.txt"):
+ def find_high_quality_papers_task(batch_size, topic, source):
+     return Task(
+         description=(
+-            f"Search for {batch_size} recent (published in the last 8 years) high-quality, peer-reviewed research papers "
++            f"Search for {batch_size} high-quality, peer-reviewed research papers published on or before {PUBLICATION_CUTOFF} "
+             f"highly related to the topic '{topic}' from the source '{source}'. Use reputable academic databases or open-access journals "
+             "if necessary. For each paper, extract and format the citation in IEEE style (or another journal-specific style if applicable) "
+             "that includes the following details:\n"
+@@ -237,7 +238,12 @@ def collect_and_save_all_papers(topic_journal_map, paper_count=10):
+ 
+                 # Flexible parsing
+                 if isinstance(raw, str):
+-                    entries = re.split(r"\n\d+[.)]|\n•", raw)
++                    numbered = re.findall(
++                        r"\*\*\[\d+\]\*\*\s*(.*?)(?=\n---|\n\*\*\[\d+\]\*\*|\n###|\Z)",
++                        raw,
++                        flags=re.DOTALL,
++                    )
++                    entries = numbered or re.split(r"\n\d+[.)]|\n•", raw)
+                 elif isinstance(raw, list):
+                     entries = raw
+                 else:
+diff --git a/ARISE_Source_Code/2deduplicated.py b/ARISE_Source_Code/2deduplicated.py
+index ea7dd8f..87e3910 100644
+--- a/ARISE_Source_Code/2deduplicated.py
++++ b/ARISE_Source_Code/2deduplicated.py
+@@ -40,11 +40,10 @@ def extract_python_list(text):
+ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+ SERPER_API_KEY = os.environ.get("SERPER_API_KEY")
+ 
+-print("OPENAI_API_KEY:", OPENAI_API_KEY)
+-print("SERPER_API_KEY:", SERPER_API_KEY)
+-os.environ["MODEL"] = 'gpt-4.1-mini'
++COMMON_MODEL = os.getenv("S3_COMMON_MODEL", "openai/s3-common-backbone")
++os.environ["MODEL"] = COMMON_MODEL
+ 
+-llm = LLM(model="gpt-4.1-mini", temperature=0)
++llm = LLM(model=COMMON_MODEL, temperature=0)
+ # Define the citation deduplication agent with clear instructions for removing duplicate citations.
+ deduplicated_agent = Agent(
+     role="citation deduplicator",
+diff --git a/ARISE_Source_Code/3_summary.py b/ARISE_Source_Code/3_summary.py
+index 1a67ae5..71a77ef 100644
+--- a/ARISE_Source_Code/3_summary.py
++++ b/ARISE_Source_Code/3_summary.py
+@@ -50,11 +50,10 @@ logging.basicConfig(
+ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+ SERPER_API_KEY = os.environ.get("SERPER_API_KEY")
+ 
+-print("OPENAI_API_KEY:", OPENAI_API_KEY)
+-print("SERPER_API_KEY:", SERPER_API_KEY)
+-os.environ["MODEL"] = 'gpt-4.1-mini'
++COMMON_MODEL = os.getenv("S3_COMMON_MODEL", "openai/s3-common-backbone")
++os.environ["MODEL"] = COMMON_MODEL
+ 
+-llm = LLM(model="gpt-4.1-mini", temperature=0)
++llm = LLM(model=COMMON_MODEL, temperature=0)
+ 
+ # Import and initialize tools from crewai_tools
+ from crewai_tools import (
+diff --git a/ARISE_Source_Code/4merge.py b/ARISE_Source_Code/4merge.py
+index 2bb9f25..c38f690 100644
+--- a/ARISE_Source_Code/4merge.py
++++ b/ARISE_Source_Code/4merge.py
+@@ -13,9 +13,10 @@ warnings.filterwarnings('ignore')
+ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+ SERPER_API_KEY = os.environ.get("SERPER_API_KEY")
+ 
+-os.environ["MODEL"] = 'gpt-4.1-mini'
++COMMON_MODEL = os.getenv("S3_COMMON_MODEL", "openai/s3-common-backbone")
++os.environ["MODEL"] = COMMON_MODEL
+ 
+-llm = LLM(model="gpt-4.1-mini", temperature=0)
++llm = LLM(model=COMMON_MODEL, temperature=0)
+ 
+ script_dir = os.path.dirname(os.path.abspath(__file__))
+ os.chdir(script_dir)
+diff --git a/ARISE_Source_Code/5writing-Copy1.py b/ARISE_Source_Code/5writing-Copy1.py
+index 83286da..d809a3b 100644
+--- a/ARISE_Source_Code/5writing-Copy1.py
++++ b/ARISE_Source_Code/5writing-Copy1.py
+@@ -22,11 +22,10 @@ SERPER_API_KEY = os.environ.get("SERPER_API_KEY")
+ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+ 
+ 
+-#os.environ["MODEL"] = 'gemini/gemini-2.5-pro-preview-03-25'
+-#llm = LLM(model="gemini/gemini-2.5-pro-preview-03-25", temperature=0)
+-os.environ["MODEL"] = 'gpt-4.1-mini'
++COMMON_MODEL = os.getenv("S3_COMMON_MODEL", "openai/s3-common-backbone")
++os.environ["MODEL"] = COMMON_MODEL
+ 
+-llm = LLM(model="gpt-4.1-mini", temperature=0)
++llm = LLM(model=COMMON_MODEL, temperature=0)
+ 
+ # Initialize the LLM (internally uses o3-mini for 4o-mini)
+ #llm = LLM(model="4o-mini", temperature=0)
+@@ -244,7 +243,7 @@ editor_agent = Agent(
+     ),
+     allow_delegation=False
+ )
+-def editor_agent_task():
++def editor_agent_task(target_words):
+     """
+     Task for the editor agent to enhance clarity, coherence, structure, and academic rigor
+     in the generated research paper section, while integrating LaTeX tables only where clearly justified.
+@@ -256,6 +255,7 @@ def editor_agent_task():
+             "You are an academic research editor tasked with polishing a research paper section. Your goals are to:\n"
+             "- Improve clarity, logical flow, and academic tone\n"
+             "- Enhance sentence structure and transitions between paragraphs\n"
++            f"- Keep the polished section close to {target_words} words and do not exceed {target_words + 75} words\n"
+             "- Integrate **LaTeX tables** ONLY when they meaningfully improve comprehension\n\n"
+ 
+             "### **Table Usage Rules:**\n"
+@@ -292,7 +292,7 @@ def editor_agent_task():
+ 
+ 
+ 
+-def writer_agent_task(outline_section, summary_info, citation_list):
++def writer_agent_task(outline_section, summary_info, citation_list, target_words):
+     """
+     Task definition for the writer agent to generate a research paper section with critical analysis,
+     logical structure, and precise citation placement while ensuring conclusions are added only when necessary.
+@@ -343,6 +343,7 @@ def writer_agent_task(outline_section, summary_info, citation_list):
+             "5️⃣ **Enhance Readability & Academic Precision**\n"
+             "   - Use concise, precise academic language suited for a research audience.\n"
+             "   - Ensure smooth transitions between ideas, maintaining a professional and logical flow.\n\n"
++            f"6️⃣ **Length Budget**\n   - Write approximately {target_words} words and do not exceed {target_words + 75} words.\n\n"
+ 
+             "### **Expected Output**\n"
+             "A **structured, critically engaging research paper section** that:\n"
+@@ -408,6 +409,8 @@ import sys
+ 
+ def complete_sections_with_agent(sections, info_list, outline_text=""):
+     completed_sections = []
++    target_total_words = int(os.environ.get("S3_TARGET_WORDS", "4000"))
++    target_section_words = max(250, (target_total_words - 200) // max(1, len(sections)))
+ 
+     for section in sections:
+         section_title = section['title']
+@@ -425,9 +428,10 @@ def complete_sections_with_agent(sections, info_list, outline_text=""):
+         task = writer_agent_task(
+             outline_section=f"{section_title}\n{section_content}",
+             summary_info="\n".join(related_summaries),
+-            citation_list=full_citation_list
++            citation_list=full_citation_list,
++            target_words=target_section_words,
+         )
+-        editor_task = editor_agent_task()
++        editor_task = editor_agent_task(target_section_words)
+ 
+         crew = Crew(
+             agents=[writer_agent, editor_agent],
+diff --git a/ARISE_Source_Code/6formatting.py b/ARISE_Source_Code/6formatting.py
+index 6f5978c..c7849ae 100644
+--- a/ARISE_Source_Code/6formatting.py
++++ b/ARISE_Source_Code/6formatting.py
+@@ -45,9 +45,10 @@ journal_name = os.environ.get("JOURNAL")
+ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+ SERPER_API_KEY = os.environ.get("SERPER_API_KEY")
+ 
+-os.environ["MODEL"] = 'gpt-4.1-mini'
++COMMON_MODEL = os.getenv("S3_COMMON_MODEL", "openai/s3-common-backbone")
++os.environ["MODEL"] = COMMON_MODEL
+ 
+-llm = LLM(model="gpt-4.1-mini", temperature=0)
++llm = LLM(model=COMMON_MODEL, temperature=0)
+ 
+ import requests
+ import pandas as pd
+diff --git a/ARISE_Source_Code/arl_refinement.py b/ARISE_Source_Code/arl_refinement.py
+index 9999f58..4a00b9b 100644
+--- a/ARISE_Source_Code/arl_refinement.py
++++ b/ARISE_Source_Code/arl_refinement.py
+@@ -18,7 +18,8 @@ warnings.filterwarnings('ignore')
+ 
+ # === Load Environment
+ load_dotenv()
+-os.environ["MODEL"] = "gpt-4.1-mini"
++COMMON_MODEL = os.getenv("S3_COMMON_MODEL", "openai/s3-common-backbone")
++os.environ["MODEL"] = COMMON_MODEL
+ ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+@@ -32,13 +33,13 @@ for folder in ["review_output", "pdf_output", "output"]:
+     os.makedirs(folder, exist_ok=True)
+ 
+ # === Initialize LLMs
+-llm_gpt     = LLM(model="gpt-4.1", temperature=0)
+-llm_gemini  = LLM(model="gemini/gemini-2.5-pro-preview-03-25", temperature=0)
++llm_gpt     = LLM(model=COMMON_MODEL, temperature=0)
++llm_gemini  = LLM(model=COMMON_MODEL, temperature=0)
+ llm_claude = LLM(
+-    model="claude-3-7-sonnet-20250219",  # or "claude-3-7-sonnet-20250219" depending on your provider
++    model=COMMON_MODEL,
+     temperature=0
+ )
+-llm_final = LLM(model="gpt-4.1", temperature=0)
++llm_final = LLM(model=COMMON_MODEL, temperature=0)
+ 
+ # === Define PDF Reader Tool
+ # === PDF Reader Tool
+@@ -353,6 +354,7 @@ def improve_paper_task(paper_content: str, low_scoring_feedback: str, citation_s
+             "- Only revise sections or subsections explicitly targeted by reviewer Suggestions.\n"
+             "- Never invent or introduce new citations or content not in the citation summaries.\n"
+             "- Use citation summaries only to support reworded or clarified arguments.\n"
++            "- Preserve the original section's approximate word count; do not expand or contract it by more than 10%.\n"
+             "- Preserve original `~\\cite{}` syntax and citation style.\n"
+             "- Do NOT use any LaTeX bullet environments such as `\\item`, `\\begin{itemize}`, or `\\begin{enumerate}`.\n"
+             "- Do NOT insert or modify any figures, diagrams, or illustrations.\n"
+@@ -669,7 +671,7 @@ def accumulate_scores(df):
+     return pivot
+ 
+ # === Scoring & Round Constants ===
+-MAX_ROUNDS = 4
++MAX_ROUNDS = int(os.getenv("S3_ARISE_MAX_ROUNDS", "4"))
+ TOTAL_SUBCRITERIA = 20
+ MAX_SCORE_PER_CRITERION = 5
+ NUM_MODELS = 3

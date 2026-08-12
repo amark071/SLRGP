@@ -1,0 +1,57 @@
+{
+  "sources": {
+    "s1a_annotations": "data/exp1_structural_recovery/confirmatory/s1a_annotations_blind_pass1_dedup.jsonl",
+    "s1a_summary": "data/exp1_structural_recovery/confirmatory/s1a_eval_summary_blind.json",
+    "s2b": "data/exp2_operator_learnability/location/s2b_diag.json",
+    "s2d": "data/exp2_operator_learnability/ranking/tight_s2d_eval.json",
+    "s2d_specter": "data/exp2_operator_learnability/ranking/tight_s2d_specter2.json",
+    "s2e": "data/exp2_operator_learnability/organization/confirmatory/s2e_learning_report.json",
+    "s4a": "data/exp3_interface_substitution/analysis/S4A_BLIND_STATS.json",
+    "s4b": "data/exp3_interface_substitution/s4b_qwen4_20260713_1745/S4B_ROBUSTNESS_STATS.json",
+    "s5": "data/exp4_structural_recursion/s5a_structural_quant_20260714/S5A_STRUCTURAL_STATS.json",
+    "s3_audit": "data/exp5_native_comparison/s3_native_confirmatory_20260716/audit/deterministic_audit.json",
+    "s3_cost": "data/exp5_native_comparison/s3_native_confirmatory_20260716/analysis/cost_efficiency.json",
+    "s3_pref": "data/exp5_native_comparison/s3_native_confirmatory_20260716/analysis/preference_stats.json",
+    "s3_pref_window": "data/exp5_native_comparison/s3_native_confirmatory_20260716/common_window/analysis/preference_stats.json",
+    "s3_claim": "data/exp5_native_comparison/s3_native_confirmatory_20260716/analysis/claim_support_stats.json"
+  },
+  "figure3": {
+    "s1a_n_pairs": 2881,
+    "s1a_auc_recomputed": 0.5803370561125261,
+    "s1a_mean_paired_difference_recomputed": 0.08175980562304756,
+    "figure": "Figure3_internal_evidence"
+  },
+  "figure4": {
+    "support_means_recomputed": {
+      "autosurvey": 0.5348837209302325,
+      "slrgp": 0.8351063829787234,
+      "surveyforge": 0.5585106382978723,
+      "surveygen": 0.7065217391304348
+    },
+    "compliance_counts": {
+      "slrgp": {
+        "length": 8,
+        "references": 8
+      },
+      "autosurvey": {
+        "length": 0,
+        "references": 0
+      },
+      "surveyforge": {
+        "length": 0,
+        "references": 0
+      },
+      "surveygen": {
+        "length": 0,
+        "references": 8
+      }
+    },
+    "figure": "Figure4_native_comparison"
+  },
+  "notes": [
+    "S1a ROC is recomputed from opaque-ID blind tier-2 scores; summary statistics are read from the frozen evaluation.",
+    "Preference confidence intervals are stored as margins from tie and converted to probability intervals by adding 0.5.",
+    "Claim-support system means exclude inaccessible/insufficient source packets, matching the primary manuscript estimand.",
+    "All other intervals and p/q values are read directly from frozen confirmatory summaries."
+  ]
+}

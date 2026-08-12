@@ -1,0 +1,284 @@
+{
+  "title": "Graph Neural Networks",
+  "depth": 0,
+  "doc_ids": [
+    "arxiv_2004.03519",
+    "arxiv_2002.05287",
+    "ss_477785",
+    "arxiv_2007.10467",
+    "arxiv_1903.02541",
+    "arxiv_2102.02026",
+    "arxiv_1904.13107",
+    "arxiv_1901.00596",
+    "ss_477653",
+    "arxiv_2307.00865",
+    "arxiv_2010.13242",
+    "arxiv_1905.06259",
+    "arxiv_2302.13399",
+    "arxiv_1906.02174",
+    "arxiv_1605.05273",
+    "arxiv_1906.02319",
+    "ss_476188",
+    "arxiv_1811.00052",
+    "arxiv_1904.08082",
+    "arxiv_1901.01343",
+    "arxiv_1708.02218",
+    "arxiv_2201.00491",
+    "arxiv_2008.01247",
+    "arxiv_2105.01510",
+    "arxiv_1911.06455",
+    "arxiv_1901.07984",
+    "arxiv_2103.01488",
+    "arxiv_2102.11533",
+    "arxiv_1909.12038",
+    "arxiv_1909.04931",
+    "arxiv_2012.06333",
+    "arxiv_1808.06099"
+  ],
+  "facet": "method",
+  "relation": "foundational-to-applied",
+  "children": [
+    {
+      "title": "GNN Foundations: Architectures, Convolution, and Message Passing",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_1901.00596",
+        "arxiv_1605.05273",
+        "arxiv_1708.02218",
+        "arxiv_1901.01343",
+        "ss_476188",
+        "arxiv_2008.01247",
+        "arxiv_2102.02026",
+        "arxiv_2307.00865",
+        "arxiv_1906.02174",
+        "arxiv_2105.01510",
+        "arxiv_1811.00052",
+        "arxiv_1901.07984",
+        "arxiv_1911.06455",
+        "arxiv_2302.13399"
+      ],
+      "facet": "method",
+      "relation": "chronological",
+      "children": [
+        {
+          "title": "Surveys and Overviews of GNN Foundations and Representation Learning",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_1901.00596",
+            "arxiv_2102.02026",
+            "arxiv_2307.00865"
+          ],
+          "facet": "topic",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers provide broad coverage of GNN architectures, tasks, and representation learning, serving as entry points and taxonomies for the field."
+        },
+        {
+          "title": "Spectral Graph Convolution and Signal-Processing Foundations",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_1901.01343",
+            "ss_476188",
+            "arxiv_2008.01247",
+            "arxiv_1906.02174"
+          ],
+          "facet": "theory",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers ground graph convolution in spectral theory, signal processing (GSP), and filter design (polynomial, ARMA), establishing the mathematical basis for convolutional operations on graphs."
+        },
+        {
+          "title": "Architectural Innovations: Layers, Multi-scale, and Structural Graph CNNs",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_1605.05273",
+            "arxiv_1708.02218",
+            "arxiv_1811.00052",
+            "arxiv_1901.07984",
+            "arxiv_2105.01510",
+            "arxiv_1911.06455",
+            "arxiv_2302.13399"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [
+            {
+              "title": "Layer-Level Architectural Components: Convolutional, Pooling, and Structural Graph CNN Layers",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_1605.05273",
+                "arxiv_1708.02218",
+                "arxiv_1811.00052",
+                "arxiv_2302.13399"
+              ],
+              "facet": "method",
+              "relation": "general-to-specific",
+              "children": [],
+              "rationale": "These papers focus on the fundamental design of individual CNN-style layers (convolution, pooling, fully-connected) adapted for graphs, including how to extract locally connected regions, represent graphs as image-like structures, and formulate edge-aware layer operations."
+            },
+            {
+              "title": "Multi-scale, Multi-path, and Heterogeneous Graph CNN Architectures",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_1901.07984",
+                "arxiv_2105.01510",
+                "arxiv_1911.06455"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers address higher-order architectural challenges—typed/heterogeneous node and edge representations, multi-path aggregation to combat over-smoothing and vanishing gradients, and graph transformer networks that dynamically generate new graph structures—all of which presuppose basic layer designs and extend them to richer structural settings."
+            }
+          ],
+          "rationale": "These papers propose concrete architectural extensions—new layer types, multipath aggregation, typed nodes, graph transformers, heterogeneous path-integral convolution, and image-based graph representations—that address limitations of vanilla graph convolution."
+        }
+      ],
+      "rationale": "These papers establish the core GNN paradigms—spectral and spatial graph convolution, message-passing frameworks, surveys, and foundational architectures—that underpin all downstream work."
+    },
+    {
+      "title": "Graph Pooling Methods for Graph-Level Representation",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2004.03519",
+        "ss_477785",
+        "arxiv_2007.10467",
+        "arxiv_1903.02541",
+        "arxiv_1904.13107",
+        "arxiv_1905.06259",
+        "arxiv_1904.08082",
+        "arxiv_2103.01488",
+        "arxiv_2102.11533"
+      ],
+      "facet": "method",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Flat and Global Pooling Methods",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2004.03519",
+            "ss_477785",
+            "arxiv_2007.10467",
+            "arxiv_1905.06259",
+            "arxiv_2102.11533"
+          ],
+          "facet": "method",
+          "relation": "foundational-to-applied",
+          "children": [
+            {
+              "title": "Basic Global Aggregation Pooling: Sum, Mean, Max, and Empirical Comparisons",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2004.03519",
+                "arxiv_1905.06259"
+              ],
+              "facet": "method",
+              "relation": "foundational-to-applied",
+              "children": [],
+              "rationale": "These papers focus on straightforward global readout strategies and empirical benchmarking of flat pooling methods across GNN architectures, establishing baseline understanding of how simple aggregations perform on graph classification tasks."
+            },
+            {
+              "title": "Advanced Global Pooling: Second-Order Statistics and Attention-Based Multiset Pooling",
+              "depth": 3,
+              "doc_ids": [
+                "ss_477785",
+                "arxiv_2007.10467",
+                "arxiv_2102.11533"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers propose more expressive global pooling mechanisms—second-order covariance pooling and graph multiset transformer pooling—that go beyond simple aggregations to capture richer structural and statistical information from all node representations."
+            }
+          ],
+          "rationale": "These papers propose or evaluate pooling methods that aggregate all node representations into a single graph-level vector in one step, without hierarchical graph coarsening."
+        },
+        {
+          "title": "Hierarchical and Attention-Based Pooling Methods",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_1904.13107",
+            "arxiv_1904.08082",
+            "arxiv_2103.01488"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [],
+          "rationale": "These papers develop pooling methods that progressively coarsen the graph structure or use attention mechanisms to select and aggregate nodes across multiple levels of granularity."
+        },
+        {
+          "title": "Theoretically Expressive and Representation-Power-Oriented Pooling",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_1903.02541"
+          ],
+          "facet": "theory",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers ground pooling design in formal expressiveness theory (e.g., beyond Weisfeiler-Lehman, exchangeability, isomorphism), aiming to maximize the representational power of graph-level embeddings."
+        }
+      ],
+      "rationale": "These papers specifically address the problem of aggregating node representations into a single graph-level embedding, proposing and evaluating diverse pooling strategies (hierarchical, attention-based, second-order, spectral, function-space)."
+    },
+    {
+      "title": "Structural Extensions: Node Features, Graph Geometry, and Beyond Message Passing",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2002.05287",
+        "ss_477653",
+        "arxiv_2010.13242",
+        "arxiv_1808.06099",
+        "arxiv_1909.12038",
+        "arxiv_1909.04931",
+        "arxiv_2012.06333",
+        "arxiv_1906.02319",
+        "arxiv_2201.00491"
+      ],
+      "facet": "theory",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Enriching Node and Edge Feature Representations in GNNs",
+          "depth": 2,
+          "doc_ids": [
+            "ss_477653",
+            "arxiv_2010.13242",
+            "arxiv_1909.04931"
+          ],
+          "facet": "method",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers focus on jointly learning or co-embedding node and edge features, or dynamically adapting graph structure to node features, staying within the standard GNN/MPNN pipeline but enriching what is represented."
+        },
+        {
+          "title": "Structural and Geometric Inductive Biases: Degree, Dimensionality, and Graph Geometry",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2002.05287",
+            "arxiv_1808.06099",
+            "arxiv_1909.12038",
+            "arxiv_1906.02319"
+          ],
+          "facet": "method",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers address structural limitations of standard aggregation by introducing geometric embeddings, degree-specific convolutions, multi-dimensional/multi-relational graphs, and 2-D graph convolution to better capture neighborhood structure and long-range dependencies."
+        },
+        {
+          "title": "Beyond Message Passing: Sheaf Laplacians, Graph Kernels, and Alternative Propagation Frameworks",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2012.06333",
+            "arxiv_2201.00491"
+          ],
+          "facet": "theory",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers move beyond the standard MPNN/WL framework by grounding GNNs in alternative mathematical structures—sheaf theory and graph kernels—to overcome expressivity ceilings and enable richer relational modeling."
+        }
+      ],
+      "rationale": "These papers extend standard GNNs by incorporating geometric structure, multi-dimensional or heterogeneous graphs, co-embedding of edges and nodes, dynamic graph learning, sheaf Laplacians, and kernel-based expressivity—addressing fundamental limitations of vanilla message passing."
+    }
+  ],
+  "rationale": "The corpus naturally partitions into foundational GNN architectures and convolution designs, graph pooling methods for graph-level representation, and structural/theoretical extensions that push beyond standard message-passing, reflecting the core methodological progression in the GNN literature."
+}

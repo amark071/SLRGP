@@ -1,0 +1,17 @@
+{
+  "system": "arise",
+  "source_revision": "5db26bbd64bb9e865dd64b17c75dc2cb26e0e150",
+  "patches": [
+    {
+      "file": "common_backbone_runtime.patch",
+      "purpose": "Route all released writer/reviewer roles through the registered common backbone, remove secret printing, expose the refinement cap, add the registered cutoff to retrieval instructions, and map the document budget onto native section writing while preserving length during refinement.",
+      "semantic_effect": "common_backbone_compatibility_security_and_registered_resource_controls"
+    }
+  ],
+  "execution_adapter": "arise_native_driver.py",
+  "cutoff_adapter": "arise_cutoff_filter.py",
+  "publication_cutoff": {
+    "date": "2023-12-31",
+    "enforcement": "retrieval instruction plus deterministic OpenAlex resolution gate before deduplication and writing"
+  }
+}

@@ -1,0 +1,1365 @@
+{
+  "layer1": {
+    "input_parse_summary": {
+      "total": 2862,
+      "ok": 2223,
+      "failed_reasons": {
+        "source_is_pdf_only": 506,
+        "too_few_citations": 46,
+        "too_few_sections": 34,
+        "not_gzip_or_tar": 12,
+        "no_documentclass": 41
+      }
+    },
+    "total_json_records_seen": 2862,
+    "recoverable_reviews_layer1": 2221,
+    "failure_counts_recomputed": {
+      "source_is_pdf_only": 506,
+      "too_few_citations": 46,
+      "too_few_sections": 34,
+      "not_gzip_or_tar": 12,
+      "no_documentclass": 41,
+      "fewer_than_two_top_level_sections": 2
+    },
+    "by_discipline": {
+      "astrophysics": {
+        "ok": 292,
+        "source_is_pdf_only": 3,
+        "too_few_citations": 3,
+        "too_few_sections": 1
+      },
+      "computer_science": {
+        "ok": 263,
+        "source_is_pdf_only": 29,
+        "too_few_sections": 4,
+        "too_few_citations": 3
+      },
+      "condensed_matter": {
+        "ok": 177,
+        "source_is_pdf_only": 111,
+        "too_few_sections": 7,
+        "too_few_citations": 5
+      },
+      "economics": {
+        "source_is_pdf_only": 59,
+        "ok": 70,
+        "too_few_citations": 2
+      },
+      "eess": {
+        "source_is_pdf_only": 52,
+        "not_gzip_or_tar": 5,
+        "ok": 237,
+        "too_few_citations": 3,
+        "no_documentclass": 3
+      },
+      "hep_theory": {
+        "ok": 203,
+        "too_few_sections": 6,
+        "no_documentclass": 30,
+        "too_few_citations": 5,
+        "fewer_than_two_top_level_sections": 1
+      },
+      "mathematics": {
+        "ok": 274,
+        "too_few_citations": 4,
+        "no_documentclass": 2,
+        "not_gzip_or_tar": 1,
+        "too_few_sections": 6,
+        "source_is_pdf_only": 13
+      },
+      "quantitative_biology": {
+        "too_few_citations": 4,
+        "not_gzip_or_tar": 3,
+        "ok": 135,
+        "source_is_pdf_only": 158
+      },
+      "quantitative_finance": {
+        "not_gzip_or_tar": 1,
+        "ok": 67,
+        "too_few_citations": 2,
+        "source_is_pdf_only": 19
+      },
+      "quantum_physics": {
+        "source_is_pdf_only": 22,
+        "ok": 257,
+        "too_few_citations": 5,
+        "too_few_sections": 8,
+        "not_gzip_or_tar": 1,
+        "fewer_than_two_top_level_sections": 1,
+        "no_documentclass": 6
+      },
+      "statistics": {
+        "ok": 246,
+        "source_is_pdf_only": 40,
+        "too_few_citations": 10,
+        "too_few_sections": 2,
+        "not_gzip_or_tar": 1
+      }
+    },
+    "deterministic_tree_stats": {
+      "n_reviews": 2221,
+      "n_branching_nodes_without_synthetic_root": 12111,
+      "mean_sections": 28.480864475461505,
+      "median_sections": 23,
+      "mean_max_depth": 2.4781629896443045,
+      "median_max_depth": 3
+    },
+    "s2e_root_repaired_corpus": {
+      "n_reviews": 2221,
+      "n_organization_nodes_with_synthetic_root": 14332,
+      "n_synthetic_review_root_nodes": 2221,
+      "citation_child_coverage_mean": 0.9353476820685176,
+      "citation_child_coverage_median": 1.0,
+      "n_nodes_with_citation_coverage": 13533
+    },
+    "layer1_interpretation": "Deterministic LaTeX-to-ordered-tree recovery with citation assignment; no semantic labels used."
+  },
+  "negative_construction": {
+    "n_eval_nodes": 2881,
+    "n_pairs": 2881,
+    "n_items": 8643,
+    "diagnostics": {
+      "pairs": 2881,
+      "discipline::astrophysics": 288,
+      "discipline::computer_science": 514,
+      "discipline::condensed_matter": 181,
+      "discipline::economics": 81,
+      "discipline::eess": 376,
+      "discipline::hep_theory": 275,
+      "discipline::mathematics": 320,
+      "discipline::quantitative_biology": 155,
+      "discipline::quantitative_finance": 51,
+      "discipline::quantum_physics": 333,
+      "discipline::statistics": 307
+    },
+    "primary": "tier2 hard matched synthetic; heldout S2e nodes only; old LLM labels not read"
+  },
+  "annotation_evaluation": [
+    {
+      "pass_id": 1,
+      "n_annotations_valid": 8643,
+      "blind_prompt": true,
+      "tiers": {
+        "tier1": {
+          "n_pairs_scored": 2881,
+          "mean_expressibility_diff_auth_minus_synth": 0.10457132939951405,
+          "diff_bootstrap_ci": [
+            0.08986463033668864,
+            0.11946546338077056
+          ],
+          "permutation_p_two_sided": 9.999000099990002e-05,
+          "pairwise_accuracy_auth_gt_synth": 0.5916348490107601,
+          "roc_auc_auth_vs_synth": 0.5943406398984309,
+          "mean_faithfulness_diff": 0.49184311003123915,
+          "faithfulness_ci": [
+            0.4196459562651857,
+            0.5647344671988893
+          ],
+          "per_discipline_pairwise_accuracy": {
+            "astrophysics": 0.5190972222222222,
+            "computer_science": 0.6001945525291829,
+            "condensed_matter": 0.5718232044198895,
+            "economics": 0.5802469135802469,
+            "eess": 0.5997340425531915,
+            "hep_theory": 0.5690909090909091,
+            "mathematics": 0.565625,
+            "quantitative_biology": 0.6612903225806451,
+            "quantitative_finance": 0.7058823529411765,
+            "quantum_physics": 0.6381381381381381,
+            "statistics": 0.5928338762214984
+          },
+          "discipline_pair_counts": {
+            "astrophysics": 288,
+            "computer_science": 514,
+            "condensed_matter": 181,
+            "economics": 81,
+            "eess": 376,
+            "hep_theory": 275,
+            "mathematics": 320,
+            "quantitative_biology": 155,
+            "quantitative_finance": 51,
+            "quantum_physics": 333,
+            "statistics": 307
+          },
+          "by_review_length_bucket": {
+            "long": {
+              "n_pairs_scored": 1644,
+              "mean_expressibility_diff_auth_minus_synth": 0.1325912408759124,
+              "diff_bootstrap_ci": [
+                0.11219586374695863,
+                0.15259124087591242
+              ],
+              "permutation_p_two_sided": 9.999000099990002e-05,
+              "pairwise_accuracy_auth_gt_synth": 0.6219586374695864,
+              "roc_auc_auth_vs_synth": 0.6178609379532444,
+              "mean_faithfulness_diff": 0.6222627737226277,
+              "faithfulness_ci": [
+                0.5231143552311436,
+                0.7208029197080292
+              ]
+            },
+            "medium": {
+              "n_pairs_scored": 746,
+              "mean_expressibility_diff_auth_minus_synth": 0.07304289544235926,
+              "diff_bootstrap_ci": [
+                0.045134048257372654,
+                0.10132707774798928
+              ],
+              "permutation_p_two_sided": 9.999000099990002e-05,
+              "pairwise_accuracy_auth_gt_synth": 0.5589812332439679,
+              "roc_auc_auth_vs_synth": 0.5673529602024021,
+              "mean_faithfulness_diff": 0.35656836461126007,
+              "faithfulness_ci": [
+                0.21983914209115282,
+                0.4932975871313673
+              ]
+            },
+            "short": {
+              "n_pairs_scored": 491,
+              "mean_expressibility_diff_auth_minus_synth": 0.05865580448065173,
+              "diff_bootstrap_ci": [
+                0.02331975560081466,
+                0.09419551934826884
+              ],
+              "permutation_p_two_sided": 0.0008999100089991,
+              "pairwise_accuracy_auth_gt_synth": 0.539714867617108,
+              "roc_auc_auth_vs_synth": 0.5538055674233971,
+              "mean_faithfulness_diff": 0.2606924643584521,
+              "faithfulness_ci": [
+                0.09164969450101833,
+                0.43380855397148677
+              ]
+            }
+          },
+          "by_discipline_review_length": {
+            "astrophysics::long": {
+              "n_pairs_scored": 89,
+              "mean_expressibility_diff_auth_minus_synth": 0.050674157303370784,
+              "diff_bootstrap_ci": [
+                -0.027528089887640453,
+                0.12719101123595505
+              ],
+              "permutation_p_two_sided": 0.20677932206779323,
+              "pairwise_accuracy_auth_gt_synth": 0.5842696629213483,
+              "roc_auc_auth_vs_synth": 0.535664688801919,
+              "mean_faithfulness_diff": 0.3146067415730337,
+              "faithfulness_ci": [
+                -0.0898876404494382,
+                0.7191011235955056
+              ]
+            },
+            "astrophysics::medium": {
+              "n_pairs_scored": 131,
+              "mean_expressibility_diff_auth_minus_synth": -0.00893129770992367,
+              "diff_bootstrap_ci": [
+                -0.06748091603053437,
+                0.049847328244274805
+              ],
+              "permutation_p_two_sided": 0.7672232776722328,
+              "pairwise_accuracy_auth_gt_synth": 0.5038167938931297,
+              "roc_auc_auth_vs_synth": 0.4857525785210652,
+              "mean_faithfulness_diff": -0.05343511450381679,
+              "faithfulness_ci": [
+                -0.3511450381679389,
+                0.25190839694656486
+              ]
+            },
+            "astrophysics::short": {
+              "n_pairs_scored": 68,
+              "mean_expressibility_diff_auth_minus_synth": 0.050147058823529406,
+              "diff_bootstrap_ci": [
+                -0.019999999999999997,
+                0.12191176470588234
+              ],
+              "permutation_p_two_sided": 0.1835816418358164,
+              "pairwise_accuracy_auth_gt_synth": 0.4632352941176471,
+              "roc_auc_auth_vs_synth": 0.548226643598616,
+              "mean_faithfulness_diff": 0.2647058823529412,
+              "faithfulness_ci": [
+                -0.08823529411764706,
+                0.6323529411764706
+              ]
+            },
+            "computer_science::long": {
+              "n_pairs_scored": 413,
+              "mean_expressibility_diff_auth_minus_synth": 0.12501210653753028,
+              "diff_bootstrap_ci": [
+                0.0847457627118644,
+                0.16707021791767554
+              ],
+              "permutation_p_two_sided": 9.999000099990002e-05,
+              "pairwise_accuracy_auth_gt_synth": 0.6174334140435835,
+              "roc_auc_auth_vs_synth": 0.6093369838599042,
+              "mean_faithfulness_diff": 0.6150121065375302,
+              "faithfulness_ci": [
+                0.41646489104116224,
+                0.8208232445520581
+              ]
+            },
+            "computer_science::medium": {
+              "n_pairs_scored": 71,
+              "mean_expressibility_diff_auth_minus_synth": 0.030845070422535203,
+              "diff_bootstrap_ci": [
+                -0.06478873239436621,
+                0.12873239436619716
+              ],
+              "permutation_p_two_sided": 0.5362463753624638,
+              "pairwise_accuracy_auth_gt_synth": 0.5070422535211268,
+              "roc_auc_auth_vs_synth": 0.519539773854394,
+              "mean_faithfulness_diff": 0.2112676056338028,
+              "faithfulness_ci": [
+                -0.2535211267605634,
+                0.6901408450704225
+              ]
+            },
+            "computer_science::short": {
+              "n_pairs_scored": 30,
+              "mean_expressibility_diff_auth_minus_synth": -0.0009999999999999911,
+              "diff_bootstrap_ci": [
+                -0.16666666666666666,
+                0.15966666666666668
+              ],
+              "permutation_p_two_sided": 0.9917008299170083,
+              "pairwise_accuracy_auth_gt_synth": 0.5833333333333334,
+              "roc_auc_auth_vs_synth": 0.5155555555555555,
+              "mean_faithfulness_diff": -0.1,
+              "faithfulness_ci": [
+                -0.8666666666666667,
+                0.6666666666666666
+              ]
+            },
+            "condensed_matter::long": {
+              "n_pairs_scored": 60,
+              "mean_expressibility_diff_auth_minus_synth": 0.156,
+              "diff_bootstrap_ci": [
+                0.032499999999999994,
+                0.2811666666666667
+              ],
+              "permutation_p_two_sided": 0.019998000199980003,
+              "pairwise_accuracy_auth_gt_synth": 0.6833333333333333,
+              "roc_auc_auth_vs_synth": 0.6652777777777777,
+              "mean_faithfulness_diff": 0.7,
+              "faithfulness_ci": [
+                0.16666666666666666,
+                1.25
+              ]
+            },
+            "condensed_matter::medium": {
+              "n_pairs_scored": 52,
+              "mean_expressibility_diff_auth_minus_synth": 0.08980769230769231,
+              "diff_bootstrap_ci": [
+                -0.029999999999999995,
+                0.2026923076923077
+              ],
+              "permutation_p_two_sided": 0.1351864813518648,
+              "pairwise_accuracy_auth_gt_synth": 0.5,
+              "roc_auc_auth_vs_synth": 0.5599112426035503,
+              "mean_faithfulness_diff": 0.4230769230769231,
+              "faithfulness_ci": [
+                -0.17307692307692307,
+                1.0
+              ]
+            },
+            "condensed_matter::short": {
+              "n_pairs_scored": 69,
+              "mean_expressibility_diff_auth_minus_synth": 0.05927536231884058,
+              "diff_bootstrap_ci": [
+                -0.025362318840579712,
+                0.14318840579710143
+              ],
+              "permutation_p_two_sided": 0.18988101189881013,
+              "pairwise_accuracy_auth_gt_synth": 0.5289855072463768,
+              "roc_auc_auth_vs_synth": 0.5572358748162151,
+              "mean_faithfulness_diff": 0.36231884057971014,
+              "faithfulness_ci": [
+                -0.07246376811594203,
+                0.782608695652174
+              ]
+            },
+            "economics::long": {
+              "n_pairs_scored": 41,
+              "mean_expressibility_diff_auth_minus_synth": 0.15341463414634146,
+              "diff_bootstrap_ci": [
+                0.0095121951219512,
+                0.29560975609756096
+              ],
+              "permutation_p_two_sided": 0.043195680431956804,
+              "pairwise_accuracy_auth_gt_synth": 0.6341463414634146,
+              "roc_auc_auth_vs_synth": 0.6198691255205235,
+              "mean_faithfulness_diff": 0.6829268292682927,
+              "faithfulness_ci": [
+                -0.07317073170731707,
+                1.3902439024390243
+              ]
+            },
+            "economics::medium": {
+              "n_pairs_scored": 20,
+              "mean_expressibility_diff_auth_minus_synth": 0.027500000000000007,
+              "diff_bootstrap_ci": [
+                -0.13449999999999998,
+                0.184
+              ],
+              "permutation_p_two_sided": 0.7463253674632536,
+              "pairwise_accuracy_auth_gt_synth": 0.5,
+              "roc_auc_auth_vs_synth": 0.55,
+              "mean_faithfulness_diff": 0.15,
+              "faithfulness_ci": [
+                -0.7,
+                1.0
+              ]
+            },
+            "economics::short": {
+              "n_pairs_scored": 20,
+              "mean_expressibility_diff_auth_minus_synth": 0.041999999999999996,
+              "diff_bootstrap_ci": [
+                -0.122,
+                0.20999999999999996
+              ],
+              "permutation_p_two_sided": 0.6140385961403859,
+              "pairwise_accuracy_auth_gt_synth": 0.55,
+              "roc_auc_auth_vs_synth": 0.535,
+              "mean_faithfulness_diff": 0.1,
+              "faithfulness_ci": [
+                -0.55,
+                0.75
+              ]
+            },
+            "eess::long": {
+              "n_pairs_scored": 269,
+              "mean_expressibility_diff_auth_minus_synth": 0.1442379182156134,
+              "diff_bootstrap_ci": [
+                0.09639405204460967,
+                0.19122676579925652
+              ],
+              "permutation_p_two_sided": 9.999000099990002e-05,
+              "pairwise_accuracy_auth_gt_synth": 0.6152416356877324,
+              "roc_auc_auth_vs_synth": 0.6221445253658738,
+              "mean_faithfulness_diff": 0.6728624535315985,
+              "faithfulness_ci": [
+                0.4423791821561338,
+                0.8996282527881041
+              ]
+            },
+            "eess::medium": {
+              "n_pairs_scored": 67,
+              "mean_expressibility_diff_auth_minus_synth": 0.13970149253731343,
+              "diff_bootstrap_ci": [
+                0.047462686567164174,
+                0.2319402985074627
+              ],
+              "permutation_p_two_sided": 0.005099490050994901,
+              "pairwise_accuracy_auth_gt_synth": 0.6417910447761194,
+              "roc_auc_auth_vs_synth": 0.6451325462241033,
+              "mean_faithfulness_diff": 0.6567164179104478,
+              "faithfulness_ci": [
+                0.22388059701492538,
+                1.0895522388059702
+              ]
+            },
+            "eess::short": {
+              "n_pairs_scored": 40,
+              "mean_expressibility_diff_auth_minus_synth": -0.071,
+              "diff_bootstrap_ci": [
+                -0.19849999999999998,
+                0.0605
+              ],
+              "permutation_p_two_sided": 0.2980701929807019,
+              "pairwise_accuracy_auth_gt_synth": 0.425,
+              "roc_auc_auth_vs_synth": 0.451875,
+              "mean_faithfulness_diff": -0.35,
+              "faithfulness_ci": [
+                -0.95,
+                0.275
+              ]
+            },
+            "hep_theory::long": {
+              "n_pairs_scored": 166,
+              "mean_expressibility_diff_auth_minus_synth": 0.1777710843373494,
+              "diff_bootstrap_ci": [
+                0.12,
+                0.2347590361445783
+              ],
+              "permutation_p_two_sided": 9.999000099990002e-05,
+              "pairwise_accuracy_auth_gt_synth": 0.6295180722891566,
+              "roc_auc_auth_vs_synth": 0.6568442444476702,
+              "mean_faithfulness_diff": 0.8132530120481928,
+              "faithfulness_ci": [
+                0.5240963855421686,
+                1.1024096385542168
+              ]
+            },
+            "hep_theory::medium": {
+              "n_pairs_scored": 64,
+              "mean_expressibility_diff_auth_minus_synth": 0.07859374999999999,
+              "diff_bootstrap_ci": [
+                -0.011250000000000005,
+                0.17156249999999998
+              ],
+              "permutation_p_two_sided": 0.098990100989901,
+              "pairwise_accuracy_auth_gt_synth": 0.484375,
+              "roc_auc_auth_vs_synth": 0.553466796875,
+              "mean_faithfulness_diff": 0.3125,
+              "faithfulness_ci": [
+                -0.09375,
+                0.75
+              ]
+            },
+            "hep_theory::short": {
+              "n_pairs_scored": 45,
+              "mean_expressibility_diff_auth_minus_synth": -0.009777777777777776,
+              "diff_bootstrap_ci": [
+                -0.12711111111111112,
+                0.10800000000000001
+              ],
+              "permutation_p_two_sided": 0.8698130186981302,
+              "pairwise_accuracy_auth_gt_synth": 0.4666666666666667,
+              "roc_auc_auth_vs_synth": 0.48691358024691356,
+              "mean_faithfulness_diff": -0.15555555555555556,
+              "faithfulness_ci": [
+                -0.7333333333333333,
+                0.4222222222222222
+              ]
+            },
+            "mathematics::long": {
+              "n_pairs_scored": 145,
+              "mean_expressibility_diff_auth_minus_synth": 0.09137931034482759,
+              "diff_bootstrap_ci": [
+                0.02034482758620689,
+                0.1609655172413793
+              ],
+              "permutation_p_two_sided": 0.0112988701129887,
+              "pairwise_accuracy_auth_gt_synth": 0.5827586206896552,
+              "roc_auc_auth_vs_synth": 0.5899167657550535,
+              "mean_faithfulness_diff": 0.4068965517241379,
+              "faithfulness_ci": [
+                0.06896551724137931,
+                0.7448275862068966
+              ]
+            },
+            "mathematics::medium": {
+              "n_pairs_scored": 99,
+              "mean_expressibility_diff_auth_minus_synth": 0.07565656565656566,
+              "diff_bootstrap_ci": [
+                -0.006363636363636354,
+                0.1573737373737374
+              ],
+              "permutation_p_two_sided": 0.0751924807519248,
+              "pairwise_accuracy_auth_gt_synth": 0.6161616161616161,
+              "roc_auc_auth_vs_synth": 0.5831037649219467,
+              "mean_faithfulness_diff": 0.4444444444444444,
+              "faithfulness_ci": [
+                0.06060606060606061,
+                0.8181818181818182
+              ]
+            },
+            "mathematics::short": {
+              "n_pairs_scored": 76,
+              "mean_expressibility_diff_auth_minus_synth": 0.023815789473684224,
+              "diff_bootstrap_ci": [
+                -0.05355263157894735,
+                0.1025
+              ],
+              "permutation_p_two_sided": 0.5514448555144486,
+              "pairwise_accuracy_auth_gt_synth": 0.46710526315789475,
+              "roc_auc_auth_vs_synth": 0.5041551246537396,
+              "mean_faithfulness_diff": 0.11842105263157894,
+              "faithfulness_ci": [
+                -0.2631578947368421,
+                0.5
+              ]
+            },
+            "quantitative_biology::long": {
+              "n_pairs_scored": 76,
+              "mean_expressibility_diff_auth_minus_synth": 0.1585526315789474,
+              "diff_bootstrap_ci": [
+                0.06513157894736843,
+                0.25407894736842107
+              ],
+              "permutation_p_two_sided": 0.0017998200179982,
+              "pairwise_accuracy_auth_gt_synth": 0.6907894736842105,
+              "roc_auc_auth_vs_synth": 0.6641274238227147,
+              "mean_faithfulness_diff": 0.7631578947368421,
+              "faithfulness_ci": [
+                0.34210526315789475,
+                1.1973684210526316
+              ]
+            },
+            "quantitative_biology::medium": {
+              "n_pairs_scored": 57,
+              "mean_expressibility_diff_auth_minus_synth": 0.14087719298245616,
+              "diff_bootstrap_ci": [
+                0.04596491228070176,
+                0.2385964912280702
+              ],
+              "permutation_p_two_sided": 0.006899310068993101,
+              "pairwise_accuracy_auth_gt_synth": 0.6140350877192983,
+              "roc_auc_auth_vs_synth": 0.6405047706986765,
+              "mean_faithfulness_diff": 0.6666666666666666,
+              "faithfulness_ci": [
+                0.17543859649122806,
+                1.1578947368421053
+              ]
+            },
+            "quantitative_biology::short": {
+              "n_pairs_scored": 22,
+              "mean_expressibility_diff_auth_minus_synth": 0.2772727272727273,
+              "diff_bootstrap_ci": [
+                0.13499999999999998,
+                0.42363636363636364
+              ],
+              "permutation_p_two_sided": 0.0022997700229977,
+              "pairwise_accuracy_auth_gt_synth": 0.6818181818181818,
+              "roc_auc_auth_vs_synth": 0.7293388429752066,
+              "mean_faithfulness_diff": 1.2272727272727273,
+              "faithfulness_ci": [
+                0.5454545454545454,
+                1.9090909090909092
+              ]
+            },
+            "quantitative_finance::long": {
+              "n_pairs_scored": 25,
+              "mean_expressibility_diff_auth_minus_synth": 0.1632,
+              "diff_bootstrap_ci": [
+                0.04519999999999999,
+                0.2848
+              ],
+              "permutation_p_two_sided": 0.014498550144985502,
+              "pairwise_accuracy_auth_gt_synth": 0.76,
+              "roc_auc_auth_vs_synth": 0.6896,
+              "mean_faithfulness_diff": 0.84,
+              "faithfulness_ci": [
+                0.2,
+                1.48
+              ]
+            },
+            "quantitative_finance::medium": {
+              "n_pairs_scored": 26,
+              "mean_expressibility_diff_auth_minus_synth": 0.10153846153846152,
+              "diff_bootstrap_ci": [
+                -0.06653846153846155,
+                0.2653846153846154
+              ],
+              "permutation_p_two_sided": 0.2606739326067393,
+              "pairwise_accuracy_auth_gt_synth": 0.6538461538461539,
+              "roc_auc_auth_vs_synth": 0.6109467455621301,
+              "mean_faithfulness_diff": 0.5769230769230769,
+              "faithfulness_ci": [
+                -0.19230769230769232,
+                1.3461538461538463
+              ]
+            },
+            "quantum_physics::long": {
+              "n_pairs_scored": 206,
+              "mean_expressibility_diff_auth_minus_synth": 0.16970873786407767,
+              "diff_bootstrap_ci": [
+                0.11388349514563108,
+                0.22470873786407766
+              ],
+              "permutation_p_two_sided": 9.999000099990002e-05,
+              "pairwise_accuracy_auth_gt_synth": 0.6650485436893204,
+              "roc_auc_auth_vs_synth": 0.6580497690640023,
+              "mean_faithfulness_diff": 0.7912621359223301,
+              "faithfulness_ci": [
+                0.5242718446601942,
+                1.0533980582524272
+              ]
+            },
+            "quantum_physics::medium": {
+              "n_pairs_scored": 83,
+              "mean_expressibility_diff_auth_minus_synth": 0.15228915662650602,
+              "diff_bootstrap_ci": [
+                0.0625301204819277,
+                0.2403614457831325
+              ],
+              "permutation_p_two_sided": 0.0016998300169983002,
+              "pairwise_accuracy_auth_gt_synth": 0.5843373493975904,
+              "roc_auc_auth_vs_synth": 0.6128610828857599,
+              "mean_faithfulness_diff": 0.7349397590361446,
+              "faithfulness_ci": [
+                0.30120481927710846,
+                1.1566265060240963
+              ]
+            },
+            "quantum_physics::short": {
+              "n_pairs_scored": 44,
+              "mean_expressibility_diff_auth_minus_synth": 0.10136363636363636,
+              "diff_bootstrap_ci": [
+                -0.03545454545454545,
+                0.24204545454545456
+              ],
+              "permutation_p_two_sided": 0.16098390160983903,
+              "pairwise_accuracy_auth_gt_synth": 0.6136363636363636,
+              "roc_auc_auth_vs_synth": 0.6069214876033058,
+              "mean_faithfulness_diff": 0.38636363636363635,
+              "faithfulness_ci": [
+                -0.2727272727272727,
+                1.0454545454545454
+              ]
+            },
+            "statistics::long": {
+              "n_pairs_scored": 154,
+              "mean_expressibility_diff_auth_minus_synth": 0.08792207792207792,
+              "diff_bootstrap_ci": [
+                0.019025974025974023,
+                0.15928571428571428
+              ],
+              "permutation_p_two_sided": 0.0163983601639836,
+              "pairwise_accuracy_auth_gt_synth": 0.5551948051948052,
+              "roc_auc_auth_vs_synth": 0.5750126496879744,
+              "mean_faithfulness_diff": 0.35064935064935066,
+              "faithfulness_ci": [
+                0.012987012987012988,
+                0.6948051948051948
+              ]
+            },
+            "statistics::medium": {
+              "n_pairs_scored": 76,
+              "mean_expressibility_diff_auth_minus_synth": 0.04026315789473684,
+              "diff_bootstrap_ci": [
+                -0.04828947368421053,
+                0.12986842105263158
+              ],
+              "permutation_p_two_sided": 0.3772622737726227,
+              "pairwise_accuracy_auth_gt_synth": 0.5723684210526315,
+              "roc_auc_auth_vs_synth": 0.5308171745152355,
+              "mean_faithfulness_diff": 0.14473684210526316,
+              "faithfulness_ci": [
+                -0.3026315789473684,
+                0.5921052631578947
+              ]
+            },
+            "statistics::short": {
+              "n_pairs_scored": 77,
+              "mean_expressibility_diff_auth_minus_synth": 0.14805194805194805,
+              "diff_bootstrap_ci": [
+                0.05753246753246753,
+                0.23857142857142857
+              ],
+              "permutation_p_two_sided": 0.0034996500349965005,
+              "pairwise_accuracy_auth_gt_synth": 0.6883116883116883,
+              "roc_auc_auth_vs_synth": 0.651880586945522,
+              "mean_faithfulness_diff": 0.7012987012987013,
+              "faithfulness_ci": [
+                0.24675324675324675,
+                1.1428571428571428
+              ]
+            }
+          },
+          "review_length_definition": "short/medium/long are frozen tertiles of parsed section count, not body-word-count tiers.",
+          "bootstrap_iterations": 10000,
+          "permutation_iterations": 10000
+        },
+        "tier2": {
+          "n_pairs_scored": 2881,
+          "mean_expressibility_diff_auth_minus_synth": 0.08175980562304756,
+          "diff_bootstrap_ci": [
+            0.06721624435959736,
+            0.09609510586601876
+          ],
+          "permutation_p_two_sided": 9.999000099990002e-05,
+          "pairwise_accuracy_auth_gt_synth": 0.565428670600486,
+          "roc_auc_auth_vs_synth": 0.5805095828864042,
+          "mean_faithfulness_diff": 0.3901423116973273,
+          "faithfulness_ci": [
+            0.3186393613328705,
+            0.46199236376258246
+          ],
+          "per_discipline_pairwise_accuracy": {
+            "astrophysics": 0.5329861111111112,
+            "computer_science": 0.5778210116731517,
+            "condensed_matter": 0.5580110497237569,
+            "economics": 0.4567901234567901,
+            "eess": 0.5731382978723404,
+            "hep_theory": 0.6054545454545455,
+            "mathematics": 0.546875,
+            "quantitative_biology": 0.5387096774193548,
+            "quantitative_finance": 0.6274509803921569,
+            "quantum_physics": 0.5915915915915916,
+            "statistics": 0.5570032573289903
+          },
+          "discipline_pair_counts": {
+            "astrophysics": 288,
+            "computer_science": 514,
+            "condensed_matter": 181,
+            "economics": 81,
+            "eess": 376,
+            "hep_theory": 275,
+            "mathematics": 320,
+            "quantitative_biology": 155,
+            "quantitative_finance": 51,
+            "quantum_physics": 333,
+            "statistics": 307
+          },
+          "by_review_length_bucket": {
+            "long": {
+              "n_pairs_scored": 1644,
+              "mean_expressibility_diff_auth_minus_synth": 0.11086982968369831,
+              "diff_bootstrap_ci": [
+                0.09059610705596106,
+                0.13041362530413625
+              ],
+              "permutation_p_two_sided": 9.999000099990002e-05,
+              "pairwise_accuracy_auth_gt_synth": 0.5915450121654501,
+              "roc_auc_auth_vs_synth": 0.6076324139686599,
+              "mean_faithfulness_diff": 0.5206812652068127,
+              "faithfulness_ci": [
+                0.4239659367396594,
+                0.6155717761557178
+              ]
+            },
+            "medium": {
+              "n_pairs_scored": 746,
+              "mean_expressibility_diff_auth_minus_synth": 0.0542627345844504,
+              "diff_bootstrap_ci": [
+                0.027198391420911527,
+                0.08138069705093834
+              ],
+              "permutation_p_two_sided": 0.00019998000199980003,
+              "pairwise_accuracy_auth_gt_synth": 0.5489276139410187,
+              "roc_auc_auth_vs_synth": 0.5580019262698647,
+              "mean_faithfulness_diff": 0.29222520107238603,
+              "faithfulness_ci": [
+                0.15683646112600536,
+                0.42761394101876676
+              ]
+            },
+            "short": {
+              "n_pairs_scored": 491,
+              "mean_expressibility_diff_auth_minus_synth": 0.026069246435845215,
+              "diff_bootstrap_ci": [
+                -0.006639511201629331,
+                0.05983706720977597
+              ],
+              "permutation_p_two_sided": 0.1260873912608739,
+              "pairwise_accuracy_auth_gt_synth": 0.5030549898167006,
+              "roc_auc_auth_vs_synth": 0.5211982694613014,
+              "mean_faithfulness_diff": 0.10183299389002037,
+              "faithfulness_ci": [
+                -0.06109979633401222,
+                0.26883910386965376
+              ]
+            }
+          },
+          "by_discipline_review_length": {
+            "astrophysics::long": {
+              "n_pairs_scored": 89,
+              "mean_expressibility_diff_auth_minus_synth": 0.06808988764044943,
+              "diff_bootstrap_ci": [
+                -0.0026966292134831447,
+                0.13876404494382022
+              ],
+              "permutation_p_two_sided": 0.06229377062293771,
+              "pairwise_accuracy_auth_gt_synth": 0.5561797752808989,
+              "roc_auc_auth_vs_synth": 0.58010352228254,
+              "mean_faithfulness_diff": 0.3146067415730337,
+              "faithfulness_ci": [
+                -0.056179775280898875,
+                0.6741573033707865
+              ]
+            },
+            "astrophysics::medium": {
+              "n_pairs_scored": 131,
+              "mean_expressibility_diff_auth_minus_synth": -0.0026717557251908428,
+              "diff_bootstrap_ci": [
+                -0.0649618320610687,
+                0.059312977099236636
+              ],
+              "permutation_p_two_sided": 0.9313068693130687,
+              "pairwise_accuracy_auth_gt_synth": 0.5190839694656488,
+              "roc_auc_auth_vs_synth": 0.5043412388555445,
+              "mean_faithfulness_diff": -0.030534351145038167,
+              "faithfulness_ci": [
+                -0.33587786259541985,
+                0.2748091603053435
+              ]
+            },
+            "astrophysics::short": {
+              "n_pairs_scored": 68,
+              "mean_expressibility_diff_auth_minus_synth": 0.06441176470588235,
+              "diff_bootstrap_ci": [
+                -0.006470588235294124,
+                0.13573529411764707
+              ],
+              "permutation_p_two_sided": 0.08449155084491551,
+              "pairwise_accuracy_auth_gt_synth": 0.5294117647058824,
+              "roc_auc_auth_vs_synth": 0.5516868512110726,
+              "mean_faithfulness_diff": 0.29411764705882354,
+              "faithfulness_ci": [
+                -0.058823529411764705,
+                0.6617647058823529
+              ]
+            },
+            "computer_science::long": {
+              "n_pairs_scored": 413,
+              "mean_expressibility_diff_auth_minus_synth": 0.11513317191283294,
+              "diff_bootstrap_ci": [
+                0.07694915254237289,
+                0.1544309927360775
+              ],
+              "permutation_p_two_sided": 9.999000099990002e-05,
+              "pairwise_accuracy_auth_gt_synth": 0.6004842615012107,
+              "roc_auc_auth_vs_synth": 0.6103981379969396,
+              "mean_faithfulness_diff": 0.5544794188861986,
+              "faithfulness_ci": [
+                0.3704600484261501,
+                0.7409200968523002
+              ]
+            },
+            "computer_science::medium": {
+              "n_pairs_scored": 71,
+              "mean_expressibility_diff_auth_minus_synth": 0.021971830985915493,
+              "diff_bootstrap_ci": [
+                -0.061408450704225355,
+                0.10591549295774648
+              ],
+              "permutation_p_two_sided": 0.6153384661533846,
+              "pairwise_accuracy_auth_gt_synth": 0.4507042253521127,
+              "roc_auc_auth_vs_synth": 0.5201348938702638,
+              "mean_faithfulness_diff": 0.11267605633802817,
+              "faithfulness_ci": [
+                -0.30985915492957744,
+                0.5492957746478874
+              ]
+            },
+            "computer_science::short": {
+              "n_pairs_scored": 30,
+              "mean_expressibility_diff_auth_minus_synth": 0.06033333333333334,
+              "diff_bootstrap_ci": [
+                -0.06533333333333333,
+                0.18633333333333335
+              ],
+              "permutation_p_two_sided": 0.36346365363463656,
+              "pairwise_accuracy_auth_gt_synth": 0.5666666666666667,
+              "roc_auc_auth_vs_synth": 0.57,
+              "mean_faithfulness_diff": 0.36666666666666664,
+              "faithfulness_ci": [
+                -0.26666666666666666,
+                1.0
+              ]
+            },
+            "condensed_matter::long": {
+              "n_pairs_scored": 60,
+              "mean_expressibility_diff_auth_minus_synth": 0.13166666666666668,
+              "diff_bootstrap_ci": [
+                0.0008333333333333287,
+                0.2695
+              ],
+              "permutation_p_two_sided": 0.05959404059594041,
+              "pairwise_accuracy_auth_gt_synth": 0.5833333333333334,
+              "roc_auc_auth_vs_synth": 0.6386111111111111,
+              "mean_faithfulness_diff": 0.6833333333333333,
+              "faithfulness_ci": [
+                0.1,
+                1.3
+              ]
+            },
+            "condensed_matter::medium": {
+              "n_pairs_scored": 52,
+              "mean_expressibility_diff_auth_minus_synth": 0.12000000000000001,
+              "diff_bootstrap_ci": [
+                0.020192307692307693,
+                0.2178846153846154
+              ],
+              "permutation_p_two_sided": 0.022897710228977103,
+              "pairwise_accuracy_auth_gt_synth": 0.5769230769230769,
+              "roc_auc_auth_vs_synth": 0.6061390532544378,
+              "mean_faithfulness_diff": 0.5961538461538461,
+              "faithfulness_ci": [
+                0.09615384615384616,
+                1.0961538461538463
+              ]
+            },
+            "condensed_matter::short": {
+              "n_pairs_scored": 69,
+              "mean_expressibility_diff_auth_minus_synth": 0.017101449275362304,
+              "diff_bootstrap_ci": [
+                -0.059565217391304354,
+                0.09434782608695651
+              ],
+              "permutation_p_two_sided": 0.6762323767623237,
+              "pairwise_accuracy_auth_gt_synth": 0.5217391304347826,
+              "roc_auc_auth_vs_synth": 0.5156479731148919,
+              "mean_faithfulness_diff": 0.15942028985507245,
+              "faithfulness_ci": [
+                -0.2463768115942029,
+                0.5797101449275363
+              ]
+            },
+            "economics::long": {
+              "n_pairs_scored": 41,
+              "mean_expressibility_diff_auth_minus_synth": 0.14585365853658536,
+              "diff_bootstrap_ci": [
+                0.0017073170731707128,
+                0.2880487804878049
+              ],
+              "permutation_p_two_sided": 0.05069493050694931,
+              "pairwise_accuracy_auth_gt_synth": 0.5365853658536586,
+              "roc_auc_auth_vs_synth": 0.637120761451517,
+              "mean_faithfulness_diff": 0.6829268292682927,
+              "faithfulness_ci": [
+                0.0,
+                1.3658536585365855
+              ]
+            },
+            "economics::medium": {
+              "n_pairs_scored": 20,
+              "mean_expressibility_diff_auth_minus_synth": -0.013499999999999998,
+              "diff_bootstrap_ci": [
+                -0.147,
+                0.1165
+              ],
+              "permutation_p_two_sided": 0.8465153484651535,
+              "pairwise_accuracy_auth_gt_synth": 0.45,
+              "roc_auc_auth_vs_synth": 0.4675,
+              "mean_faithfulness_diff": 0.15,
+              "faithfulness_ci": [
+                -0.5,
+                0.8
+              ]
+            },
+            "economics::short": {
+              "n_pairs_scored": 20,
+              "mean_expressibility_diff_auth_minus_synth": -0.1275,
+              "diff_bootstrap_ci": [
+                -0.27649999999999997,
+                0.030499999999999992
+              ],
+              "permutation_p_two_sided": 0.133986601339866,
+              "pairwise_accuracy_auth_gt_synth": 0.3,
+              "roc_auc_auth_vs_synth": 0.345,
+              "mean_faithfulness_diff": -0.65,
+              "faithfulness_ci": [
+                -1.3,
+                0.05
+              ]
+            },
+            "eess::long": {
+              "n_pairs_scored": 269,
+              "mean_expressibility_diff_auth_minus_synth": 0.11985130111524164,
+              "diff_bootstrap_ci": [
+                0.07074349442379183,
+                0.16940520446096655
+              ],
+              "permutation_p_two_sided": 0.00019998000199980003,
+              "pairwise_accuracy_auth_gt_synth": 0.5799256505576208,
+              "roc_auc_auth_vs_synth": 0.5990381559127154,
+              "mean_faithfulness_diff": 0.5613382899628253,
+              "faithfulness_ci": [
+                0.32342007434944237,
+                0.7992565055762082
+              ]
+            },
+            "eess::medium": {
+              "n_pairs_scored": 67,
+              "mean_expressibility_diff_auth_minus_synth": 0.08059701492537313,
+              "diff_bootstrap_ci": [
+                -0.02029850746268656,
+                0.18089552238805973
+              ],
+              "permutation_p_two_sided": 0.11768823117688232,
+              "pairwise_accuracy_auth_gt_synth": 0.5895522388059702,
+              "roc_auc_auth_vs_synth": 0.5970149253731343,
+              "mean_faithfulness_diff": 0.43283582089552236,
+              "faithfulness_ci": [
+                -0.029850746268656716,
+                0.8955223880597015
+              ]
+            },
+            "eess::short": {
+              "n_pairs_scored": 40,
+              "mean_expressibility_diff_auth_minus_synth": -0.02075,
+              "diff_bootstrap_ci": [
+                -0.1485,
+                0.1045
+              ],
+              "permutation_p_two_sided": 0.7515248475152485,
+              "pairwise_accuracy_auth_gt_synth": 0.5,
+              "roc_auc_auth_vs_synth": 0.475,
+              "mean_faithfulness_diff": -0.225,
+              "faithfulness_ci": [
+                -0.825,
+                0.35
+              ]
+            },
+            "hep_theory::long": {
+              "n_pairs_scored": 166,
+              "mean_expressibility_diff_auth_minus_synth": 0.1405421686746988,
+              "diff_bootstrap_ci": [
+                0.08680722891566266,
+                0.19536144578313253
+              ],
+              "permutation_p_two_sided": 9.999000099990002e-05,
+              "pairwise_accuracy_auth_gt_synth": 0.641566265060241,
+              "roc_auc_auth_vs_synth": 0.6335099433880099,
+              "mean_faithfulness_diff": 0.608433734939759,
+              "faithfulness_ci": [
+                0.3253012048192771,
+                0.8855421686746988
+              ]
+            },
+            "hep_theory::medium": {
+              "n_pairs_scored": 64,
+              "mean_expressibility_diff_auth_minus_synth": 0.08296875000000001,
+              "diff_bootstrap_ci": [
+                -0.006562499999999994,
+                0.17250000000000001
+              ],
+              "permutation_p_two_sided": 0.07279272072792721,
+              "pairwise_accuracy_auth_gt_synth": 0.6171875,
+              "roc_auc_auth_vs_synth": 0.564208984375,
+              "mean_faithfulness_diff": 0.421875,
+              "faithfulness_ci": [
+                -0.015625,
+                0.859375
+              ]
+            },
+            "hep_theory::short": {
+              "n_pairs_scored": 45,
+              "mean_expressibility_diff_auth_minus_synth": -0.027555555555555552,
+              "diff_bootstrap_ci": [
+                -0.13822222222222225,
+                0.08333333333333336
+              ],
+              "permutation_p_two_sided": 0.6354364563543645,
+              "pairwise_accuracy_auth_gt_synth": 0.45555555555555555,
+              "roc_auc_auth_vs_synth": 0.47901234567901235,
+              "mean_faithfulness_diff": -0.13333333333333333,
+              "faithfulness_ci": [
+                -0.6666666666666666,
+                0.4
+              ]
+            },
+            "mathematics::long": {
+              "n_pairs_scored": 145,
+              "mean_expressibility_diff_auth_minus_synth": 0.08227586206896552,
+              "diff_bootstrap_ci": [
+                0.010275862068965516,
+                0.1550344827586207
+              ],
+              "permutation_p_two_sided": 0.027897210278972105,
+              "pairwise_accuracy_auth_gt_synth": 0.5758620689655173,
+              "roc_auc_auth_vs_synth": 0.5914387633769322,
+              "mean_faithfulness_diff": 0.4,
+              "faithfulness_ci": [
+                0.04827586206896552,
+                0.7586206896551724
+              ]
+            },
+            "mathematics::medium": {
+              "n_pairs_scored": 99,
+              "mean_expressibility_diff_auth_minus_synth": 0.049595959595959596,
+              "diff_bootstrap_ci": [
+                -0.02393939393939394,
+                0.12555555555555556
+              ],
+              "permutation_p_two_sided": 0.1942805719428057,
+              "pairwise_accuracy_auth_gt_synth": 0.5656565656565656,
+              "roc_auc_auth_vs_synth": 0.5674931129476584,
+              "mean_faithfulness_diff": 0.36363636363636365,
+              "faithfulness_ci": [
+                0.010101010101010102,
+                0.7272727272727273
+              ]
+            },
+            "mathematics::short": {
+              "n_pairs_scored": 76,
+              "mean_expressibility_diff_auth_minus_synth": -0.006184210526315783,
+              "diff_bootstrap_ci": [
+                -0.09249999999999999,
+                0.07907894736842105
+              ],
+              "permutation_p_two_sided": 0.8923107689231077,
+              "pairwise_accuracy_auth_gt_synth": 0.46710526315789475,
+              "roc_auc_auth_vs_synth": 0.4903047091412742,
+              "mean_faithfulness_diff": -0.05263157894736842,
+              "faithfulness_ci": [
+                -0.47368421052631576,
+                0.35526315789473684
+              ]
+            },
+            "quantitative_biology::long": {
+              "n_pairs_scored": 76,
+              "mean_expressibility_diff_auth_minus_synth": 0.1455263157894737,
+              "diff_bootstrap_ci": [
+                0.0513157894736842,
+                0.24289473684210527
+              ],
+              "permutation_p_two_sided": 0.005099490050994901,
+              "pairwise_accuracy_auth_gt_synth": 0.5657894736842105,
+              "roc_auc_auth_vs_synth": 0.6320983379501385,
+              "mean_faithfulness_diff": 0.7631578947368421,
+              "faithfulness_ci": [
+                0.3026315789473684,
+                1.236842105263158
+              ]
+            },
+            "quantitative_biology::medium": {
+              "n_pairs_scored": 57,
+              "mean_expressibility_diff_auth_minus_synth": 0.05596491228070176,
+              "diff_bootstrap_ci": [
+                -0.04684210526315789,
+                0.16052631578947368
+              ],
+              "permutation_p_two_sided": 0.30296970302969706,
+              "pairwise_accuracy_auth_gt_synth": 0.5,
+              "roc_auc_auth_vs_synth": 0.5426285010772546,
+              "mean_faithfulness_diff": 0.2807017543859649,
+              "faithfulness_ci": [
+                -0.2631578947368421,
+                0.8421052631578947
+              ]
+            },
+            "quantitative_biology::short": {
+              "n_pairs_scored": 22,
+              "mean_expressibility_diff_auth_minus_synth": 0.1059090909090909,
+              "diff_bootstrap_ci": [
+                -0.0072727272727273,
+                0.23454545454545456
+              ],
+              "permutation_p_two_sided": 0.11578842115788421,
+              "pairwise_accuracy_auth_gt_synth": 0.5454545454545454,
+              "roc_auc_auth_vs_synth": 0.5826446280991735,
+              "mean_faithfulness_diff": 0.36363636363636365,
+              "faithfulness_ci": [
+                -0.2727272727272727,
+                1.0909090909090908
+              ]
+            },
+            "quantitative_finance::long": {
+              "n_pairs_scored": 25,
+              "mean_expressibility_diff_auth_minus_synth": 0.2464,
+              "diff_bootstrap_ci": [
+                0.08560000000000001,
+                0.39520000000000005
+              ],
+              "permutation_p_two_sided": 0.006899310068993101,
+              "pairwise_accuracy_auth_gt_synth": 0.76,
+              "roc_auc_auth_vs_synth": 0.768,
+              "mean_faithfulness_diff": 1.16,
+              "faithfulness_ci": [
+                0.4,
+                1.88
+              ]
+            },
+            "quantitative_finance::medium": {
+              "n_pairs_scored": 26,
+              "mean_expressibility_diff_auth_minus_synth": 0.031923076923076894,
+              "diff_bootstrap_ci": [
+                -0.12884615384615386,
+                0.19038461538461535
+              ],
+              "permutation_p_two_sided": 0.7067293270672933,
+              "pairwise_accuracy_auth_gt_synth": 0.5,
+              "roc_auc_auth_vs_synth": 0.5236686390532544,
+              "mean_faithfulness_diff": 0.11538461538461539,
+              "faithfulness_ci": [
+                -0.6538461538461539,
+                0.8461538461538461
+              ]
+            },
+            "quantum_physics::long": {
+              "n_pairs_scored": 206,
+              "mean_expressibility_diff_auth_minus_synth": 0.10966019417475728,
+              "diff_bootstrap_ci": [
+                0.05456310679611651,
+                0.16524271844660193
+              ],
+              "permutation_p_two_sided": 9.999000099990002e-05,
+              "pairwise_accuracy_auth_gt_synth": 0.5922330097087378,
+              "roc_auc_auth_vs_synth": 0.6014468847205203,
+              "mean_faithfulness_diff": 0.46601941747572817,
+              "faithfulness_ci": [
+                0.20388349514563106,
+                0.7281553398058253
+              ]
+            },
+            "quantum_physics::medium": {
+              "n_pairs_scored": 83,
+              "mean_expressibility_diff_auth_minus_synth": 0.12337349397590362,
+              "diff_bootstrap_ci": [
+                0.04024096385542168,
+                0.20674698795180724
+              ],
+              "permutation_p_two_sided": 0.006799320067993201,
+              "pairwise_accuracy_auth_gt_synth": 0.6144578313253012,
+              "roc_auc_auth_vs_synth": 0.6221512556249092,
+              "mean_faithfulness_diff": 0.6144578313253012,
+              "faithfulness_ci": [
+                0.20481927710843373,
+                1.036144578313253
+              ]
+            },
+            "quantum_physics::short": {
+              "n_pairs_scored": 44,
+              "mean_expressibility_diff_auth_minus_synth": 0.07681818181818183,
+              "diff_bootstrap_ci": [
+                -0.06636363636363636,
+                0.21909090909090911
+              ],
+              "permutation_p_two_sided": 0.29547045295470453,
+              "pairwise_accuracy_auth_gt_synth": 0.5454545454545454,
+              "roc_auc_auth_vs_synth": 0.5625,
+              "mean_faithfulness_diff": 0.22727272727272727,
+              "faithfulness_ci": [
+                -0.4318181818181818,
+                0.9090909090909091
+              ]
+            },
+            "statistics::long": {
+              "n_pairs_scored": 154,
+              "mean_expressibility_diff_auth_minus_synth": 0.04850649350649351,
+              "diff_bootstrap_ci": [
+                -0.017077922077922077,
+                0.11759740259740259
+              ],
+              "permutation_p_two_sided": 0.16478352164783522,
+              "pairwise_accuracy_auth_gt_synth": 0.5714285714285714,
+              "roc_auc_auth_vs_synth": 0.5546888176758307,
+              "mean_faithfulness_diff": 0.24025974025974026,
+              "faithfulness_ci": [
+                -0.08441558441558442,
+                0.5844155844155844
+              ]
+            },
+            "statistics::medium": {
+              "n_pairs_scored": 76,
+              "mean_expressibility_diff_auth_minus_synth": 0.044999999999999984,
+              "diff_bootstrap_ci": [
+                -0.043421052631578964,
+                0.13171052631578947
+              ],
+              "permutation_p_two_sided": 0.3220677932206779,
+              "pairwise_accuracy_auth_gt_synth": 0.5657894736842105,
+              "roc_auc_auth_vs_synth": 0.5571329639889196,
+              "mean_faithfulness_diff": 0.23684210526315788,
+              "faithfulness_ci": [
+                -0.19736842105263158,
+                0.6578947368421053
+              ]
+            },
+            "statistics::short": {
+              "n_pairs_scored": 77,
+              "mean_expressibility_diff_auth_minus_synth": 0.06246753246753248,
+              "diff_bootstrap_ci": [
+                -0.02636363636363636,
+                0.15064935064935064
+              ],
+              "permutation_p_two_sided": 0.1700829917008299,
+              "pairwise_accuracy_auth_gt_synth": 0.5194805194805194,
+              "roc_auc_auth_vs_synth": 0.5510204081632653,
+              "mean_faithfulness_diff": 0.2857142857142857,
+              "faithfulness_ci": [
+                -0.16883116883116883,
+                0.7402597402597403
+              ]
+            }
+          },
+          "review_length_definition": "short/medium/long are frozen tertiles of parsed section count, not body-word-count tiers.",
+          "bootstrap_iterations": 10000,
+          "permutation_iterations": 10000
+        }
+      }
+    }
+  ],
+  "evaluation_note": "Uses blind MODEL-A annotations with opaque prompt IDs; no human annotation is used."
+}

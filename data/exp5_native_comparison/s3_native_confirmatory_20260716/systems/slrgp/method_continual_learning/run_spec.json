@@ -1,0 +1,25 @@
+{
+  "run_id": "s3_native_confirmatory_20260716",
+  "system_id": "slrgp",
+  "source_revision": "local-ec3381ed8c936983",
+  "model_policy": "common_backbone:anthropic/claude-sonnet-4.6",
+  "topic": {
+    "topic_id": "method_continual_learning",
+    "title": "Continual Learning",
+    "scope": "Methods for learning from non-stationary task or data streams while limiting catastrophic forgetting, including replay, regularization, architectural, parameter-isolation, and dynamic approaches; task-, domain-, and class-incremental settings; evaluation protocols; transfer; memory constraints; and open-world extensions.",
+    "target_audience": "machine-learning researchers",
+    "language": "English",
+    "publication_cutoff": "2023-12-31",
+    "target_words": 4000,
+    "min_words": 3200,
+    "max_words": 4800,
+    "target_references_min": 40,
+    "target_references_max": 60,
+    "seed": 5209,
+    "analysis_role": "confirmatory_primary"
+  },
+  "budget_usd": 16.0,
+  "timeout_seconds": 14400,
+  "protocol_hash": "296c390580ef0a11f0452948b3ba35431f710230487bfc3305ed61bc24164967",
+  "run_spec_hash": "8f57cda253fc68f00c0d8c1722810cd4e46cae092755c9379766916b8fbd6548"
+}

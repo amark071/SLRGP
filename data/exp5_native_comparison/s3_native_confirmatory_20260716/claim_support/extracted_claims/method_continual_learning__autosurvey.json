@@ -1,0 +1,123 @@
+{
+  "topic_id": "method_continual_learning",
+  "system": "autosurvey",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Continual learning (CL), also referred to as lifelong learning, incremental learning, or sequential learning, is a machine learning paradigm in which a model acquires knowledge from a continuous, non-stationary stream of data over time, building upon previously learned experiences without losing what it has already mastered [1; 2",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The degree of overlap between task-specific loss minima, which is closely related to the functional and distributional similarity between tasks, therefore plays a central role in determining how severely forgetting manifests [18",
+      "citation_markers": [
+        "[18]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The concept of the stability-plasticity dilemma was originally articulated in the context of neuroscience and cognitive psychology, where it was used to explain how biological brains manage to learn continuously across an organism's lifespan without systematically erasing prior knowledge [30",
+      "citation_markers": [
+        "[30]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "In task-incremental learning, a model is trained on a sequence of distinct tasks, and crucially, the task identity is provided both at training and at inference time. This makes TIL the most tractable of the standard scenarios",
+      "citation_markers": [
+        "[2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The CIL setting has attracted the majority of attention in recent continual learning research; however, as argued in [48], an exclusive focus on this scenario may be limiting because class-incremental benchmarks artificially exacerbate catastrophic forgetting by design, suppressing the investigation of forward transfer and computational efficiency",
+      "citation_markers": [
+        "[48]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The stability-plasticity dilemma can be understood through the lens of optimization. When learning task $t$ after having learned tasks $1, \\ldots, t-1$, a continual learning algorithm must update model parameters $\\theta$ to minimize the current task loss $\\mathcal{L}_t(\\theta)$ while simultaneously preserving $\\theta \\approx \\theta^*_{1:t-1}$, the parameter configuration that performed well on prior tasks",
+      "citation_markers": [
+        ""
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "continual learner. Formal complexity-theoretic analysis within the PAC framework has established that any continual learner — even one permitted to perform improper learning — requires memory that grows **linearly** with the number of tasks $k$ [12",
+      "citation_markers": [
+        "[12]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Experience replay, which maintains a buffer of exemplars from previous tasks and interleaves them with new training data, has been extensively studied as a practical remedy for catastrophic forgetting in sequential text classification [129",
+      "citation_markers": [
+        "[129]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "the Continual World benchmark [9] evaluates agents on sequences of robotic manipulation tasks with meaningfully diverse dynamics, providing a more ecologically valid testbed for assessing adaptation under distribution change compared to grid-world or Atari-based evaluations",
+      "citation_markers": [
+        "[9]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Studies on unsupervised continual learning (UCL) demonstrate that unsupervised visual representations are surprisingly more resistant to catastrophic forgetting, consistently achieve better generalization performance, and transfer more effectively to out-of-distribution tasks compared to supervised continual learning approaches [177",
+      "citation_markers": [
+        "[177]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Many state-of-the-art continual learning methods developed for server-class hardware assume access to large replay buffers, computationally intensive generative models, or expensive second-order gradient computations that are infeasible in embedded deployments",
+      "citation_markers": [
+        ""
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "challenges. Dynamic architectures that grow network capacity with each new task [161] may offer strong forgetting prevention, but the increasing parameter count and associated computational cost conflict directly with the fixed hardware resources available on embedded platforms",
+      "citation_markers": [
+        "[161]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 105345,
+    "completion_tokens": 959,
+    "total_tokens": 106304,
+    "prompt_tokens_details": {
+      "cached_tokens": 105216
+    }
+  }
+}

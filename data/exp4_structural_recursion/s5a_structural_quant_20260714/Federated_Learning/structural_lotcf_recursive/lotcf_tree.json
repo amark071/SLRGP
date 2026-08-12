@@ -1,0 +1,278 @@
+{
+  "title": "Federated Learning",
+  "depth": 0,
+  "doc_ids": [
+    "arxiv_2003.13761",
+    "arxiv_2104.14362",
+    "arxiv_2012.07183",
+    "arxiv_2106.06843",
+    "arxiv_2210.00325",
+    "arxiv_2402.10145",
+    "arxiv_2306.02570",
+    "arxiv_2201.07730",
+    "arxiv_2407.19286",
+    "arxiv_2311.16008",
+    "arxiv_2301.01299",
+    "arxiv_2208.01200",
+    "arxiv_2501.05053",
+    "arxiv_2107.06917",
+    "arxiv_2004.12088",
+    "arxiv_2311.10832",
+    "arxiv_2203.17005",
+    "arxiv_2101.12240",
+    "arxiv_2106.10662",
+    "arxiv_2010.09258",
+    "arxiv_2007.00914",
+    "arxiv_2002.08423",
+    "arxiv_2201.10092",
+    "arxiv_2405.08299",
+    "arxiv_2202.01529",
+    "arxiv_2404.18814",
+    "arxiv_2409.13133",
+    "arxiv_2501.03477",
+    "arxiv_2304.05127",
+    "arxiv_2504.17703",
+    "arxiv_2104.06557",
+    "arxiv_2209.14086"
+  ],
+  "facet": "topic",
+  "relation": "foundational-to-applied",
+  "children": [
+    {
+      "title": "Foundations, Optimization, and Heterogeneity in Federated Learning",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2107.06917",
+        "arxiv_2106.06843",
+        "arxiv_2004.12088",
+        "arxiv_2202.01529",
+        "arxiv_2104.06557",
+        "arxiv_2501.03477",
+        "arxiv_2402.10145",
+        "arxiv_2311.10832"
+      ],
+      "facet": "method",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Optimization Frameworks, Algorithms, and Architectural Foundations of Federated Learning",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2107.06917",
+            "arxiv_2004.12088",
+            "arxiv_2202.01529",
+            "arxiv_2501.03477",
+            "arxiv_2311.10832"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [
+            {
+              "title": "Core Optimization Frameworks and Algorithmic Foundations of Federated Learning",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2107.06917",
+                "arxiv_2501.03477"
+              ],
+              "facet": "theory",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers address the theoretical and algorithmic underpinnings of federated optimization, including problem formulation, algorithm design guidelines, and performance limitations rooted in optimization challenges."
+            },
+            {
+              "title": "Architectural Variants, System Comparisons, and Empirical Assessments of Federated Learning",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2004.12088",
+                "arxiv_2202.01529",
+                "arxiv_2311.10832"
+              ],
+              "facet": "method",
+              "relation": "general-to-specific",
+              "children": [],
+              "rationale": "These papers examine concrete architectural approaches (split learning, hybrid SplitFed), comparative evaluations against centralized learning, and systematic reviews of model types and their performance, focusing on system-level design and empirical behavior."
+            }
+          ],
+          "rationale": "These papers address the foundational optimization formulations, algorithmic design guidelines, hybrid architectures (SplitFed), and general performance analysis that define how federated learning systems are structured and evaluated."
+        },
+        {
+          "title": "Data Heterogeneity (Non-IID) Challenges and Robustness in Federated Learning",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2106.06843",
+            "arxiv_2104.06557",
+            "arxiv_2402.10145"
+          ],
+          "facet": "topic",
+          "relation": "consensus-to-controversy",
+          "children": [],
+          "rationale": "These papers specifically investigate the Non-IID data distribution problem, its impact on model performance, and proposed solutions including causal approaches, privacy-preserving encryption, and differential privacy to address heterogeneity and out-of-distribution generalization."
+        }
+      ],
+      "rationale": "These papers address the core FL paradigm, federated optimization algorithms, non-IID data challenges, and comparisons with centralized or split learning—forming the conceptual and algorithmic bedrock of the field."
+    },
+    {
+      "title": "Differential Privacy in Federated Learning",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2003.13761",
+        "arxiv_2007.00914",
+        "arxiv_2101.12240",
+        "arxiv_2209.14086",
+        "arxiv_2304.05127",
+        "arxiv_2405.08299",
+        "arxiv_2404.18814",
+        "arxiv_2409.13133",
+        "arxiv_2407.19286",
+        "arxiv_2106.10662"
+      ],
+      "facet": "method",
+      "relation": "foundational-to-applied",
+      "children": [
+        {
+          "title": "Surveys, Frameworks, and Taxonomies of Differentially Private Federated Learning",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2405.08299",
+            "arxiv_2404.18814",
+            "arxiv_2007.00914"
+          ],
+          "facet": "topic",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers provide systematic overviews, software tooling, and holistic reviews that map the DP-FL landscape, serving as foundational references for the field."
+        },
+        {
+          "title": "Algorithmic Mechanisms for Differential Privacy in Federated Learning",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2003.13761",
+            "arxiv_2209.14086",
+            "arxiv_2304.05127",
+            "arxiv_2409.13133",
+            "arxiv_2106.10662"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [
+            {
+              "title": "Central and Aggregation-Level Differential Privacy Mechanisms",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2003.13761",
+                "arxiv_2304.05127",
+                "arxiv_2409.13133"
+              ],
+              "facet": "method",
+              "relation": "simple-to-complex",
+              "children": [],
+              "rationale": "These papers focus on DP mechanisms applied at or near the aggregation/server level, including concentrated DP, correlated binary quantization, and privacy-performance trade-offs in the global FL pipeline."
+            },
+            {
+              "title": "Local Differential Privacy and Client-Side Privacy Mechanisms",
+              "depth": 3,
+              "doc_ids": [
+                "arxiv_2209.14086",
+                "arxiv_2106.10662"
+              ],
+              "facet": "method",
+              "relation": "foundational-to-applied",
+              "children": [],
+              "rationale": "These papers focus on DP mechanisms applied locally at each client before any data leaves the device, including local DP with momentum gradient descent and secure matrix multiplication variants for tree-based models."
+            }
+          ],
+          "rationale": "These papers propose or analyze specific DP mechanisms—including concentrated DP, local DP with momentum SGD, correlated binary quantization, and privacy-utility trade-off optimization—applied directly to the FL training process."
+        },
+        {
+          "title": "DP-FL under System Constraints: Communication Efficiency and Secure Aggregation",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2101.12240",
+            "arxiv_2407.19286"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [],
+          "rationale": "These papers specifically address the tension between differential privacy guarantees and system-level constraints such as communication overhead, partial participation, and secure aggregation protocols."
+        }
+      ],
+      "rationale": "These papers focus specifically on integrating differential privacy (central, local, or concentrated) with FL, covering theoretical guarantees, noise mechanisms, privacy-utility trade-offs, and DP combined with communication constraints."
+    },
+    {
+      "title": "Secure Aggregation, Decentralized Architectures, and Communication Efficiency",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2012.07183",
+        "arxiv_2210.00325",
+        "arxiv_2306.02570",
+        "arxiv_2201.07730",
+        "arxiv_2501.05053",
+        "arxiv_2311.16008",
+        "arxiv_2203.17005",
+        "arxiv_2208.01200",
+        "arxiv_2201.10092",
+        "arxiv_2002.08423"
+      ],
+      "facet": "method",
+      "relation": "simple-to-complex",
+      "children": [
+        {
+          "title": "Cryptographic and Protocol-Level Secure Aggregation",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2201.07730",
+            "arxiv_2501.05053",
+            "arxiv_2203.17005",
+            "arxiv_2002.08423"
+          ],
+          "facet": "method",
+          "relation": "simple-to-complex",
+          "children": [],
+          "rationale": "These papers focus on the core cryptographic primitives and protocols (MPC, secret sharing, threshold schemes, homomorphic techniques) used to achieve privacy-preserving aggregation in federated learning, including surveys and specific constructions."
+        },
+        {
+          "title": "Decentralized Architectures and Privacy-Preserving Peer-to-Peer Aggregation",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2012.07183",
+            "arxiv_2210.00325",
+            "arxiv_2306.02570",
+            "arxiv_2311.16008"
+          ],
+          "facet": "topic",
+          "relation": "foundational-to-applied",
+          "children": [],
+          "rationale": "These papers address fully decentralized (serverless, peer-to-peer) federated learning topologies, including ADMM-based protocols, consensus algorithms over time-varying graphs, and the broader intersection of decentralized optimization with federated learning."
+        },
+        {
+          "title": "Communication Efficiency: Compression, Coding, and Straggler Mitigation",
+          "depth": 2,
+          "doc_ids": [
+            "arxiv_2208.01200",
+            "arxiv_2201.10092"
+          ],
+          "facet": "method",
+          "relation": "general-to-specific",
+          "children": [],
+          "rationale": "These papers target the communication bottleneck in federated learning through surveys of communication-reduction techniques and specific coded/stochastic frameworks that jointly address convergence, stragglers, and bandwidth constraints."
+        }
+      ],
+      "rationale": "These papers address privacy-preserving aggregation protocols (MPC, secret sharing, homomorphic encryption), decentralized/peer-to-peer FL topologies, and communication-efficient designs that reduce reliance on a central server."
+    },
+    {
+      "title": "Surveys, Taxonomies, and Systematic Reviews of Federated Learning",
+      "depth": 1,
+      "doc_ids": [
+        "arxiv_2104.14362",
+        "arxiv_2010.09258",
+        "arxiv_2301.01299",
+        "arxiv_2504.17703"
+      ],
+      "facet": "other",
+      "relation": "chronological",
+      "children": [],
+      "rationale": "These papers provide broad surveys, systematic reviews, and taxonomic overviews of the FL landscape—covering distributed ML origins, privacy paradigms, and the state of the art—serving as integrative reference points for the entire field."
+    }
+  ],
+  "rationale": "The corpus naturally partitions into foundational FL frameworks and optimization challenges, privacy-preserving mechanisms (DP and secure aggregation), decentralized/communication-efficient architectures, and surveys/comparative overviews—moving from core concepts to applied privacy solutions."
+}

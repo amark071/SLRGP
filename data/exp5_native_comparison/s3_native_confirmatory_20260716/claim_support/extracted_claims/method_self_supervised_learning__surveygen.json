@@ -1,0 +1,129 @@
+{
+  "topic_id": "method_self_supervised_learning",
+  "system": "surveygen",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Manual annotation is costly, time-consuming, and often impractical, particularly in specialized domains such as histopathology ref [1], medical imaging ref [16], and industrial inspection ref [39].",
+      "citation_markers": [
+        "[1]",
+        "[16]",
+        "[39]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Self-supervised representation learning (SSRL) addresses this challenge by exploiting the intrinsic structure of unlabeled data to generate supervisory signals automatically ref [27], eliminating reliance on human-provided labels.",
+      "citation_markers": [
+        "[27]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Contrastive learning methods subsequently emerged as dominant paradigms, leveraging instance discrimination objectives across visual ref [27], temporal ref [2], and graph-structured data ref [19].",
+      "citation_markers": [
+        "[27]",
+        "[2]",
+        "[19]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "A **pretext task** is a self-defined auxiliary objective—such as rotation prediction ref [12], jigsaw puzzle solving ref [10], or masked reconstruction ref [4]—that generates supervisory signals from unlabeled data.",
+      "citation_markers": [
+        "[12]",
+        "[10]",
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The Context Autoencoder (CAE) ref [4] advances masked image modeling (MIM) by predicting representations of masked patches in encoded space via an encoder–regressor–decoder architecture, encouraging separation between representation learning and reconstruction.",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "MOKD further advances this framework by enabling two heterogeneous models to learn collaboratively through self-distillation and cross-distillation modes, enhancing semantic alignment via cross-attention feature search ref [56].",
+      "citation_markers": [
+        "[56]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Point2Vec ref [15] extends the data2vec masked student-teacher framework to point cloud domains, identifying that positional information leakage reveals object shape under heavy masking and proposing targeted solutions to address this 3D-specific shortcoming.",
+      "citation_markers": [
+        "[15]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "In astronomical imaging, contrastive learning applied to multiband galaxy photometry enables morphology classification and photometric redshift estimation, outperforming supervised baselines with two to four times fewer labels ref [58].",
+      "citation_markers": [
+        "[58]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Graph Barlow Twins eliminates the need for negative samples entirely by employing a cross-correlation-based loss, achieving competitive performance while requiring substantially fewer hyperparameters and approximately 30 times faster computation than BGRL ref [19].",
+      "citation_markers": [
+        "[19]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "TimesURL addresses limitations in positive/negative pair construction through frequency-temporal augmentation and double Universum hard negatives, achieving state-of-the-art performance across six downstream tasks including forecasting, imputation, classification, and anomaly detection ref [17].",
+      "citation_markers": [
+        "[17]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "CCBERT (Code Change BERT) exemplifies this direction by pretraining a Transformer-based model on large-scale unlabeled code change repositories using four specialized self-supervised objectives that capture token-level edit actions between old and new code versions ref [30].",
+      "citation_markers": [
+        "[30]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "A comprehensive review of self-supervised speech representation learning ref [23] identifies multi-modal pretraining—combining speech with text or visual streams—as a distinct and productive category.",
+      "citation_markers": [
+        "[23]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9333,
+    "completion_tokens": 871,
+    "total_tokens": 10204,
+    "prompt_tokens_details": {
+      "cached_tokens": 8960
+    }
+  }
+}

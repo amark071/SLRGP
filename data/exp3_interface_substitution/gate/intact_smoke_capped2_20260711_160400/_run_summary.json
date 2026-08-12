@@ -1,0 +1,117 @@
+{
+  "runner": "s4_runner_gate.py",
+  "model": "anthropic/claude-sonnet-4.6",
+  "base_url": "http://127.0.0.1:18080/v1",
+  "top_n": 60,
+  "d_max": 2,
+  "theta_leaf": 8,
+  "target_leaf_words": 400,
+  "max_groups_per_node": 2,
+  "n_ok": 1,
+  "n_total": 1,
+  "llm_usage": {
+    "n_calls": 16,
+    "prompt_tokens": 10802,
+    "completion_tokens": 3267
+  },
+  "topics": [
+    {
+      "topic": "Neural Architecture Search",
+      "ok": true,
+      "model_g": "anthropic/claude-sonnet-4.6",
+      "started_at": "2026-07-11 16:04:31",
+      "expanded_terms": [
+        "neural architecture search",
+        "automated machine learning",
+        "AutoML",
+        "hyperparameter optimization",
+        "network architecture optimization",
+        "differentiable architecture search",
+        "evolutionary neural architecture search",
+        "reinforcement learning architecture search",
+        "one-shot architecture search",
+        "weight sharing neural networks",
+        "efficient neural architecture design",
+        "network topology optimization"
+      ],
+      "n_candidates": 60,
+      "solve_rounds": 1,
+      "solve_gave_up": false,
+      "gamma_dimension": "methodology",
+      "groups": [
+        {
+          "name": "Survey and Overview of NAS Methods",
+          "n": 3
+        },
+        {
+          "name": "Differentiable and Gradient-Based Architecture Search",
+          "n": 4
+        },
+        {
+          "name": "Reinforcement Learning-Based Architecture Search",
+          "n": 2
+        },
+        {
+          "name": "Evolutionary and Constructive Architecture Search",
+          "n": 3
+        },
+        {
+          "name": "Efficient NAS and Search Space Design",
+          "n": 3
+        }
+      ],
+      "kappa": {
+        "min_total": true,
+        "min_groups": true,
+        "balance": true
+      },
+      "refs": [
+        "arxiv_1808.07233",
+        "arxiv_1812.09926",
+        "arxiv_1905.01392",
+        "arxiv_1905.13577",
+        "arxiv_2003.12238",
+        "arxiv_2103.02126",
+        "arxiv_2108.04392",
+        "arxiv_2108.08474",
+        "arxiv_2206.01520",
+        "arxiv_2304.05405",
+        "ss_478250"
+      ],
+      "n_refs": 11,
+      "word_count": 1215,
+      "written_citation_ids": [
+        "arxiv_1905.01392",
+        "arxiv_2108.08474",
+        "arxiv_2206.01520",
+        "arxiv_2304.05405",
+        "arxiv_2003.12238",
+        "arxiv_1905.13577",
+        "arxiv_1812.09926",
+        "arxiv_2108.04392",
+        "arxiv_1808.07233",
+        "ss_478250",
+        "arxiv_2103.02126"
+      ],
+      "leaf_evidence_ids": [
+        "arxiv_1808.07233",
+        "arxiv_1812.09926",
+        "arxiv_1905.01392",
+        "arxiv_1905.13577",
+        "arxiv_2003.12238",
+        "arxiv_2103.02126",
+        "arxiv_2108.04392",
+        "arxiv_2108.08474",
+        "arxiv_2206.01520",
+        "arxiv_2304.05405",
+        "ss_478250"
+      ],
+      "elapsed_sec": 134.0,
+      "llm_usage_so_far": {
+        "n_calls": 16,
+        "prompt_tokens": 10802,
+        "completion_tokens": 3267
+      }
+    }
+  ]
+}

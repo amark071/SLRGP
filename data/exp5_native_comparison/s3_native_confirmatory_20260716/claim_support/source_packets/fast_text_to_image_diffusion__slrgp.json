@@ -1,0 +1,388 @@
+{
+  "topic_id": "fast_text_to_image_diffusion",
+  "system": "slrgp",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Gallego [arxiv_2209.12330] proposes aesthetic gradients, a method that guides a CLIP-conditioned diffusion model toward custom visual aesthetics derived from a user-supplied set of images.",
+      "citation_markers": [
+        "[arxiv_2209.12330]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2209.12330",
+          "doc_id": "arxiv_2209.12330",
+          "title": "Personalizing Text-to-Image Generation via Aesthetic Gradients",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "This work proposes aesthetic gradients, a method to personalize a CLIP-conditioned diffusion model by guiding the generative process towards custom aesthetics defined by the user from a set of images. The approach is validated with qualitative and quantitative experiments, using the recent stable diffusion model and several aesthetically-filtered datasets. Code is released at https://github.com/vicgalle/stable-diffusion-aesthetic-gradients",
+          "resolved_arxiv": {
+            "arxiv_id": "2209.12330",
+            "title": "Personalizing Text-to-Image Generation via Aesthetic Gradients",
+            "abstract": "This work proposes aesthetic gradients, a method to personalize a CLIP-conditioned diffusion model by guiding the generative process towards custom aesthetics defined by the user from a set of images. The approach is validated with qualitative and quantitative experiments, using the recent stable diffusion model and several aesthetically-filtered datasets. Code is released at https://github.com/vicgalle/stable-diffusion-aesthetic-gradients",
+            "published": "2022-09-25T22:03:39Z",
+            "source_url": "https://arxiv.org/abs/2209.12330"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Avrahami et al. [arxiv_2211.14305] observe that despite the impressive quality of text-to-image diffusion models, fine-grained control over the shapes and layout of individual regions remains elusive, particularly because prior approaches relied on fixed label sets.",
+      "citation_markers": [
+        "[arxiv_2211.14305]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2211.14305",
+          "doc_id": "arxiv_2211.14305",
+          "title": "SpaText: Spatio-Textual Representation for Controllable Image Generation",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Recent text-to-image diffusion models are able to generate convincing results of unprecedented quality. However, it is nearly impossible to control the shapes of different regions/objects or their layout in a fine-grained fashion. Previous attempts to provide such controls were hindered by their reliance on a fixed set of labels. To this end, we present SpaText - a new method for text-to-image generation using open-vocabulary scene control. In addition to a global text prompt that describes the entire scene, the user provides a segmentation map where each region of interest is annotated by a free-form natural language description. Due to lack of large-scale datasets that have a detailed textual description for each region in the image, we choose to leverage the current large-scale text-to-image datasets and base our approach on a novel CLIP-based spatio-textual representation, and show its effectiveness on two state-of-the-art diffusion models: pixel-based and latent-based. In addition, we show how to extend the classifier-free guidance method in diffusion models to the multi-conditional case and present an alternative accelerated inference algorithm. Finally, we offer several automatic evaluation metrics and use them, in addition to FID scores and a user study, to evaluate our method and show that it achieves state-of-the-art results on image generation with free-form textual scene control.",
+          "resolved_arxiv": {
+            "arxiv_id": "2211.14305",
+            "title": "SpaText: Spatio-Textual Representation for Controllable Image Generation",
+            "abstract": "Recent text-to-image diffusion models are able to generate convincing results of unprecedented quality. However, it is nearly impossible to control the shapes of different regions/objects or their layout in a fine-grained fashion. Previous attempts to provide such controls were hindered by their reliance on a fixed set of labels. To this end, we present SpaText - a new method for text-to-image generation using open-vocabulary scene control. In addition to a global text prompt that describes the entire scene, the user provides a segmentation map where each region of interest is annotated by a free-form natural language description. Due to lack of large-scale datasets that have a detailed textual description for each region in the image, we choose to leverage the current large-scale text-to-image datasets and base our approach on a novel CLIP-based spatio-textual representation, and show its effectiveness on two state-of-the-art diffusion models: pixel-based and latent-based. In addition, we show how to extend the classifier-free guidance method in diffusion models to the multi-conditional case and present an alternative accelerated inference algorithm. Finally, we offer several automatic evaluation metrics and use them, in addition to FID scores and a user study, to evaluate our method and show that it achieves state-of-the-art results on image generation with free-form textual scene control.",
+            "published": "2022-11-25T18:59:10Z",
+            "source_url": "https://arxiv.org/abs/2211.14305"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Zhong et al. [arxiv_2305.05189] address a different bottleneck—semantic understanding—by augmenting pre-trained diffusion models with large language models via a SUR-adapter, improving commonsense reasoning when input prompts are concise or narrative in nature.",
+      "citation_markers": [
+        "[arxiv_2305.05189]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2305.05189",
+          "doc_id": "arxiv_2305.05189",
+          "title": "SUR-adapter: Enhancing Text-to-Image Pre-trained Diffusion Models with\n  Large Language Models",
+          "year": 2023,
+          "venue": "cs.CL",
+          "abstract": "Diffusion models, which have emerged to become popular text-to-image generation models, can produce high-quality and content-rich images guided by textual prompts. However, there are limitations to semantic understanding and commonsense reasoning in existing models when the input prompts are concise narrative, resulting in low-quality image generation. To improve the capacities for narrative prompts, we propose a simple-yet-effective parameter-efficient fine-tuning approach called the Semantic Understanding and Reasoning adapter (SUR-adapter) for pre-trained diffusion models. To reach this goal, we first collect and annotate a new dataset SURD which consists of more than 57,000 semantically corrected multi-modal samples. Each sample contains a simple narrative prompt, a complex keyword-based prompt, and a high-quality image. Then, we align the semantic representation of narrative prompts to the complex prompts and transfer knowledge of large language models (LLMs) to our SUR-adapter via knowledge distillation so that it can acquire the powerful semantic understanding and reasoning capabilities to build a high-quality textual semantic representation for text-to-image generation. We conduct experiments by integrating multiple LLMs and popular pre-trained diffusion models to show the effectiveness of our approach in enabling diffusion models to understand and reason concise natural language without image quality degradation. Our approach can make text-to-image diffusion models easier to use with better user experience, which demonstrates our approach has the potential for further advancing the development of user-friendly text-to-image generation models by bridging the semantic gap between simple narrative prompts and complex keyword-based prompts. The code is released at https://github.com/Qrange-group/SUR-adapter.",
+          "resolved_arxiv": {
+            "arxiv_id": "2305.05189",
+            "title": "SUR-adapter: Enhancing Text-to-Image Pre-trained Diffusion Models with Large Language Models",
+            "abstract": "Diffusion models, which have emerged to become popular text-to-image generation models, can produce high-quality and content-rich images guided by textual prompts. However, there are limitations to semantic understanding and commonsense reasoning in existing models when the input prompts are concise narrative, resulting in low-quality image generation. To improve the capacities for narrative prompts, we propose a simple-yet-effective parameter-efficient fine-tuning approach called the Semantic Understanding and Reasoning adapter (SUR-adapter) for pre-trained diffusion models. To reach this goal, we first collect and annotate a new dataset SURD which consists of more than 57,000 semantically corrected multi-modal samples. Each sample contains a simple narrative prompt, a complex keyword-based prompt, and a high-quality image. Then, we align the semantic representation of narrative prompts to the complex prompts and transfer knowledge of large language models (LLMs) to our SUR-adapter via knowledge distillation so that it can acquire the powerful semantic understanding and reasoning capabilities to build a high-quality textual semantic representation for text-to-image generation. We conduct experiments by integrating multiple LLMs and popular pre-trained diffusion models to show the effectiveness of our approach in enabling diffusion models to understand and reason concise natural language without image quality degradation. Our approach can make text-to-image diffusion models easier to use with better user experience, which demonstrates our approach has the potential for further advancing the development of user-friendly text-to-image generation models by bridging the semantic gap between simple narrative prompts and complex keyword-based prompts. The code is released at https://github.com/Qrange-group/SUR-adapter.",
+            "published": "2023-05-09T05:48:38Z",
+            "source_url": "https://arxiv.org/abs/2305.05189"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Concept ablation techniques [arxiv_2303.13516] extend controllability in the opposite direction, enabling selective removal of specific styles or memorized identities from pre-trained models without full retraining—an important capability for responsible deployment.",
+      "citation_markers": [
+        "[arxiv_2303.13516]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2303.13516",
+          "doc_id": "arxiv_2303.13516",
+          "title": "Ablating Concepts in Text-to-Image Diffusion Models",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Large-scale text-to-image diffusion models can generate high-fidelity images with powerful compositional ability. However, these models are typically trained on an enormous amount of Internet data, often containing copyrighted material, licensed images, and personal photos. Furthermore, they have been found to replicate the style of various living artists or memorize exact training samples. How can we remove such copyrighted concepts or images without retraining the model from scratch? To achieve this goal, we propose an efficient method of ablating concepts in the pretrained model, i.e., preventing the generation of a target concept. Our algorithm learns to match the image distribution for a target style, instance, or text prompt we wish to ablate to the distribution corresponding to an anchor concept. This prevents the model from generating target concepts given its text condition. Extensive experiments show that our method can successfully prevent the generation of the ablated concept while preserving closely related concepts in the model.",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.13516",
+            "title": "Ablating Concepts in Text-to-Image Diffusion Models",
+            "abstract": "Large-scale text-to-image diffusion models can generate high-fidelity images with powerful compositional ability. However, these models are typically trained on an enormous amount of Internet data, often containing copyrighted material, licensed images, and personal photos. Furthermore, they have been found to replicate the style of various living artists or memorize exact training samples. How can we remove such copyrighted concepts or images without retraining the model from scratch? To achieve this goal, we propose an efficient method of ablating concepts in the pretrained model, i.e., preventing the generation of a target concept. Our algorithm learns to match the image distribution for a target style, instance, or text prompt we wish to ablate to the distribution corresponding to an anchor concept. This prevents the model from generating target concepts given its text condition. Extensive experiments show that our method can successfully prevent the generation of the ablated concept while preserving closely related concepts in the model.",
+            "published": "2023-03-23T17:59:42Z",
+            "source_url": "https://arxiv.org/abs/2303.13516"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "Early text-to-image diffusion models established strong baselines for photorealistic synthesis by leveraging web-scale paired datasets, yet persistent challenges remained in achieving reliable text-image correspondence, particularly in domain-specific settings [arxiv_2308.08157].",
+      "citation_markers": [
+        "[arxiv_2308.08157]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2308.08157",
+          "doc_id": "arxiv_2308.08157",
+          "title": "Learning to Generate Semantic Layouts for Higher Text-Image\n  Correspondence in Text-to-Image Synthesis",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Existing text-to-image generation approaches have set high standards for photorealism and text-image correspondence, largely benefiting from web-scale text-image datasets, which can include up to 5~billion pairs. However, text-to-image generation models trained on domain-specific datasets, such as urban scenes, medical images, and faces, still suffer from low text-image correspondence due to the lack of text-image pairs. Additionally, collecting billions of text-image pairs for a specific domain can be time-consuming and costly. Thus, ensuring high text-image correspondence without relying on web-scale text-image datasets remains a challenging task. In this paper, we present a novel approach for enhancing text-image correspondence by leveraging available semantic layouts. Specifically, we propose a Gaussian-categorical diffusion process that simultaneously generates both images and corresponding layout pairs. Our experiments reveal that we can guide text-to-image generation models to be aware of the semantics of different image regions, by training the model to generate semantic labels for each pixel. We demonstrate that our approach achieves higher text-image correspondence compared to existing text-to-image generation approaches in the Multi-Modal CelebA-HQ and the Cityscapes dataset, where text-image pairs are scarce. Codes are available in this https://pmh9960.github.io/research/GCDP",
+          "resolved_arxiv": {
+            "arxiv_id": "2308.08157",
+            "title": "Learning to Generate Semantic Layouts for Higher Text-Image Correspondence in Text-to-Image Synthesis",
+            "abstract": "Existing text-to-image generation approaches have set high standards for photorealism and text-image correspondence, largely benefiting from web-scale text-image datasets, which can include up to 5~billion pairs. However, text-to-image generation models trained on domain-specific datasets, such as urban scenes, medical images, and faces, still suffer from low text-image correspondence due to the lack of text-image pairs. Additionally, collecting billions of text-image pairs for a specific domain can be time-consuming and costly. Thus, ensuring high text-image correspondence without relying on web-scale text-image datasets remains a challenging task. In this paper, we present a novel approach for enhancing text-image correspondence by leveraging available semantic layouts. Specifically, we propose a Gaussian-categorical diffusion process that simultaneously generates both images and corresponding layout pairs. Our experiments reveal that we can guide text-to-image generation models to be aware of the semantics of different image regions, by training the model to generate semantic labels for each pixel. We demonstrate that our approach achieves higher text-image correspondence compared to existing text-to-image generation approaches in the Multi-Modal CelebA-HQ and the Cityscapes dataset, where text-image pairs are scarce. Codes are available in this https://pmh9960.github.io/research/GCDP",
+            "published": "2023-08-16T05:59:33Z",
+            "source_url": "https://arxiv.org/abs/2308.08157"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The challenge of multi-prompt spatial guidance has also been addressed through differentiable optimal transport, enabling simultaneous conditioning on multiple textual cues to steer generation toward compositionally complex targets [arxiv_2204.08472].",
+      "citation_markers": [
+        "[arxiv_2204.08472]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2204.08472",
+          "doc_id": "arxiv_2204.08472",
+          "title": "Simultaneous Multiple-Prompt Guided Generation Using Differentiable\n  Optimal Transport",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "Recent advances in deep learning, such as powerful generative models and joint text-image embeddings, have provided the computational creativity community with new tools, opening new perspectives for artistic pursuits. Text-to-image synthesis approaches that operate by generating images from text cues provide a case in point. These images are generated with a latent vector that is progressively refined to agree with text cues. To do so, patches are sampled within the generated image, and compared with the text prompts in the common text-image embedding space; The latent vector is then updated, using gradient descent, to reduce the mean (average) distance between these patches and text cues. While this approach provides artists with ample freedom to customize the overall appearance of images, through their choice in generative models, the reliance on a simple criterion (mean of distances) often causes mode collapse: The entire image is drawn to the average of all text cues, thereby losing their diversity. To address this issue, we propose using matching techniques found in the optimal transport (OT) literature, resulting in images that are able to reflect faithfully a wide diversity of prompts. We provide numerous illustrations showing that OT avoids some of the pitfalls arising from estimating vectors with mean distances, and demonstrate the capacity of our proposed method to perform better in experiments, qualitatively and quantitatively.",
+          "resolved_arxiv": {
+            "arxiv_id": "2204.08472",
+            "title": "Simultaneous Multiple-Prompt Guided Generation Using Differentiable Optimal Transport",
+            "abstract": "Recent advances in deep learning, such as powerful generative models and joint text-image embeddings, have provided the computational creativity community with new tools, opening new perspectives for artistic pursuits. Text-to-image synthesis approaches that operate by generating images from text cues provide a case in point. These images are generated with a latent vector that is progressively refined to agree with text cues. To do so, patches are sampled within the generated image, and compared with the text prompts in the common text-image embedding space; The latent vector is then updated, using gradient descent, to reduce the mean (average) distance between these patches and text cues. While this approach provides artists with ample freedom to customize the overall appearance of images, through their choice in generative models, the reliance on a simple criterion (mean of distances) often causes mode collapse: The entire image is drawn to the average of all text cues, thereby losing their diversity. To address this issue, we propose using matching techniques found in the optimal transport (OT) literature, resulting in images that are able to reflect faithfully a wide diversity of prompts. We provide numerous illustrations showing that OT avoids some of the pitfalls arising from estimating vectors with mean distances, and demonstrate the capacity of our proposed method to perform better in experiments, qualitatively and quantitatively.",
+            "published": "2022-04-18T03:46:06Z",
+            "source_url": "https://arxiv.org/abs/2204.08472"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "InstructPix2Pix demonstrated that combining a large language model with a text-to-image model to synthesize paired training data allows a single network to follow free-form human editing instructions at inference time [arxiv_2211.09800].",
+      "citation_markers": [
+        "[arxiv_2211.09800]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2211.09800",
+          "doc_id": "arxiv_2211.09800",
+          "title": "InstructPix2Pix: Learning to Follow Image Editing Instructions",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "We propose a method for editing images from human instructions: given an input image and a written instruction that tells the model what to do, our model follows these instructions to edit the image. To obtain training data for this problem, we combine the knowledge of two large pretrained models -- a language model (GPT-3) and a text-to-image model (Stable Diffusion) -- to generate a large dataset of image editing examples. Our conditional diffusion model, InstructPix2Pix, is trained on our generated data, and generalizes to real images and user-written instructions at inference time. Since it performs edits in the forward pass and does not require per example fine-tuning or inversion, our model edits images quickly, in a matter of seconds. We show compelling editing results for a diverse collection of input images and written instructions.",
+          "resolved_arxiv": {
+            "arxiv_id": "2211.09800",
+            "title": "InstructPix2Pix: Learning to Follow Image Editing Instructions",
+            "abstract": "We propose a method for editing images from human instructions: given an input image and a written instruction that tells the model what to do, our model follows these instructions to edit the image. To obtain training data for this problem, we combine the knowledge of two large pretrained models -- a language model (GPT-3) and a text-to-image model (Stable Diffusion) -- to generate a large dataset of image editing examples. Our conditional diffusion model, InstructPix2Pix, is trained on our generated data, and generalizes to real images and user-written instructions at inference time. Since it performs edits in the forward pass and does not require per example fine-tuning or inversion, our model edits images quickly, in a matter of seconds. We show compelling editing results for a diverse collection of input images and written instructions.",
+            "published": "2022-11-17T18:58:43Z",
+            "source_url": "https://arxiv.org/abs/2211.09800"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "X-IQE proposes an explainable quality assessment framework using visual large language models and hierarchical chain-of-thought reasoning to produce human-aligned textual judgements of generated images [arxiv_2305.10843], offering a more interpretable alternative to scalar metrics for benchmarking both generation and editing systems.",
+      "citation_markers": [
+        "[arxiv_2305.10843]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2305.10843",
+          "doc_id": "arxiv_2305.10843",
+          "title": "X-IQE: eXplainable Image Quality Evaluation for Text-to-Image Generation\n  with Visual Large Language Models",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "This paper introduces a novel explainable image quality evaluation approach called X-IQE, which leverages visual large language models (LLMs) to evaluate text-to-image generation methods by generating textual explanations. X-IQE utilizes a hierarchical Chain of Thought (CoT) to enable MiniGPT-4 to produce self-consistent, unbiased texts that are highly correlated with human evaluation. It offers several advantages, including the ability to distinguish between real and generated images, evaluate text-image alignment, and assess image aesthetics without requiring model training or fine-tuning. X-IQE is more cost-effective and efficient compared to human evaluation, while significantly enhancing the transparency and explainability of deep image quality evaluation models. We validate the effectiveness of our method as a benchmark using images generated by prevalent diffusion models. X-IQE demonstrates similar performance to state-of-the-art (SOTA) evaluation methods on COCO Caption, while overcoming the limitations of previous evaluation models on DrawBench, particularly in handling ambiguous generation prompts and text recognition in generated images. Project website: https://github.com/Schuture/Benchmarking-Awesome-Diffusion-Models",
+          "resolved_arxiv": {
+            "arxiv_id": "2305.10843",
+            "title": "X-IQE: eXplainable Image Quality Evaluation for Text-to-Image Generation with Visual Large Language Models",
+            "abstract": "This paper introduces a novel explainable image quality evaluation approach called X-IQE, which leverages visual large language models (LLMs) to evaluate text-to-image generation methods by generating textual explanations. X-IQE utilizes a hierarchical Chain of Thought (CoT) to enable MiniGPT-4 to produce self-consistent, unbiased texts that are highly correlated with human evaluation. It offers several advantages, including the ability to distinguish between real and generated images, evaluate text-image alignment, and assess image aesthetics without requiring model training or fine-tuning. X-IQE is more cost-effective and efficient compared to human evaluation, while significantly enhancing the transparency and explainability of deep image quality evaluation models. We validate the effectiveness of our method as a benchmark using images generated by prevalent diffusion models. X-IQE demonstrates similar performance to state-of-the-art (SOTA) evaluation methods on COCO Caption, while overcoming the limitations of previous evaluation models on DrawBench, particularly in handling ambiguous generation prompts and text recognition in generated images. Project website: https://github.com/Schuture/Benchmarking-Awesome-Diffusion-Models",
+            "published": "2023-05-18T09:56:44Z",
+            "source_url": "https://arxiv.org/abs/2305.10843"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "One foundational approach involves learning efficient noise schedules rather than relying on fixed, hand-crafted ones. Watson et al. [arxiv_2106.03802] demonstrated that the discrete-time step sequence used during sampling can be optimized directly, enabling high-quality generation with far fewer denoising steps.",
+      "citation_markers": [
+        "[arxiv_2106.03802]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2106.03802",
+          "doc_id": "arxiv_2106.03802",
+          "title": "Learning to Efficiently Sample from Diffusion Probabilistic Models",
+          "year": 2021,
+          "venue": "cs.LG",
+          "abstract": "Denoising Diffusion Probabilistic Models (DDPMs) have emerged as a powerful family of generative models that can yield high-fidelity samples and competitive log-likelihoods across a range of domains, including image and speech synthesis. Key advantages of DDPMs include ease of training, in contrast to generative adversarial networks, and speed of generation, in contrast to autoregressive models. However, DDPMs typically require hundreds-to-thousands of steps to generate a high fidelity sample, making them prohibitively expensive for high dimensional problems. Fortunately, DDPMs allow trading generation speed for sample quality through adjusting the number of refinement steps as a post process. Prior work has been successful in improving generation speed through handcrafting the time schedule by trial and error. We instead view the selection of the inference time schedules as an optimization problem, and introduce an exact dynamic programming algorithm that finds the optimal discrete time schedules for any pre-trained DDPM. Our method exploits the fact that ELBO can be decomposed into separate KL terms, and given any computation budget, discovers the time schedule that maximizes the training ELBO exactly. Our method is efficient, has no hyper-parameters of its own, and can be applied to any pre-trained DDPM with no retraining. We discover inference time schedules requiring as few as 32 refinement steps, while sacrificing less than 0.1 bits per dimension compared to the default 4,000 steps used on ImageNet 64x64 [Ho et al., 2020; Nichol and Dhariwal, 2021].",
+          "resolved_arxiv": {
+            "arxiv_id": "2106.03802",
+            "title": "Learning to Efficiently Sample from Diffusion Probabilistic Models",
+            "abstract": "Denoising Diffusion Probabilistic Models (DDPMs) have emerged as a powerful family of generative models that can yield high-fidelity samples and competitive log-likelihoods across a range of domains, including image and speech synthesis. Key advantages of DDPMs include ease of training, in contrast to generative adversarial networks, and speed of generation, in contrast to autoregressive models. However, DDPMs typically require hundreds-to-thousands of steps to generate a high fidelity sample, making them prohibitively expensive for high dimensional problems. Fortunately, DDPMs allow trading generation speed for sample quality through adjusting the number of refinement steps as a post process. Prior work has been successful in improving generation speed through handcrafting the time schedule by trial and error. We instead view the selection of the inference time schedules as an optimization problem, and introduce an exact dynamic programming algorithm that finds the optimal discrete time schedules for any pre-trained DDPM. Our method exploits the fact that ELBO can be decomposed into separate KL terms, and given any computation budget, discovers the time schedule that maximizes the training ELBO exactly. Our method is efficient, has no hyper-parameters of its own, and can be applied to any pre-trained DDPM with no retraining. We discover inference time schedules requiring as few as 32 refinement steps, while sacrificing less than 0.1 bits per dimension compared to the default 4,000 steps used on ImageNet 64x64 [Ho et al., 2020; Nichol and Dhariwal, 2021].",
+            "published": "2021-06-07T17:15:07Z",
+            "source_url": "https://arxiv.org/abs/2106.03802"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "At the systems level, ReDi [arxiv_2302.02285] introduces a learning-free retrieval-based framework that shortens diffusion trajectories by retrieving precomputed intermediate states, while post-training quantization [arxiv_2305.10657] reduces model size and latency without retraining.",
+      "citation_markers": [
+        "[arxiv_2302.02285]",
+        "[arxiv_2305.10657]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2302.02285",
+          "doc_id": "arxiv_2302.02285",
+          "title": "ReDi: Efficient Learning-Free Diffusion Inference via Trajectory\n  Retrieval",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Diffusion models show promising generation capability for a variety of data. Despite their high generation quality, the inference for diffusion models is still time-consuming due to the numerous sampling iterations required. To accelerate the inference, we propose ReDi, a simple yet learning-free Retrieval-based Diffusion sampling framework. From a precomputed knowledge base, ReDi retrieves a trajectory similar to the partially generated trajectory at an early stage of generation, skips a large portion of intermediate steps, and continues sampling from a later step in the retrieved trajectory. We theoretically prove that the generation performance of ReDi is guaranteed. Our experiments demonstrate that ReDi improves the model inference efficiency by 2x speedup. Furthermore, ReDi is able to generalize well in zero-shot cross-domain image generation such as image stylization.",
+          "resolved_arxiv": {
+            "arxiv_id": "2302.02285",
+            "title": "ReDi: Efficient Learning-Free Diffusion Inference via Trajectory Retrieval",
+            "abstract": "Diffusion models show promising generation capability for a variety of data. Despite their high generation quality, the inference for diffusion models is still time-consuming due to the numerous sampling iterations required. To accelerate the inference, we propose ReDi, a simple yet learning-free Retrieval-based Diffusion sampling framework. From a precomputed knowledge base, ReDi retrieves a trajectory similar to the partially generated trajectory at an early stage of generation, skips a large portion of intermediate steps, and continues sampling from a later step in the retrieved trajectory. We theoretically prove that the generation performance of ReDi is guaranteed. Our experiments demonstrate that ReDi improves the model inference efficiency by 2x speedup. Furthermore, ReDi is able to generalize well in zero-shot cross-domain image generation such as image stylization.",
+            "published": "2023-02-05T03:01:28Z",
+            "source_url": "https://arxiv.org/abs/2302.02285"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2305.10657",
+          "doc_id": "arxiv_2305.10657",
+          "title": "PTQD: Accurate Post-Training Quantization for Diffusion Models",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Diffusion models have recently dominated image synthesis tasks. However, the iterative denoising process is expensive in computations at inference time, making diffusion models less practical for low-latency and scalable real-world applications. Post-training quantization (PTQ) of diffusion models can significantly reduce the model size and accelerate the sampling process without re-training. Nonetheless, applying existing PTQ methods directly to low-bit diffusion models can significantly impair the quality of generated samples. Specifically, for each denoising step, quantization noise leads to deviations in the estimated mean and mismatches with the predetermined variance schedule. As the sampling process proceeds, the quantization noise may accumulate, resulting in a low signal-to-noise ratio (SNR) during the later denoising steps. To address these challenges, we propose a unified formulation for the quantization noise and diffusion perturbed noise in the quantized denoising process. Specifically, we first disentangle the quantization noise into its correlated and residual uncorrelated parts regarding its full-precision counterpart. The correlated part can be easily corrected by estimating the correlation coefficient. For the uncorrelated part, we subtract the bias from the quantized results to correct the mean deviation and calibrate the denoising variance schedule to absorb the excess variance resulting from quantization. Moreover, we introduce a mixed-precision scheme for selecting the optimal bitwidth for each denoising step. Extensive experiments demonstrate that our method outperforms previous post-training quantized diffusion models, with only a 0.06 increase in FID score compared to full-precision LDM-4 on ImageNet 256x256, while saving 19.9x bit operations. Code is available at https://github.com/ziplab/PTQD.",
+          "resolved_arxiv": {
+            "arxiv_id": "2305.10657",
+            "title": "PTQD: Accurate Post-Training Quantization for Diffusion Models",
+            "abstract": "Diffusion models have recently dominated image synthesis tasks. However, the iterative denoising process is expensive in computations at inference time, making diffusion models less practical for low-latency and scalable real-world applications. Post-training quantization (PTQ) of diffusion models can significantly reduce the model size and accelerate the sampling process without re-training. Nonetheless, applying existing PTQ methods directly to low-bit diffusion models can significantly impair the quality of generated samples. Specifically, for each denoising step, quantization noise leads to deviations in the estimated mean and mismatches with the predetermined variance schedule. As the sampling process proceeds, the quantization noise may accumulate, resulting in a low signal-to-noise ratio (SNR) during the later denoising steps. To address these challenges, we propose a unified formulation for the quantization noise and diffusion perturbed noise in the quantized denoising process. Specifically, we first disentangle the quantization noise into its correlated and residual uncorrelated parts regarding its full-precision counterpart. The correlated part can be easily corrected by estimating the correlation coefficient. For the uncorrelated part, we subtract the bias from the quantized results to correct the mean deviation and calibrate the denoising variance schedule to absorb the excess variance resulting from quantization. Moreover, we introduce a mixed-precision scheme for selecting the optimal bitwidth for each denoising step. Extensive experiments demonstrate that our method outperforms previous post-training quantized diffusion models, with only a 0.06 increase in FID score compared to full-precision LDM-4 on ImageNet 256x256, while saving 19.9x bit operations. Code is available at https://github.com/ziplab/PTQD.",
+            "published": "2023-05-18T02:28:42Z",
+            "source_url": "https://arxiv.org/abs/2305.10657"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "FateZero [arxiv_2303.09535] achieves zero-shot text-based video editing by fusing cross-frame attentions without per-prompt training, demonstrating that inversion-based editing principles transfer beyond static images.",
+      "citation_markers": [
+        "[arxiv_2303.09535]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2303.09535",
+          "doc_id": "arxiv_2303.09535",
+          "title": "FateZero: Fusing Attentions for Zero-shot Text-based Video Editing",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "The diffusion-based generative models have achieved remarkable success in text-based image generation. However, since it contains enormous randomness in generation progress, it is still challenging to apply such models for real-world visual content editing, especially in videos. In this paper, we propose FateZero, a zero-shot text-based editing method on real-world videos without per-prompt training or use-specific mask. To edit videos consistently, we propose several techniques based on the pre-trained models. Firstly, in contrast to the straightforward DDIM inversion technique, our approach captures intermediate attention maps during inversion, which effectively retain both structural and motion information. These maps are directly fused in the editing process rather than generated during denoising. To further minimize semantic leakage of the source video, we then fuse self-attentions with a blending mask obtained by cross-attention features from the source prompt. Furthermore, we have implemented a reform of the self-attention mechanism in denoising UNet by introducing spatial-temporal attention to ensure frame consistency. Yet succinct, our method is the first one to show the ability of zero-shot text-driven video style and local attribute editing from the trained text-to-image model. We also have a better zero-shot shape-aware editing ability based on the text-to-video model. Extensive experiments demonstrate our superior temporal consistency and editing capability than previous works.",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.09535",
+            "title": "FateZero: Fusing Attentions for Zero-shot Text-based Video Editing",
+            "abstract": "The diffusion-based generative models have achieved remarkable success in text-based image generation. However, since it contains enormous randomness in generation progress, it is still challenging to apply such models for real-world visual content editing, especially in videos. In this paper, we propose FateZero, a zero-shot text-based editing method on real-world videos without per-prompt training or use-specific mask. To edit videos consistently, we propose several techniques based on the pre-trained models. Firstly, in contrast to the straightforward DDIM inversion technique, our approach captures intermediate attention maps during inversion, which effectively retain both structural and motion information. These maps are directly fused in the editing process rather than generated during denoising. To further minimize semantic leakage of the source video, we then fuse self-attentions with a blending mask obtained by cross-attention features from the source prompt. Furthermore, we have implemented a reform of the self-attention mechanism in denoising UNet by introducing spatial-temporal attention to ensure frame consistency. Yet succinct, our method is the first one to show the ability of zero-shot text-driven video style and local attribute editing from the trained text-to-image model. We also have a better zero-shot shape-aware editing ability based on the text-to-video model. Extensive experiments demonstrate our superior temporal consistency and editing capability than previous works.",
+            "published": "2023-03-16T17:51:13Z",
+            "source_url": "https://arxiv.org/abs/2303.09535"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The tendency of diffusion models to memorise training data [arxiv_2305.20086] raises additional concerns about replication of copyrighted content, motivating concept ablation techniques [arxiv_2303.13516] that selectively remove specific styles or identities from pre-trained models without full retraining.",
+      "citation_markers": [
+        "[arxiv_2305.20086]",
+        "[arxiv_2303.13516]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2305.20086",
+          "doc_id": "arxiv_2305.20086",
+          "title": "Understanding and Mitigating Copying in Diffusion Models",
+          "year": 2023,
+          "venue": "cs.LG",
+          "abstract": "Images generated by diffusion models like Stable Diffusion are increasingly widespread. Recent works and even lawsuits have shown that these models are prone to replicating their training data, unbeknownst to the user. In this paper, we first analyze this memorization problem in text-to-image diffusion models. While it is widely believed that duplicated images in the training set are responsible for content replication at inference time, we observe that the text conditioning of the model plays a similarly important role. In fact, we see in our experiments that data replication often does not happen for unconditional models, while it is common in the text-conditional case. Motivated by our findings, we then propose several techniques for reducing data replication at both training and inference time by randomizing and augmenting image captions in the training set.",
+          "resolved_arxiv": {
+            "arxiv_id": "2305.20086",
+            "title": "Understanding and Mitigating Copying in Diffusion Models",
+            "abstract": "Images generated by diffusion models like Stable Diffusion are increasingly widespread. Recent works and even lawsuits have shown that these models are prone to replicating their training data, unbeknownst to the user. In this paper, we first analyze this memorization problem in text-to-image diffusion models. While it is widely believed that duplicated images in the training set are responsible for content replication at inference time, we observe that the text conditioning of the model plays a similarly important role. In fact, we see in our experiments that data replication often does not happen for unconditional models, while it is common in the text-conditional case. Motivated by our findings, we then propose several techniques for reducing data replication at both training and inference time by randomizing and augmenting image captions in the training set.",
+            "published": "2023-05-31T17:58:02Z",
+            "source_url": "https://arxiv.org/abs/2305.20086"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2303.13516",
+          "doc_id": "arxiv_2303.13516",
+          "title": "Ablating Concepts in Text-to-Image Diffusion Models",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Large-scale text-to-image diffusion models can generate high-fidelity images with powerful compositional ability. However, these models are typically trained on an enormous amount of Internet data, often containing copyrighted material, licensed images, and personal photos. Furthermore, they have been found to replicate the style of various living artists or memorize exact training samples. How can we remove such copyrighted concepts or images without retraining the model from scratch? To achieve this goal, we propose an efficient method of ablating concepts in the pretrained model, i.e., preventing the generation of a target concept. Our algorithm learns to match the image distribution for a target style, instance, or text prompt we wish to ablate to the distribution corresponding to an anchor concept. This prevents the model from generating target concepts given its text condition. Extensive experiments show that our method can successfully prevent the generation of the ablated concept while preserving closely related concepts in the model.",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.13516",
+            "title": "Ablating Concepts in Text-to-Image Diffusion Models",
+            "abstract": "Large-scale text-to-image diffusion models can generate high-fidelity images with powerful compositional ability. However, these models are typically trained on an enormous amount of Internet data, often containing copyrighted material, licensed images, and personal photos. Furthermore, they have been found to replicate the style of various living artists or memorize exact training samples. How can we remove such copyrighted concepts or images without retraining the model from scratch? To achieve this goal, we propose an efficient method of ablating concepts in the pretrained model, i.e., preventing the generation of a target concept. Our algorithm learns to match the image distribution for a target style, instance, or text prompt we wish to ablate to the distribution corresponding to an anchor concept. This prevents the model from generating target concepts given its text condition. Extensive experiments show that our method can successfully prevent the generation of the ablated concept while preserving closely related concepts in the model.",
+            "published": "2023-03-23T17:59:42Z",
+            "source_url": "https://arxiv.org/abs/2303.13516"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

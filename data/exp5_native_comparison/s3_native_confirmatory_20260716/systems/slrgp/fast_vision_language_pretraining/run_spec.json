@@ -1,0 +1,25 @@
+{
+  "run_id": "s3_native_confirmatory_20260716",
+  "system_id": "slrgp",
+  "source_revision": "local-ec3381ed8c936983",
+  "model_policy": "common_backbone:anthropic/claude-sonnet-4.6",
+  "topic": {
+    "topic_id": "fast_vision_language_pretraining",
+    "title": "Vision-Language Pretraining",
+    "scope": "Pretrained models that jointly learn from images and natural language, including contrastive, generative, and alignment objectives; architectures and datasets; zero-shot transfer; grounding; adaptation; evaluation; bias; and robustness through 2023. The focus is representation learning rather than general multimodal foundation-model commentary.",
+    "target_audience": "computer-vision and multimodal-learning researchers",
+    "language": "English",
+    "publication_cutoff": "2023-12-31",
+    "target_words": 4000,
+    "min_words": 3200,
+    "max_words": 4800,
+    "target_references_min": 40,
+    "target_references_max": 60,
+    "seed": 4201,
+    "analysis_role": "confirmatory_primary"
+  },
+  "budget_usd": 16.0,
+  "timeout_seconds": 14400,
+  "protocol_hash": "296c390580ef0a11f0452948b3ba35431f710230487bfc3305ed61bc24164967",
+  "run_spec_hash": "545c314d8be80a08c15cf6ac68300d02686e9250cf9111c1fdcc6478cda51e9a"
+}

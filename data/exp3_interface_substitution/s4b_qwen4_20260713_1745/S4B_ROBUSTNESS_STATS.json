@@ -1,0 +1,932 @@
+{
+  "root": "results/s4/s4b_qwen4_20260713_1745",
+  "audit_path": "results/s4/s4b_qwen4_20260713_1745/s4b_qwen_audit.json",
+  "audit_summary": {
+    "n_rows": 16,
+    "n_ok": 16,
+    "n_primary_eligible": 13,
+    "issues": [
+      {
+        "topic": "3D Gaussian Splatting",
+        "arm": "v_unguarded_stress",
+        "issue": "word_count_out_of_window",
+        "words": 789
+      },
+      {
+        "topic": "Graph Neural Networks",
+        "arm": "o_rank_slab_matched",
+        "issue": "word_count_out_of_window",
+        "words": 781
+      },
+      {
+        "topic": "Graph Neural Networks",
+        "arm": "v_unguarded_stress",
+        "issue": "word_count_out_of_window",
+        "words": 795
+      }
+    ],
+    "arms": {
+      "intact": {
+        "n": 4,
+        "n_primary_eligible": 4,
+        "mean_words": 904.25,
+        "mean_llm_calls": 8.0,
+        "mean_completion_tokens": 1901.25
+      },
+      "o_rank_slab_matched": {
+        "n": 4,
+        "n_primary_eligible": 3,
+        "mean_words": 843.5,
+        "mean_llm_calls": 8.0,
+        "mean_completion_tokens": 1848.25
+      },
+      "v_guarded_stress": {
+        "n": 4,
+        "n_primary_eligible": 4,
+        "mean_words": 895.5,
+        "mean_llm_calls": 2.0,
+        "mean_completion_tokens": 1276.25
+      },
+      "v_unguarded_stress": {
+        "n": 4,
+        "n_primary_eligible": 2,
+        "mean_words": 814.25,
+        "mean_llm_calls": 1.0,
+        "mean_completion_tokens": 1168.5
+      }
+    },
+    "pairability": [
+      {
+        "contrast": "O semantic vs rank slab",
+        "arm_a": "intact",
+        "arm_b": "o_rank_slab_matched",
+        "primary_n": 3,
+        "primary_topics": [
+          "3D Gaussian Splatting",
+          "Federated Learning",
+          "Multimodal Large Language Models"
+        ],
+        "all_ok_n": 4,
+        "all_ok_topics": [
+          "3D Gaussian Splatting",
+          "Federated Learning",
+          "Graph Neural Networks",
+          "Multimodal Large Language Models"
+        ]
+      },
+      {
+        "contrast": "Guarded V vs unguarded stress",
+        "arm_a": "v_guarded_stress",
+        "arm_b": "v_unguarded_stress",
+        "primary_n": 2,
+        "primary_topics": [
+          "Federated Learning",
+          "Multimodal Large Language Models"
+        ],
+        "all_ok_n": 4,
+        "all_ok_topics": [
+          "3D Gaussian Splatting",
+          "Federated Learning",
+          "Graph Neural Networks",
+          "Multimodal Large Language Models"
+        ]
+      }
+    ]
+  },
+  "blind_scores": {
+    "n_scores": 48,
+    "n_valid_scores": 48
+  },
+  "quality": [
+    {
+      "eligibility": "primary",
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "overall",
+      "n": 3,
+      "mean_a": 3.638888888888889,
+      "mean_b": 2.75,
+      "mean_diff": 0.8888888888888887,
+      "ci95": [
+        0.49999999999999956,
+        1.4166666666666667
+      ],
+      "p_signflip": 0.25,
+      "sign_biserial": 1.0,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.4166666666666665,
+          "b": 2.916666666666667,
+          "diff": 0.49999999999999956
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 3.75,
+          "b": 3.0,
+          "diff": 0.75
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.75,
+          "b": 2.3333333333333335,
+          "diff": 1.4166666666666665
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "organizational_quality",
+      "n": 3,
+      "mean_a": 4.0,
+      "mean_b": 2.4444444444444446,
+      "mean_diff": 1.5555555555555554,
+      "ci95": [
+        1.0,
+        2.0
+      ],
+      "p_signflip": 0.25,
+      "sign_biserial": 1.0,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 2.3333333333333335,
+          "diff": 1.6666666666666665
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 3.0,
+          "diff": 1.0
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 2.0,
+          "diff": 2.0
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "critical_synthesis",
+      "n": 3,
+      "mean_a": 3.111111111111111,
+      "mean_b": 2.6666666666666665,
+      "mean_diff": 0.44444444444444436,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "p_signflip": 0.5,
+      "sign_biserial": 1.0,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.3333333333333335,
+          "b": 3.3333333333333335,
+          "diff": 0.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 2.6666666666666665,
+          "b": 2.3333333333333335,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.3333333333333335,
+          "b": 2.3333333333333335,
+          "diff": 1.0
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "global_coherence",
+      "n": 3,
+      "mean_a": 4.0,
+      "mean_b": 2.6666666666666665,
+      "mean_diff": 1.3333333333333333,
+      "ci95": [
+        0.6666666666666665,
+        2.333333333333333
+      ],
+      "p_signflip": 0.25,
+      "sign_biserial": 1.0,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.6666666666666665,
+          "b": 2.6666666666666665,
+          "diff": 1.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.333333333333333,
+          "b": 3.6666666666666665,
+          "diff": 0.6666666666666665
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 1.6666666666666667,
+          "diff": 2.333333333333333
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "citation_plausibility",
+      "n": 3,
+      "mean_a": 3.444444444444444,
+      "mean_b": 3.2222222222222228,
+      "mean_diff": 0.22222222222222202,
+      "ci95": [
+        -0.666666666666667,
+        1.0
+      ],
+      "p_signflip": 0.75,
+      "sign_biserial": 0.3333333333333333,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 2.6666666666666665,
+          "b": 3.3333333333333335,
+          "diff": -0.666666666666667
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 3.0,
+          "diff": 1.0
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.6666666666666665,
+          "b": 3.3333333333333335,
+          "diff": 0.33333333333333304
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "overall",
+      "n": 2,
+      "mean_a": 3.625,
+      "mean_b": 2.166666666666667,
+      "mean_diff": 1.4583333333333333,
+      "ci95": [
+        1.333333333333333,
+        1.5833333333333335
+      ],
+      "p_signflip": 0.5,
+      "sign_biserial": 1.0,
+      "wins": 2,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "Federated Learning",
+          "a": 3.5,
+          "b": 2.166666666666667,
+          "diff": 1.333333333333333
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.75,
+          "b": 2.1666666666666665,
+          "diff": 1.5833333333333335
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "organizational_quality",
+      "n": 2,
+      "mean_a": 3.833333333333333,
+      "mean_b": 2.166666666666667,
+      "mean_diff": 1.6666666666666665,
+      "ci95": [
+        1.333333333333333,
+        2.0
+      ],
+      "p_signflip": 0.5,
+      "sign_biserial": 1.0,
+      "wins": 2,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "Federated Learning",
+          "a": 3.6666666666666665,
+          "b": 2.3333333333333335,
+          "diff": 1.333333333333333
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 2.0,
+          "diff": 2.0
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "critical_synthesis",
+      "n": 2,
+      "mean_a": 2.8333333333333335,
+      "mean_b": 1.6666666666666665,
+      "mean_diff": 1.1666666666666667,
+      "ci95": [
+        0.3333333333333335,
+        2.0
+      ],
+      "p_signflip": 0.5,
+      "sign_biserial": 1.0,
+      "wins": 2,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "Federated Learning",
+          "a": 2.3333333333333335,
+          "b": 2.0,
+          "diff": 0.3333333333333335
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.3333333333333335,
+          "b": 1.3333333333333333,
+          "diff": 2.0
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "global_coherence",
+      "n": 2,
+      "mean_a": 4.0,
+      "mean_b": 2.0,
+      "mean_diff": 2.0,
+      "ci95": [
+        2.0,
+        2.0
+      ],
+      "p_signflip": 0.5,
+      "sign_biserial": 1.0,
+      "wins": 2,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 2.0,
+          "diff": 2.0
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 2.0,
+          "diff": 2.0
+        }
+      ]
+    },
+    {
+      "eligibility": "primary",
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "citation_plausibility",
+      "n": 2,
+      "mean_a": 3.833333333333333,
+      "mean_b": 2.8333333333333335,
+      "mean_diff": 0.9999999999999998,
+      "ci95": [
+        0.33333333333333304,
+        1.6666666666666665
+      ],
+      "p_signflip": 0.5,
+      "sign_biserial": 1.0,
+      "wins": 2,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 2.3333333333333335,
+          "diff": 1.6666666666666665
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.6666666666666665,
+          "b": 3.3333333333333335,
+          "diff": 0.33333333333333304
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "overall",
+      "n": 4,
+      "mean_a": 3.7291666666666665,
+      "mean_b": 2.875,
+      "mean_diff": 0.8541666666666665,
+      "ci95": [
+        0.5624999999999997,
+        1.25
+      ],
+      "p_signflip": 0.125,
+      "sign_biserial": 1.0,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.4166666666666665,
+          "b": 2.916666666666667,
+          "diff": 0.49999999999999956
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 3.75,
+          "b": 3.0,
+          "diff": 0.75
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.0,
+          "b": 3.25,
+          "diff": 0.75
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.75,
+          "b": 2.3333333333333335,
+          "diff": 1.4166666666666665
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "organizational_quality",
+      "n": 4,
+      "mean_a": 4.083333333333333,
+      "mean_b": 2.5,
+      "mean_diff": 1.5833333333333333,
+      "ci95": [
+        1.1666666666666665,
+        1.9166666666666665
+      ],
+      "p_signflip": 0.125,
+      "sign_biserial": 1.0,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 2.3333333333333335,
+          "diff": 1.6666666666666665
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 3.0,
+          "diff": 1.0
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.333333333333333,
+          "b": 2.6666666666666665,
+          "diff": 1.6666666666666665
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 2.0,
+          "diff": 2.0
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "critical_synthesis",
+      "n": 4,
+      "mean_a": 3.166666666666667,
+      "mean_b": 2.75,
+      "mean_diff": 0.41666666666666663,
+      "ci95": [
+        0.08333333333333337,
+        0.8333333333333333
+      ],
+      "p_signflip": 0.25,
+      "sign_biserial": 1.0,
+      "wins": 3,
+      "ties": 1,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.3333333333333335,
+          "b": 3.3333333333333335,
+          "diff": 0.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 2.6666666666666665,
+          "b": 2.3333333333333335,
+          "diff": 0.33333333333333304
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 3.3333333333333335,
+          "b": 3.0,
+          "diff": 0.3333333333333335
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.3333333333333335,
+          "b": 2.3333333333333335,
+          "diff": 1.0
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "global_coherence",
+      "n": 4,
+      "mean_a": 4.083333333333333,
+      "mean_b": 2.9166666666666665,
+      "mean_diff": 1.1666666666666665,
+      "ci95": [
+        0.6666666666666665,
+        1.9166666666666665
+      ],
+      "p_signflip": 0.125,
+      "sign_biserial": 1.0,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.6666666666666665,
+          "b": 2.6666666666666665,
+          "diff": 1.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.333333333333333,
+          "b": 3.6666666666666665,
+          "diff": 0.6666666666666665
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.333333333333333,
+          "b": 3.6666666666666665,
+          "diff": 0.6666666666666665
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 1.6666666666666667,
+          "diff": 2.333333333333333
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "contrast": "O semantic vs rank slab",
+      "arm_a": "intact",
+      "arm_b": "o_rank_slab_matched",
+      "endpoint": "citation_plausibility",
+      "n": 4,
+      "mean_a": 3.583333333333333,
+      "mean_b": 3.3333333333333335,
+      "mean_diff": 0.2499999999999999,
+      "ci95": [
+        -0.41666666666666685,
+        0.8333333333333333
+      ],
+      "p_signflip": 0.625,
+      "sign_biserial": 0.5,
+      "wins": 3,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 2.6666666666666665,
+          "b": 3.3333333333333335,
+          "diff": -0.666666666666667
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 3.0,
+          "diff": 1.0
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.0,
+          "b": 3.6666666666666665,
+          "diff": 0.3333333333333335
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.6666666666666665,
+          "b": 3.3333333333333335,
+          "diff": 0.33333333333333304
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "overall",
+      "n": 4,
+      "mean_a": 3.5,
+      "mean_b": 2.229166666666667,
+      "mean_diff": 1.2708333333333333,
+      "ci95": [
+        0.5833333333333334,
+        1.770833333333333
+      ],
+      "p_signflip": 0.125,
+      "sign_biserial": 1.0,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 2.8333333333333335,
+          "b": 2.5833333333333335,
+          "diff": 0.25
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 3.5,
+          "b": 2.166666666666667,
+          "diff": 1.333333333333333
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 3.9166666666666665,
+          "b": 2.0,
+          "diff": 1.9166666666666665
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.75,
+          "b": 2.1666666666666665,
+          "diff": 1.5833333333333335
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "organizational_quality",
+      "n": 4,
+      "mean_a": 3.833333333333333,
+      "mean_b": 2.166666666666667,
+      "mean_diff": 1.6666666666666665,
+      "ci95": [
+        1.1666666666666665,
+        2.1666666666666665
+      ],
+      "p_signflip": 0.125,
+      "sign_biserial": 1.0,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 3.3333333333333335,
+          "b": 2.3333333333333335,
+          "diff": 1.0
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 3.6666666666666665,
+          "b": 2.3333333333333335,
+          "diff": 1.333333333333333
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.333333333333333,
+          "b": 2.0,
+          "diff": 2.333333333333333
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 2.0,
+          "diff": 2.0
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "critical_synthesis",
+      "n": 4,
+      "mean_a": 2.8333333333333335,
+      "mean_b": 2.0,
+      "mean_diff": 0.8333333333333335,
+      "ci95": [
+        2.220446049250313e-16,
+        1.6666666666666667
+      ],
+      "p_signflip": 0.375,
+      "sign_biserial": 0.5,
+      "wins": 3,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 2.3333333333333335,
+          "b": 2.6666666666666665,
+          "diff": -0.33333333333333304
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 2.3333333333333335,
+          "b": 2.0,
+          "diff": 0.3333333333333335
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 3.3333333333333335,
+          "b": 2.0,
+          "diff": 1.3333333333333335
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.3333333333333335,
+          "b": 1.3333333333333333,
+          "diff": 2.0
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "global_coherence",
+      "n": 4,
+      "mean_a": 4.083333333333333,
+      "mean_b": 2.0,
+      "mean_diff": 2.083333333333333,
+      "ci95": [
+        1.75,
+        2.4999999999999996
+      ],
+      "p_signflip": 0.125,
+      "sign_biserial": 1.0,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 4.0,
+          "b": 2.3333333333333335,
+          "diff": 1.6666666666666665
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 2.0,
+          "diff": 2.0
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 4.333333333333333,
+          "b": 1.6666666666666667,
+          "diff": 2.666666666666666
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 4.0,
+          "b": 2.0,
+          "diff": 2.0
+        }
+      ]
+    },
+    {
+      "eligibility": "all_ok",
+      "contrast": "Guarded V vs unguarded stress",
+      "arm_a": "v_guarded_stress",
+      "arm_b": "v_unguarded_stress",
+      "endpoint": "citation_plausibility",
+      "n": 4,
+      "mean_a": 3.25,
+      "mean_b": 2.75,
+      "mean_diff": 0.49999999999999983,
+      "ci95": [
+        -0.6666666666666667,
+        1.4999999999999998
+      ],
+      "p_signflip": 0.5,
+      "sign_biserial": 0.5,
+      "wins": 3,
+      "ties": 0,
+      "losses": 1,
+      "topics": [
+        {
+          "topic": "3D Gaussian Splatting",
+          "a": 1.6666666666666667,
+          "b": 3.0,
+          "diff": -1.3333333333333333
+        },
+        {
+          "topic": "Federated Learning",
+          "a": 4.0,
+          "b": 2.3333333333333335,
+          "diff": 1.6666666666666665
+        },
+        {
+          "topic": "Graph Neural Networks",
+          "a": 3.6666666666666665,
+          "b": 2.3333333333333335,
+          "diff": 1.333333333333333
+        },
+        {
+          "topic": "Multimodal Large Language Models",
+          "a": 3.6666666666666665,
+          "b": 3.3333333333333335,
+          "diff": 0.33333333333333304
+        }
+      ]
+    }
+  ]
+}

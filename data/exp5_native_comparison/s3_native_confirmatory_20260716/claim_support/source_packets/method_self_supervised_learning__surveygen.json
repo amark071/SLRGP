@@ -1,0 +1,524 @@
+{
+  "topic_id": "method_self_supervised_learning",
+  "system": "surveygen",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Manual annotation is costly, time-consuming, and often impractical, particularly in specialized domains such as histopathology ref [1], medical imaging ref [16], and industrial inspection ref [39].",
+      "citation_markers": [
+        "[1]",
+        "[16]",
+        "[39]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "HistoSSL: Self-Supervised Representation Learning for Classifying Histopathology Images",
+          "doi": "10.3390/math11010110",
+          "abstract": "The success of image classification depends on copious annotated images for training. Annotating histopathology images is costly and laborious. Although several successful self-supervised representation learning approaches have been introduced, they are still insufficient to consider the unique characteristics of histopathology images. In this work, we propose the novel histopathology-oriented self-supervised representation learning framework (HistoSSL) to efficiently extract representations from unlabeled histopathology images at three levels: global, cell, and stain. The model transfers remarkably to downstream tasks: colorectal tissue phenotyping on the NCTCRC dataset and breast cancer metastasis recognition on the CAMELYON16 dataset. HistoSSL achieved higher accuracies than state-of-the-art self-supervised learning approaches, which proved the robustness of the learned representations.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.8907325267791748",
+          "composite_score": "0.8054612247020011",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Self-Supervised Representation Learning for Ultrasound Video",
+          "doi": "10.1109/ISBI45749.2020.9098666",
+          "abstract": "Recent advances in deep learning have achieved promising performance for medical image analysis, while in most cases ground-truth annotations from human experts are necessary to train the deep model. In practice, such annotations are expensive to collect and can be scarce for medical imaging applications. Therefore, there is significant interest in learning representations from unlabelled raw data. In this paper, we propose a self-supervised learning approach to learn meaningful and transferable representations from medical imaging video without any type of human annotation. We assume that in order to learn such a representation, the model should identify anatomical structures from the unlabelled data. Therefore we force the model to address anatomy-aware tasks with free supervision from the data itself. Specifically, the model is designed to correct the order of a reshuffled video clip and at the same time predict the geometric transformation applied to the video clip. Experiments on fetal ultrasound video show that the proposed approach can effectively learn meaningful and strong representations, which transfer well to downstream tasks like standard plane detection and saliency prediction.",
+          "cited_by_count": "53.0",
+          "cited_by_bin": "Q2",
+          "first_author_hindex": "24.0",
+          "last_author_hindex": "66.0",
+          "author_hindex_avg": "45.0",
+          "author_h_bin": "Q2",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.904589056968689",
+          "composite_score": "0.6677389662441274",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Contrastive self-supervised representation learning framework for metal surface defect detection",
+          "doi": "10.1186/s40537-023-00827-z",
+          "abstract": "Automated detection of defects on metal surfaces is crucial for ensuring quality control. However, the scarcity of labeled datasets for emerging target defects poses a significant obstacle. This study proposes a self-supervised representation-learning model that effectively addresses this limitation by leveraging both labeled and unlabeled data. The proposed model was developed based on a contrastive learning framework, supported by an augmentation pipeline and a lightweight convolutional encoder. The effectiveness of the proposed approach for representation learning was evaluated using an unlabeled pretraining dataset created from three benchmark datasets. Furthermore, the performance of the proposed model was validated using the NEU metal surface-defect dataset. The results revealed that the proposed method achieved a classification accuracy of 97.78%, even with fewer trainable parameters than the benchmark models. Overall, the proposed model effectively extracted meaningful representations from unlabeled image data and can be employed in downstream tasks for steel defect classification to improve quality control and reduce inspection costs.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.8890600800514221",
+          "composite_score": "0.5720384444507464",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Self-supervised representation learning (SSRL) addresses this challenge by exploiting the intrinsic structure of unlabeled data to generate supervisory signals automatically ref [27], eliminating reliance on human-provided labels.",
+      "citation_markers": [
+        "[27]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Self-Supervised Representation Learning: Introduction, advances, and challenges",
+          "doi": "10.1109/MSP.2021.3134634",
+          "abstract": "Self-supervised representation learning (SSRL) methods aim to provide powerful, deep feature learning without the requirement of large annotated data sets, thus alleviating the annotation bottleneck—one of the main barriers to the practical deployment of deep learning today. These techniques have advanced rapidly in recent years, with their efficacy approaching and sometimes surpassing fully supervised pretraining alternatives across a variety of data modalities, including image, video, sound, text, and graphs. This article introduces this vibrant area, including key concepts, the four main families of approaches and associated state-of-the-art techniques, and how self-supervised methods are applied to diverse modalities of data. We further discuss practical considerations including workflows, representation transferability, and computational cost. Finally, we survey major open challenges in the field, that provide fertile ground for future work.",
+          "cited_by_count": "410.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "6.0",
+          "last_author_hindex": "67.0",
+          "author_hindex_avg": "36.5",
+          "author_h_bin": "Q2",
+          "journal_hindex": "256.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9190605878829956",
+          "composite_score": "0.6276397575217437",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Contrastive learning methods subsequently emerged as dominant paradigms, leveraging instance discrimination objectives across visual ref [27], temporal ref [2], and graph-structured data ref [19].",
+      "citation_markers": [
+        "[27]",
+        "[2]",
+        "[19]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Self-Supervised Representation Learning: Introduction, advances, and challenges",
+          "doi": "10.1109/MSP.2021.3134634",
+          "abstract": "Self-supervised representation learning (SSRL) methods aim to provide powerful, deep feature learning without the requirement of large annotated data sets, thus alleviating the annotation bottleneck—one of the main barriers to the practical deployment of deep learning today. These techniques have advanced rapidly in recent years, with their efficacy approaching and sometimes surpassing fully supervised pretraining alternatives across a variety of data modalities, including image, video, sound, text, and graphs. This article introduces this vibrant area, including key concepts, the four main families of approaches and associated state-of-the-art techniques, and how self-supervised methods are applied to diverse modalities of data. We further discuss practical considerations including workflows, representation transferability, and computational cost. Finally, we survey major open challenges in the field, that provide fertile ground for future work.",
+          "cited_by_count": "410.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "6.0",
+          "last_author_hindex": "67.0",
+          "author_hindex_avg": "36.5",
+          "author_h_bin": "Q2",
+          "journal_hindex": "256.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9190605878829956",
+          "composite_score": "0.6276397575217437",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Self-Supervised Contrastive Representation Learning for Semi-Supervised Time-Series Classification",
+          "doi": "10.1109/TPAMI.2023.3308189",
+          "abstract": "Learning time-series representations when only unlabeled data or few labeled samples are available can be a challenging task. Recently, contrastive self-supervised learning has shown great improvement in extracting useful representations from unlabeled data via contrasting different augmented views of data. In this work, we propose a novel Time-Series representation learning framework via Temporal and Contextual Contrasting (TS-TCC) that learns representations from unlabeled data with contrastive learning. Specifically, we propose time-series-specific weak and strong augmentations and use their views to learn robust temporal relations in the proposed temporal contrasting module, besides learning discriminative representations by our proposed contextual contrasting module. Additionally, we conduct a systematic study of time-series data augmentation selection, which is a key part of contrastive learning. We also extend TS-TCC to the semi-supervised learning settings and propose a Class-Aware TS-TCC (CA-TCC) that benefits from the available few labeled data to further improve representations learned by TS-TCC. Specifically, we leverage the robust pseudo labels produced by TS-TCC to realize a class-aware contrastive loss. Extensive experiments show that the linear evaluation of the features learned by our proposed framework performs comparably with the fully supervised training. Additionally, our framework shows high efficiency in few labeled data and transfer learning scenarios.",
+          "cited_by_count": "181.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "14.0",
+          "last_author_hindex": "82.0",
+          "author_hindex_avg": "48.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "551.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9018669724464417",
+          "composite_score": "0.7635390519061225",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Graph Barlow Twins: A self-supervised representation learning framework for graphs",
+          "doi": "10.1016/j.knosys.2022.109631",
+          "abstract": "The self-supervised learning (SSL) paradigm is an essential exploration area, which tries to eliminate the need for expensive data labeling. Despite the great success of SSL methods in computer vision and natural language processing, most of them employ contrastive learning objectives that require negative samples, which are hard to define. This becomes even more challenging in the case of graphs and is a bottleneck for achieving robust representations. To overcome such limitations, we propose a framework for self-supervised graph representation learning — Graph Barlow Twins, which utilizes a cross-correlation-based loss function instead of negative samples. Moreover, it does not rely on non-symmetric neural network architectures — in contrast to state-of-the-art self-supervised graph representation learning method BGRL. We show that our method achieves as competitive results as the best self-supervised methods and fully supervised ones while requiring fewer hyperparameters and substantially shorter computation time (ca. 30 times faster than BGRL).",
+          "cited_by_count": "115.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "5.0",
+          "last_author_hindex": "72.0",
+          "author_hindex_avg": "38.5",
+          "author_h_bin": "Q2",
+          "journal_hindex": "219.0",
+          "journal_h_bin": "Q3",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9098081588745117",
+          "composite_score": "0.6550541258291382",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "A **pretext task** is a self-defined auxiliary objective—such as rotation prediction ref [12], jigsaw puzzle solving ref [10], or masked reconstruction ref [4]—that generates supervisory signals from unlabeled data.",
+      "citation_markers": [
+        "[12]",
+        "[10]",
+        "[4]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Self-Supervised Representation Learning by Rotation Feature Decoupling",
+          "doi": "10.1109/CVPR.2019.01061",
+          "abstract": "We introduce a self-supervised learning method that focuses on beneficial properties of representation and their abilities in generalizing to real-world tasks. The method incorporates rotation invariance into the feature learning framework, one of many good and well-studied properties of visual representation, which is rarely appreciated or exploited by previous deep convolutional neural network based self-supervised representation learning methods. Specifically, our model learns a split representation that contains both rotation related and unrelated parts. We train neural networks by jointly predicting image rotations and discriminating individual instances. In particular, our model decouples the rotation discrimination from instance discrimination, which allows us to improve the rotation prediction by mitigating the influence of rotation label noise, as well as discriminate instances without regard to image rotations. The resulting feature has a better generalization ability for more various tasks. Experimental results show that our model outperforms current state-of-the-art methods on standard self-supervised feature learning benchmarks.",
+          "cited_by_count": "228.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "4.0",
+          "last_author_hindex": "155.0",
+          "author_hindex_avg": "79.5",
+          "author_h_bin": "Q1",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9142184257507324",
+          "composite_score": "0.6838141316454994",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Self-supervised representation learning by predicting visual permutations",
+          "doi": "10.1016/j.knosys.2020.106534",
+          "abstract": "Abstract We propose a self-supervised learning method to uncover the spatial or temporal structure of visual data by identifying the position of a patch within an image or the position of a video frame over time, which is related to Jigsaw puzzle reassembly problem in previous works. A Jigsaw puzzle can be seen as a shuffled sequence, which is generated by shuffling image patches or video frames according to an unknown permutation. The task of predicting the visual permutations can be used to train a learning system to capture structural information which is important for semantic-level tasks, such as object recognition and action recognition. To this end, we propose a multi-task learning framework where a group of principal tasks aims to predict the index of each sample in the original sequence, and a group of auxiliary tasks aims to predict the spatial or temporal relation of adjacent samples in the shuffled sequence. Our scheme can handle the whole space of permutations and is fairly scalable, and it is also generic to solve many problems such as self-supervised representation learning, relative attributes, and learning to rank. Our method achieves state-of-the-art performance on the STL-10 benchmarks for unsupervised representation learning, and it is competitive with state-of-the-art performance on UCF-101 and HMDB-51 as a pretraining method for action recognition. In addition, we apply the proposed method on age comparison task to prove it is generic to solve ranking problems.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9024070501327515",
+          "composite_score": "0.6897438533306866",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Context Autoencoder for Self-supervised Representation Learning",
+          "doi": "10.1007/s11263-023-01852-4",
+          "abstract": "We present a novel masked image modeling (MIM) approach, context autoencoder (CAE), for self-supervised representation pretraining. We pretrain an encoder by making predictions in the encoded representation space. The pretraining tasks include two tasks: masked representation prediction—predict the representations for the masked patches, and masked patch reconstruction—reconstruct the masked patches. The network is an encoder–regressor–decoder architecture: the encoder takes the visible patches as input; the regressor predicts the representations of the masked patches, which are expected to be aligned with the representations computed from the encoder, using the representations of visible patches and the positions of visible and masked patches; the decoder reconstructs the masked patches from the predicted encoded representations. The CAE design encourages the separation of learning the encoder (representation) from completing the pertaining tasks: masked representation prediction and masked patch reconstruction tasks, and making predictions in the encoded representation space empirically shows the benefit to representation learning. We demonstrate the effectiveness of our CAE through superior transfer performance in downstream tasks: semantic segmentation, object detection and instance segmentation, and classification. The code will be available at https://github.com/Atten4Vis/CAE.",
+          "cited_by_count": "297.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "19.0",
+          "last_author_hindex": "87.0",
+          "author_hindex_avg": "53.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "289.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9047144055366516",
+          "composite_score": "0.7447612310063947",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The Context Autoencoder (CAE) ref [4] advances masked image modeling (MIM) by predicting representations of masked patches in encoded space via an encoder–regressor–decoder architecture, encouraging separation between representation learning and reconstruction.",
+      "citation_markers": [
+        "[4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Context Autoencoder for Self-supervised Representation Learning",
+          "doi": "10.1007/s11263-023-01852-4",
+          "abstract": "We present a novel masked image modeling (MIM) approach, context autoencoder (CAE), for self-supervised representation pretraining. We pretrain an encoder by making predictions in the encoded representation space. The pretraining tasks include two tasks: masked representation prediction—predict the representations for the masked patches, and masked patch reconstruction—reconstruct the masked patches. The network is an encoder–regressor–decoder architecture: the encoder takes the visible patches as input; the regressor predicts the representations of the masked patches, which are expected to be aligned with the representations computed from the encoder, using the representations of visible patches and the positions of visible and masked patches; the decoder reconstructs the masked patches from the predicted encoded representations. The CAE design encourages the separation of learning the encoder (representation) from completing the pertaining tasks: masked representation prediction and masked patch reconstruction tasks, and making predictions in the encoded representation space empirically shows the benefit to representation learning. We demonstrate the effectiveness of our CAE through superior transfer performance in downstream tasks: semantic segmentation, object detection and instance segmentation, and classification. The code will be available at https://github.com/Atten4Vis/CAE.",
+          "cited_by_count": "297.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "19.0",
+          "last_author_hindex": "87.0",
+          "author_hindex_avg": "53.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "289.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9047144055366516",
+          "composite_score": "0.7447612310063947",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "MOKD further advances this framework by enabling two heterogeneous models to learn collaboratively through self-distillation and cross-distillation modes, enhancing semantic alignment via cross-attention feature search ref [56].",
+      "citation_markers": [
+        "[56]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Multi-Mode Online Knowledge Distillation for Self-Supervised Visual Representation Learning",
+          "doi": "10.1109/CVPR52729.2023.01140",
+          "abstract": "Self-supervised learning (SSL) has made remarkable progress in visual representation learning. Some studies combine SSL with knowledge distillation (SSL-KD) to boost the representation learning performance of small models. In this study, we propose a Multi-mode Online Knowledge Distillation method (MOKD) to boost self-supervised visual representation learning. Different from existing SSL-KD methods that transfer knowledge from a static pre-trained teacher to a student, in MOKD, two different models learn collaboratively in a self-supervised manner. Specifically, MOKD consists of two distillation modes: self-distillation and cross-distillation modes. Among them, self-distillation performs self-supervised learning for each model independently, while cross-distillation realizes knowledge interaction between different models. In cross-distillation, a cross-attention feature search strategy is proposed to enhance the semantic feature alignment between different models. As a result, the two models can absorb knowledge from each other to boost their representation learning performance. Extensive experimental results on different backbones and datasets demonstrate that two heterogeneous models can benefit from MOKD and outperform their independently trained baseline. In addition, MOKD also outperforms existing SSL-KD methods for both the student and teacher models.",
+          "cited_by_count": "38.0",
+          "cited_by_bin": "Q3",
+          "first_author_hindex": "14.0",
+          "last_author_hindex": "7.0",
+          "author_hindex_avg": "10.5",
+          "author_h_bin": "Q4",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9072756767272949",
+          "composite_score": "0.5363014756253743",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Point2Vec ref [15] extends the data2vec masked student-teacher framework to point cloud domains, identifying that positional information leakage reveals object shape under heavy masking and proposing targeted solutions to address this 3D-specific shortcoming.",
+      "citation_markers": [
+        "[15]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Point2Vec for Self-Supervised Representation Learning on Point Clouds",
+          "doi": "10.48550/arXiv.2303.16570",
+          "abstract": "Recently, the self-supervised learning framework data2vec has shown inspiring performance for various modalities using a masked student-teacher approach. However, it remains open whether such a framework generalizes to the unique challenges of 3D point clouds. To answer this question, we extend data2vec to the point cloud domain and report encouraging results on several downstream tasks. In an in-depth analysis, we discover that the leakage of positional information reveals the overall object shape to the student even under heavy masking and thus hampers data2vec to learn strong representations for point clouds. We address this 3D-specific shortcoming by proposing point2vec, which unleashes the full potential of data2vec-like pre-training on point clouds. Our experiments show that point2vec outperforms other self-supervised methods on shape classification and few-shot learning on ModelNet40 and ScanObjectNN, while achieving competitive results on part segmentation on ShapeNetParts. These results suggest that the learned representations are strong and transferable, highlighting point2vec as a promising direction for self-supervised learning of point cloud representations.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9045006632804871",
+          "composite_score": "0.6689920502131602",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.16570",
+            "title": "Point2Vec for Self-Supervised Representation Learning on Point Clouds",
+            "abstract": "Recently, the self-supervised learning framework data2vec has shown inspiring performance for various modalities using a masked student-teacher approach. However, it remains open whether such a framework generalizes to the unique challenges of 3D point clouds. To answer this question, we extend data2vec to the point cloud domain and report encouraging results on several downstream tasks. In an in-depth analysis, we discover that the leakage of positional information reveals the overall object shape to the student even under heavy masking and thus hampers data2vec to learn strong representations for point clouds. We address this 3D-specific shortcoming by proposing point2vec, which unleashes the full potential of data2vec-like pre-training on point clouds. Our experiments show that point2vec outperforms other self-supervised methods on shape classification and few-shot learning on ModelNet40 and ScanObjectNN, while achieving competitive results on part segmentation on ShapeNetParts. These results suggest that the learned representations are strong and transferable, highlighting point2vec as a promising direction for self-supervised learning of point cloud representations.",
+            "published": "2023-03-29T10:08:29Z",
+            "source_url": "https://arxiv.org/abs/2303.16570"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "In astronomical imaging, contrastive learning applied to multiband galaxy photometry enables morphology classification and photometric redshift estimation, outperforming supervised baselines with two to four times fewer labels ref [58].",
+      "citation_markers": [
+        "[58]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Self-supervised Representation Learning for Astronomical Images",
+          "doi": "10.3847/2041-8213/abf2c7",
+          "abstract": "Sky surveys are the largest data generators in astronomy, making automated tools for extracting meaningful scientific information an absolute necessity. We show that, without the need for labels, self-supervised learning recovers representations of sky survey images that are semantically useful for a variety of scientific tasks. These representations can be directly used as features, or fine-tuned, to outperform supervised methods trained only on labeled data. We apply a contrastive learning framework on multiband galaxy photometry from the Sloan Digital Sky Survey (SDSS), to learn image representations. We then use them for galaxy morphology classification and fine-tune them for photometric redshift estimation, using labels from the Galaxy Zoo 2 data set and SDSS spectroscopy. In both downstream tasks, using the same learned representations, we outperform the supervised state-of-the-art results, and we show that our approach can achieve the accuracy of supervised models while using 2–4 times fewer labels for training. The codes, trained models, and data can be found at https://portal.nersc.gov/project/dasrepo/self-supervised-learning-sdss.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.8931017518043518",
+          "composite_score": "0.5319775685562771",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Graph Barlow Twins eliminates the need for negative samples entirely by employing a cross-correlation-based loss, achieving competitive performance while requiring substantially fewer hyperparameters and approximately 30 times faster computation than BGRL ref [19].",
+      "citation_markers": [
+        "[19]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Graph Barlow Twins: A self-supervised representation learning framework for graphs",
+          "doi": "10.1016/j.knosys.2022.109631",
+          "abstract": "The self-supervised learning (SSL) paradigm is an essential exploration area, which tries to eliminate the need for expensive data labeling. Despite the great success of SSL methods in computer vision and natural language processing, most of them employ contrastive learning objectives that require negative samples, which are hard to define. This becomes even more challenging in the case of graphs and is a bottleneck for achieving robust representations. To overcome such limitations, we propose a framework for self-supervised graph representation learning — Graph Barlow Twins, which utilizes a cross-correlation-based loss function instead of negative samples. Moreover, it does not rely on non-symmetric neural network architectures — in contrast to state-of-the-art self-supervised graph representation learning method BGRL. We show that our method achieves as competitive results as the best self-supervised methods and fully supervised ones while requiring fewer hyperparameters and substantially shorter computation time (ca. 30 times faster than BGRL).",
+          "cited_by_count": "115.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "5.0",
+          "last_author_hindex": "72.0",
+          "author_hindex_avg": "38.5",
+          "author_h_bin": "Q2",
+          "journal_hindex": "219.0",
+          "journal_h_bin": "Q3",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9098081588745117",
+          "composite_score": "0.6550541258291382",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "TimesURL addresses limitations in positive/negative pair construction through frequency-temporal augmentation and double Universum hard negatives, achieving state-of-the-art performance across six downstream tasks including forecasting, imputation, classification, and anomaly detection ref [17].",
+      "citation_markers": [
+        "[17]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "TimesURL: Self-supervised Contrastive Learning for Universal Time Series Representation Learning",
+          "doi": "10.48550/arXiv.2312.15709",
+          "abstract": "Learning universal time series representations applicable to various types of downstream tasks is challenging but valuable in real applications. Recently, researchers have attempted to leverage the success of self-supervised contrastive learning (SSCL) in Computer Vision(CV) and Natural Language Processing(NLP) to tackle time series representation. Nevertheless, due to the special temporal characteristics, relying solely on empirical guidance from other domains may be ineffective for time series and difficult to adapt to multiple downstream tasks. To this end, we review three parts involved in SSCL including 1) designing augmentation methods for positive pairs, 2) constructing (hard) negative pairs, and 3) designing SSCL loss. For 1) and 2), we find that unsuitable positive and negative pair construction may introduce inappropriate inductive biases, which neither preserve temporal properties nor provide sufficient discriminative features. For 3), just exploring segment- or instance-level semantics information is not enough for learning universal representation. To remedy the above issues, we propose a novel self-supervised framework named TimesURL. Specifically, we first introduce a frequency-temporal-based augmentation to keep the temporal property unchanged. And then, we construct double Universums as a special kind of hard negative to guide better contrastive learning. Additionally, we introduce time reconstruction as a joint optimization objective with contrastive learning to capture both segment-level and instance-level information. As a result, TimesURL can learn high-quality universal representations and achieve state-of-the-art performance in 6 different downstream tasks, including short- and long-term forecasting, imputation, classification, anomaly detection and transfer learning.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.905370831489563",
+          "composite_score": "0.6603669804989176",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2312.15709",
+            "title": "TimesURL: Self-supervised Contrastive Learning for Universal Time Series Representation Learning",
+            "abstract": "Learning universal time series representations applicable to various types of downstream tasks is challenging but valuable in real applications. Recently, researchers have attempted to leverage the success of self-supervised contrastive learning (SSCL) in Computer Vision(CV) and Natural Language Processing(NLP) to tackle time series representation. Nevertheless, due to the special temporal characteristics, relying solely on empirical guidance from other domains may be ineffective for time series and difficult to adapt to multiple downstream tasks. To this end, we review three parts involved in SSCL including 1) designing augmentation methods for positive pairs, 2) constructing (hard) negative pairs, and 3) designing SSCL loss. For 1) and 2), we find that unsuitable positive and negative pair construction may introduce inappropriate inductive biases, which neither preserve temporal properties nor provide sufficient discriminative features. For 3), just exploring segment- or instance-level semantics information is not enough for learning universal representation. To remedy the above issues, we propose a novel self-supervised framework named TimesURL. Specifically, we first introduce a frequency-temporal-based augmentation to keep the temporal property unchanged. And then, we construct double Universums as a special kind of hard negative to guide better contrastive learning. Additionally, we introduce time reconstruction as a joint optimization objective with contrastive learning to capture both segment-level and instance-level information. As a result, TimesURL can learn high-quality universal representations and achieve state-of-the-art performance in 6 different downstream tasks, including short- and long-term forecasting, imputation, classification, anomaly detection and transfer learning.",
+            "published": "2023-12-25T12:23:26Z",
+            "source_url": "https://arxiv.org/abs/2312.15709"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "CCBERT (Code Change BERT) exemplifies this direction by pretraining a Transformer-based model on large-scale unlabeled code change repositories using four specialized self-supervised objectives that capture token-level edit actions between old and new code versions ref [30].",
+      "citation_markers": [
+        "[30]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "CCBERT: Self-Supervised Code Change Representation Learning",
+          "doi": "10.1109/ICSME58846.2023.00028",
+          "abstract": "Numerous code changes are made by developers in their daily work, and a superior representation of code changes is desired for effective code change analysis. Recently, Hoang et al. proposed CC2Vec, a neural network-based approach that learns a distributed representation of code changes to capture the semantic intent of the changes. Despite demonstrated effectiveness in multiple tasks, CC2Vec has several limitations: 1) it considers only coarse-grained information about code changes, and 2) it relies on log messages rather than the self-contained content of the code changes. In this work, we propose CCBERT (Code Change BERT), a new Transformer-based pre-trained model that learns a generic representation of code changes based on a large-scale dataset containing massive unlabeled code changes. CCBERT is pre-trained on four proposed self-supervised objectives that are specialized for learning code change representations based on the contents of code changes. CCBERT perceives fine-grained code changes at the token level by learning from the old and new versions of the content, along with the edit actions. Our experiments demonstrate that CCBERT significantly outperforms CC2Vec or the state-of-the-art approaches of the downstream tasks by 7.7%–14.0% in terms of different metrics and tasks. CCBERT consistently outperforms large pre-trained code models, such as CodeBERT, while requiring 6–10× less training time, 5–30× less inference time, and 7.9× less GPU memory.",
+          "cited_by_count": "11.0",
+          "cited_by_bin": "Q4",
+          "first_author_hindex": "13.0",
+          "last_author_hindex": "93.0",
+          "author_hindex_avg": "53.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.8728156089782715",
+          "composite_score": "0.6175055387772267",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "A comprehensive review of self-supervised speech representation learning ref [23] identifies multi-modal pretraining—combining speech with text or visual streams—as a distinct and productive category.",
+      "citation_markers": [
+        "[23]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Self-Supervised Speech Representation Learning: A Review",
+          "doi": "10.1109/JSTSP.2022.3207050",
+          "abstract": "Although supervised deep learning has revolutionized speech and audio processing, it has necessitated the building of specialist models for individual tasks and application scenarios. It is likewise difficult to apply this to dialects and languages for which only limited labeled data is available. Self-supervised representation learning methods promise a single universal model that would benefit a wide variety of tasks and domains. Such methods have shown success in natural language processing and computer vision domains, achieving new levels of performance while reducing the number of labels required for many downstream scenarios. Speech representation learning is experiencing similar progress in three main categories: generative, contrastive, and predictive methods. Other approaches rely on multi-modal data for pre-training, mixing text or visual data streams with speech. Although self-supervised speech representation is still a nascent research area, it is closely related to acoustic word embedding and learning with zero lexical resources, both of which have seen active research for many years. This review presents approaches for self-supervised speech representation learning and their connection to other research areas. Since many current methods focus solely on automatic speech recognition as a downstream task, we review recent efforts on benchmarking learned representations to extend the application beyond speech recognition.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9069750905036926",
+          "composite_score": "0.6444656344232387",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

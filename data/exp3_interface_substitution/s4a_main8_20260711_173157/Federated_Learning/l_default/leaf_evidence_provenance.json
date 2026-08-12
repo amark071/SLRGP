@@ -1,0 +1,450 @@
+{
+  "arxiv_1903.02891": {
+    "doc_id": "arxiv_1903.02891",
+    "title": "Robust and Communication-Efficient Federated Learning from Non-IID Data",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Federated Learning allows multiple parties to jointly train a deep learning model on their combined data, without any of the participants having to reveal their local data to a centralized server. This form of privacy-preserving collaborative learning however comes at the cost of a significant communication overhead during training. To address this problem, several compression methods have been proposed in the distributed training literature that can reduce the amount of required communication by up to three orders of magnitude. These existing methods however are only of limited utility in the Federated Learning setting, as they either only compress the upstream communication from the clients to the server (leaving the downstream communication uncompressed) or only perform well under idealized conditions such as iid distribution of the client data, which typically can not be found in Federated Learning. In this work, we propose Sparse Ternary Compression (STC), a new compression framework that is specifically designed to meet the requirements of the Federated Learning environment. Our experiments on four different learning tasks demonstrate that STC distinctively outperforms Federa"
+  },
+  "arxiv_1908.08340": {
+    "doc_id": "arxiv_1908.08340",
+    "title": "An End-to-End Encrypted Neural Network for Gradient Updates Transmission\n  in Federated Learning",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Federated learning is a distributed learning method to train a shared model by aggregating the locally-computed gradient updates. In federated learning, bandwidth and privacy are two main concerns of gradient updates transmission. This paper proposes an end-to-end encrypted neural network for gradient updates transmission. This network first encodes the input gradient updates to a lower-dimension space in each client, which significantly mitigates the pressure of data communication in federated learning. The encoded gradient updates are directly recovered as a whole, i.e. the aggregated gradient updates of the trained model, in the decoding layers of the network on the server. In this way, gradient updates encrypted in each client are not only prevented from interception during communication, but also unknown to the server. Based on the encrypted neural network, a novel federated learning framework is designed in real applications. Experimental results show that the proposed network can effectively achieve two goals, privacy protection and data compression, under a little sacrifice of the model accuracy in federated learning."
+  },
+  "arxiv_1911.04655": {
+    "doc_id": "arxiv_1911.04655",
+    "title": "Hyper-Sphere Quantization: Communication-Efficient SGD for Federated\n  Learning",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "The high cost of communicating gradients is a major bottleneck for federated learning, as the bandwidth of the participating user devices is limited. Existing gradient compression algorithms are mainly designed for data centers with high-speed network and achieve $O(\\sqrt{d} \\log d)$ per-iteration communication cost at best, where $d$ is the size of the model. We propose hyper-sphere quantization (HSQ), a general framework that can be configured to achieve a continuum of trade-offs between communication efficiency and gradient accuracy. In particular, at the high compression ratio end, HSQ provides a low per-iteration communication cost of $O(\\log d)$, which is favorable for federated learning. We prove the convergence of HSQ theoretically and show by experiments that HSQ significantly reduces the communication cost of model training without hurting convergence accuracy."
+  },
+  "arxiv_2002.08958": {
+    "doc_id": "arxiv_2002.08958",
+    "title": "Uncertainty Principle for Communication Compression in Distributed and\n  Federated Learning and the Search for an Optimal Compressor",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "In order to mitigate the high communication cost in distributed and federated learning, various vector compression schemes, such as quantization, sparsification and dithering, have become very popular. In designing a compression method, one aims to communicate as few bits as possible, which minimizes the cost per communication round, while at the same time attempting to impart as little distortion (variance) to the communicated messages as possible, which minimizes the adverse effect of the compression on the overall number of communication rounds. However, intuitively, these two goals are fundamentally in conflict: the more compression we allow, the more distorted the messages become. We formalize this intuition and prove an {\\em uncertainty principle} for randomized compression operators, thus quantifying this limitation mathematically, and {\\em effectively providing asymptotically tight lower bounds on what might be achievable with communication compression}. Motivated by these developments, we call for the search for the optimal compression operator. In an attempt to take a first step in this direction, we consider an unbiased compression method inspired by the Kashin represent"
+  },
+  "arxiv_2003.03564": {
+    "doc_id": "arxiv_2003.03564",
+    "title": "Ternary Compression for Communication-Efficient Federated Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Learning over massive data stored in different locations is essential in many real-world applications. However, sharing data is full of challenges due to the increasing demands of privacy and security with the growing use of smart mobile devices and IoT devices. Federated learning provides a potential solution to privacy-preserving and secure machine learning, by means of jointly training a global model without uploading data distributed on multiple devices to a central server. However, most existing work on federated learning adopts machine learning models with full-precision weights, and almost all these models contain a large number of redundant parameters that do not need to be transmitted to the server, consuming an excessive amount of communication costs. To address this issue, we propose a federated trained ternary quantization (FTTQ) algorithm, which optimizes the quantized networks on the clients through a self-learning quantization factor. Theoretical proofs of the convergence of quantization factors, unbiasedness of FTTQ, as well as a reduced weight divergence are given. On the basis of FTTQ, we propose a ternary federated averaging protocol (T-FedAvg) to reduce the upst"
+  },
+  "arxiv_2007.01154": {
+    "doc_id": "arxiv_2007.01154",
+    "title": "Federated Learning with Compression: Unified Analysis and Sharp\n  Guarantees",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "In federated learning, communication cost is often a critical bottleneck to scale up distributed optimization algorithms to collaboratively learn a model from millions of devices with potentially unreliable or limited communication and heterogeneous data distributions. Two notable trends to deal with the communication overhead of federated algorithms are gradient compression and local computation with periodic communication. Despite many attempts, characterizing the relationship between these two approaches has proven elusive. We address this by proposing a set of algorithms with periodical compressed (quantized or sparsified) communication and analyze their convergence properties in both homogeneous and heterogeneous local data distribution settings. For the homogeneous setting, our analysis improves existing bounds by providing tighter convergence rates for both strongly convex and non-convex objective functions. To mitigate data heterogeneity, we introduce a local gradient tracking scheme and obtain sharp convergence rates that match the best-known communication complexities without compression for convex, strongly convex, and nonconvex settings. We complement our theoretical re"
+  },
+  "arxiv_2010.03246": {
+    "doc_id": "arxiv_2010.03246",
+    "title": "Optimal Gradient Compression for Distributed and Federated Learning",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Communicating information, like gradient vectors, between computing nodes in distributed and federated learning is typically an unavoidable burden, resulting in scalability issues. Indeed, communication might be slow and costly. Recent advances in communication-efficient training algorithms have reduced this bottleneck by using compression techniques, in the form of sparsification, quantization, or low-rank approximation. Since compression is a lossy, or inexact, process, the iteration complexity is typically worsened; but the total communication complexity can improve significantly, possibly leading to large computation time savings. In this paper, we investigate the fundamental trade-off between the number of bits needed to encode compressed vectors and the compression error. We perform both worst-case and average-case analysis, providing tight lower bounds. In the worst-case analysis, we introduce an efficient compression operator, Sparse Dithering, which is very close to the lower bound. In the average-case analysis, we design a simple compression operator, Spherical Compression, which naturally achieves the lower bound. Thus, our new compression schemes significantly outperfor"
+  },
+  "arxiv_2010.09258": {
+    "doc_id": "arxiv_2010.09258",
+    "title": "From Distributed Machine Learning To Federated Learning: In The View Of\n  Data Privacy And Security",
+    "year": 2020,
+    "venue": "cs.DC",
+    "abstract": "Federated learning is an improved version of distributed machine learning that further offloads operations which would usually be performed by a central server. The server becomes more like an assistant coordinating clients to work together rather than micro-managing the workforce as in traditional DML. One of the greatest advantages of federated learning is the additional privacy and security guarantees it affords. Federated learning architecture relies on smart devices, such as smartphones and IoT sensors, that collect and process their own data, so sensitive information never has to leave the client device. Rather, clients train a sub-model locally and send an encrypted update to the central server for aggregation into the global model. These strong privacy guarantees make federated learning an attractive choice in a world where data breaches and information theft are common and serious threats. This survey outlines the landscape and latest developments in data privacy and security for federated learning. We identify the different mechanisms used to provide privacy and security, such as differential privacy, secure multi-party computation and secure aggregation. We also survey t"
+  },
+  "arxiv_2011.14818": {
+    "doc_id": "arxiv_2011.14818",
+    "title": "Advancements of federated learning towards privacy preservation: from\n  federated learning to split learning",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "In the distributed collaborative machine learning (DCML) paradigm, federated learning (FL) recently attracted much attention due to its applications in health, finance, and the latest innovations such as industry 4.0 and smart vehicles. FL provides privacy-by-design. It trains a machine learning model collaboratively over several distributed clients (ranging from two to millions) such as mobile phones, without sharing their raw data with any other participant. In practical scenarios, all clients do not have sufficient computing resources (e.g., Internet of Things), the machine learning model has millions of parameters, and its privacy between the server and the clients while training/testing is a prime concern (e.g., rival parties). In this regard, FL is not sufficient, so split learning (SL) is introduced. SL is reliable in these scenarios as it splits a model into multiple portions, distributes them among clients and server, and trains/tests their respective model portions to accomplish the full model training/testing. In SL, the participants do not share both data and their model portions to any other parties, and usually, a smaller network portion is assigned to the clients whe"
+  },
+  "arxiv_2101.08696": {
+    "doc_id": "arxiv_2101.08696",
+    "title": "Sum-Rate-Distortion Function for Indirect Multiterminal Source Coding in\n  Federated Learning",
+    "year": 2021,
+    "venue": "cs.IT",
+    "abstract": "One of the main focus in federated learning (FL) is the communication efficiency since a large number of participating edge devices send their updates to the edge server at each round of the model training. Existing works reconstruct each model update from edge devices and implicitly assume that the local model updates are independent over edge devices. In FL, however, the model update is an indirect multi-terminal source coding problem, also called as the CEO problem where each edge device cannot observe directly the gradient that is to be reconstructed at the decoder, but is rather provided only with a noisy version. The existing works do not leverage the redundancy in the information transmitted by different edges. This paper studies the rate region for the indirect multiterminal source coding problem in FL. The goal is to obtain the minimum achievable rate at a particular upper bound of gradient variance. We obtain the rate region for the quadratic vector Gaussian CEO problem under unbiased estimator and derive an explicit formula of the sum-rate-distortion function in the special case where gradient are identical over edge device and dimension. Finally, we analyse communicatio"
+  },
+  "arxiv_2102.01593": {
+    "doc_id": "arxiv_2102.01593",
+    "title": "FEDZIP: A Compression Framework for Communication-Efficient Federated\n  Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Federated Learning marks a turning point in the implementation of decentralized machine learning (especially deep learning) for wireless devices by protecting users' privacy and safeguarding raw data from third-party access. It assigns the learning process independently to each client. First, clients locally train a machine learning model based on local data. Next, clients transfer local updates of model weights and biases (training data) to a server. Then, the server aggregates updates (received from clients) to create a global learning model. However, the continuous transfer between clients and the server increases communication costs and is inefficient from a resource utilization perspective due to the large number of parameters (weights and biases) used by deep learning models. The cost of communication becomes a greater concern when the number of contributing clients and communication rounds increases. In this work, we propose a novel framework, FedZip, that significantly decreases the size of updates while transferring weights from the deep learning model between clients and their servers. FedZip implements Top-z sparsification, uses quantization with clustering, and implemen"
+  },
+  "arxiv_2104.12416": {
+    "doc_id": "arxiv_2104.12416",
+    "title": "Communication-Efficient Federated Learning with Dual-Side Low-Rank\n  Compression",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Federated learning (FL) is a promising and powerful approach for training deep learning models without sharing the raw data of clients. During the training process of FL, the central server and distributed clients need to exchange a vast amount of model information periodically. To address the challenge of communication-intensive training, we propose a new training method, referred to as federated learning with dual-side low-rank compression (FedDLR), where the deep learning model is compressed via low-rank approximations at both the server and client sides. The proposed FedDLR not only reduces the communication overhead during the training stage but also directly generates a compact model to speed up the inference process. We shall provide convergence analysis, investigate the influence of the key parameters, and empirically show that FedDLR outperforms the state-of-the-art solutions in terms of both the communication and computation efficiency."
+  },
+  "arxiv_2104.14362": {
+    "doc_id": "arxiv_2104.14362",
+    "title": "From Distributed Machine Learning to Federated Learning: A Survey",
+    "year": 2022,
+    "venue": "cs.DC",
+    "abstract": "In recent years, data and computing resources are typically distributed in the devices of end users, various regions or organizations. Because of laws or regulations, the distributed data and computing resources cannot be directly shared among different regions or organizations for machine learning tasks. Federated learning emerges as an efficient approach to exploit distributed data and computing resources, so as to collaboratively train machine learning models, while obeying the laws and regulations and ensuring data security and data privacy. In this paper, we provide a comprehensive survey of existing works for federated learning. We propose a functional architecture of federated learning systems and a taxonomy of related techniques. Furthermore, we present the distributed training, data communication, and security of FL systems. Finally, we analyze their limitations and propose future research directions."
+  },
+  "arxiv_2105.11028": {
+    "doc_id": "arxiv_2105.11028",
+    "title": "Fast Federated Learning by Balancing Communication Trade-Offs",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Federated Learning (FL) has recently received a lot of attention for large-scale privacy-preserving machine learning. However, high communication overheads due to frequent gradient transmissions decelerate FL. To mitigate the communication overheads, two main techniques have been studied: (i) local update of weights characterizing the trade-off between communication and computation and (ii) gradient compression characterizing the trade-off between communication and precision. To the best of our knowledge, studying and balancing those two trade-offs jointly and dynamically while considering their impacts on convergence has remained unresolved even though it promises significantly faster FL. In this paper, we first formulate our problem to minimize learning error with respect to two variables: local update coefficients and sparsity budgets of gradient compression who characterize trade-offs between communication and computation/precision, respectively. We then derive an upper bound of the learning error in a given wall-clock time considering the interdependency between the two variables. Based on this theoretical analysis, we propose an enhanced FL scheme, namely Fast FL (FFL), that "
+  },
+  "arxiv_2106.07155": {
+    "doc_id": "arxiv_2106.07155",
+    "title": "CFedAvg: Achieving Efficient Communication and Fast Convergence in\n  Non-IID Federated Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Federated learning (FL) is a prevailing distributed learning paradigm, where a large number of workers jointly learn a model without sharing their training data. However, high communication costs could arise in FL due to large-scale (deep) learning models and bandwidth-constrained connections. In this paper, we introduce a communication-efficient algorithmic framework called CFedAvg for FL with non-i.i.d. datasets, which works with general (biased or unbiased) SNR-constrained compressors. We analyze the convergence rate of CFedAvg for non-convex functions with constant and decaying learning rates. The CFedAvg algorithm can achieve an $\\mathcal{O}(1 / \\sqrt{mKT} + 1 / T)$ convergence rate with a constant learning rate, implying a linear speedup for convergence as the number of workers increases, where $K$ is the number of local steps, $T$ is the number of total communication rounds, and $m$ is the total worker number. This matches the convergence rate of distributed/federated learning without compression, thus achieving high communication efficiency while not sacrificing learning accuracy in FL. Furthermore, we extend CFedAvg to cases with heterogeneous local steps, which allows dif"
+  },
+  "arxiv_2108.00918": {
+    "doc_id": "arxiv_2108.00918",
+    "title": "Communication-Efficient Federated Learning via Predictive Coding",
+    "year": 2022,
+    "venue": "cs.DC",
+    "abstract": "Federated learning can enable remote workers to collaboratively train a shared machine learning model while allowing training data to be kept locally. In the use case of wireless mobile devices, the communication overhead is a critical bottleneck due to limited power and bandwidth. Prior work has utilized various data compression tools such as quantization and sparsification to reduce the overhead. In this paper, we propose a predictive coding based compression scheme for federated learning. The scheme has shared prediction functions among all devices and allows each worker to transmit a compressed residual vector derived from the reference. In each communication round, we select the predictor and quantizer based on the rate-distortion cost, and further reduce the redundancy with entropy coding. Extensive simulations reveal that the communication cost can be reduced up to 99% with even better learning performance when compared with other baseline methods."
+  },
+  "arxiv_2109.08819": {
+    "doc_id": "arxiv_2109.08819",
+    "title": "Toward Efficient Federated Learning in Multi-Channeled Mobile Edge\n  Network with Layerd Gradient Compression",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "A fundamental issue for federated learning (FL) is how to achieve optimal model performance under highly dynamic communication environments. This issue can be alleviated by the fact that modern edge devices usually can connect to the edge FL server via multiple communication channels (e.g., 4G, LTE and 5G). However, having an edge device send copies of local models to the FL server along multiple channels is redundant, time-consuming, and would waste resources (e.g., bandwidth, battery life and monetary cost). In this paper, motivated by the layered coding techniques in video streaming, we propose a novel FL framework called layered gradient compression (LGC). Specifically, in LGC, local gradients from a device is coded into several layers and each layer is sent to the FL server along a different channel. The FL server aggregates the received layers of local gradients from devices to update the global model, and sends the result back to the devices. We prove the convergence of LGC, and formally define the problem of resource-efficient federated learning with LGC. We then propose a learning based algorithm for each device to dynamically adjust its local computation (i.e., the number"
+  },
+  "arxiv_2111.05454": {
+    "doc_id": "arxiv_2111.05454",
+    "title": "DP-REC: Private & Communication-Efficient Federated Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Privacy and communication efficiency are important challenges in federated training of neural networks, and combining them is still an open problem. In this work, we develop a method that unifies highly compressed communication and differential privacy (DP). We introduce a compression technique based on Relative Entropy Coding (REC) to the federated setting. With a minor modification to REC, we obtain a provably differentially private learning algorithm, DP-REC, and show how to compute its privacy guarantees. Our experiments demonstrate that DP-REC drastically reduces communication costs while providing privacy guarantees comparable to the state-of-the-art."
+  },
+  "arxiv_2111.07599": {
+    "doc_id": "arxiv_2111.07599",
+    "title": "DNN gradient lossless compression: Can GenNorm be the answer?",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "In this paper, the problem of optimal gradient lossless compression in Deep Neural Network (DNN) training is considered. Gradient compression is relevant in many distributed DNN training scenarios, including the recently popular federated learning (FL) scenario in which each remote users are connected to the parameter server (PS) through a noiseless but rate limited channel. In distributed DNN training, if the underlying gradient distribution is available, classical lossless compression approaches can be used to reduce the number of bits required for communicating the gradient entries. Mean field analysis has suggested that gradient updates can be considered as independent random variables, while Laplace approximation can be used to argue that gradient has a distribution approximating the normal (Norm) distribution in some regimes. In this paper we argue that, for some networks of practical interest, the gradient entries can be well modelled as having a generalized normal (GenNorm) distribution. We provide numerical evaluations to validate that the hypothesis GenNorm modelling provides a more accurate prediction of the DNN gradient tail distribution. Additionally, this modeling cho"
+  },
+  "arxiv_2111.08277": {
+    "doc_id": "arxiv_2111.08277",
+    "title": "Wyner-Ziv Gradient Compression for Federated Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Due to limited communication resources at the client and a massive number of model parameters, large-scale distributed learning tasks suffer from communication bottleneck. Gradient compression is an effective method to reduce communication load by transmitting compressed gradients. Motivated by the fact that in the scenario of stochastic gradients descent, gradients between adjacent rounds may have a high correlation since they wish to learn the same model, this paper proposes a practical gradient compression scheme for federated learning, which uses historical gradients to compress gradients and is based on Wyner-Ziv coding but without any probabilistic assumption. We also implement our gradient quantization method on the real dataset, and the performance of our method is better than the previous schemes."
+  },
+  "arxiv_2111.15071": {
+    "doc_id": "arxiv_2111.15071",
+    "title": "Communication-Efficient Federated Learning via Quantized Compressed\n  Sensing",
+    "year": 2021,
+    "venue": "cs.DC",
+    "abstract": "In this paper, we present a communication-efficient federated learning framework inspired by quantized compressed sensing. The presented framework consists of gradient compression for wireless devices and gradient reconstruction for a parameter server (PS). Our strategy for gradient compression is to sequentially perform block sparsification, dimensional reduction, and quantization. Thanks to gradient sparsification and quantization, our strategy can achieve a higher compression ratio than one-bit gradient compression. For accurate aggregation of the local gradients from the compressed signals at the PS, we put forth an approximate minimum mean square error (MMSE) approach for gradient reconstruction using the expectation-maximization generalized-approximate-message-passing (EM-GAMP) algorithm. Assuming Bernoulli Gaussian-mixture prior, this algorithm iteratively updates the posterior mean and variance of local gradients from the compressed signals. We also present a low-complexity approach for the gradient reconstruction. In this approach, we use the Bussgang theorem to aggregate local gradients from the compressed signals, then compute an approximate MMSE estimate of the aggregat"
+  },
+  "arxiv_2112.02656": {
+    "doc_id": "arxiv_2112.02656",
+    "title": "Intrinisic Gradient Compression for Federated Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Federated learning is a rapidly-growing area of research which enables a large number of clients to jointly train a machine learning model on privately-held data. One of the largest barriers to wider adoption of federated learning is the communication cost of sending model updates from and to the clients, which is accentuated by the fact that many of these devices are bandwidth-constrained. In this paper, we aim to address this issue by optimizing networks within a subspace of their full parameter space, an idea known as intrinsic dimension in the machine learning theory community. We use a correspondence between the notion of intrinsic dimension and gradient compressibility to derive a family of low-bandwidth optimization algorithms, which we call intrinsic gradient compression algorithms. Specifically, we present three algorithms in this family with different levels of upload and download bandwidth for use in various federated settings, along with theoretical guarantees on their performance. Finally, in large-scale federated learning experiments with models containing up to 100M parameters, we show that our algorithms perform extremely well compared to current state-of-the-art gr"
+  },
+  "arxiv_2112.06694": {
+    "doc_id": "arxiv_2112.06694",
+    "title": "Optimal Rate Adaption in Federated Learning with Compressed\n  Communications",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Federated Learning (FL) incurs high communication overhead, which can be greatly alleviated by compression for model updates. Yet the tradeoff between compression and model accuracy in the networked environment remains unclear and, for simplicity, most implementations adopt a fixed compression rate only. In this paper, we for the first time systematically examine this tradeoff, identifying the influence of the compression error on the final model accuracy with respect to the learning rate. Specifically, we factor the compression error of each global iteration into the convergence rate analysis under both strongly convex and non-convex loss functions. We then present an adaptation framework to maximize the final model accuracy by strategically adjusting the compression rate in each iteration. We have discussed the key implementation issues of our framework in practical networks with representative compression algorithms. Experiments over the popular MNIST and CIFAR-10 datasets confirm that our solution effectively reduces network traffic yet maintains high model accuracy in FL."
+  },
+  "arxiv_2201.02664": {
+    "doc_id": "arxiv_2201.02664",
+    "title": "Optimizing the Communication-Accuracy Trade-off in Federated Learning\n  with Rate-Distortion Theory",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "A significant bottleneck in federated learning (FL) is the network communication cost of sending model updates from client devices to the central server. We present a comprehensive empirical study of the statistics of model updates in FL, as well as the role and benefits of various compression techniques. Motivated by these observations, we propose a novel method to reduce the average communication cost, which is near-optimal in many use cases, and outperforms Top-K, DRIVE, 3LC and QSGD on Stack Overflow next-word prediction, a realistic and challenging FL benchmark. This is achieved by examining the problem using rate-distortion theory, and proposing distortion as a reliable proxy for model accuracy. Distortion can be more effectively used for optimizing the trade-off between model performance and communication cost across clients. We demonstrate empirically that in spite of the non-i.i.d. nature of federated learning, the rate-distortion frontier is consistent across datasets, optimizers, clients and training rounds."
+  },
+  "arxiv_2201.04557": {
+    "doc_id": "arxiv_2201.04557",
+    "title": "Federated AirNet: Hybrid Digital-Analog Neural Network Transmission for\n  Federated Learning",
+    "year": 2022,
+    "venue": "cs.MM",
+    "abstract": "A key issue in federated learning over wireless channels is how to exchange a large number of the model parameters via time-varying channels. Two types of solutions based on digital and analog schemes are used typically. The digital-based solution takes quantization and entropy coding for compression, whereas transmissions via wireless channels may cause catastrophic errors owing to the all-or-nothing behavior in entropy coding. The analog-based solutions such as AirNet and AirComp use analog modulation for the parameter transmissions. However, such an analog scheme often causes significant distortion due to the source signal's large power without compression gain. This paper proposes a novel hybrid digital-analog transmission-Federated AirNet--for the model parameter transmissions in federated learning. The Federated AirNet integrates low-rate digital coding and energy-compact analog modulation. The digital coding offers the baseline of the model parameters and compacts the source signal power. In addition, the residual parameters, which are obtained from the original and encoded model parameters, are analog-modulated to enhance the baseline according to the instantaneous wireless"
+  },
+  "arxiv_2202.02812": {
+    "doc_id": "arxiv_2202.02812",
+    "title": "Lossy Gradient Compression: How Much Accuracy Can One Bit Buy?",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "In federated learning (FL), a global model is trained at a Parameter Server (PS) by aggregating model updates obtained from multiple remote learners. Generally, the communication between the remote users and the PS is rate-limited, while the transmission from the PS to the remote users are unconstrained. The FL setting gives rise to the distributed learning scenario in which the updates from the remote learners have to be compressed so as to meet communication rate constraints in the uplink transmission toward the PS. For this problem, one wishes to compress the model updates so as to minimize the loss in accuracy resulting from the compression error. In this paper, we take a rate-distortion approach to address the compressor design problem for the distributed training of deep neural networks (DNNs). In particular, we define a measure of the compression performance under communication-rate constraints -- the \\emph{per-bit accuracy} -- which addresses the ultimate improvement of accuracy that a bit of communication brings to the centralized model. In order to maximize the per-bit accuracy, we consider modeling the DNN gradient updates at remote learners as a generalized normal distr"
+  },
+  "arxiv_2204.01273": {
+    "doc_id": "arxiv_2204.01273",
+    "title": "FedSynth: Gradient Compression via Synthetic Data in Federated Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Model compression is important in federated learning (FL) with large models to reduce communication cost. Prior works have been focusing on sparsification based compression that could desparately affect the global model accuracy. In this work, we propose a new scheme for upstream communication where instead of transmitting the model update, each client learns and transmits a light-weight synthetic dataset such that using it as the training data, the model performs similarly well on the real training data. The server will recover the local model update via the synthetic data and apply standard aggregation. We then provide a new algorithm FedSynth to learn the synthetic data locally. Empirically, we find our method is comparable/better than random masking baselines in all three common federated learning benchmark datasets."
+  },
+  "arxiv_2204.10985": {
+    "doc_id": "arxiv_2204.10985",
+    "title": "Federated Learning with Lossy Distributed Source Coding: Analysis and\n  Optimization",
+    "year": 2023,
+    "venue": "eess.SP",
+    "abstract": "Recently, federated learning (FL), which replaces data sharing with model sharing, has emerged as an efficient and privacy-friendly machine learning (ML) paradigm. One of the main challenges in FL is the huge communication cost for model aggregation. Many compression/quantization schemes have been proposed to reduce the communication cost for model aggregation. However, the following question remains unanswered: What is the fundamental trade-off between the communication cost and the FL convergence performance? In this paper, we manage to answer this question. Specifically, we first put forth a general framework for model aggregation performance analysis based on the rate-distortion theory. Under the proposed analysis framework, we derive an inner bound of the rate-distortion region of model aggregation. We then conduct an FL convergence analysis to connect the aggregation distortion and the FL convergence performance. We formulate an aggregation distortion minimization problem to improve the FL convergence performance. Two algorithms are developed to solve the above problem. Numerical results on aggregation distortion, convergence performance, and communication cost demonstrate th"
+  },
+  "arxiv_2205.02719": {
+    "doc_id": "arxiv_2205.02719",
+    "title": "Communication-Efficient Adaptive Federated Learning",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Federated learning is a machine learning training paradigm that enables clients to jointly train models without sharing their own localized data. However, the implementation of federated learning in practice still faces numerous challenges, such as the large communication overhead due to the repetitive server-client synchronization and the lack of adaptivity by SGD-based model updates. Despite that various methods have been proposed for reducing the communication cost by gradient compression or quantization, and the federated versions of adaptive optimizers such as FedAdam are proposed to add more adaptivity, the current federated learning framework still cannot solve the aforementioned challenges all at once. In this paper, we propose a novel communication-efficient adaptive federated learning method (FedCAMS) with theoretical convergence guarantees. We show that in the nonconvex stochastic optimization setting, our proposed FedCAMS achieves the same convergence rate of $O(\\frac{1}{\\sqrt{TKm}})$ as its non-compressed counterparts. Extensive experiments on various benchmarks verify our theoretical analysis."
+  },
+  "arxiv_2206.05723": {
+    "doc_id": "arxiv_2206.05723",
+    "title": "Communication-Efficient Federated Learning over MIMO Multiple Access\n  Channels",
+    "year": 2022,
+    "venue": "cs.IT",
+    "abstract": "Communication efficiency is of importance for wireless federated learning systems. In this paper, we propose a communication-efficient strategy for federated learning over multiple-input multiple-output (MIMO) multiple access channels (MACs). The proposed strategy comprises two components. When sending a locally computed gradient, each device compresses a high dimensional local gradient to multiple lower-dimensional gradient vectors using block sparsification. When receiving a superposition of the compressed local gradients via a MIMO-MAC, a parameter server (PS) performs a joint MIMO detection and the sparse local-gradient recovery. Inspired by the turbo decoding principle, our joint detection-and-recovery algorithm accurately recovers the high-dimensional local gradients by iteratively exchanging their beliefs for MIMO detection and sparse local gradient recovery outputs. We then analyze the reconstruction error of the proposed algorithm and its impact on the convergence rate of federated learning. From simulations, our gradient compression and joint detection-and-recovery methods diminish the communication cost significantly while achieving identical classification accuracy for "
+  },
+  "arxiv_2206.06976": {
+    "doc_id": "arxiv_2206.06976",
+    "title": "Resource Allocation for Compression-aided Federated Learning with High\n  Distortion Rate",
+    "year": 2022,
+    "venue": "cs.IT",
+    "abstract": "Recently, a considerable amount of works have been made to tackle the communication burden in federated learning (FL) (e.g., model quantization, data sparsification, and model compression). However, the existing methods, that boost the communication efficiency in FL, result in a considerable trade-off between communication efficiency and global convergence rate. We formulate an optimization problem for compression-aided FL, which captures the relationship between the distortion rate, number of participating IoT devices, and convergence rate. Following that, the objective function is to minimize the total transmission time for FL convergence. Because the problem is non-convex, we propose to decompose it into sub-problems. Based on the property of a FL model, we first determine the number of IoT devices participating in the FL process. Then, the communication between IoT devices and the server is optimized by efficiently allocating wireless resources based on a coalition game. Our theoretical analysis shows that, by actively controlling the number of participating IoT devices, we can avoid the training divergence of compression-aided FL while maintaining the communication efficiency."
+  },
+  "arxiv_2206.07021": {
+    "doc_id": "arxiv_2206.07021",
+    "title": "Federated Optimization Algorithms with Random Reshuffling and Gradient\n  Compression",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Gradient compression is a popular technique for improving communication complexity of stochastic first-order methods in distributed training of machine learning models. However, the existing works consider only with-replacement sampling of stochastic gradients. In contrast, it is well-known in practice and recently confirmed in theory that stochastic methods based on without-replacement sampling, e.g., Random Reshuffling (RR) method, perform better than ones that sample the gradients with-replacement. In this work, we close this gap in the literature and provide the first analysis of methods with gradient compression and without-replacement sampling. We first develop a na\\\"ive combination of random reshuffling with gradient compression (Q-RR). Perhaps surprisingly, but the theoretical analysis of Q-RR does not show any benefits of using RR. Our extensive numerical experiments confirm this phenomenon. This happens due to the additional compression variance. To reveal the true advantages of RR in the distributed learning with compression, we propose a new method called DIANA-RR that reduces the compression variance and has provably better convergence rates than existing counterparts "
+  },
+  "arxiv_2206.08330": {
+    "doc_id": "arxiv_2206.08330",
+    "title": "Compressed-VFL: Communication-Efficient Learning with Vertically\n  Partitioned Data",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "We propose Compressed Vertical Federated Learning (C-VFL) for communication-efficient training on vertically partitioned data. In C-VFL, a server and multiple parties collaboratively train a model on their respective features utilizing several local iterations and sharing compressed intermediate results periodically. Our work provides the first theoretical analysis of the effect message compression has on distributed training over vertically partitioned data. We prove convergence of non-convex objectives at a rate of $O(\\frac{1}{\\sqrt{T}})$ when the compression error is bounded over the course of training. We provide specific requirements for convergence with common compression techniques, such as quantization and top-$k$ sparsification. Finally, we experimentally show compression can reduce communication by over $90\\%$ without a significant decrease in accuracy over VFL without compression."
+  },
+  "arxiv_2206.09888": {
+    "doc_id": "arxiv_2206.09888",
+    "title": "SoteriaFL: A Unified Framework for Private Federated Learning with\n  Communication Compression",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "To enable large-scale machine learning in bandwidth-hungry environments such as wireless networks, significant progress has been made recently in designing communication-efficient federated learning algorithms with the aid of communication compression. On the other end, privacy-preserving, especially at the client level, is another important desideratum that has not been addressed simultaneously in the presence of advanced communication compression techniques yet. In this paper, we propose a unified framework that enhances the communication efficiency of private federated learning with communication compression. Exploiting both general compression operators and local differential privacy, we first examine a simple algorithm that applies compression directly to differentially-private stochastic gradient descent, and identify its limitations. We then propose a unified framework SoteriaFL for private federated learning, which accommodates a general family of local gradient estimators including popular stochastic variance-reduced gradient methods and the state-of-the-art shifted compression scheme. We provide a comprehensive characterization of its performance trade-offs in terms of pr"
+  },
+  "arxiv_2207.12779": {
+    "doc_id": "arxiv_2207.12779",
+    "title": "Reconciling Security and Communication Efficiency in Federated Learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Cross-device Federated Learning is an increasingly popular machine learning setting to train a model by leveraging a large population of client devices with high privacy and security guarantees. However, communication efficiency remains a major bottleneck when scaling federated learning to production environments, particularly due to bandwidth constraints during uplink communication. In this paper, we formalize and address the problem of compressing client-to-server model updates under the Secure Aggregation primitive, a core component of Federated Learning pipelines that allows the server to aggregate the client updates without accessing them individually. In particular, we adapt standard scalar quantization and pruning methods to Secure Aggregation and propose Secure Indexing, a variant of Secure Aggregation that supports quantization for extreme compression. We establish state-of-the-art results on LEAF benchmarks in a secure Federated Learning setup with up to 40$\\times$ compression in uplink communication with no meaningful loss in utility compared to uncompressed baselines."
+  },
+  "arxiv_2210.09626": {
+    "doc_id": "arxiv_2210.09626",
+    "title": "FLECS-CGD: A Federated Learning Second-Order Framework via Compression\n  and Sketching with Compressed Gradient Differences",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "In the recent paper FLECS (Agafonov et al, FLECS: A Federated Learning Second-Order Framework via Compression and Sketching), the second-order framework FLECS was proposed for the Federated Learning problem. This method utilize compression of sketched Hessians to make communication costs low. However, the main bottleneck of FLECS is gradient communication without compression. In this paper, we propose the modification of FLECS with compressed gradient differences, which we call FLECS-CGD (FLECS with Compressed Gradient Differences) and make it applicable for stochastic optimization. Convergence guarantees are provided in strongly convex and nonconvex cases. Experiments show the practical benefit of proposed approach."
+  },
+  "arxiv_2211.09320": {
+    "doc_id": "arxiv_2211.09320",
+    "title": "Improving Federated Learning Communication Efficiency with Global\n  Momentum Fusion for Gradient Compression Schemes",
+    "year": 2022,
+    "venue": "cs.DC",
+    "abstract": "Communication costs within Federated learning hinder the system scalability for reaching more data from more clients. The proposed FL adopts a hub-and-spoke network topology. All clients communicate through the central server. Hence, reducing communication overheads via techniques such as data compression has been proposed to mitigate this issue. Another challenge of federated learning is unbalanced data distribution, data on each client are not independent and identically distributed (non-IID) in a typical federated learning setting. In this paper, we proposed a new compression compensation scheme called Global Momentum Fusion (GMF) which reduces communication overheads between FL clients and the server and maintains comparable model accuracy in the presence of non-IID data. GitHub repository: https://github.com/tony92151/global-momentum-fusion-fl"
+  },
+  "arxiv_2212.05602": {
+    "doc_id": "arxiv_2212.05602",
+    "title": "ResFed: Communication Efficient Federated Learning by Transmitting Deep\n  Compressed Residuals",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Federated learning enables cooperative training among massively distributed clients by sharing their learned local model parameters. However, with increasing model size, deploying federated learning requires a large communication bandwidth, which limits its deployment in wireless networks. To address this bottleneck, we introduce a residual-based federated learning framework (ResFed), where residuals rather than model parameters are transmitted in communication networks for training. In particular, we integrate two pairs of shared predictors for the model prediction in both server-to-client and client-to-server communication. By employing a common prediction rule, both locally and globally updated models are always fully recoverable in clients and the server. We highlight that the residuals only indicate the quasi-update of a model in a single inter-round, and hence contain more dense information and have a lower entropy than the model, comparing to model weights and gradients. Based on this property, we further conduct lossy compression of the residuals by sparsification and quantization and encode them for efficient communication. The experimental evaluation shows that our ResFed"
+  },
+  "arxiv_2301.09269": {
+    "doc_id": "arxiv_2301.09269",
+    "title": "M22: A Communication-Efficient Algorithm for Federated Learning Inspired\n  by Rate-Distortion",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "In federated learning (FL), the communication constraint between the remote learners and the Parameter Server (PS) is a crucial bottleneck. For this reason, model updates must be compressed so as to minimize the loss in accuracy resulting from the communication constraint. This paper proposes ``\\emph{${\\bf M}$-magnitude weighted $L_{\\bf 2}$ distortion + $\\bf 2$ degrees of freedom''} (M22) algorithm, a rate-distortion inspired approach to gradient compression for federated training of deep neural networks (DNNs). In particular, we propose a family of distortion measures between the original gradient and the reconstruction we referred to as ``$M$-magnitude weighted $L_2$'' distortion, and we assume that gradient updates follow an i.i.d. distribution -- generalized normal or Weibull, which have two degrees of freedom. In both the distortion measure and the gradient, there is one free parameter for each that can be fitted as a function of the iteration number. Given a choice of gradient distribution and distortion measure, we design the quantizer minimizing the expected distortion in gradient reconstruction. To measure the gradient compression performance under a communication constrai"
+  },
+  "arxiv_2305.16416": {
+    "doc_id": "arxiv_2305.16416",
+    "title": "Federated Neural Compression Under Heterogeneous Data",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "We discuss a federated learned compression problem, where the goal is to learn a compressor from real-world data which is scattered across clients and may be statistically heterogeneous, yet share a common underlying representation. We propose a distributed source model that encompasses both characteristics, and naturally suggests a compressor architecture that uses analysis and synthesis transforms shared by clients. Inspired by personalized federated learning methods, we employ an entropy model that is personalized to each client. This allows for a global latent space to be learned across clients, and personalized entropy models that adapt to the clients' latent distributions. We show empirically that this strategy outperforms solely local methods, which indicates that learned compression also benefits from a shared global representation in statistically heterogeneous federated settings."
+  },
+  "arxiv_2306.12625": {
+    "doc_id": "arxiv_2306.12625",
+    "title": "Adaptive Compression in Federated Learning via Side Information",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "The high communication cost of sending model updates from the clients to the server is a significant bottleneck for scalable federated learning (FL). Among existing approaches, state-of-the-art bitrate-accuracy tradeoffs have been achieved using stochastic compression methods -- in which the client $n$ sends a sample from a client-only probability distribution $q_{\\phi^{(n)}}$, and the server estimates the mean of the clients' distributions using these samples. However, such methods do not take full advantage of the FL setup where the server, throughout the training process, has side information in the form of a global distribution $p_{\\theta}$ that is close to the clients' distribution $q_{\\phi^{(n)}}$ in Kullback-Leibler (KL) divergence. In this work, we exploit this closeness between the clients' distributions $q_{\\phi^{(n)}}$'s and the side information $p_{\\theta}$ at the server, and propose a framework that requires approximately $D_{KL}(q_{\\phi^{(n)}}|| p_{\\theta})$ bits of communication. We show that our method can be integrated into many existing stochastic compression frameworks to attain the same (and often higher) test accuracy with up to $82$ times smaller bitrate than "
+  },
+  "arxiv_2310.14693": {
+    "doc_id": "arxiv_2310.14693",
+    "title": "Federated learning compression designed for lightweight communications",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Federated Learning (FL) is a promising distributed method for edge-level machine learning, particularly for privacysensitive applications such as those in military and medical domains, where client data cannot be shared or transferred to a cloud computing server. In many use-cases, communication cost is a major challenge in FL due to its natural intensive network usage. Client devices, such as smartphones or Internet of Things (IoT) nodes, have limited resources in terms of energy, computation, and memory. To address these hardware constraints, lightweight models and compression techniques such as pruning and quantization are commonly adopted in centralised paradigms. In this paper, we investigate the impact of compression techniques on FL for a typical image classification task. Going further, we demonstrate that a straightforward method can compresses messages up to 50% while having less than 1% of accuracy loss, competing with state-of-the-art techniques."
+  },
+  "arxiv_2310.20682": {
+    "doc_id": "arxiv_2310.20682",
+    "title": "Compression with Exact Error Distribution for Federated Learning",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "Compression schemes have been extensively used in Federated Learning (FL) to reduce the communication cost of distributed learning. While most approaches rely on a bounded variance assumption of the noise produced by the compressor, this paper investigates the use of compression and aggregation schemes that produce a specific error distribution, e.g., Gaussian or Laplace, on the aggregated data. We present and analyze different aggregation schemes based on layered quantizers achieving exact error distribution. We provide different methods to leverage the proposed compression schemes to obtain compression-for-free in differential privacy applications. Our general compression methods can recover and improve standard FL schemes with Gaussian perturbations such as Langevin dynamics and randomized smoothing."
+  },
+  "arxiv_2311.10832": {
+    "doc_id": "arxiv_2311.10832",
+    "title": "Exploring Machine Learning Models for Federated Learning: A Review of\n  Approaches, Performance, and Limitations",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "In the growing world of artificial intelligence, federated learning is a distributed learning framework enhanced to preserve the privacy of individuals' data. Federated learning lays the groundwork for collaborative research in areas where the data is sensitive. Federated learning has several implications for real-world problems. In times of crisis, when real-time decision-making is critical, federated learning allows multiple entities to work collectively without sharing sensitive data. This distributed approach enables us to leverage information from multiple sources and gain more diverse insights. This paper is a systematic review of the literature on privacy-preserving machine learning in the last few years based on the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines. Specifically, we have presented an extensive review of supervised/unsupervised machine learning algorithms, ensemble methods, meta-heuristic approaches, blockchain technology, and reinforcement learning used in the framework of federated learning, in addition to an overview of federated learning applications. This paper reviews the literature on the components of federated le"
+  },
+  "arxiv_2312.13461": {
+    "doc_id": "arxiv_2312.13461",
+    "title": "FedSZ: Leveraging Error-Bounded Lossy Compression for Federated Learning\n  Communications",
+    "year": 2024,
+    "venue": "cs.DC",
+    "abstract": "With the promise of federated learning (FL) to allow for geographically-distributed and highly personalized services, the efficient exchange of model updates between clients and servers becomes crucial. FL, though decentralized, often faces communication bottlenecks, especially in resource-constrained scenarios. Existing data compression techniques like gradient sparsification, quantization, and pruning offer some solutions, but may compromise model performance or necessitate expensive retraining. In this paper, we introduce FedSZ, a specialized lossy-compression algorithm designed to minimize the size of client model updates in FL. FedSZ incorporates a comprehensive compression pipeline featuring data partitioning, lossy and lossless compression of model parameters and metadata, and serialization. We evaluate FedSZ using a suite of error-bounded lossy compressors, ultimately finding SZ2 to be the most effective across various model architectures and datasets including AlexNet, MobileNetV2, ResNet50, CIFAR-10, Caltech101, and Fashion-MNIST. Our study reveals that a relative error bound 1E-2 achieves an optimal tradeoff, compressing model states between 5.55-12.61x while maintaining"
+  },
+  "arxiv_2401.02609": {
+    "doc_id": "arxiv_2401.02609",
+    "title": "Importance Matching Lemma for Lossy Compression with Side Information",
+    "year": 2024,
+    "venue": "cs.IT",
+    "abstract": "We propose two extensions to existing importance sampling based methods for lossy compression. First, we introduce an importance sampling based compression scheme that is a variant of ordered random coding (Theis and Ahmed, 2022) and is amenable to direct evaluation of the achievable compression rate for a finite number of samples. Our second and major contribution is the importance matching lemma, which is a finite proposal counterpart of the recently introduced Poisson matching lemma (Li and Anantharam, 2021). By integrating with deep learning, we provide a new coding scheme for distributed lossy compression with side information at the decoder. We demonstrate the effectiveness of the proposed scheme through experiments involving synthetic Gaussian sources, distributed image compression with MNIST and vertical federated learning with CIFAR-10."
+  },
+  "arxiv_2401.14211": {
+    "doc_id": "arxiv_2401.14211",
+    "title": "Communication-Efficient Federated Learning through Adaptive Weight\n  Clustering and Server-Side Distillation",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Federated Learning (FL) is a promising technique for the collaborative training of deep neural networks across multiple devices while preserving data privacy. Despite its potential benefits, FL is hindered by excessive communication costs due to repeated server-client communication during training. To address this challenge, model compression techniques, such as sparsification and weight clustering are applied, which often require modifying the underlying model aggregation schemes or involve cumbersome hyperparameter tuning, with the latter not only adjusts the model's compression rate but also limits model's potential for continuous improvement over growing data. In this paper, we propose FedCompress, a novel approach that combines dynamic weight clustering and server-side knowledge distillation to reduce communication costs while learning highly generalizable models. Through a comprehensive evaluation on diverse public datasets, we demonstrate the efficacy of our approach compared to baselines in terms of communication costs and inference speed."
+  },
+  "arxiv_2402.03770": {
+    "doc_id": "arxiv_2402.03770",
+    "title": "Fed-CVLC: Compressing Federated Learning Communications with\n  Variable-Length Codes",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "In Federated Learning (FL) paradigm, a parameter server (PS) concurrently communicates with distributed participating clients for model collection, update aggregation, and model distribution over multiple rounds, without touching private data owned by individual clients. FL is appealing in preserving data privacy; yet the communication between the PS and scattered clients can be a severe bottleneck. Model compression algorithms, such as quantization and sparsification, have been suggested but they generally assume a fixed code length, which does not reflect the heterogeneity and variability of model updates. In this paper, through both analysis and experiments, we show strong evidences that variable-length is beneficial for compression in FL. We accordingly present Fed-CVLC (Federated Learning Compression with Variable-Length Codes), which fine-tunes the code length in response of the dynamics of model updates. We develop optimal tuning strategy that minimizes the loss function (equivalent to maximizing the model utility) subject to the budget for communication. We further demonstrate that Fed-CVLC is indeed a general compression design that bridges quantization and sparsification,"
+  },
+  "arxiv_2403.04348": {
+    "doc_id": "arxiv_2403.04348",
+    "title": "LoCoDL: Communication-Efficient Distributed Learning with Local Training\n  and Compression",
+    "year": 2025,
+    "venue": "math.OC",
+    "abstract": "In Distributed optimization and Learning, and even more in the modern framework of federated learning, communication, which is slow and costly, is critical. We introduce LoCoDL, a communication-efficient algorithm that leverages the two popular and effective techniques of Local training, which reduces the communication frequency, and Compression, in which short bitstreams are sent instead of full-dimensional vectors of floats. LoCoDL works with a large class of unbiased compressors that includes widely-used sparsification and quantization methods. LoCoDL provably benefits from local training and compression and enjoys a doubly-accelerated communication complexity, with respect to the condition number of the functions and the model dimension, in the general heterogenous regime with strongly convex functions. This is confirmed in practice, with LoCoDL outperforming existing algorithms."
+  },
+  "arxiv_2405.03248": {
+    "doc_id": "arxiv_2405.03248",
+    "title": "Communication-Efficient Federated Learning with Adaptive Compression\n  under Dynamic Bandwidth",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Federated learning can train models without directly providing local data to the server. However, the frequent updating of the local model brings the problem of large communication overhead. Recently, scholars have achieved the communication efficiency of federated learning mainly by model compression. But they ignore two problems: 1) network state of each client changes dynamically; 2) network state among clients is not the same. The clients with poor bandwidth update local model slowly, which leads to low efficiency. To address this challenge, we propose a communication-efficient federated learning algorithm with adaptive compression under dynamic bandwidth (called AdapComFL). Concretely, each client performs bandwidth awareness and bandwidth prediction. Then, each client adaptively compresses its local model via the improved sketch mechanism based on his predicted bandwidth. Further, the server aggregates sketched models with different sizes received. To verify the effectiveness of the proposed method, the experiments are based on real bandwidth data which are collected from the network topology we build, and benchmark datasets which are obtained from open repositories. We show "
+  },
+  "arxiv_2405.17522": {
+    "doc_id": "arxiv_2405.17522",
+    "title": "Efficient Model Compression for Hierarchical Federated Learning",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Federated learning (FL), as an emerging collaborative learning paradigm, has garnered significant attention due to its capacity to preserve privacy within distributed learning systems. In these systems, clients collaboratively train a unified neural network model using their local datasets and share model parameters rather than raw data, enhancing privacy. Predominantly, FL systems are designed for mobile and edge computing environments where training typically occurs over wireless networks. Consequently, as model sizes increase, the conventional FL frameworks increasingly consume substantial communication resources. To address this challenge and improve communication efficiency, this paper introduces a novel hierarchical FL framework that integrates the benefits of clustered FL and model compression. We present an adaptive clustering algorithm that identifies a core client and dynamically organizes clients into clusters. Furthermore, to enhance transmission efficiency, each core client implements a local aggregation with compression (LC aggregation) algorithm after collecting compressed models from other clients within the same cluster. Simulation results affirm that our proposed "
+  },
+  "arxiv_2407.05125": {
+    "doc_id": "arxiv_2407.05125",
+    "title": "A Joint Approach to Local Updating and Gradient Compression for\n  Efficient Asynchronous Federated Learning",
+    "year": 2024,
+    "venue": "cs.DC",
+    "abstract": "Asynchronous Federated Learning (AFL) confronts inherent challenges arising from the heterogeneity of devices (e.g., their computation capacities) and low-bandwidth environments, both potentially causing stale model updates (e.g., local gradients) for global aggregation. Traditional approaches mitigating the staleness of updates typically focus on either adjusting the local updating or gradient compression, but not both. Recognizing this gap, we introduce a novel approach that synergizes local updating with gradient compression. Our research begins by examining the interplay between local updating frequency and gradient compression rate, and their collective impact on convergence speed. The theoretical upper bound shows that the local updating frequency and gradient compression rate of each device are jointly determined by its computing power, communication capabilities and other factors. Building on this foundation, we propose an AFL framework called FedLuck that adaptively optimizes both local update frequency and gradient compression rates. Experiments on image classification and speech recognization show that FedLuck reduces communication consumption by 56% and training time by"
+  },
+  "arxiv_2408.14736": {
+    "doc_id": "arxiv_2408.14736",
+    "title": "Bandwidth-Aware and Overlap-Weighted Compression for\n  Communication-Efficient Federated Learning",
+    "year": 2024,
+    "venue": "cs.DC",
+    "abstract": "Current data compression methods, such as sparsification in Federated Averaging (FedAvg), effectively enhance the communication efficiency of Federated Learning (FL). However, these methods encounter challenges such as the straggler problem and diminished model performance due to heterogeneous bandwidth and non-IID (Independently and Identically Distributed) data. To address these issues, we introduce a bandwidth-aware compression framework for FL, aimed at improving communication efficiency while mitigating the problems associated with non-IID data. First, our strategy dynamically adjusts compression ratios according to bandwidth, enabling clients to upload their models at a close pace, thus exploiting the otherwise wasted time to transmit more data. Second, we identify the non-overlapped pattern of retained parameters after compression, which results in diminished client update signals due to uniformly averaged weights. Based on this finding, we propose a parameter mask to adjust the client-averaging coefficients at the parameter level, thereby more closely approximating the original updates, and improving the training convergence under heterogeneous environments. Our evaluations"
+  },
+  "arxiv_2409.06319": {
+    "doc_id": "arxiv_2409.06319",
+    "title": "Rate-Constrained Quantization for Communication-Efficient Federated\n  Learning",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "Quantization is a common approach to mitigate the communication cost of federated learning (FL). In practice, the quantized local parameters are further encoded via an entropy coding technique, such as Huffman coding, for efficient data compression. In this case, the exact communication overhead is determined by the bit rate of the encoded gradients. Recognizing this fact, this work deviates from the existing approaches in the literature and develops a novel quantized FL framework, called \\textbf{r}ate-\\textbf{c}onstrained \\textbf{fed}erated learning (RC-FED), in which the gradients are quantized subject to both fidelity and data rate constraints. We formulate this scheme, as a joint optimization in which the quantization distortion is minimized while the rate of encoded gradients is kept below a target threshold. This enables for a tunable trade-off between quantization distortion and communication cost. We analyze the convergence behavior of RC-FED, and show its superior performance against baseline quantized FL schemes on several datasets."
+  },
+  "arxiv_2412.04538": {
+    "doc_id": "arxiv_2412.04538",
+    "title": "Communication Compression for Distributed Learning without Control Variates",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Distributed learning algorithms, such as the ones employed in Federated Learning (FL), require communication compression to reduce the cost of client uploads. The compression methods used in practice are often biased, making error feedback necessary both to achieve convergence under aggressive compression and to provide theoretical convergence guarantees. However, error feedback requires client-specific control variates, creating two key challenges: it violates privacy-preserving principles and demands stateful clients. In this paper, we propose Compressed Aggregate Feedback (CAFe), a novel distributed learning framework that allows highly compressible client updates by exploiting past aggregated updates, and does not require control variates. We consider Distributed Gradient Descent (DGD) as a representative algorithm and analytically prove CAFe's superiority to Distributed Compressed Gradient Descent (DCGD) with biased compression in the non-convex regime with bounded gradient dissimilarity. Experimental results confirm that CAFe outperforms existing distributed learning compression schemes."
+  },
+  "arxiv_2501.00216": {
+    "doc_id": "arxiv_2501.00216",
+    "title": "FedCod: An Efficient Communication Protocol for Cross-Silo Federated\n  Learning with Coding",
+    "year": 2025,
+    "venue": "cs.DC",
+    "abstract": "Federated Learning (FL) is an innovative distributed machine learning paradigm that enables multiple parties to collaboratively train a model without sharing their raw data, thereby preserving data privacy. Communication efficiency concerns arise in cross-silo FL, particularly due to the network heterogeneity and fluctuations associated with geo-distributed silos. Most existing solutions to these problems focus on algorithmic improvements that alter the FL algorithm but sacrificing the training performance. How to address these problems from a network perspective that is decoupled from the FL algorithm remains an open challenge. In this paper, we propose FedCod, a new application layer communication protocol designed for cross-silo FL. FedCod transparently utilizes a coding mechanism to enhance the efficient use of idle bandwidth through client-to-client communication, and dynamically adjusts coding redundancy to mitigate network bottlenecks and fluctuations, thereby improving the communication efficiency and accelerating the training process. In our real-world experiments, FedCod demonstrates a significant reduction in average communication time by up to 62% compared to the baseli"
+  },
+  "arxiv_2502.03092": {
+    "doc_id": "arxiv_2502.03092",
+    "title": "E-3SFC: Communication-Efficient Federated Learning with Double-way\n  Features Synthesizing",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "The exponential growth in model sizes has significantly increased the communication burden in Federated Learning (FL). Existing methods to alleviate this burden by transmitting compressed gradients often face high compression errors, which slow down the model's convergence. To simultaneously achieve high compression effectiveness and lower compression errors, we study the gradient compression problem from a novel perspective. Specifically, we propose a systematical algorithm termed Extended Single-Step Synthetic Features Compressing (E-3SFC), which consists of three sub-components, i.e., the Single-Step Synthetic Features Compressor (3SFC), a double-way compression algorithm, and a communication budget scheduler. First, we regard the process of gradient computation of a model as decompressing gradients from corresponding inputs, while the inverse process is considered as compressing the gradients. Based on this, we introduce a novel gradient compression method termed 3SFC, which utilizes the model itself as a decompressor, leveraging training priors such as model weights and objective functions. 3SFC compresses raw gradients into tiny synthetic features in a single-step simulation,"
+  },
+  "arxiv_2506.16309": {
+    "doc_id": "arxiv_2506.16309",
+    "title": "Data Compression with Relative Entropy Coding",
+    "year": 2026,
+    "venue": "cs.IT",
+    "abstract": "Over the last few years, machine learning unlocked previously infeasible features for compression, such as providing guarantees for users' privacy or tailoring compression to specific data statistics (e.g., satellite images or audio recordings of animals) or users' audiovisual perception. This, in turn, has led to an explosion of theoretical investigations and insights that aim to develop new fundamental theories, methods and algorithms better suited for machine learning-based compressors.   In this thesis, I contribute to this trend by investigating relative entropy coding, a mathematical framework that generalises classical source coding theory. Concretely, relative entropy coding deals with the efficient communication of uncertain or randomised information. One of its key advantages is that it extends compression methods to continuous spaces and can thus be integrated more seamlessly into modern machine learning pipelines than classical quantisation-based approaches. Furthermore, it is a natural foundation for developing advanced compression methods that are privacy-preserving or account for the perceptual quality of the reconstructed data.   The thesis considers relative entrop"
+  },
+  "arxiv_2509.08233": {
+    "doc_id": "arxiv_2509.08233",
+    "title": "Strategies for Improving Communication Efficiency in Distributed and Federated Learning: Compression, Local Training, and Personalization",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Distributed and federated learning are essential paradigms for training models across decentralized data sources while preserving privacy, yet communication overhead remains a major bottleneck. This dissertation explores strategies to improve communication efficiency, focusing on model compression, local training, and personalization. We establish a unified framework for biased and unbiased compression operators with convergence guarantees, then propose adaptive local training strategies that incorporate personalization to accelerate convergence and mitigate client drift. In particular, Scafflix balances global and personalized objectives, achieving superior performance under both IID and non-IID settings. We further introduce privacy-preserving pruning frameworks that optimize sparsity while minimizing communication costs, with Cohort-Squeeze leveraging hierarchical aggregation to reduce cross-device overhead. Finally, SymWanda, a symmetric post-training pruning method, enhances robustness under high sparsity and maintains accuracy without retraining. Extensive experiments on benchmarks and large-scale language models demonstrate favorable trade-offs among accuracy, convergence, a"
+  },
+  "arxiv_2511.05770": {
+    "doc_id": "arxiv_2511.05770",
+    "title": "An Efficient Gradient-Aware Error-Bounded Lossy Compressor for Federated Learning",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Federated learning (FL) enables collaborative model training without exposing clients' private data, but its deployment is often constrained by the communication cost of transmitting gradients between clients and the central server, especially under system heterogeneity where low-bandwidth clients bottleneck overall performance. Lossy compression of gradient data can mitigate this overhead, and error-bounded lossy compression (EBLC) is particularly appealing for its fine-grained utility-compression tradeoff. However, existing EBLC methods (e.g., SZ), originally designed for smooth scientific data with strong spatial locality, rely on generic predictors such as Lorenzo and interpolation for entropy reduction to improve compression ratio. Gradient tensors, in contrast, exhibit low smoothness and weak spatial correlation, rendering these predictors ineffective and leading to poor compression ratios. To address this limitation, we propose an EBLC framework tailored for FL gradient data to achieve high compression ratios while preserving model accuracy. The core of it is an innovative prediction mechanism that exploits temporal correlations across FL training rounds and structural regul"
+  },
+  "arxiv_2602.11584": {
+    "doc_id": "arxiv_2602.11584",
+    "title": "Gradient Compression May Hurt Generalization: A Remedy by Synthetic Data Guided Sharpness Aware Minimization",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "It is commonly believed that gradient compression in federated learning (FL) enjoys significant improvement in communication efficiency with negligible performance degradation. In this paper, we find that gradient compression induces sharper loss landscapes in federated learning, particularly under non-IID data distributions, which suggests hindered generalization capability. The recently emerging Sharpness Aware Minimization (SAM) effectively searches for a flat minima by incorporating a gradient ascent step (i.e., perturbing the model with gradients) before the celebrated stochastic gradient descent. Nonetheless, the direct application of SAM in FL suffers from inaccurate estimation of the global perturbation due to data heterogeneity. Existing approaches propose to utilize the model update from the previous communication round as a rough estimate. However, its effectiveness is hindered when model update compression is incorporated. In this paper, we propose FedSynSAM, which leverages the global model trajectory to construct synthetic data and facilitates an accurate estimation of the global perturbation. The convergence of the proposed algorithm is established, and extensive exp"
+  },
+  "arxiv_2603.16353": {
+    "doc_id": "arxiv_2603.16353",
+    "title": "Biased Compression in Gradient Coding for Distributed Learning",
+    "year": 2026,
+    "venue": "cs.DC",
+    "abstract": "Communication bottlenecks and the presence of stragglers pose significant challenges in distributed learning (DL). To deal with these challenges, recent advances leverage unbiased compression functions and gradient coding. However, the significant benefits of biased compression remain largely unexplored. To close this gap, we propose Compressed Gradient Coding with Error Feedback (COCO-EF), a novel DL method that combines gradient coding with biased compression to mitigate straggler effects and reduce communication costs. In each iteration, non-straggler devices encode local gradients from redundantly allocated training data, incorporate prior compression errors, and compress the results using biased compression functions before transmission. The server aggregates these compressed messages from the non-stragglers to approximate the global gradient for model updates. We provide rigorous theoretical convergence guarantees for COCO-EF and validate its superior learning performance over baseline methods through empirical evaluations. As far as we know, we are among the first to rigorously demonstrate that biased compression has substantial benefits in DL, when gradient coding is employ"
+  },
+  "arxiv_2604.11146": {
+    "doc_id": "arxiv_2604.11146",
+    "title": "A Full Compression Pipeline for Green Federated Learning in Communication-Constrained Environments",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Federated Learning (FL) enables collaborative model training across distributed clients without sharing raw data, thereby preserving privacy. However, FL often suffers from significant communication and computational overhead, limiting its scalability and sustainability. In this work, we introduce a Full Compression Pipeline (FCP) for FL in communication-constrained environments. FCP integrates three complementary deep compression techniques (pruning, quantization, and Huffman encoding) into a unified end-to-end framework. By compressing local models and communication payloads, FCP substantially reduces transmission costs and resource consumption while maintaining competitive accuracy. To quantify its impact, we develop an evaluation framework that captures both communication and computation overheads as a unified model cost, allowing a holistic assessment of efficiency trade-offs. The pipeline is evaluated in an independent and identically distributed (IID) and non-IID data setting. In one representative scenario, training a ResNet-12 model on the CIFAR-10 dataset with ten clients and a 2 Mbps bandwidth, the FCP achieves more than 11$\\times$ reduction in model size, with only a 2%"
+  },
+  "arxiv_2606.14354": {
+    "doc_id": "arxiv_2606.14354",
+    "title": "MUFFLe: Efficient Model Update Compression via Generalized Deduplication for Federated Learning",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Federated learning is well suited to edge environments but is often limited by the uplink cost of transmitting model updates. This Work-in-Progress paper presents MUFFLe, a communication-efficient update compression scheme that integrates generalized deduplication (GD) into the FedAvg pipeline. MUFFLe deduplicates repeated patterns across the update vector, yielding a fixed-rate, variable-count compression scheme. Preliminary experiments on IID MNIST with 20 clients show that MUFFLe reaches the target accuracy of $92.93\\%$ with 38~MB cumulative uplink communication, compared with 75~MB for 8-bit quantization, 86~MB for Top-$k$ sparsification, and 310~MB for uncompressed FedAvg. These results demonstrate the feasibility of applying GD to communication-efficient federated learning."
+  }
+}

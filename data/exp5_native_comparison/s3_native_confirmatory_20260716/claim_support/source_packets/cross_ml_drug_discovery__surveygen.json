@@ -1,0 +1,610 @@
+{
+  "topic_id": "cross_ml_drug_discovery",
+  "system": "surveygen",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The traditional drug discovery pipeline is a multi-stage, resource-intensive process encompassing target identification, hit discovery, lead optimization, preclinical evaluation, and clinical trials ref [28].",
+      "citation_markers": [
+        "ref [28]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Applications of machine learning in drug discovery and development",
+          "doi": "10.1038/s41573-019-0024-5",
+          "abstract": "Drug discovery and development pipelines are long, complex and depend on numerous factors. Machine learning (ML) approaches provide a set of tools that can improve discovery and decision making for well-specified questions with abundant, high-quality data. Opportunities to apply ML occur in all stages of drug discovery. Examples include target validation, identification of prognostic biomarkers and analysis of digital pathology data in clinical trials. Applications have ranged in context and methodology, with some approaches yielding accurate predictions and insights. The challenges of applying ML lie primarily with the lack of interpretability and repeatability of ML-generated results, which may limit their application. In all areas, systematic and comprehensive high-dimensional data still need to be generated. With ongoing efforts to tackle these issues, as well as increasing awareness of the factors needed to validate ML approaches, the application of ML can promote data-driven decision making and has the potential to speed up the process and reduce failure rates in drug discovery and development. Machine learning has been applied to numerous stages in the drug discovery pipeline. Here, Vamathevan and colleagues discuss the most useful techniques and how machine learning can promote data-driven decision making in drug discovery and development. They highlight major hurdles in the field, such as the required data characteristics for applying machine learning, which will need to be solved as machine learning matures.",
+          "cited_by_count": "2998.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "476.0",
+          "journal_h_bin": "Q1",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9140467643737793",
+          "composite_score": "0.6526836411961492",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Bringing a novel therapeutic to market typically requires 10–15 years and investments exceeding one billion USD, with high attrition rates persisting across all development phases ref [33].",
+      "citation_markers": [
+        "ref [33]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Automating Drug Discovery using Machine Learning.",
+          "doi": "10.2174/1570163820666230607163313",
+          "abstract": "Drug discovery and development have been sped up because of the advances in computational science. In both industry and academics, artificial intelligence (AI) has been widely used. Machine learning (ML), an important component of AI, has been used in a variety of domains, including data production and analytics. One area that stands to gain significantly from this achievement of machine learning is drug discovery. The process of bringing a new drug to market is complicated and time-consuming. Traditional drug research takes a long time, costs a lot of money, and has a high failure rate. Scientists test millions of compounds, but only a small number make it to preclinical or clinical testing. It is crucial to embrace innovation, especially automated technologies, to lessen the complexity involved in drug research and avoid the high cost and lengthy process of bringing a medicine to the market. A rapidly developing field, a branch of artificial intelligence called machine learning (ML), is being used by numerous pharmaceutical businesses. Automating repetitive data processing and analysis processes can be achieved by incorporating ML methods into the drug development process. ML techniques can be used at numerous stages of the drug discovery process. In this study, we will discuss the steps of drug discovery and methods of machine learning that can be applied in these steps, as well as give an overview of each of the research works in this field.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8938730359077454",
+          "composite_score": "0.645668623267803",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Traditional high-throughput screening yields hit rates of merely 1–2%, reflecting the immense difficulty of navigating expansive chemical and biological spaces ref [20]. Furthermore, experimental approaches for identifying drug-target interactions are labor-intensive, costly, and temporally inefficient ref [34].",
+      "citation_markers": [
+        "ref [20]",
+        "ref [34]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "A Machine Learning Strategy for Drug Discovery Identifies Anti-Schistosomal Small Molecules",
+          "doi": "10.1021/acsinfecdis.0c00754",
+          "abstract": ", the prediction accuracy for active and inactives was 61% and 56% for somules and adults, respectively; also, hit rates were 48% and 34%, respectively, far exceeding the typical 1-2% hit rate for traditional high throughput screens.",
+          "cited_by_count": "31.0",
+          "cited_by_bin": "Q4",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "90.0",
+          "journal_h_bin": "Q3",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.855377197265625",
+          "composite_score": "0.6740248851096003",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Recent applications of deep learning and machine intelligence on in silico drug discovery: methods, tools and databases",
+          "doi": "10.1093/bib/bby061",
+          "abstract": "The identification of interactions between drugs/compounds and their targets is crucial for the development of new drugs. In vitro screening experiments (i.e. bioassays) are frequently used for this purpose; however, experimental approaches are insufficient to explore novel drug-target interactions, mainly because of feasibility problems, as they are labour intensive, costly and time consuming. A computational field known as 'virtual screening' (VS) has emerged in the past decades to aid experimental drug discovery studies by statistically estimating unknown bio-interactions between compounds and biological targets. These methods use the physico-chemical and structural properties of compounds and/or target proteins along with the experimentally verified bio-interaction information to generate predictive models. Lately, sophisticated machine learning techniques are applied in VS to elevate the predictive performance. The objective of this study is to examine and discuss the recent applications of machine learning techniques in VS, including deep learning, which became highly popular after giving rise to epochal developments in the fields of computer vision and natural language processing. The past 3 years have witnessed an unprecedented amount of research studies considering the application of deep learning in biomedicine, including computational drug discovery. In this review, we first describe the main instruments of VS methods, including compound and protein features (i.e. representations and descriptors), frequently used libraries and toolkits for VS, bioactivity databases and gold-standard data sets for system training and benchmarking. We subsequently review recent VS studies with a strong emphasis on deep learning applications. Finally, we discuss the present state of the field, including the current challenges and suggest future directions. We believe that this survey will provide insight to the researchers working in the field of computational drug discovery in terms of comprehending and developing novel bio-prediction methods.",
+          "cited_by_count": "546.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "210.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9080454111099243",
+          "composite_score": "0.6451529640139588",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Machine learning (ML) and artificial intelligence (AI) represent transformative paradigms that fundamentally reorient drug discovery from hypothesis-driven experimentation toward data-driven decision-making ref [28]. By leveraging vast repositories of biological, chemical, and clinical data, ML algorithms can identify complex patterns imperceptible to conventional analysis ref [15].",
+      "citation_markers": [
+        "ref [28]",
+        "ref [15]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Applications of machine learning in drug discovery and development",
+          "doi": "10.1038/s41573-019-0024-5",
+          "abstract": "Drug discovery and development pipelines are long, complex and depend on numerous factors. Machine learning (ML) approaches provide a set of tools that can improve discovery and decision making for well-specified questions with abundant, high-quality data. Opportunities to apply ML occur in all stages of drug discovery. Examples include target validation, identification of prognostic biomarkers and analysis of digital pathology data in clinical trials. Applications have ranged in context and methodology, with some approaches yielding accurate predictions and insights. The challenges of applying ML lie primarily with the lack of interpretability and repeatability of ML-generated results, which may limit their application. In all areas, systematic and comprehensive high-dimensional data still need to be generated. With ongoing efforts to tackle these issues, as well as increasing awareness of the factors needed to validate ML approaches, the application of ML can promote data-driven decision making and has the potential to speed up the process and reduce failure rates in drug discovery and development. Machine learning has been applied to numerous stages in the drug discovery pipeline. Here, Vamathevan and colleagues discuss the most useful techniques and how machine learning can promote data-driven decision making in drug discovery and development. They highlight major hurdles in the field, such as the required data characteristics for applying machine learning, which will need to be solved as machine learning matures.",
+          "cited_by_count": "2998.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "476.0",
+          "journal_h_bin": "Q1",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9140467643737793",
+          "composite_score": "0.6526836411961492",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Advancing computer-aided drug discovery (CADD) by big data and data-driven machine learning modeling",
+          "doi": "10.1016/j.drudis.2020.07.005",
+          "abstract": "Advancing a new drug to market requires substantial investments in time as well as financial resources. Crucial bioactivities for drug candidates, including their efficacy, pharmacokinetics (PK), and adverse effects, need to be investigated during drug development. With advancements in chemical synthesis and biological screening technologies over the past decade, large amount of biological data points for millions of small molecules have been generated and are stored in various databases. These accumulated data, combined with new machine learning (ML) approaches, such as deep learning, have shown great potential to provide insights into relevant chemical structures to predict in vitro, in vivo, and clinical outcomes, thereby advancing drug discovery and development in the big data era.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.886954665184021",
+          "composite_score": "0.6866793508590449",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "SVM is particularly valued for its ability to operate in high-dimensional feature spaces ref [41], while RF and gradient boosting methods offer robustness and interpretability ref [31]. These algorithms remain competitive benchmarks even as deep learning advances ref [54].",
+      "citation_markers": [
+        "ref [41]",
+        "ref [31]",
+        "ref [54]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Evolution of Support Vector Machine and Regression Modeling in Chemoinformatics and Drug Discovery",
+          "doi": "10.1007/s10822-022-00442-9",
+          "abstract": "The support vector machine (SVM) algorithm is one of the most widely used machine learning (ML) methods for predicting active compounds and molecular properties. In chemoinformatics and drug discovery, SVM has been a state-of-the-art ML approach for more than a decade. A unique attribute of SVM is that it operates in feature spaces of increasing dimensionality. Hence, SVM conceptually departs from the paradigm of low dimensionality that applies to many other methods for chemical space navigation. The SVM approach is applicable to compound classification, and ranking, multi-class predictions, and –in algorithmically modified form– regression modeling. In the emerging era of deep learning (DL), SVM retains its relevance as one of the premier ML methods in chemoinformatics, for reasons discussed herein. We describe the SVM methodology including strengths and weaknesses and discuss selected applications that have contributed to the evolution of SVM as a premier approach for compound classification, property predictions, and virtual compound screening.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8980170488357544",
+          "composite_score": "0.6211037376738039",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "A combined drug discovery strategy based on machine learning and molecular docking",
+          "doi": "10.1111/cbdd.13494",
+          "abstract": "Data mining methods based on machine learning play an increasingly important role in drug design and discovery. In the current work, eight machine learning methods including decision trees, k‐Nearest neighbor, support vector machines, random forests, extremely randomized trees, AdaBoost, gradient boosting trees, and XGBoost were evaluated comprehensively through a case study of ACC inhibitor data sets. Internal and external data sets were employed for cross‐validation of the eight machine learning methods. Results showed that the extremely randomized trees model performed best and was adopted as the first step of virtual screening. Together with structure‐based virtual screening in the second step, this combined strategy obtained desirable results. This work indicates that the combination of machine learning methods with traditional structure‐based virtual screening can effectively strengthen the ability in finding potential hits from large compound database for a given target.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8934256434440613",
+          "composite_score": "0.6483206769358155",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Exploiting Machine Learning for End-To-End Drug Discovery and Development",
+          "doi": "10.1038/s41563-019-0338-z",
+          "abstract": "A variety of machine learning methods such as naive Bayesian, support vector machines and more recently deep neural networks are demonstrating their utility for drug discovery and development. These leverage the generally bigger datasets created from high-throughput screening data and allow prediction of bioactivities for targets and molecular properties with increased levels of accuracy. We have only just begun to exploit the potential of these techniques but they may already be fundamentally changing the research process for identifying new molecules and/or repurposing old drugs. The integrated application of such machine learning models for end-to-end (E2E) application is broadly relevant and has considerable implications for developing future therapies and their targeting.This Perspective describes the application of machine learning models in the design, synthesis and characterisation of molecules at different stages in the drug discovery and development process.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9056075811386108",
+          "composite_score": "0.576108569739613",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Convolutional Neural Networks (CNNs) excel at capturing local structural patterns in molecular graphs and biological images, demonstrating utility in phenotypic drug discovery ref [24]. Recurrent Neural Networks (RNNs) and Long Short-Term Memory networks (LSTMs) process sequential molecular representations such as SMILES strings, enabling generative molecular design ref [32].",
+      "citation_markers": [
+        "ref [24]",
+        "ref [32]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Deep learning in image-based phenotypic drug discovery.",
+          "doi": "10.1016/j.tcb.2022.11.011",
+          "abstract": "Modern drug discovery approaches often use high-content imaging to systematically study the effect on cells of large libraries of chemical compounds. By automatically screening thousands or millions of images to identify specific drug-induced cellular phenotypes, for example, altered cellular morphology, these approaches can reveal 'hit' compounds offering therapeutic promise. In the past few years, artificial intelligence (AI) methods based on deep learning (DL) [a family of machine learning (ML) techniques] have disrupted virtually all image analysis tasks, from image classification to segmentation. These powerful methods also promise to impact drug discovery by accelerating the identification of effective drugs and their modes of action. In this review, we highlight applications and adaptations of ML, especially DL methods for cell-based phenotypic drug discovery (PDD).",
+          "cited_by_count": "88.0",
+          "cited_by_bin": "Q2",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "322.0",
+          "journal_h_bin": "Q1",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8979084491729736",
+          "composite_score": "0.6673492225771098",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Deep Learning for Drug Design: an Artificial Intelligence Paradigm for Drug Discovery in the Big Data Era",
+          "doi": "10.1208/s12248-018-0210-0",
+          "abstract": "Over the last decade, deep learning (DL) methods have been extremely successful and widely used to develop artificial intelligence (AI) in almost every domain, especially after it achieved its proud record on computational Go. Compared to traditional machine learning (ML) algorithms, DL methods still have a long way to go to achieve recognition in small molecular drug discovery and development. And there is still lots of work to do for the popularization and application of DL for research purpose, e.g., for small molecule drug research and development. In this review, we mainly discussed several most powerful and mainstream architectures, including the convolutional neural network (CNN), recurrent neural network (RNN), and deep auto-encoder networks (DAENs), for supervised learning and nonsupervised learning; summarized most of the representative applications in small molecule drug design; and briefly introduced how DL methods were used in those applications. The discussion for the pros and cons of DL methods as well as the main challenges we need to tackle were also emphasized.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.893862783908844",
+          "composite_score": "0.6457293950811389",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Generative machine learning frameworks have emerged as transformative tools for de novo molecular design, enabling the automated generation of novel drug-like molecules with desired properties ref [44]. Prominent architectures include Variational Autoencoders (VAEs), which encode molecular representations into continuous latent spaces to facilitate interpolation and optimization ref [32], and Generative Adversarial Networks (GANs), which employ adversarial training to produce chemically valid structures ref [9].",
+      "citation_markers": [
+        "ref [44]",
+        "ref [32]",
+        "ref [9]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Generative machine learning for de novo drug discovery: A systematic review",
+          "doi": "10.1016/j.compbiomed.2022.105403",
+          "abstract": "Recent research on artificial intelligence indicates that machine learning algorithms can auto-generate novel drug-like molecules. Generative models have revolutionized de novo drug discovery, rendering the explorative process more efficient. Several model frameworks and input formats have been proposed to enhance the performance of intelligent algorithms in generative molecular design. In this systematic literature review of experimental articles and reviews over the last five years, machine learning models, challenges associated with computational molecule design along with proposed solutions, and molecular encoding methods are discussed. A query-based search of the PubMed, ScienceDirect, Springer, Wiley Online Library, arXiv, MDPI, bioRxiv, and IEEE Xplore databases yielded 87 studies. Twelve additional studies were identified via citation searching. Of the articles in which machine learning was implemented, six prominent algorithms were identified: long short-term memory recurrent neural networks (LSTM-RNNs), variational autoencoders (VAEs), generative adversarial networks (GANs), adversarial autoencoders (AAEs), evolutionary algorithms, and gated recurrent unit (GRU-RNNs). Furthermore, eight central challenges were designated: homogeneity of generated molecular libraries, deficient synthesizability, limited assay data, model interpretability, incapacity for multi-property optimization, incomparability, restricted molecule size, and uncertainty in model evaluation. Molecules were encoded either as strings, which were occasionally augmented using randomization, as 2D graphs, or as 3D graphs. Statistical analysis and visualization are performed to illustrate how approaches to machine learning in de novo drug design have evolved over the past five years. Finally, future opportunities and reservations are discussed.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8999040722846985",
+          "composite_score": "0.6099178374505687",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Deep Learning for Drug Design: an Artificial Intelligence Paradigm for Drug Discovery in the Big Data Era",
+          "doi": "10.1208/s12248-018-0210-0",
+          "abstract": "Over the last decade, deep learning (DL) methods have been extremely successful and widely used to develop artificial intelligence (AI) in almost every domain, especially after it achieved its proud record on computational Go. Compared to traditional machine learning (ML) algorithms, DL methods still have a long way to go to achieve recognition in small molecular drug discovery and development. And there is still lots of work to do for the popularization and application of DL for research purpose, e.g., for small molecule drug research and development. In this review, we mainly discussed several most powerful and mainstream architectures, including the convolutional neural network (CNN), recurrent neural network (RNN), and deep auto-encoder networks (DAENs), for supervised learning and nonsupervised learning; summarized most of the representative applications in small molecule drug design; and briefly introduced how DL methods were used in those applications. The discussion for the pros and cons of DL methods as well as the main challenges we need to tackle were also emphasized.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.893862783908844",
+          "composite_score": "0.6457293950811389",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "The rise of deep learning in drug discovery.",
+          "doi": "10.1016/j.drudis.2018.01.039",
+          "abstract": "Over the past decade, deep learning has achieved remarkable success in various artificial intelligence research areas. Evolved from the previous research on artificial neural networks, this technology has shown superior performance to other machine learning algorithms in areas such as image and voice recognition, natural language processing, among others. The first wave of applications of deep learning in pharmaceutical research has emerged in recent years, and its utility has gone beyond bioactivity predictions and has shown promise in addressing diverse problems in drug discovery. Examples will be discussed covering bioactivity prediction, de novo molecular design, synthesis prediction and biological image analysis.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8821212649345398",
+          "composite_score": "0.7153307875753769",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "These repositories collectively enable the integration of chemical structure, biological activity, and clinical data ref [34]. However, data heterogeneity, inconsistent assay conditions, and variable annotation quality necessitate rigorous curation and standardization prior to ML model development ref [4].",
+      "citation_markers": [
+        "ref [34]",
+        "ref [4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Recent applications of deep learning and machine intelligence on in silico drug discovery: methods, tools and databases",
+          "doi": "10.1093/bib/bby061",
+          "abstract": "The identification of interactions between drugs/compounds and their targets is crucial for the development of new drugs. In vitro screening experiments (i.e. bioassays) are frequently used for this purpose; however, experimental approaches are insufficient to explore novel drug-target interactions, mainly because of feasibility problems, as they are labour intensive, costly and time consuming. A computational field known as 'virtual screening' (VS) has emerged in the past decades to aid experimental drug discovery studies by statistically estimating unknown bio-interactions between compounds and biological targets. These methods use the physico-chemical and structural properties of compounds and/or target proteins along with the experimentally verified bio-interaction information to generate predictive models. Lately, sophisticated machine learning techniques are applied in VS to elevate the predictive performance. The objective of this study is to examine and discuss the recent applications of machine learning techniques in VS, including deep learning, which became highly popular after giving rise to epochal developments in the fields of computer vision and natural language processing. The past 3 years have witnessed an unprecedented amount of research studies considering the application of deep learning in biomedicine, including computational drug discovery. In this review, we first describe the main instruments of VS methods, including compound and protein features (i.e. representations and descriptors), frequently used libraries and toolkits for VS, bioactivity databases and gold-standard data sets for system training and benchmarking. We subsequently review recent VS studies with a strong emphasis on deep learning applications. Finally, we discuss the present state of the field, including the current challenges and suggest future directions. We believe that this survey will provide insight to the researchers working in the field of computational drug discovery in terms of comprehending and developing novel bio-prediction methods.",
+          "cited_by_count": "546.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "210.0",
+          "journal_h_bin": "Q2",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.9080454111099243",
+          "composite_score": "0.6451529640139588",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "What are the current challenges for machine learning in drug discovery and repurposing?",
+          "doi": "10.1080/17460441.2022.2050694",
+          "abstract": "Machine learning (ML) approaches have been increasingly adopted for computer-assisted drug discovery in the recent years. This rapid progress is mostly due to the large-scale data sets available for ML model training, along with the development of deep learning (DL) and other artificial intelligence (AI) approaches that enable an integrated use of heterogeneous compound and target data, ranging from chemical structure to biochemical, in vitro, in vivo, and clinical endpoints for treatment response modeling. Exciting opportunities to apply ML and AI methods occur in all stages of drug discovery and development, including target identification and validation, prediction of molecular structure and function, and compound screening and optimization [1]. Based on high-quality training data, supervised learning and feature selection offers a systematic means for identification of predictive biomarkers for precision medicine; for instance, using clinical data, such predictive approaches may provide real-word evidence of treatment responses for designing marker-based trials and improving patient selection. In particular, cancer research and precision oncology has witnessed in the past few years an enormous progress in the application of ML to cancer detection and diagnosis, identification of new targets for anticancer drug discovery and repurposing, along with prediction of treatment outcomes for cancer patients [2]. However, as was recently demonstrated in the fast pace of development and application of ML models for COVID-19 detection and prognostication, the eventual health-care impact of the new models may remain rather limited unless more attention will be paid to the rigorous and often lengthy process of model validation and potential biases in the training data sets. Strikingly, a recent report showed that none of the ML models developed using chest radiographs and CT scans so far are of potential clinical use for COVID-19 management, mainly due to methodological flaws and high or unclear risk of bias in the imaging datasets used for model training [3]. Another important application of ML in the fight against COVID-19 is drug screening and repurposing. Since developing new drugs is costly and time-consuming, several efforts have been directed toward exploring existing drugs for COVID-19 treatment. However, after the first year of the COVID-19 pandemic, drug repurposing had not produced new treatment solutions [4]. This does not imply the failure of drug repurposing concept per se, rather that the development of clinic-ready treatments takes time, even with new and accelerated approaches. Indeed, increasing number repurposed drugs continue to be considered in clinical trials, along with several novel candidates. To address these challenges, a number of recent community efforts have set guidelines for improving the quality and applicability of ML models, for instance, their benchmarking in well-curated external validation data, against established standards and quality metrics, implemented as community-wide recommendations for reporting ML-based studies [5], along with standards and best practices for code publication and workflow automation [6]. It is evident that a broad adoption of these recommendations by the ML developers and life science journals will improve future assessment and reproducibility of ML-based studies. Equally important to making the codes and data available for others is that the ML models will also be implemented as easy-to-use web-applications to promote their wider use in the community, also among researchers without programming skills or bioinformatics support, while ensuring that the modeling standards are maintained. This is especially important for the complex DL algorithms, as the lack of user-friendly solutions may hinder their use in practice by the drug discovery and repurposing experts. Another timely issue for which there are some research solutions available but that are not yet made widely available in drug discovery pipelines is how to effectively integrate multi-modal and multi-scale data for guiding the drug discovery process and for predicting drug responses both in preclinical models and in patients. A wide range of learning approaches have been developed for systematic identification of drug repurposing leads based on select big data resources, such as drug structure and target profiles combined with multi-omics data from cell-based models [7], but what is currently lacking are web-based platforms that integrate all these data into an easy-to-access summary for the drug discovery",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8704881072044373",
+          "composite_score": "0.7842898361356362",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Data scarcity, class imbalance, and heterogeneity represent fundamental obstacles in ML-based drug discovery. Labeled bioactivity data are often sparse, as experimental acquisition is costly and time-consuming ref [3], while datasets frequently exhibit severe class imbalance, with active compounds constituting a small minority ref [27].",
+      "citation_markers": [
+        "ref [3]",
+        "ref [27]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Transfer Learning for Drug Discovery.",
+          "doi": "10.1021/acs.jmedchem.9b02147",
+          "abstract": "drug discovery efforts are often small. Indeed, the sparse availability of labeled data is a major barrier to artificial-intelligence-assisted drug discovery. One solution to this problem is to develop algorithms that can cope with relatively heterogeneous and scarce data. Transfer learning is a type of machine learning that can leverage existing, generalizable knowledge from other related tasks to enable learning of a separate task with a small set of data. Deep transfer learning is the most commonly used type of transfer learning in the field of drug discovery. This Perspective provides an overview of transfer learning and related applications to drug discovery to date. Furthermore, it provides outlooks on the future development of transfer learning for drug discovery.",
+          "cited_by_count": "369.0",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "369.0",
+          "journal_h_bin": "Q1",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8776010274887085",
+          "composite_score": "0.8110136071792369",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Machine learning and drug discovery for neglected tropical diseases",
+          "doi": "10.1186/s12859-022-05076-0",
+          "abstract": "Neglected tropical diseases affect millions of individuals and cause loss of productivity worldwide. They are common in developing countries without the financial resources for research and drug development. With increased availability of data from high throughput screening, machine learning has been introduced into the drug discovery process. Models can be trained to predict biological activities of compounds before working in the lab. In this study, we use three publicly available, high-throughput screening datasets to train machine learning models to predict biological activities related to inhibition of species that cause leishmaniasis, American trypanosomiasis (Chagas disease), and African trypanosomiasis (sleeping sickness). We compare machine learning models (tree based models, naive Bayes classifiers, and neural networks), featurizing methods (circular fingerprints, MACCS fingerprints, and RDKit descriptors), and techniques to deal with the imbalanced data (oversampling, undersampling, class weight/sample weight).",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8926313519477844",
+          "composite_score": "0.6530290791713513",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Random splitting of datasets into training and test folds leads to near-complete data memorization, producing highly over-optimistic results that fail to reflect real-world applicability ref [25]. Widely used benchmarks such as DUD-E harbor well-documented biases, where artificial enrichment of decoys introduces physicochemical artifacts that inflate model performance metrics ref [10].",
+      "citation_markers": [
+        "ref [25]",
+        "ref [10]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "How to approach machine learning-based prediction of drug/compound–target interactions",
+          "doi": "10.1186/s13321-023-00689-w",
+          "abstract": "The identification of drug/compound–target interactions (DTIs) constitutes the basis of drug discovery, for which computational predictive approaches have been developed. As a relatively new data-driven paradigm, proteochemometric (PCM) modeling utilizes both protein and compound properties as a pair at the input level and processes them via statistical/machine learning. The representation of input samples (i.e., proteins and their ligands) in the form of quantitative feature vectors is crucial for the extraction of interaction-related properties during the artificial learning and subsequent prediction of DTIs. Lately, the representation learning approach, in which input samples are automatically featurized via training and applying a machine/deep learning model, has been utilized in biomedical sciences. In this study, we performed a comprehensive investigation of different computational approaches/techniques for protein featurization (including both conventional approaches and the novel learned embeddings), data preparation and exploration, machine learning-based modeling, and performance evaluation with the aim of achieving better data representations and more successful learning in DTI prediction. For this, we first constructed realistic and challenging benchmark datasets on small, medium, and large scales to be used as reliable gold standards for specific DTI modeling tasks. We developed and applied a network analysis-based splitting strategy to divide datasets into structurally different training and test folds. Using these datasets together with various featurization methods, we trained and tested DTI prediction models and evaluated their performance from different angles. Our main findings can be summarized under 3 items: (i) random splitting of datasets into train and test folds leads to near-complete data memorization and produce highly over-optimistic results, as a result, should be avoided, (ii) learned protein sequence embeddings work well in DTI prediction and offer high potential, despite interaction-related properties (e.g., structures) of proteins are unused during their self-supervised model training, and (iii) during the learning process, PCM models tend to rely heavily on compound features while partially ignoring protein features, primarily due to the inherent bias in DTI data, indicating the requirement for new and unbiased datasets. We hope this study will aid researchers in designing robust and high-performing data-driven DTI prediction systems that have real-world translational value in drug discovery.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.89119952917099",
+          "composite_score": "0.66151664021758",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "MILCDock: Machine Learning Enhanced Consensus Docking for Virtual Screening in Drug Discovery",
+          "doi": "10.1021/acs.jcim.2c00705",
+          "abstract": "Molecular docking tools are regularly used to computationally identify new molecules in virtual screening for drug discovery. However, docking tools suffer from inaccurate scoring functions with widely varying performance on different proteins. To enable more accurate ranking of active over inactive ligands in virtual screening, we created a machine learning consensus docking tool, MILCDock, that uses predictions from five traditional molecular docking tools to predict the probability a ligand binds to a protein. MILCDock was trained and tested on data from both the DUD-E and LIT-PCBA docking datasets and shows improved performance over traditional molecular docking tools and other consensus docking methods on the DUD-E dataset. LIT-PCBA targets proved to be difficult for all methods tested. We also find that DUD-E data, although biased, can be effective in training machine learning tools if care is taken to avoid DUD-E's biases during training.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8828339576721191",
+          "composite_score": "0.7111060865750541",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Community-wide efforts have established guidelines for improving model quality, including benchmarking against well-curated external validation datasets, standardized reporting metrics, and best practices for code publication and workflow automation ref [4].",
+      "citation_markers": [
+        "ref [4]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "What are the current challenges for machine learning in drug discovery and repurposing?",
+          "doi": "10.1080/17460441.2022.2050694",
+          "abstract": "Machine learning (ML) approaches have been increasingly adopted for computer-assisted drug discovery in the recent years. This rapid progress is mostly due to the large-scale data sets available for ML model training, along with the development of deep learning (DL) and other artificial intelligence (AI) approaches that enable an integrated use of heterogeneous compound and target data, ranging from chemical structure to biochemical, in vitro, in vivo, and clinical endpoints for treatment response modeling. Exciting opportunities to apply ML and AI methods occur in all stages of drug discovery and development, including target identification and validation, prediction of molecular structure and function, and compound screening and optimization [1]. Based on high-quality training data, supervised learning and feature selection offers a systematic means for identification of predictive biomarkers for precision medicine; for instance, using clinical data, such predictive approaches may provide real-word evidence of treatment responses for designing marker-based trials and improving patient selection. In particular, cancer research and precision oncology has witnessed in the past few years an enormous progress in the application of ML to cancer detection and diagnosis, identification of new targets for anticancer drug discovery and repurposing, along with prediction of treatment outcomes for cancer patients [2]. However, as was recently demonstrated in the fast pace of development and application of ML models for COVID-19 detection and prognostication, the eventual health-care impact of the new models may remain rather limited unless more attention will be paid to the rigorous and often lengthy process of model validation and potential biases in the training data sets. Strikingly, a recent report showed that none of the ML models developed using chest radiographs and CT scans so far are of potential clinical use for COVID-19 management, mainly due to methodological flaws and high or unclear risk of bias in the imaging datasets used for model training [3]. Another important application of ML in the fight against COVID-19 is drug screening and repurposing. Since developing new drugs is costly and time-consuming, several efforts have been directed toward exploring existing drugs for COVID-19 treatment. However, after the first year of the COVID-19 pandemic, drug repurposing had not produced new treatment solutions [4]. This does not imply the failure of drug repurposing concept per se, rather that the development of clinic-ready treatments takes time, even with new and accelerated approaches. Indeed, increasing number repurposed drugs continue to be considered in clinical trials, along with several novel candidates. To address these challenges, a number of recent community efforts have set guidelines for improving the quality and applicability of ML models, for instance, their benchmarking in well-curated external validation data, against established standards and quality metrics, implemented as community-wide recommendations for reporting ML-based studies [5], along with standards and best practices for code publication and workflow automation [6]. It is evident that a broad adoption of these recommendations by the ML developers and life science journals will improve future assessment and reproducibility of ML-based studies. Equally important to making the codes and data available for others is that the ML models will also be implemented as easy-to-use web-applications to promote their wider use in the community, also among researchers without programming skills or bioinformatics support, while ensuring that the modeling standards are maintained. This is especially important for the complex DL algorithms, as the lack of user-friendly solutions may hinder their use in practice by the drug discovery and repurposing experts. Another timely issue for which there are some research solutions available but that are not yet made widely available in drug discovery pipelines is how to effectively integrate multi-modal and multi-scale data for guiding the drug discovery process and for predicting drug responses both in preclinical models and in patients. A wide range of learning approaches have been developed for systematic identification of drug repurposing leads based on select big data resources, such as drug structure and target profiles combined with multi-omics data from cell-based models [7], but what is currently lacking are web-based platforms that integrate all these data into an easy-to-access summary for the drug discovery",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q2",
+          "avg_cos_sim_to_others": "0.8704881072044373",
+          "composite_score": "0.7842898361356362",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Quantum machine learning (QML) offers the potential to dramatically reduce computational costs and timelines in preclinical development by leveraging quantum supremacy for complex molecular simulations ref [55], though significant practical challenges remain ref [60].",
+      "citation_markers": [
+        "ref [55]",
+        "ref [60]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "The New Answer to Drug Discovery: Quantum Machine Learning in Preclinical Drug Development",
+          "doi": "10.1109/PRML59573.2023.10348356",
+          "abstract": "The Research & Development (R&D) phase of drug development Drug discovery and development (D&D) is a complex and costly endeavor, typically requiring six to nine years [1] and four hundred to fourteen hundred million USD [2] for the research and development (R&D) phase alone. To transform this process, we propose a novel concept that combines Quantum-based Machine Learning network (QML) and Quantum Computing Simulation (QS) to expedite the R&D phase to three to six months and reduce the cost to merely fifty to eighty thousand USD. Our approach takes as inputs the target protein/gene structure and the primary assay [3]. For Hit Generation [3], the QML network generates potential hits [4] based on the molecular structure of the target protein, while the QS filters molecules from the primary assay according to their reaction and binding efficacy with the target protein. Then, for Lead Optimization [3], the resulting molecules from QML and QS are compared, and the ones that are common to both processes are subjected to dozens of molecular variations, while others are only modified slightly. Finally, all optimized molecules undergo multiple rounds of QS filtering with high standards for reaction efficacy and safety, producing a few dozen pre-clinical-trial-ready drugs. Our concept of QML and QS integration can also be applied to other fields, such as agricultural research, genetic editing, and aerospace engineering. Keywords: Quantum Computer, Hit to Lead, Lead Optimization Simulation, Machine Learning.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q4",
+          "avg_cos_sim_to_others": "0.8674890398979187",
+          "composite_score": "0.5751076014420538",
+          "tag": "selected",
+          "source_accessible": true
+        },
+        {
+          "title": "Quantum Machine Learning in Drug Discovery: Current State and Challenges",
+          "doi": "10.1145/3575879.3576024",
+          "abstract": "The drug discovery process is a time-consuming and quite expensive process. The predictive models of machine learning algorithms have been used efficiently for years in various stages of the drug discovery pipeline. The complexity of these algorithms increases as the size of the molecule increases, adding a single atom to a molecule increases the number of possible combinations. Quantum computers with quantum supremacy can play an important role in complex calculations. Combining the two technologies in practice is a complex endeavor that requires diverse, interdisciplinary teams of scientists working together to be able to integrate the two technologies with the goal of reducing cost and time in drug discovery.",
+          "cited_by_count": "",
+          "cited_by_bin": "",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q4",
+          "avg_cos_sim_to_others": "0.8703522682189941",
+          "composite_score": "0.5581349526210695",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

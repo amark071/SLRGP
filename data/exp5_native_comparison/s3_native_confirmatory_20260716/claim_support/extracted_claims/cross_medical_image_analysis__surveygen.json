@@ -1,0 +1,123 @@
+{
+  "topic_id": "cross_medical_image_analysis",
+  "system": "surveygen",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Medical imaging is indispensable in modern clinical workflows, enabling non-invasive diagnosis, prognosis, and treatment planning across diverse specialties [ref 51].",
+      "citation_markers": [
+        "[ref 51]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The exponential growth of imaging data has created an urgent demand for automated analysis tools, as manual interpretation is time-consuming and subject to inter-observer variability [ref 17].",
+      "citation_markers": [
+        "[ref 17]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The advent of deep learning, particularly convolutional neural networks, fundamentally transformed this paradigm by enabling hierarchical, data-driven feature extraction directly from raw images ref [30].",
+      "citation_markers": [
+        "ref [30]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "This transition was further accelerated by increased computational power and large annotated datasets, establishing deep learning as the dominant methodology in contemporary medical image analysis ref [7].",
+      "citation_markers": [
+        "ref [7]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "High dimensionality of volumetric data imposes substantial computational demands ref [32]. Distribution shifts across scanners and institutions hinder generalizability ref [53].",
+      "citation_markers": [
+        "ref [32]",
+        "ref [53]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "The U-Net architecture, characterized by its symmetric encoder-decoder structure with skip connections, has become the dominant framework for medical image segmentation ref [22].",
+      "citation_markers": [
+        "ref [22]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Vision Transformers (ViT) address the locality limitations of CNNs by modeling long-range dependencies through self-attention mechanisms, proving advantageous for capturing global context in medical images ref [1].",
+      "citation_markers": [
+        "ref [1]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Generative Adversarial Networks (GANs) have emerged as powerful tools in medical image analysis, enabling realistic image synthesis, data augmentation, and cross-modality translation to address data scarcity ref [31].",
+      "citation_markers": [
+        "ref [31]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Deep learning has substantially advanced medical image enhancement and reconstruction, addressing limitations inherent to acquisition hardware. Convolutional networks enable end-to-end perceptual enhancement encompassing contrast correction, luminance adjustment, denoising, and artifact removal, demonstrating improvements of 5–7 dB in PSNR over conventional methods ref [34].",
+      "citation_markers": [
+        "ref [34]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "A comprehensive review by ref [45] categorizes deep learning-based deformable registration methods into deep iterative, supervised, unsupervised, and weakly supervised approaches, demonstrating significant performance improvements over classical optimization methods.",
+      "citation_markers": [
+        "ref [45]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Medical imaging presents multiple uncertainty sources, including aleatoric uncertainty from measurement noise and epistemic uncertainty from limited training data ref [50]. Methods include Bayesian approaches, Monte Carlo dropout, and ensemble-based uncertainty estimation ref [50].",
+      "citation_markers": [
+        "ref [50]",
+        "ref [50]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "Clinical validation must demonstrate not only technical accuracy but also real-world utility, safety, and generalizability across diverse patient populations and institutional settings ref [18]. Human-AI collaboration frameworks are essential, wherein models augment rather than replace clinical judgment ref [59].",
+      "citation_markers": [
+        "ref [18]",
+        "ref [59]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9170,
+    "completion_tokens": 842,
+    "total_tokens": 10012
+  }
+}

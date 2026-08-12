@@ -1,0 +1,58 @@
+diff --git a/src/database.py b/src/database.py
+index 6993af7..66cb4f8 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -14,8 +14,10 @@ class database():
+     def __init__(self, db_path, embedding_model) -> None:
+         
+         self.embedding_model = SentenceTransformer(embedding_model, trust_remote_code=True)
+-
+-        self.embedding_model.to(torch.device('cuda'))
++        requested_device = os.environ.get("S3_EMBEDDING_DEVICE", "")
++        device = requested_device or ("cuda" if torch.cuda.is_available() else "cpu")
++        self.embedding_model.to(torch.device(device))
++        self.publication_cutoff = os.environ.get("S3_PUBLICATION_CUTOFF", "")
+ 
+         self.db = TinyDB(f'{db_path}/arxiv_paper_db.json')
+         self.table = self.db.table('cs_paper_info')
+@@ -35,5 +37,16 @@ class database():
+         index_to_id = {int(index): id for id, index in id_to_index.items()}
+         return id_to_index, index_to_id
++
++    def filter_publication_cutoff(self, ids, limit):
++        if not self.publication_cutoff:
++            return ids[:limit]
++        rows = self.table.search(self.User.id.one_of(ids))
++        dates = {row.get('id'): str(row.get('date') or '') for row in rows}
++        return [
++            paper_id
++            for paper_id in ids
++            if dates.get(paper_id) and dates[paper_id] <= self.publication_cutoff
++        ][:limit]
+     
+     def get_embeddings(self, batch_text):
+         batch_text = ['search_query: ' + _ for _ in batch_text]
+@@ -68,7 +81,8 @@ class database():
+ 
+     def get_ids_from_query(self, query, num,  shuffle = False):
+         q = self.get_embeddings([query])[0]
+-        return self.search(q, top_k=num)
++        ids = self.search(q, top_k=max(num * 3, num))
++        return self.filter_publication_cutoff(ids, num)
+     
+     def get_titles_from_citations(self, citations):
+         q = self.get_embeddings_documents(citations)
+@@ -77,9 +91,11 @@ class database():
+         return [_[0] for _ in ids]
+ 
+     def get_ids_from_queries(self, queries, num,  shuffle = False):
+         q = self.get_embeddings(queries)
+-        ids = self.batch_search(q,num)
+-        return ids
++        batches = self.batch_search(q, max(num * 3, num))
++        return [
++            self.filter_publication_cutoff(ids, num) for ids in batches
++        ]
+     
+     def get_date_from_ids(self, ids):
+         result = self.table.search(self.User.id.one_of(ids))

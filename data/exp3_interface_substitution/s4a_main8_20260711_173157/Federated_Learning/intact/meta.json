@@ -1,0 +1,111 @@
+{
+  "topic": "Federated Learning",
+  "arm": "intact",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 22:02:44",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "federated learning",
+    "distributed machine learning",
+    "collaborative learning",
+    "privacy-preserving machine learning",
+    "decentralized learning",
+    "model aggregation",
+    "federated optimization",
+    "differential privacy",
+    "secure aggregation",
+    "non-IID data",
+    "communication efficiency",
+    "split learning"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "theme",
+  "groups": [
+    {
+      "name": "Surveys and Overviews of Federated Learning",
+      "n": 4
+    },
+    {
+      "name": "Differential Privacy in Federated Learning",
+      "n": 3
+    },
+    {
+      "name": "Secure Aggregation Protocols",
+      "n": 3
+    },
+    {
+      "name": "Decentralized and Peer-to-Peer Federated Learning",
+      "n": 2
+    },
+    {
+      "name": "Optimization and Training Frameworks for Federated Learning",
+      "n": 3
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_2003.13761",
+    "arxiv_2101.12240",
+    "arxiv_2102.04737",
+    "arxiv_2104.14362",
+    "arxiv_2106.06843",
+    "arxiv_2202.05318",
+    "arxiv_2203.03106",
+    "arxiv_2208.01200",
+    "arxiv_2301.01299",
+    "arxiv_2302.11152",
+    "arxiv_2304.05127",
+    "arxiv_2408.08642",
+    "arxiv_2409.13133"
+  ],
+  "n_refs": 13,
+  "word_count": 1234,
+  "written_citation_ids": [
+    "arxiv_2104.14362",
+    "arxiv_2301.01299",
+    "arxiv_2106.06843",
+    "arxiv_2208.01200",
+    "arxiv_2003.13761",
+    "arxiv_2203.03106",
+    "arxiv_2304.05127",
+    "arxiv_2408.08642",
+    "arxiv_2202.05318",
+    "arxiv_2101.12240",
+    "arxiv_2102.04737",
+    "arxiv_2302.11152",
+    "arxiv_2409.13133"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2003.13761",
+    "arxiv_2101.12240",
+    "arxiv_2102.04737",
+    "arxiv_2104.14362",
+    "arxiv_2106.06843",
+    "arxiv_2202.05318",
+    "arxiv_2203.03106",
+    "arxiv_2208.01200",
+    "arxiv_2301.01299",
+    "arxiv_2302.11152",
+    "arxiv_2304.05127",
+    "arxiv_2408.08642",
+    "arxiv_2409.13133"
+  ],
+  "elapsed_sec": 116.9,
+  "llm_usage_delta": {
+    "n_calls": 16,
+    "prompt_tokens": 11579,
+    "completion_tokens": 3141
+  },
+  "llm_usage_so_far": {
+    "n_calls": 174,
+    "prompt_tokens": 148564,
+    "completion_tokens": 41839
+  }
+}

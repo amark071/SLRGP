@@ -1,0 +1,645 @@
+[2026-07-16T09:25:46Z] command=<package-root>/work/s3_native/envs/surveygen/bin/python <package-root>/code/experiments/exp5_native_comparison/surveygen_native_driver.py --source-dir <package-root>/work/s3_native/baselines/surveygen --output-dir <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw --topic Deep Learning for Medical Image Analysis --publication-cutoff 2023-12-31 --max-references 60 --max-candidates 120 --target-words 4000 --model s3-common-backbone --api-base-url http://127.0.0.1:18080/v1 --bge-model <package-root>/work/s3_native/assets/surveygen/models/bge-large-en
+
+📘 Processing article 1 of 1...
+🔍 Searching: Deep Learning for Medical Image Analysis | Offset: 0 | Year ≤ 2023
+⏳ Hit rate limit (429). Waiting before retrying...
+🔍 Searching: Deep Learning for Medical Image Analysis | Offset: 0 | Year ≤ 2023
+⏳ Hit rate limit (429). Waiting before retrying...
+🔍 Searching: Deep Learning for Medical Image Analysis | Offset: 0 | Year ≤ 2023
+⏳ Hit rate limit (429). Waiting before retrying...
+🔍 Searching: Deep Learning for Medical Image Analysis | Offset: 0 | Year ≤ 2023
+⏳ Hit rate limit (429). Waiting before retrying...
+🔍 Searching: Deep Learning for Medical Image Analysis | Offset: 0 | Year ≤ 2023
+⏳ Hit rate limit (429). Waiting before retrying...
+🔍 Searching: Deep Learning for Medical Image Analysis | Offset: 0 | Year ≤ 2023
+⏳ Hit rate limit (429). Waiting before retrying...
+🔍 Searching: Deep Learning for Medical Image Analysis | Offset: 0 | Year ≤ 2023
+✅ Added 72 valid papers (total: 72)
+🔍 Searching: Deep Learning for Medical Image Analysis | Offset: 100 | Year ≤ 2023
+✅ Added 48 valid papers (total: 120)
+📁 Saved to: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/Deep Learning for Medical Image Analysis.json
+
+✅ All done. Results saved in '<package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw' folder.
+error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Processed 10 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.1093/noajnl/vdaa092%7Chttps://doi.org/10.1109/globecom38437.2019.9014259%7Chttps://doi.org/10.3390/diagnostics13091532%7Chttps://doi.org/10.7599/hmr.2017.37.2.61%7Chttps://doi.org/10.1016/j.compbiomed.2022.106496%7Chttps://doi.org/10.48550/arxiv.2210.03736%7Chttps://doi.org/10.1016/j.media.2022.102470%7Chttps://doi.org/10.1146/annurev-bioeng-071516-044442%7Chttps://doi.org/10.3389/fpubh.2023.1273253%7Chttps://doi.org/10.1007/s11042-022-14305-w (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107b9bc20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 20 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.1016/j.media.2022.102444%7Chttps://doi.org/10.53941/ijndi0201006%7Chttps://doi.org/10.1016/j.media.2020.101759%7Chttps://doi.org/10.1109/tts.2023.3234203%7Chttps://doi.org/10.1016/j.job.2022.03.003%7Chttps://doi.org/10.1109/icmla.2018.00078%7Chttps://doi.org/10.1007/978-3-031-16443-9_49%7Chttps://doi.org/10.1109/access.2021.3068392%7Chttps://doi.org/10.1016/j.patcog.2020.107332%7Chttps://doi.org/10.1016/j.media.2024.103201 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107be4b00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 30 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.1146/annurev-bioeng-110220-012203%7Chttps://doi.org/10.3390/jimaging9070147%7Chttps://doi.org/10.3390/jimaging6060052%7Chttps://doi.org/10.1007/s11042-021-10707-4%7Chttps://doi.org/10.1007/s41870-021-00850-4%7Chttps://doi.org/10.34133/2021/8786793%7Chttps://doi.org/10.3390/app12020681%7Chttps://doi.org/10.48550/arxiv.2303.03242%7Chttps://doi.org/10.1007/978-3-319-67558-9%7Chttps://doi.org/10.1007/s13735-021-00218-1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107be52b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 40 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.1016/j.clinimag.2022.11.003%7Chttps://doi.org/10.1038/s41746-024-01276-5%7Chttps://doi.org/10.1186/s40537-019-0197-0%7Chttps://doi.org/10.3390/math11204272%7Chttps://doi.org/10.1109/isbi.2019.8759553%7Chttps://doi.org/10.3390/electronics10172132%7Chttps://doi.org/10.1016/j.jormas.2019.06.002%7Chttps://doi.org/10.1109/gcat59970.2023.10353430%7Chttps://doi.org/10.1007/978-3-031-25066-8_9%7Chttps://doi.org/10.1155/2021/6215281 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107be5a60>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 50 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.1016/j.ejrad.2021.110069%7Chttps://doi.org/10.3390/jimaging8060155%7Chttps://doi.org/10.1016/j.media.2019.101539%7Chttps://doi.org/10.1109/iccmc51019.2021.9418385%7Chttps://doi.org/10.1016/j.compbiomed.2022.106487%7Chttps://doi.org/10.1016/j.media.2023.102879%7Chttps://doi.org/10.3390/jimaging7040074%7Chttps://doi.org/10.1016/j.cmpb.2020.105796%7Chttps://doi.org/10.1038/s41598-020-69920-0%7Chttps://doi.org/10.1109/mlsp52302.2021.9596501 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107be61e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 60 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.1109/pdgc.2018.8745790%7Chttps://doi.org/10.1109/icict48043.2020.9112469%7Chttps://doi.org/10.1136/bmjopen-2020-047549%7Chttps://doi.org/10.3390/books978-3-0365-1470-3%7Chttps://doi.org/10.1016/j.compbiomed.2021.105111%7Chttps://doi.org/10.1038/s41746-023-00811-0%7Chttps://doi.org/10.48550/arxiv.2305.00678%7Chttps://doi.org/10.1007/s11517-022-02746-2%7Chttps://doi.org/10.1166/jmihi.2020.2892%7Chttps://doi.org/10.1109/tuffc.2020.3026598 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107b9ba40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 70 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.1109/tpami.2021.3059968%7Chttps://doi.org/10.1109/pdgc.2018.8745750%7Chttps://doi.org/10.1098/rsfs.2019.0122%7Chttps://doi.org/10.1109/cvpr52688.2022.02016%7Chttps://doi.org/10.1109/ojemb.2023.3305190%7Chttps://doi.org/10.1109/jproc.2024.3507831%7Chttps://doi.org/10.1016/j.cmpb.2023.107677%7Chttps://doi.org/10.1145/3702638%7Chttps://doi.org/10.1109/jbhi.2022.3168604%7Chttps://doi.org/10.1016/j.artmed.2022.102331 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107be5c70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 80 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.1109/jbhi.2022.3215147%7Chttps://doi.org/10.3745/jips.04.0029%7Chttps://doi.org/10.1007/s12559-024-10257-5%7Chttps://doi.org/10.1109/tnnls.2021.3062754%7Chttps://doi.org/10.1109/tbme.2021.3117407%7Chttps://doi.org/10.62051/ijcsit.v1n1.10%7Chttps://doi.org/10.4018/978-1-7998-5071-7.ch002%7Chttps://doi.org/10.1002/widm.1495%7Chttps://doi.org/10.1007/s42979-022-01166-1%7Chttps://doi.org/10.1111/coin.12411 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107be51f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 90 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.48550/arxiv.2208.03808%7Chttps://doi.org/10.3390/electronics12214411%7Chttps://doi.org/10.1186/s12880-020-00543-7%7Chttps://doi.org/10.1109/trpms.2023.3265863%7Chttps://doi.org/10.1016/j.neucom.2020.04.157%7Chttps://doi.org/10.1016/j.media.2025.103730%7Chttps://doi.org/10.1142/s0219467825500044%7Chttps://doi.org/10.1007/s11517-022-02758-y%7Chttps://doi.org/10.3390/electronics13010047%7Chttps://doi.org/10.1007/s10462-023-10588-z (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107be4680>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 100 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.1016/j.media.2023.102868%7Chttps://doi.org/10.1016/j.compbiomed.2023.107096%7Chttps://doi.org/10.3390/electronics12061380%7Chttps://doi.org/10.1109/access.2022.3182399%7Chttps://doi.org/10.1016/j.media.2021.102136%7Chttps://doi.org/10.1109/tii.2022.3168887%7Chttps://doi.org/10.48550/arxiv.2204.02450%7Chttps://doi.org/10.29304/jqcm.2023.15.1.1139%7Chttps://doi.org/10.1016/j.media.2022.102629%7Chttps://doi.org/10.1109/icaiihi57871.2023.10489205 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107be6c90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 110 papers
+error: HTTPConnectionPool(host='127.0.0.1', port=18082): Max retries exceeded with url: /works?filter=doi:https://doi.org/10.1109/icaiihi57871.2023.10488962%7Chttps://doi.org/10.1109/tmi.2022.3213983%7Chttps://doi.org/10.3389/fonc.2022.1047215%7Chttps://doi.org/10.1016/j.media.2022.102551%7Chttps://doi.org/10.1109/i2ct57861.2023.10126500%7Chttps://doi.org/10.1109/access.2019.2929365%7Chttps://doi.org/10.3390/bdcc6040117%7Chttps://doi.org/10.1155/2022/9580991%7Chttps://doi.org/10.1109/metroxraine58569.2023.10405797%7Chttps://doi.org/10.3390/diagnostics12040807 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd107be7620>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Processed 120 papers
+Top 50 most co-occurring references: 0
+Processing completed! Processed 120 papers + 0 co-cited papers, results saved to <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/final_ref_set.json
+loading BGE-Large ...
+Starting GPT relevance scoring (only for 120 papers with abstracts)...
+[1/120] Exception on attempt 1: Connection error.
+[1/120] Exception on attempt 2: Connection error.
+[1/120] Exception on attempt 3: Connection error.
+[1/120] Exception on attempt 4: Connection error.
+[1/120] Exception on attempt 5: Connection error.
+[1/120] ❌ Exceeded maximum retries (5), returning None
+[1/120] Score=None | Attempts=5 | This round:1030.3s | Avg:1030.3s/paper | Est. remaining:2043.5min
+[2/120] Exception on attempt 1: Connection error.
+[2/120] Exception on attempt 2: Connection error.
+[2/120] Exception on attempt 3: Connection error.
+[2/120] Exception on attempt 4: Connection error.
+[2/120] Exception on attempt 5: Connection error.
+[2/120] ❌ Exceeded maximum retries (5), returning None
+[2/120] Score=None | Attempts=5 | This round:22.3s | Avg:526.3s/paper | Est. remaining:1035.1min
+[3/120] Exception on attempt 1: Connection error.
+[3/120] Exception on attempt 2: Connection error.
+[3/120] Exception on attempt 3: Connection error.
+[3/120] Exception on attempt 4: Connection error.
+[3/120] Exception on attempt 5: Connection error.
+[3/120] ❌ Exceeded maximum retries (5), returning None
+[3/120] Score=None | Attempts=5 | This round:22.2s | Avg:358.3s/paper | Est. remaining:698.7min
+[4/120] Exception on attempt 1: Connection error.
+[4/120] Exception on attempt 2: Connection error.
+[4/120] Exception on attempt 3: Connection error.
+[4/120] Exception on attempt 4: Connection error.
+[4/120] Exception on attempt 5: Connection error.
+[4/120] ❌ Exceeded maximum retries (5), returning None
+[4/120] Score=None | Attempts=5 | This round:22.6s | Avg:274.4s/paper | Est. remaining:530.5min
+[5/120] Exception on attempt 1: Connection error.
+[5/120] Exception on attempt 2: Connection error.
+[5/120] Exception on attempt 3: Connection error.
+[5/120] Exception on attempt 4: Connection error.
+[5/120] Exception on attempt 5: Connection error.
+[5/120] ❌ Exceeded maximum retries (5), returning None
+[5/120] Score=None | Attempts=5 | This round:22.3s | Avg:224.0s/paper | Est. remaining:429.2min
+[6/120] Exception on attempt 1: Connection error.
+[6/120] Exception on attempt 2: Connection error.
+[6/120] Exception on attempt 3: Connection error.
+[6/120] Exception on attempt 4: Connection error.
+[6/120] Exception on attempt 5: Connection error.
+[6/120] ❌ Exceeded maximum retries (5), returning None
+[6/120] Score=None | Attempts=5 | This round:22.2s | Avg:190.3s/paper | Est. remaining:361.6min
+[7/120] Exception on attempt 1: Connection error.
+[7/120] Exception on attempt 2: Connection error.
+[7/120] Exception on attempt 3: Connection error.
+[7/120] Exception on attempt 4: Connection error.
+[7/120] Exception on attempt 5: Connection error.
+[7/120] ❌ Exceeded maximum retries (5), returning None
+[7/120] Score=None | Attempts=5 | This round:22.2s | Avg:166.3s/paper | Est. remaining:313.2min
+[8/120] Exception on attempt 1: Connection error.
+[8/120] Exception on attempt 2: Connection error.
+[8/120] Response on attempt 3 -> '4', parsed=4
+[8/120] Score=4 | Attempts=3 | This round:16.3s | Avg:147.6s/paper | Est. remaining:275.5min
+[9/120] Response on attempt 1 -> '4', parsed=4
+[9/120] Score=4 | Attempts=1 | This round:4.4s | Avg:131.7s/paper | Est. remaining:243.6min
+[10/120] Response on attempt 1 -> '5', parsed=5
+[10/120] Score=5 | Attempts=1 | This round:4.5s | Avg:118.9s/paper | Est. remaining:218.1min
+[11/120] Response on attempt 1 -> '5', parsed=5
+[11/120] Score=5 | Attempts=1 | This round:4.0s | Avg:108.5s/paper | Est. remaining:197.1min
+[12/120] Response on attempt 1 -> '4', parsed=4
+[12/120] Score=4 | Attempts=1 | This round:4.3s | Avg:99.8s/paper | Est. remaining:179.7min
+[13/120] Response on attempt 1 -> '4', parsed=4
+[13/120] Score=4 | Attempts=1 | This round:4.8s | Avg:92.5s/paper | Est. remaining:165.0min
+[14/120] Response on attempt 1 -> '5', parsed=5
+[14/120] Score=5 | Attempts=1 | This round:4.0s | Avg:86.2s/paper | Est. remaining:152.3min
+[15/120] Response on attempt 1 -> '5', parsed=5
+[15/120] Score=5 | Attempts=1 | This round:4.0s | Avg:80.7s/paper | Est. remaining:141.2min
+[16/120] Response on attempt 1 -> '5', parsed=5
+[16/120] Score=5 | Attempts=1 | This round:4.0s | Avg:75.9s/paper | Est. remaining:131.6min
+[17/120] Response on attempt 1 -> '5', parsed=5
+[17/120] Score=5 | Attempts=1 | This round:4.2s | Avg:71.7s/paper | Est. remaining:123.1min
+[18/120] Response on attempt 1 -> '5', parsed=5
+[18/120] Score=5 | Attempts=1 | This round:4.0s | Avg:67.9s/paper | Est. remaining:115.5min
+[19/120] Response on attempt 1 -> '5', parsed=5
+[19/120] Score=5 | Attempts=1 | This round:6.6s | Avg:64.7s/paper | Est. remaining:108.9min
+[20/120] Response on attempt 1 -> '5', parsed=5
+[20/120] Score=5 | Attempts=1 | This round:6.9s | Avg:61.8s/paper | Est. remaining:103.0min
+[21/120] Response on attempt 1 -> '5', parsed=5
+[21/120] Score=5 | Attempts=1 | This round:4.2s | Avg:59.1s/paper | Est. remaining:97.5min
+[22/120] Response on attempt 1 -> '5', parsed=5
+[22/120] Score=5 | Attempts=1 | This round:4.0s | Avg:56.6s/paper | Est. remaining:92.4min
+[23/120] Response on attempt 1 -> '5', parsed=5
+[23/120] Score=5 | Attempts=1 | This round:5.6s | Avg:54.4s/paper | Est. remaining:87.9min
+[24/120] Response on attempt 1 -> '4', parsed=4
+[24/120] Score=4 | Attempts=1 | This round:6.8s | Avg:52.4s/paper | Est. remaining:83.8min
+[25/120] Response on attempt 1 -> '5', parsed=5
+[25/120] Score=5 | Attempts=1 | This round:4.4s | Avg:50.5s/paper | Est. remaining:79.9min
+[26/120] Response on attempt 1 -> '5', parsed=5
+[26/120] Score=5 | Attempts=1 | This round:4.7s | Avg:48.7s/paper | Est. remaining:76.3min
+[27/120] Response on attempt 1 -> '3', parsed=3
+[27/120] Score=3 | Attempts=1 | This round:4.1s | Avg:47.0s/paper | Est. remaining:72.9min
+[28/120] Response on attempt 1 -> '4', parsed=4
+[28/120] Score=4 | Attempts=1 | This round:4.7s | Avg:45.5s/paper | Est. remaining:69.8min
+[29/120] Response on attempt 1 -> '4', parsed=4
+[29/120] Score=4 | Attempts=1 | This round:5.0s | Avg:44.1s/paper | Est. remaining:66.9min
+[30/120] Response on attempt 1 -> '5', parsed=5
+[30/120] Score=5 | Attempts=1 | This round:5.3s | Avg:42.8s/paper | Est. remaining:64.3min
+[31/120] Response on attempt 1 -> '5', parsed=5
+[31/120] Score=5 | Attempts=1 | This round:4.2s | Avg:41.6s/paper | Est. remaining:61.7min
+[32/120] Response on attempt 1 -> '5', parsed=5
+[32/120] Score=5 | Attempts=1 | This round:5.3s | Avg:40.5s/paper | Est. remaining:59.3min
+[33/120] Response on attempt 1 -> '5', parsed=5
+[33/120] Score=5 | Attempts=1 | This round:4.4s | Avg:39.4s/paper | Est. remaining:57.1min
+[34/120] Response on attempt 1 -> '5', parsed=5
+[34/120] Score=5 | Attempts=1 | This round:4.8s | Avg:38.3s/paper | Est. remaining:55.0min
+[35/120] Response on attempt 1 -> '5', parsed=5
+[35/120] Score=5 | Attempts=1 | This round:6.2s | Avg:37.4s/paper | Est. remaining:53.0min
+[36/120] Response on attempt 1 -> '5', parsed=5
+[36/120] Score=5 | Attempts=1 | This round:4.1s | Avg:36.5s/paper | Est. remaining:51.1min
+[37/120] Response on attempt 1 -> '4', parsed=4
+[37/120] Score=4 | Attempts=1 | This round:4.9s | Avg:35.7s/paper | Est. remaining:49.3min
+[38/120] Response on attempt 1 -> '4', parsed=4
+[38/120] Score=4 | Attempts=1 | This round:5.6s | Avg:34.9s/paper | Est. remaining:47.6min
+[39/120] Response on attempt 1 -> '4', parsed=4
+[39/120] Score=4 | Attempts=1 | This round:4.1s | Avg:34.1s/paper | Est. remaining:46.0min
+[40/120] Response on attempt 1 -> '5', parsed=5
+[40/120] Score=5 | Attempts=1 | This round:4.0s | Avg:33.3s/paper | Est. remaining:44.4min
+[41/120] Response on attempt 1 -> '5', parsed=5
+[41/120] Score=5 | Attempts=1 | This round:4.6s | Avg:32.6s/paper | Est. remaining:43.0min
+[42/120] Response on attempt 1 -> '4', parsed=4
+[42/120] Score=4 | Attempts=1 | This round:4.8s | Avg:32.0s/paper | Est. remaining:41.5min
+[43/120] Response on attempt 1 -> '3', parsed=3
+[43/120] Score=3 | Attempts=1 | This round:4.7s | Avg:31.3s/paper | Est. remaining:40.2min
+[44/120] Response on attempt 1 -> '4', parsed=4
+[44/120] Score=4 | Attempts=1 | This round:5.7s | Avg:30.7s/paper | Est. remaining:38.9min
+[45/120] Response on attempt 1 -> '5', parsed=5
+[45/120] Score=5 | Attempts=1 | This round:5.1s | Avg:30.2s/paper | Est. remaining:37.7min
+[46/120] Response on attempt 1 -> '4', parsed=4
+[46/120] Score=4 | Attempts=1 | This round:4.3s | Avg:29.6s/paper | Est. remaining:36.5min
+[47/120] Response on attempt 1 -> '5', parsed=5
+[47/120] Score=5 | Attempts=1 | This round:4.4s | Avg:29.1s/paper | Est. remaining:35.4min
+[48/120] Response on attempt 1 -> '5', parsed=5
+[48/120] Score=5 | Attempts=1 | This round:5.2s | Avg:28.6s/paper | Est. remaining:34.3min
+[49/120] Response on attempt 1 -> '5', parsed=5
+[49/120] Score=5 | Attempts=1 | This round:4.1s | Avg:28.1s/paper | Est. remaining:33.2min
+[50/120] Response on attempt 1 -> '5', parsed=5
+[50/120] Score=5 | Attempts=1 | This round:5.5s | Avg:27.6s/paper | Est. remaining:32.2min
+[51/120] Response on attempt 1 -> '5', parsed=5
+[51/120] Score=5 | Attempts=1 | This round:5.2s | Avg:27.2s/paper | Est. remaining:31.3min
+[52/120] Response on attempt 1 -> '3', parsed=3
+[52/120] Score=3 | Attempts=1 | This round:3.8s | Avg:26.7s/paper | Est. remaining:30.3min
+[53/120] Response on attempt 1 -> '5', parsed=5
+[53/120] Score=5 | Attempts=1 | This round:4.2s | Avg:26.3s/paper | Est. remaining:29.4min
+[54/120] Response on attempt 1 -> '5', parsed=5
+[54/120] Score=5 | Attempts=1 | This round:4.0s | Avg:25.9s/paper | Est. remaining:28.5min
+[55/120] Response on attempt 1 -> '4', parsed=4
+[55/120] Score=4 | Attempts=1 | This round:4.1s | Avg:25.5s/paper | Est. remaining:27.6min
+[56/120] Response on attempt 1 -> '5', parsed=5
+[56/120] Score=5 | Attempts=1 | This round:3.8s | Avg:25.1s/paper | Est. remaining:26.8min
+[57/120] Response on attempt 1 -> '5', parsed=5
+[57/120] Score=5 | Attempts=1 | This round:4.2s | Avg:24.7s/paper | Est. remaining:26.0min
+[58/120] Response on attempt 1 -> '4', parsed=4
+[58/120] Score=4 | Attempts=1 | This round:4.4s | Avg:24.4s/paper | Est. remaining:25.2min
+[59/120] Response on attempt 1 -> '5', parsed=5
+[59/120] Score=5 | Attempts=1 | This round:4.7s | Avg:24.1s/paper | Est. remaining:24.5min
+[60/120] Response on attempt 1 -> '4', parsed=4
+[60/120] Score=4 | Attempts=1 | This round:6.6s | Avg:23.8s/paper | Est. remaining:23.8min
+[61/120] Response on attempt 1 -> '5', parsed=5
+[61/120] Score=5 | Attempts=1 | This round:4.3s | Avg:23.4s/paper | Est. remaining:23.1min
+[62/120] Response on attempt 1 -> '5', parsed=5
+[62/120] Score=5 | Attempts=1 | This round:4.1s | Avg:23.1s/paper | Est. remaining:22.4min
+[63/120] Response on attempt 1 -> '4', parsed=4
+[63/120] Score=4 | Attempts=1 | This round:4.0s | Avg:22.8s/paper | Est. remaining:21.7min
+[64/120] Response on attempt 1 -> '5', parsed=5
+[64/120] Score=5 | Attempts=1 | This round:6.5s | Avg:22.6s/paper | Est. remaining:21.1min
+[65/120] Response on attempt 1 -> '5', parsed=5
+[65/120] Score=5 | Attempts=1 | This round:3.8s | Avg:22.3s/paper | Est. remaining:20.4min
+[66/120] Response on attempt 1 -> '5', parsed=5
+[66/120] Score=5 | Attempts=1 | This round:6.4s | Avg:22.0s/paper | Est. remaining:19.8min
+[67/120] Response on attempt 1 -> '5', parsed=5
+[67/120] Score=5 | Attempts=1 | This round:6.6s | Avg:21.8s/paper | Est. remaining:19.3min
+[68/120] Response on attempt 1 -> '5', parsed=5
+[68/120] Score=5 | Attempts=1 | This round:4.6s | Avg:21.6s/paper | Est. remaining:18.7min
+[69/120] Response on attempt 1 -> '3', parsed=3
+[69/120] Score=3 | Attempts=1 | This round:4.3s | Avg:21.3s/paper | Est. remaining:18.1min
+[70/120] Response on attempt 1 -> '5', parsed=5
+[70/120] Score=5 | Attempts=1 | This round:19.3s | Avg:21.3s/paper | Est. remaining:17.7min
+[71/120] Response on attempt 1 -> '4', parsed=4
+[71/120] Score=4 | Attempts=1 | This round:4.9s | Avg:21.1s/paper | Est. remaining:17.2min
+[72/120] Response on attempt 1 -> '5', parsed=5
+[72/120] Score=5 | Attempts=1 | This round:3.9s | Avg:20.8s/paper | Est. remaining:16.7min
+[73/120] Response on attempt 1 -> '5', parsed=5
+[73/120] Score=5 | Attempts=1 | This round:5.0s | Avg:20.6s/paper | Est. remaining:16.1min
+[74/120] Response on attempt 1 -> '5', parsed=5
+[74/120] Score=5 | Attempts=1 | This round:3.9s | Avg:20.4s/paper | Est. remaining:15.6min
+[75/120] Response on attempt 1 -> '5', parsed=5
+[75/120] Score=5 | Attempts=1 | This round:5.7s | Avg:20.2s/paper | Est. remaining:15.1min
+[76/120] Response on attempt 1 -> '5', parsed=5
+[76/120] Score=5 | Attempts=1 | This round:4.6s | Avg:20.0s/paper | Est. remaining:14.6min
+[77/120] Response on attempt 1 -> '4', parsed=4
+[77/120] Score=4 | Attempts=1 | This round:4.8s | Avg:19.8s/paper | Est. remaining:14.2min
+[78/120] Response on attempt 1 -> '4', parsed=4
+[78/120] Score=4 | Attempts=1 | This round:4.9s | Avg:19.6s/paper | Est. remaining:13.7min
+[79/120] Response on attempt 1 -> '5', parsed=5
+[79/120] Score=5 | Attempts=1 | This round:4.0s | Avg:19.4s/paper | Est. remaining:13.3min
+[80/120] Response on attempt 1 -> '5', parsed=5
+[80/120] Score=5 | Attempts=1 | This round:4.4s | Avg:19.2s/paper | Est. remaining:12.8min
+[81/120] Response on attempt 1 -> '5', parsed=5
+[81/120] Score=5 | Attempts=1 | This round:4.1s | Avg:19.0s/paper | Est. remaining:12.4min
+[82/120] Response on attempt 1 -> '4', parsed=4
+[82/120] Score=4 | Attempts=1 | This round:4.2s | Avg:18.8s/paper | Est. remaining:11.9min
+[83/120] Response on attempt 1 -> '5', parsed=5
+[83/120] Score=5 | Attempts=1 | This round:4.2s | Avg:18.7s/paper | Est. remaining:11.5min
+[84/120] Response on attempt 1 -> '3', parsed=3
+[84/120] Score=3 | Attempts=1 | This round:4.1s | Avg:18.5s/paper | Est. remaining:11.1min
+[85/120] Response on attempt 1 -> '4', parsed=4
+[85/120] Score=4 | Attempts=1 | This round:6.8s | Avg:18.3s/paper | Est. remaining:10.7min
+[86/120] Response on attempt 1 -> '4', parsed=4
+[86/120] Score=4 | Attempts=1 | This round:6.3s | Avg:18.2s/paper | Est. remaining:10.3min
+[87/120] Response on attempt 1 -> '5', parsed=5
+[87/120] Score=5 | Attempts=1 | This round:4.1s | Avg:18.0s/paper | Est. remaining:9.9min
+[88/120] Response on attempt 1 -> '4', parsed=4
+[88/120] Score=4 | Attempts=1 | This round:5.0s | Avg:17.9s/paper | Est. remaining:9.5min
+[89/120] Response on attempt 1 -> '5', parsed=5
+[89/120] Score=5 | Attempts=1 | This round:5.3s | Avg:17.8s/paper | Est. remaining:9.2min
+[90/120] Response on attempt 1 -> '4', parsed=4
+[90/120] Score=4 | Attempts=1 | This round:7.5s | Avg:17.6s/paper | Est. remaining:8.8min
+[91/120] Response on attempt 1 -> '5', parsed=5
+[91/120] Score=5 | Attempts=1 | This round:6.5s | Avg:17.5s/paper | Est. remaining:8.5min
+[92/120] Response on attempt 1 -> '5', parsed=5
+[92/120] Score=5 | Attempts=1 | This round:4.4s | Avg:17.4s/paper | Est. remaining:8.1min
+[93/120] Response on attempt 1 -> '5', parsed=5
+[93/120] Score=5 | Attempts=1 | This round:5.0s | Avg:17.2s/paper | Est. remaining:7.8min
+[94/120] Response on attempt 1 -> '5', parsed=5
+[94/120] Score=5 | Attempts=1 | This round:4.5s | Avg:17.1s/paper | Est. remaining:7.4min
+[95/120] Response on attempt 1 -> '5', parsed=5
+[95/120] Score=5 | Attempts=1 | This round:5.0s | Avg:17.0s/paper | Est. remaining:7.1min
+[96/120] Response on attempt 1 -> '4', parsed=4
+[96/120] Score=4 | Attempts=1 | This round:7.2s | Avg:16.9s/paper | Est. remaining:6.8min
+[97/120] Response on attempt 1 -> '4', parsed=4
+[97/120] Score=4 | Attempts=1 | This round:9.1s | Avg:16.8s/paper | Est. remaining:6.4min
+[98/120] Response on attempt 1 -> '4', parsed=4
+[98/120] Score=4 | Attempts=1 | This round:4.3s | Avg:16.7s/paper | Est. remaining:6.1min
+[99/120] Response on attempt 1 -> '4', parsed=4
+[99/120] Score=4 | Attempts=1 | This round:4.2s | Avg:16.5s/paper | Est. remaining:5.8min
+[100/120] Response on attempt 1 -> '5', parsed=5
+[100/120] Score=5 | Attempts=1 | This round:7.2s | Avg:16.5s/paper | Est. remaining:5.5min
+[101/120] Response on attempt 1 -> '5', parsed=5
+[101/120] Score=5 | Attempts=1 | This round:4.3s | Avg:16.3s/paper | Est. remaining:5.2min
+[102/120] Response on attempt 1 -> '4', parsed=4
+[102/120] Score=4 | Attempts=1 | This round:4.6s | Avg:16.2s/paper | Est. remaining:4.9min
+[103/120] Response on attempt 1 -> '4', parsed=4
+[103/120] Score=4 | Attempts=1 | This round:4.0s | Avg:16.1s/paper | Est. remaining:4.6min
+[104/120] Response on attempt 1 -> '5', parsed=5
+[104/120] Score=5 | Attempts=1 | This round:4.8s | Avg:16.0s/paper | Est. remaining:4.3min
+[105/120] Response on attempt 1 -> '4', parsed=4
+[105/120] Score=4 | Attempts=1 | This round:4.2s | Avg:15.9s/paper | Est. remaining:4.0min
+[106/120] Response on attempt 1 -> '5', parsed=5
+[106/120] Score=5 | Attempts=1 | This round:5.5s | Avg:15.8s/paper | Est. remaining:3.7min
+[107/120] Response on attempt 1 -> '4', parsed=4
+[107/120] Score=4 | Attempts=1 | This round:3.8s | Avg:15.7s/paper | Est. remaining:3.4min
+[108/120] Response on attempt 1 -> '4', parsed=4
+[108/120] Score=4 | Attempts=1 | This round:5.7s | Avg:15.6s/paper | Est. remaining:3.1min
+[109/120] Response on attempt 1 -> '5', parsed=5
+[109/120] Score=5 | Attempts=1 | This round:5.2s | Avg:15.5s/paper | Est. remaining:2.8min
+[110/120] Response on attempt 1 -> '4', parsed=4
+[110/120] Score=4 | Attempts=1 | This round:9.3s | Avg:15.4s/paper | Est. remaining:2.6min
+[111/120] Response on attempt 1 -> '5', parsed=5
+[111/120] Score=5 | Attempts=1 | This round:4.8s | Avg:15.3s/paper | Est. remaining:2.3min
+[112/120] Response on attempt 1 -> '4', parsed=4
+[112/120] Score=4 | Attempts=1 | This round:7.0s | Avg:15.3s/paper | Est. remaining:2.0min
+[113/120] Response on attempt 1 -> '5', parsed=5
+[113/120] Score=5 | Attempts=1 | This round:5.9s | Avg:15.2s/paper | Est. remaining:1.8min
+[114/120] Response on attempt 1 -> '5', parsed=5
+[114/120] Score=5 | Attempts=1 | This round:6.8s | Avg:15.1s/paper | Est. remaining:1.5min
+[115/120] Response on attempt 1 -> '5', parsed=5
+[115/120] Score=5 | Attempts=1 | This round:4.0s | Avg:15.0s/paper | Est. remaining:1.3min
+[116/120] Response on attempt 1 -> '5', parsed=5
+[116/120] Score=5 | Attempts=1 | This round:9.2s | Avg:15.0s/paper | Est. remaining:1.0min
+[117/120] Response on attempt 1 -> '5', parsed=5
+[117/120] Score=5 | Attempts=1 | This round:4.7s | Avg:14.9s/paper | Est. remaining:0.7min
+[118/120] Response on attempt 1 -> '5', parsed=5
+[118/120] Score=5 | Attempts=1 | This round:4.6s | Avg:14.8s/paper | Est. remaining:0.5min
+[119/120] Response on attempt 1 -> '3', parsed=3
+[119/120] Score=3 | Attempts=1 | This round:7.7s | Avg:14.7s/paper | Est. remaining:0.2min
+[120/120] Response on attempt 1 -> '5', parsed=5
+[120/120] Score=5 | Attempts=1 | This round:4.5s | Avg:14.6s/paper | Est. remaining:0.0min
+✅ Exported: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/paper_after_reranking.csv (only papers with abstracts were calculated and selected)
+✅ Outline generated and saved to <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/survey_outline.json
+
+===== Generating Section 1/7: "Introduction and Background" - Subsection 1/5: "Clinical Motivation and Significance" =====
+📖 Overall progress: 1/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/01_01_Clinical_Motivation_and_Significance.json
+📊 Token : prompt=19725 | completion=299 | total=20024
+📈 Token : prompt=19725 | completion=299 | total=20024
+
+===== Generating Section 1/7: "Introduction and Background" - Subsection 2/5: "Evolution from Traditional to Deep Learning Approaches" =====
+📖 Overall progress: 2/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/01_02_Evolution_from_Traditional_to_Deep_Learning_Approaches.json
+📊 Token : prompt=19729 | completion=335 | total=20064
+📈 Token : prompt=39454 | completion=634 | total=40088
+
+===== Generating Section 1/7: "Introduction and Background" - Subsection 3/5: "Medical Imaging Modalities" =====
+📖 Overall progress: 3/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/01_03_Medical_Imaging_Modalities.json
+📊 Token : prompt=19725 | completion=408 | total=20133
+📈 Token : prompt=59179 | completion=1042 | total=60221
+
+===== Generating Section 1/7: "Introduction and Background" - Subsection 4/5: "Scope and Organization of the Survey" =====
+📖 Overall progress: 4/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/01_04_Scope_and_Organization_of_the_Survey.json
+📊 Token : prompt=19727 | completion=494 | total=20221
+📈 Token : prompt=78906 | completion=1536 | total=80442
+
+===== Generating Section 1/7: "Introduction and Background" - Subsection 5/5: "Key Challenges in Medical Image Analysis" =====
+📖 Overall progress: 5/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/01_05_Key_Challenges_in_Medical_Image_Analysis.json
+📊 Token : prompt=19727 | completion=391 | total=20118
+📈 Token : prompt=98633 | completion=1927 | total=100560
+
+===== Generating Section 2/7: "Deep Learning Architectures for Medical Image Analysis" - Subsection 1/7: "Convolutional Neural Networks (CNNs)" =====
+📖 Overall progress: 6/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/02_01_Convolutional_Neural_Networks_CNNs_.json
+📊 Token : prompt=19734 | completion=390 | total=20124
+📈 Token : prompt=118367 | completion=2317 | total=120684
+
+===== Generating Section 2/7: "Deep Learning Architectures for Medical Image Analysis" - Subsection 2/7: "Encoder-Decoder and U-Net Architectures" =====
+📖 Overall progress: 7/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/02_02_Encoder-Decoder_and_U-Net_Architectures.json
+📊 Token : prompt=19737 | completion=386 | total=20123
+📈 Token : prompt=138104 | completion=2703 | total=140807
+
+===== Generating Section 2/7: "Deep Learning Architectures for Medical Image Analysis" - Subsection 3/7: "Vision Transformers and Hybrid Models" =====
+📖 Overall progress: 8/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/02_03_Vision_Transformers_and_Hybrid_Models.json
+📊 Token : prompt=19729 | completion=304 | total=20033
+📈 Token : prompt=157833 | completion=3007 | total=160840
+
+===== Generating Section 2/7: "Deep Learning Architectures for Medical Image Analysis" - Subsection 4/7: "Recurrent Neural Networks and Temporal Models" =====
+📖 Overall progress: 9/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/02_04_Recurrent_Neural_Networks_and_Temporal_Models.json
+📊 Token : prompt=19731 | completion=280 | total=20011
+📈 Token : prompt=177564 | completion=3287 | total=180851
+
+===== Generating Section 2/7: "Deep Learning Architectures for Medical Image Analysis" - Subsection 5/7: "Generative Adversarial Networks (GANs)" =====
+📖 Overall progress: 10/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/02_05_Generative_Adversarial_Networks_GANs_.json
+📊 Token : prompt=19738 | completion=388 | total=20126
+📈 Token : prompt=197302 | completion=3675 | total=200977
+
+===== Generating Section 2/7: "Deep Learning Architectures for Medical Image Analysis" - Subsection 6/7: "Autoencoders and Variational Models" =====
+📖 Overall progress: 11/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/02_06_Autoencoders_and_Variational_Models.json
+📊 Token : prompt=19733 | completion=335 | total=20068
+📈 Token : prompt=217035 | completion=4010 | total=221045
+
+===== Generating Section 2/7: "Deep Learning Architectures for Medical Image Analysis" - Subsection 7/7: "Multi-Scale and Attention-Based Architectures" =====
+📖 Overall progress: 12/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/02_07_Multi-Scale_and_Attention-Based_Architectures.json
+📊 Token : prompt=19735 | completion=363 | total=20098
+📈 Token : prompt=236770 | completion=4373 | total=241143
+
+===== Generating Section 3/7: "Core Medical Image Analysis Tasks" - Subsection 1/7: "Medical Image Classification" =====
+📖 Overall progress: 13/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/03_01_Medical_Image_Classification.json
+📊 Token : prompt=19719 | completion=461 | total=20180
+📈 Token : prompt=256489 | completion=4834 | total=261323
+
+===== Generating Section 3/7: "Core Medical Image Analysis Tasks" - Subsection 2/7: "Medical Image Segmentation" =====
+📖 Overall progress: 14/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/03_02_Medical_Image_Segmentation.json
+📊 Token : prompt=19723 | completion=419 | total=20142
+📈 Token : prompt=276212 | completion=5253 | total=281465
+
+===== Generating Section 3/7: "Core Medical Image Analysis Tasks" - Subsection 3/7: "Object Detection and Localization" =====
+📖 Overall progress: 15/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/03_03_Object_Detection_and_Localization.json
+📊 Token : prompt=19725 | completion=435 | total=20160
+📈 Token : prompt=295937 | completion=5688 | total=301625
+
+===== Generating Section 3/7: "Core Medical Image Analysis Tasks" - Subsection 4/7: "Medical Image Registration" =====
+📖 Overall progress: 16/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/03_04_Medical_Image_Registration.json
+📊 Token : prompt=19719 | completion=263 | total=19982
+📈 Token : prompt=315656 | completion=5951 | total=321607
+
+===== Generating Section 3/7: "Core Medical Image Analysis Tasks" - Subsection 5/7: "Medical Image Enhancement and Reconstruction" =====
+📖 Overall progress: 17/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/03_05_Medical_Image_Enhancement_and_Reconstruction.json
+📊 Token : prompt=19725 | completion=347 | total=20072
+📈 Token : prompt=335381 | completion=6298 | total=341679
+
+===== Generating Section 3/7: "Core Medical Image Analysis Tasks" - Subsection 6/7: "Multi-Task Learning for Medical Imaging" =====
+📖 Overall progress: 18/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/03_06_Multi-Task_Learning_for_Medical_Imaging.json
+📊 Token : prompt=19729 | completion=205 | total=19934
+📈 Token : prompt=355110 | completion=6503 | total=361613
+
+===== Generating Section 3/7: "Core Medical Image Analysis Tasks" - Subsection 7/7: "Image Generation and Synthesis" =====
+📖 Overall progress: 19/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/03_07_Image_Generation_and_Synthesis.json
+📊 Token : prompt=19723 | completion=318 | total=20041
+📈 Token : prompt=374833 | completion=6821 | total=381654
+
+===== Generating Section 4/7: "Learning Strategies for Limited and Imperfect Medical Data" - Subsection 1/8: "Transfer Learning and Domain Adaptation" =====
+📖 Overall progress: 20/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/04_01_Transfer_Learning_and_Domain_Adaptation.json
+📊 Token : prompt=19725 | completion=308 | total=20033
+📈 Token : prompt=394558 | completion=7129 | total=401687
+
+===== Generating Section 4/7: "Learning Strategies for Limited and Imperfect Medical Data" - Subsection 2/8: "Semi-Supervised Learning" =====
+📖 Overall progress: 21/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/04_02_Semi-Supervised_Learning.json
+📊 Token : prompt=19723 | completion=287 | total=20010
+📈 Token : prompt=414281 | completion=7416 | total=421697
+
+===== Generating Section 4/7: "Learning Strategies for Limited and Imperfect Medical Data" - Subsection 3/8: "Self-Supervised Learning" =====
+📖 Overall progress: 22/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/04_03_Self-Supervised_Learning.json
+📊 Token : prompt=19723 | completion=390 | total=20113
+📈 Token : prompt=434004 | completion=7806 | total=441810
+
+===== Generating Section 4/7: "Learning Strategies for Limited and Imperfect Medical Data" - Subsection 4/8: "Few-Shot and Meta-Learning" =====
+📖 Overall progress: 23/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/04_04_Few-Shot_and_Meta-Learning.json
+📊 Token : prompt=19727 | completion=208 | total=19935
+📈 Token : prompt=453731 | completion=8014 | total=461745
+
+===== Generating Section 4/7: "Learning Strategies for Limited and Imperfect Medical Data" - Subsection 5/8: "Active Learning" =====
+📖 Overall progress: 24/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/04_05_Active_Learning.json
+📊 Token : prompt=19717 | completion=245 | total=19962
+📈 Token : prompt=473448 | completion=8259 | total=481707
+
+===== Generating Section 4/7: "Learning Strategies for Limited and Imperfect Medical Data" - Subsection 6/8: "Learning with Noisy Labels" =====
+📖 Overall progress: 25/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/04_06_Learning_with_Noisy_Labels.json
+📊 Token : prompt=19725 | completion=201 | total=19926
+📈 Token : prompt=493173 | completion=8460 | total=501633
+
+===== Generating Section 4/7: "Learning Strategies for Limited and Imperfect Medical Data" - Subsection 7/8: "Data Augmentation Techniques" =====
+📖 Overall progress: 26/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/04_07_Data_Augmentation_Techniques.json
+📊 Token : prompt=19725 | completion=363 | total=20088
+📈 Token : prompt=512898 | completion=8823 | total=521721
+
+===== Generating Section 4/7: "Learning Strategies for Limited and Imperfect Medical Data" - Subsection 8/8: "Federated and Distributed Learning" =====
+📖 Overall progress: 27/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/04_08_Federated_and_Distributed_Learning.json
+📊 Token : prompt=19727 | completion=263 | total=19990
+📈 Token : prompt=532625 | completion=9086 | total=541711
+
+===== Generating Section 5/7: "Clinical Applications Across Medical Specialties" - Subsection 1/10: "Radiology and Thoracic Imaging" =====
+📖 Overall progress: 28/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/05_01_Radiology_and_Thoracic_Imaging.json
+📊 Token : prompt=19733 | completion=343 | total=20076
+📈 Token : prompt=552358 | completion=9429 | total=561787
+
+===== Generating Section 5/7: "Clinical Applications Across Medical Specialties" - Subsection 2/10: "Neurology and Brain Imaging" =====
+📖 Overall progress: 29/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/05_02_Neurology_and_Brain_Imaging.json
+📊 Token : prompt=19727 | completion=343 | total=20070
+📈 Token : prompt=572085 | completion=9772 | total=581857
+
+===== Generating Section 5/7: "Clinical Applications Across Medical Specialties" - Subsection 3/10: "Cardiology and Cardiac Imaging" =====
+📖 Overall progress: 30/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/05_03_Cardiology_and_Cardiac_Imaging.json
+📊 Token : prompt=19729 | completion=337 | total=20066
+📈 Token : prompt=591814 | completion=10109 | total=601923
+
+===== Generating Section 5/7: "Clinical Applications Across Medical Specialties" - Subsection 4/10: "Oncology and Pathology" =====
+📖 Overall progress: 31/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/05_04_Oncology_and_Pathology.json
+📊 Token : prompt=19727 | completion=333 | total=20060
+📈 Token : prompt=611541 | completion=10442 | total=621983
+
+===== Generating Section 5/7: "Clinical Applications Across Medical Specialties" - Subsection 5/10: "Ophthalmology and Retinal Imaging" =====
+📖 Overall progress: 32/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/05_05_Ophthalmology_and_Retinal_Imaging.json
+📊 Token : prompt=19735 | completion=302 | total=20037
+📈 Token : prompt=631276 | completion=10744 | total=642020
+
+===== Generating Section 5/7: "Clinical Applications Across Medical Specialties" - Subsection 6/10: "Gastroenterology and Endoscopy" =====
+📖 Overall progress: 33/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/05_06_Gastroenterology_and_Endoscopy.json
+📊 Token : prompt=19733 | completion=270 | total=20003
+📈 Token : prompt=651009 | completion=11014 | total=662023
+
+===== Generating Section 5/7: "Clinical Applications Across Medical Specialties" - Subsection 7/10: "Obstetrics and Fetal Ultrasound" =====
+📖 Overall progress: 34/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/05_07_Obstetrics_and_Fetal_Ultrasound.json
+📊 Token : prompt=19737 | completion=325 | total=20062
+📈 Token : prompt=670746 | completion=11339 | total=682085
+
+===== Generating Section 5/7: "Clinical Applications Across Medical Specialties" - Subsection 8/10: "Musculoskeletal and Abdominal Imaging" =====
+📖 Overall progress: 35/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/05_08_Musculoskeletal_and_Abdominal_Imaging.json
+📊 Token : prompt=19739 | completion=352 | total=20091
+📈 Token : prompt=690485 | completion=11691 | total=702176
+
+===== Generating Section 5/7: "Clinical Applications Across Medical Specialties" - Subsection 9/10: "Dermatology and Skin Lesion Analysis" =====
+📖 Overall progress: 36/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/05_09_Dermatology_and_Skin_Lesion_Analysis.json
+📊 Token : prompt=19735 | completion=330 | total=20065
+📈 Token : prompt=710220 | completion=12021 | total=722241
+
+===== Generating Section 5/7: "Clinical Applications Across Medical Specialties" - Subsection 10/10: "Cervical and Gynecological Imaging" =====
+📖 Overall progress: 37/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/05_10_Cervical_and_Gynecological_Imaging.json
+📊 Token : prompt=19733 | completion=232 | total=19965
+📈 Token : prompt=729953 | completion=12253 | total=742206
+
+===== Generating Section 6/7: "Trustworthiness, Interpretability, and Clinical Deployment" - Subsection 1/7: "Explainable AI and Interpretability Methods" =====
+📖 Overall progress: 38/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/06_01_Explainable_AI_and_Interpretability_Methods.json
+📊 Token : prompt=19733 | completion=336 | total=20069
+📈 Token : prompt=749686 | completion=12589 | total=762275
+
+===== Generating Section 6/7: "Trustworthiness, Interpretability, and Clinical Deployment" - Subsection 2/7: "Uncertainty Quantification" =====
+📖 Overall progress: 39/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/06_02_Uncertainty_Quantification.json
+📊 Token : prompt=19723 | completion=264 | total=19987
+📈 Token : prompt=769409 | completion=12853 | total=782262
+
+===== Generating Section 6/7: "Trustworthiness, Interpretability, and Clinical Deployment" - Subsection 3/7: "Interpretability-Guided Model Design" =====
+📖 Overall progress: 40/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/06_03_Interpretability-Guided_Model_Design.json
+📊 Token : prompt=19729 | completion=342 | total=20071
+📈 Token : prompt=789138 | completion=13195 | total=802333
+
+===== Generating Section 6/7: "Trustworthiness, Interpretability, and Clinical Deployment" - Subsection 4/7: "Robustness and Domain Generalization" =====
+📖 Overall progress: 41/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/06_04_Robustness_and_Domain_Generalization.json
+📊 Token : prompt=19731 | completion=293 | total=20024
+📈 Token : prompt=808869 | completion=13488 | total=822357
+
+===== Generating Section 6/7: "Trustworthiness, Interpretability, and Clinical Deployment" - Subsection 5/7: "Reproducibility and Variability in Deep Learning" =====
+📖 Overall progress: 42/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/06_05_Reproducibility_and_Variability_in_Deep_Learning.json
+📊 Token : prompt=19733 | completion=282 | total=20015
+📈 Token : prompt=828602 | completion=13770 | total=842372
+
+===== Generating Section 6/7: "Trustworthiness, Interpretability, and Clinical Deployment" - Subsection 6/7: "Regulatory, Ethical, and Privacy Considerations" =====
+📖 Overall progress: 43/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/06_06_Regulatory_Ethical_and_Privacy_Considerations.json
+📊 Token : prompt=19733 | completion=319 | total=20052
+📈 Token : prompt=848335 | completion=14089 | total=862424
+
+===== Generating Section 6/7: "Trustworthiness, Interpretability, and Clinical Deployment" - Subsection 7/7: "Clinical Validation and Integration" =====
+📖 Overall progress: 44/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/06_07_Clinical_Validation_and_Integration.json
+📊 Token : prompt=19723 | completion=302 | total=20025
+📈 Token : prompt=868058 | completion=14391 | total=882449
+
+===== Generating Section 7/7: "Open Challenges and Future Directions" - Subsection 1/8: "Data Challenges and Benchmark Datasets" =====
+📖 Overall progress: 45/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/07_01_Data_Challenges_and_Benchmark_Datasets.json
+📊 Token : prompt=19729 | completion=410 | total=20139
+📈 Token : prompt=887787 | completion=14801 | total=902588
+
+===== Generating Section 7/7: "Open Challenges and Future Directions" - Subsection 2/8: "Generalizability and Cross-Domain Performance" =====
+📖 Overall progress: 46/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/07_02_Generalizability_and_Cross-Domain_Performance.json
+📊 Token : prompt=19731 | completion=316 | total=20047
+📈 Token : prompt=907518 | completion=15117 | total=922635
+
+===== Generating Section 7/7: "Open Challenges and Future Directions" - Subsection 3/8: "Efficient and Lightweight Architectures" =====
+📖 Overall progress: 47/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/07_03_Efficient_and_Lightweight_Architectures.json
+📊 Token : prompt=19729 | completion=236 | total=19965
+📈 Token : prompt=927247 | completion=15353 | total=942600
+
+===== Generating Section 7/7: "Open Challenges and Future Directions" - Subsection 4/8: "Foundation Models and Large-Scale Pre-training" =====
+📖 Overall progress: 48/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/07_04_Foundation_Models_and_Large-Scale_Pre-training.json
+📊 Token : prompt=19731 | completion=305 | total=20036
+📈 Token : prompt=946978 | completion=15658 | total=962636
+
+===== Generating Section 7/7: "Open Challenges and Future Directions" - Subsection 5/8: "Multi-Modal and Multi-Scale Learning" =====
+📖 Overall progress: 49/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/07_05_Multi-Modal_and_Multi-Scale_Learning.json
+📊 Token : prompt=19729 | completion=284 | total=20013
+📈 Token : prompt=966707 | completion=15942 | total=982649
+
+===== Generating Section 7/7: "Open Challenges and Future Directions" - Subsection 6/8: "Continual and Lifelong Learning" =====
+📖 Overall progress: 50/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/07_06_Continual_and_Lifelong_Learning.json
+📊 Token : prompt=19729 | completion=255 | total=19984
+📈 Token : prompt=986436 | completion=16197 | total=1002633
+
+===== Generating Section 7/7: "Open Challenges and Future Directions" - Subsection 7/8: "Neuromorphic and Novel Hardware Approaches" =====
+📖 Overall progress: 51/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/07_07_Neuromorphic_and_Novel_Hardware_Approaches.json
+📊 Token : prompt=19731 | completion=187 | total=19918
+📈 Token : prompt=1006167 | completion=16384 | total=1022551
+
+===== Generating Section 7/7: "Open Challenges and Future Directions" - Subsection 8/8: "Toward Autonomous Clinical Decision Support" =====
+📖 Overall progress: 52/52 subsections
+✅ Save: <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/sections/07_08_Toward_Autonomous_Clinical_Decision_Support.json
+📊 Token : prompt=19727 | completion=493 | total=20220
+📈 Token : prompt=1025894 | completion=16877 | total=1042771
+
+🎉 All 52 subsections generated, bundled and saved to <package-root>/results/s3_native/s3_native_confirmatory_20260716/systems/surveygen/cross_medical_image_analysis/raw/survey_content.json
+⏱ Total time: 12.1 minutes (728.5 seconds)
+[2026-07-16T10:13:07Z] returncode=0 elapsed_seconds=2841.584 timed_out=False

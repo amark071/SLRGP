@@ -1,0 +1,149 @@
+{
+  "interpretation": {
+    "structural_citation_child_coverage": "Deterministic parse-tree coverage of citation-bearing descendants, not semantic label correctness.",
+    "semantic_organization_learning": "Held-out prediction of consensus facet/relation labels for organization nodes.",
+    "depth_policy": "Depth is treated as observed natural recursion, with review-level split and length-bucket stratification; no fixed-depth normalization is imposed."
+  },
+  "n_nodes_total": 14332,
+  "n_heldout_prediction_nodes": 2881,
+  "root_node_repair": {
+    "n_reviews_with_persisted_root_node": 2221,
+    "n_parseable_reviews": 2221
+  },
+  "review_length_recursion_profile": {
+    "long": {
+      "n_reviews": 687,
+      "mean_review_n_sections": 51.85589519650655,
+      "mean_organization_nodes": 11.599708879184861,
+      "median_organization_nodes": 10,
+      "mean_max_node_depth": 1.8762736535662299,
+      "max_depth_distribution": {
+        "2": 602,
+        "1": 85
+      }
+    },
+    "medium": {
+      "n_reviews": 733,
+      "mean_review_n_sections": 24.46930422919509,
+      "mean_organization_nodes": 5.672578444747613,
+      "median_organization_nodes": 6,
+      "mean_max_node_depth": 1.6043656207366985,
+      "max_depth_distribution": {
+        "1": 284,
+        "2": 446,
+        "0": 3
+      }
+    },
+    "short": {
+      "n_reviews": 801,
+      "mean_review_n_sections": 12.103620474406991,
+      "mean_organization_nodes": 2.752808988764045,
+      "median_organization_nodes": 3,
+      "mean_max_node_depth": 0.9213483146067416,
+      "max_depth_distribution": {
+        "1": 502,
+        "0": 181,
+        "2": 118
+      }
+    }
+  },
+  "overall_max_depth_distribution": {
+    "1": 871,
+    "0": 184,
+    "2": 1166
+  },
+  "structural_citation_child_coverage": {
+    "by_node_depth": {
+      "0": {
+        "n_nodes": 2221,
+        "mean": 1.0,
+        "median": 1.0
+      },
+      "1": {
+        "n_nodes": 7361,
+        "mean": 0.9256929557307163,
+        "median": 1.0
+      },
+      "2": {
+        "n_nodes": 3951,
+        "mean": 0.9169917322954813,
+        "median": 1.0
+      }
+    },
+    "by_review_length_bucket": {
+      "long": {
+        "n_nodes": 7403,
+        "mean": 0.9350198232273947,
+        "median": 1.0
+      },
+      "medium": {
+        "n_nodes": 3978,
+        "mean": 0.9339650934210492,
+        "median": 1.0
+      },
+      "short": {
+        "n_nodes": 2152,
+        "mean": 0.939031267867989,
+        "median": 1.0
+      }
+    }
+  },
+  "heldout_tfidf_logreg_semantic_accuracy": {
+    "facet_accuracy_by_node_depth": {
+      "0": {
+        "n_nodes": 442,
+        "accuracy": 0.6515837104072398
+      },
+      "1": {
+        "n_nodes": 1606,
+        "accuracy": 0.47820672478206727
+      },
+      "2": {
+        "n_nodes": 833,
+        "accuracy": 0.524609843937575
+      }
+    },
+    "facet_accuracy_by_review_length_bucket": {
+      "long": {
+        "n_nodes": 1644,
+        "accuracy": 0.5145985401459854
+      },
+      "medium": {
+        "n_nodes": 746,
+        "accuracy": 0.5281501340482574
+      },
+      "short": {
+        "n_nodes": 491,
+        "accuracy": 0.515274949083503
+      }
+    },
+    "relation_accuracy_by_node_depth": {
+      "0": {
+        "n_nodes": 442,
+        "accuracy": 0.4819004524886878
+      },
+      "1": {
+        "n_nodes": 1606,
+        "accuracy": 0.43337484433374845
+      },
+      "2": {
+        "n_nodes": 833,
+        "accuracy": 0.3997599039615846
+      }
+    },
+    "relation_accuracy_by_review_length_bucket": {
+      "long": {
+        "n_nodes": 1644,
+        "accuracy": 0.43856447688564476
+      },
+      "medium": {
+        "n_nodes": 746,
+        "accuracy": 0.41420911528150134
+      },
+      "short": {
+        "n_nodes": 491,
+        "accuracy": 0.4317718940936864
+      }
+    }
+  }
+}

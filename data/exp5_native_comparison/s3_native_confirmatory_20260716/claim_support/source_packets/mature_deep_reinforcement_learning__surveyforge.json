@@ -1,0 +1,416 @@
+{
+  "topic_id": "mature_deep_reinforcement_learning",
+  "system": "surveyforge",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Deep reinforcement learning (DRL) has emerged as a transformative paradigm within artificial intelligence, synthesizing the sequential decision-making formalism of reinforcement learning with the representational power of deep neural networks [1; 2].",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "1",
+          "arxiv_id": "1312.5602v1",
+          "title": "Playing Atari with Deep Reinforcement Learning",
+          "abstract": "We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.",
+          "resolved_arxiv": {
+            "arxiv_id": "1312.5602",
+            "title": "Playing Atari with Deep Reinforcement Learning",
+            "abstract": "We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.",
+            "published": "2013-12-19T16:00:08Z",
+            "source_url": "https://arxiv.org/abs/1312.5602"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "2",
+          "arxiv_id": "1701.07274v6",
+          "title": "Deep Reinforcement Learning: An Overview",
+          "abstract": "We give an overview of recent exciting achievements of deep reinforcement learning (RL). We discuss six core elements, six important mechanisms, and twelve applications. We start with background of machine learning, deep learning and reinforcement learning. Next we discuss core RL elements, including value function, in particular, Deep Q-Network (DQN), policy, reward, model, planning, and exploration. After that, we discuss important mechanisms for RL, including attention and memory, unsupervised learning, transfer learning, multi-agent RL, hierarchical RL, and learning to learn. Then we discuss various applications of RL, including games, in particular, AlphaGo, robotics, natural language processing, including dialogue systems, machine translation, and text generation, computer vision, neural architecture design, business management, finance, healthcare, Industry 4.0, smart grid, intelligent transportation systems, and computer systems. We mention topics not reviewed yet, and list a collection of RL resources. After presenting a brief summary, we close with discussions. Please see Deep Reinforcement Learning, arXiv:1810.06339, for a significant update.",
+          "resolved_arxiv": {
+            "arxiv_id": "1701.07274",
+            "title": "Deep Reinforcement Learning: An Overview",
+            "abstract": "We give an overview of recent exciting achievements of deep reinforcement learning (RL). We discuss six core elements, six important mechanisms, and twelve applications. We start with background of machine learning, deep learning and reinforcement learning. Next we discuss core RL elements, including value function, in particular, Deep Q-Network (DQN), policy, reward, model, planning, and exploration. After that, we discuss important mechanisms for RL, including attention and memory, unsupervised learning, transfer learning, multi-agent RL, hierarchical RL, and learning to learn. Then we discuss various applications of RL, including games, in particular, AlphaGo, robotics, natural language processing, including dialogue systems, machine translation, and text generation, computer vision, neural architecture design, business management, finance, healthcare, Industry 4.0, smart grid, intelligent transportation systems, and computer systems. We mention topics not reviewed yet, and list a collection of RL resources. After presenting a brief summary, we close with discussions. Please see Deep Reinforcement Learning, arXiv:1810.06339, for a significant update.",
+            "published": "2017-01-25T11:52:11Z",
+            "source_url": "https://arxiv.org/abs/1701.07274"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Value-based deep reinforcement learning originated with the Deep Q-Network [1], which demonstrated that convolutional neural networks trained end-to-end from raw pixels could achieve human-level control across diverse Atari 2600 tasks.",
+      "citation_markers": [
+        "[1]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "1",
+          "arxiv_id": "1312.5602v1",
+          "title": "Playing Atari with Deep Reinforcement Learning",
+          "abstract": "We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.",
+          "resolved_arxiv": {
+            "arxiv_id": "1312.5602",
+            "title": "Playing Atari with Deep Reinforcement Learning",
+            "abstract": "We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.",
+            "published": "2013-12-19T16:00:08Z",
+            "source_url": "https://arxiv.org/abs/1312.5602"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The Rainbow integration [3] subsequently demonstrated that six independently developed extensions — Double DQN, Dueling networks, Prioritized Experience Replay, multi-step returns, distributional value estimation, and Noisy Networks — yield synergistic gains exceeding any individual component, establishing a consolidated state-of-the-art on the Atari benchmark.",
+      "citation_markers": [
+        "[3]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "3",
+          "arxiv_id": "1710.02298v1",
+          "title": "Rainbow: Combining Improvements in Deep Reinforcement Learning",
+          "abstract": "The deep reinforcement learning community has made several independent improvements to the DQN algorithm. However, it is unclear which of these extensions are complementary and can be fruitfully combined. This paper examines six extensions to the DQN algorithm and empirically studies their combination. Our experiments show that the combination provides state-of-the-art performance on the Atari 2600 benchmark, both in terms of data efficiency and final performance. We also provide results from a detailed ablation study that shows the contribution of each component to overall performance.",
+          "resolved_arxiv": {
+            "arxiv_id": "1710.02298",
+            "title": "Rainbow: Combining Improvements in Deep Reinforcement Learning",
+            "abstract": "The deep reinforcement learning community has made several independent improvements to the DQN algorithm. However, it is unclear which of these extensions are complementary and can be fruitfully combined. This paper examines six extensions to the DQN algorithm and empirically studies their combination. Our experiments show that the combination provides state-of-the-art performance on the Atari 2600 benchmark, both in terms of data efficiency and final performance. We also provide results from a detailed ablation study that shows the contribution of each component to overall performance.",
+            "published": "2017-10-06T07:45:46Z",
+            "source_url": "https://arxiv.org/abs/1710.02298"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Proximal Policy Optimization subsequently approximates this constraint through a clipping mechanism [2], dramatically reducing computational overhead while empirically preserving stability, though recent analyses reveal that clipping fails to strictly enforce policy proximity, motivating Truly PPO and rollback formulations.",
+      "citation_markers": [
+        "[2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "2",
+          "arxiv_id": "1701.07274v6",
+          "title": "Deep Reinforcement Learning: An Overview",
+          "abstract": "We give an overview of recent exciting achievements of deep reinforcement learning (RL). We discuss six core elements, six important mechanisms, and twelve applications. We start with background of machine learning, deep learning and reinforcement learning. Next we discuss core RL elements, including value function, in particular, Deep Q-Network (DQN), policy, reward, model, planning, and exploration. After that, we discuss important mechanisms for RL, including attention and memory, unsupervised learning, transfer learning, multi-agent RL, hierarchical RL, and learning to learn. Then we discuss various applications of RL, including games, in particular, AlphaGo, robotics, natural language processing, including dialogue systems, machine translation, and text generation, computer vision, neural architecture design, business management, finance, healthcare, Industry 4.0, smart grid, intelligent transportation systems, and computer systems. We mention topics not reviewed yet, and list a collection of RL resources. After presenting a brief summary, we close with discussions. Please see Deep Reinforcement Learning, arXiv:1810.06339, for a significant update.",
+          "resolved_arxiv": {
+            "arxiv_id": "1701.07274",
+            "title": "Deep Reinforcement Learning: An Overview",
+            "abstract": "We give an overview of recent exciting achievements of deep reinforcement learning (RL). We discuss six core elements, six important mechanisms, and twelve applications. We start with background of machine learning, deep learning and reinforcement learning. Next we discuss core RL elements, including value function, in particular, Deep Q-Network (DQN), policy, reward, model, planning, and exploration. After that, we discuss important mechanisms for RL, including attention and memory, unsupervised learning, transfer learning, multi-agent RL, hierarchical RL, and learning to learn. Then we discuss various applications of RL, including games, in particular, AlphaGo, robotics, natural language processing, including dialogue systems, machine translation, and text generation, computer vision, neural architecture design, business management, finance, healthcare, Industry 4.0, smart grid, intelligent transportation systems, and computer systems. We mention topics not reviewed yet, and list a collection of RL resources. After presenting a brief summary, we close with discussions. Please see Deep Reinforcement Learning, arXiv:1810.06339, for a significant update.",
+            "published": "2017-01-25T11:52:11Z",
+            "source_url": "https://arxiv.org/abs/1701.07274"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "TD3 directly confronts this through clipped double Q-learning and delayed policy updates [23], while WD3 unifies overestimation and underestimation into a weighted critic framework [11].",
+      "citation_markers": [
+        "[23]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "23",
+          "arxiv_id": "1802.09477v3",
+          "title": "Addressing Function Approximation Error in Actor-Critic Methods",
+          "abstract": "In value-based reinforcement learning methods such as deep Q-learning, function approximation errors are known to lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance. We evaluate our method on the suite of OpenAI gym tasks, outperforming the state of the art in every environment tested.",
+          "resolved_arxiv": {
+            "arxiv_id": "1802.09477",
+            "title": "Addressing Function Approximation Error in Actor-Critic Methods",
+            "abstract": "In value-based reinforcement learning methods such as deep Q-learning, function approximation errors are known to lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance. We evaluate our method on the suite of OpenAI gym tasks, outperforming the state of the art in every environment tested.",
+            "published": "2018-02-26T17:54:49Z",
+            "source_url": "https://arxiv.org/abs/1802.09477"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Distributional approaches offer a complementary remedy: by modeling the full return distribution rather than scalar expectations, DSAC adaptively adjusts Q-value update stepsizes, provably mitigating overestimation [25].",
+      "citation_markers": [
+        "[25]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "25",
+          "arxiv_id": "2001.02811v3",
+          "title": "Distributional Soft Actor-Critic: Off-Policy Reinforcement Learning for Addressing Value Estimation Errors",
+          "abstract": "In reinforcement learning (RL), function approximation errors are known to easily lead to the Q-value overestimations, thus greatly reducing policy performance. This paper presents a distributional soft actor-critic (DSAC) algorithm, which is an off-policy RL method for continuous control setting, to improve the policy performance by mitigating Q-value overestimations. We first discover in theory that learning a distribution function of state-action returns can effectively mitigate Q-value overestimations because it is capable of adaptively adjusting the update stepsize of the Q-value function. Then, a distributional soft policy iteration (DSPI) framework is developed by embedding the return distribution function into maximum entropy RL. Finally, we present a deep off-policy actor-critic variant of DSPI, called DSAC, which directly learns a continuous return distribution by keeping the variance of the state-action returns within a reasonable range to address exploding and vanishing gradient problems. We evaluate DSAC on the suite of MuJoCo continuous control tasks, achieving the state-of-the-art performance.",
+          "resolved_arxiv": {
+            "arxiv_id": "2001.02811",
+            "title": "Distributional Soft Actor-Critic: Off-Policy Reinforcement Learning for Addressing Value Estimation Errors",
+            "abstract": "In reinforcement learning (RL), function approximation errors are known to easily lead to the Q-value overestimations, thus greatly reducing policy performance. This paper presents a distributional soft actor-critic (DSAC) algorithm, which is an off-policy RL method for continuous control setting, to improve the policy performance by mitigating Q-value overestimations. We first discover in theory that learning a distribution function of state-action returns can effectively mitigate Q-value overestimations because it is capable of adaptively adjusting the update stepsize of the Q-value function. Then, a distributional soft policy iteration (DSPI) framework is developed by embedding the return distribution function into maximum entropy RL. Finally, we present a deep off-policy actor-critic variant of DSPI, called DSAC, which directly learns a continuous return distribution by keeping the variance of the state-action returns within a reasonable range to address exploding and vanishing gradient problems. We evaluate DSAC on the suite of MuJoCo continuous control tasks, achieving the state-of-the-art performance.",
+            "published": "2020-01-09T02:27:18Z",
+            "source_url": "https://arxiv.org/abs/2001.02811"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "A critical synthesis across these paradigms reveals that no single exploration strategy dominates universally: count-based and prediction-error methods excel in procedurally structured environments but scale poorly to continuous state spaces; parameter-space noise methods improve sample efficiency on moderately sparse tasks but may underexplore in deeply deceptive reward landscapes; hierarchical and curriculum approaches offer the greatest advantage in tasks requiring compositional skill acquisition but introduce additional optimization complexity.",
+      "citation_markers": [
+        "[5; 32]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "5",
+          "arxiv_id": "1912.10944v2",
+          "title": "A Survey of Deep Reinforcement Learning in Video Games",
+          "abstract": "Deep reinforcement learning (DRL) has made great achievements since proposed. Generally, DRL agents receive high-dimensional inputs at each step, and make actions according to deep-neural-network-based policies. This learning mechanism updates the policy to maximize the return with an end-to-end method. In this paper, we survey the progress of DRL methods, including value-based, policy gradient, and model-based algorithms, and compare their main techniques and properties. Besides, DRL plays an important role in game artificial intelligence (AI). We also take a review of the achievements of DRL in various video games, including classical Arcade games, first-person perspective games and multi-agent real-time strategy games, from 2D to 3D, and from single-agent to multi-agent. A large number of video game AIs with DRL have achieved super-human performance, while there are still some challenges in this domain. Therefore, we also discuss some key points when applying DRL methods to this field, including exploration-exploitation, sample efficiency, generalization and transfer, multi-agent learning, imperfect information, and delayed spare rewards, as well as some research directions.",
+          "resolved_arxiv": {
+            "arxiv_id": "1912.10944",
+            "title": "A Survey of Deep Reinforcement Learning in Video Games",
+            "abstract": "Deep reinforcement learning (DRL) has made great achievements since proposed. Generally, DRL agents receive high-dimensional inputs at each step, and make actions according to deep-neural-network-based policies. This learning mechanism updates the policy to maximize the return with an end-to-end method. In this paper, we survey the progress of DRL methods, including value-based, policy gradient, and model-based algorithms, and compare their main techniques and properties. Besides, DRL plays an important role in game artificial intelligence (AI). We also take a review of the achievements of DRL in various video games, including classical Arcade games, first-person perspective games and multi-agent real-time strategy games, from 2D to 3D, and from single-agent to multi-agent. A large number of video game AIs with DRL have achieved super-human performance, while there are still some challenges in this domain. Therefore, we also discuss some key points when applying DRL methods to this field, including exploration-exploitation, sample efficiency, generalization and transfer, multi-agent learning, imperfect information, and delayed spare rewards, as well as some research directions.",
+            "published": "2019-12-23T16:04:40Z",
+            "source_url": "https://arxiv.org/abs/1912.10944"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "32",
+          "arxiv_id": "2109.06668v6",
+          "title": "Exploration in Deep Reinforcement Learning: From Single-Agent to Multiagent Domain",
+          "abstract": "Deep Reinforcement Learning (DRL) and Deep Multi-agent Reinforcement Learning (MARL) have achieved significant successes across a wide range of domains, including game AI, autonomous vehicles, robotics, and so on. However, DRL and deep MARL agents are widely known to be sample inefficient that millions of interactions are usually needed even for relatively simple problem settings, thus preventing the wide application and deployment in real-industry scenarios. One bottleneck challenge behind is the well-known exploration problem, i.e., how efficiently exploring the environment and collecting informative experiences that could benefit policy learning towards the optimal ones. This problem becomes more challenging in complex environments with sparse rewards, noisy distractions, long horizons, and non-stationary co-learners. In this paper, we conduct a comprehensive survey on existing exploration methods for both single-agent and multi-agent RL. We start the survey by identifying several key challenges to efficient exploration. Beyond the above two main branches, we also include other notable exploration methods with different ideas and techniques. In addition to algorithmic analysis, we provide a comprehensive and unified empirical comparison of different exploration methods for DRL on a set of commonly used benchmarks. According to our algorithmic and empirical investigation, we finally summarize the open problems of exploration in DRL and deep MARL and point out a few future directions.",
+          "resolved_arxiv": {
+            "arxiv_id": "2109.06668",
+            "title": "Exploration in Deep Reinforcement Learning: From Single-Agent to Multiagent Domain",
+            "abstract": "Deep Reinforcement Learning (DRL) and Deep Multi-agent Reinforcement Learning (MARL) have achieved significant successes across a wide range of domains, including game AI, autonomous vehicles, robotics, and so on. However, DRL and deep MARL agents are widely known to be sample inefficient that millions of interactions are usually needed even for relatively simple problem settings, thus preventing the wide application and deployment in real-industry scenarios. One bottleneck challenge behind is the well-known exploration problem, i.e., how efficiently exploring the environment and collecting informative experiences that could benefit policy learning towards the optimal ones. This problem becomes more challenging in complex environments with sparse rewards, noisy distractions, long horizons, and non-stationary co-learners. In this paper, we conduct a comprehensive survey on existing exploration methods for both single-agent and multi-agent RL. We start the survey by identifying several key challenges to efficient exploration. Beyond the above two main branches, we also include other notable exploration methods with different ideas and techniques. In addition to algorithmic analysis, we provide a comprehensive and unified empirical comparison of different exploration methods for DRL on a set of commonly used benchmarks. According to our algorithmic and empirical investigation, we finally summarize the open problems of exploration in DRL and deep MARL and point out a few future directions.",
+            "published": "2021-09-14T13:16:33Z",
+            "source_url": "https://arxiv.org/abs/2109.06668"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Sample efficiency remains a central bottleneck in deep reinforcement learning, as agents typically require millions of environment interactions to acquire competent behavior. Off-policy learning with experience replay [15] enables systematic data reuse by decoupling data collection from policy optimization, while model-based acceleration [22; 43] generates synthetic transitions to supplement real experience.",
+      "citation_markers": [
+        "[15]",
+        "[22; 43]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "15",
+          "arxiv_id": "1611.02247v3",
+          "title": "Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic",
+          "abstract": "Model-free deep reinforcement learning (RL) methods have been successful in a wide variety of simulated domains. However, a major obstacle facing deep RL in the real world is their high sample complexity. Batch policy gradient methods offer stable learning, but at the cost of high variance, which often requires large batches. TD-style methods, such as off-policy actor-critic and Q-learning, are more sample-efficient but biased, and often require costly hyperparameter sweeps to stabilize. In this work, we aim to develop methods that combine the stability of policy gradients with the efficiency of off-policy RL. We present Q-Prop, a policy gradient method that uses a Taylor expansion of the off-policy critic as a control variate. Q-Prop is both sample efficient and stable, and effectively combines the benefits of on-policy and off-policy methods. We analyze the connection between Q-Prop and existing model-free algorithms, and use control variate theory to derive two variants of Q-Prop with conservative and aggressive adaptation. We show that conservative Q-Prop provides substantial gains in sample efficiency over trust region policy optimization (TRPO) with generalized advantage estimation (GAE), and improves stability over deep deterministic policy gradient (DDPG), the state-of-the-art on-policy and off-policy methods, on OpenAI Gym's MuJoCo continuous control environments.",
+          "resolved_arxiv": {
+            "arxiv_id": "1611.02247",
+            "title": "Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic",
+            "abstract": "Model-free deep reinforcement learning (RL) methods have been successful in a wide variety of simulated domains. However, a major obstacle facing deep RL in the real world is their high sample complexity. Batch policy gradient methods offer stable learning, but at the cost of high variance, which often requires large batches. TD-style methods, such as off-policy actor-critic and Q-learning, are more sample-efficient but biased, and often require costly hyperparameter sweeps to stabilize. In this work, we aim to develop methods that combine the stability of policy gradients with the efficiency of off-policy RL. We present Q-Prop, a policy gradient method that uses a Taylor expansion of the off-policy critic as a control variate. Q-Prop is both sample efficient and stable, and effectively combines the benefits of on-policy and off-policy methods. We analyze the connection between Q-Prop and existing model-free algorithms, and use control variate theory to derive two variants of Q-Prop with conservative and aggressive adaptation. We show that conservative Q-Prop provides substantial gains in sample efficiency over trust region policy optimization (TRPO) with generalized advantage estimation (GAE), and improves stability over deep deterministic policy gradient (DDPG), the state-of-the-art on-policy and off-policy methods, on OpenAI Gym's MuJoCo continuous control environments.",
+            "published": "2016-11-07T20:09:16Z",
+            "source_url": "https://arxiv.org/abs/1611.02247"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "22",
+          "arxiv_id": "1807.03858v5",
+          "title": "Algorithmic Framework for Model-based Deep Reinforcement Learning with Theoretical Guarantees",
+          "abstract": "Model-based reinforcement learning (RL) is considered to be a promising approach to reduce the sample complexity that hinders model-free RL. However, the theoretical understanding of such methods has been rather limited. This paper introduces a novel algorithmic framework for designing and analyzing model-based RL algorithms with theoretical guarantees. We design a meta-algorithm with a theoretical guarantee of monotone improvement to a local maximum of the expected reward. The meta-algorithm iteratively builds a lower bound of the expected reward based on the estimated dynamical model and sample trajectories, and then maximizes the lower bound jointly over the policy and the model. The framework extends the optimism-in-face-of-uncertainty principle to non-linear dynamical models in a way that requires \\textit{no explicit} uncertainty quantification. Instantiating our framework with simplification gives a variant of model-based RL algorithms Stochastic Lower Bounds Optimization (SLBO). Experiments demonstrate that SLBO achieves state-of-the-art performance when only one million or fewer samples are permitted on a range of continuous control benchmark tasks.",
+          "resolved_arxiv": {
+            "arxiv_id": "1807.03858",
+            "title": "Algorithmic Framework for Model-based Deep Reinforcement Learning with Theoretical Guarantees",
+            "abstract": "Model-based reinforcement learning (RL) is considered to be a promising approach to reduce the sample complexity that hinders model-free RL. However, the theoretical understanding of such methods has been rather limited. This paper introduces a novel algorithmic framework for designing and analyzing model-based RL algorithms with theoretical guarantees. We design a meta-algorithm with a theoretical guarantee of monotone improvement to a local maximum of the expected reward. The meta-algorithm iteratively builds a lower bound of the expected reward based on the estimated dynamical model and sample trajectories, and then maximizes the lower bound jointly over the policy and the model. The framework extends the optimism-in-face-of-uncertainty principle to non-linear dynamical models in a way that requires \\textit{no explicit} uncertainty quantification. Instantiating our framework with simplification gives a variant of model-based RL algorithms Stochastic Lower Bounds Optimization (SLBO). Experiments demonstrate that SLBO achieves state-of-the-art performance when only one million or fewer samples are permitted on a range of continuous control benchmark tasks.",
+            "published": "2018-07-10T20:53:04Z",
+            "source_url": "https://arxiv.org/abs/1807.03858"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "43",
+          "arxiv_id": "2008.12775v3",
+          "title": "On the model-based stochastic value gradient for continuous reinforcement learning",
+          "abstract": "For over a decade, model-based reinforcement learning has been seen as a way to leverage control-based domain knowledge to improve the sample-efficiency of reinforcement learning agents. While model-based agents are conceptually appealing, their policies tend to lag behind those of model-free agents in terms of final reward, especially in non-trivial environments. In response, researchers have proposed model-based agents with increasingly complex components, from ensembles of probabilistic dynamics models, to heuristics for mitigating model error. In a reversal of this trend, we show that simple model-based agents can be derived from existing ideas that not only match, but outperform state-of-the-art model-free agents in terms of both sample-efficiency and final reward. We find that a model-free soft value estimate for policy evaluation and a model-based stochastic value gradient for policy improvement is an effective combination, achieving state-of-the-art results on a high-dimensional humanoid control task, which most model-based agents are unable to solve. Our findings suggest that model-based policy evaluation deserves closer attention.",
+          "resolved_arxiv": {
+            "arxiv_id": "2008.12775",
+            "title": "On the model-based stochastic value gradient for continuous reinforcement learning",
+            "abstract": "For over a decade, model-based reinforcement learning has been seen as a way to leverage control-based domain knowledge to improve the sample-efficiency of reinforcement learning agents. While model-based agents are conceptually appealing, their policies tend to lag behind those of model-free agents in terms of final reward, especially in non-trivial environments. In response, researchers have proposed model-based agents with increasingly complex components, from ensembles of probabilistic dynamics models, to heuristics for mitigating model error. In a reversal of this trend, we show that simple model-based agents can be derived from existing ideas that not only match, but outperform state-of-the-art model-free agents in terms of both sample-efficiency and final reward. We find that a model-free soft value estimate for policy evaluation and a model-based stochastic value gradient for policy improvement is an effective combination, achieving state-of-the-art results on a high-dimensional humanoid control task, which most model-based agents are unable to solve. Our findings suggest that model-based policy evaluation deserves closer attention.",
+            "published": "2020-08-28T17:58:29Z",
+            "source_url": "https://arxiv.org/abs/2008.12775"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "Partial observability represents one of the most fundamental challenges in deploying reinforcement learning agents in realistic environments, where the Markov assumption is routinely violated and agents must infer latent state from incomplete, noisy observations.",
+      "citation_markers": [
+        "[51]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "51",
+          "arxiv_id": "2110.05038v3",
+          "title": "Recurrent Model-Free RL Can Be a Strong Baseline for Many POMDPs",
+          "abstract": "Many problems in RL, such as meta-RL, robust RL, generalization in RL, and temporal credit assignment, can be cast as POMDPs. In theory, simply augmenting model-free RL with memory-based architectures, such as recurrent neural networks, provides a general approach to solving all types of POMDPs. However, prior work has found that such recurrent model-free RL methods tend to perform worse than more specialized algorithms that are designed for specific types of POMDPs. This paper revisits this claim. We find that careful architecture and hyperparameter decisions can often yield a recurrent model-free implementation that performs on par with (and occasionally substantially better than) more sophisticated recent techniques. We compare to 21 environments from 6 prior specialized methods and find that our implementation achieves greater sample efficiency and asymptotic performance than these methods on 18/21 environments. We also release a simple and efficient implementation of recurrent model-free RL for future work to use as a baseline for POMDPs.",
+          "resolved_arxiv": {
+            "arxiv_id": "2110.05038",
+            "title": "Recurrent Model-Free RL Can Be a Strong Baseline for Many POMDPs",
+            "abstract": "Many problems in RL, such as meta-RL, robust RL, generalization in RL, and temporal credit assignment, can be cast as POMDPs. In theory, simply augmenting model-free RL with memory-based architectures, such as recurrent neural networks, provides a general approach to solving all types of POMDPs. However, prior work has found that such recurrent model-free RL methods tend to perform worse than more specialized algorithms that are designed for specific types of POMDPs. This paper revisits this claim. We find that careful architecture and hyperparameter decisions can often yield a recurrent model-free implementation that performs on par with (and occasionally substantially better than) more sophisticated recent techniques. We compare to 21 environments from 6 prior specialized methods and find that our implementation achieves greater sample efficiency and asymptotic performance than these methods on 18/21 environments. We also release a simple and efficient implementation of recurrent model-free RL for future work to use as a baseline for POMDPs.",
+            "published": "2021-10-11T07:09:14Z",
+            "source_url": "https://arxiv.org/abs/2110.05038"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Memory-based extensions of established algorithms, such as LSTM-TD3, demonstrate that introducing recurrent memory into off-policy continuous control substantially improves performance under missing and noisy observations [52].",
+      "citation_markers": [
+        "[52]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "52",
+          "arxiv_id": "2102.12344v5",
+          "title": "Memory-based Deep Reinforcement Learning for POMDPs",
+          "abstract": "A promising characteristic of Deep Reinforcement Learning (DRL) is its capability to learn optimal policy in an end-to-end manner without relying on feature engineering. However, most approaches assume a fully observable state space, i.e. fully observable Markov Decision Processes (MDPs). In real-world robotics, this assumption is unpractical, because of issues such as sensor sensitivity limitations and sensor noise, and the lack of knowledge about whether the observation design is complete or not. These scenarios lead to Partially Observable MDPs (POMDPs). In this paper, we propose Long-Short-Term-Memory-based Twin Delayed Deep Deterministic Policy Gradient (LSTM-TD3) by introducing a memory component to TD3, and compare its performance with other DRL algorithms in both MDPs and POMDPs. Our results demonstrate the significant advantages of the memory component in addressing POMDPs, including the ability to handle missing and noisy observation data.",
+          "resolved_arxiv": {
+            "arxiv_id": "2102.12344",
+            "title": "Memory-based Deep Reinforcement Learning for POMDPs",
+            "abstract": "A promising characteristic of Deep Reinforcement Learning (DRL) is its capability to learn optimal policy in an end-to-end manner without relying on feature engineering. However, most approaches assume a fully observable state space, i.e. fully observable Markov Decision Processes (MDPs). In real-world robotics, this assumption is unpractical, because of issues such as sensor sensitivity limitations and sensor noise, and the lack of knowledge about whether the observation design is complete or not. These scenarios lead to Partially Observable MDPs (POMDPs). In this paper, we propose Long-Short-Term-Memory-based Twin Delayed Deep Deterministic Policy Gradient (LSTM-TD3) by introducing a memory component to TD3, and compare its performance with other DRL algorithms in both MDPs and POMDPs. Our results demonstrate the significant advantages of the memory component in addressing POMDPs, including the ability to handle missing and noisy observation data.",
+            "published": "2021-02-24T15:25:13Z",
+            "source_url": "https://arxiv.org/abs/2102.12344"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Generalization in deep reinforcement learning represents a fundamental yet underappreciated challenge: agents trained in fixed environments routinely overfit to specific visual appearances, reward structures, and transition dynamics, yielding policies that fail catastrophically under even minor distributional shifts [28; 30].",
+      "citation_markers": [
+        "[28; 30]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "28",
+          "arxiv_id": "1804.06893v2",
+          "title": "A Study on Overfitting in Deep Reinforcement Learning",
+          "abstract": "Recent years have witnessed significant progresses in deep Reinforcement Learning (RL). Empowered with large scale neural networks, carefully designed architectures, novel training algorithms and massively parallel computing devices, researchers are able to attack many challenging RL problems. However, in machine learning, more training power comes with a potential risk of more overfitting. As deep RL techniques are being applied to critical problems such as healthcare and finance, it is important to understand the generalization behaviors of the trained agents. In this paper, we conduct a systematic study of standard RL agents and find that they could overfit in various ways. Moreover, overfitting could happen \"robustly\": commonly used techniques in RL that add stochasticity do not necessarily prevent or detect overfitting. In particular, the same agents and learning algorithms could have drastically different test performance, even when all of them achieve optimal rewards during training. The observations call for more principled and careful evaluation protocols in RL. We conclude with a general discussion on overfitting in RL and a study of the generalization behaviors from the perspective of inductive bias.",
+          "resolved_arxiv": {
+            "arxiv_id": "1804.06893",
+            "title": "A Study on Overfitting in Deep Reinforcement Learning",
+            "abstract": "Recent years have witnessed significant progresses in deep Reinforcement Learning (RL). Empowered with large scale neural networks, carefully designed architectures, novel training algorithms and massively parallel computing devices, researchers are able to attack many challenging RL problems. However, in machine learning, more training power comes with a potential risk of more overfitting. As deep RL techniques are being applied to critical problems such as healthcare and finance, it is important to understand the generalization behaviors of the trained agents. In this paper, we conduct a systematic study of standard RL agents and find that they could overfit in various ways. Moreover, overfitting could happen \"robustly\": commonly used techniques in RL that add stochasticity do not necessarily prevent or detect overfitting. In particular, the same agents and learning algorithms could have drastically different test performance, even when all of them achieve optimal rewards during training. The observations call for more principled and careful evaluation protocols in RL. We conclude with a general discussion on overfitting in RL and a study of the generalization behaviors from the perspective of inductive bias.",
+            "published": "2018-04-18T19:49:13Z",
+            "source_url": "https://arxiv.org/abs/1804.06893"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "30",
+          "arxiv_id": "1806.07937v2",
+          "title": "A Dissection of Overfitting and Generalization in Continuous Reinforcement Learning",
+          "abstract": "The risks and perils of overfitting in machine learning are well known. However most of the treatment of this, including diagnostic tools and remedies, was developed for the supervised learning case. In this work, we aim to offer new perspectives on the characterization and prevention of overfitting in deep Reinforcement Learning (RL) methods, with a particular focus on continuous domains. We examine several aspects, such as how to define and diagnose overfitting in MDPs, and how to reduce risks by injecting sufficient training diversity. This work complements recent findings on the brittleness of deep RL methods and offers practical observations for RL researchers and practitioners.",
+          "resolved_arxiv": {
+            "arxiv_id": "1806.07937",
+            "title": "A Dissection of Overfitting and Generalization in Continuous Reinforcement Learning",
+            "abstract": "The risks and perils of overfitting in machine learning are well known. However most of the treatment of this, including diagnostic tools and remedies, was developed for the supervised learning case. In this work, we aim to offer new perspectives on the characterization and prevention of overfitting in deep Reinforcement Learning (RL) methods, with a particular focus on continuous domains. We examine several aspects, such as how to define and diagnose overfitting in MDPs, and how to reduce risks by injecting sufficient training diversity. This work complements recent findings on the brittleness of deep RL methods and offers practical observations for RL researchers and practitioners.",
+            "published": "2018-06-20T19:27:59Z",
+            "source_url": "https://arxiv.org/abs/1806.07937"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The convergence of deep reinforcement learning with foundation models [91], causal reasoning, and human preference alignment [92] represents the most transformative frontier, promising agents that are simultaneously capable, interpretable, and aligned with human values.",
+      "citation_markers": [
+        "[91]",
+        "[92]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "91",
+          "arxiv_id": "2309.11489v2",
+          "title": "Text2Reward: Reward Shaping with Language Models for Reinforcement Learning",
+          "abstract": "Designing reward functions is a longstanding challenge in reinforcement learning (RL); it requires specialized knowledge or domain data, leading to high costs for development. To address this, we introduce Text2Reward, a data-free framework that automates the generation and shaping of dense reward functions based on large language models (LLMs). Given a goal described in natural language, Text2Reward generates shaped dense reward functions as an executable program grounded in a compact representation of the environment. Unlike inverse RL and recent work that uses LLMs to write sparse reward codes or unshaped dense rewards with a constant function across timesteps, Text2Reward produces interpretable, free-form dense reward codes that cover a wide range of tasks, utilize existing packages, and allow iterative refinement with human feedback. We evaluate Text2Reward on two robotic manipulation benchmarks (ManiSkill2, MetaWorld) and two locomotion environments of MuJoCo. On 13 of the 17 manipulation tasks, policies trained with generated reward codes achieve similar or better task success rates and convergence speed than expert-written reward codes. For locomotion tasks, our method learns six novel locomotion behaviors with a success rate exceeding 94%. Furthermore, we show that the policies trained in the simulator with our method can be deployed in the real world. Finally, Text2Reward further improves the policies by refining their reward functions with human feedback. Video results are available at https://text-to-reward.github.io/ .",
+          "resolved_arxiv": {
+            "arxiv_id": "2309.11489",
+            "title": "Text2Reward: Reward Shaping with Language Models for Reinforcement Learning",
+            "abstract": "Designing reward functions is a longstanding challenge in reinforcement learning (RL); it requires specialized knowledge or domain data, leading to high costs for development. To address this, we introduce Text2Reward, a data-free framework that automates the generation and shaping of dense reward functions based on large language models (LLMs). Given a goal described in natural language, Text2Reward generates shaped dense reward functions as an executable program grounded in a compact representation of the environment. Unlike inverse RL and recent work that uses LLMs to write sparse reward codes or unshaped dense rewards with a constant function across timesteps, Text2Reward produces interpretable, free-form dense reward codes that cover a wide range of tasks, utilize existing packages, and allow iterative refinement with human feedback. We evaluate Text2Reward on two robotic manipulation benchmarks (ManiSkill2, MetaWorld) and two locomotion environments of MuJoCo. On 13 of the 17 manipulation tasks, policies trained with generated reward codes achieve similar or better task success rates and convergence speed than expert-written reward codes. For locomotion tasks, our method learns six novel locomotion behaviors with a success rate exceeding 94%. Furthermore, we show that the policies trained in the simulator with our method can be deployed in the real world. Finally, Text2Reward further improves the policies by refining their reward functions with human feedback. Video results are available at https://text-to-reward.github.io/ .",
+            "published": "2023-09-20T17:39:13Z",
+            "source_url": "https://arxiv.org/abs/2309.11489"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "92",
+          "arxiv_id": "1706.03741v4",
+          "title": "Deep reinforcement learning from human preferences",
+          "abstract": "For sophisticated reinforcement learning (RL) systems to interact usefully with real-world environments, we need to communicate complex goals to these systems. In this work, we explore goals defined in terms of (non-expert) human preferences between pairs of trajectory segments. We show that this approach can effectively solve complex RL tasks without access to the reward function, including Atari games and simulated robot locomotion, while providing feedback on less than one percent of our agent's interactions with the environment. This reduces the cost of human oversight far enough that it can be practically applied to state-of-the-art RL systems. To demonstrate the flexibility of our approach, we show that we can successfully train complex novel behaviors with about an hour of human time. These behaviors and environments are considerably more complex than any that have been previously learned from human feedback.",
+          "resolved_arxiv": {
+            "arxiv_id": "1706.03741",
+            "title": "Deep reinforcement learning from human preferences",
+            "abstract": "For sophisticated reinforcement learning (RL) systems to interact usefully with real-world environments, we need to communicate complex goals to these systems. In this work, we explore goals defined in terms of (non-expert) human preferences between pairs of trajectory segments. We show that this approach can effectively solve complex RL tasks without access to the reward function, including Atari games and simulated robot locomotion, while providing feedback on less than one percent of our agent's interactions with the environment. This reduces the cost of human oversight far enough that it can be practically applied to state-of-the-art RL systems. To demonstrate the flexibility of our approach, we show that we can successfully train complex novel behaviors with about an hour of human time. These behaviors and environments are considerably more complex than any that have been previously learned from human feedback.",
+            "published": "2017-06-12T17:23:59Z",
+            "source_url": "https://arxiv.org/abs/1706.03741"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "topic_id": "cross_medical_image_analysis",
+  "system": "slrgp",
+  "extractor_model": "openai/gpt-5.4-mini",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The most widely cited of these overviews, Litjens et al. [arxiv_1702.05747], provides a comprehensive examination of deep learning concepts pertinent to medical imaging, reviewing over 300 contributions and covering tasks ranging from image classification and object detection to segmentation across multiple organ systems and imaging modalities.",
+      "citation_markers": [
+        "[arxiv_1702.05747]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C02",
+      "quote": "This concern with practical limitations is echoed in Ul Haq [arxiv_2202.08546], which traces the field's momentum to the 2012 ImageNet competition and surveys how convolutional neural networks (CNNs) have since been adapted to diverse medical imaging problems.",
+      "citation_markers": [
+        "[arxiv_2202.08546]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C03",
+      "quote": "The meta-survey by Egger et al. [arxiv_2011.08184] situates deep learning within the broader landscape of artificial intelligence across scientific disciplines, drawing on the analogy between artificial neural networks and biological brain structure to aid conceptual understanding—a framing particularly useful for newcomers.",
+      "citation_markers": [
+        "[arxiv_2011.08184]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C04",
+      "quote": "The question of training strategy is addressed directly by Tajbakhsh et al. [arxiv_1706.00712], who empirically compare full training against fine-tuning of pre-trained CNNs across four medical imaging applications, finding that fine-tuning generally outperforms training from scratch when labeled medical data are limited.",
+      "citation_markers": [
+        "[arxiv_1706.00712]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C05",
+      "quote": "In low-resource settings such as gastrointestinal landmark classification, systematic evaluation of CNN representations confirmed that the choice of pre-trained backbone and the extent of fine-tuning critically determine downstream performance [arxiv_1903.11176].",
+      "citation_markers": [
+        "[arxiv_1903.11176]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C06",
+      "quote": "A self-supervised framework built around Swin Transformers demonstrated that tailored proxy tasks enable effective learning of both global and local 3D representations transferable to segmentation and detection tasks [arxiv_2111.14791]. For 2D segmentation, self-supervised pretraining has similarly been shown to reduce dependence on manually annotated data [arxiv_2209.00314].",
+      "citation_markers": [
+        "[arxiv_2111.14791]",
+        "[arxiv_2209.00314]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C07",
+      "quote": "The so-called 2.5D or pseudo-3D approach provides a stack of adjacent slices as input to a 2D network, enabling the model to incorporate local volumetric context without the full overhead of 3D convolutions [arxiv_1912.09287].",
+      "citation_markers": [
+        "[arxiv_1912.09287]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Zhang et al. [arxiv_2010.06163] conducted an empirical study of 2.5D solutions, demonstrating that carefully designed hybrid architectures can achieve computation-efficient volumetric segmentation competitive with full 3D models.",
+      "citation_markers": [
+        "[arxiv_2010.06163]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C09",
+      "quote": "OpenMedIA extended this ecosystem by providing an open-source toolbox supporting a rich set of deep learning methods—including 2D and 3D classification, segmentation, localisation, and detection—across heterogeneous AI computing platforms, incorporating both PyTorch and MindSpore backends to accommodate diverse hardware environments [arxiv_2208.05616].",
+      "citation_markers": [
+        "[arxiv_2208.05616]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Li et al. [arxiv_2106.12864] conducted a systematic collection of medical image datasets specifically to address the gap between the volume of data required by deep learning algorithms and what is practically available in clinical settings, while Chen et al. [arxiv_2105.13381] similarly concluded that further improvement of deep learning models is majorly constrained by the absence of large labelled corpora.",
+      "citation_markers": [
+        "[arxiv_2106.12864]",
+        "[arxiv_2105.13381]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C11",
+      "quote": "TernaryNet replaces standard convolutions with sparse and binary operations to enable GPU-free inference [arxiv_1801.09449], and a general lightweight system has been proposed that avoids task-specific tuning while maintaining competitive accuracy across diverse segmentation benchmarks [arxiv_1911.01764].",
+      "citation_markers": [
+        "[arxiv_1801.09449]",
+        "[arxiv_1911.01764]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple"
+    },
+    {
+      "claim_id": "C12",
+      "quote": "OpenMedIA extended this ecosystem by providing an open-source toolbox supporting a rich set of deep learning methods—including 2D and 3D classification, segmentation, localisation, and detection—across heterogeneous AI computing platforms, incorporating both PyTorch and MindSpore backends to accommodate diverse hardware environments [arxiv_2208.05616]. This heterogeneous computing support represents a meaningful advance over earlier frameworks, which were predominantly tied to single hardware ecosystems.",
+      "citation_markers": [
+        "[arxiv_2208.05616]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6835,
+    "completion_tokens": 1230,
+    "total_tokens": 8065
+  }
+}

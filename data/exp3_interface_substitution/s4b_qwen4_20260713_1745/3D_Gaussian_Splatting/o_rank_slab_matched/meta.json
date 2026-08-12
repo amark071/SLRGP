@@ -1,0 +1,53 @@
+{
+  "topic": "3D Gaussian Splatting",
+  "arm": "o_rank_slab_matched",
+  "ok": true,
+  "model_g": "qwen3-32b",
+  "bundle_hash": "0900aa12e8bef2cb407e00ec07c988fd7e06b43728dc623752ce6061ffabc953",
+  "started_at": "2026-07-13 17:39:42",
+  "target_total_words": 1000,
+  "groups": [
+    {
+      "name": "Rank slab 1: positions 1-4",
+      "n": 4
+    },
+    {
+      "name": "Rank slab 2: positions 5-8",
+      "n": 4
+    }
+  ],
+  "group_size_vector": [
+    4,
+    4
+  ],
+  "refs": [
+    "arxiv_2308.04079",
+    "arxiv_2401.00834",
+    "arxiv_2403.11134",
+    "arxiv_2403.11831",
+    "arxiv_2411.01853",
+    "arxiv_2411.03637",
+    "arxiv_2502.19318",
+    "arxiv_2509.17083"
+  ],
+  "n_refs": 8,
+  "word_count": 830,
+  "written_citation_ids": [],
+  "leaf_evidence_ids": [
+    "arxiv_2308.04079",
+    "arxiv_2401.00834",
+    "arxiv_2403.11134",
+    "arxiv_2403.11831",
+    "arxiv_2411.01853",
+    "arxiv_2411.03637",
+    "arxiv_2502.19318",
+    "arxiv_2509.17083"
+  ],
+  "primary_length_eligible": true,
+  "elapsed_sec": 158.7,
+  "llm_usage_delta": {
+    "n_calls": 8,
+    "prompt_tokens": 5147,
+    "completion_tokens": 1870
+  }
+}

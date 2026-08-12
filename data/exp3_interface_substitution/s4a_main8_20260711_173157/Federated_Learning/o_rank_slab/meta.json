@@ -1,0 +1,97 @@
+{
+  "topic": "Federated Learning",
+  "arm": "o_rank_slab",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 22:09:03",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "federated learning",
+    "distributed machine learning",
+    "collaborative learning",
+    "privacy-preserving machine learning",
+    "decentralized learning",
+    "federated optimization",
+    "differential privacy",
+    "secure aggregation",
+    "model aggregation",
+    "non-IID data",
+    "communication efficiency",
+    "split learning"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "rank_slab_order",
+  "groups": [
+    {
+      "name": "Rank slab 1: positions 1-8",
+      "n": 8
+    },
+    {
+      "name": "Rank slab 2: positions 9-15",
+      "n": 7
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_2003.13761",
+    "arxiv_2012.07183",
+    "arxiv_2106.06843",
+    "arxiv_2201.07730",
+    "arxiv_2203.17005",
+    "arxiv_2210.00325",
+    "arxiv_2301.01299",
+    "arxiv_2306.02570",
+    "arxiv_2311.16008",
+    "arxiv_2407.19286",
+    "arxiv_2501.05053"
+  ],
+  "n_refs": 11,
+  "word_count": 806,
+  "written_citation_ids": [
+    "arxiv_2003.13761",
+    "arxiv_2201.07730",
+    "arxiv_2106.06843",
+    "arxiv_2306.02570",
+    "arxiv_2012.07183",
+    "arxiv_2210.00325",
+    "arxiv_2311.16008",
+    "arxiv_2407.19286",
+    "arxiv_2301.01299",
+    "arxiv_2203.17005",
+    "arxiv_2501.05053"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_2003.13761",
+    "arxiv_2012.07183",
+    "arxiv_2104.14362",
+    "arxiv_2106.06843",
+    "arxiv_2107.06917",
+    "arxiv_2201.07730",
+    "arxiv_2203.17005",
+    "arxiv_2208.01200",
+    "arxiv_2210.00325",
+    "arxiv_2301.01299",
+    "arxiv_2306.02570",
+    "arxiv_2311.16008",
+    "arxiv_2402.10145",
+    "arxiv_2407.19286",
+    "arxiv_2501.05053"
+  ],
+  "elapsed_sec": 37.6,
+  "llm_usage_delta": {
+    "n_calls": 3,
+    "prompt_tokens": 2847,
+    "completion_tokens": 1300
+  },
+  "llm_usage_so_far": {
+    "n_calls": 208,
+    "prompt_tokens": 181088,
+    "completion_tokens": 50326
+  }
+}

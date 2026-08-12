@@ -1,0 +1,76 @@
+diff --git a/code/src/agents/outline_writer.py b/code/src/agents/outline_writer.py
+index 438fb9f..8aa01c1 100644
+--- a/code/src/agents/outline_writer.py
++++ b/code/src/agents/outline_writer.py
+@@ -33,7 +33,9 @@ class outlineWriter():
+         # Get database
+         # Time Filter
+         arxivid_list = list(self.db["rag_outline"].id_to_index.keys())
+-        arxivid_period = [arxivid for arxivid in arxivid_list if arxivid.split('.')[0] <= '2412']
++        cutoff = os.environ.get("S3_PUBLICATION_CUTOFF", "2024-09-26")
++        cutoff_yymm = cutoff[2:4] + cutoff[5:7]
++        arxivid_period = [arxivid for arxivid in arxivid_list if arxivid.split('.')[0] <= cutoff_yymm]
+         rag_outline_subset_index_filter = get_index_filter(self.db["rag_outline"].id_to_index, 
+                                                            arxivid_period)
+         rag_outline_subset_ids = self.db["rag_outline"].retrieve_id(topic, 
+diff --git a/code/src/agents/writer.py b/code/src/agents/writer.py
+index 8889a57..e3bea87 100644
+--- a/code/src/agents/writer.py
++++ b/code/src/agents/writer.py
+@@ -36,7 +36,9 @@ class subsectionWriter():
+     def write(self, topic, outline, rag_num = 30, rag_max_out = 60 ,subsection_len = 500, refining = True, reflection=True):
+         # HACK: Database subset for outline generation
+         arxivid_list = list(self.db["rag_outline"].id_to_index.keys())
+-        arxivid_period = [arxivid for arxivid in arxivid_list if arxivid.split('.')[0] <= '2412']
++        cutoff = os.environ.get("S3_PUBLICATION_CUTOFF", "2024-09-26")
++        cutoff_yymm = cutoff[2:4] + cutoff[5:7]
++        arxivid_period = [arxivid for arxivid in arxivid_list if arxivid.split('.')[0] <= cutoff_yymm]
+         rag_outline_subset_index_filter = get_index_filter(self.db["rag_outline"].id_to_index, 
+                                                            arxivid_period)
+         rag_outline_subset_ids = self.db["rag_outline"].retrieve_id([topic], 
+@@ -121,7 +123,7 @@ class subsectionWriter():
+     
+                 section_paper_texts[i].append(paper_texts)
+ 
+-        max_section_threads = 100
++        max_section_threads = int(os.environ.get("S3_SECTION_THREADS", "2"))
+ 
+         def write_subsection_wrapper(args):
+             try:
+@@ -176,7 +178,7 @@ class subsectionWriter():
+         section_content_even = copy.deepcopy(section_content)
+         final_section_content = copy.deepcopy(section_content_even)
+ 
+-        max_section_threads = 100
++        max_section_threads = int(os.environ.get("S3_SECTION_THREADS", "2"))
+ 
+         def lce_wrapper(args):
+             try:
+diff --git a/code/src/rag.py b/code/src/rag.py
+index 082e966..4c1ec7b 100644
+--- a/code/src/rag.py
++++ b/code/src/rag.py
+@@ -3,6 +3,8 @@ import jsonlines
+ import faiss
+ import time
+ import logging
++import os
++import torch
+ from langchain_community.docstore.in_memory import InMemoryDocstore
+ from langchain_huggingface import HuggingFaceEmbeddings
+ from langchain_core.runnables import RunnableLambda
+@@ -35,9 +37,13 @@ class GeneralRAG_langchain():
+         self.embedding_model = embedding_model
+ 
+         # load embedding fucntion
++        embedding_device = os.environ.get(
++            "S3_EMBEDDING_DEVICE",
++            "cuda" if torch.cuda.is_available() else "cpu",
++        )
+         self.embedding_function = HuggingFaceEmbeddings(
+             model_name=self.embedding_model,
+-            model_kwargs={'device': 'cuda', 'trust_remote_code': True},
++            model_kwargs={'device': embedding_device, 'trust_remote_code': True},
+         )
+      
+         # load local rag database

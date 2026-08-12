@@ -1,0 +1,429 @@
+{
+  "arxiv_1710.10776": {
+    "doc_id": "arxiv_1710.10776",
+    "title": "Transfer Learning to Learn with Multitask Neural Model Search",
+    "year": 2017,
+    "venue": "cs.AI",
+    "abstract": "Deep learning models require extensive architecture design exploration and hyperparameter optimization to perform well on a given task. The exploration of the model design space is often made by a human expert, and optimized using a combination of grid search and search heuristics over a large space of possible choices. Neural Architecture Search (NAS) is a Reinforcement Learning approach that has been proposed to automate architecture design. NAS has been successfully applied to generate Neural Networks that rival the best human-designed architectures. However, NAS requires sampling, constructing, and training hundreds to thousands of models to achieve well-performing architectures. This procedure needs to be executed from scratch for each new task. The application of NAS to a wide set of tasks currently lacks a way to transfer generalizable knowledge across tasks. In this paper, we present the Multitask Neural Model Search (MNMS) controller. Our goal is to learn a generalizable framework that can condition model construction on successful model searches for previously seen tasks, thus significantly speeding up the search for new tasks. We demonstrate that MNMS can conduct an auto"
+  },
+  "arxiv_1806.10282": {
+    "doc_id": "arxiv_1806.10282",
+    "title": "Auto-Keras: An Efficient Neural Architecture Search System",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Neural architecture search (NAS) has been proposed to automatically tune deep neural networks, but existing search algorithms, e.g., NASNet, PNAS, usually suffer from expensive computational cost. Network morphism, which keeps the functionality of a neural network while changing its neural architecture, could be helpful for NAS by enabling more efficient training during the search. In this paper, we propose a novel framework enabling Bayesian optimization to guide the network morphism for efficient neural architecture search. The framework develops a neural network kernel and a tree-structured acquisition function optimization algorithm to efficiently explores the search space. Intensive experiments on real-world benchmark datasets have been done to demonstrate the superior performance of the developed framework over the state-of-the-art methods. Moreover, we build an open-source AutoML system based on our method, namely Auto-Keras. The system runs in parallel on CPU and GPU, with an adaptive search strategy for different GPU memory limits."
+  },
+  "arxiv_1807.06906": {
+    "doc_id": "arxiv_1807.06906",
+    "title": "Towards Automated Deep Learning: Efficient Joint Neural Architecture and\n  Hyperparameter Search",
+    "year": 2018,
+    "venue": "cs.LG",
+    "abstract": "While existing work on neural architecture search (NAS) tunes hyperparameters in a separate post-processing step, we demonstrate that architectural choices and other hyperparameter settings interact in a way that can render this separation suboptimal. Likewise, we demonstrate that the common practice of using very few epochs during the main NAS and much larger numbers of epochs during a post-processing step is inefficient due to little correlation in the relative rankings for these two training regimes. To combat both of these problems, we propose to use a recent combination of Bayesian optimization and Hyperband for efficient joint neural architecture and hyperparameter search."
+  },
+  "arxiv_1808.07233": {
+    "doc_id": "arxiv_1808.07233",
+    "title": "Neural Architecture Optimization",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Automatic neural architecture design has shown its potential in discovering powerful neural network architectures. Existing methods, no matter based on reinforcement learning or evolutionary algorithms (EA), conduct architecture search in a discrete space, which is highly inefficient. In this paper, we propose a simple and efficient method to automatic neural architecture design based on continuous optimization. We call this new approach neural architecture optimization (NAO). There are three key components in our proposed approach: (1) An encoder embeds/maps neural network architectures into a continuous space. (2) A predictor takes the continuous representation of a network as input and predicts its accuracy. (3) A decoder maps a continuous representation of a network back to its architecture. The performance predictor and the encoder enable us to perform gradient based optimization in the continuous space to find the embedding of a new architecture with potentially better accuracy. Such a better embedding is then decoded to a network by the decoder. Experiments show that the architecture discovered by our method is very competitive for image classification task on CIFAR-10 and l"
+  },
+  "arxiv_1811.09828": {
+    "doc_id": "arxiv_1811.09828",
+    "title": "Evolutionary-Neural Hybrid Agents for Architecture Search",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Neural Architecture Search has shown potential to automate the design of neural networks. Deep Reinforcement Learning based agents can learn complex architectural patterns, as well as explore a vast and compositional search space. On the other hand, evolutionary algorithms offer higher sample efficiency, which is critical for such a resource intensive application. In order to capture the best of both worlds, we propose a class of Evolutionary-Neural hybrid agents (Evo-NAS). We show that the Evo-NAS agent outperforms both neural and evolutionary agents when applied to architecture search for a suite of text and image classification benchmarks. On a high-complexity architecture search space for image classification, the Evo-NAS agent surpasses the accuracy achieved by commonly used agents with only 1/3 of the search cost."
+  },
+  "arxiv_1812.05866": {
+    "doc_id": "arxiv_1812.05866",
+    "title": "Evolutionary Neural Architecture Search for Image Restoration",
+    "year": 2019,
+    "venue": "cs.NE",
+    "abstract": "Convolutional neural network (CNN) architectures have traditionally been explored by human experts in a manual search process that is time-consuming and ineffectively explores the massive space of potential solutions. Neural architecture search (NAS) methods automatically search the space of neural network hyperparameters in order to find optimal task-specific architectures. NAS methods have discovered CNN architectures that achieve state-of-the-art performance in image classification among other tasks, however the application of NAS to image-to-image regression problems such as image restoration is sparse. This paper proposes a NAS method that performs computationally efficient evolutionary search of a minimally constrained network architecture search space. The performance of architectures discovered by the proposed method is evaluated on a variety of image restoration tasks applied to the ImageNet64x64 dataset, and compared with human-engineered CNN architectures. The best neural architectures discovered using only 2 GPU-hours of evolutionary search exhibit comparable performance to the human-engineered baseline architecture."
+  },
+  "arxiv_1812.09926": {
+    "doc_id": "arxiv_1812.09926",
+    "title": "SNAS: Stochastic Neural Architecture Search",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "We propose Stochastic Neural Architecture Search (SNAS), an economical end-to-end solution to Neural Architecture Search (NAS) that trains neural operation parameters and architecture distribution parameters in same round of back-propagation, while maintaining the completeness and differentiability of the NAS pipeline. In this work, NAS is reformulated as an optimization problem on parameters of a joint distribution for the search space in a cell. To leverage the gradient information in generic differentiable loss for architecture search, a novel search gradient is proposed. We prove that this search gradient optimizes the same objective as reinforcement-learning-based NAS, but assigns credits to structural decisions more efficiently. This credit assignment is further augmented with locally decomposable reward to enforce a resource-efficient constraint. In experiments on CIFAR-10, SNAS takes less epochs to find a cell architecture with state-of-the-art accuracy than non-differentiable evolution-based and reinforcement-learning-based NAS, which is also transferable to ImageNet. It is also shown that child networks of SNAS can maintain the validation accuracy in searching, with which"
+  },
+  "arxiv_1902.07638": {
+    "doc_id": "arxiv_1902.07638",
+    "title": "Random Search and Reproducibility for Neural Architecture Search",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Neural architecture search (NAS) is a promising research direction that has the potential to replace expert-designed networks with learned, task-specific architectures. In this work, in order to help ground the empirical results in this field, we propose new NAS baselines that build off the following observations: (i) NAS is a specialized hyperparameter optimization problem; and (ii) random search is a competitive baseline for hyperparameter optimization. Leveraging these observations, we evaluate both random search with early-stopping and a novel random search with weight-sharing algorithm on two standard NAS benchmarks---PTB and CIFAR-10. Our results show that random search with early-stopping is a competitive NAS baseline, e.g., it performs at least as well as ENAS, a leading NAS method, on both benchmarks. Additionally, random search with weight-sharing outperforms random search with early-stopping, achieving a state-of-the-art NAS result on PTB and a highly competitive result on CIFAR-10. Finally, we explore the existing reproducibility issues of published NAS results. We note the lack of source material needed to exactly reproduce these results, and further discuss the robust"
+  },
+  "arxiv_1902.08142": {
+    "doc_id": "arxiv_1902.08142",
+    "title": "Evaluating the Search Phase of Neural Architecture Search",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Neural Architecture Search (NAS) aims to facilitate the design of deep networks for new tasks. Existing techniques rely on two stages: searching over the architecture space and validating the best architecture. NAS algorithms are currently compared solely based on their results on the downstream task. While intuitive, this fails to explicitly evaluate the effectiveness of their search strategies. In this paper, we propose to evaluate the NAS search phase. To this end, we compare the quality of the solutions obtained by NAS search policies with that of random architecture selection. We find that: (i) On average, the state-of-the-art NAS algorithms perform similarly to the random policy; (ii) the widely-used weight sharing strategy degrades the ranking of the NAS candidates to the point of not reflecting their true performance, thus reducing the effectiveness of the search process. We believe that our evaluation framework will be key to designing NAS strategies that consistently discover architectures superior to random ones."
+  },
+  "arxiv_1905.01392": {
+    "doc_id": "arxiv_1905.01392",
+    "title": "A Survey on Neural Architecture Search",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "The growing interest in both the automation of machine learning and deep learning has inevitably led to the development of a wide variety of automated methods for neural architecture search. The choice of the network architecture has proven to be critical, and many advances in deep learning spring from its immediate improvements. However, deep learning techniques are computationally intensive and their application requires a high level of domain knowledge. Therefore, even partial automation of this process helps to make deep learning more accessible to both researchers and practitioners. With this survey, we provide a formalism which unifies and categorizes the landscape of existing methods along with a detailed analysis that compares and contrasts the different approaches. We achieve this via a comprehensive discussion of the commonly adopted architecture search spaces and architecture optimization algorithms based on principles of reinforcement learning and evolutionary algorithms along with approaches that incorporate surrogate and one-shot models. Additionally, we address the new research directions which include constrained and multi-objective architecture search as well as au"
+  },
+  "arxiv_1907.08307": {
+    "doc_id": "arxiv_1907.08307",
+    "title": "XferNAS: Transfer Neural Architecture Search",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "The term Neural Architecture Search (NAS) refers to the automatic optimization of network architectures for a new, previously unknown task. Since testing an architecture is computationally very expensive, many optimizers need days or even weeks to find suitable architectures. However, this search time can be significantly reduced if knowledge from previous searches on different tasks is reused. In this work, we propose a generally applicable framework that introduces only minor changes to existing optimizers to leverage this feature. As an example, we select an existing optimizer and demonstrate the complexity of the integration of the framework as well as its impact. In experiments on CIFAR-10 and CIFAR-100, we observe a reduction in the search time from 200 to only 6 GPU days, a speed up by a factor of 33. In addition, we observe new records of 1.99 and 14.06 for NAS optimizers on the CIFAR benchmarks, respectively. In a separate study, we analyze the impact of the amount of source and target data. Empirically, we demonstrate that the proposed framework generally gives better results and, in the worst case, is just as good as the unmodified optimizer."
+  },
+  "arxiv_1909.00122": {
+    "doc_id": "arxiv_1909.00122",
+    "title": "HM-NAS: Efficient Neural Architecture Search via Hierarchical Masking",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "The use of automatic methods, often referred to as Neural Architecture Search (NAS), in designing neural network architectures has recently drawn considerable attention. In this work, we present an efficient NAS approach, named HM- NAS, that generalizes existing weight sharing based NAS approaches. Existing weight sharing based NAS approaches still adopt hand-designed heuristics to generate architecture candidates. As a consequence, the space of architecture candidates is constrained in a subset of all possible architectures, making the architecture search results sub-optimal. HM-NAS addresses this limitation via two innovations. First, HM-NAS incorporates a multi-level architecture encoding scheme to enable searching for more flexible network architectures. Second, it discards the hand-designed heuristics and incorporates a hierarchical masking scheme that automatically learns and determines the optimal architecture. Compared to state-of-the-art weight sharing based approaches, HM-NAS is able to achieve better architecture search performance and competitive model evaluation accuracy. Without the constraint imposed by the hand-designed heuristics, our searched networks contain more"
+  },
+  "arxiv_1909.03184": {
+    "doc_id": "arxiv_1909.03184",
+    "title": "Auto-GNN: Neural Architecture Search of Graph Neural Networks",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Graph neural networks (GNN) has been successfully applied to operate on the graph-structured data. Given a specific scenario, rich human expertise and tremendous laborious trials are usually required to identify a suitable GNN architecture. It is because the performance of a GNN architecture is significantly affected by the choice of graph convolution components, such as aggregate function and hidden dimension. Neural architecture search (NAS) has shown its potential in discovering effective deep architectures for learning tasks in image and language modeling. However, existing NAS algorithms cannot be directly applied to the GNN search problem. First, the search space of GNN is different from the ones in existing NAS work. Second, the representation learning capacity of GNN architecture changes obviously with slight architecture modifications. It affects the search efficiency of traditional search methods. Third, widely used techniques in NAS such as parameter sharing might become unstable in GNN.   To bridge the gap, we propose the automated graph neural networks (AGNN) framework, which aims to find an optimal GNN architecture within a predefined search space. A reinforcement lea"
+  },
+  "arxiv_1909.03615": {
+    "doc_id": "arxiv_1909.03615",
+    "title": "Neural Architecture Search in Embedding Space",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "The neural architecture search (NAS) algorithm with reinforcement learning can be a powerful and novel framework for the automatic discovering process of neural architectures. However, its application is restricted by noncontinuous and high-dimensional search spaces, which result in difficulty in optimization. To resolve these problems, we proposed NAS in embedding space (NASES), which is a novel framework. Unlike other NAS with reinforcement learning approaches that search over a discrete and high-dimensional architecture space, this approach enables reinforcement learning to search in an embedding space by using architecture encoders and decoders. The current experiment demonstrated that the performance of the final architecture network using the NASES procedure is comparable with that of other popular NAS approaches for the image classification task on CIFAR-10. The results of the experiment were efficient and indicated that NASES was highly efficient to discover final architecture only in $<$3.5 GPU hours. The beneficial-performance and effectiveness of NASES was impressive when the architecture-embedding searching and weight initialization were applied."
+  },
+  "arxiv_1911.05704": {
+    "doc_id": "arxiv_1911.05704",
+    "title": "RAPDARTS: Resource-Aware Progressive Differentiable Architecture Search",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "Early neural network architectures were designed by so-called \"grad student descent\". Since then, the field of Neural Architecture Search (NAS) has developed with the goal of algorithmically designing architectures tailored for a dataset of interest. Recently, gradient-based NAS approaches have been created to rapidly perform the search. Gradient-based approaches impose more structure on the search, compared to alternative NAS methods, enabling faster search phase optimization. In the real-world, neural architecture performance is measured by more than just high accuracy. There is increasing need for efficient neural architectures, where resources such as model size or latency must also be considered. Gradient-based NAS is also suitable for such multi-objective optimization. In this work we extend a popular gradient-based NAS method to support one or more resource costs. We then perform in-depth analysis on the discovery of architectures satisfying single-resource constraints for classification of CIFAR-10."
+  },
+  "arxiv_1911.09336": {
+    "doc_id": "arxiv_1911.09336",
+    "title": "Bridging the Gap between Sample-based and One-shot Neural Architecture\n  Search with BONAS",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Neural Architecture Search (NAS) has shown great potentials in finding better neural network designs. Sample-based NAS is the most reliable approach which aims at exploring the search space and evaluating the most promising architectures. However, it is computationally very costly. As a remedy, the one-shot approach has emerged as a popular technique for accelerating NAS using weight-sharing. However, due to the weight-sharing of vastly different networks, the one-shot approach is less reliable than the sample-based approach. In this work, we propose BONAS (Bayesian Optimized Neural Architecture Search), a sample-based NAS framework which is accelerated using weight-sharing to evaluate multiple related architectures simultaneously. Specifically, we apply Graph Convolutional Network predictor as a surrogate model for Bayesian Optimization to select multiple related candidate models in each iteration. We then apply weight-sharing to train multiple candidate models simultaneously. This approach not only accelerates the traditional sample-based approach significantly, but also keeps its reliability. This is because weight-sharing among related architectures are more reliable than those"
+  },
+  "arxiv_1912.06059": {
+    "doc_id": "arxiv_1912.06059",
+    "title": "Grid Search, Random Search, Genetic Algorithm: A Big Comparison for NAS",
+    "year": 2019,
+    "venue": "cs.LG",
+    "abstract": "In this paper, we compare the three most popular algorithms for hyperparameter optimization (Grid Search, Random Search, and Genetic Algorithm) and attempt to use them for neural architecture search (NAS). We use these algorithms for building a convolutional neural network (search architecture). Experimental results on CIFAR-10 dataset further demonstrate the performance difference between compared algorithms. The comparison results are based on the execution time of the above algorithms and accuracy of the proposed models."
+  },
+  "arxiv_2003.12857": {
+    "doc_id": "arxiv_2003.12857",
+    "title": "NPENAS: Neural Predictor Guided Evolution for Neural Architecture Search",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Neural architecture search (NAS) is a promising method for automatically design neural architectures. NAS adopts a search strategy to explore the predefined search space to find outstanding performance architecture with the minimum searching costs. Bayesian optimization and evolutionary algorithms are two commonly used search strategies, but they suffer from computationally expensive, challenge to implement or inefficient exploration ability. In this paper, we propose a neural predictor guided evolutionary algorithm to enhance the exploration ability of EA for NAS (NPENAS) and design two kinds of neural predictors. The first predictor is defined from Bayesian optimization and we propose a graph-based uncertainty estimation network as a surrogate model that is easy to implement and computationally efficient. The second predictor is a graph-based neural network that directly outputs the performance prediction of the input neural architecture. The NPENAS using the two neural predictors are denoted as NPENAS-BO and NPENAS-NP respectively. In addition, we introduce a new random architecture sampling method to overcome the drawbacks of the existing sampling method. Extensive experiments "
+  },
+  "arxiv_2004.01395": {
+    "doc_id": "arxiv_2004.01395",
+    "title": "Neural Architecture Generator Optimization",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Neural Architecture Search (NAS) was first proposed to achieve state-of-the-art performance through the discovery of new architecture patterns, without human intervention. An over-reliance on expert knowledge in the search space design has however led to increased performance (local optima) without significant architectural breakthroughs, thus preventing truly novel solutions from being reached. In this work we 1) are the first to investigate casting NAS as a problem of finding the optimal network generator and 2) we propose a new, hierarchical and graph-based search space capable of representing an extremely large variety of network types, yet only requiring few continuous hyper-parameters. This greatly reduces the dimensionality of the problem, enabling the effective use of Bayesian Optimisation as a search strategy. At the same time, we expand the range of valid architectures, motivating a multi-objective learning approach. We demonstrate the effectiveness of this strategy on six benchmark datasets and show that our search space generates extremely lightweight yet highly competitive models."
+  },
+  "arxiv_2005.07564": {
+    "doc_id": "arxiv_2005.07564",
+    "title": "Progressive Automatic Design of Search Space for One-Shot Neural\n  Architecture Search",
+    "year": 2021,
+    "venue": "cs.CV",
+    "abstract": "Neural Architecture Search (NAS) has attracted growing interest. To reduce the search cost, recent work has explored weight sharing across models and made major progress in One-Shot NAS. However, it has been observed that a model with higher one-shot model accuracy does not necessarily perform better when stand-alone trained. To address this issue, in this paper, we propose Progressive Automatic Design of search space, named PAD-NAS. Unlike previous approaches where the same operation search space is shared by all the layers in the supernet, we formulate a progressive search strategy based on operation pruning and build a layer-wise operation search space. In this way, PAD-NAS can automatically design the operations for each layer and achieve a trade-off between search space quality and model diversity. During the search, we also take the hardware platform constraints into consideration for efficient neural network model deployment. Extensive experiments on ImageNet show that our method can achieve state-of-the-art performance."
+  },
+  "arxiv_2005.11074": {
+    "doc_id": "arxiv_2005.11074",
+    "title": "An Introduction to Neural Architecture Search for Convolutional Networks",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Neural Architecture Search (NAS) is a research field concerned with utilizing optimization algorithms to design optimal neural network architectures. There are many approaches concerning the architectural search spaces, optimization algorithms, as well as candidate architecture evaluation methods. As the field is growing at a continuously increasing pace, it is difficult for a beginner to discern between major, as well as emerging directions the field has followed. In this work, we provide an introduction to the basic concepts of NAS for convolutional networks, along with the major advances in search spaces, algorithms and evaluation techniques."
+  },
+  "arxiv_2006.02903": {
+    "doc_id": "arxiv_2006.02903",
+    "title": "A Comprehensive Survey of Neural Architecture Search: Challenges and\n  Solutions",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Deep learning has made breakthroughs and substantial in many fields due to its powerful automatic representation capabilities. It has been proven that neural architecture design is crucial to the feature representation of data and the final performance. However, the design of the neural architecture heavily relies on the researchers' prior knowledge and experience. And due to the limitations of human' inherent knowledge, it is difficult for people to jump out of their original thinking paradigm and design an optimal model. Therefore, an intuitive idea would be to reduce human intervention as much as possible and let the algorithm automatically design the neural architecture. Neural Architecture Search (NAS) is just such a revolutionary algorithm, and the related research work is complicated and rich. Therefore, a comprehensive and systematic survey on the NAS is essential. Previously related surveys have begun to classify existing work mainly based on the key components of NAS: search space, search strategy, and evaluation strategy. While this classification method is more intuitive, it is difficult for readers to grasp the challenges and the landmark work involved. Therefore, in t"
+  },
+  "arxiv_2008.01475": {
+    "doc_id": "arxiv_2008.01475",
+    "title": "Weight-Sharing Neural Architecture Search: A Battle to Shrink the\n  Optimization Gap",
+    "year": 2020,
+    "venue": "cs.CV",
+    "abstract": "Neural architecture search (NAS) has attracted increasing attentions in both academia and industry. In the early age, researchers mostly applied individual search methods which sample and evaluate the candidate architectures separately and thus incur heavy computational overheads. To alleviate the burden, weight-sharing methods were proposed in which exponentially many architectures share weights in the same super-network, and the costly training procedure is performed only once. These methods, though being much faster, often suffer the issue of instability. This paper provides a literature review on NAS, in particular the weight-sharing methods, and points out that the major challenge comes from the optimization gap between the super-network and the sub-architectures. From this perspective, we summarize existing approaches into several categories according to their efforts in bridging the gap, and analyze both advantages and disadvantages of these methodologies. Finally, we share our opinions on the future directions of NAS and AutoML. Due to the expertise of the authors, this paper mainly focuses on the application of NAS to computer vision problems and may bias towards the work "
+  },
+  "arxiv_2008.10937": {
+    "doc_id": "arxiv_2008.10937",
+    "title": "A Survey on Evolutionary Neural Architecture Search",
+    "year": 2022,
+    "venue": "cs.NE",
+    "abstract": "Deep Neural Networks (DNNs) have achieved great success in many applications. The architectures of DNNs play a crucial role in their performance, which is usually manually designed with rich expertise. However, such a design process is labour intensive because of the trial-and-error process, and also not easy to realize due to the rare expertise in practice. Neural Architecture Search (NAS) is a type of technology that can design the architectures automatically. Among different methods to realize NAS, Evolutionary Computation (EC) methods have recently gained much attention and success. Unfortunately, there has not yet been a comprehensive summary of the EC-based NAS algorithms. This paper reviews over 200 papers of most recent EC-based NAS methods in light of the core components, to systematically discuss their design principles as well as justifications on the design. Furthermore, current challenges and issues are also discussed to identify future research in this emerging field."
+  },
+  "arxiv_2009.10199": {
+    "doc_id": "arxiv_2009.10199",
+    "title": "Evolutionary Architecture Search for Graph Neural Networks",
+    "year": 2020,
+    "venue": "cs.NE",
+    "abstract": "Automated machine learning (AutoML) has seen a resurgence in interest with the boom of deep learning over the past decade. In particular, Neural Architecture Search (NAS) has seen significant attention throughout the AutoML research community, and has pushed forward the state-of-the-art in a number of neural models to address grid-like data such as texts and images. However, very litter work has been done about Graph Neural Networks (GNN) learning on unstructured network data. Given the huge number of choices and combinations of components such as aggregator and activation function, determining the suitable GNN structure for a specific problem normally necessitates tremendous expert knowledge and laborious trails. In addition, the slight variation of hyper parameters such as learning rate and dropout rate could dramatically hurt the learning capacity of GNN. In this paper, we propose a novel AutoML framework through the evolution of individual models in a large GNN architecture space involving both neural structures and learning parameters. Instead of optimizing only the model structures with fixed parameter settings as existing work, an alternating evolution process is performed b"
+  },
+  "arxiv_2010.05719": {
+    "doc_id": "arxiv_2010.05719",
+    "title": "Revisiting Neural Architecture Search",
+    "year": 2020,
+    "venue": "cs.LG",
+    "abstract": "Neural Architecture Search (NAS) is a collection of methods to craft the way neural networks are built. Current NAS methods are far from ab initio and automatic, as they use manual backbone architectures or micro building blocks (cells), which have had minor breakthroughs in performance compared to random baselines. They also involve a significant manual expert effort in various components of the NAS pipeline. This raises a natural question - Are the current NAS methods still heavily dependent on manual effort in the search space design and wiring like it was done when building models before the advent of NAS? In this paper, instead of merely chasing slight improvements over state-of-the-art (SOTA) performance, we revisit the fundamental approach to NAS and propose a novel approach called ReNAS that can search for the complete neural network without much human effort and is a step closer towards AutoML-nirvana. Our method starts from a complete graph mapped to a neural network and searches for the connections and operations by balancing the exploration and exploitation of the search space. The results are on-par with the SOTA performance with methods that leverage handcrafted block"
+  },
+  "arxiv_2012.06138": {
+    "doc_id": "arxiv_2012.06138",
+    "title": "AdvantageNAS: Efficient Neural Architecture Search with Credit\n  Assignment",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Neural architecture search (NAS) is an approach for automatically designing a neural network architecture without human effort or expert knowledge. However, the high computational cost of NAS limits its use in commercial applications. Two recent NAS paradigms, namely one-shot and sparse propagation, which reduce the time and space complexities, respectively, provide clues for solving this problem. In this paper, we propose a novel search strategy for one-shot and sparse propagation NAS, namely AdvantageNAS, which further reduces the time complexity of NAS by reducing the number of search iterations. AdvantageNAS is a gradient-based approach that improves the search efficiency by introducing credit assignment in gradient estimation for architecture updates. Experiments on the NAS-Bench-201 and PTB dataset show that AdvantageNAS discovers an architecture with higher performance under a limited time budget compared to existing sparse propagation NAS. To further reveal the reliabilities of AdvantageNAS, we investigate it theoretically and find that it monotonically improves the expected loss and thus converges."
+  },
+  "arxiv_2012.06400": {
+    "doc_id": "arxiv_2012.06400",
+    "title": "Differential Evolution for Neural Architecture Search",
+    "year": 2021,
+    "venue": "cs.NE",
+    "abstract": "Neural architecture search (NAS) methods rely on a search strategy for deciding which architectures to evaluate next and a performance estimation strategy for assessing their performance (e.g., using full evaluations, multi-fidelity evaluations, or the one-shot model). In this paper, we focus on the search strategy. We introduce the simple yet powerful evolutionary algorithm of differential evolution to the NAS community. Using the simplest performance evaluation strategy of full evaluations, we comprehensively compare this search strategy to regularized evolution and Bayesian optimization and demonstrate that it yields improved and more robust results for 13 tabular NAS benchmarks based on NAS-Bench-101, NAS-Bench-1Shot1, NAS-Bench-201 and NAS-HPO bench."
+  },
+  "arxiv_2103.02126": {
+    "doc_id": "arxiv_2103.02126",
+    "title": "Differentiable Neural Architecture Learning for Efficient Neural Network\n  Design",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Automated neural network design has received ever-increasing attention with the evolution of deep convolutional neural networks (CNNs), especially involving their deployment on embedded and mobile platforms. One of the biggest problems that neural architecture search (NAS) confronts is that a large number of candidate neural architectures are required to train, using, for instance, reinforcement learning and evolutionary optimisation algorithms, at a vast computation cost. Even recent differentiable neural architecture search (DNAS) samples a small number of candidate neural architectures based on the probability distribution of learned architecture parameters to select the final neural architecture. To address this computational complexity issue, we introduce a novel \\emph{architecture parameterisation} based on scaled sigmoid function, and propose a general \\emph{Differentiable Neural Architecture Learning} (DNAL) method to optimize the neural architecture without the need to evaluate candidate neural networks. Specifically, for stochastic supernets as well as conventional CNNs, we build a new channel-wise module layer with the architecture components controlled by a scaled sigmo"
+  },
+  "arxiv_2103.08157": {
+    "doc_id": "arxiv_2103.08157",
+    "title": "Pretraining Neural Architecture Search Controllers with Locality-based\n  Self-Supervised Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Neural architecture search (NAS) has fostered various fields of machine learning. Despite its prominent dedications, many have criticized the intrinsic limitations of high computational cost. We aim to ameliorate this by proposing a pretraining scheme that can be generally applied to controller-based NAS. Our method, locality-based self-supervised classification task, leverages the structural similarity of network architectures to obtain good architecture representations. We incorporate our method into neural architecture optimization (NAO) to analyze the pretrained embeddings and its effectiveness and highlight that adding metric learning loss brings a favorable impact on NAS. Our code is available at \\url{https://github.com/Multi-Objective-NAS/self-supervised-nas}."
+  },
+  "arxiv_2103.12529": {
+    "doc_id": "arxiv_2103.12529",
+    "title": "Enhanced Gradient for Differentiable Architecture Search",
+    "year": 2021,
+    "venue": "cs.CV",
+    "abstract": "In recent years, neural architecture search (NAS) methods have been proposed for the automatic generation of task-oriented network architecture in image classification. However, the architectures obtained by existing NAS approaches are optimized only for classification performance and do not adapt to devices with limited computational resources. To address this challenge, we propose a neural network architecture search algorithm aiming to simultaneously improve network performance (e.g., classification accuracy) and reduce network complexity. The proposed framework automatically builds the network architecture at two stages: block-level search and network-level search. At the stage of block-level search, a relaxation method based on the gradient is proposed, using an enhanced gradient to design high-performance and low-complexity blocks. At the stage of network-level search, we apply an evolutionary multi-objective algorithm to complete the automatic design from blocks to the target network. The experiment results demonstrate that our method outperforms all evaluated hand-crafted networks in image classification, with an error rate of on CIFAR10 and an error rate of on CIFAR100, bo"
+  },
+  "arxiv_2105.01015": {
+    "doc_id": "arxiv_2105.01015",
+    "title": "Bag of Baselines for Multi-objective Joint Neural Architecture Search\n  and Hyperparameter Optimization",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Neural architecture search (NAS) and hyperparameter optimization (HPO) make deep learning accessible to non-experts by automatically finding the architecture of the deep neural network to use and tuning the hyperparameters of the used training pipeline. While both NAS and HPO have been studied extensively in recent years, NAS methods typically assume fixed hyperparameters and vice versa - there exists little work on joint NAS + HPO. Furthermore, NAS has recently often been framed as a multi-objective optimization problem, in order to take, e.g., resource requirements into account. In this paper, we propose a set of methods that extend current approaches to jointly optimize neural architectures and hyperparameters with respect to multiple objectives. We hope that these methods will serve as simple baselines for future research on multi-objective joint NAS + HPO. To facilitate this, all our code is available at https://github.com/automl/multi-obj-baselines."
+  },
+  "arxiv_2107.00860": {
+    "doc_id": "arxiv_2107.00860",
+    "title": "Rapid Neural Architecture Search by Learning to Generate Graphs from\n  Datasets",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Despite the success of recent Neural Architecture Search (NAS) methods on various tasks which have shown to output networks that largely outperform human-designed networks, conventional NAS methods have mostly tackled the optimization of searching for the network architecture for a single task (dataset), which does not generalize well across multiple tasks (datasets). Moreover, since such task-specific methods search for a neural architecture from scratch for every given task, they incur a large computational cost, which is problematic when the time and monetary budget are limited. In this paper, we propose an efficient NAS framework that is trained once on a database consisting of datasets and pretrained networks and can rapidly search for a neural architecture for a novel dataset. The proposed MetaD2A (Meta Dataset-to-Architecture) model can stochastically generate graphs (architectures) from a given set (dataset) via a cross-modal latent space learned with amortized meta-learning. Moreover, we also propose a meta-performance predictor to estimate and select the best architecture without direct training on target datasets. The experimental results demonstrate that our model meta-"
+  },
+  "arxiv_2108.01854": {
+    "doc_id": "arxiv_2108.01854",
+    "title": "Efficient Neural Architecture Search with Performance Prediction",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Neural networks are powerful models that have a remarkable ability to extract patterns that are too complex to be noticed by humans or other machine learning models. Neural networks are the first class of models that can train end-to-end systems with large learning capacities. However, we still have the difficult challenge of designing the neural network, which requires human experience and a long process of trial and error. As a solution, we can use a neural architecture search to find the best network architecture for the task at hand. Existing NAS algorithms generally evaluate the fitness of a new architecture by fully training from scratch, resulting in the prohibitive computational cost, even if operated on high-performance computers. In this paper, an end-to-end offline performance predictor is proposed to accelerate the evaluation of sampled architectures.   Index Terms- Learning Curve Prediction, Neural Architecture Search, Reinforcement Learning."
+  },
+  "arxiv_2108.04392": {
+    "doc_id": "arxiv_2108.04392",
+    "title": "Rethinking Architecture Selection in Differentiable NAS",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Differentiable Neural Architecture Search is one of the most popular Neural Architecture Search (NAS) methods for its search efficiency and simplicity, accomplished by jointly optimizing the model weight and architecture parameters in a weight-sharing supernet via gradient-based algorithms. At the end of the search phase, the operations with the largest architecture parameters will be selected to form the final architecture, with the implicit assumption that the values of architecture parameters reflect the operation strength. While much has been discussed about the supernet's optimization, the architecture selection process has received little attention. We provide empirical and theoretical analysis to show that the magnitude of architecture parameters does not necessarily indicate how much the operation contributes to the supernet's performance. We propose an alternative perturbation-based architecture selection that directly measures each operation's influence on the supernet. We re-evaluate several differentiable NAS methods with the proposed architecture selection and find that it is able to extract significantly improved architectures from the underlying supernets consistentl"
+  },
+  "arxiv_2108.08474": {
+    "doc_id": "arxiv_2108.08474",
+    "title": "Trends in Neural Architecture Search: Towards the Acceleration of Search",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "In modern deep learning research, finding optimal (or near optimal) neural network models is one of major research directions and it is widely studied in many applications. In this paper, the main research trends of neural architecture search (NAS) are classified as neuro-evolutionary algorithms, reinforcement learning based algorithms, and one-shot architecture search approaches. Furthermore, each research trend is introduced and finally all the major three trends are compared. Lastly, the future research directions of NAS research trends are discussed."
+  },
+  "arxiv_2109.12425": {
+    "doc_id": "arxiv_2109.12425",
+    "title": "L$^{2}$NAS: Learning to Optimize Neural Architectures via\n  Continuous-Action Reinforcement Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Neural architecture search (NAS) has achieved remarkable results in deep neural network design. Differentiable architecture search converts the search over discrete architectures into a hyperparameter optimization problem which can be solved by gradient descent. However, questions have been raised regarding the effectiveness and generalizability of gradient methods for solving non-convex architecture hyperparameter optimization problems. In this paper, we propose L$^{2}$NAS, which learns to intelligently optimize and update architecture hyperparameters via an actor neural network based on the distribution of high-performing architectures in the search history. We introduce a quantile-driven training procedure which efficiently trains L$^{2}$NAS in an actor-critic framework via continuous-action reinforcement learning. Experiments show that L$^{2}$NAS achieves state-of-the-art results on NAS-Bench-201 benchmark as well as DARTS search space and Once-for-All MobileNetV3 search space. We also show that search policies generated by L$^{2}$NAS are generalizable and transferable across different training datasets with minimal fine-tuning."
+  },
+  "arxiv_2110.05842": {
+    "doc_id": "arxiv_2110.05842",
+    "title": "Across-Task Neural Architecture Search via Meta Learning",
+    "year": 2021,
+    "venue": "cs.LG",
+    "abstract": "Adequate labeled data and expensive compute resources are the prerequisites for the success of neural architecture search(NAS). It is challenging to apply NAS in meta-learning scenarios with limited compute resources and data. In this paper, an across-task neural architecture search (AT-NAS) is proposed to address the problem through combining gradient-based meta-learning with EA-based NAS to learn over the distribution of tasks. The supernet is learned over an entire set of tasks by meta-learning its weights. Architecture encodes of subnets sampled from the supernet are iteratively adapted by evolutionary algorithms while simultaneously searching for a task-sensitive meta-network. Searched meta-network can be adapted to a novel task via a few learning steps and only costs a little search time. Empirical results show that AT-NAS surpasses the related approaches on few-shot classification accuracy. The performance of AT-NAS on classification benchmarks is comparable to that of models searched from scratch, by adapting the architecture in less than an hour from a 5-GPU-day pretrained meta-network."
+  },
+  "arxiv_2202.12934": {
+    "doc_id": "arxiv_2202.12934",
+    "title": "Accelerating Neural Architecture Exploration Across Modalities Using\n  Genetic Algorithms",
+    "year": 2022,
+    "venue": "cs.NE",
+    "abstract": "Neural architecture search (NAS), the study of automating the discovery of optimal deep neural network architectures for tasks in domains such as computer vision and natural language processing, has seen rapid growth in the machine learning research community. While there have been many recent advancements in NAS, there is still a significant focus on reducing the computational cost incurred when validating discovered architectures by making search more efficient. Evolutionary algorithms, specifically genetic algorithms, have a history of usage in NAS and continue to gain popularity versus other optimization approaches as a highly efficient way to explore the architecture objective space. Most NAS research efforts have centered around computer vision tasks and only recently have other modalities, such as the rapidly growing field of natural language processing, been investigated in depth. In this work, we show how genetic algorithms can be paired with lightly trained objective predictors in an iterative cycle to accelerate multi-objective architectural exploration in a way that works in the modalities of both machine translation and image classification."
+  },
+  "arxiv_2204.11838": {
+    "doc_id": "arxiv_2204.11838",
+    "title": "Automating Neural Architecture Design without Search",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Neural structure search (NAS), as the mainstream approach to automate deep neural architecture design, has achieved much success in recent years. However, the performance estimation component adhering to NAS is often prohibitively costly, which leads to the enormous computational demand. Though a large number of efforts have been dedicated to alleviating this pain point, no consensus has been made yet on which is optimal. In this paper, we study the automated architecture design from a new perspective that eliminates the need to sequentially evaluate each neural architecture generated during algorithm execution. Specifically, the proposed approach is built by learning the knowledge of high-level experts in designing state-of-the-art architectures, and then the new architecture is directly generated upon the knowledge learned. We implemented the proposed approach by using a graph neural network for link prediction and acquired the knowledge from NAS-Bench-101. Compared to existing peer competitors, we found a competitive network with minimal cost. In addition, we also utilized the learned knowledge from NAS-Bench-101 to automate architecture design in the DARTS search space, and ach"
+  },
+  "arxiv_2204.12726": {
+    "doc_id": "arxiv_2204.12726",
+    "title": "PRE-NAS: Predictor-assisted Evolutionary Neural Architecture Search",
+    "year": 2022,
+    "venue": "cs.CV",
+    "abstract": "Neural architecture search (NAS) aims to automate architecture engineering in neural networks. This often requires a high computational overhead to evaluate a number of candidate networks from the set of all possible networks in the search space during the search. Prediction of the networks' performance can alleviate this high computational overhead by mitigating the need for evaluating every candidate network. Developing such a predictor typically requires a large number of evaluated architectures which may be difficult to obtain. We address this challenge by proposing a novel evolutionary-based NAS strategy, Predictor-assisted E-NAS (PRE-NAS), which can perform well even with an extremely small number of evaluated architectures. PRE-NAS leverages new evolutionary search strategies and integrates high-fidelity weight inheritance over generations. Unlike one-shot strategies, which may suffer from bias in the evaluation due to weight sharing, offspring candidates in PRE-NAS are topologically homogeneous, which circumvents bias and leads to more accurate predictions. Extensive experiments on NAS-Bench-201 and DARTS search spaces show that PRE-NAS can outperform state-of-the-art NAS m"
+  },
+  "arxiv_2205.06355": {
+    "doc_id": "arxiv_2205.06355",
+    "title": "Warm-starting DARTS using meta-learning",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "Neural architecture search (NAS) has shown great promise in the field of automated machine learning (AutoML). NAS has outperformed hand-designed networks and made a significant step forward in the field of automating the design of deep neural networks, thus further reducing the need for human expertise. However, most research is done targeting a single specific task, leaving research of NAS methods over multiple tasks mostly overlooked. Generally, there exist two popular ways to find an architecture for some novel task. Either searching from scratch, which is ineffective by design, or transferring discovered architectures from other tasks, which provides no performance guarantees and is probably not optimal. In this work, we present a meta-learning framework to warm-start Differentiable architecture search (DARTS). DARTS is a NAS method that can be initialized with a transferred architecture and is able to quickly adapt to new tasks. A task similarity measure is used to determine which transfer architecture is selected, as transfer architectures found on similar tasks will likely perform better. Additionally, we employ a simple meta-transfer architecture that was learned over multi"
+  },
+  "arxiv_2206.02098": {
+    "doc_id": "arxiv_2206.02098",
+    "title": "Search Space Adaptation for Differentiable Neural Architecture Search in\n  Image Classification",
+    "year": 2022,
+    "venue": "cs.LG",
+    "abstract": "As deep neural networks achieve unprecedented performance in various tasks, neural architecture search (NAS), a research field for designing neural network architectures with automated processes, is actively underway. More recently, differentiable NAS has a great impact by reducing the search cost to the level of training a single network. Besides, the search space that defines candidate architectures to be searched directly affects the performance of the final architecture. In this paper, we propose an adaptation scheme of the search space by introducing a search scope. The effectiveness of proposed method is demonstrated with ProxylessNAS for the image classification task. Furthermore, we visualize the trajectory of architecture parameter updates and provide insights to improve the architecture search."
+  },
+  "arxiv_2211.10250": {
+    "doc_id": "arxiv_2211.10250",
+    "title": "HiveNAS: Neural Architecture Search using Artificial Bee Colony\n  Optimization",
+    "year": 2023,
+    "venue": "cs.NE",
+    "abstract": "The traditional Neural Network-development process requires substantial expert knowledge and relies heavily on intuition and trial-and-error. Neural Architecture Search (NAS) frameworks were introduced to robustly search for network topologies, as well as facilitate the automated development of Neural Networks. While some optimization approaches -- such as Genetic Algorithms -- have been extensively explored in the NAS context, other Metaheuristic Optimization algorithms have not yet been investigated. In this study, we evaluate the viability of Artificial Bee Colony optimization for Neural Architecture Search. Our proposed framework, HiveNAS, outperforms existing state-of-the-art Swarm Intelligence-based NAS frameworks in a fraction of the time."
+  },
+  "arxiv_2301.08727": {
+    "doc_id": "arxiv_2301.08727",
+    "title": "Neural Architecture Search: Insights from 1000 Papers",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of neural architectures for a given task, is an inevitable next step in automating machine learning and has already outpaced the best human-designed architectures on many tasks. In the past few years, research in NAS has been progressing rapidly, with over 1000 papers released since 2020 (Deng and Lindauer, 2021). In this survey, we provide an organized and comprehensive guide to neural architecture search. We give a taxonomy of search spaces, algorithms, and speedup techniques, and we discuss resources such as benchmarks, best practices, other surveys, and open-source libraries."
+  },
+  "arxiv_2304.01821": {
+    "doc_id": "arxiv_2304.01821",
+    "title": "Data Aware Neural Architecture Search",
+    "year": 2023,
+    "venue": "cs.NE",
+    "abstract": "Neural Architecture Search (NAS) is a popular tool for automatically generating Neural Network (NN) architectures. In early NAS works, these tools typically optimized NN architectures for a single metric, such as accuracy. However, in the case of resource constrained Machine Learning, one single metric is not enough to evaluate a NN architecture. For example, a NN model achieving a high accuracy is not useful if it does not fit inside the flash memory of a given system. Therefore, recent works on NAS for resource constrained systems have investigated various approaches to optimize for multiple metrics. In this paper, we propose that, on top of these approaches, it could be beneficial for NAS optimization of resource constrained systems to also consider input data granularity. We name such a system \"Data Aware NAS\", and we provide experimental evidence of its benefits by comparing it to traditional NAS."
+  },
+  "arxiv_2305.05351": {
+    "doc_id": "arxiv_2305.05351",
+    "title": "GPT-NAS: Evolutionary Neural Architecture Search with the Generative\n  Pre-Trained Model",
+    "year": 2025,
+    "venue": "cs.CV",
+    "abstract": "Neural Architecture Search (NAS) has emerged as one of the effective methods to design the optimal neural network architecture automatically. Although neural architectures have achieved human-level performances in several tasks, few of them are obtained from the NAS method. The main reason is the huge search space of neural architectures, making NAS algorithms inefficient. This work presents a novel architecture search algorithm, called GPT-NAS, that optimizes neural architectures by Generative Pre-Trained (GPT) model with an evolutionary algorithm (EA) as the search strategy. In GPT-NAS, we assume that a generative model pre-trained on a large-scale corpus could learn the fundamental law of building neural architectures. Therefore, GPT-NAS leverages the GPT model to propose reasonable architecture components given the basic one and then utilizes EAs to search for the optimal solution. Such an approach can largely reduce the search space by introducing prior knowledge in the search process. Extensive experimental results show that our GPT-NAS method significantly outperforms seven manually designed neural architectures and thirteen architectures provided by competing NAS methods. I"
+  },
+  "arxiv_2307.09099": {
+    "doc_id": "arxiv_2307.09099",
+    "title": "A Survey on Multi-Objective Neural Architecture Search",
+    "year": 2023,
+    "venue": "cs.CV",
+    "abstract": "Recently, the expert-crafted neural architectures is increasing overtaken by the utilization of neural architecture search (NAS) and automatic generation (and tuning) of network structures which has a close relation to the Hyperparameter Optimization and Auto Machine Learning (AutoML). After the earlier NAS attempts to optimize only the prediction accuracy, Multi-Objective Neural architecture Search (MONAS) has been attracting attentions which considers more goals such as computational complexity, power consumption, and size of the network for optimization, reaching a trade-off between the accuracy and other features like the computational cost. In this paper, we present an overview of principal and state-of-the-art works in the field of MONAS. Starting from a well-categorized taxonomy and formulation for the NAS, we address and correct some miscategorizations in previous surveys of the NAS field. We also provide a list of all known objectives used and add a number of new ones and elaborate their specifications. We have provides analyses about the most important objectives and shown that the stochastic properties of some the them should be differed from deterministic ones in the mu"
+  },
+  "arxiv_2310.17669": {
+    "doc_id": "arxiv_2310.17669",
+    "title": "An Approach for Efficient Neural Architecture Search Space Definition",
+    "year": 2023,
+    "venue": "cs.LG",
+    "abstract": "As we advance in the fast-growing era of Machine Learning, various new and more complex neural architectures are arising to tackle problem more efficiently. On the one hand their efficient usage requires advanced knowledge and expertise, which is most of the time difficult to find on the labor market. On the other hand, searching for an optimized neural architecture is a time-consuming task when it is performed manually using a trial and error approach. Hence, a method and a tool support is needed to assist users of neural architectures, leading to an eagerness in the field of Automatic Machine Learning (AutoML). When it comes to Deep Learning, an important part of AutoML is the Neural Architecture Search (NAS). In this paper, we propose a novel cell-based hierarchical search space, easy to comprehend and manipulate. The objectives of the proposed approach are to optimize the search-time and to be general enough to handle most of state of the art Convolutional Neural Networks (CNN) architectures."
+  },
+  "arxiv_2403.11173": {
+    "doc_id": "arxiv_2403.11173",
+    "title": "Multi-Objective Evolutionary Neural Architecture Search for Recurrent\n  Neural Networks",
+    "year": 2024,
+    "venue": "cs.NE",
+    "abstract": "Artificial neural network (NN) architecture design is a nontrivial and time-consuming task that often requires a high level of human expertise. Neural architecture search (NAS) serves to automate the design of NN architectures and has proven to be successful in automatically finding NN architectures that outperform those manually designed by human experts. NN architecture performance can be quantified based on multiple objectives, which include model accuracy and some NN architecture complexity objectives, among others. The majority of modern NAS methods that consider multiple objectives for NN architecture performance evaluation are concerned with automated feed forward NN architecture design, which leaves multi-objective automated recurrent neural network (RNN) architecture design unexplored. RNNs are important for modeling sequential datasets, and prominent within the natural language processing domain. It is often the case in real world implementations of machine learning and NNs that a reasonable trade-off is accepted for marginally reduced model accuracy in favour of lower computational resources demanded by the model. This paper proposes a multi-objective evolutionary algori"
+  },
+  "arxiv_2403.17012": {
+    "doc_id": "arxiv_2403.17012",
+    "title": "Evolution and Efficiency in Neural Architecture Search: Bridging the Gap\n  Between Expert Design and Automated Optimization",
+    "year": 2024,
+    "venue": "cs.NE",
+    "abstract": "The paper provides a comprehensive overview of Neural Architecture Search (NAS), emphasizing its evolution from manual design to automated, computationally-driven approaches. It covers the inception and growth of NAS, highlighting its application across various domains, including medical imaging and natural language processing. The document details the shift from expert-driven design to algorithm-driven processes, exploring initial methodologies like reinforcement learning and evolutionary algorithms. It also discusses the challenges of computational demands and the emergence of efficient NAS methodologies, such as Differentiable Architecture Search and hardware-aware NAS. The paper further elaborates on NAS's application in computer vision, NLP, and beyond, demonstrating its versatility and potential for optimizing neural network architectures across different tasks. Future directions and challenges, including computational efficiency and the integration with emerging AI domains, are addressed, showcasing NAS's dynamic nature and its continued evolution towards more sophisticated and efficient architecture search methods."
+  },
+  "arxiv_2404.02189": {
+    "doc_id": "arxiv_2404.02189",
+    "title": "Insights from the Use of Previously Unseen Neural Architecture Search\n  Datasets",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "The boundless possibility of neural networks which can be used to solve a problem -- each with different performance -- leads to a situation where a Deep Learning expert is required to identify the best neural network. This goes against the hope of removing the need for experts. Neural Architecture Search (NAS) offers a solution to this by automatically identifying the best architecture. However, to date, NAS work has focused on a small set of datasets which we argue are not representative of real-world problems. We introduce eight new datasets created for a series of NAS Challenges: AddNIST, Language, MultNIST, CIFARTile, Gutenberg, Isabella, GeoClassing, and Chesseract. These datasets and challenges are developed to direct attention to issues in NAS development and to encourage authors to consider how their models will perform on datasets unknown to them at development time. We present experimentation using standard Deep Learning methods as well as the best results from challenge participants."
+  },
+  "arxiv_2408.05556": {
+    "doc_id": "arxiv_2408.05556",
+    "title": "Evolutionary Neural Architecture Search for 3D Point Cloud Analysis",
+    "year": 2024,
+    "venue": "cs.CV",
+    "abstract": "Neural architecture search (NAS) automates neural network design by using optimization algorithms to navigate architecture spaces, reducing the burden of manual architecture design. While NAS has achieved success, applying it to emerging domains, such as analyzing unstructured 3D point clouds, remains underexplored due to the data lying in non-Euclidean spaces, unlike images. This paper presents Success-History-based Self-adaptive Differential Evolution with a Joint Point Interaction Dimension Search (SHSADE-PIDS), an evolutionary NAS framework that encodes discrete deep neural network architectures to continuous spaces and performs searches in the continuous spaces for efficient point cloud neural architectures. Comprehensive experiments on challenging 3D segmentation and classification benchmarks demonstrate SHSADE-PIDS's capabilities. It discovered highly efficient architectures with higher accuracy, significantly advancing prior NAS techniques. For segmentation on SemanticKITTI, SHSADE-PIDS attained 64.51% mean IoU using only 0.55M parameters and 4.5GMACs, reducing overhead by over 22-26X versus other top methods. For ModelNet40 classification, it achieved 93.4% accuracy with j"
+  },
+  "arxiv_2410.01431": {
+    "doc_id": "arxiv_2410.01431",
+    "title": "Scalable Reinforcement Learning-based Neural Architecture Search",
+    "year": 2024,
+    "venue": "cs.LG",
+    "abstract": "In this publication, we assess the ability of a novel Reinforcement Learning-based solution to the problem of Neural Architecture Search, where a Reinforcement Learning (RL) agent learns to search for good architectures, rather than to return a single optimal architecture. We consider both the NAS-Bench-101 and NAS- Bench-301 settings, and compare against various known strong baselines, such as local search and random search. We conclude that our Reinforcement Learning agent displays strong scalability with regards to the size of the search space, but limited robustness to hyperparameter changes."
+  },
+  "arxiv_2503.10404": {
+    "doc_id": "arxiv_2503.10404",
+    "title": "Architecture-Aware Minimization (A$^2$M): How to Find Flat Minima in Neural Architecture Search",
+    "year": 2026,
+    "venue": "cs.LG",
+    "abstract": "Neural Architecture Search (NAS) has become an essential tool for designing effective and efficient neural networks. In this paper, we investigate the geometric properties of neural architecture spaces commonly used in differentiable NAS methods, specifically NAS-Bench-201 and DARTS. By defining flatness metrics such as neighborhoods and loss barriers along paths in architecture space, we reveal locality and flatness characteristics analogous to the well-known properties of neural network loss landscapes in weight space. In particular, we find that highly accurate architectures cluster together in flat regions, while suboptimal architectures remain isolated, unveiling the detailed geometrical structure of the architecture search landscape. Building on these insights, we propose Architecture-Aware Minimization (A$^2$M), a novel analytically derived algorithmic framework that explicitly biases, for the first time, the gradient of differentiable NAS methods towards flat minima in architecture space. A$^2$M consistently improves generalization over state-of-the-art DARTS-based algorithms on benchmark datasets including CIFAR-10, CIFAR-100, and ImageNet16-120, across both NAS-Bench-201 "
+  },
+  "arxiv_2505.22868": {
+    "doc_id": "arxiv_2505.22868",
+    "title": "CrossNAS: A Cross-Layer Neural Architecture Search Framework for PIM Systems",
+    "year": 2025,
+    "venue": "cs.ET",
+    "abstract": "In this paper, we propose the CrossNAS framework, an automated approach for exploring a vast, multidimensional search space that spans various design abstraction layers-circuits, architecture, and systems-to optimize the deployment of machine learning workloads on analog processing-in-memory (PIM) systems. CrossNAS leverages the single-path one-shot weight-sharing strategy combined with the evolutionary search for the first time in the context of PIM system mapping and optimization. CrossNAS sets a new benchmark for PIM neural architecture search (NAS), outperforming previous methods in both accuracy and energy efficiency while maintaining comparable or shorter search times."
+  },
+  "arxiv_2508.09467": {
+    "doc_id": "arxiv_2508.09467",
+    "title": "Learn to Explore: Meta NAS via Bayesian Optimization Guided Graph Generation",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Neural Architecture Search (NAS) automates the design of high-performing neural networks but typically targets a single predefined task, thereby restricting its real-world applicability. To address this, Meta Neural Architecture Search (Meta-NAS) has emerged as a promising paradigm that leverages prior knowledge across tasks to enable rapid adaptation to new ones. Nevertheless, existing Meta-NAS methods often struggle with poor generalization, limited search spaces, or high computational costs. In this paper, we propose a novel Meta-NAS framework, GraB-NAS. Specifically, GraB-NAS first models neural architectures as graphs, and then a hybrid search strategy is developed to find and generate new graphs that lead to promising neural architectures. The search strategy combines global architecture search via Bayesian Optimization in the search space with local exploration for novel neural networks via gradient ascent in the latent space. Such a hybrid search strategy allows GraB-NAS to discover task-aware architectures with strong performance, even beyond the predefined search space. Extensive experiments demonstrate that GraB-NAS outperforms state-of-the-art Meta-NAS baselines, achiev"
+  },
+  "arxiv_2509.05656": {
+    "doc_id": "arxiv_2509.05656",
+    "title": "OptiProxy-NAS: Optimization Proxy based End-to-End Neural Architecture Search",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "Neural architecture search (NAS) is a hard computationally expensive optimization problem with a discrete, vast, and spiky search space. One of the key research efforts dedicated to this space focuses on accelerating NAS via certain proxy evaluations of neural architectures. Different from the prevalent predictor-based methods using surrogate models and differentiable architecture search via supernetworks, we propose an optimization proxy to streamline the NAS as an end-to-end optimization framework, named OptiProxy-NAS. In particular, using a proxy representation, the NAS space is reformulated to be continuous, differentiable, and smooth. Thereby, any differentiable optimization method can be applied to the gradient-based search of the relaxed architecture parameters. Our comprehensive experiments on $12$ NAS tasks of $4$ search spaces across three different domains including computer vision, natural language processing, and resource-constrained NAS fully demonstrate the superior search results and efficiency. Further experiments on low-fidelity scenarios verify the flexibility."
+  },
+  "arxiv_2510.19872": {
+    "doc_id": "arxiv_2510.19872",
+    "title": "An Integrated Approach to Neural Architecture Search for Deep Q-Networks",
+    "year": 2025,
+    "venue": "cs.LG",
+    "abstract": "The performance of deep reinforcement learning agents is fundamentally constrained by their neural network architecture, a choice traditionally made through expensive hyperparameter searches and then fixed throughout training. This work investigates whether online, adaptive architecture optimization can escape this constraint and outperform static designs. We introduce NAS-DQN, an agent that integrates a learned neural architecture search controller directly into the DRL training loop, enabling dynamic network reconfiguration based on cumulative performance feedback. We evaluate NAS-DQN against three fixed-architecture baselines and a random search control on a continuous control task, conducting experiments over multiple random seeds. Our results demonstrate that NAS-DQN achieves superior final performance, sample efficiency, and policy stability while incurring negligible computational overhead. Critically, the learned search strategy substantially outperforms both undirected random architecture exploration and poorly-chosen fixed designs, indicating that intelligent, performance-guided search is the key mechanism driving success. These findings establish that architecture adapta"
+  },
+  "ss_311229": {
+    "doc_id": "ss_311229",
+    "title": "Maternal Education and Child Immunization",
+    "year": 1990,
+    "venue": "DEMOGRAPHY",
+    "abstract": "This article explores the hypothesis that formal education of women results in increased child survival because of greater knowledge of the protective function of the major childhood immunizations. Education is also associated with greater awareness of proper immunization schedules. Irrespective of mother's formal education level, specific immunization knowledge is associated with an increased likelihood of using immunization. The Indonesian analysis is important as a model for preventive health campaigns among other populations with low education levels among women."
+  },
+  "ss_314114": {
+    "doc_id": "ss_314114",
+    "title": "Forecasting Mortality: A Parameterized Time Series Approach",
+    "year": 1989,
+    "venue": "DEMOGRAPHY",
+    "abstract": "This article links parameterized model mortality schedules with time series methods to develop forecasts of U.S. mortality to the year 2000. The use of model mortality schedules permits a relatively concise representation of the history of mortality by age and sex from 1900 to 1985, and the use of modern time series methods to extend this history forward to the end of this century allows for a flexible modeling of trend and the accommodation of changes in long-run mortality patterns. This pilot study demonstrates that the proposed procedure produces medium-range forecasts of mortality that meet the standard tests of accuracy in forecast evaluation and that are sensible when evaluated against the comparable forecasts produced by the Social Security Administration."
+  }
+}

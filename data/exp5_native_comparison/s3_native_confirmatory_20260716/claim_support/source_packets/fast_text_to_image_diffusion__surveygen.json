@@ -1,0 +1,479 @@
+{
+  "topic_id": "fast_text_to_image_diffusion",
+  "system": "surveygen",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "The forward process incrementally corrupts data by adding Gaussian noise over T timesteps, while the reverse process learns to denoise iteratively, recovering the original data distribution.",
+      "citation_markers": [
+        "ref [20]",
+        "ref [12]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+          "doi": "10.48550/arXiv.2205.11487",
+          "abstract": "We present Imagen, a text-to-image diffusion model with an unprecedented degree of photorealism and a deep level of language understanding. Imagen builds on the power of large transformer language models in understanding text and hinges on the strength of diffusion models in high-fidelity image generation. Our key discovery is that generic large language models (e.g. T5), pretrained on text-only corpora, are surprisingly effective at encoding text for image synthesis: increasing the size of the language model in Imagen boosts both sample fidelity and image-text alignment much more than increasing the size of the image diffusion model. Imagen achieves a new state-of-the-art FID score of 7.27 on the COCO dataset, without ever training on COCO, and human raters find Imagen samples to be on par with the COCO data itself in image-text alignment. To assess text-to-image models in greater depth, we introduce DrawBench, a comprehensive and challenging benchmark for text-to-image models. With DrawBench, we compare Imagen with recent methods including VQ-GAN+CLIP, Latent Diffusion Models, and DALL-E 2, and find that human raters prefer Imagen over other models in side-by-side comparisons, both in terms of sample quality and image-text alignment. See https://imagen.research.google/ for an overview of the results.",
+          "cited_by_count": "2109",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "17.0",
+          "last_author_hindex": "46.0",
+          "author_hindex_avg": "31.5",
+          "author_h_bin": "Q2",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9253546595573425",
+          "composite_score": "0.6672526948828137",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2205.11487",
+            "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+            "abstract": "We present Imagen, a text-to-image diffusion model with an unprecedented degree of photorealism and a deep level of language understanding. Imagen builds on the power of large transformer language models in understanding text and hinges on the strength of diffusion models in high-fidelity image generation. Our key discovery is that generic large language models (e.g. T5), pretrained on text-only corpora, are surprisingly effective at encoding text for image synthesis: increasing the size of the language model in Imagen boosts both sample fidelity and image-text alignment much more than increasing the size of the image diffusion model. Imagen achieves a new state-of-the-art FID score of 7.27 on the COCO dataset, without ever training on COCO, and human raters find Imagen samples to be on par with the COCO data itself in image-text alignment. To assess text-to-image models in greater depth, we introduce DrawBench, a comprehensive and challenging benchmark for text-to-image models. With DrawBench, we compare Imagen with recent methods including VQ-GAN+CLIP, Latent Diffusion Models, and DALL-E 2, and find that human raters prefer Imagen over other models in side-by-side comparisons, both in terms of sample quality and image-text alignment. See https://imagen.research.google/ for an overview of the results.",
+            "published": "2022-05-23T17:42:53Z",
+            "source_url": "https://arxiv.org/abs/2205.11487"
+          },
+          "source_accessible": true
+        },
+        {
+          "title": "Vector Quantized Diffusion Model for Text-to-Image Synthesis",
+          "doi": "10.1109/CVPR52688.2022.01043",
+          "abstract": "We present the vector quantized diffusion (VQ-Diffusion) model for text-to-image generation. This method is based on a vector quantized variational autoencoder (VQ-VAE) whose latent space is modeled by a conditional variant of the recently developed Denoising Diffusion Probabilistic Model (DDPM). We find that this latent-space method is well-suited for text-to-image generation tasks because it not only eliminates the unidirectional bias with existing methods but also allows us to incorporate a mask-and-replace diffusion strategy to avoid the accumulation of errors, which is a serious problem with existing methods. Our experiments show that the VQ-Diffusion produces significantly better text-to-image generation results when compared with conventional autoregressive (AR) models with similar numbers of parameters. Compared with previous GAN-based text-to-image methods, our VQ-Diffusion can handle more complex scenes and improve the synthesized image quality by a large margin. Finally, we show that the image generation computation in our method can be made highly efficient by reparameterization. With traditional AR methods, the text-to-image generation time increases linearly with the output image resolution and hence is quite time consuming even for normal size images. The VQ-Diffusion allows us to achieve a better trade-off between quality and speed. Our experiments indicate that the VQ-Diffusion model with the reparameterization is fifteen times faster than traditional AR methods while achieving a better image quality. The code and models are available at https://github.com/cientgu/VQ-Diffusion.",
+          "cited_by_count": "629",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "14.0",
+          "last_author_hindex": "74.0",
+          "author_hindex_avg": "44.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9247487783432007",
+          "composite_score": "0.6948822595286844",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "Stable Diffusion, a prominent instantiation, performs the denoising process in a low-dimensional latent space, substantially reducing memory and computational requirements while preserving high image fidelity.",
+      "citation_markers": [
+        "ref [12]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Vector Quantized Diffusion Model for Text-to-Image Synthesis",
+          "doi": "10.1109/CVPR52688.2022.01043",
+          "abstract": "We present the vector quantized diffusion (VQ-Diffusion) model for text-to-image generation. This method is based on a vector quantized variational autoencoder (VQ-VAE) whose latent space is modeled by a conditional variant of the recently developed Denoising Diffusion Probabilistic Model (DDPM). We find that this latent-space method is well-suited for text-to-image generation tasks because it not only eliminates the unidirectional bias with existing methods but also allows us to incorporate a mask-and-replace diffusion strategy to avoid the accumulation of errors, which is a serious problem with existing methods. Our experiments show that the VQ-Diffusion produces significantly better text-to-image generation results when compared with conventional autoregressive (AR) models with similar numbers of parameters. Compared with previous GAN-based text-to-image methods, our VQ-Diffusion can handle more complex scenes and improve the synthesized image quality by a large margin. Finally, we show that the image generation computation in our method can be made highly efficient by reparameterization. With traditional AR methods, the text-to-image generation time increases linearly with the output image resolution and hence is quite time consuming even for normal size images. The VQ-Diffusion allows us to achieve a better trade-off between quality and speed. Our experiments indicate that the VQ-Diffusion model with the reparameterization is fifteen times faster than traditional AR methods while achieving a better image quality. The code and models are available at https://github.com/cientgu/VQ-Diffusion.",
+          "cited_by_count": "629",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "14.0",
+          "last_author_hindex": "74.0",
+          "author_hindex_avg": "44.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9247487783432007",
+          "composite_score": "0.6948822595286844",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Imagen ref [20] demonstrated that large pretrained text-only encoders such as T5 yield superior conditioning compared to CLIP-based encoders, with encoder scale proving more impactful than diffusion model scale.",
+      "citation_markers": [
+        "ref [20]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+          "doi": "10.48550/arXiv.2205.11487",
+          "abstract": "We present Imagen, a text-to-image diffusion model with an unprecedented degree of photorealism and a deep level of language understanding. Imagen builds on the power of large transformer language models in understanding text and hinges on the strength of diffusion models in high-fidelity image generation. Our key discovery is that generic large language models (e.g. T5), pretrained on text-only corpora, are surprisingly effective at encoding text for image synthesis: increasing the size of the language model in Imagen boosts both sample fidelity and image-text alignment much more than increasing the size of the image diffusion model. Imagen achieves a new state-of-the-art FID score of 7.27 on the COCO dataset, without ever training on COCO, and human raters find Imagen samples to be on par with the COCO data itself in image-text alignment. To assess text-to-image models in greater depth, we introduce DrawBench, a comprehensive and challenging benchmark for text-to-image models. With DrawBench, we compare Imagen with recent methods including VQ-GAN+CLIP, Latent Diffusion Models, and DALL-E 2, and find that human raters prefer Imagen over other models in side-by-side comparisons, both in terms of sample quality and image-text alignment. See https://imagen.research.google/ for an overview of the results.",
+          "cited_by_count": "2109",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "17.0",
+          "last_author_hindex": "46.0",
+          "author_hindex_avg": "31.5",
+          "author_h_bin": "Q2",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9253546595573425",
+          "composite_score": "0.6672526948828137",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2205.11487",
+            "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+            "abstract": "We present Imagen, a text-to-image diffusion model with an unprecedented degree of photorealism and a deep level of language understanding. Imagen builds on the power of large transformer language models in understanding text and hinges on the strength of diffusion models in high-fidelity image generation. Our key discovery is that generic large language models (e.g. T5), pretrained on text-only corpora, are surprisingly effective at encoding text for image synthesis: increasing the size of the language model in Imagen boosts both sample fidelity and image-text alignment much more than increasing the size of the image diffusion model. Imagen achieves a new state-of-the-art FID score of 7.27 on the COCO dataset, without ever training on COCO, and human raters find Imagen samples to be on par with the COCO data itself in image-text alignment. To assess text-to-image models in greater depth, we introduce DrawBench, a comprehensive and challenging benchmark for text-to-image models. With DrawBench, we compare Imagen with recent methods including VQ-GAN+CLIP, Latent Diffusion Models, and DALL-E 2, and find that human raters prefer Imagen over other models in side-by-side comparisons, both in terms of sample quality and image-text alignment. See https://imagen.research.google/ for an overview of the results.",
+            "published": "2022-05-23T17:42:53Z",
+            "source_url": "https://arxiv.org/abs/2205.11487"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "Cross-attention layers serve as the primary mechanism linking textual tokens to spatial image features in text-to-image diffusion models. In models such as Stable Diffusion and PixArt-α, cross-attention modules inject text conditions into the denoising network by computing attention between visual feature queries and text-derived keys and values ref [33].",
+      "citation_markers": [
+        "ref [33]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis",
+          "doi": "10.48550/arXiv.2310.00426",
+          "abstract": "The most advanced text-to-image (T2I) models require significant training costs (e.g., millions of GPU hours), seriously hindering the fundamental innovation for the AIGC community while increasing CO2 emissions. This paper introduces PIXART-$α$, a Transformer-based T2I diffusion model whose image generation quality is competitive with state-of-the-art image generators (e.g., Imagen, SDXL, and even Midjourney), reaching near-commercial application standards. Additionally, it supports high-resolution image synthesis up to 1024px resolution with low training cost, as shown in Figure 1 and 2. To achieve this goal, three core designs are proposed: (1) Training strategy decomposition: We devise three distinct training steps that separately optimize pixel dependency, text-image alignment, and image aesthetic quality; (2) Efficient T2I Transformer: We incorporate cross-attention modules into Diffusion Transformer (DiT) to inject text conditions and streamline the computation-intensive class-condition branch; (3) High-informative data: We emphasize the significance of concept density in text-image pairs and leverage a large Vision-Language model to auto-label dense pseudo-captions to assist text-image alignment learning. As a result, PIXART-$α$'s training speed markedly surpasses existing large-scale T2I models, e.g., PIXART-$α$ only takes 10.8% of Stable Diffusion v1.5's training time (675 vs. 6,250 A100 GPU days), saving nearly \\$300,000 (\\$26,000 vs. \\$320,000) and reducing 90% CO2 emissions. Moreover, compared with a larger SOTA model, RAPHAEL, our training cost is merely 1%. Extensive experiments demonstrate that PIXART-$α$ excels in image quality, artistry, and semantic control. We hope PIXART-$α$ will provide new insights to the AIGC community and startups to accelerate building their own high-quality yet low-cost generative models from scratch.",
+          "cited_by_count": "8",
+          "cited_by_bin": "Q3",
+          "first_author_hindex": "67.0",
+          "last_author_hindex": "45.0",
+          "author_hindex_avg": "56.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9210045337677002",
+          "composite_score": "0.6156119521265823",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2310.00426",
+            "title": "PixArt-$α$: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis",
+            "abstract": "The most advanced text-to-image (T2I) models require significant training costs (e.g., millions of GPU hours), seriously hindering the fundamental innovation for the AIGC community while increasing CO2 emissions. This paper introduces PIXART-$α$, a Transformer-based T2I diffusion model whose image generation quality is competitive with state-of-the-art image generators (e.g., Imagen, SDXL, and even Midjourney), reaching near-commercial application standards. Additionally, it supports high-resolution image synthesis up to 1024px resolution with low training cost, as shown in Figure 1 and 2. To achieve this goal, three core designs are proposed: (1) Training strategy decomposition: We devise three distinct training steps that separately optimize pixel dependency, text-image alignment, and image aesthetic quality; (2) Efficient T2I Transformer: We incorporate cross-attention modules into Diffusion Transformer (DiT) to inject text conditions and streamline the computation-intensive class-condition branch; (3) High-informative data: We emphasize the significance of concept density in text-image pairs and leverage a large Vision-Language model to auto-label dense pseudo-captions to assist text-image alignment learning. As a result, PIXART-$α$'s training speed markedly surpasses existing large-scale T2I models, e.g., PIXART-$α$ only takes 10.8% of Stable Diffusion v1.5's training time (675 vs. 6,250 A100 GPU days), saving nearly \\$300,000 (\\$26,000 vs. \\$320,000) and reducing 90% CO2 emissions. Moreover, compared with a larger SOTA model, RAPHAEL, our training cost is merely 1%. Extensive experiments demonstrate that PIXART-$α$ excels in image quality, artistry, and semantic control. We hope PIXART-$α$ will provide new insights to the AIGC community and startups to accelerate building their own high-quality yet low-cost generative models from scratch.",
+            "published": "2023-09-30T16:18:00Z",
+            "source_url": "https://arxiv.org/abs/2310.00426"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "eDiff-I exploits this observation by training an ensemble of specialized expert denoisers, each optimized for distinct stages of the iterative generation process, thereby improving text alignment without increasing inference cost ref [30].",
+      "citation_markers": [
+        "ref [30]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "eDiff-I: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers",
+          "doi": "10.48550/arXiv.2211.01324",
+          "abstract": "Large-scale diffusion-based generative models have led to breakthroughs in text-conditioned high-resolution image synthesis. Starting from random noise, such text-to-image diffusion models gradually synthesize images in an iterative fashion while conditioning on text prompts. We find that their synthesis behavior qualitatively changes throughout this process: Early in sampling, generation strongly relies on the text prompt to generate text-aligned content, while later, the text conditioning is almost entirely ignored. This suggests that sharing model parameters throughout the entire generation process may not be ideal. Therefore, in contrast to existing works, we propose to train an ensemble of text-to-image diffusion models specialized for different synthesis stages. To maintain training efficiency, we initially train a single model, which is then split into specialized models that are trained for the specific stages of the iterative generation process. Our ensemble of diffusion models, called eDiff-I, results in improved text alignment while maintaining the same inference computation cost and preserving high visual quality, outperforming previous large-scale text-to-image diffusion models on the standard benchmark. In addition, we train our model to exploit a variety of embeddings for conditioning, including the T5 text, CLIP text, and CLIP image embeddings. We show that these different embeddings lead to different behaviors. Notably, the CLIP image embedding allows an intuitive way of transferring the style of a reference image to the target text-to-image output. Lastly, we show a technique that enables eDiff-I's \"paint-with-words\" capability. A user can select the word in the input text and paint it in a canvas to control the output, which is very handy for crafting the desired image in mind. The project page is available at https://deepimagination.cc/eDiff-I/",
+          "cited_by_count": "223",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "16.0",
+          "last_author_hindex": "48.0",
+          "author_hindex_avg": "32.0",
+          "author_h_bin": "Q2",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9298459887504578",
+          "composite_score": "0.62932744554718",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2211.01324",
+            "title": "eDiff-I: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers",
+            "abstract": "Large-scale diffusion-based generative models have led to breakthroughs in text-conditioned high-resolution image synthesis. Starting from random noise, such text-to-image diffusion models gradually synthesize images in an iterative fashion while conditioning on text prompts. We find that their synthesis behavior qualitatively changes throughout this process: Early in sampling, generation strongly relies on the text prompt to generate text-aligned content, while later, the text conditioning is almost entirely ignored. This suggests that sharing model parameters throughout the entire generation process may not be ideal. Therefore, in contrast to existing works, we propose to train an ensemble of text-to-image diffusion models specialized for different synthesis stages. To maintain training efficiency, we initially train a single model, which is then split into specialized models that are trained for the specific stages of the iterative generation process. Our ensemble of diffusion models, called eDiff-I, results in improved text alignment while maintaining the same inference computation cost and preserving high visual quality, outperforming previous large-scale text-to-image diffusion models on the standard benchmark. In addition, we train our model to exploit a variety of embeddings for conditioning, including the T5 text, CLIP text, and CLIP image embeddings. We show that these different embeddings lead to different behaviors. Notably, the CLIP image embedding allows an intuitive way of transferring the style of a reference image to the target text-to-image output. Lastly, we show a technique that enables eDiff-I's \"paint-with-words\" capability. A user can select the word in the input text and paint it in a canvas to control the output, which is very handy for crafting the desired image in mind. The project page is available at https://deepimagination.cc/eDiff-I/",
+            "published": "2022-11-02T17:43:04Z",
+            "source_url": "https://arxiv.org/abs/2211.01324"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "ControlNet ref [4] introduces zero-initialized convolutional adapters that clone the encoder layers of Stable Diffusion, enabling conditioning on edges, depth maps, segmentation masks, and human poses without corrupting pretrained weights.",
+      "citation_markers": [
+        "ref [4]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "Adding Conditional Control to Text-to-Image Diffusion Models",
+          "doi": "10.1109/ICCV51070.2023.00355",
+          "abstract": "We present ControlNet, a neural network architecture to add spatial conditioning controls to large, pretrained text-to-image diffusion models. ControlNet locks the production-ready large diffusion models, and reuses their deep and robust encoding layers pretrained with billions of images as a strong backbone to learn a diverse set of conditional controls. The neural architecture is connected with \"zero convolutions\" (zero-initialized convolution layers) that progressively grow the parameters from zero and ensure that no harmful noise could affect the finetuning. We test various conditioning controls, e.g., edges, depth, segmentation, human pose, etc., with Stable Diffusion, using single or multiple conditions, with or without prompts. We show that the training of ControlNets is robust with small (<50k) and large (>1m) datasets. Extensive results show that ControlNet may facilitate wider applications to control image diffusion models.",
+          "cited_by_count": "3677",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "11.0",
+          "last_author_hindex": "73.0",
+          "author_hindex_avg": "42.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9157316088676453",
+          "composite_score": "0.7710241734160753",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "GLIGEN ref [17] introduces trainable gated layers into frozen pretrained models, enabling open-world grounded generation conditioned on caption-bounding box pairs, achieving strong zero-shot performance on COCO and LVIS.",
+      "citation_markers": [
+        "ref [17]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "GLIGEN: Open-Set Grounded Text-to-Image Generation",
+          "doi": "10.1109/CVPR52729.2023.02156",
+          "abstract": "Large-scale text-to-image diffusion models have made amazing advances. However, the status quo is to use text input alone, which can impede controllability. In this work, we propose GLIGEN, Grounded-Language-to-Image Generation, a novel approach that builds upon and extends the functionality of existing pre-trained text-to-image diffusion models by enabling them to also be conditioned on grounding inputs. To preserve the vast concept knowledge of the pre-trained model, we freeze all of its weights and inject the grounding information into new trainable layers via a gated mechanism. Our model achieves open-world grounded text2img generation with caption and bounding box condition inputs, and the grounding ability generalizes well to novel spatial configurations and concepts. GLIGEN's zero-shot performance on COCO and LVIS outperforms existing supervised layout-to-image baselines by a large margin.",
+          "cited_by_count": "484",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "7.0",
+          "last_author_hindex": "28.0",
+          "author_hindex_avg": "17.5",
+          "author_h_bin": "Q3",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.92085200548172",
+          "composite_score": "0.6827601318402072",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "DreamBooth ref [8] fine-tunes the entire diffusion model to bind a unique identifier token to a specific subject, employing a class-specific prior preservation loss to maintain generative diversity.",
+      "citation_markers": [
+        "ref [8]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation",
+          "doi": "10.1109/CVPR52729.2023.02155",
+          "abstract": "Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts. In this work, we present a new approach for “personalization” of text-to-image diffusion models. Given as input just a few images of a subject, we fine-tune a pretrained text-to-image model such that it learns to bind a unique identifier with that specific subject. Once the subject is embedded in the output domain of the model, the unique identifier can be used to synthesize novel photorealistic images of the subject contextualized in different scenes. By leveraging the semantic prior embedded in the model with a new autogenous class-specific prior preservation loss, our technique enables synthesizing the subject in diverse scenes, poses, views and lighting conditions that do not appear in the reference images. We apply our technique to several previously-unassailable tasks, including subject recontextualization, text-guided view synthesis, and artistic rendering, all while preserving the subject's key features. We also provide a new dataset and evaluation protocol for this new task of subject-driven generation. Project page: https://dreambooth.github.io/",
+          "cited_by_count": "1989",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "15.0",
+          "last_author_hindex": "21.0",
+          "author_hindex_avg": "18.0",
+          "author_h_bin": "Q3",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9160416722297668",
+          "composite_score": "0.7233790845207331",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "This reflow procedure proves critical for enabling functional one-step generation, achieving an FID of 23.3 on MS-COCO 2017-5k—substantially surpassing progressive distillation baselines—while requiring only 199 A100 GPU days of training, demonstrating that trajectory straightening constitutes an effective and computationally tractable pathway toward ultra-fast text-to-image generation.",
+      "citation_markers": [
+        "ref [26]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "InstaFlow: One Step is Enough for High-Quality Diffusion-Based Text-to-Image Generation",
+          "doi": "10.48550/arXiv.2309.06380",
+          "abstract": "Diffusion models have revolutionized text-to-image generation with its exceptional quality and creativity. However, its multi-step sampling process is known to be slow, often requiring tens of inference steps to obtain satisfactory results. Previous attempts to improve its sampling speed and reduce computational costs through distillation have been unsuccessful in achieving a functional one-step model. In this paper, we explore a recent method called Rectified Flow, which, thus far, has only been applied to small datasets. The core of Rectified Flow lies in its \\emph{reflow} procedure, which straightens the trajectories of probability flows, refines the coupling between noises and images, and facilitates the distillation process with student models. We propose a novel text-conditioned pipeline to turn Stable Diffusion (SD) into an ultra-fast one-step model, in which we find reflow plays a critical role in improving the assignment between noise and images. Leveraging our new pipeline, we create, to the best of our knowledge, the first one-step diffusion-based text-to-image generator with SD-level image quality, achieving an FID (Frechet Inception Distance) of $23.3$ on MS COCO 2017-5k, surpassing the previous state-of-the-art technique, progressive distillation, by a significant margin ($37.2$ $\\rightarrow$ $23.3$ in FID). By utilizing an expanded network with 1.7B parameters, we further improve the FID to $22.4$. We call our one-step models \\emph{InstaFlow}. On MS COCO 2014-30k, InstaFlow yields an FID of $13.1$ in just $0.09$ second, the best in $\\leq 0.1$ second regime, outperforming the recent StyleGAN-T ($13.9$ in $0.1$ second). Notably, the training of InstaFlow only costs 199 A100 GPU days. Codes and pre-trained models are available at \\url{github.com/gnobitab/InstaFlow}.",
+          "cited_by_count": "20",
+          "cited_by_bin": "Q2",
+          "first_author_hindex": "20.0",
+          "last_author_hindex": "13.0",
+          "author_hindex_avg": "16.5",
+          "author_h_bin": "Q3",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9194742441177368",
+          "composite_score": "0.6389505432470532",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2309.06380",
+            "title": "InstaFlow: One Step is Enough for High-Quality Diffusion-Based Text-to-Image Generation",
+            "abstract": "Diffusion models have revolutionized text-to-image generation with its exceptional quality and creativity. However, its multi-step sampling process is known to be slow, often requiring tens of inference steps to obtain satisfactory results. Previous attempts to improve its sampling speed and reduce computational costs through distillation have been unsuccessful in achieving a functional one-step model. In this paper, we explore a recent method called Rectified Flow, which, thus far, has only been applied to small datasets. The core of Rectified Flow lies in its \\emph{reflow} procedure, which straightens the trajectories of probability flows, refines the coupling between noises and images, and facilitates the distillation process with student models. We propose a novel text-conditioned pipeline to turn Stable Diffusion (SD) into an ultra-fast one-step model, in which we find reflow plays a critical role in improving the assignment between noise and images. Leveraging our new pipeline, we create, to the best of our knowledge, the first one-step diffusion-based text-to-image generator with SD-level image quality, achieving an FID (Frechet Inception Distance) of $23.3$ on MS COCO 2017-5k, surpassing the previous state-of-the-art technique, progressive distillation, by a significant margin ($37.2$ $\\rightarrow$ $23.3$ in FID). By utilizing an expanded network with 1.7B parameters, we further improve the FID to $22.4$. We call our one-step models \\emph{InstaFlow}. On MS COCO 2014-30k, InstaFlow yields an FID of $13.1$ in just $0.09$ second, the best in $\\leq 0.1$ second regime, outperforming the recent StyleGAN-T ($13.9$ in $0.1$ second). Notably, the training of InstaFlow only costs 199 A100 GPU days. Codes and pre-trained models are available at \\url{github.com/gnobitab/InstaFlow}.",
+            "published": "2023-09-12T16:42:09Z",
+            "source_url": "https://arxiv.org/abs/2309.06380"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "PixArt-α ref [33] exemplifies a principled approach to cost reduction through a decomposed three-stage training pipeline that separately optimizes pixel dependency, text-image alignment, and aesthetic quality, achieving competitive image quality at merely 10.8% of Stable Diffusion v1.5's training cost, reducing CO₂ emissions by approximately 90%.",
+      "citation_markers": [
+        "ref [33]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis",
+          "doi": "10.48550/arXiv.2310.00426",
+          "abstract": "The most advanced text-to-image (T2I) models require significant training costs (e.g., millions of GPU hours), seriously hindering the fundamental innovation for the AIGC community while increasing CO2 emissions. This paper introduces PIXART-$α$, a Transformer-based T2I diffusion model whose image generation quality is competitive with state-of-the-art image generators (e.g., Imagen, SDXL, and even Midjourney), reaching near-commercial application standards. Additionally, it supports high-resolution image synthesis up to 1024px resolution with low training cost, as shown in Figure 1 and 2. To achieve this goal, three core designs are proposed: (1) Training strategy decomposition: We devise three distinct training steps that separately optimize pixel dependency, text-image alignment, and image aesthetic quality; (2) Efficient T2I Transformer: We incorporate cross-attention modules into Diffusion Transformer (DiT) to inject text conditions and streamline the computation-intensive class-condition branch; (3) High-informative data: We emphasize the significance of concept density in text-image pairs and leverage a large Vision-Language model to auto-label dense pseudo-captions to assist text-image alignment learning. As a result, PIXART-$α$'s training speed markedly surpasses existing large-scale T2I models, e.g., PIXART-$α$ only takes 10.8% of Stable Diffusion v1.5's training time (675 vs. 6,250 A100 GPU days), saving nearly \\$300,000 (\\$26,000 vs. \\$320,000) and reducing 90% CO2 emissions. Moreover, compared with a larger SOTA model, RAPHAEL, our training cost is merely 1%. Extensive experiments demonstrate that PIXART-$α$ excels in image quality, artistry, and semantic control. We hope PIXART-$α$ will provide new insights to the AIGC community and startups to accelerate building their own high-quality yet low-cost generative models from scratch.",
+          "cited_by_count": "8",
+          "cited_by_bin": "Q3",
+          "first_author_hindex": "67.0",
+          "last_author_hindex": "45.0",
+          "author_hindex_avg": "56.0",
+          "author_h_bin": "Q1",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9210045337677002",
+          "composite_score": "0.6156119521265823",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2310.00426",
+            "title": "PixArt-$α$: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis",
+            "abstract": "The most advanced text-to-image (T2I) models require significant training costs (e.g., millions of GPU hours), seriously hindering the fundamental innovation for the AIGC community while increasing CO2 emissions. This paper introduces PIXART-$α$, a Transformer-based T2I diffusion model whose image generation quality is competitive with state-of-the-art image generators (e.g., Imagen, SDXL, and even Midjourney), reaching near-commercial application standards. Additionally, it supports high-resolution image synthesis up to 1024px resolution with low training cost, as shown in Figure 1 and 2. To achieve this goal, three core designs are proposed: (1) Training strategy decomposition: We devise three distinct training steps that separately optimize pixel dependency, text-image alignment, and image aesthetic quality; (2) Efficient T2I Transformer: We incorporate cross-attention modules into Diffusion Transformer (DiT) to inject text conditions and streamline the computation-intensive class-condition branch; (3) High-informative data: We emphasize the significance of concept density in text-image pairs and leverage a large Vision-Language model to auto-label dense pseudo-captions to assist text-image alignment learning. As a result, PIXART-$α$'s training speed markedly surpasses existing large-scale T2I models, e.g., PIXART-$α$ only takes 10.8% of Stable Diffusion v1.5's training time (675 vs. 6,250 A100 GPU days), saving nearly \\$300,000 (\\$26,000 vs. \\$320,000) and reducing 90% CO2 emissions. Moreover, compared with a larger SOTA model, RAPHAEL, our training cost is merely 1%. Extensive experiments demonstrate that PIXART-$α$ excels in image quality, artistry, and semantic control. We hope PIXART-$α$ will provide new insights to the AIGC community and startups to accelerate building their own high-quality yet low-cost generative models from scratch.",
+            "published": "2023-09-30T16:18:00Z",
+            "source_url": "https://arxiv.org/abs/2310.00426"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "ImageReward ref [3] introduced the first general-purpose human preference reward model, trained on 137k expert comparisons via systematic rating and ranking pipelines, and proposed Reward Feedback Learning (ReFL) to directly optimize diffusion models against the learned scorer. Complementarily, the Human Preference Score (HPS) ref [28] trained a preference classifier on community-sourced human choices, demonstrating superior correlation with human judgments over CLIP-based metrics and enabling preference-guided fine-tuning of Stable Diffusion.",
+      "citation_markers": [
+        "ref [3]",
+        "ref [28]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "title": "ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation",
+          "doi": "10.48550/arXiv.2304.05977",
+          "abstract": "We present a comprehensive solution to learn and improve text-to-image models from human preference feedback. To begin with, we build ImageReward -- the first general-purpose text-to-image human preference reward model -- to effectively encode human preferences. Its training is based on our systematic annotation pipeline including rating and ranking, which collects 137k expert comparisons to date. In human evaluation, ImageReward outperforms existing scoring models and metrics, making it a promising automatic metric for evaluating text-to-image synthesis. On top of it, we propose Reward Feedback Learning (ReFL), a direct tuning algorithm to optimize diffusion models against a scorer. Both automatic and human evaluation support ReFL's advantages over compared methods. All code and datasets are provided at \\url{https://github.com/THUDM/ImageReward}.",
+          "cited_by_count": "99",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "8.0",
+          "last_author_hindex": "46.0",
+          "author_hindex_avg": "27.0",
+          "author_h_bin": "Q2",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "5.0",
+          "relevance_bin": "Q1",
+          "avg_cos_sim_to_others": "0.9117480516433716",
+          "composite_score": "0.7821483027444205",
+          "tag": "selected",
+          "resolved_arxiv": {
+            "arxiv_id": "2304.05977",
+            "title": "ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation",
+            "abstract": "We present a comprehensive solution to learn and improve text-to-image models from human preference feedback. To begin with, we build ImageReward -- the first general-purpose text-to-image human preference reward model -- to effectively encode human preferences. Its training is based on our systematic annotation pipeline including rating and ranking, which collects 137k expert comparisons to date. In human evaluation, ImageReward outperforms existing scoring models and metrics, making it a promising automatic metric for evaluating text-to-image synthesis. On top of it, we propose Reward Feedback Learning (ReFL), a direct tuning algorithm to optimize diffusion models against a scorer. Both automatic and human evaluation support ReFL's advantages over compared methods. All code and datasets are provided at \\url{https://github.com/THUDM/ImageReward}.",
+            "published": "2023-04-12T16:58:13Z",
+            "source_url": "https://arxiv.org/abs/2304.05977"
+          },
+          "source_accessible": true
+        },
+        {
+          "title": "Human Preference Score: Better Aligning Text-to-image Models with Human Preference",
+          "doi": "10.1109/ICCV51070.2023.00200",
+          "abstract": "Recent years have witnessed a rapid growth of deep generative models, with text-to-image models gaining significant attention from the public. However, existing models often generate images that do not align well with human preferences, such as awkward combinations of limbs and facial expressions. To address this issue, we collect a dataset of human choices on generated images from the Stable Foundation Discord channel. Our experiments demonstrate that current evaluation metrics for generative models do not correlate well with human choices. Thus, we train a human preference classifier with the collected dataset and derive a Human Preference Score (HPS) based on the classifier. Using HPS, we propose a simple yet effective method to adapt Stable Diffusion to better align with human preferences. Our experiments show that HPS outperforms CLIP in predicting human choices and has good generalization capability toward images generated from other models. By tuning Stable Diffusion with the guidance of HPS, the adapted model is able to generate images that are more preferred by human users. The project page is available here: https://tgxs002.github.io/alignsd-web/.",
+          "cited_by_count": "156",
+          "cited_by_bin": "Q1",
+          "first_author_hindex": "6.0",
+          "last_author_hindex": "99.0",
+          "author_hindex_avg": "52.5",
+          "author_h_bin": "Q1",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.9117580652236938",
+          "composite_score": "0.6382465427329674",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "SneakyPrompt ref [60] demonstrates that reinforcement learning-guided token perturbations can systematically jailbreak these filters, exposing critical limitations in current content moderation pipelines and underscoring the need for more robust safety mechanisms.",
+      "citation_markers": [
+        "ref [60]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "title": "SneakyPrompt: Jailbreaking Text-to-image Generative Models",
+          "doi": "10.1109/SP54263.2024.00123",
+          "abstract": "Text-to-image generative models such as Stable Diffusion and DALL•E raise many ethical concerns due to the generation of harmful images such as Not-Safe-for-Work (NSFW) ones. To address these ethical concerns, safety filters are often adopted to prevent the generation of NSFW images. In this work, we propose SneakyPrompt, the first automated attack framework, to jailbreak text-to-image generative models such that they generate NSFW images even if safety filters are adopted. Given a prompt that is blocked by a safety filter, SneakyPrompt repeatedly queries the text-to-image generative model and strategically perturbs tokens in the prompt based on the query results to bypass the safety filter. Specifically, SneakyPrompt utilizes reinforcement learning to guide the perturbation of tokens. Our evaluation shows that SneakyPrompt successfully jailbreaks DALL•E 2 with closed-box safety filters to generate NSFW images. Moreover, we also deploy several state-of-the-art, open-source safety filters on a Stable Diffusion model. Our evaluation shows that SneakyPrompt not only successfully generates NSFW images, but also outperforms existing text adversarial attacks when extended to jailbreak text-to-image generative models, in terms of both the number of queries and qualities of the generated NSFW images. SneakyPrompt is open-source and available at this repository: https://github.com/Yuchen413/text2image_safety.",
+          "cited_by_count": "0",
+          "cited_by_bin": "Q4",
+          "first_author_hindex": "",
+          "last_author_hindex": "",
+          "author_hindex_avg": "",
+          "author_h_bin": "",
+          "journal_hindex": "",
+          "journal_h_bin": "",
+          "relevance_llm_1to5": "4.0",
+          "relevance_bin": "Q3",
+          "avg_cos_sim_to_others": "0.9014785885810852",
+          "composite_score": "0.5267536531160104",
+          "tag": "selected",
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

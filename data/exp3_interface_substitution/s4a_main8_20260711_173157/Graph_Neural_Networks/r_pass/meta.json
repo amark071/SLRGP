@@ -1,0 +1,99 @@
+{
+  "topic": "Graph Neural Networks",
+  "arm": "r_pass",
+  "ok": true,
+  "model_g": "anthropic/claude-sonnet-4.6",
+  "started_at": "2026-07-11 21:39:25",
+  "d_max_effective": 2,
+  "expanded_terms": [
+    "graph neural networks",
+    "graph convolutional networks",
+    "message passing neural networks",
+    "spectral graph convolution",
+    "graph attention networks",
+    "geometric deep learning",
+    "node classification",
+    "link prediction",
+    "graph representation learning",
+    "graph transformer",
+    "relational graph convolutional networks",
+    "graph pooling"
+  ],
+  "n_candidates": 60,
+  "solve_rounds": 1,
+  "solve_gave_up": false,
+  "gamma_dimension": "theme",
+  "groups": [
+    {
+      "name": "Graph Pooling Methods",
+      "n": 5
+    },
+    {
+      "name": "Graph Convolution and Message Passing Architectures",
+      "n": 4
+    },
+    {
+      "name": "Node and Edge Representation Learning",
+      "n": 3
+    },
+    {
+      "name": "Graph Classification and Kernel Methods",
+      "n": 2
+    },
+    {
+      "name": "Graph and Network Representation Learning (Embeddings)",
+      "n": 1
+    }
+  ],
+  "kappa": {
+    "min_total": true,
+    "min_groups": true,
+    "balance": true
+  },
+  "refs": [
+    "arxiv_1808.06099",
+    "arxiv_1811.01287",
+    "arxiv_1901.07984",
+    "arxiv_1904.13107",
+    "arxiv_1906.02319",
+    "arxiv_1911.05954",
+    "arxiv_2002.05287",
+    "arxiv_2004.03519",
+    "arxiv_2302.13399"
+  ],
+  "n_refs": 9,
+  "word_count": 792,
+  "written_citation_ids": [
+    "arxiv_1904.13107",
+    "arxiv_1811.01287",
+    "arxiv_1911.05954",
+    "arxiv_2302.13399",
+    "arxiv_2004.03519",
+    "arxiv_1808.06099",
+    "arxiv_2002.05287",
+    "arxiv_1906.02319",
+    "arxiv_1901.07984"
+  ],
+  "leaf_evidence_ids": [
+    "arxiv_1808.06099",
+    "arxiv_1811.01287",
+    "arxiv_1901.07984",
+    "arxiv_1904.13107",
+    "arxiv_1906.02319",
+    "arxiv_1911.05954",
+    "arxiv_2002.05287",
+    "arxiv_2004.03519",
+    "arxiv_2302.13399"
+  ],
+  "elapsed_sec": 75.7,
+  "llm_usage_delta": {
+    "n_calls": 10,
+    "prompt_tokens": 7045,
+    "completion_tokens": 2111
+  },
+  "llm_usage_so_far": {
+    "n_calls": 10,
+    "prompt_tokens": 7045,
+    "completion_tokens": 2111
+  }
+}

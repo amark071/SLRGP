@@ -1,0 +1,174 @@
+{
+  "chi2": 2721.7831036068574,
+  "p_value": 0.0,
+  "dof": 430,
+  "n_disciplines": 11,
+  "n_clusters": 44,
+  "interpretation": "低p值表示簇分配与学科显著不独立，即组织维度类型的使用频率确实随学科系统性变化",
+  "most_discipline_specific_clusters": [
+    {
+      "cluster_id": 3,
+      "label": "AstronomicalFocus",
+      "n_nodes": 15,
+      "discipline_entropy_normalized": -0.0,
+      "dominant_discipline": "astrophysics",
+      "dominant_discipline_share": 1.0,
+      "distribution": {
+        "astrophysics": 15
+      }
+    },
+    {
+      "cluster_id": 4,
+      "label": "progressive_scope_expansion",
+      "n_nodes": 36,
+      "discipline_entropy_normalized": 0.0529,
+      "dominant_discipline": "astrophysics",
+      "dominant_discipline_share": 0.9722,
+      "distribution": {
+        "astrophysics": 35,
+        "hep_theory": 1
+      }
+    },
+    {
+      "cluster_id": 11,
+      "label": "algebraic_dimension_and_nilpotency",
+      "n_nodes": 27,
+      "discipline_entropy_normalized": 0.0661,
+      "dominant_discipline": "mathematics",
+      "dominant_discipline_share": 0.963,
+      "distribution": {
+        "hep_theory": 1,
+        "mathematics": 26
+      }
+    },
+    {
+      "cluster_id": 17,
+      "label": "increasing complexity of quantum systems and states",
+      "n_nodes": 19,
+      "discipline_entropy_normalized": 0.086,
+      "dominant_discipline": "quantum_physics",
+      "dominant_discipline_share": 0.9474,
+      "distribution": {
+        "condensed_matter": 1,
+        "quantum_physics": 18
+      }
+    },
+    {
+      "cluster_id": 15,
+      "label": "FoundationalToAppliedProgression",
+      "n_nodes": 54,
+      "discipline_entropy_normalized": 0.1275,
+      "dominant_discipline": "quantum_physics",
+      "dominant_discipline_share": 0.9259,
+      "distribution": {
+        "eess": 1,
+        "hep_theory": 3,
+        "quantum_physics": 50
+      }
+    }
+  ],
+  "most_universal_clusters": [
+    {
+      "cluster_id": 40,
+      "label": "methodological_evolution",
+      "n_nodes": 24,
+      "discipline_entropy_normalized": 0.8633,
+      "dominant_discipline": "computer_science",
+      "dominant_discipline_share": 0.2083,
+      "distribution": {
+        "computer_science": 5,
+        "condensed_matter": 1,
+        "economics": 1,
+        "eess": 4,
+        "mathematics": 3,
+        "quantitative_biology": 2,
+        "quantitative_finance": 2,
+        "quantum_physics": 2,
+        "statistics": 4
+      }
+    },
+    {
+      "cluster_id": 42,
+      "label": "FoundationalToApplications",
+      "n_nodes": 339,
+      "discipline_entropy_normalized": 0.8894,
+      "dominant_discipline": "quantum_physics",
+      "dominant_discipline_share": 0.2596,
+      "distribution": {
+        "astrophysics": 11,
+        "computer_science": 44,
+        "condensed_matter": 21,
+        "economics": 5,
+        "eess": 32,
+        "hep_theory": 39,
+        "mathematics": 50,
+        "quantitative_biology": 9,
+        "quantitative_finance": 11,
+        "quantum_physics": 88,
+        "statistics": 29
+      }
+    },
+    {
+      "cluster_id": 6,
+      "label": "categorization_by_type",
+      "n_nodes": 21,
+      "discipline_entropy_normalized": 0.9081,
+      "dominant_discipline": "statistics",
+      "dominant_discipline_share": 0.1905,
+      "distribution": {
+        "astrophysics": 1,
+        "computer_science": 3,
+        "condensed_matter": 3,
+        "eess": 3,
+        "hep_theory": 2,
+        "mathematics": 2,
+        "quantitative_biology": 1,
+        "quantitative_finance": 1,
+        "quantum_physics": 1,
+        "statistics": 4
+      }
+    },
+    {
+      "cluster_id": 38,
+      "label": "model_complexity_and_abstraction",
+      "n_nodes": 95,
+      "discipline_entropy_normalized": 0.9315,
+      "dominant_discipline": "statistics",
+      "dominant_discipline_share": 0.2105,
+      "distribution": {
+        "astrophysics": 6,
+        "computer_science": 12,
+        "condensed_matter": 3,
+        "economics": 8,
+        "eess": 11,
+        "hep_theory": 5,
+        "mathematics": 7,
+        "quantitative_biology": 15,
+        "quantitative_finance": 5,
+        "quantum_physics": 3,
+        "statistics": 20
+      }
+    },
+    {
+      "cluster_id": 39,
+      "label": "methodological approach",
+      "n_nodes": 160,
+      "discipline_entropy_normalized": 0.9352,
+      "dominant_discipline": "statistics",
+      "dominant_discipline_share": 0.1938,
+      "distribution": {
+        "astrophysics": 13,
+        "computer_science": 15,
+        "condensed_matter": 10,
+        "economics": 8,
+        "eess": 26,
+        "hep_theory": 6,
+        "mathematics": 22,
+        "quantitative_biology": 9,
+        "quantitative_finance": 4,
+        "quantum_physics": 16,
+        "statistics": 31
+      }
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "topic_id": "fast_vision_language_pretraining",
+  "system": "slrgp",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "[arxiv_2204.04588] argue, the standard contrastive objective employed by models such as CLIP does not adequately account for such noise, contributing to data and compute inefficiency; their proposed remedy introduces progressive self-distillation with soft image-caption similarity targets to produce more robust cross-modal representations.",
+      "citation_markers": [
+        "[arxiv_2204.04588]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2204.04588",
+          "doc_id": "arxiv_2204.04588",
+          "title": "Robust Cross-Modal Representation Learning with Progressive\n  Self-Distillation",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "The learning objective of vision-language approach of CLIP does not effectively account for the noisy many-to-many correspondences found in web-harvested image captioning datasets, which contributes to its compute and data inefficiency. To address this challenge, we introduce a novel training framework based on cross-modal contrastive learning that uses progressive self-distillation and soft image-text alignments to more efficiently learn robust representations from noisy data. Our model distills its own knowledge to dynamically generate soft-alignment targets for a subset of images and captions in every minibatch, which are then used to update its parameters. Extensive evaluation across 14 benchmark datasets shows that our method consistently outperforms its CLIP counterpart in multiple settings, including: (a) zero-shot classification, (b) linear probe transfer, and (c) image-text retrieval, without incurring added computational cost. Analysis using an ImageNet-based robustness test-bed reveals that our method offers better effective robustness to natural distribution shifts compared to both ImageNet-trained models and CLIP itself. Lastly, pretraining with datasets spanning two orders of magnitude in size shows that our improvements over CLIP tend to scale with number of training examples.",
+          "resolved_arxiv": {
+            "arxiv_id": "2204.04588",
+            "title": "Robust Cross-Modal Representation Learning with Progressive Self-Distillation",
+            "abstract": "The learning objective of vision-language approach of CLIP does not effectively account for the noisy many-to-many correspondences found in web-harvested image captioning datasets, which contributes to its compute and data inefficiency. To address this challenge, we introduce a novel training framework based on cross-modal contrastive learning that uses progressive self-distillation and soft image-text alignments to more efficiently learn robust representations from noisy data. Our model distills its own knowledge to dynamically generate soft-alignment targets for a subset of images and captions in every minibatch, which are then used to update its parameters. Extensive evaluation across 14 benchmark datasets shows that our method consistently outperforms its CLIP counterpart in multiple settings, including: (a) zero-shot classification, (b) linear probe transfer, and (c) image-text retrieval, without incurring added computational cost. Analysis using an ImageNet-based robustness test-bed reveals that our method offers better effective robustness to natural distribution shifts compared to both ImageNet-trained models and CLIP itself. Lastly, pretraining with datasets spanning two orders of magnitude in size shows that our improvements over CLIP tend to scale with number of training examples.",
+            "published": "2022-04-10T03:28:18Z",
+            "source_url": "https://arxiv.org/abs/2204.04588"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "[arxiv_2305.20088] observes that standard CLIP training applies data augmentations exclusively to images while leaving textual inputs unmodified, thereby limiting the diversity of supervision signals; systematic text rewrites on the language side yield meaningful improvements in downstream transfer performance.",
+      "citation_markers": [
+        "[arxiv_2305.20088]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2305.20088",
+          "doc_id": "arxiv_2305.20088",
+          "title": "Improving CLIP Training with Language Rewrites",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Contrastive Language-Image Pre-training (CLIP) stands as one of the most effective and scalable methods for training transferable vision models using paired image and text data. CLIP models are trained using contrastive loss, which typically relies on data augmentations to prevent overfitting and shortcuts. However, in the CLIP training paradigm, data augmentations are exclusively applied to image inputs, while language inputs remain unchanged throughout the entire training process, limiting the exposure of diverse texts to the same image. In this paper, we introduce Language augmented CLIP (LaCLIP), a simple yet highly effective approach to enhance CLIP training through language rewrites. Leveraging the in-context learning capability of large language models, we rewrite the text descriptions associated with each image. These rewritten texts exhibit diversity in sentence structure and vocabulary while preserving the original key concepts and meanings. During training, LaCLIP randomly selects either the original texts or the rewritten versions as text augmentations for each image. Extensive experiments on CC3M, CC12M, RedCaps and LAION-400M datasets show that CLIP pre-training with language rewrites significantly improves the transfer performance without computation or memory overhead during training. Specifically for ImageNet zero-shot accuracy, LaCLIP outperforms CLIP by 8.2% on CC12M and 2.4% on LAION-400M. Code is available at https://github.com/LijieFan/LaCLIP.",
+          "resolved_arxiv": {
+            "arxiv_id": "2305.20088",
+            "title": "Improving CLIP Training with Language Rewrites",
+            "abstract": "Contrastive Language-Image Pre-training (CLIP) stands as one of the most effective and scalable methods for training transferable vision models using paired image and text data. CLIP models are trained using contrastive loss, which typically relies on data augmentations to prevent overfitting and shortcuts. However, in the CLIP training paradigm, data augmentations are exclusively applied to image inputs, while language inputs remain unchanged throughout the entire training process, limiting the exposure of diverse texts to the same image. In this paper, we introduce Language augmented CLIP (LaCLIP), a simple yet highly effective approach to enhance CLIP training through language rewrites. Leveraging the in-context learning capability of large language models, we rewrite the text descriptions associated with each image. These rewritten texts exhibit diversity in sentence structure and vocabulary while preserving the original key concepts and meanings. During training, LaCLIP randomly selects either the original texts or the rewritten versions as text augmentations for each image. Extensive experiments on CC3M, CC12M, RedCaps and LAION-400M datasets show that CLIP pre-training with language rewrites significantly improves the transfer performance without computation or memory overhead during training. Specifically for ImageNet zero-shot accuracy, LaCLIP outperforms CLIP by 8.2% on CC12M and 2.4% on LAION-400M. Code is available at https://github.com/LijieFan/LaCLIP.",
+            "published": "2023-05-31T17:59:04Z",
+            "source_url": "https://arxiv.org/abs/2305.20088"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "[arxiv_2305.15483] observe that existing weakly supervised VLP methods rely solely on local image descriptors such as object tags as cross-modal anchors, constraining the richness of learned alignments; they instead propose relative representations to capture broader structural correspondences between modalities while preserving the efficiency advantages of weak supervision.",
+      "citation_markers": [
+        "[arxiv_2305.15483]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2305.15483",
+          "doc_id": "arxiv_2305.15483",
+          "title": "Weakly Supervised Vision-and-Language Pre-training with Relative\n  Representations",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Weakly supervised vision-and-language pre-training (WVLP), which learns cross-modal representations with limited cross-modal supervision, has been shown to effectively reduce the data cost of pre-training while maintaining decent performance on downstream tasks. However, current WVLP methods use only local descriptions of images, i.e., object tags, as cross-modal anchors to construct weakly-aligned image-text pairs for pre-training. This affects the data quality and thus the effectiveness of pre-training. In this paper, we propose to directly take a small number of aligned image-text pairs as anchors, and represent each unaligned image and text by its similarities to these anchors, i.e., relative representations. We build a WVLP framework based on the relative representations, namely RELIT, which collects high-quality weakly-aligned image-text pairs from large-scale image-only and text-only data for pre-training through relative representation-based retrieval and generation. Experiments on four downstream tasks show that RELIT achieves new state-of-the-art results under the weakly supervised setting.",
+          "resolved_arxiv": {
+            "arxiv_id": "2305.15483",
+            "title": "Weakly Supervised Vision-and-Language Pre-training with Relative Representations",
+            "abstract": "Weakly supervised vision-and-language pre-training (WVLP), which learns cross-modal representations with limited cross-modal supervision, has been shown to effectively reduce the data cost of pre-training while maintaining decent performance on downstream tasks. However, current WVLP methods use only local descriptions of images, i.e., object tags, as cross-modal anchors to construct weakly-aligned image-text pairs for pre-training. This affects the data quality and thus the effectiveness of pre-training. In this paper, we propose to directly take a small number of aligned image-text pairs as anchors, and represent each unaligned image and text by its similarities to these anchors, i.e., relative representations. We build a WVLP framework based on the relative representations, namely RELIT, which collects high-quality weakly-aligned image-text pairs from large-scale image-only and text-only data for pre-training through relative representation-based retrieval and generation. Experiments on four downstream tasks show that RELIT achieves new state-of-the-art results under the weakly supervised setting.",
+            "published": "2023-05-24T18:10:24Z",
+            "source_url": "https://arxiv.org/abs/2305.15483"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "[arxiv_2306.07915] challenges this assumption through a careful empirical comparison, finding that image captioners can serve as scalable vision learners competitive with contrastive counterparts, thereby reopening the question of which pretraining objective is preferable for vision backbone learning. This finding is complemented by large-scale generative models such as PaLI [arxiv_2209.06794], which jointly scales vision and language components within a unified text-generation interface, supporting a broad range of vision, language, and multimodal tasks across many languages.",
+      "citation_markers": [
+        "[arxiv_2306.07915]",
+        "[arxiv_2209.06794]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2306.07915",
+          "doc_id": "arxiv_2306.07915",
+          "title": "Image Captioners Are Scalable Vision Learners Too",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Contrastive pretraining on image-text pairs from the web is one of the most popular large-scale pretraining strategies for vision backbones, especially in the context of large multimodal models. At the same time, image captioning on this type of data is commonly considered an inferior pretraining strategy. In this paper, we perform a fair comparison of these two pretraining strategies, carefully matching training data, compute, and model capacity. Using a standard encoder-decoder transformer, we find that captioning alone is surprisingly effective: on classification tasks, captioning produces vision encoders competitive with contrastively pretrained encoders, while surpassing them on vision & language tasks. We further analyze the effect of the model architecture and scale, as well as the pretraining data on the representation quality, and find that captioning exhibits the same or better scaling behavior along these axes. Overall our results show that plain image captioning is a more powerful pretraining strategy than was previously believed.",
+          "resolved_arxiv": {
+            "arxiv_id": "2306.07915",
+            "title": "Image Captioners Are Scalable Vision Learners Too",
+            "abstract": "Contrastive pretraining on image-text pairs from the web is one of the most popular large-scale pretraining strategies for vision backbones, especially in the context of large multimodal models. At the same time, image captioning on this type of data is commonly considered an inferior pretraining strategy. In this paper, we perform a fair comparison of these two pretraining strategies, carefully matching training data, compute, and model capacity. Using a standard encoder-decoder transformer, we find that captioning alone is surprisingly effective: on classification tasks, captioning produces vision encoders competitive with contrastively pretrained encoders, while surpassing them on vision & language tasks. We further analyze the effect of the model architecture and scale, as well as the pretraining data on the representation quality, and find that captioning exhibits the same or better scaling behavior along these axes. Overall our results show that plain image captioning is a more powerful pretraining strategy than was previously believed.",
+            "published": "2023-06-13T17:18:01Z",
+            "source_url": "https://arxiv.org/abs/2306.07915"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2209.06794",
+          "doc_id": "arxiv_2209.06794",
+          "title": "PaLI: A Jointly-Scaled Multilingual Language-Image Model",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Effective scaling and a flexible task interface enable large language models to excel at many tasks. We present PaLI (Pathways Language and Image model), a model that extends this approach to the joint modeling of language and vision. PaLI generates text based on visual and textual inputs, and with this interface performs many vision, language, and multimodal tasks, in many languages. To train PaLI, we make use of large pre-trained encoder-decoder language models and Vision Transformers (ViTs). This allows us to capitalize on their existing capabilities and leverage the substantial cost of training them. We find that joint scaling of the vision and language components is important. Since existing Transformers for language are much larger than their vision counterparts, we train a large, 4-billion parameter ViT (ViT-e) to quantify the benefits from even larger-capacity vision models. To train PaLI, we create a large multilingual mix of pretraining tasks, based on a new image-text training set containing 10B images and texts in over 100 languages. PaLI achieves state-of-the-art in multiple vision and language tasks (such as captioning, visual question-answering, scene-text understanding), while retaining a simple, modular, and scalable design.",
+          "resolved_arxiv": {
+            "arxiv_id": "2209.06794",
+            "title": "PaLI: A Jointly-Scaled Multilingual Language-Image Model",
+            "abstract": "Effective scaling and a flexible task interface enable large language models to excel at many tasks. We present PaLI (Pathways Language and Image model), a model that extends this approach to the joint modeling of language and vision. PaLI generates text based on visual and textual inputs, and with this interface performs many vision, language, and multimodal tasks, in many languages. To train PaLI, we make use of large pre-trained encoder-decoder language models and Vision Transformers (ViTs). This allows us to capitalize on their existing capabilities and leverage the substantial cost of training them. We find that joint scaling of the vision and language components is important. Since existing Transformers for language are much larger than their vision counterparts, we train a large, 4-billion parameter ViT (ViT-e) to quantify the benefits from even larger-capacity vision models. To train PaLI, we create a large multilingual mix of pretraining tasks, based on a new image-text training set containing 10B images and texts in over 100 languages. PaLI achieves state-of-the-art in multiple vision and language tasks (such as captioning, visual question-answering, scene-text understanding), while retaining a simple, modular, and scalable design.",
+            "published": "2022-09-14T17:24:07Z",
+            "source_url": "https://arxiv.org/abs/2209.06794"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "[arxiv_2303.04998] proposes rethinking visual prompt learning through the lens of masked visual token modeling, aligning the downstream adaptation mechanism more closely with the pretraining objective. This stands in contrast to additive input-space approaches such as convolutional visual prompts, which focus on robustness to out-of-distribution samples: [arxiv_2303.00198] introduces convolutional visual prompts specifically to overcome the overfitting that arises when high-dimensional additive prompt vectors are used in self-supervised, test-time adaptation settings without labeled data, highlighting a practical limitation of standard visual prompting under label scarcity.",
+      "citation_markers": [
+        "[arxiv_2303.04998]",
+        "[arxiv_2303.00198]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2303.04998",
+          "doc_id": "arxiv_2303.04998",
+          "title": "Rethinking Visual Prompt Learning as Masked Visual Token Modeling",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Prompt learning has achieved great success in efficiently exploiting large-scale pre-trained models in natural language processing (NLP). It reformulates the downstream tasks as the generative pre-training ones to achieve consistency, thus improving the performance stably. However, when transferring it to the vision area, current visual prompt learning methods are almost designed on discriminative pre-trained models, and there is also a lack of careful design to unify the forms of pre-training and downstream tasks. To explore prompt learning on the generative pre-trained visual model, as well as keeping the task consistency, we propose Visual Prompt learning as masked visual Token Modeling (VPTM) to transform the downstream visual classification into the pre-trained masked visual token prediction. In addition, we develop the prototypical verbalizer for mapping the predicted visual token with implicit semantics to explicit downstream labels. To our best knowledge, VPTM is the first visual prompt method on the generative pre-trained visual model, which achieves consistency between pre-training and downstream visual classification by task reformulation. Experiments show that VPTM outperforms other visual prompt methods and achieves excellent efficiency. Moreover, the task consistency of VPTM contributes to the robustness against prompt location, prompt length and prototype dimension, and could be deployed uniformly.",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.04998",
+            "title": "Rethinking Visual Prompt Learning as Masked Visual Token Modeling",
+            "abstract": "Prompt learning has achieved great success in efficiently exploiting large-scale pre-trained models in natural language processing (NLP). It reformulates the downstream tasks as the generative pre-training ones to achieve consistency, thus improving the performance stably. However, when transferring it to the vision area, current visual prompt learning methods are almost designed on discriminative pre-trained models, and there is also a lack of careful design to unify the forms of pre-training and downstream tasks. To explore prompt learning on the generative pre-trained visual model, as well as keeping the task consistency, we propose Visual Prompt learning as masked visual Token Modeling (VPTM) to transform the downstream visual classification into the pre-trained masked visual token prediction. In addition, we develop the prototypical verbalizer for mapping the predicted visual token with implicit semantics to explicit downstream labels. To our best knowledge, VPTM is the first visual prompt method on the generative pre-trained visual model, which achieves consistency between pre-training and downstream visual classification by task reformulation. Experiments show that VPTM outperforms other visual prompt methods and achieves excellent efficiency. Moreover, the task consistency of VPTM contributes to the robustness against prompt location, prompt length and prototype dimension, and could be deployed uniformly.",
+            "published": "2023-03-09T02:43:10Z",
+            "source_url": "https://arxiv.org/abs/2303.04998"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2303.00198",
+          "doc_id": "arxiv_2303.00198",
+          "title": "Convolutional Visual Prompt for Robust Visual Perception",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Vision models are often vulnerable to out-of-distribution (OOD) samples without adapting. While visual prompts offer a lightweight method of input-space adaptation for large-scale vision models, they rely on a high-dimensional additive vector and labeled data. This leads to overfitting when adapting models in a self-supervised test-time setting without labels. We introduce convolutional visual prompts (CVP) for label-free test-time adaptation for robust visual perception. The structured nature of CVP demands fewer trainable parameters, less than 1\\% compared to standard visual prompts, combating overfitting. Extensive experiments and analysis on a wide variety of OOD visual perception tasks show that our approach is effective, improving robustness by up to 5.87% over several large-scale models.",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.00198",
+            "title": "Convolutional Visual Prompt for Robust Visual Perception",
+            "abstract": "Vision models are often vulnerable to out-of-distribution (OOD) samples without adapting. While visual prompts offer a lightweight method of input-space adaptation for large-scale vision models, they rely on a high-dimensional additive vector and labeled data. This leads to overfitting when adapting models in a self-supervised test-time setting without labels. We introduce convolutional visual prompts (CVP) for label-free test-time adaptation for robust visual perception. The structured nature of CVP demands fewer trainable parameters, less than 1\\% compared to standard visual prompts, combating overfitting. Extensive experiments and analysis on a wide variety of OOD visual perception tasks show that our approach is effective, improving robustness by up to 5.87% over several large-scale models.",
+            "published": "2023-03-01T03:06:29Z",
+            "source_url": "https://arxiv.org/abs/2303.00198"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Conditional Prompt Learning addressed this limitation by generating instance-conditioned prompts, enabling more flexible adaptation [arxiv_2203.05557]. However, a persistent overfitting problem remains in existing soft prompt methods, where accuracy on unseen classes degrades substantially; LASP responds with a text-to-text optimization framework that improves generalization across classes [arxiv_2210.01115].",
+      "citation_markers": [
+        "[arxiv_2203.05557]",
+        "[arxiv_2210.01115]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2203.05557",
+          "doc_id": "arxiv_2203.05557",
+          "title": "Conditional Prompt Learning for Vision-Language Models",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "With the rise of powerful pre-trained vision-language models like CLIP, it becomes essential to investigate ways to adapt these models to downstream datasets. A recently proposed method named Context Optimization (CoOp) introduces the concept of prompt learning -- a recent trend in NLP -- to the vision domain for adapting pre-trained vision-language models. Specifically, CoOp turns context words in a prompt into a set of learnable vectors and, with only a few labeled images for learning, can achieve huge improvements over intensively-tuned manual prompts. In our study we identify a critical problem of CoOp: the learned context is not generalizable to wider unseen classes within the same dataset, suggesting that CoOp overfits base classes observed during training. To address the problem, we propose Conditional Context Optimization (CoCoOp), which extends CoOp by further learning a lightweight neural network to generate for each image an input-conditional token (vector). Compared to CoOp's static prompts, our dynamic prompts adapt to each instance and are thus less sensitive to class shift. Extensive experiments show that CoCoOp generalizes much better than CoOp to unseen classes, even showing promising transferability beyond a single dataset; and yields stronger domain generalization performance as well. Code is available at https://github.com/KaiyangZhou/CoOp.",
+          "resolved_arxiv": {
+            "arxiv_id": "2203.05557",
+            "title": "Conditional Prompt Learning for Vision-Language Models",
+            "abstract": "With the rise of powerful pre-trained vision-language models like CLIP, it becomes essential to investigate ways to adapt these models to downstream datasets. A recently proposed method named Context Optimization (CoOp) introduces the concept of prompt learning -- a recent trend in NLP -- to the vision domain for adapting pre-trained vision-language models. Specifically, CoOp turns context words in a prompt into a set of learnable vectors and, with only a few labeled images for learning, can achieve huge improvements over intensively-tuned manual prompts. In our study we identify a critical problem of CoOp: the learned context is not generalizable to wider unseen classes within the same dataset, suggesting that CoOp overfits base classes observed during training. To address the problem, we propose Conditional Context Optimization (CoCoOp), which extends CoOp by further learning a lightweight neural network to generate for each image an input-conditional token (vector). Compared to CoOp's static prompts, our dynamic prompts adapt to each instance and are thus less sensitive to class shift. Extensive experiments show that CoCoOp generalizes much better than CoOp to unseen classes, even showing promising transferability beyond a single dataset; and yields stronger domain generalization performance as well. Code is available at https://github.com/KaiyangZhou/CoOp.",
+            "published": "2022-03-10T18:59:41Z",
+            "source_url": "https://arxiv.org/abs/2203.05557"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2210.01115",
+          "doc_id": "arxiv_2210.01115",
+          "title": "LASP: Text-to-Text Optimization for Language-Aware Soft Prompting of\n  Vision & Language Models",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Soft prompt learning has recently emerged as one of the methods of choice for adapting V&L models to a downstream task using a few training examples. However, current methods significantly overfit the training data, suffering from large accuracy degradation when tested on unseen classes from the same domain. To this end, in this paper, we make the following 4 contributions: (1) To alleviate base class overfitting, we propose a novel Language-Aware Soft Prompting (LASP) learning method by means of a text-to-text cross-entropy loss that maximizes the probability of the learned prompts to be correctly classified with respect to pre-defined hand-crafted textual prompts. (2) To increase the representation capacity of the prompts, we propose grouped LASP where each group of prompts is optimized with respect to a separate subset of textual prompts. (3) We identify a visual-language misalignment introduced by prompt learning and LASP, and more importantly, propose a re-calibration mechanism to address it. (4) We show that LASP is inherently amenable to including, during training, virtual classes, i.e. class names for which no visual samples are available, further increasing the robustness of the learned prompts. Through evaluations on 11 datasets, we show that our approach (a) significantly outperforms all prior works on soft prompting, and (b) matches and surpasses, for the first time, the accuracy on novel classes obtained by hand-crafted prompts and CLIP for 8 out of 11 test datasets. Code will be made available at https://www.adrianbulat.com/lasp",
+          "resolved_arxiv": {
+            "arxiv_id": "2210.01115",
+            "title": "LASP: Text-to-Text Optimization for Language-Aware Soft Prompting of Vision & Language Models",
+            "abstract": "Soft prompt learning has recently emerged as one of the methods of choice for adapting V&L models to a downstream task using a few training examples. However, current methods significantly overfit the training data, suffering from large accuracy degradation when tested on unseen classes from the same domain. To this end, in this paper, we make the following 4 contributions: (1) To alleviate base class overfitting, we propose a novel Language-Aware Soft Prompting (LASP) learning method by means of a text-to-text cross-entropy loss that maximizes the probability of the learned prompts to be correctly classified with respect to pre-defined hand-crafted textual prompts. (2) To increase the representation capacity of the prompts, we propose grouped LASP where each group of prompts is optimized with respect to a separate subset of textual prompts. (3) We identify a visual-language misalignment introduced by prompt learning and LASP, and more importantly, propose a re-calibration mechanism to address it. (4) We show that LASP is inherently amenable to including, during training, virtual classes, i.e. class names for which no visual samples are available, further increasing the robustness of the learned prompts. Through evaluations on 11 datasets, we show that our approach (a) significantly outperforms all prior works on soft prompting, and (b) matches and surpasses, for the first time, the accuracy on novel classes obtained by hand-crafted prompts and CLIP for 8 out of 11 test datasets. Code will be made available at https://www.adrianbulat.com/lasp",
+            "published": "2022-10-03T17:56:35Z",
+            "source_url": "https://arxiv.org/abs/2210.01115"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "VL-PET addresses this challenge by integrating modular modifications such as Adapter and LoRA into encoder-decoder architectures with granularity control, demonstrating that competitive performance can be achieved while updating far fewer parameters than full fine-tuning [arxiv_2308.09804].",
+      "citation_markers": [
+        "[arxiv_2308.09804]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "source_key": "arxiv_2308.09804",
+          "doc_id": "arxiv_2308.09804",
+          "title": "VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity\n  Control",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "As the model size of pre-trained language models (PLMs) grows rapidly, full fine-tuning becomes prohibitively expensive for model training and storage. In vision-and-language (VL), parameter-efficient tuning (PET) techniques are proposed to integrate modular modifications (e.g., Adapter and LoRA) into encoder-decoder PLMs. By tuning a small set of trainable parameters, these techniques perform on par with full fine-tuning. However, excessive modular modifications and neglecting the functionality gap between the encoders and decoders can lead to performance degradation, while existing PET techniques (e.g., VL-Adapter) overlook these critical issues. In this paper, we propose a Vision-and-Language Parameter-Efficient Tuning (VL-PET) framework to impose effective control over modular modifications via a novel granularity-controlled mechanism. Considering different granularity-controlled matrices generated by this mechanism, a variety of model-agnostic VL-PET modules can be instantiated from our framework for better efficiency and effectiveness trade-offs. We further propose lightweight PET module designs to enhance VL alignment and modeling for the encoders and maintain text generation for the decoders. Extensive experiments conducted on four image-text tasks and four video-text tasks demonstrate the efficiency, effectiveness and transferability of our VL-PET framework. In particular, our VL-PET-large with lightweight PET module designs significantly outperforms VL-Adapter by 2.92% (3.41%) and LoRA by 3.37% (7.03%) with BART-base (T5-base) on image-text tasks. Furthermore, we validate the enhanced effect of employing our VL-PET designs on existing PET techniques, enabling them to achieve significant performance improvements. Our code is available at https://github.com/HenryHZY/VL-PET.",
+          "resolved_arxiv": {
+            "arxiv_id": "2308.09804",
+            "title": "VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity Control",
+            "abstract": "As the model size of pre-trained language models (PLMs) grows rapidly, full fine-tuning becomes prohibitively expensive for model training and storage. In vision-and-language (VL), parameter-efficient tuning (PET) techniques are proposed to integrate modular modifications (e.g., Adapter and LoRA) into encoder-decoder PLMs. By tuning a small set of trainable parameters, these techniques perform on par with full fine-tuning. However, excessive modular modifications and neglecting the functionality gap between the encoders and decoders can lead to performance degradation, while existing PET techniques (e.g., VL-Adapter) overlook these critical issues. In this paper, we propose a Vision-and-Language Parameter-Efficient Tuning (VL-PET) framework to impose effective control over modular modifications via a novel granularity-controlled mechanism. Considering different granularity-controlled matrices generated by this mechanism, a variety of model-agnostic VL-PET modules can be instantiated from our framework for better efficiency and effectiveness trade-offs. We further propose lightweight PET module designs to enhance VL alignment and modeling for the encoders and maintain text generation for the decoders. Extensive experiments conducted on four image-text tasks and four video-text tasks demonstrate the efficiency, effectiveness and transferability of our VL-PET framework. In particular, our VL-PET-large with lightweight PET module designs significantly outperforms VL-Adapter by 2.92% (3.41%) and LoRA by 3.37% (7.03%) with BART-base (T5-base) on image-text tasks. Furthermore, we validate the enhanced effect of employing our VL-PET designs on existing PET techniques, enabling them to achieve significant performance improvements. Our code is available at https://github.com/HenryHZY/VL-PET.",
+            "published": "2023-08-18T20:18:30Z",
+            "source_url": "https://arxiv.org/abs/2308.09804"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "I-Tuning freezes a pretrained language model and inserts a small set of trainable parameters to bridge visual inputs, substantially reducing training cost for image captioning [arxiv_2202.06574]. Similarly, PILL introduces adapter experts and attention gating mechanisms to plug visual information into large language models, enabling diverse instruction following with minimal parameter overhead [arxiv_2311.02126].",
+      "citation_markers": [
+        "[arxiv_2202.06574]",
+        "[arxiv_2311.02126]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2202.06574",
+          "doc_id": "arxiv_2202.06574",
+          "title": "I-Tuning: Tuning Frozen Language Models with Image for Lightweight Image\n  Captioning",
+          "year": 2023,
+          "venue": "cs.CL",
+          "abstract": "Image Captioning is a traditional vision-and-language task that aims to generate the language description of an image. Recent studies focus on scaling up the model size and the number of training data, which significantly increase the cost of model training. Different to these heavy-cost models, we introduce a lightweight image captioning framework (I-Tuning), which contains a small number of trainable parameters. We design a novel I-Tuning cross-attention module to connect the non-trainable pre-trained language decoder GPT2 and vision encoder CLIP-ViT. Since most parameters are not required to be updated during training, our framework is lightweight and fast. Experimental results conducted on three image captioning benchmarks reveal that our framework achieves comparable or better performance than the large-scale baseline systems. But our models contain up to 10 times fewer trainable parameters and require much fewer data for training compared with state-of-the-art baselines.",
+          "resolved_arxiv": {
+            "arxiv_id": "2202.06574",
+            "title": "I-Tuning: Tuning Frozen Language Models with Image for Lightweight Image Captioning",
+            "abstract": "Image Captioning is a traditional vision-and-language task that aims to generate the language description of an image. Recent studies focus on scaling up the model size and the number of training data, which significantly increase the cost of model training. Different to these heavy-cost models, we introduce a lightweight image captioning framework (I-Tuning), which contains a small number of trainable parameters. We design a novel I-Tuning cross-attention module to connect the non-trainable pre-trained language decoder GPT2 and vision encoder CLIP-ViT. Since most parameters are not required to be updated during training, our framework is lightweight and fast. Experimental results conducted on three image captioning benchmarks reveal that our framework achieves comparable or better performance than the large-scale baseline systems. But our models contain up to 10 times fewer trainable parameters and require much fewer data for training compared with state-of-the-art baselines.",
+            "published": "2022-02-14T09:36:50Z",
+            "source_url": "https://arxiv.org/abs/2202.06574"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2311.02126",
+          "doc_id": "arxiv_2311.02126",
+          "title": "PILL: Plug Into LLM with Adapter Expert and Attention Gate",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Due to the remarkable capabilities of powerful Large Language Models (LLMs) in effectively following instructions, there has been a growing number of assistants in the community to assist humans. Recently, significant progress has been made in the development of Vision Language Models (VLMs), expanding the capabilities of LLMs and enabling them to execute more diverse instructions. However, it is foreseeable that models will likely need to handle tasks involving additional modalities such as speech, video, and others. This poses a particularly prominent challenge of dealing with the complexity of mixed modalities. To address this, we introduce a novel architecture called PILL: Plug Into LLM with adapter expert and attention gate to better decouple these complex modalities and leverage efficient fine-tuning. We introduce two modules: Firstly, utilizing Mixture-of-Modality-Adapter-Expert to independently handle different modalities, enabling better adaptation to downstream tasks while preserving the expressive capability of the original model. Secondly, by introducing Modality-Attention-Gating, which enables adaptive control of the contribution of modality tokens to the overall representation. In addition, we have made improvements to the Adapter to enhance its learning and expressive capabilities. Experimental results demonstrate that our approach exhibits competitive performance compared to other mainstream methods for modality fusion. For researchers interested in our work, we provide free access to the code and models at https://github.com/DsaltYfish/PILL.",
+          "resolved_arxiv": {
+            "arxiv_id": "2311.02126",
+            "title": "PILL: Plug Into LLM with Adapter Expert and Attention Gate",
+            "abstract": "Due to the remarkable capabilities of powerful Large Language Models (LLMs) in effectively following instructions, there has been a growing number of assistants in the community to assist humans. Recently, significant progress has been made in the development of Vision Language Models (VLMs), expanding the capabilities of LLMs and enabling them to execute more diverse instructions. However, it is foreseeable that models will likely need to handle tasks involving additional modalities such as speech, video, and others. This poses a particularly prominent challenge of dealing with the complexity of mixed modalities. To address this, we introduce a novel architecture called PILL: Plug Into LLM with adapter expert and attention gate to better decouple these complex modalities and leverage efficient fine-tuning. We introduce two modules: Firstly, utilizing Mixture-of-Modality-Adapter-Expert to independently handle different modalities, enabling better adaptation to downstream tasks while preserving the expressive capability of the original model. Secondly, by introducing Modality-Attention-Gating, which enables adaptive control of the contribution of modality tokens to the overall representation. In addition, we have made improvements to the Adapter to enhance its learning and expressive capabilities. Experimental results demonstrate that our approach exhibits competitive performance compared to other mainstream methods for modality fusion. For researchers interested in our work, we provide free access to the code and models at https://github.com/DsaltYfish/PILL.",
+            "published": "2023-11-03T09:31:10Z",
+            "source_url": "https://arxiv.org/abs/2311.02126"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "[arxiv_2210.04183] observed that most existing multimodal pretraining methods excel at global-level image-text alignment while lacking effective fine-grained interaction, proposing jointly masked multimodal modeling to address this gap. Similarly, [arxiv_2303.02995] noted that contrastive models like CLIP do not explicitly encode hierarchical structure in visual or linguistic representations, limiting their capacity for localized understanding.",
+      "citation_markers": [
+        "[arxiv_2210.04183]",
+        "[arxiv_2303.02995]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2210.04183",
+          "doc_id": "arxiv_2210.04183",
+          "title": "MAMO: Masked Multimodal Modeling for Fine-Grained Vision-Language\n  Representation Learning",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Multimodal representation learning has shown promising improvements on various vision-language tasks. Most existing methods excel at building global-level alignment between vision and language while lacking effective fine-grained image-text interaction. In this paper, we propose a jointly masked multimodal modeling method to learn fine-grained multimodal representations. Our method performs joint masking on image-text input and integrates both implicit and explicit targets for the masked signals to recover. The implicit target provides a unified and debiased objective for vision and language, where the model predicts latent multimodal representations of the unmasked input. The explicit target further enriches the multimodal representations by recovering high-level and semantically meaningful information: momentum visual features of image patches and concepts of word tokens. Through such a masked modeling process, our model not only learns fine-grained multimodal interaction, but also avoids the semantic gap between high-level representations and low- or mid-level prediction targets (e.g. image pixels), thus producing semantically rich multimodal representations that perform well on both zero-shot and fine-tuned settings. Our pre-trained model (named MAMO) achieves state-of-the-art performance on various downstream vision-language tasks, including image-text retrieval, visual question answering, visual reasoning, and weakly-supervised visual grounding.",
+          "resolved_arxiv": {
+            "arxiv_id": "2210.04183",
+            "title": "MAMO: Masked Multimodal Modeling for Fine-Grained Vision-Language Representation Learning",
+            "abstract": "Multimodal representation learning has shown promising improvements on various vision-language tasks. Most existing methods excel at building global-level alignment between vision and language while lacking effective fine-grained image-text interaction. In this paper, we propose a jointly masked multimodal modeling method to learn fine-grained multimodal representations. Our method performs joint masking on image-text input and integrates both implicit and explicit targets for the masked signals to recover. The implicit target provides a unified and debiased objective for vision and language, where the model predicts latent multimodal representations of the unmasked input. The explicit target further enriches the multimodal representations by recovering high-level and semantically meaningful information: momentum visual features of image patches and concepts of word tokens. Through such a masked modeling process, our model not only learns fine-grained multimodal interaction, but also avoids the semantic gap between high-level representations and low- or mid-level prediction targets (e.g. image pixels), thus producing semantically rich multimodal representations that perform well on both zero-shot and fine-tuned settings. Our pre-trained model (named MAMO) achieves state-of-the-art performance on various downstream vision-language tasks, including image-text retrieval, visual question answering, visual reasoning, and weakly-supervised visual grounding.",
+            "published": "2022-10-09T06:31:15Z",
+            "source_url": "https://arxiv.org/abs/2210.04183"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2303.02995",
+          "doc_id": "arxiv_2303.02995",
+          "title": "HiCLIP: Contrastive Language-Image Pretraining with Hierarchy-aware\n  Attention",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "The success of large-scale contrastive vision-language pretraining (CLIP) has benefited both visual recognition and multimodal content understanding. The concise design brings CLIP the advantage in inference efficiency against other vision-language models with heavier cross-attention fusion layers, making it a popular choice for a wide spectrum of downstream tasks. However, CLIP does not explicitly capture the hierarchical nature of high-level and fine-grained semantics conveyed in images and texts, which is arguably critical to vision-language understanding and reasoning. To this end, we equip both the visual and language branches in CLIP with hierarchy-aware attentions, namely Hierarchy-aware CLIP (HiCLIP), to progressively discover semantic hierarchies layer-by-layer from both images and texts in an unsupervised manner. As a result, such hierarchical aggregation significantly improves the cross-modal alignment. To demonstrate the advantages of HiCLIP, we conduct qualitative analysis on its unsupervised hierarchy induction during inference, as well as extensive quantitative experiments on both visual recognition and vision-language downstream tasks.",
+          "resolved_arxiv": {
+            "arxiv_id": "2303.02995",
+            "title": "HiCLIP: Contrastive Language-Image Pretraining with Hierarchy-aware Attention",
+            "abstract": "The success of large-scale contrastive vision-language pretraining (CLIP) has benefited both visual recognition and multimodal content understanding. The concise design brings CLIP the advantage in inference efficiency against other vision-language models with heavier cross-attention fusion layers, making it a popular choice for a wide spectrum of downstream tasks. However, CLIP does not explicitly capture the hierarchical nature of high-level and fine-grained semantics conveyed in images and texts, which is arguably critical to vision-language understanding and reasoning. To this end, we equip both the visual and language branches in CLIP with hierarchy-aware attentions, namely Hierarchy-aware CLIP (HiCLIP), to progressively discover semantic hierarchies layer-by-layer from both images and texts in an unsupervised manner. As a result, such hierarchical aggregation significantly improves the cross-modal alignment. To demonstrate the advantages of HiCLIP, we conduct qualitative analysis on its unsupervised hierarchy induction during inference, as well as extensive quantitative experiments on both visual recognition and vision-language downstream tasks.",
+            "published": "2023-03-06T09:44:01Z",
+            "source_url": "https://arxiv.org/abs/2303.02995"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "[arxiv_2312.11967] addresses the challenge of distinguishing a target object from semantically similar distractors through context disentangling and prototype inheriting, arguing that discriminative contextual information is systematically underutilized by prior methods, particularly when multiple objects share the same category. Complementarily, [arxiv_2112.15324] identifies a confounding bias between language and location in grounding pipelines, showing that models often rely on spurious language-location associations rather than genuine visual reasoning.",
+      "citation_markers": [
+        "[arxiv_2312.11967]",
+        "[arxiv_2112.15324]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_2312.11967",
+          "doc_id": "arxiv_2312.11967",
+          "title": "Context Disentangling and Prototype Inheriting for Robust Visual\n  Grounding",
+          "year": 2023,
+          "venue": "cs.CV",
+          "abstract": "Visual grounding (VG) aims to locate a specific target in an image based on a given language query. The discriminative information from context is important for distinguishing the target from other objects, particularly for the targets that have the same category as others. However, most previous methods underestimate such information. Moreover, they are usually designed for the standard scene (without any novel object), which limits their generalization to the open-vocabulary scene. In this paper, we propose a novel framework with context disentangling and prototype inheriting for robust visual grounding to handle both scenes. Specifically, the context disentangling disentangles the referent and context features, which achieves better discrimination between them. The prototype inheriting inherits the prototypes discovered from the disentangled visual features by a prototype bank to fully utilize the seen data, especially for the open-vocabulary scene. The fused features, obtained by leveraging Hadamard product on disentangled linguistic and visual features of prototypes to avoid sharp adjusting the importance between the two types of features, are then attached with a special token and feed to a vision Transformer encoder for bounding box regression. Extensive experiments are conducted on both standard and open-vocabulary scenes. The performance comparisons indicate that our method outperforms the state-of-the-art methods in both scenarios. {The code is available at https://github.com/WayneTomas/TransCP.",
+          "resolved_arxiv": {
+            "arxiv_id": "2312.11967",
+            "title": "Context Disentangling and Prototype Inheriting for Robust Visual Grounding",
+            "abstract": "Visual grounding (VG) aims to locate a specific target in an image based on a given language query. The discriminative information from context is important for distinguishing the target from other objects, particularly for the targets that have the same category as others. However, most previous methods underestimate such information. Moreover, they are usually designed for the standard scene (without any novel object), which limits their generalization to the open-vocabulary scene. In this paper, we propose a novel framework with context disentangling and prototype inheriting for robust visual grounding to handle both scenes. Specifically, the context disentangling disentangles the referent and context features, which achieves better discrimination between them. The prototype inheriting inherits the prototypes discovered from the disentangled visual features by a prototype bank to fully utilize the seen data, especially for the open-vocabulary scene. The fused features, obtained by leveraging Hadamard product on disentangled linguistic and visual features of prototypes to avoid sharp adjusting the importance between the two types of features, are then attached with a special token and feed to a vision Transformer encoder for bounding box regression. Extensive experiments are conducted on both standard and open-vocabulary scenes. The performance comparisons indicate that our method outperforms the state-of-the-art methods in both scenarios. {The code is available at https://github.com/WayneTomas/TransCP.",
+            "published": "2023-12-19T09:03:53Z",
+            "source_url": "https://arxiv.org/abs/2312.11967"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2112.15324",
+          "doc_id": "arxiv_2112.15324",
+          "title": "Deconfounded Visual Grounding",
+          "year": 2022,
+          "venue": "cs.CV",
+          "abstract": "We focus on the confounding bias between language and location in the visual grounding pipeline, where we find that the bias is the major visual reasoning bottleneck. For example, the grounding process is usually a trivial language-location association without visual reasoning, e.g., grounding any language query containing sheep to the nearly central regions, due to that most queries about sheep have ground-truth locations at the image center. First, we frame the visual grounding pipeline into a causal graph, which shows the causalities among image, query, target location and underlying confounder. Through the causal graph, we know how to break the grounding bottleneck: deconfounded visual grounding. Second, to tackle the challenge that the confounder is unobserved in general, we propose a confounder-agnostic approach called: Referring Expression Deconfounder (RED), to remove the confounding bias. Third, we implement RED as a simple language attention, which can be applied in any grounding method. On popular benchmarks, RED improves various state-of-the-art grounding methods by a significant margin. Code will soon be available at: https://github.com/JianqiangH/Deconfounded_VG.",
+          "resolved_arxiv": {
+            "arxiv_id": "2112.15324",
+            "title": "Deconfounded Visual Grounding",
+            "abstract": "We focus on the confounding bias between language and location in the visual grounding pipeline, where we find that the bias is the major visual reasoning bottleneck. For example, the grounding process is usually a trivial language-location association without visual reasoning, e.g., grounding any language query containing sheep to the nearly central regions, due to that most queries about sheep have ground-truth locations at the image center. First, we frame the visual grounding pipeline into a causal graph, which shows the causalities among image, query, target location and underlying confounder. Through the causal graph, we know how to break the grounding bottleneck: deconfounded visual grounding. Second, to tackle the challenge that the confounder is unobserved in general, we propose a confounder-agnostic approach called: Referring Expression Deconfounder (RED), to remove the confounding bias. Third, we implement RED as a simple language attention, which can be applied in any grounding method. On popular benchmarks, RED improves various state-of-the-art grounding methods by a significant margin. Code will soon be available at: https://github.com/JianqiangH/Deconfounded_VG.",
+            "published": "2021-12-31T07:14:59Z",
+            "source_url": "https://arxiv.org/abs/2112.15324"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "[arxiv_1903.11649] proposed an end-to-end model that uses caption-to-image retrieval as a downstream task to guide phrase localization, inferring latent correspondences between regions-of-interest and phrases. Similarly, [arxiv_1803.03879] addressed the same weakly supervised setting by incorporating knowledge-aided consistency to improve region-language mapping when explicit supervision is unavailable.",
+      "citation_markers": [
+        "[arxiv_1903.11649]",
+        "[arxiv_1803.03879]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1903.11649",
+          "doc_id": "arxiv_1903.11649",
+          "title": "Align2Ground: Weakly Supervised Phrase Grounding Guided by Image-Caption\n  Alignment",
+          "year": 2019,
+          "venue": "cs.CV",
+          "abstract": "We address the problem of grounding free-form textual phrases by using weak supervision from image-caption pairs. We propose a novel end-to-end model that uses caption-to-image retrieval as a `downstream' task to guide the process of phrase localization. Our method, as a first step, infers the latent correspondences between regions-of-interest (RoIs) and phrases in the caption and creates a discriminative image representation using these matched RoIs. In a subsequent step, this (learned) representation is aligned with the caption. Our key contribution lies in building this `caption-conditioned' image encoding which tightly couples both the tasks and allows the weak supervision to effectively guide visual grounding. We provide an extensive empirical and qualitative analysis to investigate the different components of our proposed model and compare it with competitive baselines. For phrase localization, we report an improvement of 4.9% (absolute) over the prior state-of-the-art on the VisualGenome dataset. We also report results that are at par with the state-of-the-art on the downstream caption-to-image retrieval task on COCO and Flickr30k datasets.",
+          "resolved_arxiv": {
+            "arxiv_id": "1903.11649",
+            "title": "Align2Ground: Weakly Supervised Phrase Grounding Guided by Image-Caption Alignment",
+            "abstract": "We address the problem of grounding free-form textual phrases by using weak supervision from image-caption pairs. We propose a novel end-to-end model that uses caption-to-image retrieval as a `downstream' task to guide the process of phrase localization. Our method, as a first step, infers the latent correspondences between regions-of-interest (RoIs) and phrases in the caption and creates a discriminative image representation using these matched RoIs. In a subsequent step, this (learned) representation is aligned with the caption. Our key contribution lies in building this `caption-conditioned' image encoding which tightly couples both the tasks and allows the weak supervision to effectively guide visual grounding. We provide an extensive empirical and qualitative analysis to investigate the different components of our proposed model and compare it with competitive baselines. For phrase localization, we report an improvement of 4.9% (absolute) over the prior state-of-the-art on the VisualGenome dataset. We also report results that are at par with the state-of-the-art on the downstream caption-to-image retrieval task on COCO and Flickr30k datasets.",
+            "published": "2019-03-27T18:55:32Z",
+            "source_url": "https://arxiv.org/abs/1903.11649"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_1803.03879",
+          "doc_id": "arxiv_1803.03879",
+          "title": "Knowledge Aided Consistency for Weakly Supervised Phrase Grounding",
+          "year": 2018,
+          "venue": "cs.CV",
+          "abstract": "Given a natural language query, a phrase grounding system aims to localize mentioned objects in an image. In weakly supervised scenario, mapping between image regions (i.e., proposals) and language is not available in the training set. Previous methods address this deficiency by training a grounding system via learning to reconstruct language information contained in input queries from predicted proposals. However, the optimization is solely guided by the reconstruction loss from the language modality, and ignores rich visual information contained in proposals and useful cues from external knowledge. In this paper, we explore the consistency contained in both visual and language modalities, and leverage complementary external knowledge to facilitate weakly supervised grounding. We propose a novel Knowledge Aided Consistency Network (KAC Net) which is optimized by reconstructing input query and proposal's information. To leverage complementary knowledge contained in the visual features, we introduce a Knowledge Based Pooling (KBP) gate to focus on query-related proposals. Experiments show that KAC Net provides a significant improvement on two popular datasets.",
+          "resolved_arxiv": {
+            "arxiv_id": "1803.03879",
+            "title": "Knowledge Aided Consistency for Weakly Supervised Phrase Grounding",
+            "abstract": "Given a natural language query, a phrase grounding system aims to localize mentioned objects in an image. In weakly supervised scenario, mapping between image regions (i.e., proposals) and language is not available in the training set. Previous methods address this deficiency by training a grounding system via learning to reconstruct language information contained in input queries from predicted proposals. However, the optimization is solely guided by the reconstruction loss from the language modality, and ignores rich visual information contained in proposals and useful cues from external knowledge. In this paper, we explore the consistency contained in both visual and language modalities, and leverage complementary external knowledge to facilitate weakly supervised grounding. We propose a novel Knowledge Aided Consistency Network (KAC Net) which is optimized by reconstructing input query and proposal's information. To leverage complementary knowledge contained in the visual features, we introduce a Knowledge Based Pooling (KBP) gate to focus on query-related proposals. Experiments show that KAC Net provides a significant improvement on two popular datasets.",
+            "published": "2018-03-11T02:00:24Z",
+            "source_url": "https://arxiv.org/abs/1803.03879"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "LXMERT [arxiv_1908.07490] introduced a large-scale Transformer architecture with dedicated cross-modality encoders and object-level visual features, enabling strong performance on tasks requiring spatial reasoning and object-level alignment. Complementing this, [arxiv_2008.08012] argued that existing attention mechanisms lack sufficient linguistic understanding, proposing linguistically-aware attention to reduce the semantic gap between modalities in tasks such as visual grounding.",
+      "citation_markers": [
+        "[arxiv_1908.07490]",
+        "[arxiv_2008.08012]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "source_key": "arxiv_1908.07490",
+          "doc_id": "arxiv_1908.07490",
+          "title": "LXMERT: Learning Cross-Modality Encoder Representations from\n  Transformers",
+          "year": 2019,
+          "venue": "cs.CL",
+          "abstract": "Vision-and-language reasoning requires an understanding of visual concepts, language semantics, and, most importantly, the alignment and relationships between these two modalities. We thus propose the LXMERT (Learning Cross-Modality Encoder Representations from Transformers) framework to learn these vision-and-language connections. In LXMERT, we build a large-scale Transformer model that consists of three encoders: an object relationship encoder, a language encoder, and a cross-modality encoder. Next, to endow our model with the capability of connecting vision and language semantics, we pre-train the model with large amounts of image-and-sentence pairs, via five diverse representative pre-training tasks: masked language modeling, masked object prediction (feature regression and label classification), cross-modality matching, and image question answering. These tasks help in learning both intra-modality and cross-modality relationships. After fine-tuning from our pre-trained parameters, our model achieves the state-of-the-art results on two visual question answering datasets (i.e., VQA and GQA). We also show the generalizability of our pre-trained cross-modality model by adapting it to a challenging visual-reasoning task, NLVR2, and improve the previous best result by 22% absolute (54% to 76%). Lastly, we demonstrate detailed ablation studies to prove that both our novel model components and pre-training strategies significantly contribute to our strong results; and also present several attention visualizations for the different encoders. Code and pre-trained models publicly available at: https://github.com/airsplay/lxmert",
+          "resolved_arxiv": {
+            "arxiv_id": "1908.07490",
+            "title": "LXMERT: Learning Cross-Modality Encoder Representations from Transformers",
+            "abstract": "Vision-and-language reasoning requires an understanding of visual concepts, language semantics, and, most importantly, the alignment and relationships between these two modalities. We thus propose the LXMERT (Learning Cross-Modality Encoder Representations from Transformers) framework to learn these vision-and-language connections. In LXMERT, we build a large-scale Transformer model that consists of three encoders: an object relationship encoder, a language encoder, and a cross-modality encoder. Next, to endow our model with the capability of connecting vision and language semantics, we pre-train the model with large amounts of image-and-sentence pairs, via five diverse representative pre-training tasks: masked language modeling, masked object prediction (feature regression and label classification), cross-modality matching, and image question answering. These tasks help in learning both intra-modality and cross-modality relationships. After fine-tuning from our pre-trained parameters, our model achieves the state-of-the-art results on two visual question answering datasets (i.e., VQA and GQA). We also show the generalizability of our pre-trained cross-modality model by adapting it to a challenging visual-reasoning task, NLVR2, and improve the previous best result by 22% absolute (54% to 76%). Lastly, we demonstrate detailed ablation studies to prove that both our novel model components and pre-training strategies significantly contribute to our strong results; and also present several attention visualizations for the different encoders. Code and pre-trained models publicly available at: https://github.com/airsplay/lxmert",
+            "published": "2019-08-20T17:05:18Z",
+            "source_url": "https://arxiv.org/abs/1908.07490"
+          },
+          "source_accessible": true
+        },
+        {
+          "source_key": "arxiv_2008.08012",
+          "doc_id": "arxiv_2008.08012",
+          "title": "Linguistically-aware Attention for Reducing the Semantic-Gap in\n  Vision-Language Tasks",
+          "year": 2021,
+          "venue": "cs.CV",
+          "abstract": "Attention models are widely used in Vision-language (V-L) tasks to perform the visual-textual correlation. Humans perform such a correlation with a strong linguistic understanding of the visual world. However, even the best performing attention model in V-L tasks lacks such a high-level linguistic understanding, thus creating a semantic gap between the modalities. In this paper, we propose an attention mechanism - Linguistically-aware Attention (LAT) - that leverages object attributes obtained from generic object detectors along with pre-trained language models to reduce this semantic gap. LAT represents visual and textual modalities in a common linguistically-rich space, thus providing linguistic awareness to the attention process. We apply and demonstrate the effectiveness of LAT in three V-L tasks: Counting-VQA, VQA, and Image captioning. In Counting-VQA, we propose a novel counting-specific VQA model to predict an intuitive count and achieve state-of-the-art results on five datasets. In VQA and Captioning, we show the generic nature and effectiveness of LAT by adapting it into various baselines and consistently improving their performance.",
+          "resolved_arxiv": {
+            "arxiv_id": "2008.08012",
+            "title": "Linguistically-aware Attention for Reducing the Semantic-Gap in Vision-Language Tasks",
+            "abstract": "Attention models are widely used in Vision-language (V-L) tasks to perform the visual-textual correlation. Humans perform such a correlation with a strong linguistic understanding of the visual world. However, even the best performing attention model in V-L tasks lacks such a high-level linguistic understanding, thus creating a semantic gap between the modalities. In this paper, we propose an attention mechanism - Linguistically-aware Attention (LAT) - that leverages object attributes obtained from generic object detectors along with pre-trained language models to reduce this semantic gap. LAT represents visual and textual modalities in a common linguistically-rich space, thus providing linguistic awareness to the attention process. We apply and demonstrate the effectiveness of LAT in three V-L tasks: Counting-VQA, VQA, and Image captioning. In Counting-VQA, we propose a novel counting-specific VQA model to predict an intuitive count and achieve state-of-the-art results on five datasets. In VQA and Captioning, we show the generic nature and effectiveness of LAT by adapting it into various baselines and consistently improving their performance.",
+            "published": "2020-08-18T16:29:49Z",
+            "source_url": "https://arxiv.org/abs/2008.08012"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}

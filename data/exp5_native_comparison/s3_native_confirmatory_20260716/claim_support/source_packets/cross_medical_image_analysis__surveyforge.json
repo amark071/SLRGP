@@ -1,0 +1,472 @@
+{
+  "topic_id": "cross_medical_image_analysis",
+  "system": "surveyforge",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "quote": "Deep learning has fundamentally transformed medical image analysis, supplanting decades of handcrafted feature engineering and shallow machine learning with end-to-end trainable architectures capable of learning hierarchical representations directly from raw imaging data [1; 2].",
+      "citation_markers": [
+        "[1; 2]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "1",
+          "arxiv_id": "1702.05747v2",
+          "title": "A Survey on Deep Learning in Medical Image Analysis",
+          "abstract": "Deep learning algorithms, in particular convolutional networks, have rapidly become a methodology of choice for analyzing medical images. This paper reviews the major deep learning concepts pertinent to medical image analysis and summarizes over 300 contributions to the field, most of which appeared in the last year. We survey the use of deep learning for image classification, object detection, segmentation, registration, and other tasks and provide concise overviews of studies per application area. Open challenges and directions for future research are discussed.",
+          "resolved_arxiv": {
+            "arxiv_id": "1702.05747",
+            "title": "A Survey on Deep Learning in Medical Image Analysis",
+            "abstract": "Deep learning algorithms, in particular convolutional networks, have rapidly become a methodology of choice for analyzing medical images. This paper reviews the major deep learning concepts pertinent to medical image analysis and summarizes over 300 contributions to the field, most of which appeared in the last year. We survey the use of deep learning for image classification, object detection, segmentation, registration, and other tasks and provide concise overviews of studies per application area. Open challenges and directions for future research are discussed.",
+            "published": "2017-02-19T13:02:28Z",
+            "source_url": "https://arxiv.org/abs/1702.05747"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "2",
+          "arxiv_id": "1704.06825v1",
+          "title": "Deep Learning for Medical Image Processing: Overview, Challenges and Future",
+          "abstract": "Healthcare sector is totally different from other industry. It is on high priority sector and people expect highest level of care and services regardless of cost. It did not achieve social expectation even though it consume huge percentage of budget. Mostly the interpretations of medical data is being done by medical expert. In terms of image interpretation by human expert, it is quite limited due to its subjectivity, the complexity of the image, extensive variations exist across different interpreters, and fatigue. After the success of deep learning in other real world application, it is also providing exciting solutions with good accuracy for medical imaging and is seen as a key method for future applications in health secotr. In this chapter, we discussed state of the art deep learning architecture and its optimization used for medical image segmentation and classification. In the last section, we have discussed the challenges deep learning based methods for medical imaging and open research issue.",
+          "resolved_arxiv": {
+            "arxiv_id": "1704.06825",
+            "title": "Deep Learning for Medical Image Processing: Overview, Challenges and Future",
+            "abstract": "Healthcare sector is totally different from other industry. It is on high priority sector and people expect highest level of care and services regardless of cost. It did not achieve social expectation even though it consume huge percentage of budget. Mostly the interpretations of medical data is being done by medical expert. In terms of image interpretation by human expert, it is quite limited due to its subjectivity, the complexity of the image, extensive variations exist across different interpreters, and fatigue. After the success of deep learning in other real world application, it is also providing exciting solutions with good accuracy for medical imaging and is seen as a key method for future applications in health secotr. In this chapter, we discussed state of the art deep learning architecture and its optimization used for medical image segmentation and classification. In the last section, we have discussed the challenges deep learning based methods for medical imaging and open research issue.",
+            "published": "2017-04-22T17:49:04Z",
+            "source_url": "https://arxiv.org/abs/1704.06825"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C02",
+      "quote": "The watershed moment arrived with benchmark successes in general computer vision [3; 4], catalyzing rapid adaptation of convolutional neural networks to clinical imaging tasks spanning radiology, pathology, and ophthalmology [5; 6].",
+      "citation_markers": [
+        "[3; 4]",
+        "[5; 6]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "3",
+          "arxiv_id": "1512.03385v1",
+          "title": "Deep Residual Learning for Image Recognition",
+          "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1512.03385",
+            "title": "Deep Residual Learning for Image Recognition",
+            "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.",
+            "published": "2015-12-10T19:51:55Z",
+            "source_url": "https://arxiv.org/abs/1512.03385"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "4",
+          "arxiv_id": "1202.2745v1",
+          "title": "Multi-column Deep Neural Networks for Image Classification",
+          "abstract": "Traditional methods of computer vision and machine learning cannot match human performance on tasks such as the recognition of handwritten digits or traffic signs. Our biologically plausible deep artificial neural network architectures can. Small (often minimal) receptive fields of convolutional winner-take-all neurons yield large network depth, resulting in roughly as many sparsely connected neural layers as found in mammals between retina and visual cortex. Only winner neurons are trained. Several deep neural columns become experts on inputs preprocessed in different ways; their predictions are averaged. Graphics cards allow for fast training. On the very competitive MNIST handwriting benchmark, our method is the first to achieve near-human performance. On a traffic sign recognition benchmark it outperforms humans by a factor of two. We also improve the state-of-the-art on a plethora of common image classification benchmarks.",
+          "resolved_arxiv": {
+            "arxiv_id": "1202.2745",
+            "title": "Multi-column Deep Neural Networks for Image Classification",
+            "abstract": "Traditional methods of computer vision and machine learning cannot match human performance on tasks such as the recognition of handwritten digits or traffic signs. Our biologically plausible deep artificial neural network architectures can. Small (often minimal) receptive fields of convolutional winner-take-all neurons yield large network depth, resulting in roughly as many sparsely connected neural layers as found in mammals between retina and visual cortex. Only winner neurons are trained. Several deep neural columns become experts on inputs preprocessed in different ways; their predictions are averaged. Graphics cards allow for fast training. On the very competitive MNIST handwriting benchmark, our method is the first to achieve near-human performance. On a traffic sign recognition benchmark it outperforms humans by a factor of two. We also improve the state-of-the-art on a plethora of common image classification benchmarks.",
+            "published": "2012-02-13T14:35:41Z",
+            "source_url": "https://arxiv.org/abs/1202.2745"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "5",
+          "arxiv_id": "1709.02250v2",
+          "title": "Medical Image Analysis using Convolutional Neural Networks: A Review",
+          "abstract": "The science of solving clinical problems by analyzing images generated in clinical practice is known as medical image analysis. The aim is to extract information in an effective and efficient manner for improved clinical diagnosis. The recent advances in the field of biomedical engineering has made medical image analysis one of the top research and development area. One of the reason for this advancement is the application of machine learning techniques for the analysis of medical images. Deep learning is successfully used as a tool for machine learning, where a neural network is capable of automatically learning features. This is in contrast to those methods where traditionally hand crafted features are used. The selection and calculation of these features is a challenging task. Among deep learning techniques, deep convolutional networks are actively used for the purpose of medical image analysis. This include application areas such as segmentation, abnormality detection, disease classification, computer aided diagnosis and retrieval. In this study, a comprehensive review of the current state-of-the-art in medical image analysis using deep convolutional networks is presented. The challenges and potential of these techniques are also highlighted.",
+          "resolved_arxiv": {
+            "arxiv_id": "1709.02250",
+            "title": "Medical Image Analysis using Convolutional Neural Networks: A Review",
+            "abstract": "The science of solving clinical problems by analyzing images generated in clinical practice is known as medical image analysis. The aim is to extract information in an effective and efficient manner for improved clinical diagnosis. The recent advances in the field of biomedical engineering has made medical image analysis one of the top research and development area. One of the reason for this advancement is the application of machine learning techniques for the analysis of medical images. Deep learning is successfully used as a tool for machine learning, where a neural network is capable of automatically learning features. This is in contrast to those methods where traditionally hand crafted features are used. The selection and calculation of these features is a challenging task. Among deep learning techniques, deep convolutional networks are actively used for the purpose of medical image analysis. This include application areas such as segmentation, abnormality detection, disease classification, computer aided diagnosis and retrieval. In this study, a comprehensive review of the current state-of-the-art in medical image analysis using deep convolutional networks is presented. The challenges and potential of these techniques are also highlighted.",
+            "published": "2017-09-04T08:37:28Z",
+            "source_url": "https://arxiv.org/abs/1709.02250"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "6",
+          "arxiv_id": "1811.10052v2",
+          "title": "An overview of deep learning in medical imaging focusing on MRI",
+          "abstract": "What has happened in machine learning lately, and what does it mean for the future of medical image analysis? Machine learning has witnessed a tremendous amount of attention over the last few years. The current boom started around 2009 when so-called deep artificial neural networks began outperforming other established models on a number of important benchmarks. Deep neural networks are now the state-of-the-art machine learning models across a variety of areas, from image analysis to natural language processing, and widely deployed in academia and industry. These developments have a huge potential for medical imaging technology, medical data analysis, medical diagnostics and healthcare in general, slowly being realized. We provide a short overview of recent advances and some associated challenges in machine learning applied to medical image processing and image analysis. As this has become a very broad and fast expanding field we will not survey the entire landscape of applications, but put particular focus on deep learning in MRI. Our aim is threefold: (i) give a brief introduction to deep learning with pointers to core references; (ii) indicate how deep learning has been applied to the entire MRI processing chain, from acquisition to image retrieval, from segmentation to disease prediction; (iii) provide a starting point for people interested in experimenting and perhaps contributing to the field of machine learning for medical imaging by pointing out good educational resources, state-of-the-art open-source code, and interesting sources of data and problems related medical imaging.",
+          "resolved_arxiv": {
+            "arxiv_id": "1811.10052",
+            "title": "An overview of deep learning in medical imaging focusing on MRI",
+            "abstract": "What has happened in machine learning lately, and what does it mean for the future of medical image analysis? Machine learning has witnessed a tremendous amount of attention over the last few years. The current boom started around 2009 when so-called deep artificial neural networks began outperforming other established models on a number of important benchmarks. Deep neural networks are now the state-of-the-art machine learning models across a variety of areas, from image analysis to natural language processing, and widely deployed in academia and industry. These developments have a huge potential for medical imaging technology, medical data analysis, medical diagnostics and healthcare in general, slowly being realized. We provide a short overview of recent advances and some associated challenges in machine learning applied to medical image processing and image analysis. As this has become a very broad and fast expanding field we will not survey the entire landscape of applications, but put particular focus on deep learning in MRI. Our aim is threefold: (i) give a brief introduction to deep learning with pointers to core references; (ii) indicate how deep learning has been applied to the entire MRI processing chain, from acquisition to image retrieval, from segmentation to disease prediction; (iii) provide a starting point for people interested in experimenting and perhaps contributing to the field of machine learning for medical imaging by pointing out good educational resources, state-of-the-art open-source code, and interesting sources of data and problems related medical imaging.",
+            "published": "2018-11-25T16:40:42Z",
+            "source_url": "https://arxiv.org/abs/1811.10052"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C03",
+      "quote": "Unlike natural image processing, medical imaging presents compounding challenges: annotation scarcity, severe class imbalance, high inter-observer variability, volumetric data complexity, and stringent requirements for interpretability and regulatory compliance [7; 8].",
+      "citation_markers": [
+        "[7; 8]"
+      ],
+      "position": "front",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "7",
+          "arxiv_id": "1908.10454v2",
+          "title": "Embracing Imperfect Datasets: A Review of Deep Learning Solutions for Medical Image Segmentation",
+          "abstract": "The medical imaging literature has witnessed remarkable progress in high-performing segmentation models based on convolutional neural networks. Despite the new performance highs, the recent advanced segmentation models still require large, representative, and high quality annotated datasets. However, rarely do we have a perfect training dataset, particularly in the field of medical imaging, where data and annotations are both expensive to acquire. Recently, a large body of research has studied the problem of medical image segmentation with imperfect datasets, tackling two major dataset limitations: scarce annotations where only limited annotated data is available for training, and weak annotations where the training data has only sparse annotations, noisy annotations, or image-level annotations. In this article, we provide a detailed review of the solutions above, summarizing both the technical novelties and empirical results. We further compare the benefits and requirements of the surveyed methodologies and provide our recommended solutions. We hope this survey article increases the community awareness of the techniques that are available to handle imperfect medical image segmentation datasets.",
+          "resolved_arxiv": {
+            "arxiv_id": "1908.10454",
+            "title": "Embracing Imperfect Datasets: A Review of Deep Learning Solutions for Medical Image Segmentation",
+            "abstract": "The medical imaging literature has witnessed remarkable progress in high-performing segmentation models based on convolutional neural networks. Despite the new performance highs, the recent advanced segmentation models still require large, representative, and high quality annotated datasets. However, rarely do we have a perfect training dataset, particularly in the field of medical imaging, where data and annotations are both expensive to acquire. Recently, a large body of research has studied the problem of medical image segmentation with imperfect datasets, tackling two major dataset limitations: scarce annotations where only limited annotated data is available for training, and weak annotations where the training data has only sparse annotations, noisy annotations, or image-level annotations. In this article, we provide a detailed review of the solutions above, summarizing both the technical novelties and empirical results. We further compare the benefits and requirements of the surveyed methodologies and provide our recommended solutions. We hope this survey article increases the community awareness of the techniques that are available to handle imperfect medical image segmentation datasets.",
+            "published": "2019-08-27T20:25:52Z",
+            "source_url": "https://arxiv.org/abs/1908.10454"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "8",
+          "arxiv_id": "2008.09104v2",
+          "title": "A review of deep learning in medical imaging: Imaging traits, technology trends, case studies with progress highlights, and future promises",
+          "abstract": "Since its renaissance, deep learning has been widely used in various medical imaging tasks and has achieved remarkable success in many medical imaging applications, thereby propelling us into the so-called artificial intelligence (AI) era. It is known that the success of AI is mostly attributed to the availability of big data with annotations for a single task and the advances in high performance computing. However, medical imaging presents unique challenges that confront deep learning approaches. In this survey paper, we first present traits of medical imaging, highlight both clinical needs and technical challenges in medical imaging, and describe how emerging trends in deep learning are addressing these issues. We cover the topics of network architecture, sparse and noisy labels, federating learning, interpretability, uncertainty quantification, etc. Then, we present several case studies that are commonly found in clinical practice, including digital pathology and chest, brain, cardiovascular, and abdominal imaging. Rather than presenting an exhaustive literature survey, we instead describe some prominent research highlights related to these case study applications. We conclude with a discussion and presentation of promising future directions.",
+          "resolved_arxiv": {
+            "arxiv_id": "2008.09104",
+            "title": "A review of deep learning in medical imaging: Imaging traits, technology trends, case studies with progress highlights, and future promises",
+            "abstract": "Since its renaissance, deep learning has been widely used in various medical imaging tasks and has achieved remarkable success in many medical imaging applications, thereby propelling us into the so-called artificial intelligence (AI) era. It is known that the success of AI is mostly attributed to the availability of big data with annotations for a single task and the advances in high performance computing. However, medical imaging presents unique challenges that confront deep learning approaches. In this survey paper, we first present traits of medical imaging, highlight both clinical needs and technical challenges in medical imaging, and describe how emerging trends in deep learning are addressing these issues. We cover the topics of network architecture, sparse and noisy labels, federating learning, interpretability, uncertainty quantification, etc. Then, we present several case studies that are commonly found in clinical practice, including digital pathology and chest, brain, cardiovascular, and abdominal imaging. Rather than presenting an exhaustive literature survey, we instead describe some prominent research highlights related to these case study applications. We conclude with a discussion and presentation of promising future directions.",
+            "published": "2020-08-02T14:26:13Z",
+            "source_url": "https://arxiv.org/abs/2008.09104"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C04",
+      "quote": "The seminal introduction of residual skip connections [3] addressed the vanishing gradient problem that had previously constrained network depth, enabling substantially deeper feature hierarchies capable of capturing the fine-grained morphological detail required for reliable pathology classification across conditions including Alzheimer's disease, lung cancer, and diabetic retinopathy.",
+      "citation_markers": [
+        "[3]"
+      ],
+      "position": "front",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "3",
+          "arxiv_id": "1512.03385v1",
+          "title": "Deep Residual Learning for Image Recognition",
+          "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1512.03385",
+            "title": "Deep Residual Learning for Image Recognition",
+            "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.",
+            "published": "2015-12-10T19:51:55Z",
+            "source_url": "https://arxiv.org/abs/1512.03385"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C05",
+      "quote": "The most transformative architectural development for medical image analysis was the shift from classification-oriented designs toward fully convolutional encoder-decoder frameworks, exemplified by U-Net and its derivatives, which couple spatial downsampling encoders with upsampling decoders bridged by skip connections that preserve high-frequency boundary information critical for precise organ and lesion delineation [13; 7].",
+      "citation_markers": [
+        "[13; 7]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "13",
+          "arxiv_id": "2009.13120v3",
+          "title": "Medical Image Segmentation Using Deep Learning: A Survey",
+          "abstract": "Deep learning has been widely used for medical image segmentation and a large number of papers has been presented recording the success of deep learning in the field. In this paper, we present a comprehensive thematic survey on medical image segmentation using deep learning techniques. This paper makes two original contributions. Firstly, compared to traditional surveys that directly divide literatures of deep learning on medical image segmentation into many groups and introduce literatures in detail for each group, we classify currently popular literatures according to a multi-level structure from coarse to fine. Secondly, this paper focuses on supervised and weakly supervised learning approaches, without including unsupervised approaches since they have been introduced in many old surveys and they are not popular currently. For supervised learning approaches, we analyze literatures in three aspects: the selection of backbone networks, the design of network blocks, and the improvement of loss functions. For weakly supervised learning approaches, we investigate literature according to data augmentation, transfer learning, and interactive segmentation, separately. Compared to existing surveys, this survey classifies the literatures very differently from before and is more convenient for readers to understand the relevant rationale and will guide them to think of appropriate improvements in medical image segmentation based on deep learning approaches.",
+          "resolved_arxiv": {
+            "arxiv_id": "2009.13120",
+            "title": "Medical Image Segmentation Using Deep Learning: A Survey",
+            "abstract": "Deep learning has been widely used for medical image segmentation and a large number of papers has been presented recording the success of deep learning in the field. In this paper, we present a comprehensive thematic survey on medical image segmentation using deep learning techniques. This paper makes two original contributions. Firstly, compared to traditional surveys that directly divide literatures of deep learning on medical image segmentation into many groups and introduce literatures in detail for each group, we classify currently popular literatures according to a multi-level structure from coarse to fine. Secondly, this paper focuses on supervised and weakly supervised learning approaches, without including unsupervised approaches since they have been introduced in many old surveys and they are not popular currently. For supervised learning approaches, we analyze literatures in three aspects: the selection of backbone networks, the design of network blocks, and the improvement of loss functions. For weakly supervised learning approaches, we investigate literature according to data augmentation, transfer learning, and interactive segmentation, separately. Compared to existing surveys, this survey classifies the literatures very differently from before and is more convenient for readers to understand the relevant rationale and will guide them to think of appropriate improvements in medical image segmentation based on deep learning approaches.",
+            "published": "2020-09-28T08:05:02Z",
+            "source_url": "https://arxiv.org/abs/2009.13120"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "7",
+          "arxiv_id": "1908.10454v2",
+          "title": "Embracing Imperfect Datasets: A Review of Deep Learning Solutions for Medical Image Segmentation",
+          "abstract": "The medical imaging literature has witnessed remarkable progress in high-performing segmentation models based on convolutional neural networks. Despite the new performance highs, the recent advanced segmentation models still require large, representative, and high quality annotated datasets. However, rarely do we have a perfect training dataset, particularly in the field of medical imaging, where data and annotations are both expensive to acquire. Recently, a large body of research has studied the problem of medical image segmentation with imperfect datasets, tackling two major dataset limitations: scarce annotations where only limited annotated data is available for training, and weak annotations where the training data has only sparse annotations, noisy annotations, or image-level annotations. In this article, we provide a detailed review of the solutions above, summarizing both the technical novelties and empirical results. We further compare the benefits and requirements of the surveyed methodologies and provide our recommended solutions. We hope this survey article increases the community awareness of the techniques that are available to handle imperfect medical image segmentation datasets.",
+          "resolved_arxiv": {
+            "arxiv_id": "1908.10454",
+            "title": "Embracing Imperfect Datasets: A Review of Deep Learning Solutions for Medical Image Segmentation",
+            "abstract": "The medical imaging literature has witnessed remarkable progress in high-performing segmentation models based on convolutional neural networks. Despite the new performance highs, the recent advanced segmentation models still require large, representative, and high quality annotated datasets. However, rarely do we have a perfect training dataset, particularly in the field of medical imaging, where data and annotations are both expensive to acquire. Recently, a large body of research has studied the problem of medical image segmentation with imperfect datasets, tackling two major dataset limitations: scarce annotations where only limited annotated data is available for training, and weak annotations where the training data has only sparse annotations, noisy annotations, or image-level annotations. In this article, we provide a detailed review of the solutions above, summarizing both the technical novelties and empirical results. We further compare the benefits and requirements of the surveyed methodologies and provide our recommended solutions. We hope this survey article increases the community awareness of the techniques that are available to handle imperfect medical image segmentation datasets.",
+            "published": "2019-08-27T20:25:52Z",
+            "source_url": "https://arxiv.org/abs/1908.10454"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C06",
+      "quote": "Extending CNN-based analysis to volumetric data introduced substantial computational challenges, as full three-dimensional convolutions exploit inter-slice spatial context but impose prohibitive memory requirements for high-resolution CT and MRI volumes [14].",
+      "citation_markers": [
+        "[14]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "14",
+          "arxiv_id": "2004.00218v4",
+          "title": "3D Deep Learning on Medical Images: A Review",
+          "abstract": "The rapid advancements in machine learning, graphics processing technologies and the availability of medical imaging data have led to a rapid increase in the use of deep learning models in the medical domain. This was exacerbated by the rapid advancements in convolutional neural network (CNN) based architectures, which were adopted by the medical imaging community to assist clinicians in disease diagnosis. Since the grand success of AlexNet in 2012, CNNs have been increasingly used in medical image analysis to improve the efficiency of human clinicians. In recent years, three-dimensional (3D) CNNs have been employed for the analysis of medical images. In this paper, we trace the history of how the 3D CNN was developed from its machine learning roots, we provide a brief mathematical description of 3D CNN and provide the preprocessing steps required for medical images before feeding them to 3D CNNs. We review the significant research in the field of 3D medical imaging analysis using 3D CNNs (and its variants) in different medical areas such as classification, segmentation, detection and localization. We conclude by discussing the challenges associated with the use of 3D CNNs in the medical imaging domain (and the use of deep learning models in general) and possible future trends in the field.",
+          "resolved_arxiv": {
+            "arxiv_id": "2004.00218",
+            "title": "3D Deep Learning on Medical Images: A Review",
+            "abstract": "The rapid advancements in machine learning, graphics processing technologies and the availability of medical imaging data have led to a rapid increase in the use of deep learning models in the medical domain. This was exacerbated by the rapid advancements in convolutional neural network (CNN) based architectures, which were adopted by the medical imaging community to assist clinicians in disease diagnosis. Since the grand success of AlexNet in 2012, CNNs have been increasingly used in medical image analysis to improve the efficiency of human clinicians. In recent years, three-dimensional (3D) CNNs have been employed for the analysis of medical images. In this paper, we trace the history of how the 3D CNN was developed from its machine learning roots, we provide a brief mathematical description of 3D CNN and provide the preprocessing steps required for medical images before feeding them to 3D CNNs. We review the significant research in the field of 3D medical imaging analysis using 3D CNNs (and its variants) in different medical areas such as classification, segmentation, detection and localization. We conclude by discussing the challenges associated with the use of 3D CNNs in the medical imaging domain (and the use of deep learning models in general) and possible future trends in the field.",
+            "published": "2020-04-01T03:56:48Z",
+            "source_url": "https://arxiv.org/abs/2004.00218"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C07",
+      "quote": "Transformer-based architectures have rapidly emerged as compelling alternatives to purely convolutional designs for medical image analysis, leveraging self-attention mechanisms to capture long-range spatial dependencies that local convolutional receptive fields inherently cannot model [9; 16].",
+      "citation_markers": [
+        "[9; 16]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "9",
+          "arxiv_id": "2201.09873v1",
+          "title": "Transformers in Medical Imaging: A Survey",
+          "abstract": "Following unprecedented success on the natural language tasks, Transformers have been successfully applied to several computer vision problems, achieving state-of-the-art results and prompting researchers to reconsider the supremacy of convolutional neural networks (CNNs) as {de facto} operators. Capitalizing on these advances in computer vision, the medical imaging field has also witnessed growing interest for Transformers that can capture global context compared to CNNs with local receptive fields. Inspired from this transition, in this survey, we attempt to provide a comprehensive review of the applications of Transformers in medical imaging covering various aspects, ranging from recently proposed architectural designs to unsolved issues. Specifically, we survey the use of Transformers in medical image segmentation, detection, classification, reconstruction, synthesis, registration, clinical report generation, and other tasks. In particular, for each of these applications, we develop taxonomy, identify application-specific challenges as well as provide insights to solve them, and highlight recent trends. Further, we provide a critical discussion of the field's current state as a whole, including the identification of key challenges, open problems, and outlining promising future directions. We hope this survey will ignite further interest in the community and provide researchers with an up-to-date reference regarding applications of Transformer models in medical imaging. Finally, to cope with the rapid development in this field, we intend to regularly update the relevant latest papers and their open-source implementations at \\url{https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging}.",
+          "resolved_arxiv": {
+            "arxiv_id": "2201.09873",
+            "title": "Transformers in Medical Imaging: A Survey",
+            "abstract": "Following unprecedented success on the natural language tasks, Transformers have been successfully applied to several computer vision problems, achieving state-of-the-art results and prompting researchers to reconsider the supremacy of convolutional neural networks (CNNs) as {de facto} operators. Capitalizing on these advances in computer vision, the medical imaging field has also witnessed growing interest for Transformers that can capture global context compared to CNNs with local receptive fields. Inspired from this transition, in this survey, we attempt to provide a comprehensive review of the applications of Transformers in medical imaging covering various aspects, ranging from recently proposed architectural designs to unsolved issues. Specifically, we survey the use of Transformers in medical image segmentation, detection, classification, reconstruction, synthesis, registration, clinical report generation, and other tasks. In particular, for each of these applications, we develop taxonomy, identify application-specific challenges as well as provide insights to solve them, and highlight recent trends. Further, we provide a critical discussion of the field's current state as a whole, including the identification of key challenges, open problems, and outlining promising future directions. We hope this survey will ignite further interest in the community and provide researchers with an up-to-date reference regarding applications of Transformer models in medical imaging. Finally, to cope with the rapid development in this field, we intend to regularly update the relevant latest papers and their open-source implementations at \\url{https://github.com/fahadshamshad/awesome-transformers-in-medical-imaging}.",
+            "published": "2022-01-24T18:50:18Z",
+            "source_url": "https://arxiv.org/abs/2201.09873"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "16",
+          "arxiv_id": "2301.03505v3",
+          "title": "Advances in Medical Image Analysis with Vision Transformers: A Comprehensive Review",
+          "abstract": "The remarkable performance of the Transformer architecture in natural language processing has recently also triggered broad interest in Computer Vision. Among other merits, Transformers are witnessed as capable of learning long-range dependencies and spatial correlations, which is a clear advantage over convolutional neural networks (CNNs), which have been the de facto standard in Computer Vision problems so far. Thus, Transformers have become an integral part of modern medical image analysis. In this review, we provide an encyclopedic review of the applications of Transformers in medical imaging. Specifically, we present a systematic and thorough review of relevant recent Transformer literature for different medical image analysis tasks, including classification, segmentation, detection, registration, synthesis, and clinical report generation. For each of these applications, we investigate the novelty, strengths and weaknesses of the different proposed strategies and develop taxonomies highlighting key properties and contributions. Further, if applicable, we outline current benchmarks on different datasets. Finally, we summarize key challenges and discuss different future research directions. In addition, we have provided cited papers with their corresponding implementations in https://github.com/mindflow-institue/Awesome-Transformer.",
+          "resolved_arxiv": {
+            "arxiv_id": "2301.03505",
+            "title": "Advances in Medical Image Analysis with Vision Transformers: A Comprehensive Review",
+            "abstract": "The remarkable performance of the Transformer architecture in natural language processing has recently also triggered broad interest in Computer Vision. Among other merits, Transformers are witnessed as capable of learning long-range dependencies and spatial correlations, which is a clear advantage over convolutional neural networks (CNNs), which have been the de facto standard in Computer Vision problems so far. Thus, Transformers have become an integral part of modern medical image analysis. In this review, we provide an encyclopedic review of the applications of Transformers in medical imaging. Specifically, we present a systematic and thorough review of relevant recent Transformer literature for different medical image analysis tasks, including classification, segmentation, detection, registration, synthesis, and clinical report generation. For each of these applications, we investigate the novelty, strengths and weaknesses of the different proposed strategies and develop taxonomies highlighting key properties and contributions. Further, if applicable, we outline current benchmarks on different datasets. Finally, we summarize key challenges and discuss different future research directions. In addition, we have provided cited papers with their corresponding implementations in https://github.com/mindflow-institue/Awesome-Transformer.",
+            "published": "2023-01-09T16:56:23Z",
+            "source_url": "https://arxiv.org/abs/2301.03505"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C08",
+      "quote": "Lightweight architectural innovations have demonstrated that competitive segmentation performance is attainable under severe parameter constraints, as evidenced by dilated depthwise convolution variants that achieve strong results with under one million parameters [29].",
+      "citation_markers": [
+        "[29]"
+      ],
+      "position": "middle",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "29",
+          "arxiv_id": "2004.03466v2",
+          "title": "U-Net Using Stacked Dilated Convolutions for Medical Image Segmentation",
+          "abstract": "This paper proposes a novel U-Net variant using stacked dilated convolutions for medical image segmentation (SDU-Net). SDU-Net adopts the architecture of vanilla U-Net with modifications in the encoder and decoder operations (an operation indicates all the processing for feature maps of the same resolution). Unlike vanilla U-Net which incorporates two standard convolutions in each encoder/decoder operation, SDU-Net uses one standard convolution followed by multiple dilated convolutions and concatenates all dilated convolution outputs as input to the next operation. Experiments showed that SDU-Net outperformed vanilla U-Net, attention U-Net (AttU-Net), and recurrent residual U-Net (R2U-Net) in all four tested segmentation tasks while using parameters around 40% of vanilla U-Net's, 17% of AttU-Net's, and 15% of R2U-Net's.",
+          "resolved_arxiv": {
+            "arxiv_id": "2004.03466",
+            "title": "U-Net Using Stacked Dilated Convolutions for Medical Image Segmentation",
+            "abstract": "This paper proposes a novel U-Net variant using stacked dilated convolutions for medical image segmentation (SDU-Net). SDU-Net adopts the architecture of vanilla U-Net with modifications in the encoder and decoder operations (an operation indicates all the processing for feature maps of the same resolution). Unlike vanilla U-Net which incorporates two standard convolutions in each encoder/decoder operation, SDU-Net uses one standard convolution followed by multiple dilated convolutions and concatenates all dilated convolution outputs as input to the next operation. Experiments showed that SDU-Net outperformed vanilla U-Net, attention U-Net (AttU-Net), and recurrent residual U-Net (R2U-Net) in all four tested segmentation tasks while using parameters around 40% of vanilla U-Net's, 17% of AttU-Net's, and 15% of R2U-Net's.",
+            "published": "2020-04-07T15:06:20Z",
+            "source_url": "https://arxiv.org/abs/2004.03466"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C09",
+      "quote": "The BraTS challenge has emerged as the central benchmark driving architectural innovation, with encoder-decoder frameworks including U-Net variants and attention-gated designs achieving state-of-the-art delineation of tumor subregions—enhancing tumor, necrotic core, and peritumoral edema—while residual and densely connected backbones address the vanishing gradient problem inherent in deep volumetric processing [1; 3].",
+      "citation_markers": [
+        "[1; 3]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "1",
+          "arxiv_id": "1702.05747v2",
+          "title": "A Survey on Deep Learning in Medical Image Analysis",
+          "abstract": "Deep learning algorithms, in particular convolutional networks, have rapidly become a methodology of choice for analyzing medical images. This paper reviews the major deep learning concepts pertinent to medical image analysis and summarizes over 300 contributions to the field, most of which appeared in the last year. We survey the use of deep learning for image classification, object detection, segmentation, registration, and other tasks and provide concise overviews of studies per application area. Open challenges and directions for future research are discussed.",
+          "resolved_arxiv": {
+            "arxiv_id": "1702.05747",
+            "title": "A Survey on Deep Learning in Medical Image Analysis",
+            "abstract": "Deep learning algorithms, in particular convolutional networks, have rapidly become a methodology of choice for analyzing medical images. This paper reviews the major deep learning concepts pertinent to medical image analysis and summarizes over 300 contributions to the field, most of which appeared in the last year. We survey the use of deep learning for image classification, object detection, segmentation, registration, and other tasks and provide concise overviews of studies per application area. Open challenges and directions for future research are discussed.",
+            "published": "2017-02-19T13:02:28Z",
+            "source_url": "https://arxiv.org/abs/1702.05747"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "3",
+          "arxiv_id": "1512.03385v1",
+          "title": "Deep Residual Learning for Image Recognition",
+          "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.",
+          "resolved_arxiv": {
+            "arxiv_id": "1512.03385",
+            "title": "Deep Residual Learning for Image Recognition",
+            "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.",
+            "published": "2015-12-10T19:51:55Z",
+            "source_url": "https://arxiv.org/abs/1512.03385"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C10",
+      "quote": "Self-supervised learning (SSL) has emerged as a transformative paradigm for medical image analysis, addressing the chronic scarcity of expert annotations by deriving supervisory signals intrinsically from unlabeled imaging data. Across predictive, generative, and contrastive formulations, SSL methods have demonstrated the capacity to learn transferable representations that rival or surpass those obtained from supervised ImageNet pre-training on numerous clinical benchmarks [56].",
+      "citation_markers": [
+        "[56]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "single",
+      "sources": [
+        {
+          "citation_number": "56",
+          "arxiv_id": "2108.05930v1",
+          "title": "A Systematic Benchmarking Analysis of Transfer Learning for Medical Image Analysis",
+          "abstract": "Transfer learning from supervised ImageNet models has been frequently used in medical image analysis. Yet, no large-scale evaluation has been conducted to benchmark the efficacy of newly-developed pre-training techniques for medical image analysis, leaving several important questions unanswered. As the first step in this direction, we conduct a systematic study on the transferability of models pre-trained on iNat2021, the most recent large-scale fine-grained dataset, and 14 top self-supervised ImageNet models on 7 diverse medical tasks in comparison with the supervised ImageNet model. Furthermore, we present a practical approach to bridge the domain gap between natural and medical images by continually (pre-)training supervised ImageNet models on medical images. Our comprehensive evaluation yields new insights: (1) pre-trained models on fine-grained data yield distinctive local representations that are more suitable for medical segmentation tasks, (2) self-supervised ImageNet models learn holistic features more effectively than supervised ImageNet models, and (3) continual pre-training can bridge the domain gap between natural and medical images. We hope that this large-scale open evaluation of transfer learning can direct the future research of deep learning for medical imaging. As open science, all codes and pre-trained models are available on our GitHub page https://github.com/JLiangLab/BenchmarkTransferLearning.",
+          "resolved_arxiv": {
+            "arxiv_id": "2108.05930",
+            "title": "A Systematic Benchmarking Analysis of Transfer Learning for Medical Image Analysis",
+            "abstract": "Transfer learning from supervised ImageNet models has been frequently used in medical image analysis. Yet, no large-scale evaluation has been conducted to benchmark the efficacy of newly-developed pre-training techniques for medical image analysis, leaving several important questions unanswered. As the first step in this direction, we conduct a systematic study on the transferability of models pre-trained on iNat2021, the most recent large-scale fine-grained dataset, and 14 top self-supervised ImageNet models on 7 diverse medical tasks in comparison with the supervised ImageNet model. Furthermore, we present a practical approach to bridge the domain gap between natural and medical images by continually (pre-)training supervised ImageNet models on medical images. Our comprehensive evaluation yields new insights: (1) pre-trained models on fine-grained data yield distinctive local representations that are more suitable for medical segmentation tasks, (2) self-supervised ImageNet models learn holistic features more effectively than supervised ImageNet models, and (3) continual pre-training can bridge the domain gap between natural and medical images. We hope that this large-scale open evaluation of transfer learning can direct the future research of deep learning for medical imaging. As open science, all codes and pre-trained models are available on our GitHub page https://github.com/JLiangLab/BenchmarkTransferLearning.",
+            "published": "2021-08-12T19:08:34Z",
+            "source_url": "https://arxiv.org/abs/2108.05930"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C11",
+      "quote": "Explainability and interpretability constitute foundational prerequisites for the responsible clinical deployment of deep learning models, as the black-box nature of these systems fundamentally conflicts with the transparency demands of medical decision-making [12; 70].",
+      "citation_markers": [
+        "[12; 70]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "12",
+          "arxiv_id": "2005.13799v1",
+          "title": "Explainable deep learning models in medical image analysis",
+          "abstract": "Deep learning methods have been very effective for a variety of medical diagnostic tasks and has even beaten human experts on some of those. However, the black-box nature of the algorithms has restricted clinical use. Recent explainability studies aim to show the features that influence the decision of a model the most. The majority of literature reviews of this area have focused on taxonomy, ethics, and the need for explanations. A review of the current applications of explainable deep learning for different medical imaging tasks is presented here. The various approaches, challenges for clinical deployment, and the areas requiring further research are discussed here from a practical standpoint of a deep learning researcher designing a system for the clinical end-users.",
+          "resolved_arxiv": {
+            "arxiv_id": "2005.13799",
+            "title": "Explainable deep learning models in medical image analysis",
+            "abstract": "Deep learning methods have been very effective for a variety of medical diagnostic tasks and has even beaten human experts on some of those. However, the black-box nature of the algorithms has restricted clinical use. Recent explainability studies aim to show the features that influence the decision of a model the most. The majority of literature reviews of this area have focused on taxonomy, ethics, and the need for explanations. A review of the current applications of explainable deep learning for different medical imaging tasks is presented here. The various approaches, challenges for clinical deployment, and the areas requiring further research are discussed here from a practical standpoint of a deep learning researcher designing a system for the clinical end-users.",
+            "published": "2020-05-28T06:31:05Z",
+            "source_url": "https://arxiv.org/abs/2005.13799"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "70",
+          "arxiv_id": "2111.02398v1",
+          "title": "Transparency of Deep Neural Networks for Medical Image Analysis: A Review of Interpretability Methods",
+          "abstract": "Artificial Intelligence has emerged as a useful aid in numerous clinical applications for diagnosis and treatment decisions. Deep neural networks have shown same or better performance than clinicians in many tasks owing to the rapid increase in the available data and computational power. In order to conform to the principles of trustworthy AI, it is essential that the AI system be transparent, robust, fair and ensure accountability. Current deep neural solutions are referred to as black-boxes due to a lack of understanding of the specifics concerning the decision making process. Therefore, there is a need to ensure interpretability of deep neural networks before they can be incorporated in the routine clinical workflow. In this narrative review, we utilized systematic keyword searches and domain expertise to identify nine different types of interpretability methods that have been used for understanding deep learning models for medical image analysis applications based on the type of generated explanations and technical similarities. Furthermore, we report the progress made towards evaluating the explanations produced by various interpretability methods. Finally we discuss limitations, provide guidelines for using interpretability methods and future directions concerning the interpretability of deep neural networks for medical imaging analysis.",
+          "resolved_arxiv": {
+            "arxiv_id": "2111.02398",
+            "title": "Transparency of Deep Neural Networks for Medical Image Analysis: A Review of Interpretability Methods",
+            "abstract": "Artificial Intelligence has emerged as a useful aid in numerous clinical applications for diagnosis and treatment decisions. Deep neural networks have shown same or better performance than clinicians in many tasks owing to the rapid increase in the available data and computational power. In order to conform to the principles of trustworthy AI, it is essential that the AI system be transparent, robust, fair and ensure accountability. Current deep neural solutions are referred to as black-boxes due to a lack of understanding of the specifics concerning the decision making process. Therefore, there is a need to ensure interpretability of deep neural networks before they can be incorporated in the routine clinical workflow. In this narrative review, we utilized systematic keyword searches and domain expertise to identify nine different types of interpretability methods that have been used for understanding deep learning models for medical image analysis applications based on the type of generated explanations and technical similarities. Furthermore, we report the progress made towards evaluating the explanations produced by various interpretability methods. Finally we discuss limitations, provide guidelines for using interpretability methods and future directions concerning the interpretability of deep neural networks for medical imaging analysis.",
+            "published": "2021-11-01T01:42:26Z",
+            "source_url": "https://arxiv.org/abs/2111.02398"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    },
+    {
+      "claim_id": "C12",
+      "quote": "The convergence of foundation models [24], multimodal integration [88], causal reasoning, and privacy-preserving federated learning represents the most promising trajectory toward systems that are simultaneously capable, equitable, and trustworthy across global healthcare settings.",
+      "citation_markers": [
+        "[24]",
+        "[88]"
+      ],
+      "position": "rear",
+      "citation_cardinality": "multiple",
+      "sources": [
+        {
+          "citation_number": "24",
+          "arxiv_id": "2306.05705v2",
+          "title": "On the Challenges and Perspectives of Foundation Models for Medical Image Analysis",
+          "abstract": "This article discusses the opportunities, applications and future directions of large-scale pre-trained models, i.e., foundation models, for analyzing medical images. Medical foundation models have immense potential in solving a wide range of downstream tasks, as they can help to accelerate the development of accurate and robust models, reduce the large amounts of required labeled data, preserve the privacy and confidentiality of patient data. Specifically, we illustrate the \"spectrum\" of medical foundation models, ranging from general vision models, modality-specific models, to organ/task-specific models, highlighting their challenges, opportunities and applications. We also discuss how foundation models can be leveraged in downstream medical tasks to enhance the accuracy and efficiency of medical image analysis, leading to more precise diagnosis and treatment decisions.",
+          "resolved_arxiv": {
+            "arxiv_id": "2306.05705",
+            "title": "On the Challenges and Perspectives of Foundation Models for Medical Image Analysis",
+            "abstract": "This article discusses the opportunities, applications and future directions of large-scale pre-trained models, i.e., foundation models, for analyzing medical images. Medical foundation models have immense potential in solving a wide range of downstream tasks, as they can help to accelerate the development of accurate and robust models, reduce the large amounts of required labeled data, preserve the privacy and confidentiality of patient data. Specifically, we illustrate the \"spectrum\" of medical foundation models, ranging from general vision models, modality-specific models, to organ/task-specific models, highlighting their challenges, opportunities and applications. We also discuss how foundation models can be leveraged in downstream medical tasks to enhance the accuracy and efficiency of medical image analysis, leading to more precise diagnosis and treatment decisions.",
+            "published": "2023-06-09T06:54:58Z",
+            "source_url": "https://arxiv.org/abs/2306.05705"
+          },
+          "source_accessible": true
+        },
+        {
+          "citation_number": "88",
+          "arxiv_id": "2203.15588v3",
+          "title": "Deep Multi-modal Fusion of Image and Non-image Data in Disease Diagnosis and Prognosis: A Review",
+          "abstract": "The rapid development of diagnostic technologies in healthcare is leading to higher requirements for physicians to handle and integrate the heterogeneous, yet complementary data that are produced during routine practice. For instance, the personalized diagnosis and treatment planning for a single cancer patient relies on the various images (e.g., radiological, pathological, and camera images) and non-image data (e.g., clinical data and genomic data). However, such decision-making procedures can be subjective, qualitative, and have large inter-subject variabilities. With the recent advances in multi-modal deep learning technologies, an increasingly large number of efforts have been devoted to a key question: how do we extract and aggregate multi-modal information to ultimately provide more objective, quantitative computer-aided clinical decision making? This paper reviews the recent studies on dealing with such a question. Briefly, this review will include the (1) overview of current multi-modal learning workflows, (2) summarization of multi-modal fusion methods, (3) discussion of the performance, (4) applications in disease diagnosis and prognosis, and (5) challenges and future directions.",
+          "resolved_arxiv": {
+            "arxiv_id": "2203.15588",
+            "title": "Deep Multi-modal Fusion of Image and Non-image Data in Disease Diagnosis and Prognosis: A Review",
+            "abstract": "The rapid development of diagnostic technologies in healthcare is leading to higher requirements for physicians to handle and integrate the heterogeneous, yet complementary data that are produced during routine practice. For instance, the personalized diagnosis and treatment planning for a single cancer patient relies on the various images (e.g., radiological, pathological, and camera images) and non-image data (e.g., clinical data and genomic data). However, such decision-making procedures can be subjective, qualitative, and have large inter-subject variabilities. With the recent advances in multi-modal deep learning technologies, an increasingly large number of efforts have been devoted to a key question: how do we extract and aggregate multi-modal information to ultimately provide more objective, quantitative computer-aided clinical decision making? This paper reviews the recent studies on dealing with such a question. Briefly, this review will include the (1) overview of current multi-modal learning workflows, (2) summarization of multi-modal fusion methods, (3) discussion of the performance, (4) applications in disease diagnosis and prognosis, and (5) challenges and future directions.",
+            "published": "2022-03-25T18:50:03Z",
+            "source_url": "https://arxiv.org/abs/2203.15588"
+          },
+          "source_accessible": true
+        }
+      ],
+      "unresolved_citation_keys": [],
+      "source_accessible": true
+    }
+  ]
+}
