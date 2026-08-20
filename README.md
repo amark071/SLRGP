@@ -74,11 +74,9 @@ OpenAI 兼容端点，否则脚本会直接报连接错误。
 
 ## Notes on paths and credentials / 路径与凭证说明
 
-- All paths in the code have been remapped to package-relative locations (`data/…`, `code/…`, `work/…`, `models/…`).
+- All paths in the code have been remapped to package-relative locations (`data/…`, `code/…`, `work/…`, ).
   Run scripts from the package root and set `export PYTHONPATH=code`.
   代码内路径已全部改为包内相对路径；请从包根目录运行脚本，并设置 `export PYTHONPATH=code`。
-- Large corpora and trained model weights are not distributed; see `data/README.md` (corpus rebuild) and
-  `models/README.md` (retrain from shipped feature tables). 大语料与训练权重不随包分发，重建/复训方式见对应 README。
 - All API credentials are read from environment variables; no keys are embedded in this package.
   所有 API 凭证均从环境变量读取，包内不含任何密钥。
 - Commit hashes in `experiments/exp5_native_comparison/patches/*/patch_manifest.json` identify the exact
