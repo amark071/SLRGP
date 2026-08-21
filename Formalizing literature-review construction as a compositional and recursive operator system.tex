@@ -10,6 +10,7 @@
 \usepackage{hyperref}
 \usepackage{microtype}
 \usepackage{placeins}
+\usepackage{lineno}
 
 \setcounter{topnumber}{3}
 \setcounter{bottomnumber}{2}
@@ -41,6 +42,8 @@ $^{\ast}$Corresponding author: Yue Ding (\href{mailto:dingyue0827@ruc.edu.cn}{di
 }
 
 \begin{document}
+
+\linenumbers
 
 \maketitle
 
@@ -215,9 +218,7 @@ The scope of inference is correspondingly bounded. The operator set is a task-de
 
 The same approach may also help analyse other complex knowledge tasks, such as generating scientific hypotheses, analysing policy or conducting legal reasoning. Each task could be divided into functions that can be inspected, tested and combined recursively. More broadly, SLRGP provides a way to study scholarly synthesis through both its prose and the decisions that determine what evidence is selected, how it is organized and how the final argument is constructed.
 
-\section*{Conclusion}
-
-SLRGP frames literature reviewing as a composition of typed operators rather than an undifferentiated generation task. Across five experiments, the framework recovered scholarly review organization, supported learning at selected operator interfaces, isolated the contributions of semantic organization and guarded validation, and improved long-form synthesis through structural recursion. In the native end-to-end comparison, SLRGP also combined complete constraint compliance with strong observed sampled claim--source support and low per-output cost under the tested configurations, although its differences from SurveyGen were not significant. Together, these findings provide an inspectable empirical basis for building and testing literature-review systems.
+In conclusion, SLRGP frames literature reviewing as a composition of typed operators rather than an undifferentiated generation task. Across five experiments, the framework recovered scholarly review organization, supported learning at selected operator interfaces, isolated the contributions of semantic organization and guarded validation, and improved long-form synthesis through structural recursion. In the native end-to-end comparison, SLRGP also combined complete constraint compliance with strong observed sampled claim--source support and low per-output cost under the tested configurations, although its differences from SurveyGen were not significant. Together, these findings provide an inspectable empirical basis for building and testing literature-review systems.
 
 \section*{Methods}
 
@@ -281,7 +282,9 @@ All primary comparisons pair observations by topic or by review. In the topic-ba
 
 \FloatBarrier
 
-\noindent\textbf{Code and data availability.} The corpus provenance manifests, learned-operator code, generation and evaluation pipelines, and all confirmatory outputs, traces and judgment logs referenced in this study accompany this submission as a code-and-data package and are publicly available at \url{https://github.com/amark071/SLRGP}.
+\noindent\textbf{Data availability.} The corpus provenance manifests and all confirmatory outputs, traces and judgment logs referenced in this study accompany this submission as a data package and are publicly available at \url{https://github.com/amark071/SLRGP}.
+
+\noindent\textbf{Code availability.} The learned-operator code and the generation and evaluation pipelines referenced in this study accompany this submission and are publicly available at \url{https://github.com/amark071/SLRGP}.
 
 \noindent\textbf{Competing interests.} H.W. is the founder of Beijing Liaoyuan Shuke Information Technology Co., Ltd., which is developing commercial products related to this work. Q.L. is an employee of Trueland Information Technology (Shanghai) Co., Ltd. The remaining authors declare no competing interests.
 
